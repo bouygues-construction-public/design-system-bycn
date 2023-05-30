@@ -1,18 +1,22 @@
 {
   "name": "design-system-bycn",
+  "private": true,
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build components",
-    "start:storybook": "ng run showcases:storybook",
+    "release": "",
+    "deploy-storybook:main": "npx -p @storybook/storybook-deployer storybook-to-ghpages --branch gh-pages --out docs/main",
+    "deploy-storybook:develop": "npx -p @storybook/storybook-deployer storybook-to-ghpages --branch gh-pages --out docs/develop",
+    "start:storybook": "ng run showcases-css:storybook",
+    "build-storybook": "ng run showcases-css:build-storybook",
     "watch": "ng build --watch --configuration development",
     "format": "prettier --write \"**/*.{js,ts,d.ts}\"",
     "format:check": "prettier --check \"**/*.{js,ts,d.ts}\"",
     "test": "ng test",
     "lint": "ng lint"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^15.2.0",
     "@angular/common": "^15.2.0",
@@ -35,11 +39,14 @@
     "@angular-eslint/template-parser": "15.2.1",
     "@angular/cli": "~15.2.5",
     "@angular/compiler-cli": "^15.2.0",
+    "@storybook/addon-docs": "^7.0.18",
     "@storybook/addon-essentials": "^7.0.12",
     "@storybook/addon-interactions": "^7.0.12",
     "@storybook/addon-links": "^7.0.12",
+    "@storybook/addon-styling": "^1.0.8",
     "@storybook/angular": "^7.0.12",
-    "@storybook/blocks": "^7.0.12",
+    "@storybook/blocks": "^7.0.18",
+    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/testing-library": "^0.0.14-next.2",
     "@types/jasmine": "~4.3.0",
     "@typescript-eslint/eslint-plugin": "5.48.2",
@@ -53,9 +60,22 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "ng-packagr": "^15.2.2",
+    "raw-loader": "^4.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.0.12",
     "typescript": "~4.9.4"
+  },
+  "workspaces": {
+    "packages": [
+      "projects/css",
+      "projects/css/presets/tailwind/*",
+      "projects/css/src/design_tokens/*"
+    ]
+  },
+  "storybook-deployer": {
+    "gitUsername": "Dang Khoa - BYCN IT VN",
+    "gitEmail": "k.vudang@bouygues-construction.com",
+    "commitMessage": "chore: deploy storybook"
   }
 }

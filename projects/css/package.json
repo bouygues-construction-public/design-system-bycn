@@ -17,11 +17,28 @@
     "type": "git",
     "url": "git+https://github.com/bouygues-construction/design-system-bycn.git"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "publishConfig": {
     "access": "public"
   },
-  "license": "ISC"
+  "scripts": {
+    "build": "npm run build:base16 && npm run build:components",
+    "build:base16": "postcss src/index.css -o dist/index.css",
+    "build:components": "echo components on process..."
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bouygues-construction/design-system-bycn/issues"
+  },
+  "devDependencies": {
+    "@masoni/css-design-tokens": "file:src/design_tokens",
+    "@masoni/css-tailwind-preset": "file:presets/tailwind",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
+    "postcss-discard-comments": "^6.0.0",
+    "postcss-import": "^15.1.0",
+    "postcss-prettify": "^0.3.4",
+    "tailwindcss": "^3.3.2"
+  }
 }
