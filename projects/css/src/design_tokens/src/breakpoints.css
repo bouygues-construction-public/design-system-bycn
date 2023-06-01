@@ -1,0 +1,6 @@
+:root,
+* {
+  --mas-breakpoint_mobile-min: '0px';
+  --mas-breakpoint_tablet-min: '600px';
+  --mas-breakpoint_desktop-min: '1440px';
+}
