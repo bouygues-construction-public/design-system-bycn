@@ -1,0 +1,76 @@
+:root,
+* {
+  /** Background */
+  --mas-semantic-color_background-primary: var(--mas-primitive-color_grey100);
+  --mas-semantic-color_backround-secondary: var(--mas-primitive-color_white);
+  /** Surface */
+  --mas-semantic-color_surface-primary: var(--mas-primitive-color_white);
+  --mas-semantic-color_surface-secondary: var(--mas-primitive-color_grey100);
+  --mas-semantic-color_surface-tiertiary: var(--mas-primitive-color_grey200);
+  /** Text */
+  --mas-semantic-color_text-primary: var(--mas-primitive-color_grey900);
+  --mas-semantic-color_text-secondary: var(--mas-primitive-color_grey600);
+  --mas-semantic-color_text-tiertiary: var(--mas-primitive-color_grey500);
+  --mas-semantic-color_text-reverse: var(--mas-primitive-color_white);
+  /** Icon  */
+  --mas-semantic-color_icon-primary: var(--mas-primitive-color_grey600);
+  --mas-semantic-color_icon-secondary: var(--mas-primitive-color_grey500);
+  --mas-semantic-color_icon-tiertiary: var(--mas-primitive-color_grey400);
+  --mas-semantic-color_icon-reverse: var(--mas-primitive-color_white);
+  /** Border */
+  --mas-semantic-color_border-primary: var(--mas-primitive-color_grey300);
+  --mas-semantic-color_border-secondary: var(--mas-primitive-color_grey200);
+  --mas-semantic-color_border-tiertiary: var(--mas-primitive-color_grey100);
+  /** Action */
+  /* Primary */
+  --mas-semantic-color_action-primary--default: var(--mas-primitive-color_blue600);
+  --mas-semantic-color_action-primary--hovered: var(--mas-primitive-color_blue700);
+  --mas-semantic-color_action-primary--pressed: var(--mas-primitive-color_blue800);
+  --mas-semantic-color_action-primary--disabled: calc(var(--mas-primitive-color_blue600) * 0.4);
+  /* Secondary */
+  --mas-semantic-color_action-secondary--default: var(--mas-primitive-color_grey900);
+  --mas-semantic-color_action-secondary--hovered: var(--mas-primitive-color_grey900);
+  --mas-semantic-color_action-secondary--pressed: var(--mas-primitive-color_grey900);
+  --mas-semantic-color_action-secondary--disabled: calc(var(--mas-primitive-color_grey900) * 0.6);
+  /* Tiertiary */
+  --mas-semantic-color_action-tiertiary--default: var(--mas-primitive-color_grey400);
+  --mas-semantic-color_action-tiertiary--hovered: var(--mas-primitive-color_grey400);
+  --mas-semantic-color_action-tiertiary--pressed: var(--mas-primitive-color_grey400);
+  --mas-semantic-color_action-tiertiary--disabled: calc(var(--mas-primitive-color_grey400) * 0.6);
+  /* Reverse */
+  --mas-semantic-color_action-reverse--default: var(--mas-primitive-color_white);
+  --mas-semantic-color_action-reverse--hovered: var(--mas-primitive-color_grey100);
+  --mas-semantic-color_action-reverse--pressed: var(--mas-primitive-color_grey200);
+  --mas-semantic-color_action-reverse--disabled: calc(var(--mas-primitive-color_white) * 0.6);
+  /* Brand */
+  --mas-semantic-color_action-reverse--default: var(--mas-primitive-color_orange600);
+  --mas-semantic-color_action-reverse--hovered: var(--mas-primitive-color_orange700);
+  --mas-semantic-color_action-reverse--pressed: var(--mas-primitive-color_orange800);
+  --mas-semantic-color_action-reverse--disabled: calc(var(--mas-primitive-color_orange600) * 0.6);
+  /** Decorative */
+  /* Surface */
+  /* HERE */
+  --mas-semantic-color_surface-orange: var(--mas-primitive-color_orange100);
+  --mas-semantic-color_surface-amber: var(--mas-primitive-color_amber100);
+  --mas-semantic-color_surface-green: var(--mas-primitive-color_green100);
+  --mas-semantic-color_surface-teal: var(--mas-primitive-color_teal100);
+  --mas-semantic-color_surface-blue: var(--mas-primitive-color_blue100);
+  --mas-semantic-color_surface-purple: var(--mas-primitive-color_purple100);
+  --mas-semantic-color_surface-red: var(--mas-primitive-color_red100);
+  /* Icon */
+  --mas-semantic-color_icon-orange: var(--mas-primitive-color_orange600);
+  --mas-semantic-color_icon-amber: var(--mas-primitive-color_amber700);
+  --mas-semantic-color_icon-green: var(--mas-primitive-color_green600);
+  --mas-semantic-color_icon-teal: var(--mas-primitive-color_teal700);
+  --mas-semantic-color_icon-blue: var(--mas-primitive-color_blue600);
+  --mas-semantic-color_icon-purple: var(--mas-primitive-color_purple500);
+  --mas-semantic-color_icon-red: var(--mas-primitive-color_red500);
+  /* Text */
+  --mas-semantic-color_text-orange: var(--mas-primitive-color_orange700);
+  --mas-semantic-color_text-amber: var(--mas-primitive-color_amber800);
+  --mas-semantic-color_text-green: var(--mas-primitive-color_green800);
+  --mas-semantic-color_text-teal: var(--mas-primitive-color_teal800);
+  --mas-semantic-color_text-blue: var(--mas-primitive-color_blue700);
+  --mas-semantic-color_text-purple: var(--mas-primitive-color_purple600);
+  --mas-semantic-color_text-red: var(--mas-primitive-color_red700);
+}
