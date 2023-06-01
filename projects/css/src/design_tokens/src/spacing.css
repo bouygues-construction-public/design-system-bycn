@@ -1,0 +1,15 @@
+:root {
+    --mas-spacing_0: 0px;
+    --mas-spacing_025: 2px;
+    --mas-spacing_050: 4px;
+    --mas-spacing_075: 6px;
+    --mas-spacing_100: 8px;
+    --mas-spacing_150: 12px;
+    --mas-spacing_200: 16px;
+    --mas-spacing_250: 20px;
+    --mas-spacing_300: 24px;
+    --mas-spacing_400: 32px;
+    --mas-spacing_500: 40px;
+    --mas-spacing_600: 48px;
+    --mas-spacing_800: 64px;
+  }
