@@ -1,2 +1,7 @@
-# design-system-bycn
-test
+## Introduction
+
+BYCN Design System helps to build Bouygues Construction products faster, more efficiently and more sustainably.
+
+Masoni Design System libraries for Angular web applications
+
+[Masoni Storybook](https://didactic-adventure-8k79w1e.pages.github.io/main)
