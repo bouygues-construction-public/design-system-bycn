@@ -2,14 +2,14 @@
 @import './themes/default.css';
 
 /* Breakpoints */
-
+@import './breakpoints.css';
 /* Layout */
-
+@import './layout.css';
 /* Shadows */
-
+@import './shadow.css';
 /* Radius */
 @import './radius.css';
-
 /* Spacings */
-
+@import './spacing.css';
 /* Typography */
+@import './typography.css';

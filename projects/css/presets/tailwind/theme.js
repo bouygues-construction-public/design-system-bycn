@@ -102,5 +102,4 @@ module.exports = {
       400: 'var(--mas-shadow_400)',
     },
   },
-
 };

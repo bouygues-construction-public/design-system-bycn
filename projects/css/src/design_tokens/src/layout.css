@@ -1,5 +1,4 @@
-:root,
-* {
+:root {
   --mas-layout-gutter_mobile: 16px;
   --mas-layout-gutter_tablet: 16px;
   --mas-layout-gutter_desktop: 24px;

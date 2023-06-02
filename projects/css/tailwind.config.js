@@ -1,4 +1,5 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  prefix: 'mas-',
-  presets: [require('@masoni/css-tailwind-preset')],
+  content: ['../showcases/css/stories/guidelines/**'],
+  presets: [require('@masoni/css-tailwind-preset')]
 }

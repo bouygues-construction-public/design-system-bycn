@@ -1,5 +1,4 @@
-:root,
-* {
+:root {
   /** Font Family */
   --mas-typo_font-family: 'Raleway';
   --mas-typo_font-family--inter: 'Inter';

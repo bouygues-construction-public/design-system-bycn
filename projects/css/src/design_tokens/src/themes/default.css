@@ -1,5 +1,4 @@
-:root,
-* {
+:root {
   /** Background */
   --mas-semantic-color_background-primary: var(--mas-primitive-color_grey100);
   --mas-semantic-color_backround-secondary: var(--mas-primitive-color_white);
@@ -26,27 +25,52 @@
   --mas-semantic-color_action-primary--default: var(--mas-primitive-color_blue600);
   --mas-semantic-color_action-primary--hovered: var(--mas-primitive-color_blue700);
   --mas-semantic-color_action-primary--pressed: var(--mas-primitive-color_blue800);
-  --mas-semantic-color_action-primary--disabled: calc(var(--mas-primitive-color_blue600) * 0.4);
+  --mas-semantic-color_action-primary--disabled: hsla(
+    var(--mas-primitive-color_blue600--h),
+    var(--mas-primitive-color_blue600--s),
+    var(--mas-primitive-color_blue600--l),
+    0.4
+  );
   /* Secondary */
   --mas-semantic-color_action-secondary--default: var(--mas-primitive-color_grey900);
   --mas-semantic-color_action-secondary--hovered: var(--mas-primitive-color_grey900);
   --mas-semantic-color_action-secondary--pressed: var(--mas-primitive-color_grey900);
-  --mas-semantic-color_action-secondary--disabled: calc(var(--mas-primitive-color_grey900) * 0.6);
+  --mas-semantic-color_action-secondary--disabled: hsla(
+    var(--mas-primitive-color_grey900--h),
+    var(--mas-primitive-color_grey900--s),
+    var(--mas-primitive-color_grey900--l),
+    0.6
+  );
   /* Tiertiary */
   --mas-semantic-color_action-tiertiary--default: var(--mas-primitive-color_grey400);
   --mas-semantic-color_action-tiertiary--hovered: var(--mas-primitive-color_grey400);
   --mas-semantic-color_action-tiertiary--pressed: var(--mas-primitive-color_grey400);
-  --mas-semantic-color_action-tiertiary--disabled: calc(var(--mas-primitive-color_grey400) * 0.6);
+  --mas-semantic-color_action-tiertiary--disabled: hsla(
+    var(--mas-primitive-color_grey400--h),
+    var(--mas-primitive-color_grey400--s),
+    var(--mas-primitive-color_grey400--l),
+    0.6
+  );
   /* Reverse */
   --mas-semantic-color_action-reverse--default: var(--mas-primitive-color_white);
   --mas-semantic-color_action-reverse--hovered: var(--mas-primitive-color_grey100);
   --mas-semantic-color_action-reverse--pressed: var(--mas-primitive-color_grey200);
-  --mas-semantic-color_action-reverse--disabled: calc(var(--mas-primitive-color_white) * 0.6);
+  --mas-semantic-color_action-reverse--disabled: hsla(
+    var(--mas-primitive-color_white--h),
+    var(--mas-primitive-color_white--s),
+    var(--mas-primitive-color_white--l),
+    0.6
+  );
   /* Brand */
   --mas-semantic-color_action-reverse--default: var(--mas-primitive-color_orange600);
   --mas-semantic-color_action-reverse--hovered: var(--mas-primitive-color_orange700);
   --mas-semantic-color_action-reverse--pressed: var(--mas-primitive-color_orange800);
-  --mas-semantic-color_action-reverse--disabled: calc(var(--mas-primitive-color_orange600) * 0.6);
+  --mas-semantic-color_action-reverse--disabled: hsla(
+    var(--mas-primitive-color_orange600--h),
+    var(--mas-primitive-color_orange600--s),
+    var(--mas-primitive-color_orange600--l),
+    0.6
+  );
   /** Decorative */
   /* Surface */
   /* HERE */
