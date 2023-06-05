@@ -4,4 +4,4 @@ BYCN Design System helps to build Bouygues Construction products faster, more ef
 
 Masoni Design System libraries for Angular web applications
 
-[Masoni Storybook](https://bouygues-construction.pages.github.io/design-system-bycn/main/showcases-css)
+[Masoni Storybook](https://bouygues-construction.github.io/design-system-bycn/main/showcases-css)
