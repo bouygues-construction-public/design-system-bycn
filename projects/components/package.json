@@ -1,0 +1,24 @@
+{
+  "name": "@masoni/components",
+  "version": "0.0.1",
+  "description": "Bouygues Design System - Masoni components library",
+  "peerDependencies": {
+    "@angular/common": "^15.2.0",
+    "@angular/core": "^15.2.0"
+  },
+  "homepage": "https://github.com/bouygues-construction/design-system-bycn",
+  "keywords": [
+    "design-system",
+    "ui-kit",
+    "libraries",
+    "angular",
+    "masoni"
+  ],
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false
+}

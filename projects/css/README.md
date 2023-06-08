@@ -43,6 +43,13 @@ For example:
 
 You can see the different CSS Custom Properties [here](#).
 
+CSS Variables naming as following rules:
+- prefix with `--mas`.
+- have foundation name.
+
+For example:\
+`--mas-`_*foundation-name*_\__variable_
+
 ## I have a issue, what should I do?
 
 Please file the issue [here](https://github.com/bouygues-construction/design-system-bycn/issues/new).
