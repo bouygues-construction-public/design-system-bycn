@@ -23,7 +23,7 @@
   "scripts": {
     "build": "npm run build:base16 && npm run build:components",
     "build:base16": "postcss src/index.css -o dist/index.css",
-    "build:components": "echo components on process..."
+    "build:components": "npm run build -w src/components"
   },
   "license": "ISC",
   "bugs": {
@@ -37,6 +37,7 @@
     "postcss-cli": "^10.1.0",
     "postcss-combine-duplicated-selectors": "^10.0.3",
     "postcss-discard-comments": "^6.0.0",
+    "postcss-encode-background-svgs": "^1.0.4",
     "postcss-import": "^15.1.0",
     "postcss-prettify": "^0.3.4",
     "tailwindcss": "^3.3.2"

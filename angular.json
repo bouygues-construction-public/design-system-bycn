@@ -56,6 +56,29 @@
         }
       }
     },
+    "showcases-components": {
+      "projectType": "library",
+      "schematics": {},
+      "root": "projects/showcases/components",
+      "architect": {
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": "projects/showcases/components/.storybook",
+            "compodoc": false,
+            "port": 6006
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/showcases/components/.storybook",
+            "compodoc": false,
+            "outputDir": "dist/storybook/showcases-components"
+          }
+        }
+      }
+    },
     "showcases-icons": {
       "projectType": "application",
       "schematics": {},
