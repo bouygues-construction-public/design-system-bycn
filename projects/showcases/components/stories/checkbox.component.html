@@ -1,0 +1,13 @@
+<div>
+  <input
+    class="mas-checkbox"
+    [ngClass]="{ 'mas-checkbox_size--large': size === 'L'}"
+    type="checkbox"
+    id="{{ identifier }}"
+    [checked]="checked"
+    [indeterminate]="indeterminate"
+    [disabled]="disabled"
+    (click)="_onInputClick()"
+  />
+  <label htmlFor="{{ identifier }}">{{ labelText }}</label>
+</div>

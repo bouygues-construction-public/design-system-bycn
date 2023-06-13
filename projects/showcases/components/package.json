@@ -2,5 +2,10 @@
   "name": "@masoni/showcase-components",
   "version": "1.0.0",
   "description": "Bouygues Design System - Masoni components showcase",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@masoni/components": "file:../../components",
+    "@masoni/css-checkbox": "file:../../css/src/components/checkbox",
+    "@masoni/css-design-tokens": "file:../../css/src/design_tokens"
+  }
 }
