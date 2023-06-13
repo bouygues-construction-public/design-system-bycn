@@ -150,8 +150,8 @@
     var(--mas-primitive-color_grey900--l)
   );
   /** White */
-  --mas-primitive-color_white--h: 0%;
-  --mas-primitive-color_white--s: 0;
+  --mas-primitive-color_white--h: 0;
+  --mas-primitive-color_white--s: 0%;
   --mas-primitive-color_white--l: 100%;
   --mas-primitive-color_white: hsl(
     var(--mas-primitive-color_white--h),
