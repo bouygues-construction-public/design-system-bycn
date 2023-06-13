@@ -62,10 +62,10 @@
     0.6
   );
   /* Brand */
-  --mas-semantic-color_action-reverse--default: var(--mas-primitive-color_orange600);
-  --mas-semantic-color_action-reverse--hovered: var(--mas-primitive-color_orange700);
-  --mas-semantic-color_action-reverse--pressed: var(--mas-primitive-color_orange800);
-  --mas-semantic-color_action-reverse--disabled: hsla(
+  --mas-semantic-color_brand--default: var(--mas-primitive-color_orange600);
+  --mas-semantic-color_brand--hovered: var(--mas-primitive-color_orange700);
+  --mas-semantic-color_brand--pressed: var(--mas-primitive-color_orange800);
+  --mas-semantic-color_brand--disabled: hsla(
     var(--mas-primitive-color_orange600--h),
     var(--mas-primitive-color_orange600--s),
     var(--mas-primitive-color_orange600--l),
