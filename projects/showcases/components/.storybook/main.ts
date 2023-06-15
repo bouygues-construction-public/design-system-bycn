@@ -13,12 +13,6 @@ const config: StorybookConfig = {
       },
     },
   ],
-  // webpackFinal: async (config) => {
-  //   return {
-  //     ...config,
-  //     module: { ...config.module, rules: [...config?.module?.rules, ...custom.module.rules] },
-  //   };
-  // },
   framework: {
     name: '@storybook/angular',
     options: {},

@@ -19,6 +19,10 @@
     "test": "ng test",
     "lint": "ng lint"
   },
+  "engines": {
+    "node": "^16.20.0",
+    "npm": ">= 7.24.0"
+  },
   "dependencies": {
     "@angular/animations": "^15.2.0",
     "@angular/common": "^15.2.0",
@@ -51,7 +55,6 @@
     "@storybook/components": "^7.0.18",
     "@storybook/html": "^7.0.18",
     "@storybook/manager-api": "^7.0.18",
-    "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/testing-library": "^0.0.14-next.2",
     "@storybook/theming": "^7.0.18",
     "@types/jasmine": "~4.3.0",
