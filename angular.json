@@ -51,7 +51,7 @@
           "options": {
             "configDir": "projects/showcases/css/.storybook",
             "compodoc": false,
-            "outputDir": "dist/storybook/showcases-css"
+            "outputDir": "docs/main/showcases-css"
           }
         }
       }
@@ -74,7 +74,7 @@
           "options": {
             "configDir": "projects/showcases/components/.storybook",
             "compodoc": false,
-            "outputDir": "dist/storybook/showcases-components"
+            "outputDir": "docs/main/showcases-components"
           }
         }
       }
