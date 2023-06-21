@@ -21,7 +21,7 @@
   },
   "engines": {
     "node": "^16.20.0",
-    "npm": ">= 7.24.0"
+    "npm": ">=7.24.0"
   },
   "dependencies": {
     "@angular/animations": "^15.2.0",
