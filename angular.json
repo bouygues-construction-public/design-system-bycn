@@ -51,6 +51,14 @@
           "options": {
             "configDir": "projects/showcases/css/.storybook",
             "compodoc": false,
+            "outputDir": "dist/showcases-css"
+          }
+        },
+        "publish-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/showcases/css/.storybook",
+            "compodoc": false,
             "outputDir": "docs/main/showcases-css"
           }
         }
@@ -70,6 +78,14 @@
           }
         },
         "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/showcases/components/.storybook",
+            "compodoc": false,
+            "outputDir": "dist/showcases-components"
+          }
+        },
+        "publish-storybook": {
           "builder": "@storybook/angular:build-storybook",
           "options": {
             "configDir": "projects/showcases/components/.storybook",
