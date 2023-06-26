@@ -21,10 +21,8 @@ design-system-bycn/
                 design_tokens/
                 utilities/
         showcases/
-            components/
             css/
             icons/
-
 ```
 
 # Local development
