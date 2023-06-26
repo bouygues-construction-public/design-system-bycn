@@ -3,16 +3,20 @@
 BYCN Design System helps to build Bouygues Construction products faster, more efficiently and more sustainably.
 
 Masoni Design System libraries for Angular web applications
+
 ## Core packages
+
 ### Specific CSS styles
 
-> @masoni/css 
+> @masoni/css
 
-[Masoni Storybook](https://bouygues-construction.github.io/design-system-bycn/main/showcases-css)
+[Masoni CSS Storybook](https://bouygues-construction.github.io/design-system-bycn/main/showcases-css)
 
-> @masoni/design-tokens 
+> @masoni/design-tokens
 
-> @masoni/components 
+> @masoni/components
+
+[Masoni Components Storybook](https://bouygues-construction.github.io/design-system-bycn/main/showcases-components)
 
 > @masoni/utilities
 
@@ -20,13 +24,7 @@ Masoni Design System libraries for Angular web applications
 
 > @masoni/icons
 
-### Assets
-
-> @masoni/assets
-
 ### Components
-
-> @masoni/componets
 
 ## License
 
