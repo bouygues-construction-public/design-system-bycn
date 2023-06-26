@@ -21,9 +21,10 @@
     "access": "public"
   },
   "scripts": {
-    "build": "npm run build:base16 && npm run build:components",
+    "build": "npm run build:design-tokens && npm run build:components && npm run build:base16",
     "build:base16": "postcss src/index.css -o dist/index.css",
-    "build:components": "npm run build -w src/components"
+    "build:components": "npm run build -w src/components",
+    "build:design-tokens": "npm run build -w src/design_tokens"
   },
   "license": "ISC",
   "bugs": {
