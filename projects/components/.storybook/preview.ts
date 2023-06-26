@@ -1,5 +1,5 @@
 import type { Preview } from '@storybook/angular';
-import '@masoni/css-design-tokens/dist/index.css';
+import '@masoni/css/dist/index.css';
 
 const preview: Preview = {
   parameters: {

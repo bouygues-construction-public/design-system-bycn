@@ -30,6 +30,30 @@
             "tsConfig": "projects/components/tsconfig.spec.json",
             "polyfills": ["zone.js", "zone.js/testing"]
           }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": "projects/components/.storybook",
+            "compodoc": false,
+            "port": 6006
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/component/.storybook",
+            "compodoc": false,
+            "outputDir": "dist/showcases-css"
+          }
+        },
+        "publish-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/components/.storybook",
+            "compodoc": false,
+            "outputDir": "docs/main/showcases-css"
+          }
         }
       }
     },
@@ -64,37 +88,7 @@
         }
       }
     },
-    "showcases-components": {
-      "projectType": "library",
-      "schematics": {},
-      "root": "projects/showcases/components",
-      "architect": {
-        "storybook": {
-          "builder": "@storybook/angular:start-storybook",
-          "options": {
-            "configDir": "projects/showcases/components/.storybook",
-            "compodoc": false,
-            "port": 6007
-          }
-        },
-        "build-storybook": {
-          "builder": "@storybook/angular:build-storybook",
-          "options": {
-            "configDir": "projects/showcases/components/.storybook",
-            "compodoc": false,
-            "outputDir": "dist/showcases-components"
-          }
-        },
-        "publish-storybook": {
-          "builder": "@storybook/angular:build-storybook",
-          "options": {
-            "configDir": "projects/showcases/components/.storybook",
-            "compodoc": false,
-            "outputDir": "docs/main/showcases-components"
-          }
-        }
-      }
-    },
+
     "showcases-icons": {
       "projectType": "application",
       "schematics": {},
