@@ -74,7 +74,7 @@
           "options": {
             "configDir": "projects/showcases/components/.storybook",
             "compodoc": false,
-            "port": 6006
+            "port": 6007
           }
         },
         "build-storybook": {
@@ -105,7 +105,7 @@
           "options": {
             "configDir": "projects/showcases/icons/.storybook",
             "compodoc": false,
-            "port": 6006
+            "port": 6008
           }
         },
         "build-storybook": {
