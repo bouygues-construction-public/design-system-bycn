@@ -59,49 +59,49 @@
     line-height: var(--mas-typo_subtitle-3-line-height);
 }
 .mas-typo_body-1 {
-    font-family: var(--mas-typo_font-family);
+    font-family: var(--mas-typo_font-family--inter);
     font-weight: var(--mas-typo_body-font-weight);
     font-size: var(--mas-typo_body-1-font-size);
     line-height: var(--mas-typo_body-1-line-height);
 }
 .mas-typo_body-2 {
-    font-family: var(--mas-typo_font-family);
+    font-family: var(--mas-typo_font-family--inter);
     font-weight: var(--mas-typo_body-font-weight);
     font-size: var(--mas-typo_body-2-font-size);
     line-height: var(--mas-typo_body-2-line-height);
 }
 .mas-typo_body-3 {
-    font-family: var(--mas-typo_font-family);
+    font-family: var(--mas-typo_font-family--inter);
     font-weight: var(--mas-typo_body-font-weight);
     font-size: var(--mas-typo_body-3-font-size);
     line-height: var(--mas-typo_body-3-line-height);
 }
 .mas-typo_body-1--bold {
-    font-family: var(--mas-typo_font-family);
+    font-family: var(--mas-typo_font-family--inter);
     font-weight: var(--mas-typo_body-font-weight--bold);
     font-size: var(--mas-typo_body-1-font-size);
     line-height: var(--mas-typo_body-1-line-height);
 }
 .mas-typo_body-2--bold {
-    font-family: var(--mas-typo_font-family);
+    font-family: var(--mas-typo_font-family--inter);
     font-weight: var(--mas-typo_body-font-weight--bold);
     font-size: var(--mas-typo_body-2-font-size);
     line-height: var(--mas-typo_body-2-line-height);
 }
 .mas-typo_body-3--bold {
-    font-family: var(--mas-typo_font-family);
+    font-family: var(--mas-typo_font-family--inter);
     font-weight: var(--mas-typo_body-font-weight--bold);
     font-size: var(--mas-typo_body-3-font-size);
     line-height: var(--mas-typo_body-3-line-height);
 }
 .mas-typo_caption {
-    font-family: var(--mas-typo_font-family);
+    font-family: var(--mas-typo_font-family--inter);
     font-weight: var(--mas-typo_caption-font-weight);
     font-size: var(--mas-typo_caption-font-size);
     line-height: var(--mas-typo_caption-line-height);
 }
 .mas-typo_overline {
-    font-family: var(--mas-typo_font-family);
+    font-family: var(--mas-typo_font-family--inter);
     font-weight: var(--mas-typo_overline-font-weight);
     font-size: var(--mas-typo_overline-font-size);
     line-height: var(--mas-typo_overline-line-height);
