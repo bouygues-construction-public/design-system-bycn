@@ -42,9 +42,9 @@
         "build-storybook": {
           "builder": "@storybook/angular:build-storybook",
           "options": {
-            "configDir": "projects/component/.storybook",
+            "configDir": "projects/components/.storybook",
             "compodoc": false,
-            "outputDir": "dist/showcases-css"
+            "outputDir": "dist/showcases-components"
           }
         },
         "publish-storybook": {
@@ -52,7 +52,7 @@
           "options": {
             "configDir": "projects/components/.storybook",
             "compodoc": false,
-            "outputDir": "docs/main/showcases-css"
+            "outputDir": "docs/main/showcases-components"
           }
         }
       }
