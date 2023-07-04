@@ -1,0 +1,14 @@
+{
+  "name": "@masoni/showcases-css",
+  "version": "1.0.0",
+  "description": "Bouygues Design System - Masoni CSS showcase",
+  "scripts": {
+    "start": "ng run @masoni/showcase-css:storybook",
+    "build-storybook": "echo build"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@masoni/css": "file:../../css",
+    "@masoni/css-tailwind-preset": "file:../../css/presets/tailwind"
+  }
+}

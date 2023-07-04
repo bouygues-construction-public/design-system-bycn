@@ -1,0 +1,164 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "projects/**/*",
+    "src/environments/**/*",
+    "src/**/*.spec.ts",
+    "src/**/*.mock.ts",
+    "src/polyfills.ts",
+    "src/main.ts",
+    "src/typings.d.ts",
+    "src/test.ts",
+    "src/index.html"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "src/app/**/*.ts"
+      ],
+      "parserOptions": {
+        "project": [
+          "tsconfig.json",
+          "e2e/tsconfig.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates"
+      ],
+      "rules": {
+        "@angular-eslint/component-selector": [
+          "warn",
+          {
+            "prefix": "kebab-case",
+            "type": "element"
+          }
+        ],
+        "@angular-eslint/directive-selector": [
+          "warn",
+          {
+            "prefix": "camelCase",
+            "type": "attribute"
+          }
+        ],
+        "@typescript-eslint/array-type": [
+          "warn",
+          {
+            "default": "array"
+          }
+        ],
+        "@typescript-eslint/ban-types": [
+          "error",
+          {
+            "types": {
+              "Boolean": "Avoid using the `Boolean` type. Did you mean `boolean`?",
+              "Function": "Avoid using the `Function` type. Prefer a specific function type, like `() => void`.",
+              "Number": "Avoid using the `Number` type. Did you mean `number`?",
+              "Object": "Avoid using the `Object` type. Did you mean `object`?",
+              "String": "Avoid using the `String` type. Did you mean `string`?",
+              "Symbol": "Avoid using the `Symbol` type. Did you mean `symbol`?"
+            }
+          }
+        ],
+        "@typescript-eslint/consistent-type-definitions": "warn",
+        "@typescript-eslint/dot-notation": "error",
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "format": [
+              "camelCase",
+              "PascalCase",
+              "UPPER_CASE"
+            ],
+            "leadingUnderscore": "allow",
+            "selector": "default"
+          }
+        ],
+        "@typescript-eslint/no-explicit-any": [
+          "error"
+        ],
+        "@typescript-eslint/no-inferrable-types": "off",
+        "@typescript-eslint/prefer-enum-initializers": [
+          "warn"
+        ],
+        "@typescript-eslint/quotes": [
+          "error",
+          "single",
+          "avoid-escape"
+        ],
+        "@typescript-eslint/space-before-function-paren": [
+          "error",
+          {
+            "anonymous": "never",
+            "asyncArrow": "always",
+            "named": "never"
+          }
+        ],
+        "@typescript-eslint/typedef": [
+          "error",
+          {
+            "arrayDestructuring": true,
+            "arrowParameter": false,
+            "memberVariableDeclaration": true,
+            "objectDestructuring": true,
+            "propertyDeclaration": true,
+            "variableDeclaration": true,
+            "variableDeclarationIgnoreFunction": true
+          }
+        ],
+        "brace-style": [
+          "warn",
+          "1tbs"
+        ],
+        "dot-notation": "off",
+        "max-classes-per-file": [
+          "warn",
+          1
+        ],
+        "max-len": [
+          "warn",
+          {
+            "code": 120,
+            "ignoreComments": true,
+            "ignorePattern": "^import .*",
+            "ignoreUrls": true,
+            "tabWidth": 2
+          }
+        ],
+        "max-lines-per-function": [
+          "warn",
+          {
+            "max": 30,
+            "skipBlankLines": true,
+            "skipComments": true
+          }
+        ],
+        "quotes": "off",
+        "space-before-function-paren": "off"
+      }
+    },
+    {
+      "files": [
+        "src/app/**/*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended"
+      ],
+      "rules": {
+        "@angular-eslint/template/cyclomatic-complexity": [
+          "warn",
+          {
+            "maxComplexity": 12
+          }
+        ],
+        "@angular-eslint/template/no-negated-async": "off",
+        "@angular-eslint/template/no-call-expression": "warn"
+      }
+    }
+  ],
+  "extends": [
+    null,
+    "plugin:storybook/recommended"
+  ]
+}

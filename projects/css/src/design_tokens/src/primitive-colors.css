@@ -1,0 +1,163 @@
+:root{
+  /** Amber */
+  --mas-primitive-color_amber100--h: 0;
+  --mas-primitive-color_amber100--s: 90%;
+  --mas-primitive-color_amber100--l: 90%;
+  --mas-primitive-color_amber100: hsl(
+    var(--mas-primitive-color_amber100--h),
+    var(--mas-primitive-color_amber100--s),
+    var(--mas-primitive-color_amber100--l)
+  );
+  --mas-primitive-color_amber200: hsl(41, 100%, 80%);
+  --mas-primitive-color_amber300: hsl(41, 100%, 69%);
+  --mas-primitive-color_amber400: hsl(41, 100%, 58%);
+  --mas-primitive-color_amber500: hsl(41, 100%, 47%);
+  --mas-primitive-color_amber600: hsl(39, 100%, 39%);
+  --mas-primitive-color_amber700: hsl(37, 100%, 32%);
+  --mas-primitive-color_amber800: hsl(35, 100%, 24%);
+  --mas-primitive-color_amber900: hsl(33, 100%, 16%);
+  /** Orange */
+  --mas-primitive-color_orange100: hsl(20, 85%, 90%);
+  --mas-primitive-color_orange200: hsl(20, 85%, 80%);
+  --mas-primitive-color_orange300: hsl(20, 85%, 70%);
+  --mas-primitive-color_orange400: hsl(20, 85%, 60%);
+  --mas-primitive-color_orange500: hsl(20, 85%, 49%);
+
+  --mas-primitive-color_orange600--h: 20;
+  --mas-primitive-color_orange600--s: 85%;
+  --mas-primitive-color_orange600--l: 42%;
+  --mas-primitive-color_orange600: hsl(
+    var(--mas-primitive-color_orange600--h),
+    var(--mas-primitive-color_orange600--s),
+    var(--mas-primitive-color_orange600--l)
+  );
+  --mas-primitive-color_orange700: hsl(20, 85%, 35%);
+  --mas-primitive-color_orange800: hsl(20, 85%, 28%);
+  --mas-primitive-color_orange900: hsl(20, 85%, 21%);
+  /** Blue */
+  --mas-primitive-color_blue100: hsl(200, 80%, 88%);
+  --mas-primitive-color_blue200: hsl(200, 85%, 77%);
+  --mas-primitive-color_blue300: hsl(200, 90%, 65%);
+  --mas-primitive-color_blue400: hsl(200, 95%, 53%);
+  --mas-primitive-color_blue500: hsl(200, 100%, 42%);
+  --mas-primitive-color_blue600--h: 200;
+  --mas-primitive-color_blue600--s: 100%;
+  --mas-primitive-color_blue600--l: 36%;
+  --mas-primitive-color_blue600: hsl(
+    var(--mas-primitive-color_blue600--h),
+    var(--mas-primitive-color_blue600--s),
+    var(--mas-primitive-color_blue600--l)
+  );
+  --mas-primitive-color_blue700: hsl(200, 100%, 30%);
+  --mas-primitive-color_blue800: hsl(200, 100%, 26%);
+  --mas-primitive-color_blue900: hsl(200, 85%, 20%);
+  /** Teal */
+  --mas-primitive-color_teal100: hsl(179, 70%, 88%);
+  --mas-primitive-color_teal200: hsl(179, 76%, 80%);
+  --mas-primitive-color_teal300: hsl(179, 77%, 68%);
+  --mas-primitive-color_teal400: hsl(179, 83%, 48%);
+  --mas-primitive-color_teal500: hsl(179, 100%, 39%);
+  --mas-primitive-color_teal600: hsl(179, 100%, 31%);
+  --mas-primitive-color_teal700: hsl(179, 100%, 26%);
+  --mas-primitive-color_teal800: hsl(179, 100%, 21%);
+  --mas-primitive-color_teal900: hsl(179, 100%, 16%);
+  /** Green */
+  --mas-primitive-color_green100: hsl(79, 65%, 88%);
+  --mas-primitive-color_green200: hsl(79, 70%, 76%);
+  --mas-primitive-color_green300: hsl(79, 70%, 64%);
+  --mas-primitive-color_green400: hsl(79, 70%, 52%);
+  --mas-primitive-color_green500: hsl(79, 70%, 40%);
+  --mas-primitive-color_green600: hsl(79, 70%, 34%);
+  --mas-primitive-color_green700: hsl(79, 70%, 28%);
+  --mas-primitive-color_green800: hsl(79, 70%, 22%);
+  --mas-primitive-color_green900: hsl(79, 65%, 16%);
+  /** Purple  */
+  --mas-primitive-color_purple100: hsl(295, 35%, 93%);
+  --mas-primitive-color_purple200: hsl(295, 35%, 83%);
+  --mas-primitive-color_purple300: hsl(295, 35%, 72%);
+  --mas-primitive-color_purple400: hsl(295, 35%, 61%);
+  --mas-primitive-color_purple500: hsl(295, 35%, 51%);
+  --mas-primitive-color_purple600: hsl(295, 35%, 44%);
+  --mas-primitive-color_purple700: hsl(295, 35%, 37%);
+  --mas-primitive-color_purple800: hsl(295, 35%, 30%);
+  --mas-primitive-color_purple900: hsl(295, 35%, 24%);
+  /** Red */
+  --mas-primitive-color_red100: hsl(350, 85%, 92%);
+  --mas-primitive-color_red200: hsl(350, 85%, 83%);
+  --mas-primitive-color_red300: hsl(350, 85%, 74%);
+  --mas-primitive-color_red400: hsl(350, 85%, 65%);
+  --mas-primitive-color_red500: hsl(350, 85%, 56%);
+  --mas-primitive-color_red600: hsl(350, 75%, 47%);
+  --mas-primitive-color_red700: hsl(350, 75%, 38%);
+  --mas-primitive-color_red800: hsl(350, 75%, 29%);
+  --mas-primitive-color_red900: hsl(350, 75%, 20%);
+  /** Grey  */
+  --mas-primitive-color_grey100: hsl(240, 9%, 98%);
+  --mas-primitive-color_grey200: hsl(240, 9%, 94%);
+  --mas-primitive-color_grey300: hsl(240, 5%, 85%);
+
+  --mas-primitive-color_grey400--h: 240;
+  --mas-primitive-color_grey400--s: 1%;
+  --mas-primitive-color_grey400--l: 70%;
+  --mas-primitive-color_grey400: hsl(
+    var(--mas-primitive-color_grey400--h),
+    var(--mas-primitive-color_grey400--s),
+    var(--mas-primitive-color_grey400--l)
+  );
+
+  --mas-primitive-color_grey500--h: 0;
+  --mas-primitive-color_grey500--s: 0%;
+  --mas-primitive-color_grey500--l: 45%;
+  --mas-primitive-color_grey500: hsl(
+    var(--mas-primitive-color_grey500--h),
+    var(--mas-primitive-color_grey500--s),
+    var(--mas-primitive-color_grey500--l)
+  );
+
+  --mas-primitive-color_grey600--h: 240;
+  --mas-primitive-color_grey600--s: 3%;
+  --mas-primitive-color_grey600--l: 30%;
+  --mas-primitive-color_grey600: hsl(
+    var(--mas-primitive-color_grey600--h),
+    var(--mas-primitive-color_grey600--s),
+    var(--mas-primitive-color_grey600--l)
+  );
+
+  --mas-primitive-color_grey700--h: 240;
+  --mas-primitive-color_grey700--s: 4%;
+  --mas-primitive-color_grey700--l: 23%;
+  --mas-primitive-color_grey700: hsl(
+    var(--mas-primitive-color_grey700--h),
+    var(--mas-primitive-color_grey700--l),
+    var(--mas-primitive-color_grey700--s)
+  );
+
+  --mas-primitive-color_grey800--h: 240;
+  --mas-primitive-color_grey800--s: 5%;
+  --mas-primitive-color_grey800--l: 17%;
+  --mas-primitive-color_grey800: hsl(
+    var(--mas-primitive-color_grey800--h),
+    var(--mas-primitive-color_grey800--s),
+    var(--mas-primitive-color_grey800--l)
+  );
+
+  --mas-primitive-color_grey900--h: 240;
+  --mas-primitive-color_grey900--s: 4%;
+  --mas-primitive-color_grey900--l: 5%;
+  --mas-primitive-color_grey900: hsl(
+    var(--mas-primitive-color_grey900--h),
+    var(--mas-primitive-color_grey900--s),
+    var(--mas-primitive-color_grey900--l)
+  );
+  /** White */
+  --mas-primitive-color_white--h: 0;
+  --mas-primitive-color_white--s: 0%;
+  --mas-primitive-color_white--l: 100%;
+  --mas-primitive-color_white: hsl(
+    var(--mas-primitive-color_white--h),
+    var(--mas-primitive-color_white--s),
+    var(--mas-primitive-color_white--l)
+  );
+  /** Black */
+  --mas-primitive-color_black: hsl(0, 0%, 0%);
+}

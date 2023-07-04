@@ -1,0 +1,124 @@
+:root {
+  /** Font Family */
+  --mas-typo_font-family: 'Raleway';
+  --mas-typo_font-family--inter: 'Inter Tight';
+  /** Font Weight  */
+  --mas-typo_display-font-weight: 700;
+  --mas-typo_headline-font-weight: 700;
+  --mas-typo_subtitle-font-weight: 600;
+  --mas-typo_body-font-weight--bold: 600;
+  --mas-typo_body-font-weight: 400;
+  --mas-typo_caption-font-weight: 600;
+  --mas-typo_overline-font-weight: 600;
+  /** Font Size */
+  --mas-typo_display-1-font-size: 48px;
+  --mas-typo_display-2-font-size: 40px;
+  --mas-typo_display-3-font-size: 32px;
+  --mas-typo_headline-1-font-size: 28px;
+  --mas-typo_headline-2-font-size: 24px;
+  --mas-typo_headline-3-font-size: 20px;
+  --mas-typo_subtitle-1-font-size: 18px;
+  --mas-typo_subtitle-2-font-size: 16px;
+  --mas-typo_subtitle-3-font-size: 14px;
+  --mas-typo_body-1-font-size: 18px;
+  --mas-typo_body-2-font-size: 16px;
+  --mas-typo_body-3-font-size: 14px;
+  --mas-typo_caption-font-size: 12px;
+  --mas-typo_overline-font-size: 10px;
+  /** Line Height */
+  --mas-typo_display-1-line-height: 56px;
+  --mas-typo_display-2-line-height: 48px;
+  --mas-typo_display-3-line-height: 40px;
+  --mas-typo_headline-1-line-height: 36px;
+  --mas-typo_headline-2-line-height: 32px;
+  --mas-typo_headline-3-line-height: 28px;
+  --mas-typo_subtitle-1-line-height: 24px;
+  --mas-typo_subtitle-2-line-height: 24px;
+  --mas-typo_subtitle-3-line-height: 20px;
+  --mas-typo_body-1-line-height: 24px;
+  --mas-typo_body-2-line-height: 24px;
+  --mas-typo_body-3-line-height: 20px;
+  --mas-typo_caption-line-height: 16px;
+  --mas-typo_overline-line-height: 12px;
+}
+
+/** Mobile */
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  :root,
+  * {
+    /* Font size */
+    --mas-typo_display-1-font-size: 48px;
+    --mas-typo_display-2-font-size: 40px;
+    --mas-typo_display-3-font-size: 32px;
+    --mas-typo_headline-1-font-size: 28px;
+    --mas-typo_headline-2-font-size: 24px;
+    --mas-typo_headline-3-font-size: 20px;
+    --mas-typo_subtitle-1-font-size: 18px;
+    --mas-typo_subtitle-2-font-size: 16px;
+    --mas-typo_subtitle-3-font-size: 14px;
+    /* Line Height */
+    --mas-typo_display-1-line-height: 56px;
+    --mas-typo_display-2-line-height: 48px;
+    --mas-typo_display-3-line-height: 40px;
+    --mas-typo_headline-1-line-height: 36px;
+    --mas-typo_headline-2-line-height: 32px;
+    --mas-typo_headline-3-line-height: 28px;
+    --mas-typo_subtitle-1-line-height: 24px;
+    --mas-typo_subtitle-2-line-height: 24px;
+    --mas-typo_subtitle-3-line-height: 20px;
+  }
+}
+
+/** Tablet */
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+  :root,
+  * {
+    /* Font size */
+    --mas-typo_display-1-font-size: 56px;
+    --mas-typo_display-2-font-size: 48px;
+    --mas-typo_display-3-font-size: 40px;
+    --mas-typo_headline-1-font-size: 32px;
+    --mas-typo_headline-2-font-size: 28px;
+    --mas-typo_headline-3-font-size: 24px;
+    --mas-typo_subtitle-1-font-size: 20px;
+    --mas-typo_subtitle-2-font-size: 18px;
+    --mas-typo_subtitle-3-font-size: 16px;
+    /* Line Height */
+    --mas-typo_display-1-line-height: 64px;
+    --mas-typo_display-2-line-height: 56px;
+    --mas-typo_display-3-line-height: 48px;
+    --mas-typo_headline-1-line-height: 40px;
+    --mas-typo_headline-2-line-height: 36px;
+    --mas-typo_headline-3-line-height: 32px;
+    --mas-typo_subtitle-1-line-height: 28px;
+    --mas-typo_subtitle-2-line-height: 24px;
+    --mas-typo_subtitle-3-line-height: 24px;
+  }
+}
+
+/** Desktop */
+@media screen and (min-width: 1200px) and (max-width: 1799px) {
+  :root,
+  * {
+    /* Font size */
+    --mas-typo_display-1-font-size: 80px;
+    --mas-typo_display-2-font-size: 64px;
+    --mas-typo_display-3-font-size: 48px;
+    --mas-typo_headline-1-font-size: 40px;
+    --mas-typo_headline-2-font-size: 32px;
+    --mas-typo_headline-3-font-size: 24px;
+    --mas-typo_subtitle-1-font-size: 20px;
+    --mas-typo_subtitle-2-font-size: 18px;
+    --mas-typo_subtitle-3-font-size: 16px;
+    /* Line Height */
+    --mas-typo_display-1-line-height: 88px;
+    --mas-typo_display-2-line-height: 72px;
+    --mas-typo_display-3-line-height: 56px;
+    --mas-typo_headline-1-line-height: 48px;
+    --mas-typo_headline-2-line-height: 40px;
+    --mas-typo_headline-3-line-height: 32px;
+    --mas-typo_subtitle-1-line-height: 28px;
+    --mas-typo_subtitle-2-line-height: 24px;
+    --mas-typo_subtitle-3-line-height: 24px;
+  }
+}
