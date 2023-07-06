@@ -1,30 +1,70 @@
+<br>
+<p align="center">
+  <img
+    width="300px"
+    src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/2539ca31ff4f12b26ccf4d131fc19e16.png"
+    alt="Vitamin Decathlon Design System logo" />
+</p>
+
+<h1 align="center">Bouygues Contruction IT - </h1>
+
+<p align="center">Masoni Design System libraries for Angular applications</p>
+
+<p align="center">
+  <a href="#">Website</a> - <a href="https://bouygues-construction.github.io/design-system-bycn">Showcases</a>
+</p>
+
 ## Introduction
 
-BYCN Design System helps to build Bouygues Construction products faster, more efficiently and more sustainably.
+[BYCN Design System](#) helps to build Bouygues Construction products faster, more efficiently and more sustainably.
 
 Masoni Design System libraries for Angular web applications
 
 ## Core packages
 
-### Specific CSS styles
+### CSS styles
 
-> @masoni/css
+> `@masoni/css`
 
-[Masoni CSS Storybook](https://bouygues-construction.github.io/design-system-bycn/main/showcases-css)
+This package provides you with a complete CSS with a huge set of utility classes as it is generated with Tailwind CSS. Then it will be up to you to optimize for production by purging the CSS according to the classes used in your HTML:
 
-> @masoni/design-tokens
+|                                                                                                                               |                                                                                            |          |
+| ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | -------- |
+| [README](https://github.com/bouygues-construction/design-system-bycn/tree/dangkhoa/project-initialize/projects/css/README.md) | [Storybook](https://bouygues-construction.github.io/design-system-bycn/main/showcases-css) | [npm](#) |
 
-> @masoni/components
+These following packages allow the consumption of elements with a higher level of granularity.
 
-[Masoni Components Storybook](https://bouygues-construction.github.io/design-system-bycn/main/showcases-components)
+> ` @masoni/css-design-tokens`
 
-> @masoni/utilities
+|                                                                                                                                                 |                                                                                                                                |          |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | -------- |
+| [README](https://github.com/bouygues-construction/design-system-bycn/tree/dangkhoa/project-initialize/projects/css/src/design_tokens/README.md) | [Storybook](https://bouygues-construction.github.io/design-system-bycn/main/showcases-css/?path=/docs/guidelines-colors--docs) | [npm](#) |
+
+> `@masoni/css-components`
+
+|                                                                                                                                              |                                                                                                                                       |          |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| [README](https://github.com/bouygues-construction/design-system-bycn/tree/dangkhoa/project-initialize/projects/css/src/components/README.md) | [Storybook](https://bouygues-construction.github.io/design-system-bycn/main/showcases-css/?path=/story/components-checkbox--overview) | [npm](#) |
 
 ### Icons
 
-> @masoni/icons
+> `@masoni/icons`
+
+This package provides you with a library of SVG icons that you can include in your project:
+
+|             |                |          |
+| ----------- | -------------- | -------- |
+| [README](#) | [Storybook](#) | [npm](#) |
 
 ### Components
+
+This package provides you with a library of Masoni Angular Components:
+
+> `@masoni/components`
+
+|                                                                                                                                      |                                                                                                    |          |
+| ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- | -------- |
+| [README](https://github.com/bouygues-construction/design-system-bycn/tree/dangkhoa/project-initialize/projects/components/README.md) | [Storybook](https://bouygues-construction.github.io/design-system-bycn/main/showcases-components/) | [npm](#) |
 
 ## License
 
