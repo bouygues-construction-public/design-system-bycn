@@ -1,0 +1,8 @@
+<div class="chip">
+    <div class="chip-content">
+        <span class="chip-icon" *ngIf="icon">{{ icon }}</span>
+        <img class="chip-image" *ngIf="imageUrl" [src]="imageUrl" alt="Chip Image" />
+        <span class="chip-label">{{ label }}</span>
+      </div>
+    <button *ngIf="removable" class="chip-remove" (click)="removeChip()">&times;</button>
+  </div>
