@@ -5,13 +5,19 @@ const config: StorybookConfig = {
     '../stories/**/*.stories.@(ts|tsx|mdx)',
   ],
   addons: [
-    '@storybook/addon-links',
-    '@storybook/addon-essentials',
+    '@storybook/addon-links', 
     '@storybook/addon-interactions',
+    '@storybook/addon-actions',
     {
       name: '@storybook/addon-styling',
       options: {
         cssModules: true,
+      },
+    },
+    {
+      name: '@storybook/addon-essentials',
+      options: {
+        actions: false, // Disable comment extraction for actions addon
       },
     },
   ],
