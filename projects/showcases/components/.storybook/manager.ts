@@ -1,7 +1,7 @@
 // .storybook/manager.js
 import { addons } from '@storybook/manager-api';
 import { themes } from '@storybook/theming';
-import masCssLogo from '../public/assets/favicon.svg'
+import masCssLogo from '../../static/assets/favicon.svg'
 
 addons.setConfig({
     panelPosition: 'right',

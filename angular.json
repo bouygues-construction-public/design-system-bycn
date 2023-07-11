@@ -88,6 +88,37 @@
         }
       }
     },
+    "showcases-components": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/showcases/components",
+      "architect": {
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": "projects/showcases/components/.storybook",
+            "compodoc": false,
+            "port": 6007
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/showcases/components/.storybook",
+            "compodoc": false,
+            "outputDir": "dist/showcases-components"
+          }
+        },
+        "publish-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": "projects/showcases/components/.storybook",
+            "compodoc": false,
+            "outputDir": "docs/main/showcases-components"
+          }
+        }
+      }
+    },
 
     "showcases-icons": {
       "projectType": "application",

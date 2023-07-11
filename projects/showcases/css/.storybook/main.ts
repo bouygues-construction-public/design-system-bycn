@@ -16,7 +16,7 @@ const config: StorybookConfig = {
       },
     },
   ],
-  staticDirs: ['../stories/fonts'],
+  staticDirs: ['../../static'],
   framework: {
     name: '@storybook/angular',
     options: {},

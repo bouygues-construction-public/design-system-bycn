@@ -23,6 +23,7 @@ design-system-bycn/
         showcases/
             css/
             icons/
+            components/
 ```
 
 # Local development
