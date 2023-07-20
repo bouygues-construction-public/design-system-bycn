@@ -1,0 +1,14 @@
+import { Meta, Source } from '@storybook/addon-docs';
+import tailwind from '@masoni/css-tailwind-preset';
+
+<Meta title="Guidelines / Spacings" />
+
+# Spacings
+
+> Spacings creates a visual balance that makes the user interface easier to scan, and allow consistency on different layout.
+
+For more detail, see our [Spacing's guideline](https://zeroheight.com/9b39bb2a0/p/01e423-spacings/b/505645)
+
+<Source language="json" code={JSON.stringify(tailwind.theme.spacing, null, 2)} />
+
+These values will override the [Tailwind CSS' default spacing scale](https://tailwindcss.com/docs/customizing-spacing#default-spacing-scale) and generates classes like `p-10`, `w-8`, `h-6`, etc.

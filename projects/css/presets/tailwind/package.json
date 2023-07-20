@@ -1,0 +1,44 @@
+{
+  "name": "@masoni/css-tailwind-preset",
+  "version": "0.0.1",
+  "description": "Bouygues Design System - Masoni CSS Tailwind preset",
+  "keywords": [
+    "design-system",
+    "ui-kit",
+    "libraries",
+    "css",
+    "tailwind",
+    "masoni"
+  ],
+  "homepage": "https://github.com/bouygues-construction/design-system-bycn",
+  "bugs": {
+    "url": "https://github.com/bouygues-construction/design-system-bycn/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bouygues-construction/design-system-bycn.git"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "theme.js",
+    "dist",
+    "package.json",
+    "tsconfig.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@masoni/css": "file:../..",
+    "@masoni/css-design-tokens": "file:../../src/design_tokens"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prebuild": "tsc"
+  }
+}

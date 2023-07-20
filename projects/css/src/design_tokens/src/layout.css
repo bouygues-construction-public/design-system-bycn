@@ -1,0 +1,11 @@
+:root {
+  --mas-layout-gutter_mobile: 16px;
+  --mas-layout-gutter_tablet: 16px;
+  --mas-layout-gutter_desktop: 24px;
+  --mas-layout-margin_mobile: 16px;
+  --mas-layout-margin_tablet: 24px;
+  --mas-layout-margin_desktop: 32px;
+  --mas-layout-column_mobile: 8px;
+  --mas-layout-column_tablet: 12px;
+  --mas-layout-column_desktop: 12px;
+}
