@@ -9,6 +9,11 @@
   "license": "ISC",
   "devDependencies": {
     "@masoni/css": "file:../../css",
+<<<<<<< HEAD
     "@masoni/css-tailwind-preset": "file:../../css/presets/tailwind"
+=======
+    "@masoni/css-tailwind-preset": "file:../../css/presets/tailwind",
+    "@masoni/css-toggle-button": "file:../../css/src/components/togglebutton"
+>>>>>>> e816b52 (toggle init)
   }
 }

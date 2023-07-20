@@ -1,0 +1,94 @@
+import {
+  ChangeDetectorRef,
+  Component,
+  ElementRef,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+  ViewChild,
+  forwardRef,
+} from '@angular/core';
+import { ControlValueAccessor, FormControl, NG_ASYNC_VALIDATORS } from '@angular/forms';
+import '@masoni/css-toggle-button/dist/index.css';
+
+export interface ToggleButtonEvent {}
+@Component({
+  selector: 'mas-toggle-button',
+  templateUrl: 'toggle-button.component.html',
+  providers: [
+    {
+      provide: NG_ASYNC_VALIDATORS,
+      useExisting: forwardRef(() => MasToggleButton),
+      multi: true,
+    },
+  ],
+})
+export class MasToggleButton implements OnInit, ControlValueAccessor {
+  protected _disabled: boolean = false;
+  protected _checked: boolean = false ;
+
+  @Input()
+  set checked(value: boolean) {
+    if (this.checked !== value) {
+      this.checked = value;
+    }
+  }
+  get checked(): boolean {
+    return this._checked;
+  }
+  @Input() formControl: FormControl | undefined;
+  @Input() labelText: string | undefined = '';
+  @Input() identifier: string = '';
+  @Input() name: string | undefined;
+  @Input() size: 'S' | 'L' = 'S';
+  @Input()
+  set disabled(value: boolean) {
+    this._disabled = value;
+  }
+  get disabled(): boolean {
+    return this._disabled;
+  }
+  @Output() change: EventEmitter<ToggleButtonEvent> = new EventEmitter<ToggleButtonEvent>();
+  @Output() onFocus: EventEmitter<Event> = new EventEmitter<Event>();
+  @Output() onBlur: EventEmitter<Event> = new EventEmitter<Event>();
+  @ViewChild('tbutton') inputViewChild!: ElementRef;
+  model: any;
+  onModelChange: Function = () => {};
+  onModelTouched: Function = () => {};
+
+  constructor(public cd: ChangeDetectorRef) {}
+  writeValue(obj: any): void {
+    this.model = obj;
+    this.cd.markForCheck();
+  }
+  registerOnChange(fn: any): void {
+    this.onModelChange = fn;
+  }
+  registerOnTouched(fn: any): void {
+    this.onModelTouched = fn;
+  }
+  setDisabledState?(isDisabled: boolean): void {
+    this.disabled = isDisabled;
+    this.cd.markForCheck();
+  }
+  updateModel(event: Event) {
+    let newModelValue = this.checked;
+
+    this.onModelChange(newModelValue);
+    this.model = newModelValue;
+    if (this.formControl) {
+      this.formControl.setValue(newModelValue);
+    }
+    this.change.emit({ checked: newModelValue, originalEvent: event });
+  }
+  onClick(event: Event, toggleButton: HTMLElement) {
+    this.onModelTouched();
+    if (!this.disabled) {
+      this._checked = !this._checked;
+      this.updateModel(event);
+      toggleButton.focus();
+    }
+  }
+  ngOnInit() {}
+}

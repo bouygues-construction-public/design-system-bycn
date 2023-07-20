@@ -6,6 +6,10 @@
     "resolveJsonModule": true
   },
   "exclude": ["../test.ts", "../**/*.spec.ts"],
+<<<<<<< HEAD
   "include": ["../**/*", "./preview.ts"],
+=======
+  "include": ["../**/*", "./preview.ts", "../../../../postcss.config.js"],
+>>>>>>> e816b52 (toggle init)
   "files": ["./typings.d.ts"]
 }
