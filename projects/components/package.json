@@ -20,5 +20,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "devDependencies": {
+    "@masoni/css-checkbox": "file:../css/src/components/checkbox"
+  }
 }

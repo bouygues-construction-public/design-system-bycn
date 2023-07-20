@@ -1,0 +1,133 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+.mas-checkbox {
+  display: inline-flex;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: bottom;
+  align-items: center;
+  position: relative;
+}
+.mas-checkbox--large {
+  margin-top: 5.5px;
+}
+.mas-checkbox--large > .mas-checkbox_touch-target {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+}
+.mas-checkbox--large > .mas-checkbox_label {
+  font-size: var(--mas-typo_body-2-font-size);
+  line-height: var(--mas-typo_body-2-line-height);
+}
+.mas-checkbox--large > .mas-checkbox-box {
+  border-width: 2px;
+  margin-block-start: 0px;
+  margin-inline-end: 12px;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  border-color: var(--mas-semantic-color_action-tiertiary--default);
+  transition: var(--mas-transition_focus-visible);
+}
+
+.mas-checkbox_touch-target {
+  position: absolute;
+  z-index: 1;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+.hidden-accessible {
+  position: absolute;
+  opacity: 0;
+}
+.mas-checkbox_label {
+  font-size: var(--mas-typo_body-3-font-size);
+  line-height: var(--mas-typo_body-3-line-height);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--mas-typo_font-family--inter);
+  font-weight: var(--mas-typo_body-font-weight);
+  cursor: pointer;
+  user-select: none;
+  color: var(--mas-semantic-color_text-primary);
+}
+.mas-checkbox-box {
+  display: flex;
+  border-width: 1.5px;
+  border-style: solid;
+  margin-block-start: 0px;
+  margin-inline-end: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: var(--mas-radius_1);
+  border-color: var(--mas-semantic-color_action-tiertiary--default);
+  transition: var(--mas-transition_focus-visible);
+}
+.hidden-accessible:not(:checked, :disabled) + .mas-checkbox_touch-target:hover {
+  box-shadow: 0 0 0 4px
+    hsla(
+      var(--mas-primitive-color_grey400--h),
+      var(--mas-primitive-color_grey400--s),
+      var(--mas-primitive-color_grey400--l),
+      0.12
+    );
+}
+.hidden-accessible:checked:not(:disabled) + .mas-checkbox_touch-target:hover {
+  box-shadow: 0 0 0 4px
+    hsla(
+      var(--mas-primitive-color_blue600--h),
+      var(--mas-primitive-color_blue600--s),
+      var(--mas-primitive-color_blue600--l),
+      0.12
+    );
+}
+.hidden-accessible:checked:not(:disabled) + .mas-checkbox_touch-target:active {
+  box-shadow: 0 0 0 4px
+    hsla(
+      var(--mas-primitive-color_blue600--h),
+      var(--mas-primitive-color_blue600--s),
+      var(--mas-primitive-color_blue600--l),
+      0.24
+    );
+}
+.hidden-accessible:not(:checked, :disabled) + .mas-checkbox_touch-target:active {
+  box-shadow: 0 0 0 4px
+    hsla(
+      var(--mas-primitive-color_grey400--h),
+      var(--mas-primitive-color_grey400--s),
+      var(--mas-primitive-color_grey400--l),
+      0.24
+    );
+}
+.hidden-accessible:indeterminate:not(:disabled) + .mas-checkbox_touch-target:hover {
+  box-shadow: 0 0 0 4px
+    hsla(
+      var(--mas-primitive-color_blue600--h),
+      var(--mas-primitive-color_blue600--s),
+      var(--mas-primitive-color_blue600--l),
+      0.12
+    );
+}
+.hidden-accessible:indeterminate:not(:disabled) + .mas-checkbox_touch-target:active {
+  box-shadow: 0 0 0 4px
+    hsla(
+      var(--mas-primitive-color_blue600--h),
+      var(--mas-primitive-color_blue600--s),
+      var(--mas-primitive-color_blue600--l),
+      0.24
+    );
+}
+.mas-checkbox-box--active {
+  background-color: var(--mas-semantic-color_action-primary--default);
+  border-color: var(--mas-semantic-color_action-primary--default) !important;
+}
+.mas-checkbox--disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
