@@ -8,7 +8,9 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "@masoni/components": "file:../../components",
     "@masoni/css": "file:../../css",
+    "@masoni/css-chip": "file:../../css/src/components/chip",
     "@masoni/css-tailwind-preset": "file:../../css/presets/tailwind"
   }
 }

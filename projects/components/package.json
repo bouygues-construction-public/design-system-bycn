@@ -20,5 +20,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "devDependencies": {
+    "@masoni/css-chip": "file:../css/src/components/chip"
+  }
 }
