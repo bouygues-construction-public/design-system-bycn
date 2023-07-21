@@ -7,6 +7,7 @@ import '@masoni/css-sub-elements/dist/index.css';
   selector: 'mas-error',
   template: `
     <div *ngIf="display && errorMessage" role="alert" class="mas-error">
+      <i class="mas-icon mas-warningcircle-filled"></i>
       <ng-container *ngIf="!isTemplate(errorMessage)">{{ errorMessage }}</ng-container>
       <ng-template *ngIf="isTemplate(errorMessage)" [ngTemplateOutlet]="errorMessage"></ng-template>
     </div>

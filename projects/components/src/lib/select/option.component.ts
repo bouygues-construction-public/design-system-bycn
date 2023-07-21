@@ -1,5 +1,5 @@
 import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
-import { any } from 'prop-types';
+import '@masoni/icons/dist/css/mas-icons.css';
 
 export interface Option<T = any> {
   label?: string;
@@ -9,7 +9,8 @@ export interface Option<T = any> {
 }
 @Component({
   selector: 'mas-option',
-  template: `<img class="" alt="check" *ngIf="selected"> <span class="mas-typo_body-3 mas-option_text" #text><ng-content></ng-content></span> `,
+  template: `<i class="mas-check-outlined mas-icon" *ngIf="selected"></i>
+    <span class="mas-typo_body-3 mas-option_text" #text><ng-content></ng-content></span> `,
   host: {
     '[class.mas-option--selected]': '_selected',
     class: 'mas-option',

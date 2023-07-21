@@ -11,10 +11,12 @@
     <ng-template *ngIf="isTemplate(label)" [ngTemplateOutlet]="label"></ng-template>
   </label>
   <div class="mas-select_value-wrapper" [ngSwitch]="empty" (click)="toggle()" (change)="onChange($event)">
-    <span class="mas-select-placeholder mas-select-min-line" *ngSwitchCase="true">{{placeholder}}</span>
+    <i class="mas-warningcircle-outlined mas-icon" *ngSwitchCase="true"></i>
+    <span class="mas-select-placeholder mas-select-min-line" *ngSwitchCase="true">{{ placeholder }}</span>
     <span class="mas-select_text mas-select-min-line" *ngSwitchCase="false">
       {{ triggerValue }}
     </span>
+    <i class="mas-caretdown-outlined mas-icon"></i>
   </div>
   <!-- ! listbox -->
   <ng-template [ngIf]="panelOpen">
