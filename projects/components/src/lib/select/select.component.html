@@ -13,7 +13,7 @@
   </label>
   <div class="mas-select_value-wrapper" [ngSwitch]="empty" (click)="toggle()" (change)="onChange($event)" [ngClass]="{'mas-select_listbox--opened': panelOpen}">
     <i class="mas-warningcircle-outlined mas-icon" *ngSwitchCase="true"></i>
-    <span class="mas-select-placeholder mas-select-min-line" *ngSwitchCase="true">{{ placeholder }}</span>
+    <span class="mas-select-placeholder mas-select-min-line" *ngSwitchCase="true" [ngClass]="{'mas-select--filled': filled}">{{ placeholder }}</span>
     <span class="mas-select_text mas-select-min-line" *ngSwitchCase="false">
       {{ triggerValue }}
     </span>

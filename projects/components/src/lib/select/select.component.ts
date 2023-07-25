@@ -45,6 +45,7 @@ export class MasSelect implements ControlValueAccessor, AfterContentInit {
   @Input() disabled: boolean = false;
   @Input() invalid: boolean = false;
   @Input() size: 'M' | 'S' = 'S';
+  @Input() filled: boolean = false;
   @Input()
   set value(value: string) {
     this._value = value;
