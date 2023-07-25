@@ -1,7 +1,7 @@
 /* x y blur spread color */
 :root {
-  --mas-shadow_100: 0px 1px 1px var(--mas-primitive-color_grey500);
-  --mas-shadow_200: 0px 2px 2px var(--mas-primitive-color_grey500);
-  --mas-shadow_300: 0px 3px 3px var(--mas-primitive-color_grey500);
-  --mas-shadow_400: 0px 4px 4px var(--mas-primitive-color_grey500);
+  --mas-shadow_100: 0px 1px 1px;
+  --mas-shadow_200: 0px 2px 2px;
+  --mas-shadow_300: 0px 3px 3px;
+  --mas-shadow_400: 0px 4px 4px;
 }
