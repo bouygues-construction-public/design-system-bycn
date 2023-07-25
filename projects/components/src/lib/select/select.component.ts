@@ -5,20 +5,17 @@ import {
   ElementRef,
   EventEmitter,
   Input,
-  OnInit,
   Output,
   NgZone,
   QueryList,
   TemplateRef,
-  ViewChild,
   AfterContentInit,
+  HostListener,
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import '@masoni/css-select/dist/index.css';
-import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 import { MasOption } from './option.component';
 import { Observable, Subject, defer, map, merge, startWith, switchMap, take, takeUntil, tap } from 'rxjs';
-import { option } from 'yargs';
 export interface selectedOption {
   option: MasOption | undefined;
   isSelected: boolean;
@@ -34,10 +31,10 @@ export interface selectedOption {
     },
   ],
 })
-export class MasSelect implements ControlValueAccessor, AfterViewInit, AfterContentInit {
+export class MasSelect implements ControlValueAccessor, AfterContentInit {
   static selectCount = 0;
   protected _value: string = '';
-  protected selected: selectedOption = { option: undefined, isSelected: false }; // ? do we need other parameters like: value and TriggerValue
+  protected selected: selectedOption = { option: undefined, isSelected: false };
   private _panelOpen: boolean = false;
   private _placeholder: string;
 
@@ -47,8 +44,7 @@ export class MasSelect implements ControlValueAccessor, AfterViewInit, AfterCont
   @Input() identifier = `select-${MasSelect.selectCount++}`;
   @Input() disabled: boolean = false;
   @Input() invalid: boolean = false;
-  @Input() size: 'medium' | 'small' = 'small'; // ! not define setup in the component yet
-  // ? NEEDED? ===============================================
+  @Input() size: 'M' | 'S' = 'S';
   @Input()
   set value(value: string) {
     this._value = value;
@@ -57,9 +53,8 @@ export class MasSelect implements ControlValueAccessor, AfterViewInit, AfterCont
     if (this.empty) {
       return '';
     }
-    return this.options.filter((option) => option.selected)[0].value; //this.options;
+    return this.options.filter((option) => option.selected)[0].value;
   }
-  // ? ========================================================
   @Input()
   get placeholder(): string {
     return this._placeholder;
@@ -83,16 +78,18 @@ export class MasSelect implements ControlValueAccessor, AfterViewInit, AfterCont
   }
   @ContentChildren(MasOption) options: QueryList<MasOption>;
 
-  ngAfterViewInit() {
-    // todo: place to init value of parameters
-  }
   ngAfterContentInit() {
     this.options.changes.pipe(startWith(null), takeUntil(this._destroy)).subscribe(() => {
       this._resetOptions();
     });
   }
-  constructor(protected _ngZone: NgZone) {}
-
+  constructor(protected _ngZone: NgZone, protected eRef: ElementRef) {}
+  @HostListener('document:click', ['$event'])
+  clickOut(event: Event) {
+    if (!this.eRef.nativeElement.contains(event.target)) {
+      this.close();
+    }
+  }
   readonly optionChanges: Observable<any> = defer(() => {
     const options = this.options;
     if (options) {
@@ -129,7 +126,6 @@ export class MasSelect implements ControlValueAccessor, AfterViewInit, AfterCont
     }
   }
   toggle() {
-    console.log('_panelOpen: ' + this._panelOpen);
     this.panelOpen ? this.close() : this.open();
   }
   open() {
@@ -140,8 +136,6 @@ export class MasSelect implements ControlValueAccessor, AfterViewInit, AfterCont
   }
   focus() {}
   onChange(event: any) {
-    // this.value = event.target.value;
-    console.log('onChange');
     this.onChangeHandler(event.target.value);
     this.change.emit(event.target.value);
   }
@@ -149,7 +143,7 @@ export class MasSelect implements ControlValueAccessor, AfterViewInit, AfterCont
     this.onTouchedHandler();
   }
   public isTemplate(value: any) {
-    return value instanceof TemplateRef; // ? what's this ?
+    return value instanceof TemplateRef;
   }
 
   protected onChangeHandler = (_: any) => {};

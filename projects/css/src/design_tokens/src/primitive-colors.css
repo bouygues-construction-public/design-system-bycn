@@ -1,4 +1,4 @@
-:root{
+:root {
   /** Amber */
   --mas-primitive-color_amber100--h: 0;
   --mas-primitive-color_amber100--s: 90%;
@@ -86,6 +86,9 @@
   --mas-primitive-color_red200: hsl(350, 85%, 83%);
   --mas-primitive-color_red300: hsl(350, 85%, 74%);
   --mas-primitive-color_red400: hsl(350, 85%, 65%);
+  --mas-primitive-color_red500--h: 350;
+  --mas-primitive-color_red500--s: 85%;
+  --mas-primitive-color_red500--l: 56%;
   --mas-primitive-color_red500: hsl(350, 85%, 56%);
   --mas-primitive-color_red600: hsl(350, 75%, 47%);
   --mas-primitive-color_red700: hsl(350, 75%, 38%);

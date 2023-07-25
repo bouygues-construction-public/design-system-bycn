@@ -2,15 +2,16 @@
   class="mas-select"
   [ngClass]="{
     'mas-select--invalid': invalid,
-    'mas-select--disabled': disabled
+    'mas-select--disabled': disabled,
+    'mas-select--medium': size === 'M',
+    'mas-select--small': size === 'S'
   }"
 >
-  <!-- ! label text -->
   <label *ngIf="label" [for]="identifier" class="mas-select_label">
     <ng-container *ngIf="!isTemplate(label)">{{ label }}</ng-container>
     <ng-template *ngIf="isTemplate(label)" [ngTemplateOutlet]="label"></ng-template>
   </label>
-  <div class="mas-select_value-wrapper" [ngSwitch]="empty" (click)="toggle()" (change)="onChange($event)">
+  <div class="mas-select_value-wrapper" [ngSwitch]="empty" (click)="toggle()" (change)="onChange($event)" [ngClass]="{'mas-select_listbox--opened': panelOpen}">
     <i class="mas-warningcircle-outlined mas-icon" *ngSwitchCase="true"></i>
     <span class="mas-select-placeholder mas-select-min-line" *ngSwitchCase="true">{{ placeholder }}</span>
     <span class="mas-select_text mas-select-min-line" *ngSwitchCase="false">
@@ -26,9 +27,6 @@
       </div>
     </div>
   </ng-template>
-
-  <!-- ! invalid message -->
-  <mas-error [display]="invalid" [errorMessage]="errorMessage"></mas-error>
-  <!-- ! helper Text -->
-  <mas-helper [display]="!invalid" [helperText]="helperText"></mas-helper>
 </div>
+<mas-error [display]="invalid" [errorMessage]="errorMessage"></mas-error>
+<mas-helper [display]="!invalid" [helperText]="helperText"></mas-helper>
