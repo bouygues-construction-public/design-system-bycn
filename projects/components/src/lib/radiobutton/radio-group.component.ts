@@ -113,7 +113,6 @@ export class MasRadioGroup implements ControlValueAccessor, AfterContentInit, Af
         this._selected = event.source;
         this._value = event.value;
         this.change.emit(event);
-        console.log(event.value);
         this._controlValueAccessorChangeFn(event.value);
         this._onTouched();
       });
