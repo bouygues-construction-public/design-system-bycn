@@ -3,7 +3,7 @@
   [ngClass]="{ 'mas-toggle-button--large': size === 'L', 'mas-toggle-button--disabled': disabled}"
 >
   <div class="mas-toggle-button_switch" (click)="onClick($event, tbutton)">
-    <input #tbutton type="checkbox" class="hidden-accessible" [id]="identifier" [disabled]="disabled" />
+    <input #tbutton type="checkbox" class="hidden-accessible" [id]="identifier" [disabled]="disabled" [checked]="checked"/>
     <span aria-hidden=""></span>
   </div>
 </div>

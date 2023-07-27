@@ -9,7 +9,7 @@ import {
   ViewChild,
   forwardRef,
 } from '@angular/core';
-import { ControlValueAccessor, FormControl, NG_ASYNC_VALIDATORS } from '@angular/forms';
+import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR } from '@angular/forms';
 import '@masoni/css-toggle-button/dist/index.css';
 
 export interface ToggleButtonEvent {}
@@ -18,7 +18,7 @@ export interface ToggleButtonEvent {}
   templateUrl: 'toggle-button.component.html',
   providers: [
     {
-      provide: NG_ASYNC_VALIDATORS,
+      provide: NG_VALUE_ACCESSOR,
       useExisting: forwardRef(() => MasToggleButton),
       multi: true,
     },
@@ -26,13 +26,14 @@ export interface ToggleButtonEvent {}
 })
 export class MasToggleButton implements OnInit, ControlValueAccessor {
   protected _disabled: boolean = false;
-  protected _checked: boolean = false ;
+  protected _checked: boolean = false;
 
   @Input()
   set checked(value: boolean) {
     if (this.checked !== value) {
       this.checked = value;
     }
+    this.cd.markForCheck();
   }
   get checked(): boolean {
     return this._checked;
@@ -58,8 +59,9 @@ export class MasToggleButton implements OnInit, ControlValueAccessor {
   onModelTouched: Function = () => {};
 
   constructor(public cd: ChangeDetectorRef) {}
-  writeValue(obj: any): void {
+  writeValue(obj: boolean): void {
     this.model = obj;
+    this._checked = obj;
     this.cd.markForCheck();
   }
   registerOnChange(fn: any): void {

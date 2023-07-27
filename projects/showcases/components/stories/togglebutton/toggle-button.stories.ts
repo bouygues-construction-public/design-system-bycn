@@ -1,9 +1,7 @@
 import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
 import { CommonModule } from '@angular/common';
-// import { FormControl, Validator } from '@angular/forms';
 import { MasToggleButton } from 'projects/components/src/lib/togglebutton/toggle-button.component';
 import { MasToggleButtonModule } from 'projects/components/src/lib/togglebutton/toggle-button.module';
-import { FormControl } from '@angular/forms';
 const meta: Meta<MasToggleButton> = {
   component: MasToggleButton,
   title: 'Components/Toggle Button',
@@ -29,7 +27,6 @@ export const Overview: Story = {
     name: 'toggle',
     size: 'S',
     disabled: false,
-    formControl: new FormControl(false, [])
   },
   argTypes: {
     size: {
