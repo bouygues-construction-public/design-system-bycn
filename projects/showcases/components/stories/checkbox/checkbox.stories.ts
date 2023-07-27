@@ -3,7 +3,6 @@ import { userEvent, within } from '@storybook/testing-library';
 import { CommonModule } from '@angular/common';
 import { MasCheckbox } from 'projects/components/src/lib/checkbox/checkbox.component';
 import { MasCheckboxModule } from 'projects/components/src/lib/checkbox/checkbox.module';
-import { FormControl, Validators } from '@angular/forms';
 const meta: Meta<MasCheckbox> = {
   component: MasCheckbox,
   argTypes: { onChange: { action: 'click' } },

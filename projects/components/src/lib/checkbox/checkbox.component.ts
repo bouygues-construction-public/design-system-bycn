@@ -93,8 +93,9 @@ export class MasCheckbox implements OnInit, ControlValueAccessor {
 
   constructor(public cd: ChangeDetectorRef) {}
 
-  writeValue(obj: any): void {
+  writeValue(obj: boolean): void {
     this.model = obj;
+    this._checked = obj
     this.cd.markForCheck();
   }
   registerOnChange(fn: Function): void {
