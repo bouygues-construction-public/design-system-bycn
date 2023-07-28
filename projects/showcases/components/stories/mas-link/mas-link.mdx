@@ -1,0 +1,40 @@
+import { Meta , Canvas, Controls, Story, of} from '@storybook/addon-docs/blocks';
+import { MasLinkDirective } from "projects/components/src/lib/link"; 
+
+import * as LinkStories from './mas-link.stories';
+ 
+<Meta of={LinkStories} />
+
+# MasLink
+
+The `MasLink` is a custom Link component serve as navigational element and can be used independently or inline with text.
+it offer a lightweight option for navigation.
+  
+## Usage
+
+To use the `MasLink`, you can pass the desired inputs to the component.
+
+<Canvas> 
+  <Story of={LinkStories.Overview} />  
+</Canvas>
+
+## `MasLink` component has the following properties: 
+<Controls />
+
+
+
+# MasLink Directive
+
+The `MasLinkDirective` is a custom directive that provides link styles and behavior to any HTML element.
+
+## Usage
+
+To use the `MasLinkDirective`, you can apply the `masLink` attribute to any HTML element and pass the desired inputs.
+
+## Examples
+
+<Canvas> 
+  <Story of={LinkStories.Directive} />  
+</Canvas>
+
+ 
