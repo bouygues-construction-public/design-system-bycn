@@ -22,11 +22,23 @@
     "dist"
   ],
   "scripts": {
-    "build": "shx mkdir -p dist && shx cp -r src/generated/svg src/generated/font dist"
+    "build": "shx mkdir -p dist && shx cp -r src/generated/svg src/generated/font dist && npm run build:css",
+    "build:css": "postcss dist/font/filled/index.css -o dist/font/filled/dist/index.css"
   },
   "devDependencies": {
+    "@masoni/css-postcss-config": "file:../css/config/postcss",
+    "@masoni/css-tailwind-preset": "file:presets/tailwind",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
+    "postcss-discard-comments": "^6.0.0",
+    "postcss-encode-background-svgs": "^1.0.4",
+    "postcss-import": "^15.1.0",
+    "postcss-prettify": "^0.3.4",
     "shx": "^0.3.4",
-    "svgo": "^2.7.0"
+    "svgo": "^2.7.0",
+    "tailwindcss": "^3.3.2"
   },
   "publishConfig": {
     "access": "public"
