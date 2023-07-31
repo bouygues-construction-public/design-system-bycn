@@ -11,6 +11,7 @@
     "deploy-storybook:develop": "npx -p @storybook/storybook-deployer storybook-to-ghpages --branch gh-pages --out docs/develop",
     "start:css-storybook": "ng run showcases-css:storybook",
     "start:components-storybook": "ng run showcases-components:storybook",
+    "start:icons-storybook": "ng run showcases-icons:storybook",
     "build-storybook": "ng run showcases-css:build-storybook && ng run showcases-components:build-storybook && ng run showcases-icons:build-storybook",
     "build:css": "npm run build -w projects/css",
     "build:icons": "npm run build -w projects/icons",
