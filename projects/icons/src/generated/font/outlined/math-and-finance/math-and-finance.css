@@ -1,0 +1,213 @@
+@font-face {
+    font-family: "math-and-finance";
+    src: url(".//math-and-finance.ttf?f6828e34e77c422bd0770afebf6c1425") format("truetype"),
+url(".//math-and-finance.woff?f6828e34e77c422bd0770afebf6c1425") format("woff"),
+url(".//math-and-finance.woff2?f6828e34e77c422bd0770afebf6c1425") format("woff2");
+}
+
+i[class^="mas-"]:before, i[class*=" mas-"]:before {
+    font-family: math-and-finance !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-bank-outlined:before {
+    content: "\f101";
+}
+.mas-calculator-outlined:before {
+    content: "\f102";
+}
+.mas-chart-bar-horizontal-outlined:before {
+    content: "\f103";
+}
+.mas-chart-bar-outlined:before {
+    content: "\f104";
+}
+.mas-chart-donut-outlined:before {
+    content: "\f105";
+}
+.mas-chart-line-down-outlined:before {
+    content: "\f106";
+}
+.mas-chart-line-outlined:before {
+    content: "\f107";
+}
+.mas-chart-line-up-outlined:before {
+    content: "\f108";
+}
+.mas-chart-pie-outlined:before {
+    content: "\f109";
+}
+.mas-chart-pie-slice-outlined:before {
+    content: "\f10a";
+}
+.mas-chart-polar-outlined:before {
+    content: "\f10b";
+}
+.mas-chart-scatter-outlined:before {
+    content: "\f10c";
+}
+.mas-divide-outlined:before {
+    content: "\f10d";
+}
+.mas-equals-outlined:before {
+    content: "\f10e";
+}
+.mas-function-outlined:before {
+    content: "\f10f";
+}
+.mas-graph-outlined:before {
+    content: "\f110";
+}
+.mas-infinity-outlined:before {
+    content: "\f111";
+}
+.mas-math-operations-outlined:before {
+    content: "\f112";
+}
+.mas-minus-circle-outlined:before {
+    content: "\f113";
+}
+.mas-minus-outlined:before {
+    content: "\f114";
+}
+.mas-minus-square-outlined:before {
+    content: "\f115";
+}
+.mas-number-circle-eight-outlined:before {
+    content: "\f116";
+}
+.mas-number-circle-five-outlined:before {
+    content: "\f117";
+}
+.mas-number-circle-four-outlined:before {
+    content: "\f118";
+}
+.mas-number-circle-nine-outlined:before {
+    content: "\f119";
+}
+.mas-number-circle-one-outlined:before {
+    content: "\f11a";
+}
+.mas-number-circle-seven-outlined:before {
+    content: "\f11b";
+}
+.mas-number-circle-six-outlined:before {
+    content: "\f11c";
+}
+.mas-number-circle-three-outlined:before {
+    content: "\f11d";
+}
+.mas-number-circle-two-outlined:before {
+    content: "\f11e";
+}
+.mas-number-circle-zero-outlined:before {
+    content: "\f11f";
+}
+.mas-number-eight-outlined:before {
+    content: "\f120";
+}
+.mas-number-five-outlined:before {
+    content: "\f121";
+}
+.mas-number-four-outlined:before {
+    content: "\f122";
+}
+.mas-number-nine-outlined:before {
+    content: "\f123";
+}
+.mas-number-one-outlined:before {
+    content: "\f124";
+}
+.mas-number-seven-outlined:before {
+    content: "\f125";
+}
+.mas-number-six-outlined:before {
+    content: "\f126";
+}
+.mas-number-square-eight-outlined:before {
+    content: "\f127";
+}
+.mas-number-square-five-outlined:before {
+    content: "\f128";
+}
+.mas-number-square-four-outlined:before {
+    content: "\f129";
+}
+.mas-number-square-nine-outlined:before {
+    content: "\f12a";
+}
+.mas-number-square-one-outlined:before {
+    content: "\f12b";
+}
+.mas-number-square-seven-outlined:before {
+    content: "\f12c";
+}
+.mas-number-square-six-outlined:before {
+    content: "\f12d";
+}
+.mas-number-square-three-outlined:before {
+    content: "\f12e";
+}
+.mas-number-square-two-outlined:before {
+    content: "\f12f";
+}
+.mas-number-square-zero-outlined:before {
+    content: "\f130";
+}
+.mas-number-three-outlined:before {
+    content: "\f131";
+}
+.mas-number-two-outlined:before {
+    content: "\f132";
+}
+.mas-number-zero-outlined:before {
+    content: "\f133";
+}
+.mas-percent-outlined:before {
+    content: "\f134";
+}
+.mas-pi-outlined:before {
+    content: "\f135";
+}
+.mas-plus-circle-outlined:before {
+    content: "\f136";
+}
+.mas-plus-minus-outlined:before {
+    content: "\f137";
+}
+.mas-plus-outlined:before {
+    content: "\f138";
+}
+.mas-plus-square-outlined:before {
+    content: "\f139";
+}
+.mas-radical-outlined:before {
+    content: "\f13a";
+}
+.mas-sigma-outlined:before {
+    content: "\f13b";
+}
+.mas-table-outlined:before {
+    content: "\f13c";
+}
+.mas-trend-down-outlined:before {
+    content: "\f13d";
+}
+.mas-trend-up-outlined:before {
+    content: "\f13e";
+}
+.mas-x-circle-outlined:before {
+    content: "\f13f";
+}
+.mas-x-outlined:before {
+    content: "\f140";
+}
+.mas-x-square-outlined:before {
+    content: "\f141";
+}

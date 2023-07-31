@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "education";
+    src: url(".//education.ttf?eaf05b9575a2cdd621c6dc9fb52db9aa") format("truetype"),
+url(".//education.woff?eaf05b9575a2cdd621c6dc9fb52db9aa") format("woff"),
+url(".//education.woff2?eaf05b9575a2cdd621c6dc9fb52db9aa") format("woff2");
+}
+
+i[class^="mas-"]:before, i[class*=" mas-"]:before {
+    font-family: education !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-book-bookmark-outlined:before {
+    content: "\f101";
+}
+.mas-book-open-outlined:before {
+    content: "\f102";
+}
+.mas-book-open-text-outlined:before {
+    content: "\f103";
+}
+.mas-book-outlined:before {
+    content: "\f104";
+}
+.mas-bookmark-outlined:before {
+    content: "\f105";
+}
+.mas-bookmark-simple-outlined:before {
+    content: "\f106";
+}
+.mas-bookmarks-outlined:before {
+    content: "\f107";
+}
+.mas-bookmarks-simple-outlined:before {
+    content: "\f108";
+}
+.mas-books-outlined:before {
+    content: "\f109";
+}
+.mas-certificate-outlined:before {
+    content: "\f10a";
+}
+.mas-chalkboard-outlined:before {
+    content: "\f10b";
+}
+.mas-chalkboard-simple-outlined:before {
+    content: "\f10c";
+}
+.mas-chalkboard-teacher-outlined:before {
+    content: "\f10d";
+}
+.mas-exam-outlined:before {
+    content: "\f10e";
+}
+.mas-graduation-cap-outlined:before {
+    content: "\f10f";
+}
+.mas-student-outlined:before {
+    content: "\f110";
+}
+.mas-video-outlined:before {
+    content: "\f111";
+}

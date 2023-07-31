@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "time";
+    src: url(".//time.ttf?37ed7d75c5d6ec79b87c816823943ab4") format("truetype"),
+url(".//time.woff?37ed7d75c5d6ec79b87c816823943ab4") format("woff"),
+url(".//time.woff2?37ed7d75c5d6ec79b87c816823943ab4") format("woff2");
+}
+
+i[class^="mas-"]:before, i[class*=" mas-"]:before {
+    font-family: time !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-alarm-filled:before {
+    content: "\f101";
+}
+.mas-calendar-blank-filled:before {
+    content: "\f102";
+}
+.mas-calendar-check-filled:before {
+    content: "\f103";
+}
+.mas-calendar-filled:before {
+    content: "\f104";
+}
+.mas-calendar-plus-filled:before {
+    content: "\f105";
+}
+.mas-calendar-x-filled:before {
+    content: "\f106";
+}
+.mas-clock-afternoon-filled:before {
+    content: "\f107";
+}
+.mas-clock-clockwise-filled:before {
+    content: "\f108";
+}
+.mas-clock-countdown-filled:before {
+    content: "\f109";
+}
+.mas-clock-counter-clockwise-filled:before {
+    content: "\f10a";
+}
+.mas-clock-filled:before {
+    content: "\f10b";
+}
+.mas-hourglass-filled:before {
+    content: "\f10c";
+}
+.mas-hourglass-high-filled:before {
+    content: "\f10d";
+}
+.mas-hourglass-low-filled:before {
+    content: "\f10e";
+}
+.mas-hourglass-medium-filled:before {
+    content: "\f10f";
+}
+.mas-hourglass-simple-filled:before {
+    content: "\f110";
+}
+.mas-hourglass-simple-high-filled:before {
+    content: "\f111";
+}
+.mas-hourglass-simple-low-filled:before {
+    content: "\f112";
+}
+.mas-hourglass-simple-medium-filled:before {
+    content: "\f113";
+}
+.mas-timer-filled:before {
+    content: "\f114";
+}
+.mas-watch-filled:before {
+    content: "\f115";
+}

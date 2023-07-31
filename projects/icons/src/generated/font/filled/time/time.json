@@ -1,0 +1,23 @@
+{
+    "alarm-filled": 61697,
+    "calendar-blank-filled": 61698,
+    "calendar-check-filled": 61699,
+    "calendar-filled": 61700,
+    "calendar-plus-filled": 61701,
+    "calendar-x-filled": 61702,
+    "clock-afternoon-filled": 61703,
+    "clock-clockwise-filled": 61704,
+    "clock-countdown-filled": 61705,
+    "clock-counter-clockwise-filled": 61706,
+    "clock-filled": 61707,
+    "hourglass-filled": 61708,
+    "hourglass-high-filled": 61709,
+    "hourglass-low-filled": 61710,
+    "hourglass-medium-filled": 61711,
+    "hourglass-simple-filled": 61712,
+    "hourglass-simple-high-filled": 61713,
+    "hourglass-simple-low-filled": 61714,
+    "hourglass-simple-medium-filled": 61715,
+    "timer-filled": 61716,
+    "watch-filled": 61717
+}

@@ -1,0 +1,363 @@
+@font-face {
+    font-family: "arrows";
+    src: url(".//arrows.ttf?7dd5bb3421508fc9ab479fe19aa734bf") format("truetype"),
+url(".//arrows.woff?7dd5bb3421508fc9ab479fe19aa734bf") format("woff"),
+url(".//arrows.woff2?7dd5bb3421508fc9ab479fe19aa734bf") format("woff2");
+}
+
+i[class^="mas-"]:before, i[class*=" mas-"]:before {
+    font-family: arrows !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-arrow-arc-left-outlined:before {
+    content: "\f101";
+}
+.mas-arrow-arc-right-outlined:before {
+    content: "\f102";
+}
+.mas-arrow-bend-double-up-left-outlined:before {
+    content: "\f103";
+}
+.mas-arrow-bend-double-up-right-outlined:before {
+    content: "\f104";
+}
+.mas-arrow-bend-down-left-outlined:before {
+    content: "\f105";
+}
+.mas-arrow-bend-down-right-outlined:before {
+    content: "\f106";
+}
+.mas-arrow-bend-left-down-outlined:before {
+    content: "\f107";
+}
+.mas-arrow-bend-left-up-outlined:before {
+    content: "\f108";
+}
+.mas-arrow-bend-right-down-outlined:before {
+    content: "\f109";
+}
+.mas-arrow-bend-right-up-outlined:before {
+    content: "\f10a";
+}
+.mas-arrow-bend-up-left-outlined:before {
+    content: "\f10b";
+}
+.mas-arrow-bend-up-right-outlined:before {
+    content: "\f10c";
+}
+.mas-arrow-circle-down-left-outlined:before {
+    content: "\f10d";
+}
+.mas-arrow-circle-down-outlined:before {
+    content: "\f10e";
+}
+.mas-arrow-circle-down-right-outlined:before {
+    content: "\f10f";
+}
+.mas-arrow-circle-left-outlined:before {
+    content: "\f110";
+}
+.mas-arrow-circle-right-outlined:before {
+    content: "\f111";
+}
+.mas-arrow-circle-up-left-outlined:before {
+    content: "\f112";
+}
+.mas-arrow-circle-up-outlined:before {
+    content: "\f113";
+}
+.mas-arrow-circle-up-right-outlined:before {
+    content: "\f114";
+}
+.mas-arrow-clockwise-outlined:before {
+    content: "\f115";
+}
+.mas-arrow-counter-clockwise-outlined:before {
+    content: "\f116";
+}
+.mas-arrow-down-left-outlined:before {
+    content: "\f117";
+}
+.mas-arrow-down-outlined:before {
+    content: "\f118";
+}
+.mas-arrow-down-right-outlined:before {
+    content: "\f119";
+}
+.mas-arrow-elbow-down-left-outlined:before {
+    content: "\f11a";
+}
+.mas-arrow-elbow-down-right-outlined:before {
+    content: "\f11b";
+}
+.mas-arrow-elbow-left-down-outlined:before {
+    content: "\f11c";
+}
+.mas-arrow-elbow-left-outlined:before {
+    content: "\f11d";
+}
+.mas-arrow-elbow-left-up-outlined:before {
+    content: "\f11e";
+}
+.mas-arrow-elbow-right-down-outlined:before {
+    content: "\f11f";
+}
+.mas-arrow-elbow-right-outlined:before {
+    content: "\f120";
+}
+.mas-arrow-elbow-right-up-outlined:before {
+    content: "\f121";
+}
+.mas-arrow-elbow-up-left-outlined:before {
+    content: "\f122";
+}
+.mas-arrow-elbow-up-right-outlined:before {
+    content: "\f123";
+}
+.mas-arrow-fat-down-outlined:before {
+    content: "\f124";
+}
+.mas-arrow-fat-left-outlined:before {
+    content: "\f125";
+}
+.mas-arrow-fat-line-down-outlined:before {
+    content: "\f126";
+}
+.mas-arrow-fat-line-left-outlined:before {
+    content: "\f127";
+}
+.mas-arrow-fat-line-right-outlined:before {
+    content: "\f128";
+}
+.mas-arrow-fat-line-up-outlined:before {
+    content: "\f129";
+}
+.mas-arrow-fat-lines-down-outlined:before {
+    content: "\f12a";
+}
+.mas-arrow-fat-lines-left-outlined:before {
+    content: "\f12b";
+}
+.mas-arrow-fat-lines-right-outlined:before {
+    content: "\f12c";
+}
+.mas-arrow-fat-lines-up-outlined:before {
+    content: "\f12d";
+}
+.mas-arrow-fat-right-outlined:before {
+    content: "\f12e";
+}
+.mas-arrow-fat-up-outlined:before {
+    content: "\f12f";
+}
+.mas-arrow-left-outlined:before {
+    content: "\f130";
+}
+.mas-arrow-line-down-left-outlined:before {
+    content: "\f131";
+}
+.mas-arrow-line-down-outlined:before {
+    content: "\f132";
+}
+.mas-arrow-line-down-right-outlined:before {
+    content: "\f133";
+}
+.mas-arrow-line-left-outlined:before {
+    content: "\f134";
+}
+.mas-arrow-line-right-outlined:before {
+    content: "\f135";
+}
+.mas-arrow-line-up-left-outlined:before {
+    content: "\f136";
+}
+.mas-arrow-line-up-outlined:before {
+    content: "\f137";
+}
+.mas-arrow-line-up-right-outlined:before {
+    content: "\f138";
+}
+.mas-arrow-right-outlined:before {
+    content: "\f139";
+}
+.mas-arrow-square-down-left-outlined:before {
+    content: "\f13a";
+}
+.mas-arrow-square-down-outlined:before {
+    content: "\f13b";
+}
+.mas-arrow-square-down-right-outlined:before {
+    content: "\f13c";
+}
+.mas-arrow-square-in-outlined:before {
+    content: "\f13d";
+}
+.mas-arrow-square-left-outlined:before {
+    content: "\f13e";
+}
+.mas-arrow-square-out-outlined:before {
+    content: "\f13f";
+}
+.mas-arrow-square-right-outlined:before {
+    content: "\f140";
+}
+.mas-arrow-square-up-left-outlined:before {
+    content: "\f141";
+}
+.mas-arrow-square-up-outlined:before {
+    content: "\f142";
+}
+.mas-arrow-square-up-right-outlined:before {
+    content: "\f143";
+}
+.mas-arrow-u-down-left-outlined:before {
+    content: "\f144";
+}
+.mas-arrow-u-down-right-outlined:before {
+    content: "\f145";
+}
+.mas-arrow-u-left-down-outlined:before {
+    content: "\f146";
+}
+.mas-arrow-u-left-up-outlined:before {
+    content: "\f147";
+}
+.mas-arrow-u-right-down-outlined:before {
+    content: "\f148";
+}
+.mas-arrow-u-right-up-outlined:before {
+    content: "\f149";
+}
+.mas-arrow-u-up-left-outlined:before {
+    content: "\f14a";
+}
+.mas-arrow-u-up-right-outlined:before {
+    content: "\f14b";
+}
+.mas-arrow-up-left-outlined:before {
+    content: "\f14c";
+}
+.mas-arrow-up-outlined:before {
+    content: "\f14d";
+}
+.mas-arrow-up-right-outlined:before {
+    content: "\f14e";
+}
+.mas-arrows-clockwise-outlined:before {
+    content: "\f14f";
+}
+.mas-arrows-counter-clockwise-outlined:before {
+    content: "\f150";
+}
+.mas-arrows-down-up-outlined:before {
+    content: "\f151";
+}
+.mas-arrows-horizontal-outlined:before {
+    content: "\f152";
+}
+.mas-arrows-in-cardinal-outlined:before {
+    content: "\f153";
+}
+.mas-arrows-in-line-horizontal-outlined:before {
+    content: "\f154";
+}
+.mas-arrows-in-line-vertical-outlined:before {
+    content: "\f155";
+}
+.mas-arrows-in-outlined:before {
+    content: "\f156";
+}
+.mas-arrows-in-simple-outlined:before {
+    content: "\f157";
+}
+.mas-arrows-left-right-outlined:before {
+    content: "\f158";
+}
+.mas-arrows-merge-outlined:before {
+    content: "\f159";
+}
+.mas-arrows-out-cardinal-outlined:before {
+    content: "\f15a";
+}
+.mas-arrows-out-line-horizontal-outlined:before {
+    content: "\f15b";
+}
+.mas-arrows-out-line-vertical-outlined:before {
+    content: "\f15c";
+}
+.mas-arrows-out-outlined:before {
+    content: "\f15d";
+}
+.mas-arrows-out-simple-outlined:before {
+    content: "\f15e";
+}
+.mas-arrows-split-outlined:before {
+    content: "\f15f";
+}
+.mas-arrows-vertical-outlined:before {
+    content: "\f160";
+}
+.mas-caret-circle-double-down-outlined:before {
+    content: "\f161";
+}
+.mas-caret-circle-double-left-outlined:before {
+    content: "\f162";
+}
+.mas-caret-circle-double-right-outlined:before {
+    content: "\f163";
+}
+.mas-caret-circle-double-up-outlined:before {
+    content: "\f164";
+}
+.mas-caret-circle-down-outlined:before {
+    content: "\f165";
+}
+.mas-caret-circle-left-outlined:before {
+    content: "\f166";
+}
+.mas-caret-circle-right-outlined:before {
+    content: "\f167";
+}
+.mas-caret-circle-up-down-outlined:before {
+    content: "\f168";
+}
+.mas-caret-circle-up-outlined:before {
+    content: "\f169";
+}
+.mas-caret-double-down-outlined:before {
+    content: "\f16a";
+}
+.mas-caret-double-left-outlined:before {
+    content: "\f16b";
+}
+.mas-caret-double-right-outlined:before {
+    content: "\f16c";
+}
+.mas-caret-double-up-outlined:before {
+    content: "\f16d";
+}
+.mas-caret-down-outlined:before {
+    content: "\f16e";
+}
+.mas-caret-left-outlined:before {
+    content: "\f16f";
+}
+.mas-caret-right-outlined:before {
+    content: "\f170";
+}
+.mas-caret-up-down-outlined:before {
+    content: "\f171";
+}
+.mas-caret-up-outlined:before {
+    content: "\f172";
+}
+.mas-recycle-outlined:before {
+    content: "\f173";
+}

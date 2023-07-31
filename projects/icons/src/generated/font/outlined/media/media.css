@@ -1,0 +1,318 @@
+@font-face {
+    font-family: "media";
+    src: url(".//media.ttf?524f4c75a4a229149ab6d49adb6a82d2") format("truetype"),
+url(".//media.woff?524f4c75a4a229149ab6d49adb6a82d2") format("woff"),
+url(".//media.woff2?524f4c75a4a229149ab6d49adb6a82d2") format("woff2");
+}
+
+i[class^="mas-"]:before, i[class*=" mas-"]:before {
+    font-family: media !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-airplay-outlined:before {
+    content: "\f101";
+}
+.mas-aperture-outlined:before {
+    content: "\f102";
+}
+.mas-article-medium-outlined:before {
+    content: "\f103";
+}
+.mas-article-ny-times-outlined:before {
+    content: "\f104";
+}
+.mas-article-outlined:before {
+    content: "\f105";
+}
+.mas-camera-outlined:before {
+    content: "\f106";
+}
+.mas-camera-plus-outlined:before {
+    content: "\f107";
+}
+.mas-camera-rotate-outlined:before {
+    content: "\f108";
+}
+.mas-camera-slash-outlined:before {
+    content: "\f109";
+}
+.mas-cassette-tape-outlined:before {
+    content: "\f10a";
+}
+.mas-closed-captioning-outlined:before {
+    content: "\f10b";
+}
+.mas-copyleft-outlined:before {
+    content: "\f10c";
+}
+.mas-copyright-outlined:before {
+    content: "\f10d";
+}
+.mas-corners-in-outlined:before {
+    content: "\f10e";
+}
+.mas-corners-out-outlined:before {
+    content: "\f10f";
+}
+.mas-disc-outlined:before {
+    content: "\f110";
+}
+.mas-ear-outlined:before {
+    content: "\f111";
+}
+.mas-ear-slash-outlined:before {
+    content: "\f112";
+}
+.mas-eject-outlined:before {
+    content: "\f113";
+}
+.mas-eject-simple-outlined:before {
+    content: "\f114";
+}
+.mas-equalizer-outlined:before {
+    content: "\f115";
+}
+.mas-faders-horizontal-outlined:before {
+    content: "\f116";
+}
+.mas-faders-outlined:before {
+    content: "\f117";
+}
+.mas-fast-forward-circle-outlined:before {
+    content: "\f118";
+}
+.mas-fast-forward-outlined:before {
+    content: "\f119";
+}
+.mas-film-reel-outlined:before {
+    content: "\f11a";
+}
+.mas-film-script-outlined:before {
+    content: "\f11b";
+}
+.mas-film-slate-outlined:before {
+    content: "\f11c";
+}
+.mas-film-strip-outlined:before {
+    content: "\f11d";
+}
+.mas-frame-corners-outlined:before {
+    content: "\f11e";
+}
+.mas-gif-outlined:before {
+    content: "\f11f";
+}
+.mas-guitar-outlined:before {
+    content: "\f120";
+}
+.mas-headphones-outlined:before {
+    content: "\f121";
+}
+.mas-headset-outlined:before {
+    content: "\f122";
+}
+.mas-image-outlined:before {
+    content: "\f123";
+}
+.mas-image-square-outlined:before {
+    content: "\f124";
+}
+.mas-images-outlined:before {
+    content: "\f125";
+}
+.mas-images-square-outlined:before {
+    content: "\f126";
+}
+.mas-metronome-outlined:before {
+    content: "\f127";
+}
+.mas-microphone-outlined:before {
+    content: "\f128";
+}
+.mas-microphone-slash-outlined:before {
+    content: "\f129";
+}
+.mas-microphone-stage-outlined:before {
+    content: "\f12a";
+}
+.mas-music-note-outlined:before {
+    content: "\f12b";
+}
+.mas-music-note-simple-outlined:before {
+    content: "\f12c";
+}
+.mas-music-notes-outlined:before {
+    content: "\f12d";
+}
+.mas-music-notes-plus-outlined:before {
+    content: "\f12e";
+}
+.mas-music-notes-simple-outlined:before {
+    content: "\f12f";
+}
+.mas-newspaper-clipping-outlined:before {
+    content: "\f130";
+}
+.mas-newspaper-outlined:before {
+    content: "\f131";
+}
+.mas-pause-circle-outlined:before {
+    content: "\f132";
+}
+.mas-pause-outlined:before {
+    content: "\f133";
+}
+.mas-piano-keys-outlined:before {
+    content: "\f134";
+}
+.mas-picture-in-picture-outlined:before {
+    content: "\f135";
+}
+.mas-play-circle-outlined:before {
+    content: "\f136";
+}
+.mas-play-outlined:before {
+    content: "\f137";
+}
+.mas-play-pause-outlined:before {
+    content: "\f138";
+}
+.mas-playlist-outlined:before {
+    content: "\f139";
+}
+.mas-queue-outlined:before {
+    content: "\f13a";
+}
+.mas-record-outlined:before {
+    content: "\f13b";
+}
+.mas-repeat-once-outlined:before {
+    content: "\f13c";
+}
+.mas-repeat-outlined:before {
+    content: "\f13d";
+}
+.mas-rewind-circle-outlined:before {
+    content: "\f13e";
+}
+.mas-rewind-outlined:before {
+    content: "\f13f";
+}
+.mas-screencast-outlined:before {
+    content: "\f140";
+}
+.mas-shuffle-angular-outlined:before {
+    content: "\f141";
+}
+.mas-shuffle-outlined:before {
+    content: "\f142";
+}
+.mas-shuffle-simple-outlined:before {
+    content: "\f143";
+}
+.mas-skip-back-circle-outlined:before {
+    content: "\f144";
+}
+.mas-skip-back-outlined:before {
+    content: "\f145";
+}
+.mas-skip-forward-circle-outlined:before {
+    content: "\f146";
+}
+.mas-skip-forward-outlined:before {
+    content: "\f147";
+}
+.mas-sliders-horizontal-outlined:before {
+    content: "\f148";
+}
+.mas-sliders-outlined:before {
+    content: "\f149";
+}
+.mas-slideshow-outlined:before {
+    content: "\f14a";
+}
+.mas-speaker-hifi-outlined:before {
+    content: "\f14b";
+}
+.mas-speaker-high-outlined:before {
+    content: "\f14c";
+}
+.mas-speaker-low-outlined:before {
+    content: "\f14d";
+}
+.mas-speaker-none-outlined:before {
+    content: "\f14e";
+}
+.mas-speaker-simple-high-outlined:before {
+    content: "\f14f";
+}
+.mas-speaker-simple-low-outlined:before {
+    content: "\f150";
+}
+.mas-speaker-simple-none-outlined:before {
+    content: "\f151";
+}
+.mas-speaker-simple-slash-outlined:before {
+    content: "\f152";
+}
+.mas-speaker-simple-x-outlined:before {
+    content: "\f153";
+}
+.mas-speaker-slash-outlined:before {
+    content: "\f154";
+}
+.mas-speaker-x-outlined:before {
+    content: "\f155";
+}
+.mas-stop-circle-outlined:before {
+    content: "\f156";
+}
+.mas-stop-outlined:before {
+    content: "\f157";
+}
+.mas-subtitles-outlined:before {
+    content: "\f158";
+}
+.mas-television-outlined:before {
+    content: "\f159";
+}
+.mas-television-simple-outlined:before {
+    content: "\f15a";
+}
+.mas-video-camera-outlined:before {
+    content: "\f15b";
+}
+.mas-video-camera-slash-outlined:before {
+    content: "\f15c";
+}
+.mas-vinyl-record-outlined:before {
+    content: "\f15d";
+}
+.mas-wave-sawtooth-outlined:before {
+    content: "\f15e";
+}
+.mas-wave-sine-outlined:before {
+    content: "\f15f";
+}
+.mas-wave-square-outlined:before {
+    content: "\f160";
+}
+.mas-wave-triangle-outlined:before {
+    content: "\f161";
+}
+.mas-waveform-outlined:before {
+    content: "\f162";
+}
+.mas-webcam-outlined:before {
+    content: "\f163";
+}
+.mas-webcam-slash-outlined:before {
+    content: "\f164";
+}

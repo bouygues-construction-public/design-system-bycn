@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "games";
+    src: url(".//games.ttf?41212ad72ba46111ab3ba53a0b32e72c") format("truetype"),
+url(".//games.woff?41212ad72ba46111ab3ba53a0b32e72c") format("woff"),
+url(".//games.woff2?41212ad72ba46111ab3ba53a0b32e72c") format("woff2");
+}
+
+i[class^="mas-"]:before, i[class*=" mas-"]:before {
+    font-family: games !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-alien-filled:before {
+    content: "\f101";
+}
+.mas-baseball-filled:before {
+    content: "\f102";
+}
+.mas-basketball-filled:before {
+    content: "\f103";
+}
+.mas-castle-turret-filled:before {
+    content: "\f104";
+}
+.mas-club-filled:before {
+    content: "\f105";
+}
+.mas-confetti-filled:before {
+    content: "\f106";
+}
+.mas-crown-filled:before {
+    content: "\f107";
+}
+.mas-crown-simple-filled:before {
+    content: "\f108";
+}
+.mas-cube-focus-filled:before {
+    content: "\f109";
+}
+.mas-diamond-filled:before {
+    content: "\f10a";
+}
+.mas-dice-five-filled:before {
+    content: "\f10b";
+}
+.mas-dice-four-filled:before {
+    content: "\f10c";
+}
+.mas-dice-one-filled:before {
+    content: "\f10d";
+}
+.mas-dice-six-filled:before {
+    content: "\f10e";
+}
+.mas-dice-three-filled:before {
+    content: "\f10f";
+}
+.mas-dice-two-filled:before {
+    content: "\f110";
+}
+.mas-finn-the-human-filled:before {
+    content: "\f111";
+}
+.mas-flying-saucer-filled:before {
+    content: "\f112";
+}
+.mas-football-filled:before {
+    content: "\f113";
+}
+.mas-game-controller-filled:before {
+    content: "\f114";
+}
+.mas-ghost-filled:before {
+    content: "\f115";
+}
+.mas-google-cardboard-logo-filled:before {
+    content: "\f116";
+}
+.mas-heart-break-filled:before {
+    content: "\f117";
+}
+.mas-heart-filled:before {
+    content: "\f118";
+}
+.mas-heart-half-filled:before {
+    content: "\f119";
+}
+.mas-heart-straight-break-filled:before {
+    content: "\f11a";
+}
+.mas-heart-straight-filled:before {
+    content: "\f11b";
+}
+.mas-horse-filled:before {
+    content: "\f11c";
+}
+.mas-mask-happy-filled:before {
+    content: "\f11d";
+}
+.mas-mask-sad-filled:before {
+    content: "\f11e";
+}
+.mas-medal-filled:before {
+    content: "\f11f";
+}
+.mas-medal-military-filled:before {
+    content: "\f120";
+}
+.mas-parachute-filled:before {
+    content: "\f121";
+}
+.mas-pinwheel-filled:before {
+    content: "\f122";
+}
+.mas-poker-chip-filled:before {
+    content: "\f123";
+}
+.mas-puzzle-piece-filled:before {
+    content: "\f124";
+}
+.mas-scroll-filled:before {
+    content: "\f125";
+}
+.mas-skull-filled:before {
+    content: "\f126";
+}
+.mas-soccer-ball-filled:before {
+    content: "\f127";
+}
+.mas-spade-filled:before {
+    content: "\f128";
+}
+.mas-spiral-filled:before {
+    content: "\f129";
+}
+.mas-strategy-filled:before {
+    content: "\f12a";
+}
+.mas-sword-filled:before {
+    content: "\f12b";
+}
+.mas-target-filled:before {
+    content: "\f12c";
+}
+.mas-tennis-ball-filled:before {
+    content: "\f12d";
+}
+.mas-tree-palm-filled:before {
+    content: "\f12e";
+}
+.mas-trophy-filled:before {
+    content: "\f12f";
+}
+.mas-virtual-reality-filled:before {
+    content: "\f130";
+}
+.mas-volleyball-filled:before {
+    content: "\f131";
+}

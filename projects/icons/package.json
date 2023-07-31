@@ -22,7 +22,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "shx mkdir -p dist/svg && shx cp -r src/generated/svg src/generated/font src/generated/css dist"
+    "build": "shx mkdir -p dist && shx cp -r src/generated/svg src/generated/font dist"
   },
   "devDependencies": {
     "shx": "^0.3.4",

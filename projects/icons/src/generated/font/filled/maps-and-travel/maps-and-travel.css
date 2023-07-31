@@ -1,0 +1,252 @@
+@font-face {
+    font-family: "maps-and-travel";
+    src: url(".//maps-and-travel.ttf?813aaaab02ddf8062248a4d41d60fcc8") format("truetype"),
+url(".//maps-and-travel.woff?813aaaab02ddf8062248a4d41d60fcc8") format("woff"),
+url(".//maps-and-travel.woff2?813aaaab02ddf8062248a4d41d60fcc8") format("woff2");
+}
+
+i[class^="mas-"]:before, i[class*=" mas-"]:before {
+    font-family: maps-and-travel !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-air-traffic-control-filled:before {
+    content: "\f101";
+}
+.mas-airplane-filled:before {
+    content: "\f102";
+}
+.mas-airplane-in-flight-filled:before {
+    content: "\f103";
+}
+.mas-airplane-landing-filled:before {
+    content: "\f104";
+}
+.mas-airplane-takeoff-filled:before {
+    content: "\f105";
+}
+.mas-airplane-tilt-filled:before {
+    content: "\f106";
+}
+.mas-anchor-filled:before {
+    content: "\f107";
+}
+.mas-anchor-simple-filled:before {
+    content: "\f108";
+}
+.mas-barricade-filled:before {
+    content: "\f109";
+}
+.mas-bicycle-filled:before {
+    content: "\f10a";
+}
+.mas-boat-filled:before {
+    content: "\f10b";
+}
+.mas-bus-filled:before {
+    content: "\f10c";
+}
+.mas-car-filled:before {
+    content: "\f10d";
+}
+.mas-car-profile-filled:before {
+    content: "\f10e";
+}
+.mas-car-simple-filled:before {
+    content: "\f10f";
+}
+.mas-charging-station-filled:before {
+    content: "\f110";
+}
+.mas-church-filled:before {
+    content: "\f111";
+}
+.mas-compass-filled:before {
+    content: "\f112";
+}
+.mas-crosshair-filled:before {
+    content: "\f113";
+}
+.mas-crosshair-simple-filled:before {
+    content: "\f114";
+}
+.mas-elevator-filled:before {
+    content: "\f115";
+}
+.mas-engine-filled:before {
+    content: "\f116";
+}
+.mas-escalator-down-filled:before {
+    content: "\f117";
+}
+.mas-escalator-up-filled:before {
+    content: "\f118";
+}
+.mas-flag-banner-filled:before {
+    content: "\f119";
+}
+.mas-flag-checkered-filled:before {
+    content: "\f11a";
+}
+.mas-flag-filled:before {
+    content: "\f11b";
+}
+.mas-flag-pennant-filled:before {
+    content: "\f11c";
+}
+.mas-gas-can-filled:before {
+    content: "\f11d";
+}
+.mas-gas-pump-filled:before {
+    content: "\f11e";
+}
+.mas-globe-filled:before {
+    content: "\f11f";
+}
+.mas-globe-hemisphere-east-filled:before {
+    content: "\f120";
+}
+.mas-globe-hemisphere-west-filled:before {
+    content: "\f121";
+}
+.mas-globe-simple-filled:before {
+    content: "\f122";
+}
+.mas-globe-stand-filled:before {
+    content: "\f123";
+}
+.mas-goggles-filled:before {
+    content: "\f124";
+}
+.mas-headlights-filled:before {
+    content: "\f125";
+}
+.mas-house-filled:before {
+    content: "\f126";
+}
+.mas-house-line-filled:before {
+    content: "\f127";
+}
+.mas-house-simple-filled:before {
+    content: "\f128";
+}
+.mas-jeep-filled:before {
+    content: "\f129";
+}
+.mas-lighthouse-filled:before {
+    content: "\f12a";
+}
+.mas-lockers-filled:before {
+    content: "\f12b";
+}
+.mas-map-pin-filled:before {
+    content: "\f12c";
+}
+.mas-map-pin-line-filled:before {
+    content: "\f12d";
+}
+.mas-map-trifold-filled:before {
+    content: "\f12e";
+}
+.mas-moped-filled:before {
+    content: "\f12f";
+}
+.mas-moped-front-filled:before {
+    content: "\f130";
+}
+.mas-mosque-filled:before {
+    content: "\f131";
+}
+.mas-motorcycle-filled:before {
+    content: "\f132";
+}
+.mas-navigation-arrow-filled:before {
+    content: "\f133";
+}
+.mas-park-filled:before {
+    content: "\f134";
+}
+.mas-path-filled:before {
+    content: "\f135";
+}
+.mas-police-car-filled:before {
+    content: "\f136";
+}
+.mas-road-horizon-filled:before {
+    content: "\f137";
+}
+.mas-rocket-filled:before {
+    content: "\f138";
+}
+.mas-rocket-launch-filled:before {
+    content: "\f139";
+}
+.mas-scooter-filled:before {
+    content: "\f13a";
+}
+.mas-signpost-filled:before {
+    content: "\f13b";
+}
+.mas-steering-wheel-filled:before {
+    content: "\f13c";
+}
+.mas-steps-filled:before {
+    content: "\f13d";
+}
+.mas-suitcase-filled:before {
+    content: "\f13e";
+}
+.mas-suitcase-rolling-filled:before {
+    content: "\f13f";
+}
+.mas-suitcase-simple-filled:before {
+    content: "\f140";
+}
+.mas-swimming-pool-filled:before {
+    content: "\f141";
+}
+.mas-synagogue-filled:before {
+    content: "\f142";
+}
+.mas-taxi-filled:before {
+    content: "\f143";
+}
+.mas-tent-filled:before {
+    content: "\f144";
+}
+.mas-tipi-filled:before {
+    content: "\f145";
+}
+.mas-traffic-cone-filled:before {
+    content: "\f146";
+}
+.mas-traffic-sign-filled:before {
+    content: "\f147";
+}
+.mas-traffic-signal-filled:before {
+    content: "\f148";
+}
+.mas-train-filled:before {
+    content: "\f149";
+}
+.mas-train-regional-filled:before {
+    content: "\f14a";
+}
+.mas-train-simple-filled:before {
+    content: "\f14b";
+}
+.mas-tram-filled:before {
+    content: "\f14c";
+}
+.mas-truck-filled:before {
+    content: "\f14d";
+}
+.mas-van-filled:before {
+    content: "\f14e";
+}
