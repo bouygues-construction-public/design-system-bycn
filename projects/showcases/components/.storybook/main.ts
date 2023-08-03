@@ -1,23 +1,15 @@
 import type { StorybookConfig } from '@storybook/angular';
+
 const config: StorybookConfig = {
-  stories: [
-     '../stories/overview.stories.mdx',
-    '../stories/**/*.stories.@(ts|tsx|mdx)',
-  ],
+  stories: ['../stories/**/*.stories.@(ts|tsx)', '../stories/overview.stories.mdx'],
   addons: [
     '@storybook/addon-links',
+    '@storybook/addon-essentials',
     '@storybook/addon-interactions',
-    '@storybook/addon-actions',
     {
       name: '@storybook/addon-styling',
       options: {
         cssModules: true,
-      },
-    },
-    {
-      name: '@storybook/addon-essentials',
-      options: {
-        actions: false, // Disable comment extraction for actions addon
       },
     },
   ],
