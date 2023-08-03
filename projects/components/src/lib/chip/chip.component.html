@@ -1,0 +1,37 @@
+  <div *ngIf="!selectable" class="chip" [class.has-left-img]="imageUrl" 
+                    [class.has-left-icon]="leadingIcon && !imageUrl" 
+                    [class.selected]="isSelected" 
+                    [class.disabled]="disabled" 
+                    (click)="toggleSelection()">
+    <div class="left-content" *ngIf="leadingIcon || imageUrl">
+      <!-- Round image or icon -->
+      <ng-container *ngIf="imageUrl">
+        <img class="chip-image" [src]="imageUrl"/>
+      </ng-container>
+      <ng-container *ngIf="leadingIcon && !imageUrl">
+        <i class="mas-icon {{ leadingIcon }}"></i>
+      </ng-container>
+    </div>
+    <div class="chip-label">{{ label }}</div>
+    <!-- whene removable is active-->
+    <div class="right-content" *ngIf="removable">
+      <i class="mas-icon mas-times" (click)="removeChip()"></i>
+    </div>
+    <!-- for action icon (only if removable=false)-->
+    <div class="right-content" *ngIf="!removable && actionIcon">
+      <i class="mas-icon {{actionIcon}} right" (click)="actionChip()"></i>
+    </div>
+  </div>
+
+  <div *ngIf="selectable" class="filter-chip" 
+                        [class.selected]="isSelected" 
+                        [class.disabled]="disabled" 
+                        (click)="toggleSelection()">
+    <div class="left-content" *ngIf="isSelected"> 
+      <ng-container >
+        <i class="mas-icon mas-checked"></i>
+      </ng-container>
+    </div>
+    <div class="chip-label">{{ label }}</div>
+  </div>
+
