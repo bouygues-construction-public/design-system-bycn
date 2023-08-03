@@ -12,17 +12,33 @@ const meta: Meta<MasRadioButton> = {
       imports: [CommonModule, MasRadioButtonModule],
     }),
   ],
+  parameters: {
+    docs: {
+      component:
+        'Radio buttons are intended for selecting one option among mutually exclusive choices, rather than multiple options.<br>',
+    },
+  },
   render: (args: MasRadioButton) => ({
     props: {
       ...args,
     },
   }),
   argTypes: {
+    identifier: {
+      control: 'text',
+      description: 'A unique id for the radio button. If none is supplied, it will be auto-generated.',
+    },
+    labelText: { description: 'Radio button label' },
+    disabled: {
+      control: 'boolean',
+      description: 'Whether the radio button is disabled. ',
+    },
+    checked: { control: 'boolean', description: 'Whether the radio button is checked.' },
     size: {
-      description: "Radio has two size: Small and Large. Small size is set by default.",
+      description: 'Radio has two size: Small and Large. Small size is set by default.',
       options: ['S', 'L'],
       control: { type: 'radio' },
-      defaultValue: 'S'
+      defaultValue: 'S',
     },
   },
 };
