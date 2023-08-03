@@ -39,9 +39,7 @@ export class MasToggleButton implements OnInit, ControlValueAccessor {
     return this._checked;
   }
   @Input() formControl: FormControl | undefined;
-  @Input() labelText: string | undefined = '';
   @Input() identifier: string = '';
-  @Input() name: string | undefined;
   @Input() size: 'S' | 'L' = 'S';
   @Input()
   set disabled(value: boolean) {
@@ -51,8 +49,6 @@ export class MasToggleButton implements OnInit, ControlValueAccessor {
     return this._disabled;
   }
   @Output() change: EventEmitter<ToggleButtonEvent> = new EventEmitter<ToggleButtonEvent>();
-  @Output() onFocus: EventEmitter<Event> = new EventEmitter<Event>();
-  @Output() onBlur: EventEmitter<Event> = new EventEmitter<Event>();
   @ViewChild('tbutton') inputViewChild!: ElementRef;
   model: any;
   onModelChange: Function = () => {};
@@ -82,7 +78,7 @@ export class MasToggleButton implements OnInit, ControlValueAccessor {
     if (this.formControl) {
       this.formControl.setValue(newModelValue);
     }
-    this.change.emit({ checked: newModelValue, originalEvent: event });
+    this.onChange({ checked: newModelValue, originalEvent: event });
   }
   onClick(event: Event, toggleButton: HTMLElement) {
     this.onModelTouched();
@@ -91,6 +87,9 @@ export class MasToggleButton implements OnInit, ControlValueAccessor {
       this.updateModel(event);
       toggleButton.focus();
     }
+  }
+  onChange(event: {}) {
+    this.change.emit(event);
   }
   ngOnInit() {}
 }

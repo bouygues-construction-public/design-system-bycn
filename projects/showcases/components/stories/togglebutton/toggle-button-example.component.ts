@@ -9,8 +9,18 @@ import { FormBuilder, FormGroup } from '@angular/forms';
     </form>
 
     <br />
-    <button (click)="toggle()">Toggle</button>
-    <button (click)="disableToggle()">Disable toggle</button>
+    <button
+      (click)="toggle()"
+      style="background-color: orange; border: solid 1px black; border-radius: 4px; padding: 2px; margin-right:10px "
+    >
+      Toggle
+    </button>
+    <button
+      (click)="disableToggle()"
+      style="background-color: orange; border: solid 1px black; border-radius: 4px; padding: 2px"
+    >
+      Disable toggle
+    </button>
   `,
 })
 export class ToggleButtonExample implements OnInit {
