@@ -1,0 +1,32 @@
+<div
+  class="mas-radio-button"
+  [ngClass]="{ 'mas-radio-button--large': size === 'L', 'mas-radio-button--disabled': disabled }"
+>
+  <input
+    #rbutton
+    class="hidden-accessible"
+    type="radio"
+    id="{{ identifier }}"
+    [checked]="checked"
+    [disabled]="disabled"
+    (focus)="onInputFocus($event)"
+    (blur)="onInputBlur($event)"
+    (change)="onChange($event)"
+    [name]="name"
+    [value]="value"
+  />
+  <div class="mas-radio-button_touch-target" (click)="onClick($event)"></div>
+  <div class="mas-radio-button-container" [ngClass]="{ 'mas-radio-button--active': checked }">
+    <ng-container *ngIf="checked && size === 'S'">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle id="radio" cx="8" cy="8" r="3" fill="white" />
+      </svg>
+    </ng-container>
+    <ng-container *ngIf="checked && size === 'L'">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle id="radio" cx="12" cy="12" r="5" fill="white" />
+      </svg>
+    </ng-container>
+  </div>
+  <label [for]="identifier" class="mas-radio-button_label">{{ labelText }}</label>
+</div>

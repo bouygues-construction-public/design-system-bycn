@@ -10,6 +10,7 @@
   "devDependencies": {
     "@masoni/css": "file:../../css",
     "@masoni/css-tailwind-preset": "file:../../css/presets/tailwind",
-    "@masoni/css-toggle-button": "file:../../css/src/components/togglebutton"
+    "@masoni/css-toggle-button": "file:../../css/src/components/togglebutton",
+    "@masoni/css-radio-button": "file:../../css/src/components/radiobutton",
   }
 }
