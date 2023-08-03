@@ -27,6 +27,7 @@
     "@masoni/css-text-input": "file:../css/src/components/text-input",
     "@masoni/css-select": "file:../css/src/components/select",
     "@masoni/css-toggle-button": "file:../css/src/components/togglebutton",
-    "@masoni/css-radio-button": "file:../css/src/components/radiobutton"
+    "@masoni/css-radio-button": "file:../css/src/components/radiobutton",
+    "@masoni/css-checkbox": "file:../css/src/components/checkbox"
   }
 }
