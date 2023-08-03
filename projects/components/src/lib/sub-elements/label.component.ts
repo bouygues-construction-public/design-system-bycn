@@ -10,12 +10,20 @@ import { FormsModule } from '@angular/forms';
   template: `
     <label [for]="identifier" class="mas-label-wrapper">
       <ng-content></ng-content>
-      <i *ngIf="infoIcon" class="mas-question-outlined mas-label-info-icon"></i>
-      <span *ngIf="optional" class="mas-label-optional">(optional)</span>
+      <ng-container *ngIf="infoIcon">
+        <i class="mas-question-outlined mas-label-info-icon"></i>
+      </ng-container>
+      <ng-container *ngIf="optional">
+        <span class="mas-label-optional">(optional)</span>
+      </ng-container>
     </label>
   `,
 })
 export class MasLabel implements OnInit {
+  private _identifier: string;
+
+  @Input() optional: boolean = false;
+  @Input() infoIcon: boolean = false;
   @Input()
   get identifier(): string {
     return this._identifier;
@@ -23,9 +31,7 @@ export class MasLabel implements OnInit {
   set identifier(value: string) {
     this._identifier = value;
   }
-  private _identifier: string;
-  @Input() optional: boolean = false;
-  @Input() infoIcon: boolean = false;
+
   constructor() {}
 
   ngOnInit() {}

@@ -24,6 +24,7 @@
   "sideEffects": false,
   "devDependencies": {
     "@masoni/css-sub-elements": "file:../css/src/components/sub-elements",
-    "@masoni/css-text-input": "file:../css/src/components/text-input"
+    "@masoni/css-text-input": "file:../css/src/components/text-input",
+    "@masoni/css-select": "file:../css/src/components/select"
   }
 }
