@@ -1,0 +1,40 @@
+{
+  "name": "@masoni/icons",
+  "version": "0.0.1",
+  "description": "Bouygues Construction Design System - Masoni icons library",
+  "keywords": [
+    "design-system",
+    "ui-kit",
+    "libraries",
+    "icons",
+    "masoni"
+  ],
+  "homepage": "https://github.com/bouygues-construction/design-system-bycn/projects/icons",
+  "bugs": {
+    "url": "https://github.com/bouygues-construction/design-system-bycn/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bouygues-construction/design-system-bycn.git"
+  },
+  "license": "Apache-2.0",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "shx mkdir -p dist/svg && shx cp -r src/generated/svg src/generated/font src/generated/css dist"
+  },
+  "devDependencies": {
+    "shx": "^0.3.4",
+    "svgo": "^2.7.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
+}
