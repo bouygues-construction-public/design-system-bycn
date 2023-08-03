@@ -13,7 +13,13 @@ const meta: Meta<MasCheckbox> = {
       imports: [CommonModule, MasCheckboxModule],
     }),
   ],
-
+  parameters: {
+    docs: {
+      description: {
+        component: 'Checkboxes are used to let a user select one or more options of a limited number of choices.<br/>',
+      },
+    },
+  },
   render: (args: MasCheckbox) => ({
     props: {
       ...args,
@@ -30,14 +36,18 @@ export const Indeterminate: Story = {
     disabled: false,
     indeterminate: true,
     size: 'L',
+    checked: true,
   },
   argTypes: {
-    labelText: { control: 'text', description: '' },
-    identifier: { control: 'text', description: '' },
-    checked: { control: 'boolean', description: '' },
+    labelText: { control: 'text', description: 'Checkbox label' },
+    identifier: {
+      control: 'text',
+      description: 'A unique id for the checkbox input. If none is supplied, it will be auto-generated.',
+    },
+    checked: { control: 'boolean', description: 'Whether the checkbox is checked.' },
     disabled: {
       control: 'boolean',
-      description: '',
+      description: 'Whether the checkbox is disabled. ',
     },
     indeterminate: {
       control: 'boolean',
@@ -45,7 +55,8 @@ export const Indeterminate: Story = {
         'The indeterminate state is activated when the checkbox contains a sublist of selections, some of which are selected, and some unselected.',
     },
     size: {
-      description: 'The checkbox has two sizes available. the small is used by default in the majority of cases.',
+      description:
+        "The checkbox has two sizes available: 'S' 'M'. The 'S' is used by default in the majority of cases.",
       control: 'radio',
       options: ['S', 'L'],
     },

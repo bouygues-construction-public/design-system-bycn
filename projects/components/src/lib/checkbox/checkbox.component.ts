@@ -48,7 +48,7 @@ export class MasCheckbox implements OnInit, ControlValueAccessor {
   }
   set checked(value: boolean) {
     if (this.checked === value) return;
-    this.checked = value;
+    this._checked = value;
     // reset indeterminate
     if (this._indeterminate) {
       this._indeterminate = false;
