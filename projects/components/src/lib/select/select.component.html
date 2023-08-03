@@ -1,32 +1,28 @@
+<ng-content select="mas-label"></ng-content>
 <div
-  class="mas-select"
-  [ngClass]="{
-    'mas-select--invalid': invalid,
-    'mas-select--disabled': disabled,
-    'mas-select--medium': size === 'M',
-    'mas-select--small': size === 'S'
-  }"
+(focus)="onChange($event)"
+  class="mas-select_value-wrapper"
+  [ngSwitch]="empty"
+  (click)="toggle()"
+  [ngClass]="{ 'mas-select_listbox--opened': panelOpen }"
 >
-  <label *ngIf="label" [for]="identifier" class="mas-select_label">
-    <ng-container *ngIf="!isTemplate(label)">{{ label }}</ng-container>
-    <ng-template *ngIf="isTemplate(label)" [ngTemplateOutlet]="label"></ng-template>
-  </label>
-  <div class="mas-select_value-wrapper" [ngSwitch]="empty" (click)="toggle()" (change)="onChange($event)" [ngClass]="{'mas-select_listbox--opened': panelOpen}">
-    <i class="mas-warningcircle-outlined mas-icon" *ngSwitchCase="true"></i>
-    <span class="mas-select-placeholder mas-select-min-line" *ngSwitchCase="true" [ngClass]="{'mas-select--filled': filled}">{{ placeholder }}</span>
-    <span class="mas-select_text mas-select-min-line" *ngSwitchCase="false">
-      {{ triggerValue }}
-    </span>
-    <i class="mas-caretdown-outlined mas-icon"></i>
-  </div>
-  <!-- ! listbox -->
-  <ng-template [ngIf]="panelOpen">
-    <div class="mas-select_listbox-wrapper">
-      <div #select role="listbox" [ngClass]="{ 'mas-select--disabled': disabled }">
-        <ng-content></ng-content>
-      </div>
-    </div>
-  </ng-template>
+  <ng-container *ngSwitchCase="true">
+    <i class="mas-warningcircle-outlined mas-icon"></i>
+    <span class="mas-select_placeholder mas-select-min-line" [ngClass]="{ 'mas-select--filled': filled }">{{
+      placeholder
+    }}</span></ng-container
+  >
+
+  <span class="mas-select_text mas-select-min-line" *ngSwitchCase="false" >
+    {{ triggerValue }}
+  </span>
+  <i class="mas-caretdown-outlined mas-icon"></i>
 </div>
-<mas-error [display]="invalid" [errorMessage]="errorMessage"></mas-error>
-<mas-helper [display]="!invalid" [helperText]="helperText"></mas-helper>
+<!-- ! listbox -->
+<ng-template [ngIf]="panelOpen && !disabled">
+  <div #select role="listbox" [ngClass]="{ 'mas-select--disabled': disabled }" class="mas-select_listbox-wrapper"  >
+    <ng-content select="mas-option" ></ng-content>
+  </div>
+</ng-template>
+<ng-content *ngIf="invalid" select="mas-error"></ng-content>
+<ng-content *ngIf="!invalid" select="mas-helper"></ng-content>

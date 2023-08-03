@@ -5,15 +5,15 @@ import { FormsModule } from '@angular/forms';
 import '@masoni/css-sub-elements/dist/index.css';
 @Component({
   selector: 'mas-helper',
+  host: {
+    class: 'mas-helper',
+  },
   template: `
-    <div *ngIf="helperText && display" class="mas-helper">
-      <ng-container *ngIf="!isTemplate(helperText)">{{ helperText }}</ng-container>
-      <ng-template *ngIf="isTemplate(helperText)" [ngTemplateOutlet]="helperText"></ng-template>
-    </div>
+    <ng-content *ngIf="!isTemplate(helperText)"></ng-content>
+    <ng-template *ngIf="isTemplate(helperText)" [ngTemplateOutlet]="helperText"></ng-template>
   `,
 })
 export class MasHelper {
-  @Input() display: boolean = false;
   @Input() helperText: any | TemplateRef<any>; // ! can be TemplateRef
   public isTemplate(value: any) {
     return value instanceof TemplateRef; // ? what's this ?
