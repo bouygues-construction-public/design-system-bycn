@@ -1,0 +1,56 @@
+import { ElementRef, EventEmitter, NgZone, QueryList, TemplateRef, AfterContentInit } from '@angular/core';
+import { ControlValueAccessor } from '@angular/forms';
+import '@masoni/css-select/dist/index.css';
+import { MasOption } from './option.component';
+import { Observable, Subject } from 'rxjs';
+import * as i0 from "@angular/core";
+export interface selectedOption {
+    option: MasOption | undefined;
+    isSelected: boolean;
+}
+export declare class MasSelect implements ControlValueAccessor, AfterContentInit {
+    protected _ngZone: NgZone;
+    protected eRef: ElementRef;
+    static selectCount: number;
+    protected _value: string;
+    protected selected: selectedOption;
+    private _panelOpen;
+    private _placeholder;
+    label: any | TemplateRef<any>;
+    identifier: string;
+    disabled: boolean;
+    invalid: boolean;
+    size: 'M' | 'S';
+    filled: boolean;
+    set value(value: string);
+    get value(): string;
+    get placeholder(): string;
+    set placeholder(value: string);
+    get panelOpen(): boolean;
+    change: EventEmitter<any>;
+    readonly _destroy: Subject<void>;
+    get triggerValue(): any;
+    get empty(): boolean;
+    options: QueryList<MasOption>;
+    ngAfterContentInit(): void;
+    constructor(_ngZone: NgZone, eRef: ElementRef);
+    clickOut(event: Event): void;
+    readonly optionChanges: Observable<any>;
+    private _resetOptions;
+    private _onSelect;
+    toggle(): void;
+    open(): void;
+    close(): void;
+    focus(): void;
+    onChange(event: any): void;
+    focusOut(): void;
+    isTemplate(value: any): boolean;
+    protected onChangeHandler: (_: any) => void;
+    protected onTouchedHandler: () => void;
+    writeValue(obj: any): void;
+    registerOnChange(fn: any): void;
+    registerOnTouched(fn: any): void;
+    setDisabledState?(isDisabled: boolean): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<MasSelect, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<MasSelect, "mas-select", never, { "label": "label"; "identifier": "identifier"; "disabled": "disabled"; "invalid": "invalid"; "size": "size"; "filled": "filled"; "value": "value"; "placeholder": "placeholder"; }, { "change": "change"; }, ["options"], ["mas-label", "mas-option", "mas-error", "mas-helper"], false, never>;
+}

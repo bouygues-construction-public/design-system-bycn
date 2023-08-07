@@ -1,0 +1,44 @@
+{
+  "name": "@masoni/components",
+  "version": "0.0.1",
+  "description": "Bouygues Design System - Masoni components library",
+  "peerDependencies": {
+    "@angular/common": "^15.2.0",
+    "@angular/core": "^15.2.0",
+    "@masoni/icons": "file:../icons"
+  },
+  "homepage": "https://github.com/bouygues-construction/design-system-bycn",
+  "keywords": [
+    "design-system",
+    "ui-kit",
+    "libraries",
+    "angular",
+    "masoni"
+  ],
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "module": "fesm2015/masoni-components.mjs",
+  "es2020": "fesm2020/masoni-components.mjs",
+  "esm2020": "esm2020/masoni-components.mjs",
+  "fesm2020": "fesm2020/masoni-components.mjs",
+  "fesm2015": "fesm2015/masoni-components.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/masoni-components.mjs",
+      "es2020": "./fesm2020/masoni-components.mjs",
+      "es2015": "./fesm2015/masoni-components.mjs",
+      "node": "./fesm2015/masoni-components.mjs",
+      "default": "./fesm2020/masoni-components.mjs"
+    }
+  }
+}
