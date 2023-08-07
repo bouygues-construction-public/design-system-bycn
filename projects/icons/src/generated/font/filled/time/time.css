@@ -1,8 +1,8 @@
 @font-face {
     font-family: "time";
-    src: url(".//time.ttf?37ed7d75c5d6ec79b87c816823943ab4") format("truetype"),
-url(".//time.woff?37ed7d75c5d6ec79b87c816823943ab4") format("woff"),
-url(".//time.woff2?37ed7d75c5d6ec79b87c816823943ab4") format("woff2");
+    src: url(".//time.ttf?ac2b907836b7843ce39e98d756c8a5c4") format("truetype"),
+url(".//time.woff?ac2b907836b7843ce39e98d756c8a5c4") format("woff"),
+url(".//time.woff2?ac2b907836b7843ce39e98d756c8a5c4") format("woff2");
 }
 
 i[class^="mas-"]:before, i[class*=" mas-"]:before {
@@ -17,65 +17,65 @@ i[class^="mas-"]:before, i[class*=" mas-"]:before {
 }
 
 .mas-alarm-filled:before {
-    content: "\f101";
+    content: "\e497";
 }
 .mas-calendar-blank-filled:before {
-    content: "\f102";
+    content: "\e498";
 }
 .mas-calendar-check-filled:before {
-    content: "\f103";
+    content: "\e499";
 }
 .mas-calendar-filled:before {
-    content: "\f104";
+    content: "\e49a";
 }
 .mas-calendar-plus-filled:before {
-    content: "\f105";
+    content: "\e49b";
 }
 .mas-calendar-x-filled:before {
-    content: "\f106";
+    content: "\e49c";
 }
 .mas-clock-afternoon-filled:before {
-    content: "\f107";
+    content: "\e49d";
 }
 .mas-clock-clockwise-filled:before {
-    content: "\f108";
+    content: "\e49e";
 }
 .mas-clock-countdown-filled:before {
-    content: "\f109";
+    content: "\e49f";
 }
 .mas-clock-counter-clockwise-filled:before {
-    content: "\f10a";
+    content: "\e4a0";
 }
 .mas-clock-filled:before {
-    content: "\f10b";
+    content: "\e4a1";
 }
 .mas-hourglass-filled:before {
-    content: "\f10c";
+    content: "\e4a2";
 }
 .mas-hourglass-high-filled:before {
-    content: "\f10d";
+    content: "\e4a3";
 }
 .mas-hourglass-low-filled:before {
-    content: "\f10e";
+    content: "\e4a4";
 }
 .mas-hourglass-medium-filled:before {
-    content: "\f10f";
+    content: "\e4a5";
 }
 .mas-hourglass-simple-filled:before {
-    content: "\f110";
+    content: "\e4a6";
 }
 .mas-hourglass-simple-high-filled:before {
-    content: "\f111";
+    content: "\e4a7";
 }
 .mas-hourglass-simple-low-filled:before {
-    content: "\f112";
+    content: "\e4a8";
 }
 .mas-hourglass-simple-medium-filled:before {
-    content: "\f113";
+    content: "\e4a9";
 }
 .mas-timer-filled:before {
-    content: "\f114";
+    content: "\e4aa";
 }
 .mas-watch-filled:before {
-    content: "\f115";
+    content: "\e4ab";
 }

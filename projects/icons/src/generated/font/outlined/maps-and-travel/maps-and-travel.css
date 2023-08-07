@@ -1,8 +1,8 @@
 @font-face {
     font-family: "maps-and-travel";
-    src: url(".//maps-and-travel.ttf?d117be8a9f9ef72223e248a77fe5920b") format("truetype"),
-url(".//maps-and-travel.woff?d117be8a9f9ef72223e248a77fe5920b") format("woff"),
-url(".//maps-and-travel.woff2?d117be8a9f9ef72223e248a77fe5920b") format("woff2");
+    src: url(".//maps-and-travel.ttf?0309f53cc35390ccb27e288cc7843c7e") format("truetype"),
+url(".//maps-and-travel.woff?0309f53cc35390ccb27e288cc7843c7e") format("woff"),
+url(".//maps-and-travel.woff2?0309f53cc35390ccb27e288cc7843c7e") format("woff2");
 }
 
 i[class^="mas-"]:before, i[class*=" mas-"]:before {
@@ -17,236 +17,236 @@ i[class^="mas-"]:before, i[class*=" mas-"]:before {
 }
 
 .mas-air-traffic-control-outlined:before {
-    content: "\f101";
+    content: "\e723";
 }
 .mas-airplane-in-flight-outlined:before {
-    content: "\f102";
+    content: "\e724";
 }
 .mas-airplane-landing-outlined:before {
-    content: "\f103";
+    content: "\e725";
 }
 .mas-airplane-outlined:before {
-    content: "\f104";
+    content: "\e726";
 }
 .mas-airplane-takeoff-outlined:before {
-    content: "\f105";
+    content: "\e727";
 }
 .mas-airplane-tilt-outlined:before {
-    content: "\f106";
+    content: "\e728";
 }
 .mas-anchor-outlined:before {
-    content: "\f107";
+    content: "\e729";
 }
 .mas-anchor-simple-outlined:before {
-    content: "\f108";
+    content: "\e72a";
 }
 .mas-barricade-outlined:before {
-    content: "\f109";
+    content: "\e72b";
 }
 .mas-bicycle-outlined:before {
-    content: "\f10a";
+    content: "\e72c";
 }
 .mas-boat-outlined:before {
-    content: "\f10b";
+    content: "\e72d";
 }
 .mas-bus-outlined:before {
-    content: "\f10c";
+    content: "\e72e";
 }
 .mas-car-outlined:before {
-    content: "\f10d";
+    content: "\e72f";
 }
 .mas-car-profile-outlined:before {
-    content: "\f10e";
+    content: "\e730";
 }
 .mas-car-simple-outlined:before {
-    content: "\f10f";
+    content: "\e731";
 }
 .mas-charging-station-outlined:before {
-    content: "\f110";
+    content: "\e732";
 }
 .mas-church-outlined:before {
-    content: "\f111";
+    content: "\e733";
 }
 .mas-compass-outlined:before {
-    content: "\f112";
+    content: "\e734";
 }
 .mas-crosshair-outlined:before {
-    content: "\f113";
+    content: "\e735";
 }
 .mas-crosshair-simple-outlined:before {
-    content: "\f114";
+    content: "\e736";
 }
 .mas-elevator-outlined:before {
-    content: "\f115";
+    content: "\e737";
 }
 .mas-engine-outlined:before {
-    content: "\f116";
+    content: "\e738";
 }
 .mas-escalator-down-outlined:before {
-    content: "\f117";
+    content: "\e739";
 }
 .mas-escalator-up-outlined:before {
-    content: "\f118";
+    content: "\e73a";
 }
 .mas-flag-banner-outlined:before {
-    content: "\f119";
+    content: "\e73b";
 }
 .mas-flag-checkered-outlined:before {
-    content: "\f11a";
+    content: "\e73c";
 }
 .mas-flag-outlined:before {
-    content: "\f11b";
+    content: "\e73d";
 }
 .mas-flag-pennant-outlined:before {
-    content: "\f11c";
+    content: "\e73e";
 }
 .mas-gas-can-outlined:before {
-    content: "\f11d";
+    content: "\e73f";
 }
 .mas-gas-pump-outlined:before {
-    content: "\f11e";
+    content: "\e740";
 }
 .mas-globe-hemisphere-east-outlined:before {
-    content: "\f11f";
+    content: "\e741";
 }
 .mas-globe-hemisphere-west-outlined:before {
-    content: "\f120";
+    content: "\e742";
 }
 .mas-globe-outlined:before {
-    content: "\f121";
+    content: "\e743";
 }
 .mas-globe-simple-outlined:before {
-    content: "\f122";
+    content: "\e744";
 }
 .mas-globe-stand-outlined:before {
-    content: "\f123";
+    content: "\e745";
 }
 .mas-goggles-outlined:before {
-    content: "\f124";
+    content: "\e746";
 }
 .mas-headlights-outlined:before {
-    content: "\f125";
+    content: "\e747";
 }
 .mas-house-line-outlined:before {
-    content: "\f126";
+    content: "\e748";
 }
 .mas-house-outlined:before {
-    content: "\f127";
+    content: "\e749";
 }
 .mas-house-simple-outlined:before {
-    content: "\f128";
+    content: "\e74a";
 }
 .mas-jeep-outlined:before {
-    content: "\f129";
+    content: "\e74b";
 }
 .mas-lighthouse-outlined:before {
-    content: "\f12a";
+    content: "\e74c";
 }
 .mas-lockers-outlined:before {
-    content: "\f12b";
+    content: "\e74d";
 }
 .mas-map-pin-line-outlined:before {
-    content: "\f12c";
+    content: "\e74e";
 }
 .mas-map-pin-outlined:before {
-    content: "\f12d";
+    content: "\e74f";
 }
 .mas-map-trifold-outlined:before {
-    content: "\f12e";
+    content: "\e750";
 }
 .mas-moped-front-outlined:before {
-    content: "\f12f";
+    content: "\e751";
 }
 .mas-moped-outlined:before {
-    content: "\f130";
+    content: "\e752";
 }
 .mas-mosque-outlined:before {
-    content: "\f131";
+    content: "\e753";
 }
 .mas-motorcycle-outlined:before {
-    content: "\f132";
+    content: "\e754";
 }
 .mas-navigation-arrow-outlined:before {
-    content: "\f133";
+    content: "\e755";
 }
 .mas-park-outlined:before {
-    content: "\f134";
+    content: "\e756";
 }
 .mas-path-outlined:before {
-    content: "\f135";
+    content: "\e757";
 }
 .mas-police-car-outlined:before {
-    content: "\f136";
+    content: "\e758";
 }
 .mas-road-horizon-outlined:before {
-    content: "\f137";
+    content: "\e759";
 }
 .mas-rocket-launch-outlined:before {
-    content: "\f138";
+    content: "\e75a";
 }
 .mas-rocket-outlined:before {
-    content: "\f139";
+    content: "\e75b";
 }
 .mas-scooter-outlined:before {
-    content: "\f13a";
+    content: "\e75c";
 }
 .mas-signpost-outlined:before {
-    content: "\f13b";
+    content: "\e75d";
 }
 .mas-steering-wheel-outlined:before {
-    content: "\f13c";
+    content: "\e75e";
 }
 .mas-steps-outlined:before {
-    content: "\f13d";
+    content: "\e75f";
 }
 .mas-suitcase-outlined:before {
-    content: "\f13e";
+    content: "\e760";
 }
 .mas-suitcase-rolling-outlined:before {
-    content: "\f13f";
+    content: "\e761";
 }
 .mas-suitcase-simple-outlined:before {
-    content: "\f140";
+    content: "\e762";
 }
 .mas-swimming-pool-outlined:before {
-    content: "\f141";
+    content: "\e763";
 }
 .mas-synagogue-outlined:before {
-    content: "\f142";
+    content: "\e764";
 }
 .mas-taxi-outlined:before {
-    content: "\f143";
+    content: "\e765";
 }
 .mas-tent-outlined:before {
-    content: "\f144";
+    content: "\e766";
 }
 .mas-tipi-outlined:before {
-    content: "\f145";
+    content: "\e767";
 }
 .mas-traffic-cone-outlined:before {
-    content: "\f146";
+    content: "\e768";
 }
 .mas-traffic-sign-outlined:before {
-    content: "\f147";
+    content: "\e769";
 }
 .mas-traffic-signal-outlined:before {
-    content: "\f148";
+    content: "\e76a";
 }
 .mas-train-outlined:before {
-    content: "\f149";
+    content: "\e76b";
 }
 .mas-train-regional-outlined:before {
-    content: "\f14a";
+    content: "\e76c";
 }
 .mas-train-simple-outlined:before {
-    content: "\f14b";
+    content: "\e76d";
 }
 .mas-tram-outlined:before {
-    content: "\f14c";
+    content: "\e76e";
 }
 .mas-truck-outlined:before {
-    content: "\f14d";
+    content: "\e76f";
 }
 .mas-van-outlined:before {
-    content: "\f14e";
+    content: "\e770";
 }

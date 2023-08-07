@@ -1,8 +1,8 @@
 @font-face {
     font-family: "communication";
-    src: url(".//communication.ttf?cbd7ee56a7f4f7e5c8f8bf7b421e882b") format("truetype"),
-url(".//communication.woff?cbd7ee56a7f4f7e5c8f8bf7b421e882b") format("woff"),
-url(".//communication.woff2?cbd7ee56a7f4f7e5c8f8bf7b421e882b") format("woff2");
+    src: url(".//communication.ttf?88ac7aae0756f5e66e7af6af45e89dc9") format("truetype"),
+url(".//communication.woff?88ac7aae0756f5e66e7af6af45e89dc9") format("woff"),
+url(".//communication.woff2?88ac7aae0756f5e66e7af6af45e89dc9") format("woff2");
 }
 
 i[class^="mas-"]:before, i[class*=" mas-"]:before {
@@ -17,182 +17,182 @@ i[class^="mas-"]:before, i[class*=" mas-"]:before {
 }
 
 .mas-address-book-outlined:before {
-    content: "\f101";
+    content: "\e606";
 }
 .mas-asterisk-outlined:before {
-    content: "\f102";
+    content: "\e607";
 }
 .mas-asterisk-simple-outlined:before {
-    content: "\f103";
+    content: "\e608";
 }
 .mas-at-outlined:before {
-    content: "\f104";
+    content: "\e609";
 }
 .mas-broadcast-outlined:before {
-    content: "\f105";
+    content: "\e60a";
 }
 .mas-chat-centered-dots-outlined:before {
-    content: "\f106";
+    content: "\e60b";
 }
 .mas-chat-centered-outlined:before {
-    content: "\f107";
+    content: "\e60c";
 }
 .mas-chat-centered-text-outlined:before {
-    content: "\f108";
+    content: "\e60d";
 }
 .mas-chat-circle-dots-outlined:before {
-    content: "\f109";
+    content: "\e60e";
 }
 .mas-chat-circle-outlined:before {
-    content: "\f10a";
+    content: "\e60f";
 }
 .mas-chat-circle-text-outlined:before {
-    content: "\f10b";
+    content: "\e610";
 }
 .mas-chat-dots-outlined:before {
-    content: "\f10c";
+    content: "\e611";
 }
 .mas-chat-outlined:before {
-    content: "\f10d";
+    content: "\e612";
 }
 .mas-chat-teardrop-dots-outlined:before {
-    content: "\f10e";
+    content: "\e613";
 }
 .mas-chat-teardrop-outlined:before {
-    content: "\f10f";
+    content: "\e614";
 }
 .mas-chat-teardrop-text-outlined:before {
-    content: "\f110";
+    content: "\e615";
 }
 .mas-chat-text-outlined:before {
-    content: "\f111";
+    content: "\e616";
 }
 .mas-chats-circle-outlined:before {
-    content: "\f112";
+    content: "\e617";
 }
 .mas-chats-outlined:before {
-    content: "\f113";
+    content: "\e618";
 }
 .mas-chats-teardrop-outlined:before {
-    content: "\f114";
+    content: "\e619";
 }
 .mas-cross-outlined:before {
-    content: "\f115";
+    content: "\e61a";
 }
 .mas-envelope-open-outlined:before {
-    content: "\f116";
+    content: "\e61b";
 }
 .mas-envelope-outlined:before {
-    content: "\f117";
+    content: "\e61c";
 }
 .mas-envelope-simple-open-outlined:before {
-    content: "\f118";
+    content: "\e61d";
 }
 .mas-envelope-simple-outlined:before {
-    content: "\f119";
+    content: "\e61e";
 }
 .mas-export-outlined:before {
-    content: "\f11a";
+    content: "\e61f";
 }
 .mas-hash-outlined:before {
-    content: "\f11b";
+    content: "\e620";
 }
 .mas-hash-straight-outlined:before {
-    content: "\f11c";
+    content: "\e621";
 }
 .mas-megaphone-outlined:before {
-    content: "\f11d";
+    content: "\e622";
 }
 .mas-megaphone-simple-outlined:before {
-    content: "\f11e";
+    content: "\e623";
 }
 .mas-paper-plane-outlined:before {
-    content: "\f11f";
+    content: "\e624";
 }
 .mas-paper-plane-right-outlined:before {
-    content: "\f120";
+    content: "\e625";
 }
 .mas-paper-plane-tilt-outlined:before {
-    content: "\f121";
+    content: "\e626";
 }
 .mas-peace-outlined:before {
-    content: "\f122";
+    content: "\e627";
 }
 .mas-phone-call-outlined:before {
-    content: "\f123";
+    content: "\e628";
 }
 .mas-phone-disconnect-outlined:before {
-    content: "\f124";
+    content: "\e629";
 }
 .mas-phone-incoming-outlined:before {
-    content: "\f125";
+    content: "\e62a";
 }
 .mas-phone-outgoing-outlined:before {
-    content: "\f126";
+    content: "\e62b";
 }
 .mas-phone-outlined:before {
-    content: "\f127";
+    content: "\e62c";
 }
 .mas-phone-plus-outlined:before {
-    content: "\f128";
+    content: "\e62d";
 }
 .mas-phone-slash-outlined:before {
-    content: "\f129";
+    content: "\e62e";
 }
 .mas-phone-x-outlined:before {
-    content: "\f12a";
+    content: "\e62f";
 }
 .mas-quotes-outlined:before {
-    content: "\f12b";
+    content: "\e630";
 }
 .mas-radio-outlined:before {
-    content: "\f12c";
+    content: "\e631";
 }
 .mas-rss-outlined:before {
-    content: "\f12d";
+    content: "\e632";
 }
 .mas-rss-simple-outlined:before {
-    content: "\f12e";
+    content: "\e633";
 }
 .mas-share-fat-outlined:before {
-    content: "\f12f";
+    content: "\e634";
 }
 .mas-share-network-outlined:before {
-    content: "\f130";
+    content: "\e635";
 }
 .mas-share-outlined:before {
-    content: "\f131";
+    content: "\e636";
 }
 .mas-signature-outlined:before {
-    content: "\f132";
+    content: "\e637";
 }
 .mas-star-and-crescent-outlined:before {
-    content: "\f133";
+    content: "\e638";
 }
 .mas-star-half-outlined:before {
-    content: "\f134";
+    content: "\e639";
 }
 .mas-star-of-david-outlined:before {
-    content: "\f135";
+    content: "\e63a";
 }
 .mas-star-outlined:before {
-    content: "\f136";
+    content: "\e63b";
 }
 .mas-sticker-outlined:before {
-    content: "\f137";
+    content: "\e63c";
 }
 .mas-thumbs-down-outlined:before {
-    content: "\f138";
+    content: "\e63d";
 }
 .mas-thumbs-up-outlined:before {
-    content: "\f139";
+    content: "\e63e";
 }
 .mas-translate-outlined:before {
-    content: "\f13a";
+    content: "\e63f";
 }
 .mas-voicemail-outlined:before {
-    content: "\f13b";
+    content: "\e640";
 }
 .mas-yin-yang-outlined:before {
-    content: "\f13c";
+    content: "\e641";
 }

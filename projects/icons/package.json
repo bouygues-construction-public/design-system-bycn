@@ -23,11 +23,11 @@
   ],
   "scripts": {
     "build": "shx mkdir -p dist && shx cp -r src/generated/svg src/generated/font dist && npm run build:css",
-    "build:css": "postcss dist/font/filled/index.css -o dist/font/filled/dist/index.css"
+    "build:css": "postcss src/generated/font/filled/index.css -o dist/font/filled/index.css && postcss src/generated/font/outlined/index.css -o dist/font/outlined/index.css"
   },
   "devDependencies": {
     "@masoni/css-postcss-config": "file:../css/config/postcss",
-    "@masoni/css-tailwind-preset": "file:presets/tailwind",
+    "@masoni/css-tailwind-preset": "file:../css/presets/tailwind",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.23",
     "postcss-cli": "^10.1.0",

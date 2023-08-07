@@ -1,8 +1,8 @@
 @font-face {
     font-family: "math-and-finance";
-    src: url(".//math-and-finance.ttf?f6828e34e77c422bd0770afebf6c1425") format("truetype"),
-url(".//math-and-finance.woff?f6828e34e77c422bd0770afebf6c1425") format("woff"),
-url(".//math-and-finance.woff2?f6828e34e77c422bd0770afebf6c1425") format("woff2");
+    src: url(".//math-and-finance.ttf?a43a2d3f8fe4c351a5e7213790526759") format("truetype"),
+url(".//math-and-finance.woff?a43a2d3f8fe4c351a5e7213790526759") format("woff"),
+url(".//math-and-finance.woff2?a43a2d3f8fe4c351a5e7213790526759") format("woff2");
 }
 
 i[class^="mas-"]:before, i[class*=" mas-"]:before {
@@ -17,197 +17,197 @@ i[class^="mas-"]:before, i[class*=" mas-"]:before {
 }
 
 .mas-bank-outlined:before {
-    content: "\f101";
+    content: "\e771";
 }
 .mas-calculator-outlined:before {
-    content: "\f102";
+    content: "\e772";
 }
 .mas-chart-bar-horizontal-outlined:before {
-    content: "\f103";
+    content: "\e773";
 }
 .mas-chart-bar-outlined:before {
-    content: "\f104";
+    content: "\e774";
 }
 .mas-chart-donut-outlined:before {
-    content: "\f105";
+    content: "\e775";
 }
 .mas-chart-line-down-outlined:before {
-    content: "\f106";
+    content: "\e776";
 }
 .mas-chart-line-outlined:before {
-    content: "\f107";
+    content: "\e777";
 }
 .mas-chart-line-up-outlined:before {
-    content: "\f108";
+    content: "\e778";
 }
 .mas-chart-pie-outlined:before {
-    content: "\f109";
+    content: "\e779";
 }
 .mas-chart-pie-slice-outlined:before {
-    content: "\f10a";
+    content: "\e77a";
 }
 .mas-chart-polar-outlined:before {
-    content: "\f10b";
+    content: "\e77b";
 }
 .mas-chart-scatter-outlined:before {
-    content: "\f10c";
+    content: "\e77c";
 }
 .mas-divide-outlined:before {
-    content: "\f10d";
+    content: "\e77d";
 }
 .mas-equals-outlined:before {
-    content: "\f10e";
+    content: "\e77e";
 }
 .mas-function-outlined:before {
-    content: "\f10f";
+    content: "\e77f";
 }
 .mas-graph-outlined:before {
-    content: "\f110";
+    content: "\e780";
 }
 .mas-infinity-outlined:before {
-    content: "\f111";
+    content: "\e781";
 }
 .mas-math-operations-outlined:before {
-    content: "\f112";
+    content: "\e782";
 }
 .mas-minus-circle-outlined:before {
-    content: "\f113";
+    content: "\e783";
 }
 .mas-minus-outlined:before {
-    content: "\f114";
+    content: "\e784";
 }
 .mas-minus-square-outlined:before {
-    content: "\f115";
+    content: "\e785";
 }
 .mas-number-circle-eight-outlined:before {
-    content: "\f116";
+    content: "\e786";
 }
 .mas-number-circle-five-outlined:before {
-    content: "\f117";
+    content: "\e787";
 }
 .mas-number-circle-four-outlined:before {
-    content: "\f118";
+    content: "\e788";
 }
 .mas-number-circle-nine-outlined:before {
-    content: "\f119";
+    content: "\e789";
 }
 .mas-number-circle-one-outlined:before {
-    content: "\f11a";
+    content: "\e78a";
 }
 .mas-number-circle-seven-outlined:before {
-    content: "\f11b";
+    content: "\e78b";
 }
 .mas-number-circle-six-outlined:before {
-    content: "\f11c";
+    content: "\e78c";
 }
 .mas-number-circle-three-outlined:before {
-    content: "\f11d";
+    content: "\e78d";
 }
 .mas-number-circle-two-outlined:before {
-    content: "\f11e";
+    content: "\e78e";
 }
 .mas-number-circle-zero-outlined:before {
-    content: "\f11f";
+    content: "\e78f";
 }
 .mas-number-eight-outlined:before {
-    content: "\f120";
+    content: "\e790";
 }
 .mas-number-five-outlined:before {
-    content: "\f121";
+    content: "\e791";
 }
 .mas-number-four-outlined:before {
-    content: "\f122";
+    content: "\e792";
 }
 .mas-number-nine-outlined:before {
-    content: "\f123";
+    content: "\e793";
 }
 .mas-number-one-outlined:before {
-    content: "\f124";
+    content: "\e794";
 }
 .mas-number-seven-outlined:before {
-    content: "\f125";
+    content: "\e795";
 }
 .mas-number-six-outlined:before {
-    content: "\f126";
+    content: "\e796";
 }
 .mas-number-square-eight-outlined:before {
-    content: "\f127";
+    content: "\e797";
 }
 .mas-number-square-five-outlined:before {
-    content: "\f128";
+    content: "\e798";
 }
 .mas-number-square-four-outlined:before {
-    content: "\f129";
+    content: "\e799";
 }
 .mas-number-square-nine-outlined:before {
-    content: "\f12a";
+    content: "\e79a";
 }
 .mas-number-square-one-outlined:before {
-    content: "\f12b";
+    content: "\e79b";
 }
 .mas-number-square-seven-outlined:before {
-    content: "\f12c";
+    content: "\e79c";
 }
 .mas-number-square-six-outlined:before {
-    content: "\f12d";
+    content: "\e79d";
 }
 .mas-number-square-three-outlined:before {
-    content: "\f12e";
+    content: "\e79e";
 }
 .mas-number-square-two-outlined:before {
-    content: "\f12f";
+    content: "\e79f";
 }
 .mas-number-square-zero-outlined:before {
-    content: "\f130";
+    content: "\e7a0";
 }
 .mas-number-three-outlined:before {
-    content: "\f131";
+    content: "\e7a1";
 }
 .mas-number-two-outlined:before {
-    content: "\f132";
+    content: "\e7a2";
 }
 .mas-number-zero-outlined:before {
-    content: "\f133";
+    content: "\e7a3";
 }
 .mas-percent-outlined:before {
-    content: "\f134";
+    content: "\e7a4";
 }
 .mas-pi-outlined:before {
-    content: "\f135";
+    content: "\e7a5";
 }
 .mas-plus-circle-outlined:before {
-    content: "\f136";
+    content: "\e7a6";
 }
 .mas-plus-minus-outlined:before {
-    content: "\f137";
+    content: "\e7a7";
 }
 .mas-plus-outlined:before {
-    content: "\f138";
+    content: "\e7a8";
 }
 .mas-plus-square-outlined:before {
-    content: "\f139";
+    content: "\e7a9";
 }
 .mas-radical-outlined:before {
-    content: "\f13a";
+    content: "\e7aa";
 }
 .mas-sigma-outlined:before {
-    content: "\f13b";
+    content: "\e7ab";
 }
 .mas-table-outlined:before {
-    content: "\f13c";
+    content: "\e7ac";
 }
 .mas-trend-down-outlined:before {
-    content: "\f13d";
+    content: "\e7ad";
 }
 .mas-trend-up-outlined:before {
-    content: "\f13e";
+    content: "\e7ae";
 }
 .mas-x-circle-outlined:before {
-    content: "\f13f";
+    content: "\e7af";
 }
 .mas-x-outlined:before {
-    content: "\f140";
+    content: "\e7b0";
 }
 .mas-x-square-outlined:before {
-    content: "\f141";
+    content: "\e7b1";
 }

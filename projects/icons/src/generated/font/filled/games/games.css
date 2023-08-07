@@ -1,8 +1,8 @@
 @font-face {
     font-family: "games";
-    src: url(".//games.ttf?41212ad72ba46111ab3ba53a0b32e72c") format("truetype"),
-url(".//games.woff?41212ad72ba46111ab3ba53a0b32e72c") format("woff"),
-url(".//games.woff2?41212ad72ba46111ab3ba53a0b32e72c") format("woff2");
+    src: url(".//games.ttf?7379be9c36987a0d0f367a7b274ceff5") format("truetype"),
+url(".//games.woff?7379be9c36987a0d0f367a7b274ceff5") format("woff"),
+url(".//games.woff2?7379be9c36987a0d0f367a7b274ceff5") format("woff2");
 }
 
 i[class^="mas-"]:before, i[class*=" mas-"]:before {
@@ -17,149 +17,149 @@ i[class^="mas-"]:before, i[class*=" mas-"]:before {
 }
 
 .mas-alien-filled:before {
-    content: "\f101";
+    content: "\e1fb";
 }
 .mas-baseball-filled:before {
-    content: "\f102";
+    content: "\e1fc";
 }
 .mas-basketball-filled:before {
-    content: "\f103";
+    content: "\e1fd";
 }
 .mas-castle-turret-filled:before {
-    content: "\f104";
+    content: "\e1fe";
 }
 .mas-club-filled:before {
-    content: "\f105";
+    content: "\e1ff";
 }
 .mas-confetti-filled:before {
-    content: "\f106";
+    content: "\e200";
 }
 .mas-crown-filled:before {
-    content: "\f107";
+    content: "\e201";
 }
 .mas-crown-simple-filled:before {
-    content: "\f108";
+    content: "\e202";
 }
 .mas-cube-focus-filled:before {
-    content: "\f109";
+    content: "\e203";
 }
 .mas-diamond-filled:before {
-    content: "\f10a";
+    content: "\e204";
 }
 .mas-dice-five-filled:before {
-    content: "\f10b";
+    content: "\e205";
 }
 .mas-dice-four-filled:before {
-    content: "\f10c";
+    content: "\e206";
 }
 .mas-dice-one-filled:before {
-    content: "\f10d";
+    content: "\e207";
 }
 .mas-dice-six-filled:before {
-    content: "\f10e";
+    content: "\e208";
 }
 .mas-dice-three-filled:before {
-    content: "\f10f";
+    content: "\e209";
 }
 .mas-dice-two-filled:before {
-    content: "\f110";
+    content: "\e20a";
 }
 .mas-finn-the-human-filled:before {
-    content: "\f111";
+    content: "\e20b";
 }
 .mas-flying-saucer-filled:before {
-    content: "\f112";
+    content: "\e20c";
 }
 .mas-football-filled:before {
-    content: "\f113";
+    content: "\e20d";
 }
 .mas-game-controller-filled:before {
-    content: "\f114";
+    content: "\e20e";
 }
 .mas-ghost-filled:before {
-    content: "\f115";
+    content: "\e20f";
 }
 .mas-google-cardboard-logo-filled:before {
-    content: "\f116";
+    content: "\e210";
 }
 .mas-heart-break-filled:before {
-    content: "\f117";
+    content: "\e211";
 }
 .mas-heart-filled:before {
-    content: "\f118";
+    content: "\e212";
 }
 .mas-heart-half-filled:before {
-    content: "\f119";
+    content: "\e213";
 }
 .mas-heart-straight-break-filled:before {
-    content: "\f11a";
+    content: "\e214";
 }
 .mas-heart-straight-filled:before {
-    content: "\f11b";
+    content: "\e215";
 }
 .mas-horse-filled:before {
-    content: "\f11c";
+    content: "\e216";
 }
 .mas-mask-happy-filled:before {
-    content: "\f11d";
+    content: "\e217";
 }
 .mas-mask-sad-filled:before {
-    content: "\f11e";
+    content: "\e218";
 }
 .mas-medal-filled:before {
-    content: "\f11f";
+    content: "\e219";
 }
 .mas-medal-military-filled:before {
-    content: "\f120";
+    content: "\e21a";
 }
 .mas-parachute-filled:before {
-    content: "\f121";
+    content: "\e21b";
 }
 .mas-pinwheel-filled:before {
-    content: "\f122";
+    content: "\e21c";
 }
 .mas-poker-chip-filled:before {
-    content: "\f123";
+    content: "\e21d";
 }
 .mas-puzzle-piece-filled:before {
-    content: "\f124";
+    content: "\e21e";
 }
 .mas-scroll-filled:before {
-    content: "\f125";
+    content: "\e21f";
 }
 .mas-skull-filled:before {
-    content: "\f126";
+    content: "\e220";
 }
 .mas-soccer-ball-filled:before {
-    content: "\f127";
+    content: "\e221";
 }
 .mas-spade-filled:before {
-    content: "\f128";
+    content: "\e222";
 }
 .mas-spiral-filled:before {
-    content: "\f129";
+    content: "\e223";
 }
 .mas-strategy-filled:before {
-    content: "\f12a";
+    content: "\e224";
 }
 .mas-sword-filled:before {
-    content: "\f12b";
+    content: "\e225";
 }
 .mas-target-filled:before {
-    content: "\f12c";
+    content: "\e226";
 }
 .mas-tennis-ball-filled:before {
-    content: "\f12d";
+    content: "\e227";
 }
 .mas-tree-palm-filled:before {
-    content: "\f12e";
+    content: "\e228";
 }
 .mas-trophy-filled:before {
-    content: "\f12f";
+    content: "\e229";
 }
 .mas-virtual-reality-filled:before {
-    content: "\f130";
+    content: "\e22a";
 }
 .mas-volleyball-filled:before {
-    content: "\f131";
+    content: "\e22b";
 }

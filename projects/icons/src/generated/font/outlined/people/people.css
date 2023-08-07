@@ -1,8 +1,8 @@
 @font-face {
     font-family: "people";
-    src: url(".//people.ttf?dd515b23725be95c84df79a072f02a8c") format("truetype"),
-url(".//people.woff?dd515b23725be95c84df79a072f02a8c") format("woff"),
-url(".//people.woff2?dd515b23725be95c84df79a072f02a8c") format("woff2");
+    src: url(".//people.ttf?8d85c9655bdf99929b824f0285f81244") format("truetype"),
+url(".//people.woff?8d85c9655bdf99929b824f0285f81244") format("woff"),
+url(".//people.woff2?8d85c9655bdf99929b824f0285f81244") format("woff2");
 }
 
 i[class^="mas-"]:before, i[class*=" mas-"]:before {
@@ -17,164 +17,164 @@ i[class^="mas-"]:before, i[class*=" mas-"]:before {
 }
 
 .mas-baby-outlined:before {
-    content: "\f101";
+    content: "\e88e";
 }
 .mas-footprints-outlined:before {
-    content: "\f102";
+    content: "\e88f";
 }
 .mas-gender-female-outlined:before {
-    content: "\f103";
+    content: "\e890";
 }
 .mas-gender-intersex-outlined:before {
-    content: "\f104";
+    content: "\e891";
 }
 .mas-gender-male-outlined:before {
-    content: "\f105";
+    content: "\e892";
 }
 .mas-gender-neuter-outlined:before {
-    content: "\f106";
+    content: "\e893";
 }
 .mas-gender-nonbinary-outlined:before {
-    content: "\f107";
+    content: "\e894";
 }
 .mas-gender-transgender-outlined:before {
-    content: "\f108";
+    content: "\e895";
 }
 .mas-hand-eye-outlined:before {
-    content: "\f109";
+    content: "\e896";
 }
 .mas-hand-fist-outlined:before {
-    content: "\f10a";
+    content: "\e897";
 }
 .mas-hand-grabbing-outlined:before {
-    content: "\f10b";
+    content: "\e898";
 }
 .mas-hand-outlined:before {
-    content: "\f10c";
+    content: "\e899";
 }
 .mas-hand-palm-outlined:before {
-    content: "\f10d";
+    content: "\e89a";
 }
 .mas-hand-pointing-outlined:before {
-    content: "\f10e";
+    content: "\e89b";
 }
 .mas-hand-waving-outlined:before {
-    content: "\f10f";
+    content: "\e89c";
 }
 .mas-hands-clapping-outlined:before {
-    content: "\f110";
+    content: "\e89d";
 }
 .mas-hands-praying-outlined:before {
-    content: "\f111";
+    content: "\e89e";
 }
 .mas-handshake-outlined:before {
-    content: "\f112";
+    content: "\e89f";
 }
 .mas-identification-badge-outlined:before {
-    content: "\f113";
+    content: "\e8a0";
 }
 .mas-identification-card-outlined:before {
-    content: "\f114";
+    content: "\e8a1";
 }
 .mas-person-arms-spread-outlined:before {
-    content: "\f115";
+    content: "\e8a2";
 }
 .mas-person-outlined:before {
-    content: "\f116";
+    content: "\e8a3";
 }
 .mas-person-simple-bike-outlined:before {
-    content: "\f117";
+    content: "\e8a4";
 }
 .mas-person-simple-outlined:before {
-    content: "\f118";
+    content: "\e8a5";
 }
 .mas-person-simple-run-outlined:before {
-    content: "\f119";
+    content: "\e8a6";
 }
 .mas-person-simple-throw-outlined:before {
-    content: "\f11a";
+    content: "\e8a7";
 }
 .mas-person-simple-walk-outlined:before {
-    content: "\f11b";
+    content: "\e8a8";
 }
 .mas-smiley-angry-outlined:before {
-    content: "\f11c";
+    content: "\e8a9";
 }
 .mas-smiley-blank-outlined:before {
-    content: "\f11d";
+    content: "\e8aa";
 }
 .mas-smiley-meh-outlined:before {
-    content: "\f11e";
+    content: "\e8ab";
 }
 .mas-smiley-nervous-outlined:before {
-    content: "\f11f";
+    content: "\e8ac";
 }
 .mas-smiley-outlined:before {
-    content: "\f120";
+    content: "\e8ad";
 }
 .mas-smiley-sad-outlined:before {
-    content: "\f121";
+    content: "\e8ae";
 }
 .mas-smiley-sticker-outlined:before {
-    content: "\f122";
+    content: "\e8af";
 }
 .mas-smiley-wink-outlined:before {
-    content: "\f123";
+    content: "\e8b0";
 }
 .mas-smiley-x-eyes-outlined:before {
-    content: "\f124";
+    content: "\e8b1";
 }
 .mas-user-circle-gear-outlined:before {
-    content: "\f125";
+    content: "\e8b2";
 }
 .mas-user-circle-minus-outlined:before {
-    content: "\f126";
+    content: "\e8b3";
 }
 .mas-user-circle-outlined:before {
-    content: "\f127";
+    content: "\e8b4";
 }
 .mas-user-circle-plus-outlined:before {
-    content: "\f128";
+    content: "\e8b5";
 }
 .mas-user-focus-outlined:before {
-    content: "\f129";
+    content: "\e8b6";
 }
 .mas-user-gear-outlined:before {
-    content: "\f12a";
+    content: "\e8b7";
 }
 .mas-user-list-outlined:before {
-    content: "\f12b";
+    content: "\e8b8";
 }
 .mas-user-minus-outlined:before {
-    content: "\f12c";
+    content: "\e8b9";
 }
 .mas-user-outlined:before {
-    content: "\f12d";
+    content: "\e8ba";
 }
 .mas-user-plus-outlined:before {
-    content: "\f12e";
+    content: "\e8bb";
 }
 .mas-user-rectangle-outlined:before {
-    content: "\f12f";
+    content: "\e8bc";
 }
 .mas-user-square-outlined:before {
-    content: "\f130";
+    content: "\e8bd";
 }
 .mas-user-switch-outlined:before {
-    content: "\f131";
+    content: "\e8be";
 }
 .mas-users-four-outlined:before {
-    content: "\f132";
+    content: "\e8bf";
 }
 .mas-users-outlined:before {
-    content: "\f133";
+    content: "\e8c0";
 }
 .mas-users-three-outlined:before {
-    content: "\f134";
+    content: "\e8c1";
 }
 .mas-wheelchair-motion-outlined:before {
-    content: "\f135";
+    content: "\e8c2";
 }
 .mas-wheelchair-outlined:before {
-    content: "\f136";
+    content: "\e8c3";
 }
