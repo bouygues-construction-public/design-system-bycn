@@ -1,0 +1,420 @@
+@font-face {
+    font-family: "commerce";
+    src: url("../../fonts/filled/commerce/commerce.ttf?a7a90e8169bac55030ca937decd1c72a") format("truetype"),
+url("../../fonts/filled/commerce/commerce.woff?a7a90e8169bac55030ca937decd1c72a") format("woff"),
+url("../../fonts/filled/commerce/commerce.woff2?a7a90e8169bac55030ca937decd1c72a") format("woff2");
+}
+
+i[class^="mas-"]:before, i[class*=" mas-"]:before {
+    font-family: commerce !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-0:before {
+    content: "\[object Object]";
+}
+.mas-1:before {
+    content: "\[object Object]";
+}
+.mas-2:before {
+    content: "\[object Object]";
+}
+.mas-3:before {
+    content: "\[object Object]";
+}
+.mas-4:before {
+    content: "\[object Object]";
+}
+.mas-5:before {
+    content: "\[object Object]";
+}
+.mas-6:before {
+    content: "\[object Object]";
+}
+.mas-7:before {
+    content: "\[object Object]";
+}
+.mas-8:before {
+    content: "\[object Object]";
+}
+.mas-9:before {
+    content: "\[object Object]";
+}
+.mas-10:before {
+    content: "\[object Object]";
+}
+.mas-11:before {
+    content: "\[object Object]";
+}
+.mas-12:before {
+    content: "\[object Object]";
+}
+.mas-13:before {
+    content: "\[object Object]";
+}
+.mas-14:before {
+    content: "\[object Object]";
+}
+.mas-15:before {
+    content: "\[object Object]";
+}
+.mas-16:before {
+    content: "\[object Object]";
+}
+.mas-17:before {
+    content: "\[object Object]";
+}
+.mas-armchair-filled:before {
+    content: "\f101";
+}
+.mas-backpack-filled:before {
+    content: "\f102";
+}
+.mas-bag-filled:before {
+    content: "\f103";
+}
+.mas-bag-simple-filled:before {
+    content: "\f104";
+}
+.mas-balloon-filled:before {
+    content: "\f105";
+}
+.mas-barcode-filled:before {
+    content: "\f106";
+}
+.mas-baseball-cap-filled:before {
+    content: "\f107";
+}
+.mas-basket-filled:before {
+    content: "\f108";
+}
+.mas-bathtub-filled:before {
+    content: "\f109";
+}
+.mas-beer-bottle-filled:before {
+    content: "\f10a";
+}
+.mas-beer-stein-filled:before {
+    content: "\f10b";
+}
+.mas-binoculars-filled:before {
+    content: "\f10c";
+}
+.mas-boot-filled:before {
+    content: "\f10d";
+}
+.mas-bowl-food-filled:before {
+    content: "\f10e";
+}
+.mas-brandy-filled:before {
+    content: "\f10f";
+}
+.mas-bridge-filled:before {
+    content: "\f110";
+}
+.mas-broom-filled:before {
+    content: "\f111";
+}
+.mas-buildings-filled:before {
+    content: "\f112";
+}
+.mas-cake-filled:before {
+    content: "\f113";
+}
+.mas-call-bell-filled:before {
+    content: "\f114";
+}
+.mas-cardholder-filled:before {
+    content: "\f115";
+}
+.mas-carrot-filled:before {
+    content: "\f116";
+}
+.mas-chair-filled:before {
+    content: "\f117";
+}
+.mas-champagne-filled:before {
+    content: "\f118";
+}
+.mas-coat-hanger-filled:before {
+    content: "\f119";
+}
+.mas-coffee-filled:before {
+    content: "\f11a";
+}
+.mas-coin-filled:before {
+    content: "\f11b";
+}
+.mas-coin-vertical-filled:before {
+    content: "\f11c";
+}
+.mas-coins-filled:before {
+    content: "\f11d";
+}
+.mas-contactless-payment-filled:before {
+    content: "\f11e";
+}
+.mas-cookie-filled:before {
+    content: "\f11f";
+}
+.mas-cooking-pot-filled:before {
+    content: "\f120";
+}
+.mas-couch-filled:before {
+    content: "\f121";
+}
+.mas-credit-card-filled:before {
+    content: "\f122";
+}
+.mas-currency-btc-filled:before {
+    content: "\f123";
+}
+.mas-currency-circle-dollar-filled:before {
+    content: "\f124";
+}
+.mas-currency-cny-filled:before {
+    content: "\f125";
+}
+.mas-currency-dollar-filled:before {
+    content: "\f126";
+}
+.mas-currency-dollar-simple-filled:before {
+    content: "\f127";
+}
+.mas-currency-eth-filled:before {
+    content: "\f128";
+}
+.mas-currency-eur-filled:before {
+    content: "\f129";
+}
+.mas-currency-gbp-filled:before {
+    content: "\f12a";
+}
+.mas-currency-inr-filled:before {
+    content: "\f12b";
+}
+.mas-currency-jpy-filled:before {
+    content: "\f12c";
+}
+.mas-currency-krw-filled:before {
+    content: "\f12d";
+}
+.mas-currency-kzt-filled:before {
+    content: "\f12e";
+}
+.mas-currency-ngn-filled:before {
+    content: "\f12f";
+}
+.mas-currency-rub-filled:before {
+    content: "\f130";
+}
+.mas-door-filled:before {
+    content: "\f131";
+}
+.mas-door-open-filled:before {
+    content: "\f132";
+}
+.mas-dress-filled:before {
+    content: "\f133";
+}
+.mas-egg-crack-filled:before {
+    content: "\f134";
+}
+.mas-egg-filled:before {
+    content: "\f135";
+}
+.mas-eyeglasses-filled:before {
+    content: "\f136";
+}
+.mas-factory-filled:before {
+    content: "\f137";
+}
+.mas-fan-filled:before {
+    content: "\f138";
+}
+.mas-fork-knife-filled:before {
+    content: "\f139";
+}
+.mas-garage-filled:before {
+    content: "\f13a";
+}
+.mas-gavel-filled:before {
+    content: "\f13b";
+}
+.mas-gift-filled:before {
+    content: "\f13c";
+}
+.mas-grains-filled:before {
+    content: "\f13d";
+}
+.mas-grains-slash-filled:before {
+    content: "\f13e";
+}
+.mas-hamburger-filled:before {
+    content: "\f13f";
+}
+.mas-hammer-filled:before {
+    content: "\f140";
+}
+.mas-hand-coins-filled:before {
+    content: "\f141";
+}
+.mas-handbag-filled:before {
+    content: "\f142";
+}
+.mas-handbag-simple-filled:before {
+    content: "\f143";
+}
+.mas-high-heel-filled:before {
+    content: "\f144";
+}
+.mas-hoodie-filled:before {
+    content: "\f145";
+}
+.mas-ice-cream-filled:before {
+    content: "\f146";
+}
+.mas-knife-filled:before {
+    content: "\f147";
+}
+.mas-ladder-filled:before {
+    content: "\f148";
+}
+.mas-ladder-simple-filled:before {
+    content: "\f149";
+}
+.mas-lamp-filled:before {
+    content: "\f14a";
+}
+.mas-martini-filled:before {
+    content: "\f14b";
+}
+.mas-money-filled:before {
+    content: "\f14c";
+}
+.mas-needle-filled:before {
+    content: "\f14d";
+}
+.mas-office-chair-filled:before {
+    content: "\f14e";
+}
+.mas-orange-slice-filled:before {
+    content: "\f14f";
+}
+.mas-package-filled:before {
+    content: "\f150";
+}
+.mas-pants-filled:before {
+    content: "\f151";
+}
+.mas-pepper-filled:before {
+    content: "\f152";
+}
+.mas-piggy-bank-filled:before {
+    content: "\f153";
+}
+.mas-pizza-filled:before {
+    content: "\f154";
+}
+.mas-popcorn-filled:before {
+    content: "\f155";
+}
+.mas-potted-plant-filled:before {
+    content: "\f156";
+}
+.mas-receipt-filled:before {
+    content: "\f157";
+}
+.mas-receipt-x-filled:before {
+    content: "\f158";
+}
+.mas-rug-filled:before {
+    content: "\f159";
+}
+.mas-scales-filled:before {
+    content: "\f15a";
+}
+.mas-shirt-folded-filled:before {
+    content: "\f15b";
+}
+.mas-shopping-bag-filled:before {
+    content: "\f15c";
+}
+.mas-shopping-bag-open-filled:before {
+    content: "\f15d";
+}
+.mas-shopping-cart-filled:before {
+    content: "\f15e";
+}
+.mas-shopping-cart-simple-filled:before {
+    content: "\f15f";
+}
+.mas-shower-filled:before {
+    content: "\f160";
+}
+.mas-sneaker-filled:before {
+    content: "\f161";
+}
+.mas-sneaker-move-filled:before {
+    content: "\f162";
+}
+.mas-stairs-filled:before {
+    content: "\f163";
+}
+.mas-stool-filled:before {
+    content: "\f164";
+}
+.mas-storefront-filled:before {
+    content: "\f165";
+}
+.mas-sunglasses-filled:before {
+    content: "\f166";
+}
+.mas-t-shirt-filled:before {
+    content: "\f167";
+}
+.mas-tag-chevron-filled:before {
+    content: "\f168";
+}
+.mas-tag-filled:before {
+    content: "\f169";
+}
+.mas-tag-simple-filled:before {
+    content: "\f16a";
+}
+.mas-ticket-filled:before {
+    content: "\f16b";
+}
+.mas-toolbox-filled:before {
+    content: "\f16c";
+}
+.mas-tote-filled:before {
+    content: "\f16d";
+}
+.mas-tote-simple-filled:before {
+    content: "\f16e";
+}
+.mas-trademark-filled:before {
+    content: "\f16f";
+}
+.mas-trademark-registered-filled:before {
+    content: "\f170";
+}
+.mas-wallet-filled:before {
+    content: "\f171";
+}
+.mas-warehouse-filled:before {
+    content: "\f172";
+}
+.mas-wine-filled:before {
+    content: "\f173";
+}
+.mas-wrench-filled:before {
+    content: "\f174";
+}

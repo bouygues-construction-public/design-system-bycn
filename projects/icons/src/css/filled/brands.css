@@ -1,0 +1,261 @@
+@font-face {
+    font-family: "brands";
+    src: url("../../fonts/filled/brands/brands.ttf?f86ca08397bbe25bfa2c6768a574e5b8") format("truetype"),
+url("../../fonts/filled/brands/brands.woff?f86ca08397bbe25bfa2c6768a574e5b8") format("woff"),
+url("../../fonts/filled/brands/brands.woff2?f86ca08397bbe25bfa2c6768a574e5b8") format("woff2");
+}
+
+i[class^="mas-"]:before, i[class*=" mas-"]:before {
+    font-family: brands !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-0:before {
+    content: "\[object Object]";
+}
+.mas-1:before {
+    content: "\[object Object]";
+}
+.mas-2:before {
+    content: "\[object Object]";
+}
+.mas-3:before {
+    content: "\[object Object]";
+}
+.mas-4:before {
+    content: "\[object Object]";
+}
+.mas-5:before {
+    content: "\[object Object]";
+}
+.mas-6:before {
+    content: "\[object Object]";
+}
+.mas-7:before {
+    content: "\[object Object]";
+}
+.mas-8:before {
+    content: "\[object Object]";
+}
+.mas-9:before {
+    content: "\[object Object]";
+}
+.mas-10:before {
+    content: "\[object Object]";
+}
+.mas-11:before {
+    content: "\[object Object]";
+}
+.mas-12:before {
+    content: "\[object Object]";
+}
+.mas-13:before {
+    content: "\[object Object]";
+}
+.mas-14:before {
+    content: "\[object Object]";
+}
+.mas-15:before {
+    content: "\[object Object]";
+}
+.mas-16:before {
+    content: "\[object Object]";
+}
+.mas-17:before {
+    content: "\[object Object]";
+}
+.mas-amazon-logo-filled:before {
+    content: "\f101";
+}
+.mas-android-logo-filled:before {
+    content: "\f102";
+}
+.mas-angular-logo-filled:before {
+    content: "\f103";
+}
+.mas-app-store-logo-filled:before {
+    content: "\f104";
+}
+.mas-apple-logo-filled:before {
+    content: "\f105";
+}
+.mas-apple-podcasts-logo-filled:before {
+    content: "\f106";
+}
+.mas-behance-logo-filled:before {
+    content: "\f107";
+}
+.mas-coda-logo-filled:before {
+    content: "\f108";
+}
+.mas-codepen-logo-filled:before {
+    content: "\f109";
+}
+.mas-codesandbox-logo-filled:before {
+    content: "\f10a";
+}
+.mas-dev-to-logo-filled:before {
+    content: "\f10b";
+}
+.mas-discord-logo-filled:before {
+    content: "\f10c";
+}
+.mas-dribbble-logo-filled:before {
+    content: "\f10d";
+}
+.mas-dropbox-logo-filled:before {
+    content: "\f10e";
+}
+.mas-facebook-logo-filled:before {
+    content: "\f10f";
+}
+.mas-figma-logo-filled:before {
+    content: "\f110";
+}
+.mas-framer-logo-filled:before {
+    content: "\f111";
+}
+.mas-github-logo-filled:before {
+    content: "\f112";
+}
+.mas-gitlab-logo-filled:before {
+    content: "\f113";
+}
+.mas-gitlab-logo-simple-filled:before {
+    content: "\f114";
+}
+.mas-goodreads-logo-filled:before {
+    content: "\f115";
+}
+.mas-google-chrome-logo-filled:before {
+    content: "\f116";
+}
+.mas-google-drive-logo-filled:before {
+    content: "\f117";
+}
+.mas-google-logo-filled:before {
+    content: "\f118";
+}
+.mas-google-photos-logo-filled:before {
+    content: "\f119";
+}
+.mas-google-play-logo-filled:before {
+    content: "\f11a";
+}
+.mas-google-podcasts-logo-filled:before {
+    content: "\f11b";
+}
+.mas-instagram-logo-filled:before {
+    content: "\f11c";
+}
+.mas-linkedin-logo-filled:before {
+    content: "\f11d";
+}
+.mas-linux-logo-filled:before {
+    content: "\f11e";
+}
+.mas-medium-logo-filled:before {
+    content: "\f11f";
+}
+.mas-messenger-logo-filled:before {
+    content: "\f120";
+}
+.mas-meta-logo-filled:before {
+    content: "\f121";
+}
+.mas-microsoft-excel-logo-filled:before {
+    content: "\f122";
+}
+.mas-microsoft-outlook-logo-filled:before {
+    content: "\f123";
+}
+.mas-microsoft-powerpoint-logo-filled:before {
+    content: "\f124";
+}
+.mas-microsoft-teams-logo-filled:before {
+    content: "\f125";
+}
+.mas-microsoft-word-logo-filled:before {
+    content: "\f126";
+}
+.mas-notion-logo-filled:before {
+    content: "\f127";
+}
+.mas-ny-times-logo-filled:before {
+    content: "\f128";
+}
+.mas-patreon-logo-filled:before {
+    content: "\f129";
+}
+.mas-paypal-logo-filled:before {
+    content: "\f12a";
+}
+.mas-phosphor-logo-filled:before {
+    content: "\f12b";
+}
+.mas-pinterest-logo-filled:before {
+    content: "\f12c";
+}
+.mas-read-cv-logo-filled:before {
+    content: "\f12d";
+}
+.mas-reddit-logo-filled:before {
+    content: "\f12e";
+}
+.mas-sketch-logo-filled:before {
+    content: "\f12f";
+}
+.mas-slack-logo-filled:before {
+    content: "\f130";
+}
+.mas-snapchat-logo-filled:before {
+    content: "\f131";
+}
+.mas-soundcloud-logo-filled:before {
+    content: "\f132";
+}
+.mas-spotify-logo-filled:before {
+    content: "\f133";
+}
+.mas-square-logo-filled:before {
+    content: "\f134";
+}
+.mas-stack-overflow-logo-filled:before {
+    content: "\f135";
+}
+.mas-stripe-logo-filled:before {
+    content: "\f136";
+}
+.mas-telegram-logo-filled:before {
+    content: "\f137";
+}
+.mas-tidal-logo-filled:before {
+    content: "\f138";
+}
+.mas-tiktok-logo-filled:before {
+    content: "\f139";
+}
+.mas-twitch-logo-filled:before {
+    content: "\f13a";
+}
+.mas-twitter-logo-filled:before {
+    content: "\f13b";
+}
+.mas-wechat-logo-filled:before {
+    content: "\f13c";
+}
+.mas-whatsapp-logo-filled:before {
+    content: "\f13d";
+}
+.mas-windows-logo-filled:before {
+    content: "\f13e";
+}
+.mas-youtube-logo-filled:before {
+    content: "\f13f";
+}

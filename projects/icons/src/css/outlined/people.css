@@ -1,0 +1,234 @@
+@font-face {
+    font-family: "people";
+    src: url("../../fonts/outlined/people/people.ttf?dd515b23725be95c84df79a072f02a8c") format("truetype"),
+url("../../fonts/outlined/people/people.woff?dd515b23725be95c84df79a072f02a8c") format("woff"),
+url("../../fonts/outlined/people/people.woff2?dd515b23725be95c84df79a072f02a8c") format("woff2");
+}
+
+i[class^="mas-"]:before, i[class*=" mas-"]:before {
+    font-family: people !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-0:before {
+    content: "\[object Object]";
+}
+.mas-1:before {
+    content: "\[object Object]";
+}
+.mas-2:before {
+    content: "\[object Object]";
+}
+.mas-3:before {
+    content: "\[object Object]";
+}
+.mas-4:before {
+    content: "\[object Object]";
+}
+.mas-5:before {
+    content: "\[object Object]";
+}
+.mas-6:before {
+    content: "\[object Object]";
+}
+.mas-7:before {
+    content: "\[object Object]";
+}
+.mas-8:before {
+    content: "\[object Object]";
+}
+.mas-9:before {
+    content: "\[object Object]";
+}
+.mas-10:before {
+    content: "\[object Object]";
+}
+.mas-11:before {
+    content: "\[object Object]";
+}
+.mas-12:before {
+    content: "\[object Object]";
+}
+.mas-13:before {
+    content: "\[object Object]";
+}
+.mas-14:before {
+    content: "\[object Object]";
+}
+.mas-15:before {
+    content: "\[object Object]";
+}
+.mas-16:before {
+    content: "\[object Object]";
+}
+.mas-17:before {
+    content: "\[object Object]";
+}
+.mas-baby-outlined:before {
+    content: "\f101";
+}
+.mas-footprints-outlined:before {
+    content: "\f102";
+}
+.mas-gender-female-outlined:before {
+    content: "\f103";
+}
+.mas-gender-intersex-outlined:before {
+    content: "\f104";
+}
+.mas-gender-male-outlined:before {
+    content: "\f105";
+}
+.mas-gender-neuter-outlined:before {
+    content: "\f106";
+}
+.mas-gender-nonbinary-outlined:before {
+    content: "\f107";
+}
+.mas-gender-transgender-outlined:before {
+    content: "\f108";
+}
+.mas-hand-eye-outlined:before {
+    content: "\f109";
+}
+.mas-hand-fist-outlined:before {
+    content: "\f10a";
+}
+.mas-hand-grabbing-outlined:before {
+    content: "\f10b";
+}
+.mas-hand-outlined:before {
+    content: "\f10c";
+}
+.mas-hand-palm-outlined:before {
+    content: "\f10d";
+}
+.mas-hand-pointing-outlined:before {
+    content: "\f10e";
+}
+.mas-hand-waving-outlined:before {
+    content: "\f10f";
+}
+.mas-hands-clapping-outlined:before {
+    content: "\f110";
+}
+.mas-hands-praying-outlined:before {
+    content: "\f111";
+}
+.mas-handshake-outlined:before {
+    content: "\f112";
+}
+.mas-identification-badge-outlined:before {
+    content: "\f113";
+}
+.mas-identification-card-outlined:before {
+    content: "\f114";
+}
+.mas-person-arms-spread-outlined:before {
+    content: "\f115";
+}
+.mas-person-outlined:before {
+    content: "\f116";
+}
+.mas-person-simple-bike-outlined:before {
+    content: "\f117";
+}
+.mas-person-simple-outlined:before {
+    content: "\f118";
+}
+.mas-person-simple-run-outlined:before {
+    content: "\f119";
+}
+.mas-person-simple-throw-outlined:before {
+    content: "\f11a";
+}
+.mas-person-simple-walk-outlined:before {
+    content: "\f11b";
+}
+.mas-smiley-angry-outlined:before {
+    content: "\f11c";
+}
+.mas-smiley-blank-outlined:before {
+    content: "\f11d";
+}
+.mas-smiley-meh-outlined:before {
+    content: "\f11e";
+}
+.mas-smiley-nervous-outlined:before {
+    content: "\f11f";
+}
+.mas-smiley-outlined:before {
+    content: "\f120";
+}
+.mas-smiley-sad-outlined:before {
+    content: "\f121";
+}
+.mas-smiley-sticker-outlined:before {
+    content: "\f122";
+}
+.mas-smiley-wink-outlined:before {
+    content: "\f123";
+}
+.mas-smiley-x-eyes-outlined:before {
+    content: "\f124";
+}
+.mas-user-circle-gear-outlined:before {
+    content: "\f125";
+}
+.mas-user-circle-minus-outlined:before {
+    content: "\f126";
+}
+.mas-user-circle-outlined:before {
+    content: "\f127";
+}
+.mas-user-circle-plus-outlined:before {
+    content: "\f128";
+}
+.mas-user-focus-outlined:before {
+    content: "\f129";
+}
+.mas-user-gear-outlined:before {
+    content: "\f12a";
+}
+.mas-user-list-outlined:before {
+    content: "\f12b";
+}
+.mas-user-minus-outlined:before {
+    content: "\f12c";
+}
+.mas-user-outlined:before {
+    content: "\f12d";
+}
+.mas-user-plus-outlined:before {
+    content: "\f12e";
+}
+.mas-user-rectangle-outlined:before {
+    content: "\f12f";
+}
+.mas-user-square-outlined:before {
+    content: "\f130";
+}
+.mas-user-switch-outlined:before {
+    content: "\f131";
+}
+.mas-users-four-outlined:before {
+    content: "\f132";
+}
+.mas-users-outlined:before {
+    content: "\f133";
+}
+.mas-users-three-outlined:before {
+    content: "\f134";
+}
+.mas-wheelchair-motion-outlined:before {
+    content: "\f135";
+}
+.mas-wheelchair-outlined:before {
+    content: "\f136";
+}

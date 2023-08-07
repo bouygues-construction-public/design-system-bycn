@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "health-and-wellness";
+    src: url("../../fonts/filled/health-and-wellness/health-and-wellness.ttf?309c41447127ae110c915661be943f97") format("truetype"),
+url("../../fonts/filled/health-and-wellness/health-and-wellness.woff?309c41447127ae110c915661be943f97") format("woff"),
+url("../../fonts/filled/health-and-wellness/health-and-wellness.woff2?309c41447127ae110c915661be943f97") format("woff2");
+}
+
+i[class^="mas-"]:before, i[class*=" mas-"]:before {
+    font-family: health-and-wellness !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-0:before {
+    content: "\[object Object]";
+}
+.mas-1:before {
+    content: "\[object Object]";
+}
+.mas-2:before {
+    content: "\[object Object]";
+}
+.mas-3:before {
+    content: "\[object Object]";
+}
+.mas-4:before {
+    content: "\[object Object]";
+}
+.mas-5:before {
+    content: "\[object Object]";
+}
+.mas-6:before {
+    content: "\[object Object]";
+}
+.mas-7:before {
+    content: "\[object Object]";
+}
+.mas-8:before {
+    content: "\[object Object]";
+}
+.mas-9:before {
+    content: "\[object Object]";
+}
+.mas-10:before {
+    content: "\[object Object]";
+}
+.mas-11:before {
+    content: "\[object Object]";
+}
+.mas-12:before {
+    content: "\[object Object]";
+}
+.mas-13:before {
+    content: "\[object Object]";
+}
+.mas-14:before {
+    content: "\[object Object]";
+}
+.mas-15:before {
+    content: "\[object Object]";
+}
+.mas-16:before {
+    content: "\[object Object]";
+}
+.mas-17:before {
+    content: "\[object Object]";
+}
+.mas-bandaids-filled:before {
+    content: "\f101";
+}
+.mas-barbell-filled:before {
+    content: "\f102";
+}
+.mas-bed-filled:before {
+    content: "\f103";
+}
+.mas-brain-filled:before {
+    content: "\f104";
+}
+.mas-dna-filled:before {
+    content: "\f105";
+}
+.mas-face-mask-filled:before {
+    content: "\f106";
+}
+.mas-first-aid-filled:before {
+    content: "\f107";
+}
+.mas-first-aid-kit-filled:before {
+    content: "\f108";
+}
+.mas-flask-filled:before {
+    content: "\f109";
+}
+.mas-hand-heart-filled:before {
+    content: "\f10a";
+}
+.mas-hand-soap-filled:before {
+    content: "\f10b";
+}
+.mas-heartbeat-filled:before {
+    content: "\f10c";
+}
+.mas-lifebuoy-filled:before {
+    content: "\f10d";
+}
+.mas-pill-filled:before {
+    content: "\f10e";
+}
+.mas-prescription-filled:before {
+    content: "\f10f";
+}
+.mas-pulse-filled:before {
+    content: "\f110";
+}
+.mas-stethoscope-filled:before {
+    content: "\f111";
+}
+.mas-syringe-filled:before {
+    content: "\f112";
+}
+.mas-test-tube-filled:before {
+    content: "\f113";
+}
+.mas-toilet-filled:before {
+    content: "\f114";
+}
+.mas-toilet-paper-filled:before {
+    content: "\f115";
+}
+.mas-tooth-filled:before {
+    content: "\f116";
+}
+.mas-virus-filled:before {
+    content: "\f117";
+}

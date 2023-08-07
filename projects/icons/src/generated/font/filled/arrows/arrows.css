@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "arrows";
+    font-family: "arrows--filled";
     src: url(".//arrows.ttf?178c682bb20328212a4d09928891ba9b") format("truetype"),
 url(".//arrows.woff?178c682bb20328212a4d09928891ba9b") format("woff"),
 url(".//arrows.woff2?178c682bb20328212a4d09928891ba9b") format("woff2");
 }
 
-i[class^="mas-"]:before, i[class*=" mas-"]:before {
-    font-family: arrows !important;
+i[class^="mas-arrows--filled"]:before, i[class*=" mas-arrows--filled"]:before {
+    font-family: arrows--filled !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;

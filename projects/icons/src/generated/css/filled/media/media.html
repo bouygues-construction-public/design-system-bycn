@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>media</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .preview {
+            width: 100px;
+            display: inline-block;
+            margin: 10px;
+        }
+        .preview .inner {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            background: #f5f5f5;
+            -webkit-border-radius: 3px 3px 0 0;
+            -moz-border-radius: 3px 3px 0 0;
+            border-radius: 3px 3px 0 0;
+        }
+        .preview .inner  {
+            line-height: 85px;
+            font-size: 40px;
+            color: #333;
+        }
+        .label {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+            font-size: 10px;
+            font-family: Monaco, monospace;
+            color: #666;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background: #ddd;
+            -webkit-border-radius: 0 0 3px 3px;
+            -moz-border-radius: 0 0 3px 3px;
+            border-radius: 0 0 3px 3px;
+            color: #666;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="media.css" />
+</head>
+<body>
+
+    <h1>media</h1>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-airplay-filled"></i>
+            </span>
+            <br>
+            <span class='label'>airplay-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-aperture-filled"></i>
+            </span>
+            <br>
+            <span class='label'>aperture-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-article-filled"></i>
+            </span>
+            <br>
+            <span class='label'>article-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-article-medium-filled"></i>
+            </span>
+            <br>
+            <span class='label'>article-medium-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-article-ny-times-filled"></i>
+            </span>
+            <br>
+            <span class='label'>article-ny-times-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-camera-filled"></i>
+            </span>
+            <br>
+            <span class='label'>camera-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-camera-plus-filled"></i>
+            </span>
+            <br>
+            <span class='label'>camera-plus-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-camera-rotate-filled"></i>
+            </span>
+            <br>
+            <span class='label'>camera-rotate-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-camera-slash-filled"></i>
+            </span>
+            <br>
+            <span class='label'>camera-slash-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cassette-tape-filled"></i>
+            </span>
+            <br>
+            <span class='label'>cassette-tape-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-closed-captioning-filled"></i>
+            </span>
+            <br>
+            <span class='label'>closed-captioning-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-copyleft-filled"></i>
+            </span>
+            <br>
+            <span class='label'>copyleft-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-copyright-filled"></i>
+            </span>
+            <br>
+            <span class='label'>copyright-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-corners-in-filled"></i>
+            </span>
+            <br>
+            <span class='label'>corners-in-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-corners-out-filled"></i>
+            </span>
+            <br>
+            <span class='label'>corners-out-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-disc-filled"></i>
+            </span>
+            <br>
+            <span class='label'>disc-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-ear-filled"></i>
+            </span>
+            <br>
+            <span class='label'>ear-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-ear-slash-filled"></i>
+            </span>
+            <br>
+            <span class='label'>ear-slash-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-eject-filled"></i>
+            </span>
+            <br>
+            <span class='label'>eject-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-eject-simple-filled"></i>
+            </span>
+            <br>
+            <span class='label'>eject-simple-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-equalizer-filled"></i>
+            </span>
+            <br>
+            <span class='label'>equalizer-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-faders-filled"></i>
+            </span>
+            <br>
+            <span class='label'>faders-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-faders-horizontal-filled"></i>
+            </span>
+            <br>
+            <span class='label'>faders-horizontal-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-fast-forward-circle-filled"></i>
+            </span>
+            <br>
+            <span class='label'>fast-forward-circle-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-fast-forward-filled"></i>
+            </span>
+            <br>
+            <span class='label'>fast-forward-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-film-reel-filled"></i>
+            </span>
+            <br>
+            <span class='label'>film-reel-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-film-script-filled"></i>
+            </span>
+            <br>
+            <span class='label'>film-script-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-film-slate-filled"></i>
+            </span>
+            <br>
+            <span class='label'>film-slate-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-film-strip-filled"></i>
+            </span>
+            <br>
+            <span class='label'>film-strip-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-frame-corners-filled"></i>
+            </span>
+            <br>
+            <span class='label'>frame-corners-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-gif-filled"></i>
+            </span>
+            <br>
+            <span class='label'>gif-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-guitar-filled"></i>
+            </span>
+            <br>
+            <span class='label'>guitar-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-headphones-filled"></i>
+            </span>
+            <br>
+            <span class='label'>headphones-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-headset-filled"></i>
+            </span>
+            <br>
+            <span class='label'>headset-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-image-filled"></i>
+            </span>
+            <br>
+            <span class='label'>image-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-image-square-filled"></i>
+            </span>
+            <br>
+            <span class='label'>image-square-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-images-filled"></i>
+            </span>
+            <br>
+            <span class='label'>images-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-images-square-filled"></i>
+            </span>
+            <br>
+            <span class='label'>images-square-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-metronome-filled"></i>
+            </span>
+            <br>
+            <span class='label'>metronome-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-microphone-filled"></i>
+            </span>
+            <br>
+            <span class='label'>microphone-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-microphone-slash-filled"></i>
+            </span>
+            <br>
+            <span class='label'>microphone-slash-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-microphone-stage-filled"></i>
+            </span>
+            <br>
+            <span class='label'>microphone-stage-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-music-note-filled"></i>
+            </span>
+            <br>
+            <span class='label'>music-note-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-music-note-simple-filled"></i>
+            </span>
+            <br>
+            <span class='label'>music-note-simple-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-music-notes-filled"></i>
+            </span>
+            <br>
+            <span class='label'>music-notes-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-music-notes-plus-filled"></i>
+            </span>
+            <br>
+            <span class='label'>music-notes-plus-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-music-notes-simple-filled"></i>
+            </span>
+            <br>
+            <span class='label'>music-notes-simple-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-newspaper-clipping-filled"></i>
+            </span>
+            <br>
+            <span class='label'>newspaper-clipping-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-newspaper-filled"></i>
+            </span>
+            <br>
+            <span class='label'>newspaper-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-pause-circle-filled"></i>
+            </span>
+            <br>
+            <span class='label'>pause-circle-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-pause-filled"></i>
+            </span>
+            <br>
+            <span class='label'>pause-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-piano-keys-filled"></i>
+            </span>
+            <br>
+            <span class='label'>piano-keys-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-picture-in-picture-filled"></i>
+            </span>
+            <br>
+            <span class='label'>picture-in-picture-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-play-circle-filled"></i>
+            </span>
+            <br>
+            <span class='label'>play-circle-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-play-filled"></i>
+            </span>
+            <br>
+            <span class='label'>play-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-play-pause-filled"></i>
+            </span>
+            <br>
+            <span class='label'>play-pause-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-playlist-filled"></i>
+            </span>
+            <br>
+            <span class='label'>playlist-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-queue-filled"></i>
+            </span>
+            <br>
+            <span class='label'>queue-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-record-filled"></i>
+            </span>
+            <br>
+            <span class='label'>record-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-repeat-filled"></i>
+            </span>
+            <br>
+            <span class='label'>repeat-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-repeat-once-filled"></i>
+            </span>
+            <br>
+            <span class='label'>repeat-once-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-rewind-circle-filled"></i>
+            </span>
+            <br>
+            <span class='label'>rewind-circle-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-rewind-filled"></i>
+            </span>
+            <br>
+            <span class='label'>rewind-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-screencast-filled"></i>
+            </span>
+            <br>
+            <span class='label'>screencast-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-shuffle-angular-filled"></i>
+            </span>
+            <br>
+            <span class='label'>shuffle-angular-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-shuffle-filled"></i>
+            </span>
+            <br>
+            <span class='label'>shuffle-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-shuffle-simple-filled"></i>
+            </span>
+            <br>
+            <span class='label'>shuffle-simple-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-skip-back-circle-filled"></i>
+            </span>
+            <br>
+            <span class='label'>skip-back-circle-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-skip-back-filled"></i>
+            </span>
+            <br>
+            <span class='label'>skip-back-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-skip-forward-circle-filled"></i>
+            </span>
+            <br>
+            <span class='label'>skip-forward-circle-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-skip-forward-filled"></i>
+            </span>
+            <br>
+            <span class='label'>skip-forward-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-sliders-filled"></i>
+            </span>
+            <br>
+            <span class='label'>sliders-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-sliders-horizontal-filled"></i>
+            </span>
+            <br>
+            <span class='label'>sliders-horizontal-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-slideshow-filled"></i>
+            </span>
+            <br>
+            <span class='label'>slideshow-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-hifi-filled"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-hifi-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-high-filled"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-high-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-low-filled"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-low-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-none-filled"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-none-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-simple-high-filled"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-simple-high-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-simple-low-filled"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-simple-low-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-simple-none-filled"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-simple-none-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-simple-slash-filled"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-simple-slash-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-simple-x-filled"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-simple-x-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-slash-filled"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-slash-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-x-filled"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-x-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-stop-circle-filled"></i>
+            </span>
+            <br>
+            <span class='label'>stop-circle-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-stop-filled"></i>
+            </span>
+            <br>
+            <span class='label'>stop-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-subtitles-filled"></i>
+            </span>
+            <br>
+            <span class='label'>subtitles-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-television-filled"></i>
+            </span>
+            <br>
+            <span class='label'>television-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-television-simple-filled"></i>
+            </span>
+            <br>
+            <span class='label'>television-simple-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-video-camera-filled"></i>
+            </span>
+            <br>
+            <span class='label'>video-camera-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-video-camera-slash-filled"></i>
+            </span>
+            <br>
+            <span class='label'>video-camera-slash-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-vinyl-record-filled"></i>
+            </span>
+            <br>
+            <span class='label'>vinyl-record-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-wave-sawtooth-filled"></i>
+            </span>
+            <br>
+            <span class='label'>wave-sawtooth-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-wave-sine-filled"></i>
+            </span>
+            <br>
+            <span class='label'>wave-sine-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-wave-square-filled"></i>
+            </span>
+            <br>
+            <span class='label'>wave-square-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-wave-triangle-filled"></i>
+            </span>
+            <br>
+            <span class='label'>wave-triangle-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-waveform-filled"></i>
+            </span>
+            <br>
+            <span class='label'>waveform-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-webcam-filled"></i>
+            </span>
+            <br>
+            <span class='label'>webcam-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-webcam-slash-filled"></i>
+            </span>
+            <br>
+            <span class='label'>webcam-slash-filled</span>
+        </div>
+
+
+</body>
+</html>

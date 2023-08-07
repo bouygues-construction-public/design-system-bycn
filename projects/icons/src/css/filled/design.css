@@ -1,0 +1,405 @@
+@font-face {
+    font-family: "design";
+    src: url("../../fonts/filled/design/design.ttf?9763588218a5fb6bc8c9d83ea78a632a") format("truetype"),
+url("../../fonts/filled/design/design.woff?9763588218a5fb6bc8c9d83ea78a632a") format("woff"),
+url("../../fonts/filled/design/design.woff2?9763588218a5fb6bc8c9d83ea78a632a") format("woff2");
+}
+
+i[class^="mas-"]:before, i[class*=" mas-"]:before {
+    font-family: design !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-0:before {
+    content: "\[object Object]";
+}
+.mas-1:before {
+    content: "\[object Object]";
+}
+.mas-2:before {
+    content: "\[object Object]";
+}
+.mas-3:before {
+    content: "\[object Object]";
+}
+.mas-4:before {
+    content: "\[object Object]";
+}
+.mas-5:before {
+    content: "\[object Object]";
+}
+.mas-6:before {
+    content: "\[object Object]";
+}
+.mas-7:before {
+    content: "\[object Object]";
+}
+.mas-8:before {
+    content: "\[object Object]";
+}
+.mas-9:before {
+    content: "\[object Object]";
+}
+.mas-10:before {
+    content: "\[object Object]";
+}
+.mas-11:before {
+    content: "\[object Object]";
+}
+.mas-12:before {
+    content: "\[object Object]";
+}
+.mas-13:before {
+    content: "\[object Object]";
+}
+.mas-14:before {
+    content: "\[object Object]";
+}
+.mas-15:before {
+    content: "\[object Object]";
+}
+.mas-16:before {
+    content: "\[object Object]";
+}
+.mas-17:before {
+    content: "\[object Object]";
+}
+.mas-align-bottom-filled:before {
+    content: "\f101";
+}
+.mas-align-bottom-simple-filled:before {
+    content: "\f102";
+}
+.mas-align-center-horizontal-filled:before {
+    content: "\f103";
+}
+.mas-align-center-horizontal-simple-filled:before {
+    content: "\f104";
+}
+.mas-align-center-vertical-filled:before {
+    content: "\f105";
+}
+.mas-align-center-vertical-simple-filled:before {
+    content: "\f106";
+}
+.mas-align-left-filled:before {
+    content: "\f107";
+}
+.mas-align-left-simple-filled:before {
+    content: "\f108";
+}
+.mas-align-right-filled:before {
+    content: "\f109";
+}
+.mas-align-right-simple-filled:before {
+    content: "\f10a";
+}
+.mas-align-top-filled:before {
+    content: "\f10b";
+}
+.mas-align-top-simple-filled:before {
+    content: "\f10c";
+}
+.mas-bezier-curve-filled:before {
+    content: "\f10d";
+}
+.mas-bounding-box-filled:before {
+    content: "\f10e";
+}
+.mas-circle-dashed-filled:before {
+    content: "\f10f";
+}
+.mas-circle-filled:before {
+    content: "\f110";
+}
+.mas-circle-half-filled:before {
+    content: "\f111";
+}
+.mas-circle-half-tilt-filled:before {
+    content: "\f112";
+}
+.mas-circle-notch-filled:before {
+    content: "\f113";
+}
+.mas-circles-four-filled:before {
+    content: "\f114";
+}
+.mas-circles-three-filled:before {
+    content: "\f115";
+}
+.mas-circles-three-plus-filled:before {
+    content: "\f116";
+}
+.mas-columns-filled:before {
+    content: "\f117";
+}
+.mas-compass-tool-filled:before {
+    content: "\f118";
+}
+.mas-crop-filled:before {
+    content: "\f119";
+}
+.mas-cube-filled:before {
+    content: "\f11a";
+}
+.mas-cube-transparent-filled:before {
+    content: "\f11b";
+}
+.mas-cylinder-filled:before {
+    content: "\f11c";
+}
+.mas-diamonds-four-filled:before {
+    content: "\f11d";
+}
+.mas-drop-half-bottom-filled:before {
+    content: "\f11e";
+}
+.mas-drop-half-filled:before {
+    content: "\f11f";
+}
+.mas-eraser-filled:before {
+    content: "\f120";
+}
+.mas-exclude-filled:before {
+    content: "\f121";
+}
+.mas-exclude-square-filled:before {
+    content: "\f122";
+}
+.mas-eye-closed-filled:before {
+    content: "\f123";
+}
+.mas-eye-filled:before {
+    content: "\f124";
+}
+.mas-eye-slash-filled:before {
+    content: "\f125";
+}
+.mas-eyedropper-filled:before {
+    content: "\f126";
+}
+.mas-eyedropper-sample-filled:before {
+    content: "\f127";
+}
+.mas-flow-arrow-filled:before {
+    content: "\f128";
+}
+.mas-gear-fine-filled:before {
+    content: "\f129";
+}
+.mas-gradient-filled:before {
+    content: "\f12a";
+}
+.mas-grid-four-filled:before {
+    content: "\f12b";
+}
+.mas-grid-nine-filled:before {
+    content: "\f12c";
+}
+.mas-hexagon-filled:before {
+    content: "\f12d";
+}
+.mas-highlighter-circle-filled:before {
+    content: "\f12e";
+}
+.mas-intersect-filled:before {
+    content: "\f12f";
+}
+.mas-intersect-square-filled:before {
+    content: "\f130";
+}
+.mas-intersect-three-filled:before {
+    content: "\f131";
+}
+.mas-layout-filled:before {
+    content: "\f132";
+}
+.mas-line-segment-filled:before {
+    content: "\f133";
+}
+.mas-line-segments-filled:before {
+    content: "\f134";
+}
+.mas-magic-wand-filled:before {
+    content: "\f135";
+}
+.mas-marker-circle-filled:before {
+    content: "\f136";
+}
+.mas-notches-filled:before {
+    content: "\f137";
+}
+.mas-octagon-filled:before {
+    content: "\f138";
+}
+.mas-paint-brush-broad-filled:before {
+    content: "\f139";
+}
+.mas-paint-brush-filled:before {
+    content: "\f13a";
+}
+.mas-paint-brush-household-filled:before {
+    content: "\f13b";
+}
+.mas-paint-bucket-filled:before {
+    content: "\f13c";
+}
+.mas-paint-roller-filled:before {
+    content: "\f13d";
+}
+.mas-palette-filled:before {
+    content: "\f13e";
+}
+.mas-parallelogram-filled:before {
+    content: "\f13f";
+}
+.mas-pen-filled:before {
+    content: "\f140";
+}
+.mas-pen-nib-filled:before {
+    content: "\f141";
+}
+.mas-pen-nib-straight-filled:before {
+    content: "\f142";
+}
+.mas-pencil-circle-filled:before {
+    content: "\f143";
+}
+.mas-pencil-filled:before {
+    content: "\f144";
+}
+.mas-pencil-line-filled:before {
+    content: "\f145";
+}
+.mas-pencil-simple-filled:before {
+    content: "\f146";
+}
+.mas-pencil-simple-line-filled:before {
+    content: "\f147";
+}
+.mas-pencil-simple-slash-filled:before {
+    content: "\f148";
+}
+.mas-pencil-slash-filled:before {
+    content: "\f149";
+}
+.mas-pentagram-filled:before {
+    content: "\f14a";
+}
+.mas-perspective-filled:before {
+    content: "\f14b";
+}
+.mas-placeholder-filled:before {
+    content: "\f14c";
+}
+.mas-polygon-filled:before {
+    content: "\f14d";
+}
+.mas-rectangle-filled:before {
+    content: "\f14e";
+}
+.mas-rows-filled:before {
+    content: "\f14f";
+}
+.mas-ruler-filled:before {
+    content: "\f150";
+}
+.mas-scissors-filled:before {
+    content: "\f151";
+}
+.mas-scribble-loop-filled:before {
+    content: "\f152";
+}
+.mas-selection-all-filled:before {
+    content: "\f153";
+}
+.mas-selection-background-filled:before {
+    content: "\f154";
+}
+.mas-selection-filled:before {
+    content: "\f155";
+}
+.mas-selection-foreground-filled:before {
+    content: "\f156";
+}
+.mas-selection-inverse-filled:before {
+    content: "\f157";
+}
+.mas-selection-plus-filled:before {
+    content: "\f158";
+}
+.mas-selection-slash-filled:before {
+    content: "\f159";
+}
+.mas-shapes-filled:before {
+    content: "\f15a";
+}
+.mas-sidebar-filled:before {
+    content: "\f15b";
+}
+.mas-sidebar-simple-filled:before {
+    content: "\f15c";
+}
+.mas-split-horizontal-filled:before {
+    content: "\f15d";
+}
+.mas-split-vertical-filled:before {
+    content: "\f15e";
+}
+.mas-square-filled:before {
+    content: "\f15f";
+}
+.mas-square-half-bottom-filled:before {
+    content: "\f160";
+}
+.mas-square-half-filled:before {
+    content: "\f161";
+}
+.mas-square-split-horizontal-filled:before {
+    content: "\f162";
+}
+.mas-square-split-vertical-filled:before {
+    content: "\f163";
+}
+.mas-squares-four-filled:before {
+    content: "\f164";
+}
+.mas-stack-filled:before {
+    content: "\f165";
+}
+.mas-stack-simple-filled:before {
+    content: "\f166";
+}
+.mas-stamp-filled:before {
+    content: "\f167";
+}
+.mas-subtract-filled:before {
+    content: "\f168";
+}
+.mas-subtract-square-filled:before {
+    content: "\f169";
+}
+.mas-swatches-filled:before {
+    content: "\f16a";
+}
+.mas-text-a-underline-filled:before {
+    content: "\f16b";
+}
+.mas-triangle-filled:before {
+    content: "\f16c";
+}
+.mas-unite-filled:before {
+    content: "\f16d";
+}
+.mas-unite-square-filled:before {
+    content: "\f16e";
+}
+.mas-vignette-filled:before {
+    content: "\f16f";
+}

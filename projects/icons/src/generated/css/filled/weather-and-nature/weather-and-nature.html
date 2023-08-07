@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weather-and-nature</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .preview {
+            width: 100px;
+            display: inline-block;
+            margin: 10px;
+        }
+        .preview .inner {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            background: #f5f5f5;
+            -webkit-border-radius: 3px 3px 0 0;
+            -moz-border-radius: 3px 3px 0 0;
+            border-radius: 3px 3px 0 0;
+        }
+        .preview .inner  {
+            line-height: 85px;
+            font-size: 40px;
+            color: #333;
+        }
+        .label {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+            font-size: 10px;
+            font-family: Monaco, monospace;
+            color: #666;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background: #ddd;
+            -webkit-border-radius: 0 0 3px 3px;
+            -moz-border-radius: 0 0 3px 3px;
+            border-radius: 0 0 3px 3px;
+            color: #666;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="weather-and-nature.css" />
+</head>
+<body>
+
+    <h1>weather-and-nature</h1>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-atom-filled"></i>
+            </span>
+            <br>
+            <span class='label'>atom-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-bird-filled"></i>
+            </span>
+            <br>
+            <span class='label'>bird-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-bone-filled"></i>
+            </span>
+            <br>
+            <span class='label'>bone-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-butterfly-filled"></i>
+            </span>
+            <br>
+            <span class='label'>butterfly-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cactus-filled"></i>
+            </span>
+            <br>
+            <span class='label'>cactus-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-campfire-filled"></i>
+            </span>
+            <br>
+            <span class='label'>campfire-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cat-filled"></i>
+            </span>
+            <br>
+            <span class='label'>cat-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cloud-filled"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cloud-fog-filled"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-fog-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cloud-lighting-filled"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-lighting-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cloud-moon-filled"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-moon-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cloud-rain-filled"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-rain-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cloud-snow-filled"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-snow-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cloud-sun-filled"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-sun-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-dog-filled"></i>
+            </span>
+            <br>
+            <span class='label'>dog-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-drop-filled"></i>
+            </span>
+            <br>
+            <span class='label'>drop-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-feather-filled"></i>
+            </span>
+            <br>
+            <span class='label'>feather-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-fire-filled"></i>
+            </span>
+            <br>
+            <span class='label'>fire-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-fire-simple-filled"></i>
+            </span>
+            <br>
+            <span class='label'>fire-simple-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-fish-filled"></i>
+            </span>
+            <br>
+            <span class='label'>fish-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-fish-simple-filled"></i>
+            </span>
+            <br>
+            <span class='label'>fish-simple-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-flame-filled"></i>
+            </span>
+            <br>
+            <span class='label'>flame-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-flower-filled"></i>
+            </span>
+            <br>
+            <span class='label'>flower-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-flower-lotus-filled"></i>
+            </span>
+            <br>
+            <span class='label'>flower-lotus-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-flower-tulip-filled"></i>
+            </span>
+            <br>
+            <span class='label'>flower-tulip-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-leaf-filled"></i>
+            </span>
+            <br>
+            <span class='label'>leaf-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-moon-filled"></i>
+            </span>
+            <br>
+            <span class='label'>moon-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-moon-stars-filled"></i>
+            </span>
+            <br>
+            <span class='label'>moon-stars-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-mountains-filled"></i>
+            </span>
+            <br>
+            <span class='label'>mountains-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-paw-print-filled"></i>
+            </span>
+            <br>
+            <span class='label'>paw-print-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-planet-filled"></i>
+            </span>
+            <br>
+            <span class='label'>planet-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-plant-filled"></i>
+            </span>
+            <br>
+            <span class='label'>plant-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-rainbow-cloud-filled"></i>
+            </span>
+            <br>
+            <span class='label'>rainbow-cloud-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-rainbow-filled"></i>
+            </span>
+            <br>
+            <span class='label'>rainbow-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-shooting-star-filled"></i>
+            </span>
+            <br>
+            <span class='label'>shooting-star-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-shrimp-filled"></i>
+            </span>
+            <br>
+            <span class='label'>shrimp-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-snowflake-filled"></i>
+            </span>
+            <br>
+            <span class='label'>snowflake-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-sparkle-filled"></i>
+            </span>
+            <br>
+            <span class='label'>sparkle-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-star-four-filled"></i>
+            </span>
+            <br>
+            <span class='label'>star-four-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-sun-dim-filled"></i>
+            </span>
+            <br>
+            <span class='label'>sun-dim-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-sun-filled"></i>
+            </span>
+            <br>
+            <span class='label'>sun-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-sun-horizon-filled"></i>
+            </span>
+            <br>
+            <span class='label'>sun-horizon-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-thermometer-cold-filled"></i>
+            </span>
+            <br>
+            <span class='label'>thermometer-cold-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-thermometer-filled"></i>
+            </span>
+            <br>
+            <span class='label'>thermometer-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-thermometer-hot-filled"></i>
+            </span>
+            <br>
+            <span class='label'>thermometer-hot-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-thermometer-simple-filled"></i>
+            </span>
+            <br>
+            <span class='label'>thermometer-simple-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-tree-evergreen-filled"></i>
+            </span>
+            <br>
+            <span class='label'>tree-evergreen-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-tree-filled"></i>
+            </span>
+            <br>
+            <span class='label'>tree-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-umbrella-filled"></i>
+            </span>
+            <br>
+            <span class='label'>umbrella-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-umbrella-simple-filled"></i>
+            </span>
+            <br>
+            <span class='label'>umbrella-simple-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-waves-filled"></i>
+            </span>
+            <br>
+            <span class='label'>waves-filled</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-wind-filled"></i>
+            </span>
+            <br>
+            <span class='label'>wind-filled</span>
+        </div>
+
+
+</body>
+</html>

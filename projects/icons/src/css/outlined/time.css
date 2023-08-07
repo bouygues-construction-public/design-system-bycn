@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "time";
+    src: url("../../fonts/outlined/time/time.ttf?777ef631319a8fdb8996b2011a1fb109") format("truetype"),
+url("../../fonts/outlined/time/time.woff?777ef631319a8fdb8996b2011a1fb109") format("woff"),
+url("../../fonts/outlined/time/time.woff2?777ef631319a8fdb8996b2011a1fb109") format("woff2");
+}
+
+i[class^="mas-"]:before, i[class*=" mas-"]:before {
+    font-family: time !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-0:before {
+    content: "\[object Object]";
+}
+.mas-1:before {
+    content: "\[object Object]";
+}
+.mas-2:before {
+    content: "\[object Object]";
+}
+.mas-3:before {
+    content: "\[object Object]";
+}
+.mas-4:before {
+    content: "\[object Object]";
+}
+.mas-5:before {
+    content: "\[object Object]";
+}
+.mas-6:before {
+    content: "\[object Object]";
+}
+.mas-7:before {
+    content: "\[object Object]";
+}
+.mas-8:before {
+    content: "\[object Object]";
+}
+.mas-9:before {
+    content: "\[object Object]";
+}
+.mas-10:before {
+    content: "\[object Object]";
+}
+.mas-11:before {
+    content: "\[object Object]";
+}
+.mas-12:before {
+    content: "\[object Object]";
+}
+.mas-13:before {
+    content: "\[object Object]";
+}
+.mas-14:before {
+    content: "\[object Object]";
+}
+.mas-15:before {
+    content: "\[object Object]";
+}
+.mas-16:before {
+    content: "\[object Object]";
+}
+.mas-17:before {
+    content: "\[object Object]";
+}
+.mas-alarm-outlined:before {
+    content: "\f101";
+}
+.mas-calendar-blank-outlined:before {
+    content: "\f102";
+}
+.mas-calendar-check-outlined:before {
+    content: "\f103";
+}
+.mas-calendar-outlined:before {
+    content: "\f104";
+}
+.mas-calendar-plus-outlined:before {
+    content: "\f105";
+}
+.mas-calendar-x-outlined:before {
+    content: "\f106";
+}
+.mas-clock-afternoon-outlined:before {
+    content: "\f107";
+}
+.mas-clock-clockwise-outlined:before {
+    content: "\f108";
+}
+.mas-clock-countdown-outlined:before {
+    content: "\f109";
+}
+.mas-clock-counter-clockwise-outlined:before {
+    content: "\f10a";
+}
+.mas-clock-outlined:before {
+    content: "\f10b";
+}
+.mas-hourglass-high-outlined:before {
+    content: "\f10c";
+}
+.mas-hourglass-low-outlined:before {
+    content: "\f10d";
+}
+.mas-hourglass-medium-outlined:before {
+    content: "\f10e";
+}
+.mas-hourglass-outlined:before {
+    content: "\f10f";
+}
+.mas-hourglass-simple-high-outlined:before {
+    content: "\f110";
+}
+.mas-hourglass-simple-low-outlined:before {
+    content: "\f111";
+}
+.mas-hourglass-simple-medium-outlined:before {
+    content: "\f112";
+}
+.mas-hourglass-simple-outlined:before {
+    content: "\f113";
+}
+.mas-timer-outlined:before {
+    content: "\f114";
+}
+.mas-watch-outlined:before {
+    content: "\f115";
+}

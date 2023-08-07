@@ -41,68 +41,68 @@ type Story = StoryObj<MasIconExamples>;
 
 export const Arrows: Story = {
   args: {
-    iconClasses: [...Object.keys(arrows).map((icon) => `mas-${icon}`)],
+    iconClasses: [...Object.keys(arrows).map((icon) => `mas-${icon} mas-arrows--filled`)],
   },
 };
 
 export const Brands: Story = {
   args: {
-    iconClasses: [...Object.keys(brands).map((icon) => `mas-${icon}`)],
+    iconClasses: [...Object.keys(brands).map((icon) => `mas-${icon} mas-brands--filled`)],
   },
 };
 export const Commerce: Story = {
   args: {
-    iconClasses: [...Object.keys(commerce).map((icon) => `mas-${icon}`)],
+    iconClasses: [...Object.keys(commerce).map((icon) => `mas-${icon} mas-commerce--filled`)],
   },
 };
 export const Communication: Story = {
   args: {
-    iconClasses: [...Object.keys(communication).map((icon) => `mas-${icon}`)],
+    iconClasses: [...Object.keys(communication).map((icon) => `mas-${icon} mas-communication--filled`)],
   },
 };
 export const Design: Story = {
   args: {
-    iconClasses: [...Object.keys(design).map((icon) => `mas-${icon}`)],
+    iconClasses: [...Object.keys(design).map((icon) => `mas-${icon} mas-design--filled`)],
   },
 };
 export const Development: Story = {
   args: {
-    iconClasses: [...Object.keys(development).map((icon) => `mas-${icon}`)],
+    iconClasses: [...Object.keys(development).map((icon) => `mas-${icon} mas-development--filled`)],
   },
 };
 export const Education: Story = {
   args: {
-    iconClasses: [...Object.keys(education).map((icon) => `mas-${icon}`)],
+    iconClasses: [...Object.keys(education).map((icon) => `mas-${icon} mas-education--filled`)],
   },
 };
 export const Games: Story = {
   args: {
-    iconClasses: [...Object.keys(games).map((icon) => `mas-${icon}`)],
+    iconClasses: [...Object.keys(games).map((icon) => `mas-${icon} mas-games--filled`)],
   },
 };
 export const HealthAndWellness: Story = {
   args: {
-    iconClasses: [...Object.keys(healthAndWellness).map((icon) => `mas-${icon}`)],
+    iconClasses: [...Object.keys(healthAndWellness).map((icon) => `mas-${icon} mas-health-and-wellness--filled`)],
   },
 };
 export const MapsAndTravel: Story = {
   args: {
-    iconClasses: [...Object.keys(mapsAndTravel).map((icon) => `mas-${icon}`)],
+    iconClasses: [...Object.keys(mapsAndTravel).map((icon) => `mas-${icon} mas-maps-and-travel--filled`)],
   },
 };
 export const MathAndFinance: Story = {
   args: {
-    iconClasses: [...Object.keys(mathAndFinance).map((icon) => `mas-${icon}`)],
+    iconClasses: [...Object.keys(mathAndFinance).map((icon) => `mas-${icon} mas-math-and-finance--filled`)],
   },
 };
 export const Media: Story = {
   args: {
-    iconClasses: [...Object.keys(media).map((icon) => `mas-${icon}`)],
+    iconClasses: [...Object.keys(media).map((icon) => `mas-${icon} mas-media--filled`)],
   },
 };
 export const OfficeAndEditing: Story = {
   args: {
-    iconClasses: [...Object.keys(officeAndEditing).map((icon) => `mas-${icon}`)],
+    iconClasses: [...Object.keys(officeAndEditing).map((icon) => `mas-${icon} mas-office-and-editing--filled`)],
   },
 };
 export const People: Story = {

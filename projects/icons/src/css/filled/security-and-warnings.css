@@ -1,0 +1,189 @@
+@font-face {
+    font-family: "security-and-warnings";
+    src: url("../../fonts/filled/security-and-warnings/security-and-warnings.ttf?70b3143ba3394e98fe892329cdaf3d12") format("truetype"),
+url("../../fonts/filled/security-and-warnings/security-and-warnings.woff?70b3143ba3394e98fe892329cdaf3d12") format("woff"),
+url("../../fonts/filled/security-and-warnings/security-and-warnings.woff2?70b3143ba3394e98fe892329cdaf3d12") format("woff2");
+}
+
+i[class^="mas-"]:before, i[class*=" mas-"]:before {
+    font-family: security-and-warnings !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-0:before {
+    content: "\[object Object]";
+}
+.mas-1:before {
+    content: "\[object Object]";
+}
+.mas-2:before {
+    content: "\[object Object]";
+}
+.mas-3:before {
+    content: "\[object Object]";
+}
+.mas-4:before {
+    content: "\[object Object]";
+}
+.mas-5:before {
+    content: "\[object Object]";
+}
+.mas-6:before {
+    content: "\[object Object]";
+}
+.mas-7:before {
+    content: "\[object Object]";
+}
+.mas-8:before {
+    content: "\[object Object]";
+}
+.mas-9:before {
+    content: "\[object Object]";
+}
+.mas-10:before {
+    content: "\[object Object]";
+}
+.mas-11:before {
+    content: "\[object Object]";
+}
+.mas-12:before {
+    content: "\[object Object]";
+}
+.mas-13:before {
+    content: "\[object Object]";
+}
+.mas-14:before {
+    content: "\[object Object]";
+}
+.mas-15:before {
+    content: "\[object Object]";
+}
+.mas-16:before {
+    content: "\[object Object]";
+}
+.mas-17:before {
+    content: "\[object Object]";
+}
+.mas-detective-filled:before {
+    content: "\f101";
+}
+.mas-fingerprint-filled:before {
+    content: "\f102";
+}
+.mas-fingerprint-simple-filled:before {
+    content: "\f103";
+}
+.mas-fire-extinguisher-filled:before {
+    content: "\f104";
+}
+.mas-info-filled:before {
+    content: "\f105";
+}
+.mas-key-filled:before {
+    content: "\f106";
+}
+.mas-keyhole-filled:before {
+    content: "\f107";
+}
+.mas-lock-filled:before {
+    content: "\f108";
+}
+.mas-lock-key-filled:before {
+    content: "\f109";
+}
+.mas-lock-key-open-filled:before {
+    content: "\f10a";
+}
+.mas-lock-laminated-filled:before {
+    content: "\f10b";
+}
+.mas-lock-laminated-open-filled:before {
+    content: "\f10c";
+}
+.mas-lock-open-filled:before {
+    content: "\f10d";
+}
+.mas-lock-simple-filled:before {
+    content: "\f10e";
+}
+.mas-lock-simple-open-filled:before {
+    content: "\f10f";
+}
+.mas-password-filled:before {
+    content: "\f110";
+}
+.mas-prohibit-filled:before {
+    content: "\f111";
+}
+.mas-prohibit-inset-filled:before {
+    content: "\f112";
+}
+.mas-question-filled:before {
+    content: "\f113";
+}
+.mas-radioactive-filled:before {
+    content: "\f114";
+}
+.mas-seal-check-filled:before {
+    content: "\f115";
+}
+.mas-seal-filled:before {
+    content: "\f116";
+}
+.mas-seal-question-filled:before {
+    content: "\f117";
+}
+.mas-seal-warning-filled:before {
+    content: "\f118";
+}
+.mas-shield-check-filled:before {
+    content: "\f119";
+}
+.mas-shield-checkered-filled:before {
+    content: "\f11a";
+}
+.mas-shield-chevron-filled:before {
+    content: "\f11b";
+}
+.mas-shield-filled:before {
+    content: "\f11c";
+}
+.mas-shield-plus-filled:before {
+    content: "\f11d";
+}
+.mas-shield-slash-filled:before {
+    content: "\f11e";
+}
+.mas-shield-star-filled:before {
+    content: "\f11f";
+}
+.mas-shield-warning-filled:before {
+    content: "\f120";
+}
+.mas-siren-filled:before {
+    content: "\f121";
+}
+.mas-vault-filled:before {
+    content: "\f122";
+}
+.mas-wall-filled:before {
+    content: "\f123";
+}
+.mas-warning-circle-filled:before {
+    content: "\f124";
+}
+.mas-warning-diamond-filled:before {
+    content: "\f125";
+}
+.mas-warning-filled:before {
+    content: "\f126";
+}
+.mas-warning-octagon-filled:before {
+    content: "\f127";
+}
