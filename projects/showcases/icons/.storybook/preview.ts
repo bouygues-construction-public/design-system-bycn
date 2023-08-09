@@ -1,9 +1,6 @@
 import type { Preview } from '@storybook/angular';
-// import '@masoni/icons/dist/font/mas-icons/mas-icons.css'
-import '@masoni/icons/dist/font/filled/arrows/arrows.css'
-import '@masoni/icons/dist/font/filled/brands/brands.css'
 import '@masoni/icons/dist/css/filled/index.css'
-// import '@masoni/icons/dist/css/filled/arrows.css'
+import '@masoni/icons/dist/css/outlined/index.css'
 
 
 const preview: Preview = {

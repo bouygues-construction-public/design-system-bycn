@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "office-and-editing";
-    src: url("../../fonts/outlined/office-and-editing/office-and-editing.ttf?8fa6fb0723e57639cd22b78b864c2422") format("truetype"),
-url("../../fonts/outlined/office-and-editing/office-and-editing.woff?8fa6fb0723e57639cd22b78b864c2422") format("woff"),
-url("../../fonts/outlined/office-and-editing/office-and-editing.woff2?8fa6fb0723e57639cd22b78b864c2422") format("woff2");
+    font-family: "office-and-editing--outlined";
+    src: url("../../fonts/outlined/office-and-editing/office-and-editing.ttf?c1ad72948f78073045f516682d248f21") format("truetype"),
+url("../../fonts/outlined/office-and-editing/office-and-editing.woff?c1ad72948f78073045f516682d248f21") format("woff"),
+url("../../fonts/outlined/office-and-editing/office-and-editing.woff2?c1ad72948f78073045f516682d248f21") format("woff2");
 }
 
-i[class^="mas-"]:before, i[class*=" mas-"]:before {
-    font-family: office-and-editing !important;
+i[class^="mas-office-and-editing--outlined"]:before, i[class*=" mas-office-and-editing--outlined"]:before {
+    font-family: office-and-editing--outlined !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;
@@ -16,417 +16,363 @@ i[class^="mas-"]:before, i[class*=" mas-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.mas-0:before {
-    content: "\[object Object]";
-}
-.mas-1:before {
-    content: "\[object Object]";
-}
-.mas-2:before {
-    content: "\[object Object]";
-}
-.mas-3:before {
-    content: "\[object Object]";
-}
-.mas-4:before {
-    content: "\[object Object]";
-}
-.mas-5:before {
-    content: "\[object Object]";
-}
-.mas-6:before {
-    content: "\[object Object]";
-}
-.mas-7:before {
-    content: "\[object Object]";
-}
-.mas-8:before {
-    content: "\[object Object]";
-}
-.mas-9:before {
-    content: "\[object Object]";
-}
-.mas-10:before {
-    content: "\[object Object]";
-}
-.mas-11:before {
-    content: "\[object Object]";
-}
-.mas-12:before {
-    content: "\[object Object]";
-}
-.mas-13:before {
-    content: "\[object Object]";
-}
-.mas-14:before {
-    content: "\[object Object]";
-}
-.mas-15:before {
-    content: "\[object Object]";
-}
-.mas-16:before {
-    content: "\[object Object]";
-}
-.mas-17:before {
-    content: "\[object Object]";
-}
 .mas-archive-box-outlined:before {
-    content: "\f101";
+    content: "\e816";
 }
 .mas-archive-outlined:before {
-    content: "\f102";
+    content: "\e817";
 }
 .mas-archive-tray-outlined:before {
-    content: "\f103";
+    content: "\e818";
 }
 .mas-briefcase-metal-outlined:before {
-    content: "\f104";
+    content: "\e819";
 }
 .mas-briefcase-outlined:before {
-    content: "\f105";
+    content: "\e81a";
 }
 .mas-cards-outlined:before {
-    content: "\f106";
+    content: "\e81b";
 }
 .mas-clipboard-outlined:before {
-    content: "\f107";
+    content: "\e81c";
 }
 .mas-clipboard-text-outlined:before {
-    content: "\f108";
+    content: "\e81d";
 }
 .mas-copy-outlined:before {
-    content: "\f109";
+    content: "\e81e";
 }
 .mas-copy-simple-outlined:before {
-    content: "\f10a";
+    content: "\e81f";
 }
 .mas-cursor-text-outlined:before {
-    content: "\f10b";
+    content: "\e820";
 }
 .mas-file-archive-outlined:before {
-    content: "\f10c";
+    content: "\e821";
 }
 .mas-file-arrow-down-outlined:before {
-    content: "\f10d";
+    content: "\e822";
 }
 .mas-file-arrow-up-outlined:before {
-    content: "\f10e";
+    content: "\e823";
 }
 .mas-file-audio-outlined:before {
-    content: "\f10f";
+    content: "\e824";
 }
 .mas-file-cloud-outlined:before {
-    content: "\f110";
+    content: "\e825";
 }
 .mas-file-code-outlined:before {
-    content: "\f111";
+    content: "\e826";
 }
 .mas-file-css-outlined:before {
-    content: "\f112";
+    content: "\e827";
 }
 .mas-file-csv-outlined:before {
-    content: "\f113";
+    content: "\e828";
 }
 .mas-file-dashed-outlined:before {
-    content: "\f114";
+    content: "\e829";
 }
 .mas-file-doc-outlined:before {
-    content: "\f115";
+    content: "\e82a";
 }
 .mas-file-html-outlined:before {
-    content: "\f116";
+    content: "\e82b";
 }
 .mas-file-image-outlined:before {
-    content: "\f117";
+    content: "\e82c";
 }
 .mas-file-jpg-outlined:before {
-    content: "\f118";
+    content: "\e82d";
 }
 .mas-file-js-outlined:before {
-    content: "\f119";
+    content: "\e82e";
 }
 .mas-file-jsx-outlined:before {
-    content: "\f11a";
+    content: "\e82f";
 }
 .mas-file-lock-outlined:before {
-    content: "\f11b";
+    content: "\e830";
 }
 .mas-file-minus-outlined:before {
-    content: "\f11c";
+    content: "\e831";
 }
 .mas-file-outlined:before {
-    content: "\f11d";
+    content: "\e832";
 }
 .mas-file-pdf-outlined:before {
-    content: "\f11e";
+    content: "\e833";
 }
 .mas-file-plus-outlined:before {
-    content: "\f11f";
+    content: "\e834";
 }
 .mas-file-png-outlined:before {
-    content: "\f120";
+    content: "\e835";
 }
 .mas-file-ppt-outlined:before {
-    content: "\f121";
+    content: "\e836";
 }
 .mas-file-rs-outlined:before {
-    content: "\f122";
+    content: "\e837";
 }
 .mas-file-search-outlined:before {
-    content: "\f123";
+    content: "\e838";
 }
 .mas-file-sql-outlined:before {
-    content: "\f124";
+    content: "\e839";
 }
 .mas-file-svg-outlined:before {
-    content: "\f125";
+    content: "\e83a";
 }
 .mas-file-text-outlined:before {
-    content: "\f126";
+    content: "\e83b";
 }
 .mas-file-ts-outlined:before {
-    content: "\f127";
+    content: "\e83c";
 }
 .mas-file-tsx-outlined:before {
-    content: "\f128";
+    content: "\e83d";
 }
 .mas-file-video-outlined:before {
-    content: "\f129";
+    content: "\e83e";
 }
 .mas-file-vue-outlined:before {
-    content: "\f12a";
+    content: "\e83f";
 }
 .mas-file-x-outlined:before {
-    content: "\f12b";
+    content: "\e840";
 }
 .mas-file-xls-outlined:before {
-    content: "\f12c";
+    content: "\e841";
 }
 .mas-file-zip-outlined:before {
-    content: "\f12d";
+    content: "\e842";
 }
 .mas-files-outlined:before {
-    content: "\f12e";
+    content: "\e843";
 }
 .mas-floppy-disk-back-outlined:before {
-    content: "\f12f";
+    content: "\e844";
 }
 .mas-floppy-disk-outlined:before {
-    content: "\f130";
+    content: "\e845";
 }
 .mas-folder-dashed-outlined:before {
-    content: "\f131";
+    content: "\e846";
 }
 .mas-folder-lock-outlined:before {
-    content: "\f132";
+    content: "\e847";
 }
 .mas-folder-minus-outlined:before {
-    content: "\f133";
+    content: "\e848";
 }
 .mas-folder-notch-minus-outlined:before {
-    content: "\f134";
+    content: "\e849";
 }
 .mas-folder-notch-open-outlined:before {
-    content: "\f135";
+    content: "\e84a";
 }
 .mas-folder-notch-outlined:before {
-    content: "\f136";
+    content: "\e84b";
 }
 .mas-folder-notch-plus-outlined:before {
-    content: "\f137";
+    content: "\e84c";
 }
 .mas-folder-open-outlined:before {
-    content: "\f138";
+    content: "\e84d";
 }
 .mas-folder-outlined:before {
-    content: "\f139";
+    content: "\e84e";
 }
 .mas-folder-plus-outlined:before {
-    content: "\f13a";
+    content: "\e84f";
 }
 .mas-folder-simple-dashed-outlined:before {
-    content: "\f13b";
+    content: "\e850";
 }
 .mas-folder-simple-lock-outlined:before {
-    content: "\f13c";
+    content: "\e851";
 }
 .mas-folder-simple-minus-outlined:before {
-    content: "\f13d";
+    content: "\e852";
 }
 .mas-folder-simple-outlined:before {
-    content: "\f13e";
+    content: "\e853";
 }
 .mas-folder-simple-plus-outlined:before {
-    content: "\f13f";
+    content: "\e854";
 }
 .mas-folder-simple-star-outlined:before {
-    content: "\f140";
+    content: "\e855";
 }
 .mas-folder-simple-user-outlined:before {
-    content: "\f141";
+    content: "\e856";
 }
 .mas-folder-star-outlined:before {
-    content: "\f142";
+    content: "\e857";
 }
 .mas-folder-user-outlined:before {
-    content: "\f143";
+    content: "\e858";
 }
 .mas-folders-outlined:before {
-    content: "\f144";
+    content: "\e859";
 }
 .mas-funnel-outlined:before {
-    content: "\f145";
+    content: "\e85a";
 }
 .mas-funnel-simple-outlined:before {
-    content: "\f146";
+    content: "\e85b";
 }
 .mas-kanban-outlined:before {
-    content: "\f147";
+    content: "\e85c";
 }
 .mas-list-bullets-outlined:before {
-    content: "\f148";
+    content: "\e85d";
 }
 .mas-list-checks-outlined:before {
-    content: "\f149";
+    content: "\e85e";
 }
 .mas-list-dashes-outlined:before {
-    content: "\f14a";
+    content: "\e85f";
 }
 .mas-list-numbers-outlined:before {
-    content: "\f14b";
+    content: "\e860";
 }
 .mas-list-outlined:before {
-    content: "\f14c";
+    content: "\e861";
 }
 .mas-list-plus-outlined:before {
-    content: "\f14d";
+    content: "\e862";
 }
 .mas-note-blank-outlined:before {
-    content: "\f14e";
+    content: "\e863";
 }
 .mas-note-outlined:before {
-    content: "\f14f";
+    content: "\e864";
 }
 .mas-note-pencil-outlined:before {
-    content: "\f150";
+    content: "\e865";
 }
 .mas-notebook-outlined:before {
-    content: "\f151";
+    content: "\e866";
 }
 .mas-notepad-outlined:before {
-    content: "\f152";
+    content: "\e867";
 }
 .mas-paperclip-horizontal-outlined:before {
-    content: "\f153";
+    content: "\e868";
 }
 .mas-paperclip-outlined:before {
-    content: "\f154";
+    content: "\e869";
 }
 .mas-paragraph-outlined:before {
-    content: "\f155";
+    content: "\e86a";
 }
 .mas-presentation-chart-outlined:before {
-    content: "\f156";
+    content: "\e86b";
 }
 .mas-presentation-outlined:before {
-    content: "\f157";
+    content: "\e86c";
 }
 .mas-printer-outlined:before {
-    content: "\f158";
+    content: "\e86d";
 }
 .mas-projector-screen-chart-outlined:before {
-    content: "\f159";
+    content: "\e86e";
 }
 .mas-projector-screen-outlined:before {
-    content: "\f15a";
+    content: "\e86f";
 }
 .mas-push-pin-outlined:before {
-    content: "\f15b";
+    content: "\e870";
 }
 .mas-push-pin-simple-outlined:before {
-    content: "\f15c";
+    content: "\e871";
 }
 .mas-push-pin-simple-slash-outlined:before {
-    content: "\f15d";
+    content: "\e872";
 }
 .mas-push-pin-slash-outlined:before {
-    content: "\f15e";
+    content: "\e873";
 }
 .mas-sort-ascending-outlined:before {
-    content: "\f15f";
+    content: "\e874";
 }
 .mas-sort-descending-outlined:before {
-    content: "\f160";
+    content: "\e875";
 }
 .mas-text-aa-outlined:before {
-    content: "\f161";
+    content: "\e876";
 }
 .mas-text-align-center-outlined:before {
-    content: "\f162";
+    content: "\e877";
 }
 .mas-text-align-justify-outlined:before {
-    content: "\f163";
+    content: "\e878";
 }
 .mas-text-align-left-outlined:before {
-    content: "\f164";
+    content: "\e879";
 }
 .mas-text-align-right-outlined:before {
-    content: "\f165";
+    content: "\e87a";
 }
 .mas-text-b-outlined:before {
-    content: "\f166";
+    content: "\e87b";
 }
 .mas-text-columns-outlined:before {
-    content: "\f167";
+    content: "\e87c";
 }
 .mas-text-h-five-outlined:before {
-    content: "\f168";
+    content: "\e87d";
 }
 .mas-text-h-four-outlined:before {
-    content: "\f169";
+    content: "\e87e";
 }
 .mas-text-h-one-outlined:before {
-    content: "\f16a";
+    content: "\e87f";
 }
 .mas-text-h-outlined:before {
-    content: "\f16b";
+    content: "\e880";
 }
 .mas-text-h-six-outlined:before {
-    content: "\f16c";
+    content: "\e881";
 }
 .mas-text-h-three-outlined:before {
-    content: "\f16d";
+    content: "\e882";
 }
 .mas-text-h-two-outlined:before {
-    content: "\f16e";
+    content: "\e883";
 }
 .mas-text-indent-outlined:before {
-    content: "\f16f";
+    content: "\e884";
 }
 .mas-text-italic-outlined:before {
-    content: "\f170";
+    content: "\e885";
 }
 .mas-text-outdent-outlined:before {
-    content: "\f171";
+    content: "\e886";
 }
 .mas-text-strikethrough-outlined:before {
-    content: "\f172";
+    content: "\e887";
 }
 .mas-text-t-outlined:before {
-    content: "\f173";
+    content: "\e888";
 }
 .mas-text-underline-outlined:before {
-    content: "\f174";
+    content: "\e889";
 }
 .mas-textbox-outlined:before {
-    content: "\f175";
+    content: "\e88a";
 }
 .mas-trash-outlined:before {
-    content: "\f176";
+    content: "\e88b";
 }
 .mas-trash-simple-outlined:before {
-    content: "\f177";
+    content: "\e88c";
 }
 .mas-tray-outlined:before {
-    content: "\f178";
+    content: "\e88d";
 }

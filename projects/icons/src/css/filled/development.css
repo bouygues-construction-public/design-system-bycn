@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "development";
-    src: url("../../fonts/filled/development/development.ttf?8005992ac27e933688f5baf8ef26db2b") format("truetype"),
-url("../../fonts/filled/development/development.woff?8005992ac27e933688f5baf8ef26db2b") format("woff"),
-url("../../fonts/filled/development/development.woff2?8005992ac27e933688f5baf8ef26db2b") format("woff2");
+    font-family: "development--filled";
+    src: url("../../fonts/filled/development/development.ttf?71b1206666d7f9f6f8d7183e3e788e8c") format("truetype"),
+url("../../fonts/filled/development/development.woff?71b1206666d7f9f6f8d7183e3e788e8c") format("woff"),
+url("../../fonts/filled/development/development.woff2?71b1206666d7f9f6f8d7183e3e788e8c") format("woff2");
 }
 
-i[class^="mas-"]:before, i[class*=" mas-"]:before {
-    font-family: development !important;
+i[class^="mas-development--filled"]:before, i[class*=" mas-development--filled"]:before {
+    font-family: development--filled !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;
@@ -16,132 +16,78 @@ i[class^="mas-"]:before, i[class*=" mas-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.mas-0:before {
-    content: "\[object Object]";
-}
-.mas-1:before {
-    content: "\[object Object]";
-}
-.mas-2:before {
-    content: "\[object Object]";
-}
-.mas-3:before {
-    content: "\[object Object]";
-}
-.mas-4:before {
-    content: "\[object Object]";
-}
-.mas-5:before {
-    content: "\[object Object]";
-}
-.mas-6:before {
-    content: "\[object Object]";
-}
-.mas-7:before {
-    content: "\[object Object]";
-}
-.mas-8:before {
-    content: "\[object Object]";
-}
-.mas-9:before {
-    content: "\[object Object]";
-}
-.mas-10:before {
-    content: "\[object Object]";
-}
-.mas-11:before {
-    content: "\[object Object]";
-}
-.mas-12:before {
-    content: "\[object Object]";
-}
-.mas-13:before {
-    content: "\[object Object]";
-}
-.mas-14:before {
-    content: "\[object Object]";
-}
-.mas-15:before {
-    content: "\[object Object]";
-}
-.mas-16:before {
-    content: "\[object Object]";
-}
-.mas-17:before {
-    content: "\[object Object]";
-}
 .mas-brackets-angle-filled:before {
-    content: "\f101";
+    content: "\e1d1";
 }
 .mas-brackets-curly-filled:before {
-    content: "\f102";
+    content: "\e1d2";
 }
 .mas-brackets-round-filled:before {
-    content: "\f103";
+    content: "\e1d3";
 }
 .mas-brackets-square-filled:before {
-    content: "\f104";
+    content: "\e1d4";
 }
 .mas-bug-beetle-filled:before {
-    content: "\f105";
+    content: "\e1d5";
 }
 .mas-bug-droid-filled:before {
-    content: "\f106";
+    content: "\e1d6";
 }
 .mas-bug-filled:before {
-    content: "\f107";
+    content: "\e1d7";
 }
 .mas-code-block-filled:before {
-    content: "\f108";
+    content: "\e1d8";
 }
 .mas-code-filled:before {
-    content: "\f109";
+    content: "\e1d9";
 }
 .mas-code-simple-filled:before {
-    content: "\f10a";
+    content: "\e1da";
 }
 .mas-cpu-filled:before {
-    content: "\f10b";
+    content: "\e1db";
 }
 .mas-database-filled:before {
-    content: "\f10c";
+    content: "\e1dc";
 }
 .mas-git-branch-filled:before {
-    content: "\f10d";
+    content: "\e1dd";
 }
 .mas-git-commit-filled:before {
-    content: "\f10e";
+    content: "\e1de";
 }
 .mas-git-diff-filled:before {
-    content: "\f10f";
+    content: "\e1df";
 }
 .mas-git-fork-filled:before {
-    content: "\f110";
+    content: "\e1e0";
 }
 .mas-git-merge-filled:before {
-    content: "\f111";
+    content: "\e1e1";
 }
 .mas-git-pull-request-filled:before {
-    content: "\f112";
+    content: "\e1e2";
 }
 .mas-magnet-filled:before {
-    content: "\f113";
+    content: "\e1e3";
 }
 .mas-magnet-straight-filled:before {
-    content: "\f114";
+    content: "\e1e4";
 }
 .mas-robot-filled:before {
-    content: "\f115";
+    content: "\e1e5";
 }
 .mas-terminal-filled:before {
-    content: "\f116";
+    content: "\e1e6";
 }
 .mas-terminal-window-filled:before {
-    content: "\f117";
+    content: "\e1e7";
 }
 .mas-tree-structure-filled:before {
-    content: "\f118";
+    content: "\e1e8";
 }
 .mas-webhooks-logo-filled:before {
-    content: "\f119";
+    content: "\e1e9";
 }

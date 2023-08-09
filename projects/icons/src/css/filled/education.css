@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "education";
-    src: url("../../fonts/filled/education/education.ttf?793675d477929b7f547b457562906ea5") format("truetype"),
-url("../../fonts/filled/education/education.woff?793675d477929b7f547b457562906ea5") format("woff"),
-url("../../fonts/filled/education/education.woff2?793675d477929b7f547b457562906ea5") format("woff2");
+    font-family: "education--filled";
+    src: url("../../fonts/filled/education/education.ttf?da6dfd49b73297e579afd9f304b77129") format("truetype"),
+url("../../fonts/filled/education/education.woff?da6dfd49b73297e579afd9f304b77129") format("woff"),
+url("../../fonts/filled/education/education.woff2?da6dfd49b73297e579afd9f304b77129") format("woff2");
 }
 
-i[class^="mas-"]:before, i[class*=" mas-"]:before {
-    font-family: education !important;
+i[class^="mas-education--filled"]:before, i[class*=" mas-education--filled"]:before {
+    font-family: education--filled !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;
@@ -16,108 +16,54 @@ i[class^="mas-"]:before, i[class*=" mas-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.mas-0:before {
-    content: "\[object Object]";
-}
-.mas-1:before {
-    content: "\[object Object]";
-}
-.mas-2:before {
-    content: "\[object Object]";
-}
-.mas-3:before {
-    content: "\[object Object]";
-}
-.mas-4:before {
-    content: "\[object Object]";
-}
-.mas-5:before {
-    content: "\[object Object]";
-}
-.mas-6:before {
-    content: "\[object Object]";
-}
-.mas-7:before {
-    content: "\[object Object]";
-}
-.mas-8:before {
-    content: "\[object Object]";
-}
-.mas-9:before {
-    content: "\[object Object]";
-}
-.mas-10:before {
-    content: "\[object Object]";
-}
-.mas-11:before {
-    content: "\[object Object]";
-}
-.mas-12:before {
-    content: "\[object Object]";
-}
-.mas-13:before {
-    content: "\[object Object]";
-}
-.mas-14:before {
-    content: "\[object Object]";
-}
-.mas-15:before {
-    content: "\[object Object]";
-}
-.mas-16:before {
-    content: "\[object Object]";
-}
-.mas-17:before {
-    content: "\[object Object]";
-}
 .mas-book-bookmark-filled:before {
-    content: "\f101";
+    content: "\e1ea";
 }
 .mas-book-filled:before {
-    content: "\f102";
+    content: "\e1eb";
 }
 .mas-book-open-filled:before {
-    content: "\f103";
+    content: "\e1ec";
 }
 .mas-book-open-text-filled:before {
-    content: "\f104";
+    content: "\e1ed";
 }
 .mas-bookmark-filled:before {
-    content: "\f105";
+    content: "\e1ee";
 }
 .mas-bookmark-simple-filled:before {
-    content: "\f106";
+    content: "\e1ef";
 }
 .mas-bookmarks-filled:before {
-    content: "\f107";
+    content: "\e1f0";
 }
 .mas-bookmarks-simple-filled:before {
-    content: "\f108";
+    content: "\e1f1";
 }
 .mas-books-filled:before {
-    content: "\f109";
+    content: "\e1f2";
 }
 .mas-certificate-filled:before {
-    content: "\f10a";
+    content: "\e1f3";
 }
 .mas-chalkboard-filled:before {
-    content: "\f10b";
+    content: "\e1f4";
 }
 .mas-chalkboard-simple-filled:before {
-    content: "\f10c";
+    content: "\e1f5";
 }
 .mas-chalkboard-teacher-filled:before {
-    content: "\f10d";
+    content: "\e1f6";
 }
 .mas-exam-filled:before {
-    content: "\f10e";
+    content: "\e1f7";
 }
 .mas-graduation-cap-filled:before {
-    content: "\f10f";
+    content: "\e1f8";
 }
 .mas-student-filled:before {
-    content: "\f110";
+    content: "\e1f9";
 }
 .mas-video-filled:before {
-    content: "\f111";
+    content: "\e1fa";
 }

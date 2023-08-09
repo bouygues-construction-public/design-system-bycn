@@ -1,24 +1,24 @@
 import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
 import { CommonModule } from '@angular/common';
 import { MasIconExamples } from './mas-icon-examples.component';
-import arrows from '@masoni/icons/dist/font/filled/arrows/arrows.json';
-import brands from '@masoni/icons/dist/font/filled/brands/brands.json';
-import commerce from '@masoni/icons/dist/font/filled/commerce/commerce.json';
-import communication from '@masoni/icons/dist/font/filled/communication/communication.json';
-import design from '@masoni/icons/dist/font/filled/design/design.json';
-import development from '@masoni/icons/dist/font/filled/development/development.json';
-import education from '@masoni/icons/dist/font/filled/education/education.json';
-import games from '@masoni/icons/dist/font/filled/games/games.json';
-import healthAndWellness from '@masoni/icons/dist/font/filled/health-and-wellness/health-and-wellness.json';
-import mapsAndTravel from '@masoni/icons/dist/font/filled/maps-and-travel/maps-and-travel.json';
-import mathAndFinance from '@masoni/icons/dist/font/filled/math-and-finance/math-and-finance.json';
-import media from '@masoni/icons/dist/font/filled/media/media.json';
-import officeAndEditing from '@masoni/icons/dist/font/filled/office-and-editing/office-and-editing.json';
-import people from '@masoni/icons/dist/font/filled/people/people.json';
-import securityAndWarnings from '@masoni/icons/dist/font/filled/security-and-warnings/security-and-warnings.json';
-import systemAndDevice from '@masoni/icons/dist/font/filled/system-and-device/system-and-device.json';
-import time from '@masoni/icons/dist/font/filled/time/time.json';
-import weatherAndNature from '@masoni/icons/dist/font/filled/weather-and-nature/weather-and-nature.json';
+import arrows from '@masoni/icons/dist/generated/filled/arrows/arrows.json';
+import brands from '@masoni/icons/dist/generated/filled/brands/brands.json';
+import commerce from '@masoni/icons/dist/generated/filled/commerce/commerce.json';
+import communication from '@masoni/icons/dist/generated/filled/communication/communication.json';
+import design from '@masoni/icons/dist/generated/filled/design/design.json';
+import development from '@masoni/icons/dist/generated/filled/development/development.json';
+import education from '@masoni/icons/dist/generated/filled/education/education.json';
+import games from '@masoni/icons/dist/generated/filled/games/games.json';
+import healthAndWellness from '@masoni/icons/dist/generated/filled/health-and-wellness/health-and-wellness.json';
+import mapsAndTravel from '@masoni/icons/dist/generated/filled/maps-and-travel/maps-and-travel.json';
+import mathAndFinance from '@masoni/icons/dist/generated/filled/math-and-finance/math-and-finance.json';
+import media from '@masoni/icons/dist/generated/filled/media/media.json';
+import officeAndEditing from '@masoni/icons/dist/generated/filled/office-and-editing/office-and-editing.json';
+import people from '@masoni/icons/dist/generated/filled/people/people.json';
+import securityAndWarnings from '@masoni/icons/dist/generated/filled/security-and-warnings/security-and-warnings.json';
+import systemAndDevice from '@masoni/icons/dist/generated/filled/system-and-device/system-and-device.json';
+import time from '@masoni/icons/dist/generated/filled/time/time.json';
+import weatherAndNature from '@masoni/icons/dist/generated/filled/weather-and-nature/weather-and-nature.json';
 
 const meta: Meta<MasIconExamples> = {
   component: MasIconExamples,
@@ -40,6 +40,12 @@ export default meta;
 type Story = StoryObj<MasIconExamples>;
 
 export const Arrows: Story = {
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/ExsmUk2kX4zyyYvfmmCEiy/BYCN-Icons?type=design&node-id=91-29248'
+    }
+  },
   args: {
     iconClasses: [...Object.keys(arrows).map((icon) => `mas-${icon} mas-arrows--filled`)],
   },
@@ -107,26 +113,26 @@ export const OfficeAndEditing: Story = {
 };
 export const People: Story = {
   args: {
-    iconClasses: [...Object.keys(people).map((icon) => `mas-${icon}`)],
+    iconClasses: [...Object.keys(people).map((icon) => `mas-${icon} mas-people--filled`)],
   },
 };
 export const SecurityAndWarnings: Story = {
   args: {
-    iconClasses: [...Object.keys(securityAndWarnings).map((icon) => `mas-${icon}`)],
+    iconClasses: [...Object.keys(securityAndWarnings).map((icon) => `mas-${icon} mas-security-and-warnings--filled`)],
   },
 };
 export const SystemAndDevice: Story = {
   args: {
-    iconClasses: [...Object.keys(systemAndDevice).map((icon) => `mas-${icon}`)],
+    iconClasses: [...Object.keys(systemAndDevice).map((icon) => `mas-${icon} mas-system-and-device--filled`)],
   },
 };
 export const Time: Story = {
   args: {
-    iconClasses: [...Object.keys(time).map((icon) => `mas-${icon}`)],
+    iconClasses: [...Object.keys(time).map((icon) => `mas-${icon} mas-time--filled`)],
   },
 };
 export const WeatherAndNature: Story = {
   args: {
-    iconClasses: [...Object.keys(weatherAndNature).map((icon) => `mas-${icon}`)],
+    iconClasses: [...Object.keys(weatherAndNature).map((icon) => `mas-${icon} mas-weather-and-nature--filled`)],
   },
 };

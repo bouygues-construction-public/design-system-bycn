@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "design";
-    src: url("../../fonts/outlined/design/design.ttf?25f20764f5b03d589916e591158cbcba") format("truetype"),
-url("../../fonts/outlined/design/design.woff?25f20764f5b03d589916e591158cbcba") format("woff"),
-url("../../fonts/outlined/design/design.woff2?25f20764f5b03d589916e591158cbcba") format("woff2");
+    font-family: "design--outlined";
+    src: url("../../fonts/outlined/design/design.ttf?f1f4e231aab545a5f6d4418be4b554f7") format("truetype"),
+url("../../fonts/outlined/design/design.woff?f1f4e231aab545a5f6d4418be4b554f7") format("woff"),
+url("../../fonts/outlined/design/design.woff2?f1f4e231aab545a5f6d4418be4b554f7") format("woff2");
 }
 
-i[class^="mas-"]:before, i[class*=" mas-"]:before {
-    font-family: design !important;
+i[class^="mas-design--outlined"]:before, i[class*=" mas-design--outlined"]:before {
+    font-family: design--outlined !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;
@@ -16,390 +16,336 @@ i[class^="mas-"]:before, i[class*=" mas-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.mas-0:before {
-    content: "\[object Object]";
-}
-.mas-1:before {
-    content: "\[object Object]";
-}
-.mas-2:before {
-    content: "\[object Object]";
-}
-.mas-3:before {
-    content: "\[object Object]";
-}
-.mas-4:before {
-    content: "\[object Object]";
-}
-.mas-5:before {
-    content: "\[object Object]";
-}
-.mas-6:before {
-    content: "\[object Object]";
-}
-.mas-7:before {
-    content: "\[object Object]";
-}
-.mas-8:before {
-    content: "\[object Object]";
-}
-.mas-9:before {
-    content: "\[object Object]";
-}
-.mas-10:before {
-    content: "\[object Object]";
-}
-.mas-11:before {
-    content: "\[object Object]";
-}
-.mas-12:before {
-    content: "\[object Object]";
-}
-.mas-13:before {
-    content: "\[object Object]";
-}
-.mas-14:before {
-    content: "\[object Object]";
-}
-.mas-15:before {
-    content: "\[object Object]";
-}
-.mas-16:before {
-    content: "\[object Object]";
-}
-.mas-17:before {
-    content: "\[object Object]";
-}
 .mas-align-bottom-outlined:before {
-    content: "\f101";
+    content: "\e642";
 }
 .mas-align-bottom-simple-outlined:before {
-    content: "\f102";
+    content: "\e643";
 }
 .mas-align-center-horizontal-outlined:before {
-    content: "\f103";
+    content: "\e644";
 }
 .mas-align-center-horizontal-simple-outlined:before {
-    content: "\f104";
+    content: "\e645";
 }
 .mas-align-center-vertical-outlined:before {
-    content: "\f105";
+    content: "\e646";
 }
 .mas-align-center-vertical-simple-outlined:before {
-    content: "\f106";
+    content: "\e647";
 }
 .mas-align-left-outlined:before {
-    content: "\f107";
+    content: "\e648";
 }
 .mas-align-left-simple-outlined:before {
-    content: "\f108";
+    content: "\e649";
 }
 .mas-align-right-outlined:before {
-    content: "\f109";
+    content: "\e64a";
 }
 .mas-align-right-simple-outlined:before {
-    content: "\f10a";
+    content: "\e64b";
 }
 .mas-align-top-outlined:before {
-    content: "\f10b";
+    content: "\e64c";
 }
 .mas-align-top-simple-outlined:before {
-    content: "\f10c";
+    content: "\e64d";
 }
 .mas-bezier-curve-outlined:before {
-    content: "\f10d";
+    content: "\e64e";
 }
 .mas-bounding-box-outlined:before {
-    content: "\f10e";
+    content: "\e64f";
 }
 .mas-circle-dashed-outlined:before {
-    content: "\f10f";
+    content: "\e650";
 }
 .mas-circle-half-outlined:before {
-    content: "\f110";
+    content: "\e651";
 }
 .mas-circle-half-tilt-outlined:before {
-    content: "\f111";
+    content: "\e652";
 }
 .mas-circle-notch-outlined:before {
-    content: "\f112";
+    content: "\e653";
 }
 .mas-circle-outlined:before {
-    content: "\f113";
+    content: "\e654";
 }
 .mas-circles-four-outlined:before {
-    content: "\f114";
+    content: "\e655";
 }
 .mas-circles-three-outlined:before {
-    content: "\f115";
+    content: "\e656";
 }
 .mas-circles-three-plus-outlined:before {
-    content: "\f116";
+    content: "\e657";
 }
 .mas-columns-outlined:before {
-    content: "\f117";
+    content: "\e658";
 }
 .mas-compass-tool-outlined:before {
-    content: "\f118";
+    content: "\e659";
 }
 .mas-crop-outlined:before {
-    content: "\f119";
+    content: "\e65a";
 }
 .mas-cube-outlined:before {
-    content: "\f11a";
+    content: "\e65b";
 }
 .mas-cube-transparent-outlined:before {
-    content: "\f11b";
+    content: "\e65c";
 }
 .mas-cylinder-outlined:before {
-    content: "\f11c";
+    content: "\e65d";
 }
 .mas-diamonds-four-outlined:before {
-    content: "\f11d";
+    content: "\e65e";
 }
 .mas-drop-half-bottom-outlined:before {
-    content: "\f11e";
+    content: "\e65f";
 }
 .mas-drop-half-outlined:before {
-    content: "\f11f";
+    content: "\e660";
 }
 .mas-eraser-outlined:before {
-    content: "\f120";
+    content: "\e661";
 }
 .mas-exclude-outlined:before {
-    content: "\f121";
+    content: "\e662";
 }
 .mas-exclude-square-outlined:before {
-    content: "\f122";
+    content: "\e663";
 }
 .mas-eye-closed-outlined:before {
-    content: "\f123";
+    content: "\e664";
 }
 .mas-eye-outlined:before {
-    content: "\f124";
+    content: "\e665";
 }
 .mas-eye-slash-outlined:before {
-    content: "\f125";
+    content: "\e666";
 }
 .mas-eyedropper-outlined:before {
-    content: "\f126";
+    content: "\e667";
 }
 .mas-eyedropper-sample-outlined:before {
-    content: "\f127";
+    content: "\e668";
 }
 .mas-flow-arrow-outlined:before {
-    content: "\f128";
+    content: "\e669";
 }
 .mas-gear-fine-outlined:before {
-    content: "\f129";
+    content: "\e66a";
 }
 .mas-gradient-outlined:before {
-    content: "\f12a";
+    content: "\e66b";
 }
 .mas-grid-four-outlined:before {
-    content: "\f12b";
+    content: "\e66c";
 }
 .mas-grid-nine-outlined:before {
-    content: "\f12c";
+    content: "\e66d";
 }
 .mas-hexagon-outlined:before {
-    content: "\f12d";
+    content: "\e66e";
 }
 .mas-highlighter-circle-outlined:before {
-    content: "\f12e";
+    content: "\e66f";
 }
 .mas-intersect-outlined:before {
-    content: "\f12f";
+    content: "\e670";
 }
 .mas-intersect-square-outlined:before {
-    content: "\f130";
+    content: "\e671";
 }
 .mas-intersect-three-outlined:before {
-    content: "\f131";
+    content: "\e672";
 }
 .mas-layout-outlined:before {
-    content: "\f132";
+    content: "\e673";
 }
 .mas-line-segment-outlined:before {
-    content: "\f133";
+    content: "\e674";
 }
 .mas-line-segments-outlined:before {
-    content: "\f134";
+    content: "\e675";
 }
 .mas-magic-wand-outlined:before {
-    content: "\f135";
+    content: "\e676";
 }
 .mas-marker-circle-outlined:before {
-    content: "\f136";
+    content: "\e677";
 }
 .mas-notches-outlined:before {
-    content: "\f137";
+    content: "\e678";
 }
 .mas-octagon-outlined:before {
-    content: "\f138";
+    content: "\e679";
 }
 .mas-paint-brush-broad-outlined:before {
-    content: "\f139";
+    content: "\e67a";
 }
 .mas-paint-brush-household-outlined:before {
-    content: "\f13a";
+    content: "\e67b";
 }
 .mas-paint-brush-outlined:before {
-    content: "\f13b";
+    content: "\e67c";
 }
 .mas-paint-bucket-outlined:before {
-    content: "\f13c";
+    content: "\e67d";
 }
 .mas-paint-roller-outlined:before {
-    content: "\f13d";
+    content: "\e67e";
 }
 .mas-palette-outlined:before {
-    content: "\f13e";
+    content: "\e67f";
 }
 .mas-parallelogram-outlined:before {
-    content: "\f13f";
+    content: "\e680";
 }
 .mas-pen-nib-outlined:before {
-    content: "\f140";
+    content: "\e681";
 }
 .mas-pen-nib-straight-outlined:before {
-    content: "\f141";
+    content: "\e682";
 }
 .mas-pen-outlined:before {
-    content: "\f142";
+    content: "\e683";
 }
 .mas-pencil-circle-outlined:before {
-    content: "\f143";
+    content: "\e684";
 }
 .mas-pencil-line-outlined:before {
-    content: "\f144";
+    content: "\e685";
 }
 .mas-pencil-outlined:before {
-    content: "\f145";
+    content: "\e686";
 }
 .mas-pencil-simple-line-outlined:before {
-    content: "\f146";
+    content: "\e687";
 }
 .mas-pencil-simple-outlined:before {
-    content: "\f147";
+    content: "\e688";
 }
 .mas-pencil-simple-slash-outlined:before {
-    content: "\f148";
+    content: "\e689";
 }
 .mas-pencil-slash-outlined:before {
-    content: "\f149";
+    content: "\e68a";
 }
 .mas-pentagram-outlined:before {
-    content: "\f14a";
+    content: "\e68b";
 }
 .mas-perspective-outlined:before {
-    content: "\f14b";
+    content: "\e68c";
 }
 .mas-placeholder-outlined:before {
-    content: "\f14c";
+    content: "\e68d";
 }
 .mas-polygon-outlined:before {
-    content: "\f14d";
+    content: "\e68e";
 }
 .mas-rectangle-outlined:before {
-    content: "\f14e";
+    content: "\e68f";
 }
 .mas-rows-outlined:before {
-    content: "\f14f";
+    content: "\e690";
 }
 .mas-ruler-outlined:before {
-    content: "\f150";
+    content: "\e691";
 }
 .mas-scissors-outlined:before {
-    content: "\f151";
+    content: "\e692";
 }
 .mas-scribble-loop-outlined:before {
-    content: "\f152";
+    content: "\e693";
 }
 .mas-selection-all-outlined:before {
-    content: "\f153";
+    content: "\e694";
 }
 .mas-selection-background-outlined:before {
-    content: "\f154";
+    content: "\e695";
 }
 .mas-selection-foreground-outlined:before {
-    content: "\f155";
+    content: "\e696";
 }
 .mas-selection-inverse-outlined:before {
-    content: "\f156";
+    content: "\e697";
 }
 .mas-selection-outlined:before {
-    content: "\f157";
+    content: "\e698";
 }
 .mas-selection-plus-outlined:before {
-    content: "\f158";
+    content: "\e699";
 }
 .mas-selection-slash-outlined:before {
-    content: "\f159";
+    content: "\e69a";
 }
 .mas-shapes-outlined:before {
-    content: "\f15a";
+    content: "\e69b";
 }
 .mas-sidebar-outlined:before {
-    content: "\f15b";
+    content: "\e69c";
 }
 .mas-sidebar-simple-outlined:before {
-    content: "\f15c";
+    content: "\e69d";
 }
 .mas-split-horizontal-outlined:before {
-    content: "\f15d";
+    content: "\e69e";
 }
 .mas-split-vertical-outlined:before {
-    content: "\f15e";
+    content: "\e69f";
 }
 .mas-square-half-bottom-outlined:before {
-    content: "\f15f";
+    content: "\e6a0";
 }
 .mas-square-half-outlined:before {
-    content: "\f160";
+    content: "\e6a1";
 }
 .mas-square-outlined:before {
-    content: "\f161";
+    content: "\e6a2";
 }
 .mas-square-split-horizontal-outlined:before {
-    content: "\f162";
+    content: "\e6a3";
 }
 .mas-square-split-vertical-outlined:before {
-    content: "\f163";
+    content: "\e6a4";
 }
 .mas-squares-four-outlined:before {
-    content: "\f164";
+    content: "\e6a5";
 }
 .mas-stack-outlined:before {
-    content: "\f165";
+    content: "\e6a6";
 }
 .mas-stack-simple-outlined:before {
-    content: "\f166";
+    content: "\e6a7";
 }
 .mas-stamp-outlined:before {
-    content: "\f167";
+    content: "\e6a8";
 }
 .mas-subtract-outlined:before {
-    content: "\f168";
+    content: "\e6a9";
 }
 .mas-subtract-square-outlined:before {
-    content: "\f169";
+    content: "\e6aa";
 }
 .mas-swatches-outlined:before {
-    content: "\f16a";
+    content: "\e6ab";
 }
 .mas-text-a-underline-outlined:before {
-    content: "\f16b";
+    content: "\e6ac";
 }
 .mas-triangle-outlined:before {
-    content: "\f16c";
+    content: "\e6ad";
 }
 .mas-unite-outlined:before {
-    content: "\f16d";
+    content: "\e6ae";
 }
 .mas-unite-square-outlined:before {
-    content: "\f16e";
+    content: "\e6af";
 }
 .mas-vignette-outlined:before {
-    content: "\f16f";
+    content: "\e6b0";
 }

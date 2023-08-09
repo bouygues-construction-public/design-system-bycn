@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "health-and-wellness";
-    src: url("../../fonts/filled/health-and-wellness/health-and-wellness.ttf?309c41447127ae110c915661be943f97") format("truetype"),
-url("../../fonts/filled/health-and-wellness/health-and-wellness.woff?309c41447127ae110c915661be943f97") format("woff"),
-url("../../fonts/filled/health-and-wellness/health-and-wellness.woff2?309c41447127ae110c915661be943f97") format("woff2");
+    font-family: "health-and-wellness--filled";
+    src: url("../../fonts/filled/health-and-wellness/health-and-wellness.ttf?9428dab88a69c51c6c02e17817796fab") format("truetype"),
+url("../../fonts/filled/health-and-wellness/health-and-wellness.woff?9428dab88a69c51c6c02e17817796fab") format("woff"),
+url("../../fonts/filled/health-and-wellness/health-and-wellness.woff2?9428dab88a69c51c6c02e17817796fab") format("woff2");
 }
 
-i[class^="mas-"]:before, i[class*=" mas-"]:before {
-    font-family: health-and-wellness !important;
+i[class^="mas-health-and-wellness--filled"]:before, i[class*=" mas-health-and-wellness--filled"]:before {
+    font-family: health-and-wellness--filled !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;
@@ -16,126 +16,72 @@ i[class^="mas-"]:before, i[class*=" mas-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.mas-0:before {
-    content: "\[object Object]";
-}
-.mas-1:before {
-    content: "\[object Object]";
-}
-.mas-2:before {
-    content: "\[object Object]";
-}
-.mas-3:before {
-    content: "\[object Object]";
-}
-.mas-4:before {
-    content: "\[object Object]";
-}
-.mas-5:before {
-    content: "\[object Object]";
-}
-.mas-6:before {
-    content: "\[object Object]";
-}
-.mas-7:before {
-    content: "\[object Object]";
-}
-.mas-8:before {
-    content: "\[object Object]";
-}
-.mas-9:before {
-    content: "\[object Object]";
-}
-.mas-10:before {
-    content: "\[object Object]";
-}
-.mas-11:before {
-    content: "\[object Object]";
-}
-.mas-12:before {
-    content: "\[object Object]";
-}
-.mas-13:before {
-    content: "\[object Object]";
-}
-.mas-14:before {
-    content: "\[object Object]";
-}
-.mas-15:before {
-    content: "\[object Object]";
-}
-.mas-16:before {
-    content: "\[object Object]";
-}
-.mas-17:before {
-    content: "\[object Object]";
-}
 .mas-bandaids-filled:before {
-    content: "\f101";
+    content: "\e22c";
 }
 .mas-barbell-filled:before {
-    content: "\f102";
+    content: "\e22d";
 }
 .mas-bed-filled:before {
-    content: "\f103";
+    content: "\e22e";
 }
 .mas-brain-filled:before {
-    content: "\f104";
+    content: "\e22f";
 }
 .mas-dna-filled:before {
-    content: "\f105";
+    content: "\e230";
 }
 .mas-face-mask-filled:before {
-    content: "\f106";
+    content: "\e231";
 }
 .mas-first-aid-filled:before {
-    content: "\f107";
+    content: "\e232";
 }
 .mas-first-aid-kit-filled:before {
-    content: "\f108";
+    content: "\e233";
 }
 .mas-flask-filled:before {
-    content: "\f109";
+    content: "\e234";
 }
 .mas-hand-heart-filled:before {
-    content: "\f10a";
+    content: "\e235";
 }
 .mas-hand-soap-filled:before {
-    content: "\f10b";
+    content: "\e236";
 }
 .mas-heartbeat-filled:before {
-    content: "\f10c";
+    content: "\e237";
 }
 .mas-lifebuoy-filled:before {
-    content: "\f10d";
+    content: "\e238";
 }
 .mas-pill-filled:before {
-    content: "\f10e";
+    content: "\e239";
 }
 .mas-prescription-filled:before {
-    content: "\f10f";
+    content: "\e23a";
 }
 .mas-pulse-filled:before {
-    content: "\f110";
+    content: "\e23b";
 }
 .mas-stethoscope-filled:before {
-    content: "\f111";
+    content: "\e23c";
 }
 .mas-syringe-filled:before {
-    content: "\f112";
+    content: "\e23d";
 }
 .mas-test-tube-filled:before {
-    content: "\f113";
+    content: "\e23e";
 }
 .mas-toilet-filled:before {
-    content: "\f114";
+    content: "\e23f";
 }
 .mas-toilet-paper-filled:before {
-    content: "\f115";
+    content: "\e240";
 }
 .mas-tooth-filled:before {
-    content: "\f116";
+    content: "\e241";
 }
 .mas-virus-filled:before {
-    content: "\f117";
+    content: "\e242";
 }

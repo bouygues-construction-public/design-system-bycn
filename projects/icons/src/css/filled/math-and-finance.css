@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "math-and-finance";
-    src: url("../../fonts/filled/math-and-finance/math-and-finance.ttf?bf4a186762597fcba627f206b3be3847") format("truetype"),
-url("../../fonts/filled/math-and-finance/math-and-finance.woff?bf4a186762597fcba627f206b3be3847") format("woff"),
-url("../../fonts/filled/math-and-finance/math-and-finance.woff2?bf4a186762597fcba627f206b3be3847") format("woff2");
+    font-family: "math-and-finance--filled";
+    src: url("../../fonts/filled/math-and-finance/math-and-finance.ttf?a00a4cc1a1a015d2f63d8db54cb10384") format("truetype"),
+url("../../fonts/filled/math-and-finance/math-and-finance.woff?a00a4cc1a1a015d2f63d8db54cb10384") format("woff"),
+url("../../fonts/filled/math-and-finance/math-and-finance.woff2?a00a4cc1a1a015d2f63d8db54cb10384") format("woff2");
 }
 
-i[class^="mas-"]:before, i[class*=" mas-"]:before {
-    font-family: math-and-finance !important;
+i[class^="mas-math-and-finance--filled"]:before, i[class*=" mas-math-and-finance--filled"]:before {
+    font-family: math-and-finance--filled !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;
@@ -16,252 +16,198 @@ i[class^="mas-"]:before, i[class*=" mas-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.mas-0:before {
-    content: "\[object Object]";
-}
-.mas-1:before {
-    content: "\[object Object]";
-}
-.mas-2:before {
-    content: "\[object Object]";
-}
-.mas-3:before {
-    content: "\[object Object]";
-}
-.mas-4:before {
-    content: "\[object Object]";
-}
-.mas-5:before {
-    content: "\[object Object]";
-}
-.mas-6:before {
-    content: "\[object Object]";
-}
-.mas-7:before {
-    content: "\[object Object]";
-}
-.mas-8:before {
-    content: "\[object Object]";
-}
-.mas-9:before {
-    content: "\[object Object]";
-}
-.mas-10:before {
-    content: "\[object Object]";
-}
-.mas-11:before {
-    content: "\[object Object]";
-}
-.mas-12:before {
-    content: "\[object Object]";
-}
-.mas-13:before {
-    content: "\[object Object]";
-}
-.mas-14:before {
-    content: "\[object Object]";
-}
-.mas-15:before {
-    content: "\[object Object]";
-}
-.mas-16:before {
-    content: "\[object Object]";
-}
-.mas-17:before {
-    content: "\[object Object]";
-}
 .mas-bank-filled:before {
-    content: "\f101";
+    content: "\e291";
 }
 .mas-calculator-filled:before {
-    content: "\f102";
+    content: "\e292";
 }
 .mas-chart-bar-filled:before {
-    content: "\f103";
+    content: "\e293";
 }
 .mas-chart-bar-horizontal-filled:before {
-    content: "\f104";
+    content: "\e294";
 }
 .mas-chart-donut-filled:before {
-    content: "\f105";
+    content: "\e295";
 }
 .mas-chart-line-down-filled:before {
-    content: "\f106";
+    content: "\e296";
 }
 .mas-chart-line-filled:before {
-    content: "\f107";
+    content: "\e297";
 }
 .mas-chart-line-up-filled:before {
-    content: "\f108";
+    content: "\e298";
 }
 .mas-chart-pie-filled:before {
-    content: "\f109";
+    content: "\e299";
 }
 .mas-chart-pie-slice-filled:before {
-    content: "\f10a";
+    content: "\e29a";
 }
 .mas-chart-polar-filled:before {
-    content: "\f10b";
+    content: "\e29b";
 }
 .mas-chart-scatter-filled:before {
-    content: "\f10c";
+    content: "\e29c";
 }
 .mas-divide-filled:before {
-    content: "\f10d";
+    content: "\e29d";
 }
 .mas-equals-filled:before {
-    content: "\f10e";
+    content: "\e29e";
 }
 .mas-function-filled:before {
-    content: "\f10f";
+    content: "\e29f";
 }
 .mas-graph-filled:before {
-    content: "\f110";
+    content: "\e2a0";
 }
 .mas-infinity-filled:before {
-    content: "\f111";
+    content: "\e2a1";
 }
 .mas-math-operations-filled:before {
-    content: "\f112";
+    content: "\e2a2";
 }
 .mas-minus-circle-filled:before {
-    content: "\f113";
+    content: "\e2a3";
 }
 .mas-minus-filled:before {
-    content: "\f114";
+    content: "\e2a4";
 }
 .mas-minus-square-filled:before {
-    content: "\f115";
+    content: "\e2a5";
 }
 .mas-number-circle-eight-filled:before {
-    content: "\f116";
+    content: "\e2a6";
 }
 .mas-number-circle-five-filled:before {
-    content: "\f117";
+    content: "\e2a7";
 }
 .mas-number-circle-four-filled:before {
-    content: "\f118";
+    content: "\e2a8";
 }
 .mas-number-circle-nine-filled:before {
-    content: "\f119";
+    content: "\e2a9";
 }
 .mas-number-circle-one-filled:before {
-    content: "\f11a";
+    content: "\e2aa";
 }
 .mas-number-circle-seven-filled:before {
-    content: "\f11b";
+    content: "\e2ab";
 }
 .mas-number-circle-six-filled:before {
-    content: "\f11c";
+    content: "\e2ac";
 }
 .mas-number-circle-three-filled:before {
-    content: "\f11d";
+    content: "\e2ad";
 }
 .mas-number-circle-two-filled:before {
-    content: "\f11e";
+    content: "\e2ae";
 }
 .mas-number-circle-zero-filled:before {
-    content: "\f11f";
+    content: "\e2af";
 }
 .mas-number-eight-filled:before {
-    content: "\f120";
+    content: "\e2b0";
 }
 .mas-number-five-filled:before {
-    content: "\f121";
+    content: "\e2b1";
 }
 .mas-number-four-filled:before {
-    content: "\f122";
+    content: "\e2b2";
 }
 .mas-number-nine-filled:before {
-    content: "\f123";
+    content: "\e2b3";
 }
 .mas-number-one-filled:before {
-    content: "\f124";
+    content: "\e2b4";
 }
 .mas-number-seven-filled:before {
-    content: "\f125";
+    content: "\e2b5";
 }
 .mas-number-six-filled:before {
-    content: "\f126";
+    content: "\e2b6";
 }
 .mas-number-square-eight-filled:before {
-    content: "\f127";
+    content: "\e2b7";
 }
 .mas-number-square-five-filled:before {
-    content: "\f128";
+    content: "\e2b8";
 }
 .mas-number-square-four-filled:before {
-    content: "\f129";
+    content: "\e2b9";
 }
 .mas-number-square-nine-filled:before {
-    content: "\f12a";
+    content: "\e2ba";
 }
 .mas-number-square-one-filled:before {
-    content: "\f12b";
+    content: "\e2bb";
 }
 .mas-number-square-seven-filled:before {
-    content: "\f12c";
+    content: "\e2bc";
 }
 .mas-number-square-six-filled:before {
-    content: "\f12d";
+    content: "\e2bd";
 }
 .mas-number-square-three-filled:before {
-    content: "\f12e";
+    content: "\e2be";
 }
 .mas-number-square-two-filled:before {
-    content: "\f12f";
+    content: "\e2bf";
 }
 .mas-number-square-zero-filled:before {
-    content: "\f130";
+    content: "\e2c0";
 }
 .mas-number-three-filled:before {
-    content: "\f131";
+    content: "\e2c1";
 }
 .mas-number-two-filled:before {
-    content: "\f132";
+    content: "\e2c2";
 }
 .mas-number-zero-filled:before {
-    content: "\f133";
+    content: "\e2c3";
 }
 .mas-percent-filled:before {
-    content: "\f134";
+    content: "\e2c4";
 }
 .mas-pi-filled:before {
-    content: "\f135";
+    content: "\e2c5";
 }
 .mas-plus-circle-filled:before {
-    content: "\f136";
+    content: "\e2c6";
 }
 .mas-plus-filled:before {
-    content: "\f137";
+    content: "\e2c7";
 }
 .mas-plus-minus-filled:before {
-    content: "\f138";
+    content: "\e2c8";
 }
 .mas-plus-square-filled:before {
-    content: "\f139";
+    content: "\e2c9";
 }
 .mas-radical-filled:before {
-    content: "\f13a";
+    content: "\e2ca";
 }
 .mas-sigma-filled:before {
-    content: "\f13b";
+    content: "\e2cb";
 }
 .mas-table-filled:before {
-    content: "\f13c";
+    content: "\e2cc";
 }
 .mas-trend-down-filled:before {
-    content: "\f13d";
+    content: "\e2cd";
 }
 .mas-trend-up-filled:before {
-    content: "\f13e";
+    content: "\e2ce";
 }
 .mas-x-circle-filled:before {
-    content: "\f13f";
+    content: "\e2cf";
 }
 .mas-x-filled:before {
-    content: "\f140";
+    content: "\e2d0";
 }
 .mas-x-square-filled:before {
-    content: "\f141";
+    content: "\e2d1";
 }

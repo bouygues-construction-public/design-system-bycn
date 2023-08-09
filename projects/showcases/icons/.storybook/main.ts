@@ -8,6 +8,7 @@ const config: StorybookConfig = {
         cssModules: true,
       },
     },
+    '@storybook/addon-designs', 
   ],
   staticDirs: ['../../static'],
   framework: {

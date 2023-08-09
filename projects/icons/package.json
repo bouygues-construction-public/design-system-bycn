@@ -22,9 +22,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "shx mkdir -p dist && shx cp -r src/generated/svg src/generated/font dist && npm run build:css",
-    "build:css": "postcss src/generated/css/filled/index.css -o dist/css/filled/index.css",
-    "build:font": "postcss src/generated/css/filled/arrows/arrows.css -o dist/css/filled/arrows.css"
+    "build": "shx mkdir -p dist && npm run build:svg && npm run build:fonts && npm run build:css",
+    "build:css": "shx cp -r src/css dist && postcss src/css/filled/index.css -o dist/css/filled/index.css && postcss src/css/outlined/index.css -o dist/css/outlined/index.css",
+    "build:fonts": "shx cp -r src/fonts dist && shx cp -r src/generated dist",
+    "build:svg": "shx cp -r src/svg dist"
   },
   "devDependencies": {
     "@masoni/css-postcss-config": "file:../css/config/postcss",

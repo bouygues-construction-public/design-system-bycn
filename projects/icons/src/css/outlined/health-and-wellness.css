@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "health-and-wellness";
-    src: url("../../fonts/outlined/health-and-wellness/health-and-wellness.ttf?ade64c9a33f368854ab8ae710c86cabb") format("truetype"),
-url("../../fonts/outlined/health-and-wellness/health-and-wellness.woff?ade64c9a33f368854ab8ae710c86cabb") format("woff"),
-url("../../fonts/outlined/health-and-wellness/health-and-wellness.woff2?ade64c9a33f368854ab8ae710c86cabb") format("woff2");
+    font-family: "health-and-wellness--outlined";
+    src: url("../../fonts/outlined/health-and-wellness/health-and-wellness.ttf?9b0d75ff8aa885045540255fd77d23be") format("truetype"),
+url("../../fonts/outlined/health-and-wellness/health-and-wellness.woff?9b0d75ff8aa885045540255fd77d23be") format("woff"),
+url("../../fonts/outlined/health-and-wellness/health-and-wellness.woff2?9b0d75ff8aa885045540255fd77d23be") format("woff2");
 }
 
-i[class^="mas-"]:before, i[class*=" mas-"]:before {
-    font-family: health-and-wellness !important;
+i[class^="mas-health-and-wellness--outlined"]:before, i[class*=" mas-health-and-wellness--outlined"]:before {
+    font-family: health-and-wellness--outlined !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;
@@ -16,126 +16,72 @@ i[class^="mas-"]:before, i[class*=" mas-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.mas-0:before {
-    content: "\[object Object]";
-}
-.mas-1:before {
-    content: "\[object Object]";
-}
-.mas-2:before {
-    content: "\[object Object]";
-}
-.mas-3:before {
-    content: "\[object Object]";
-}
-.mas-4:before {
-    content: "\[object Object]";
-}
-.mas-5:before {
-    content: "\[object Object]";
-}
-.mas-6:before {
-    content: "\[object Object]";
-}
-.mas-7:before {
-    content: "\[object Object]";
-}
-.mas-8:before {
-    content: "\[object Object]";
-}
-.mas-9:before {
-    content: "\[object Object]";
-}
-.mas-10:before {
-    content: "\[object Object]";
-}
-.mas-11:before {
-    content: "\[object Object]";
-}
-.mas-12:before {
-    content: "\[object Object]";
-}
-.mas-13:before {
-    content: "\[object Object]";
-}
-.mas-14:before {
-    content: "\[object Object]";
-}
-.mas-15:before {
-    content: "\[object Object]";
-}
-.mas-16:before {
-    content: "\[object Object]";
-}
-.mas-17:before {
-    content: "\[object Object]";
-}
 .mas-bandaids-outlined:before {
-    content: "\f101";
+    content: "\e70c";
 }
 .mas-barbell-outlined:before {
-    content: "\f102";
+    content: "\e70d";
 }
 .mas-bed-outlined:before {
-    content: "\f103";
+    content: "\e70e";
 }
 .mas-brain-outlined:before {
-    content: "\f104";
+    content: "\e70f";
 }
 .mas-dna-outlined:before {
-    content: "\f105";
+    content: "\e710";
 }
 .mas-face-mask-outlined:before {
-    content: "\f106";
+    content: "\e711";
 }
 .mas-first-aid-kit-outlined:before {
-    content: "\f107";
+    content: "\e712";
 }
 .mas-first-aid-outlined:before {
-    content: "\f108";
+    content: "\e713";
 }
 .mas-flask-outlined:before {
-    content: "\f109";
+    content: "\e714";
 }
 .mas-hand-heart-outlined:before {
-    content: "\f10a";
+    content: "\e715";
 }
 .mas-hand-soap-outlined:before {
-    content: "\f10b";
+    content: "\e716";
 }
 .mas-heartbeat-outlined:before {
-    content: "\f10c";
+    content: "\e717";
 }
 .mas-lifebuoy-outlined:before {
-    content: "\f10d";
+    content: "\e718";
 }
 .mas-pill-outlined:before {
-    content: "\f10e";
+    content: "\e719";
 }
 .mas-prescription-outlined:before {
-    content: "\f10f";
+    content: "\e71a";
 }
 .mas-pulse-outlined:before {
-    content: "\f110";
+    content: "\e71b";
 }
 .mas-stethoscope-outlined:before {
-    content: "\f111";
+    content: "\e71c";
 }
 .mas-syringe-outlined:before {
-    content: "\f112";
+    content: "\e71d";
 }
 .mas-test-tube-outlined:before {
-    content: "\f113";
+    content: "\e71e";
 }
 .mas-toilet-outlined:before {
-    content: "\f114";
+    content: "\e71f";
 }
 .mas-toilet-paper-outlined:before {
-    content: "\f115";
+    content: "\e720";
 }
 .mas-tooth-outlined:before {
-    content: "\f116";
+    content: "\e721";
 }
 .mas-virus-outlined:before {
-    content: "\f117";
+    content: "\e722";
 }

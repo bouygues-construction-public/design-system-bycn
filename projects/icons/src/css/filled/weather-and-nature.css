@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "weather-and-nature";
-    src: url("../../fonts/filled/weather-and-nature/weather-and-nature.ttf?cb38adf9bd1e23fa3a03005a2a190a20") format("truetype"),
-url("../../fonts/filled/weather-and-nature/weather-and-nature.woff?cb38adf9bd1e23fa3a03005a2a190a20") format("woff"),
-url("../../fonts/filled/weather-and-nature/weather-and-nature.woff2?cb38adf9bd1e23fa3a03005a2a190a20") format("woff2");
+    font-family: "weather-and-nature--filled";
+    src: url("../../fonts/filled/weather-and-nature/weather-and-nature.ttf?dc2e2052effe6d75104df9c11cbc6857") format("truetype"),
+url("../../fonts/filled/weather-and-nature/weather-and-nature.woff?dc2e2052effe6d75104df9c11cbc6857") format("woff"),
+url("../../fonts/filled/weather-and-nature/weather-and-nature.woff2?dc2e2052effe6d75104df9c11cbc6857") format("woff2");
 }
 
-i[class^="mas-"]:before, i[class*=" mas-"]:before {
-    font-family: weather-and-nature !important;
+i[class^="mas-weather-and-nature--filled"]:before, i[class*=" mas-weather-and-nature--filled"]:before {
+    font-family: weather-and-nature--filled !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;
@@ -16,213 +16,159 @@ i[class^="mas-"]:before, i[class*=" mas-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.mas-0:before {
-    content: "\[object Object]";
-}
-.mas-1:before {
-    content: "\[object Object]";
-}
-.mas-2:before {
-    content: "\[object Object]";
-}
-.mas-3:before {
-    content: "\[object Object]";
-}
-.mas-4:before {
-    content: "\[object Object]";
-}
-.mas-5:before {
-    content: "\[object Object]";
-}
-.mas-6:before {
-    content: "\[object Object]";
-}
-.mas-7:before {
-    content: "\[object Object]";
-}
-.mas-8:before {
-    content: "\[object Object]";
-}
-.mas-9:before {
-    content: "\[object Object]";
-}
-.mas-10:before {
-    content: "\[object Object]";
-}
-.mas-11:before {
-    content: "\[object Object]";
-}
-.mas-12:before {
-    content: "\[object Object]";
-}
-.mas-13:before {
-    content: "\[object Object]";
-}
-.mas-14:before {
-    content: "\[object Object]";
-}
-.mas-15:before {
-    content: "\[object Object]";
-}
-.mas-16:before {
-    content: "\[object Object]";
-}
-.mas-17:before {
-    content: "\[object Object]";
-}
 .mas-atom-filled:before {
-    content: "\f101";
+    content: "\e4ac";
 }
 .mas-bird-filled:before {
-    content: "\f102";
+    content: "\e4ad";
 }
 .mas-bone-filled:before {
-    content: "\f103";
+    content: "\e4ae";
 }
 .mas-butterfly-filled:before {
-    content: "\f104";
+    content: "\e4af";
 }
 .mas-cactus-filled:before {
-    content: "\f105";
+    content: "\e4b0";
 }
 .mas-campfire-filled:before {
-    content: "\f106";
+    content: "\e4b1";
 }
 .mas-cat-filled:before {
-    content: "\f107";
+    content: "\e4b2";
 }
 .mas-cloud-filled:before {
-    content: "\f108";
+    content: "\e4b3";
 }
 .mas-cloud-fog-filled:before {
-    content: "\f109";
+    content: "\e4b4";
 }
 .mas-cloud-lighting-filled:before {
-    content: "\f10a";
+    content: "\e4b5";
 }
 .mas-cloud-moon-filled:before {
-    content: "\f10b";
+    content: "\e4b6";
 }
 .mas-cloud-rain-filled:before {
-    content: "\f10c";
+    content: "\e4b7";
 }
 .mas-cloud-snow-filled:before {
-    content: "\f10d";
+    content: "\e4b8";
 }
 .mas-cloud-sun-filled:before {
-    content: "\f10e";
+    content: "\e4b9";
 }
 .mas-dog-filled:before {
-    content: "\f10f";
+    content: "\e4ba";
 }
 .mas-drop-filled:before {
-    content: "\f110";
+    content: "\e4bb";
 }
 .mas-feather-filled:before {
-    content: "\f111";
+    content: "\e4bc";
 }
 .mas-fire-filled:before {
-    content: "\f112";
+    content: "\e4bd";
 }
 .mas-fire-simple-filled:before {
-    content: "\f113";
+    content: "\e4be";
 }
 .mas-fish-filled:before {
-    content: "\f114";
+    content: "\e4bf";
 }
 .mas-fish-simple-filled:before {
-    content: "\f115";
+    content: "\e4c0";
 }
 .mas-flame-filled:before {
-    content: "\f116";
+    content: "\e4c1";
 }
 .mas-flower-filled:before {
-    content: "\f117";
+    content: "\e4c2";
 }
 .mas-flower-lotus-filled:before {
-    content: "\f118";
+    content: "\e4c3";
 }
 .mas-flower-tulip-filled:before {
-    content: "\f119";
+    content: "\e4c4";
 }
 .mas-leaf-filled:before {
-    content: "\f11a";
+    content: "\e4c5";
 }
 .mas-moon-filled:before {
-    content: "\f11b";
+    content: "\e4c6";
 }
 .mas-moon-stars-filled:before {
-    content: "\f11c";
+    content: "\e4c7";
 }
 .mas-mountains-filled:before {
-    content: "\f11d";
+    content: "\e4c8";
 }
 .mas-paw-print-filled:before {
-    content: "\f11e";
+    content: "\e4c9";
 }
 .mas-planet-filled:before {
-    content: "\f11f";
+    content: "\e4ca";
 }
 .mas-plant-filled:before {
-    content: "\f120";
+    content: "\e4cb";
 }
 .mas-rainbow-cloud-filled:before {
-    content: "\f121";
+    content: "\e4cc";
 }
 .mas-rainbow-filled:before {
-    content: "\f122";
+    content: "\e4cd";
 }
 .mas-shooting-star-filled:before {
-    content: "\f123";
+    content: "\e4ce";
 }
 .mas-shrimp-filled:before {
-    content: "\f124";
+    content: "\e4cf";
 }
 .mas-snowflake-filled:before {
-    content: "\f125";
+    content: "\e4d0";
 }
 .mas-sparkle-filled:before {
-    content: "\f126";
+    content: "\e4d1";
 }
 .mas-star-four-filled:before {
-    content: "\f127";
+    content: "\e4d2";
 }
 .mas-sun-dim-filled:before {
-    content: "\f128";
+    content: "\e4d3";
 }
 .mas-sun-filled:before {
-    content: "\f129";
+    content: "\e4d4";
 }
 .mas-sun-horizon-filled:before {
-    content: "\f12a";
+    content: "\e4d5";
 }
 .mas-thermometer-cold-filled:before {
-    content: "\f12b";
+    content: "\e4d6";
 }
 .mas-thermometer-filled:before {
-    content: "\f12c";
+    content: "\e4d7";
 }
 .mas-thermometer-hot-filled:before {
-    content: "\f12d";
+    content: "\e4d8";
 }
 .mas-thermometer-simple-filled:before {
-    content: "\f12e";
+    content: "\e4d9";
 }
 .mas-tree-evergreen-filled:before {
-    content: "\f12f";
+    content: "\e4da";
 }
 .mas-tree-filled:before {
-    content: "\f130";
+    content: "\e4db";
 }
 .mas-umbrella-filled:before {
-    content: "\f131";
+    content: "\e4dc";
 }
 .mas-umbrella-simple-filled:before {
-    content: "\f132";
+    content: "\e4dd";
 }
 .mas-waves-filled:before {
-    content: "\f133";
+    content: "\e4de";
 }
 .mas-wind-filled:before {
-    content: "\f134";
+    content: "\e4df";
 }

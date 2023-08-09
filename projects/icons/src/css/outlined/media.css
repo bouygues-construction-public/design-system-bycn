@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "media";
-    src: url("../../fonts/outlined/media/media.ttf?524f4c75a4a229149ab6d49adb6a82d2") format("truetype"),
-url("../../fonts/outlined/media/media.woff?524f4c75a4a229149ab6d49adb6a82d2") format("woff"),
-url("../../fonts/outlined/media/media.woff2?524f4c75a4a229149ab6d49adb6a82d2") format("woff2");
+    font-family: "media--outlined";
+    src: url("../../fonts/outlined/media/media.ttf?84f0791fdb6d5ee9f543126fa4951fe3") format("truetype"),
+url("../../fonts/outlined/media/media.woff?84f0791fdb6d5ee9f543126fa4951fe3") format("woff"),
+url("../../fonts/outlined/media/media.woff2?84f0791fdb6d5ee9f543126fa4951fe3") format("woff2");
 }
 
-i[class^="mas-"]:before, i[class*=" mas-"]:before {
-    font-family: media !important;
+i[class^="mas-media--outlined"]:before, i[class*=" mas-media--outlined"]:before {
+    font-family: media--outlined !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;
@@ -16,357 +16,303 @@ i[class^="mas-"]:before, i[class*=" mas-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.mas-0:before {
-    content: "\[object Object]";
-}
-.mas-1:before {
-    content: "\[object Object]";
-}
-.mas-2:before {
-    content: "\[object Object]";
-}
-.mas-3:before {
-    content: "\[object Object]";
-}
-.mas-4:before {
-    content: "\[object Object]";
-}
-.mas-5:before {
-    content: "\[object Object]";
-}
-.mas-6:before {
-    content: "\[object Object]";
-}
-.mas-7:before {
-    content: "\[object Object]";
-}
-.mas-8:before {
-    content: "\[object Object]";
-}
-.mas-9:before {
-    content: "\[object Object]";
-}
-.mas-10:before {
-    content: "\[object Object]";
-}
-.mas-11:before {
-    content: "\[object Object]";
-}
-.mas-12:before {
-    content: "\[object Object]";
-}
-.mas-13:before {
-    content: "\[object Object]";
-}
-.mas-14:before {
-    content: "\[object Object]";
-}
-.mas-15:before {
-    content: "\[object Object]";
-}
-.mas-16:before {
-    content: "\[object Object]";
-}
-.mas-17:before {
-    content: "\[object Object]";
-}
 .mas-airplay-outlined:before {
-    content: "\f101";
+    content: "\e7b2";
 }
 .mas-aperture-outlined:before {
-    content: "\f102";
+    content: "\e7b3";
 }
 .mas-article-medium-outlined:before {
-    content: "\f103";
+    content: "\e7b4";
 }
 .mas-article-ny-times-outlined:before {
-    content: "\f104";
+    content: "\e7b5";
 }
 .mas-article-outlined:before {
-    content: "\f105";
+    content: "\e7b6";
 }
 .mas-camera-outlined:before {
-    content: "\f106";
+    content: "\e7b7";
 }
 .mas-camera-plus-outlined:before {
-    content: "\f107";
+    content: "\e7b8";
 }
 .mas-camera-rotate-outlined:before {
-    content: "\f108";
+    content: "\e7b9";
 }
 .mas-camera-slash-outlined:before {
-    content: "\f109";
+    content: "\e7ba";
 }
 .mas-cassette-tape-outlined:before {
-    content: "\f10a";
+    content: "\e7bb";
 }
 .mas-closed-captioning-outlined:before {
-    content: "\f10b";
+    content: "\e7bc";
 }
 .mas-copyleft-outlined:before {
-    content: "\f10c";
+    content: "\e7bd";
 }
 .mas-copyright-outlined:before {
-    content: "\f10d";
+    content: "\e7be";
 }
 .mas-corners-in-outlined:before {
-    content: "\f10e";
+    content: "\e7bf";
 }
 .mas-corners-out-outlined:before {
-    content: "\f10f";
+    content: "\e7c0";
 }
 .mas-disc-outlined:before {
-    content: "\f110";
+    content: "\e7c1";
 }
 .mas-ear-outlined:before {
-    content: "\f111";
+    content: "\e7c2";
 }
 .mas-ear-slash-outlined:before {
-    content: "\f112";
+    content: "\e7c3";
 }
 .mas-eject-outlined:before {
-    content: "\f113";
+    content: "\e7c4";
 }
 .mas-eject-simple-outlined:before {
-    content: "\f114";
+    content: "\e7c5";
 }
 .mas-equalizer-outlined:before {
-    content: "\f115";
+    content: "\e7c6";
 }
 .mas-faders-horizontal-outlined:before {
-    content: "\f116";
+    content: "\e7c7";
 }
 .mas-faders-outlined:before {
-    content: "\f117";
+    content: "\e7c8";
 }
 .mas-fast-forward-circle-outlined:before {
-    content: "\f118";
+    content: "\e7c9";
 }
 .mas-fast-forward-outlined:before {
-    content: "\f119";
+    content: "\e7ca";
 }
 .mas-film-reel-outlined:before {
-    content: "\f11a";
+    content: "\e7cb";
 }
 .mas-film-script-outlined:before {
-    content: "\f11b";
+    content: "\e7cc";
 }
 .mas-film-slate-outlined:before {
-    content: "\f11c";
+    content: "\e7cd";
 }
 .mas-film-strip-outlined:before {
-    content: "\f11d";
+    content: "\e7ce";
 }
 .mas-frame-corners-outlined:before {
-    content: "\f11e";
+    content: "\e7cf";
 }
 .mas-gif-outlined:before {
-    content: "\f11f";
+    content: "\e7d0";
 }
 .mas-guitar-outlined:before {
-    content: "\f120";
+    content: "\e7d1";
 }
 .mas-headphones-outlined:before {
-    content: "\f121";
+    content: "\e7d2";
 }
 .mas-headset-outlined:before {
-    content: "\f122";
+    content: "\e7d3";
 }
 .mas-image-outlined:before {
-    content: "\f123";
+    content: "\e7d4";
 }
 .mas-image-square-outlined:before {
-    content: "\f124";
+    content: "\e7d5";
 }
 .mas-images-outlined:before {
-    content: "\f125";
+    content: "\e7d6";
 }
 .mas-images-square-outlined:before {
-    content: "\f126";
+    content: "\e7d7";
 }
 .mas-metronome-outlined:before {
-    content: "\f127";
+    content: "\e7d8";
 }
 .mas-microphone-outlined:before {
-    content: "\f128";
+    content: "\e7d9";
 }
 .mas-microphone-slash-outlined:before {
-    content: "\f129";
+    content: "\e7da";
 }
 .mas-microphone-stage-outlined:before {
-    content: "\f12a";
+    content: "\e7db";
 }
 .mas-music-note-outlined:before {
-    content: "\f12b";
+    content: "\e7dc";
 }
 .mas-music-note-simple-outlined:before {
-    content: "\f12c";
+    content: "\e7dd";
 }
 .mas-music-notes-outlined:before {
-    content: "\f12d";
+    content: "\e7de";
 }
 .mas-music-notes-plus-outlined:before {
-    content: "\f12e";
+    content: "\e7df";
 }
 .mas-music-notes-simple-outlined:before {
-    content: "\f12f";
+    content: "\e7e0";
 }
 .mas-newspaper-clipping-outlined:before {
-    content: "\f130";
+    content: "\e7e1";
 }
 .mas-newspaper-outlined:before {
-    content: "\f131";
+    content: "\e7e2";
 }
 .mas-pause-circle-outlined:before {
-    content: "\f132";
+    content: "\e7e3";
 }
 .mas-pause-outlined:before {
-    content: "\f133";
+    content: "\e7e4";
 }
 .mas-piano-keys-outlined:before {
-    content: "\f134";
+    content: "\e7e5";
 }
 .mas-picture-in-picture-outlined:before {
-    content: "\f135";
+    content: "\e7e6";
 }
 .mas-play-circle-outlined:before {
-    content: "\f136";
+    content: "\e7e7";
 }
 .mas-play-outlined:before {
-    content: "\f137";
+    content: "\e7e8";
 }
 .mas-play-pause-outlined:before {
-    content: "\f138";
+    content: "\e7e9";
 }
 .mas-playlist-outlined:before {
-    content: "\f139";
+    content: "\e7ea";
 }
 .mas-queue-outlined:before {
-    content: "\f13a";
+    content: "\e7eb";
 }
 .mas-record-outlined:before {
-    content: "\f13b";
+    content: "\e7ec";
 }
 .mas-repeat-once-outlined:before {
-    content: "\f13c";
+    content: "\e7ed";
 }
 .mas-repeat-outlined:before {
-    content: "\f13d";
+    content: "\e7ee";
 }
 .mas-rewind-circle-outlined:before {
-    content: "\f13e";
+    content: "\e7ef";
 }
 .mas-rewind-outlined:before {
-    content: "\f13f";
+    content: "\e7f0";
 }
 .mas-screencast-outlined:before {
-    content: "\f140";
+    content: "\e7f1";
 }
 .mas-shuffle-angular-outlined:before {
-    content: "\f141";
+    content: "\e7f2";
 }
 .mas-shuffle-outlined:before {
-    content: "\f142";
+    content: "\e7f3";
 }
 .mas-shuffle-simple-outlined:before {
-    content: "\f143";
+    content: "\e7f4";
 }
 .mas-skip-back-circle-outlined:before {
-    content: "\f144";
+    content: "\e7f5";
 }
 .mas-skip-back-outlined:before {
-    content: "\f145";
+    content: "\e7f6";
 }
 .mas-skip-forward-circle-outlined:before {
-    content: "\f146";
+    content: "\e7f7";
 }
 .mas-skip-forward-outlined:before {
-    content: "\f147";
+    content: "\e7f8";
 }
 .mas-sliders-horizontal-outlined:before {
-    content: "\f148";
+    content: "\e7f9";
 }
 .mas-sliders-outlined:before {
-    content: "\f149";
+    content: "\e7fa";
 }
 .mas-slideshow-outlined:before {
-    content: "\f14a";
+    content: "\e7fb";
 }
 .mas-speaker-hifi-outlined:before {
-    content: "\f14b";
+    content: "\e7fc";
 }
 .mas-speaker-high-outlined:before {
-    content: "\f14c";
+    content: "\e7fd";
 }
 .mas-speaker-low-outlined:before {
-    content: "\f14d";
+    content: "\e7fe";
 }
 .mas-speaker-none-outlined:before {
-    content: "\f14e";
+    content: "\e7ff";
 }
 .mas-speaker-simple-high-outlined:before {
-    content: "\f14f";
+    content: "\e800";
 }
 .mas-speaker-simple-low-outlined:before {
-    content: "\f150";
+    content: "\e801";
 }
 .mas-speaker-simple-none-outlined:before {
-    content: "\f151";
+    content: "\e802";
 }
 .mas-speaker-simple-slash-outlined:before {
-    content: "\f152";
+    content: "\e803";
 }
 .mas-speaker-simple-x-outlined:before {
-    content: "\f153";
+    content: "\e804";
 }
 .mas-speaker-slash-outlined:before {
-    content: "\f154";
+    content: "\e805";
 }
 .mas-speaker-x-outlined:before {
-    content: "\f155";
+    content: "\e806";
 }
 .mas-stop-circle-outlined:before {
-    content: "\f156";
+    content: "\e807";
 }
 .mas-stop-outlined:before {
-    content: "\f157";
+    content: "\e808";
 }
 .mas-subtitles-outlined:before {
-    content: "\f158";
+    content: "\e809";
 }
 .mas-television-outlined:before {
-    content: "\f159";
+    content: "\e80a";
 }
 .mas-television-simple-outlined:before {
-    content: "\f15a";
+    content: "\e80b";
 }
 .mas-video-camera-outlined:before {
-    content: "\f15b";
+    content: "\e80c";
 }
 .mas-video-camera-slash-outlined:before {
-    content: "\f15c";
+    content: "\e80d";
 }
 .mas-vinyl-record-outlined:before {
-    content: "\f15d";
+    content: "\e80e";
 }
 .mas-wave-sawtooth-outlined:before {
-    content: "\f15e";
+    content: "\e80f";
 }
 .mas-wave-sine-outlined:before {
-    content: "\f15f";
+    content: "\e810";
 }
 .mas-wave-square-outlined:before {
-    content: "\f160";
+    content: "\e811";
 }
 .mas-wave-triangle-outlined:before {
-    content: "\f161";
+    content: "\e812";
 }
 .mas-waveform-outlined:before {
-    content: "\f162";
+    content: "\e813";
 }
 .mas-webcam-outlined:before {
-    content: "\f163";
+    content: "\e814";
 }
 .mas-webcam-slash-outlined:before {
-    content: "\f164";
+    content: "\e815";
 }

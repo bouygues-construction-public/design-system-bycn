@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "office-and-editing";
-    src: url("../../fonts/filled/office-and-editing/office-and-editing.ttf?7bfdff04630ea896e331f46197935c03") format("truetype"),
-url("../../fonts/filled/office-and-editing/office-and-editing.woff?7bfdff04630ea896e331f46197935c03") format("woff"),
-url("../../fonts/filled/office-and-editing/office-and-editing.woff2?7bfdff04630ea896e331f46197935c03") format("woff2");
+    font-family: "office-and-editing--filled";
+    src: url("../../fonts/filled/office-and-editing/office-and-editing.ttf?94fa05172120b4302a6a76008e8eb66e") format("truetype"),
+url("../../fonts/filled/office-and-editing/office-and-editing.woff?94fa05172120b4302a6a76008e8eb66e") format("woff"),
+url("../../fonts/filled/office-and-editing/office-and-editing.woff2?94fa05172120b4302a6a76008e8eb66e") format("woff2");
 }
 
-i[class^="mas-"]:before, i[class*=" mas-"]:before {
-    font-family: office-and-editing !important;
+i[class^="mas-office-and-editing--filled"]:before, i[class*=" mas-office-and-editing--filled"]:before {
+    font-family: office-and-editing--filled !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;
@@ -16,417 +16,363 @@ i[class^="mas-"]:before, i[class*=" mas-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.mas-0:before {
-    content: "\[object Object]";
-}
-.mas-1:before {
-    content: "\[object Object]";
-}
-.mas-2:before {
-    content: "\[object Object]";
-}
-.mas-3:before {
-    content: "\[object Object]";
-}
-.mas-4:before {
-    content: "\[object Object]";
-}
-.mas-5:before {
-    content: "\[object Object]";
-}
-.mas-6:before {
-    content: "\[object Object]";
-}
-.mas-7:before {
-    content: "\[object Object]";
-}
-.mas-8:before {
-    content: "\[object Object]";
-}
-.mas-9:before {
-    content: "\[object Object]";
-}
-.mas-10:before {
-    content: "\[object Object]";
-}
-.mas-11:before {
-    content: "\[object Object]";
-}
-.mas-12:before {
-    content: "\[object Object]";
-}
-.mas-13:before {
-    content: "\[object Object]";
-}
-.mas-14:before {
-    content: "\[object Object]";
-}
-.mas-15:before {
-    content: "\[object Object]";
-}
-.mas-16:before {
-    content: "\[object Object]";
-}
-.mas-17:before {
-    content: "\[object Object]";
-}
 .mas-archive-box-filled:before {
-    content: "\f101";
+    content: "\e336";
 }
 .mas-archive-filled:before {
-    content: "\f102";
+    content: "\e337";
 }
 .mas-archive-tray-filled:before {
-    content: "\f103";
+    content: "\e338";
 }
 .mas-briefcase-filled:before {
-    content: "\f104";
+    content: "\e339";
 }
 .mas-briefcase-metal-filled:before {
-    content: "\f105";
+    content: "\e33a";
 }
 .mas-cards-filled:before {
-    content: "\f106";
+    content: "\e33b";
 }
 .mas-clipboard-filled:before {
-    content: "\f107";
+    content: "\e33c";
 }
 .mas-clipboard-text-filled:before {
-    content: "\f108";
+    content: "\e33d";
 }
 .mas-copy-filled:before {
-    content: "\f109";
+    content: "\e33e";
 }
 .mas-copy-simple-filled:before {
-    content: "\f10a";
+    content: "\e33f";
 }
 .mas-cursor-text-filled:before {
-    content: "\f10b";
+    content: "\e340";
 }
 .mas-file-archive-filled:before {
-    content: "\f10c";
+    content: "\e341";
 }
 .mas-file-arrow-down-filled:before {
-    content: "\f10d";
+    content: "\e342";
 }
 .mas-file-arrow-up-filled:before {
-    content: "\f10e";
+    content: "\e343";
 }
 .mas-file-audio-filled:before {
-    content: "\f10f";
+    content: "\e344";
 }
 .mas-file-cloud-filled:before {
-    content: "\f110";
+    content: "\e345";
 }
 .mas-file-code-filled:before {
-    content: "\f111";
+    content: "\e346";
 }
 .mas-file-css-filled:before {
-    content: "\f112";
+    content: "\e347";
 }
 .mas-file-csv-filled:before {
-    content: "\f113";
+    content: "\e348";
 }
 .mas-file-dashed-filled:before {
-    content: "\f114";
+    content: "\e349";
 }
 .mas-file-doc-filled:before {
-    content: "\f115";
+    content: "\e34a";
 }
 .mas-file-filled:before {
-    content: "\f116";
+    content: "\e34b";
 }
 .mas-file-html-filled:before {
-    content: "\f117";
+    content: "\e34c";
 }
 .mas-file-image-filled:before {
-    content: "\f118";
+    content: "\e34d";
 }
 .mas-file-jpg-filled:before {
-    content: "\f119";
+    content: "\e34e";
 }
 .mas-file-js-filled:before {
-    content: "\f11a";
+    content: "\e34f";
 }
 .mas-file-jsx-filled:before {
-    content: "\f11b";
+    content: "\e350";
 }
 .mas-file-lock-filled:before {
-    content: "\f11c";
+    content: "\e351";
 }
 .mas-file-minus-filled:before {
-    content: "\f11d";
+    content: "\e352";
 }
 .mas-file-pdf-filled:before {
-    content: "\f11e";
+    content: "\e353";
 }
 .mas-file-plus-filled:before {
-    content: "\f11f";
+    content: "\e354";
 }
 .mas-file-png-filled:before {
-    content: "\f120";
+    content: "\e355";
 }
 .mas-file-ppt-filled:before {
-    content: "\f121";
+    content: "\e356";
 }
 .mas-file-rs-filled:before {
-    content: "\f122";
+    content: "\e357";
 }
 .mas-file-search-filled:before {
-    content: "\f123";
+    content: "\e358";
 }
 .mas-file-sql-filled:before {
-    content: "\f124";
+    content: "\e359";
 }
 .mas-file-svg-filled:before {
-    content: "\f125";
+    content: "\e35a";
 }
 .mas-file-text-filled:before {
-    content: "\f126";
+    content: "\e35b";
 }
 .mas-file-ts-filled:before {
-    content: "\f127";
+    content: "\e35c";
 }
 .mas-file-tsx-filled:before {
-    content: "\f128";
+    content: "\e35d";
 }
 .mas-file-video-filled:before {
-    content: "\f129";
+    content: "\e35e";
 }
 .mas-file-vue-filled:before {
-    content: "\f12a";
+    content: "\e35f";
 }
 .mas-file-x-filled:before {
-    content: "\f12b";
+    content: "\e360";
 }
 .mas-file-xls-filled:before {
-    content: "\f12c";
+    content: "\e361";
 }
 .mas-file-zip-filled:before {
-    content: "\f12d";
+    content: "\e362";
 }
 .mas-files-filled:before {
-    content: "\f12e";
+    content: "\e363";
 }
 .mas-floppy-disk-back-filled:before {
-    content: "\f12f";
+    content: "\e364";
 }
 .mas-floppy-disk-filled:before {
-    content: "\f130";
+    content: "\e365";
 }
 .mas-folder-dashed-filled:before {
-    content: "\f131";
+    content: "\e366";
 }
 .mas-folder-filled:before {
-    content: "\f132";
+    content: "\e367";
 }
 .mas-folder-lock-filled:before {
-    content: "\f133";
+    content: "\e368";
 }
 .mas-folder-minus-filled:before {
-    content: "\f134";
+    content: "\e369";
 }
 .mas-folder-notch-filled:before {
-    content: "\f135";
+    content: "\e36a";
 }
 .mas-folder-notch-minus-filled:before {
-    content: "\f136";
+    content: "\e36b";
 }
 .mas-folder-notch-open-filled:before {
-    content: "\f137";
+    content: "\e36c";
 }
 .mas-folder-notch-plus-filled:before {
-    content: "\f138";
+    content: "\e36d";
 }
 .mas-folder-open-filled:before {
-    content: "\f139";
+    content: "\e36e";
 }
 .mas-folder-plus-filled:before {
-    content: "\f13a";
+    content: "\e36f";
 }
 .mas-folder-simple-dashed-filled:before {
-    content: "\f13b";
+    content: "\e370";
 }
 .mas-folder-simple-filled:before {
-    content: "\f13c";
+    content: "\e371";
 }
 .mas-folder-simple-lock-filled:before {
-    content: "\f13d";
+    content: "\e372";
 }
 .mas-folder-simple-minus-filled:before {
-    content: "\f13e";
+    content: "\e373";
 }
 .mas-folder-simple-plus-filled:before {
-    content: "\f13f";
+    content: "\e374";
 }
 .mas-folder-simple-star-filled:before {
-    content: "\f140";
+    content: "\e375";
 }
 .mas-folder-simple-user-filled:before {
-    content: "\f141";
+    content: "\e376";
 }
 .mas-folder-star-filled:before {
-    content: "\f142";
+    content: "\e377";
 }
 .mas-folder-user-filled:before {
-    content: "\f143";
+    content: "\e378";
 }
 .mas-folders-filled:before {
-    content: "\f144";
+    content: "\e379";
 }
 .mas-funnel-filled:before {
-    content: "\f145";
+    content: "\e37a";
 }
 .mas-funnel-simple-filled:before {
-    content: "\f146";
+    content: "\e37b";
 }
 .mas-kanban-filled:before {
-    content: "\f147";
+    content: "\e37c";
 }
 .mas-list-bullets-filled:before {
-    content: "\f148";
+    content: "\e37d";
 }
 .mas-list-checks-filled:before {
-    content: "\f149";
+    content: "\e37e";
 }
 .mas-list-dashes-filled:before {
-    content: "\f14a";
+    content: "\e37f";
 }
 .mas-list-filled:before {
-    content: "\f14b";
+    content: "\e380";
 }
 .mas-list-numbers-filled:before {
-    content: "\f14c";
+    content: "\e381";
 }
 .mas-list-plus-filled:before {
-    content: "\f14d";
+    content: "\e382";
 }
 .mas-note-blank-filled:before {
-    content: "\f14e";
+    content: "\e383";
 }
 .mas-note-filled:before {
-    content: "\f14f";
+    content: "\e384";
 }
 .mas-note-pencil-filled:before {
-    content: "\f150";
+    content: "\e385";
 }
 .mas-notebook-filled:before {
-    content: "\f151";
+    content: "\e386";
 }
 .mas-notepad-filled:before {
-    content: "\f152";
+    content: "\e387";
 }
 .mas-paperclip-filled:before {
-    content: "\f153";
+    content: "\e388";
 }
 .mas-paperclip-horizontal-filled:before {
-    content: "\f154";
+    content: "\e389";
 }
 .mas-paragraph-filled:before {
-    content: "\f155";
+    content: "\e38a";
 }
 .mas-presentation-chart-filled:before {
-    content: "\f156";
+    content: "\e38b";
 }
 .mas-presentation-filled:before {
-    content: "\f157";
+    content: "\e38c";
 }
 .mas-printer-filled:before {
-    content: "\f158";
+    content: "\e38d";
 }
 .mas-projector-screen-chart-filled:before {
-    content: "\f159";
+    content: "\e38e";
 }
 .mas-projector-screen-filled:before {
-    content: "\f15a";
+    content: "\e38f";
 }
 .mas-push-pin-filled:before {
-    content: "\f15b";
+    content: "\e390";
 }
 .mas-push-pin-simple-filled:before {
-    content: "\f15c";
+    content: "\e391";
 }
 .mas-push-pin-simple-slash-filled:before {
-    content: "\f15d";
+    content: "\e392";
 }
 .mas-push-pin-slash-filled:before {
-    content: "\f15e";
+    content: "\e393";
 }
 .mas-sort-ascending-filled:before {
-    content: "\f15f";
+    content: "\e394";
 }
 .mas-sort-descending-filled:before {
-    content: "\f160";
+    content: "\e395";
 }
 .mas-text-aa-filled:before {
-    content: "\f161";
+    content: "\e396";
 }
 .mas-text-align-center-filled:before {
-    content: "\f162";
+    content: "\e397";
 }
 .mas-text-align-justify-filled:before {
-    content: "\f163";
+    content: "\e398";
 }
 .mas-text-align-left-filled:before {
-    content: "\f164";
+    content: "\e399";
 }
 .mas-text-align-right-filled:before {
-    content: "\f165";
+    content: "\e39a";
 }
 .mas-text-b-filled:before {
-    content: "\f166";
+    content: "\e39b";
 }
 .mas-text-columns-filled:before {
-    content: "\f167";
+    content: "\e39c";
 }
 .mas-text-h-filled:before {
-    content: "\f168";
+    content: "\e39d";
 }
 .mas-text-h-five-filled:before {
-    content: "\f169";
+    content: "\e39e";
 }
 .mas-text-h-four-filled:before {
-    content: "\f16a";
+    content: "\e39f";
 }
 .mas-text-h-one-filled:before {
-    content: "\f16b";
+    content: "\e3a0";
 }
 .mas-text-h-six-filled:before {
-    content: "\f16c";
+    content: "\e3a1";
 }
 .mas-text-h-three-filled:before {
-    content: "\f16d";
+    content: "\e3a2";
 }
 .mas-text-h-two-filled:before {
-    content: "\f16e";
+    content: "\e3a3";
 }
 .mas-text-indent-filled:before {
-    content: "\f16f";
+    content: "\e3a4";
 }
 .mas-text-italic-filled:before {
-    content: "\f170";
+    content: "\e3a5";
 }
 .mas-text-outdent-filled:before {
-    content: "\f171";
+    content: "\e3a6";
 }
 .mas-text-strikethrough-filled:before {
-    content: "\f172";
+    content: "\e3a7";
 }
 .mas-text-t-filled:before {
-    content: "\f173";
+    content: "\e3a8";
 }
 .mas-text-underline-filled:before {
-    content: "\f174";
+    content: "\e3a9";
 }
 .mas-textbox-filled:before {
-    content: "\f175";
+    content: "\e3aa";
 }
 .mas-trash-filled:before {
-    content: "\f176";
+    content: "\e3ab";
 }
 .mas-trash-simple-filled:before {
-    content: "\f177";
+    content: "\e3ac";
 }
 .mas-tray-filled:before {
-    content: "\f178";
+    content: "\e3ad";
 }

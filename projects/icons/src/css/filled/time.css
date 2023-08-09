@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "time";
-    src: url("../../fonts/filled/time/time.ttf?37ed7d75c5d6ec79b87c816823943ab4") format("truetype"),
-url("../../fonts/filled/time/time.woff?37ed7d75c5d6ec79b87c816823943ab4") format("woff"),
-url("../../fonts/filled/time/time.woff2?37ed7d75c5d6ec79b87c816823943ab4") format("woff2");
+    font-family: "time--filled";
+    src: url("../../fonts/filled/time/time.ttf?ac2b907836b7843ce39e98d756c8a5c4") format("truetype"),
+url("../../fonts/filled/time/time.woff?ac2b907836b7843ce39e98d756c8a5c4") format("woff"),
+url("../../fonts/filled/time/time.woff2?ac2b907836b7843ce39e98d756c8a5c4") format("woff2");
 }
 
-i[class^="mas-"]:before, i[class*=" mas-"]:before {
-    font-family: time !important;
+i[class^="mas-time--filled"]:before, i[class*=" mas-time--filled"]:before {
+    font-family: time--filled !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;
@@ -16,120 +16,66 @@ i[class^="mas-"]:before, i[class*=" mas-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.mas-0:before {
-    content: "\[object Object]";
-}
-.mas-1:before {
-    content: "\[object Object]";
-}
-.mas-2:before {
-    content: "\[object Object]";
-}
-.mas-3:before {
-    content: "\[object Object]";
-}
-.mas-4:before {
-    content: "\[object Object]";
-}
-.mas-5:before {
-    content: "\[object Object]";
-}
-.mas-6:before {
-    content: "\[object Object]";
-}
-.mas-7:before {
-    content: "\[object Object]";
-}
-.mas-8:before {
-    content: "\[object Object]";
-}
-.mas-9:before {
-    content: "\[object Object]";
-}
-.mas-10:before {
-    content: "\[object Object]";
-}
-.mas-11:before {
-    content: "\[object Object]";
-}
-.mas-12:before {
-    content: "\[object Object]";
-}
-.mas-13:before {
-    content: "\[object Object]";
-}
-.mas-14:before {
-    content: "\[object Object]";
-}
-.mas-15:before {
-    content: "\[object Object]";
-}
-.mas-16:before {
-    content: "\[object Object]";
-}
-.mas-17:before {
-    content: "\[object Object]";
-}
 .mas-alarm-filled:before {
-    content: "\f101";
+    content: "\e497";
 }
 .mas-calendar-blank-filled:before {
-    content: "\f102";
+    content: "\e498";
 }
 .mas-calendar-check-filled:before {
-    content: "\f103";
+    content: "\e499";
 }
 .mas-calendar-filled:before {
-    content: "\f104";
+    content: "\e49a";
 }
 .mas-calendar-plus-filled:before {
-    content: "\f105";
+    content: "\e49b";
 }
 .mas-calendar-x-filled:before {
-    content: "\f106";
+    content: "\e49c";
 }
 .mas-clock-afternoon-filled:before {
-    content: "\f107";
+    content: "\e49d";
 }
 .mas-clock-clockwise-filled:before {
-    content: "\f108";
+    content: "\e49e";
 }
 .mas-clock-countdown-filled:before {
-    content: "\f109";
+    content: "\e49f";
 }
 .mas-clock-counter-clockwise-filled:before {
-    content: "\f10a";
+    content: "\e4a0";
 }
 .mas-clock-filled:before {
-    content: "\f10b";
+    content: "\e4a1";
 }
 .mas-hourglass-filled:before {
-    content: "\f10c";
+    content: "\e4a2";
 }
 .mas-hourglass-high-filled:before {
-    content: "\f10d";
+    content: "\e4a3";
 }
 .mas-hourglass-low-filled:before {
-    content: "\f10e";
+    content: "\e4a4";
 }
 .mas-hourglass-medium-filled:before {
-    content: "\f10f";
+    content: "\e4a5";
 }
 .mas-hourglass-simple-filled:before {
-    content: "\f110";
+    content: "\e4a6";
 }
 .mas-hourglass-simple-high-filled:before {
-    content: "\f111";
+    content: "\e4a7";
 }
 .mas-hourglass-simple-low-filled:before {
-    content: "\f112";
+    content: "\e4a8";
 }
 .mas-hourglass-simple-medium-filled:before {
-    content: "\f113";
+    content: "\e4a9";
 }
 .mas-timer-filled:before {
-    content: "\f114";
+    content: "\e4aa";
 }
 .mas-watch-filled:before {
-    content: "\f115";
+    content: "\e4ab";
 }

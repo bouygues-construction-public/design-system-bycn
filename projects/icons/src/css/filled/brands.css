@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "brands";
-    src: url("../../fonts/filled/brands/brands.ttf?f86ca08397bbe25bfa2c6768a574e5b8") format("truetype"),
-url("../../fonts/filled/brands/brands.woff?f86ca08397bbe25bfa2c6768a574e5b8") format("woff"),
-url("../../fonts/filled/brands/brands.woff2?f86ca08397bbe25bfa2c6768a574e5b8") format("woff2");
+    font-family: "brands--filled";
+    src: url("../../fonts/filled/brands/brands.ttf?e0d166952f02188dfd3347014459c09c") format("truetype"),
+url("../../fonts/filled/brands/brands.woff?e0d166952f02188dfd3347014459c09c") format("woff"),
+url("../../fonts/filled/brands/brands.woff2?e0d166952f02188dfd3347014459c09c") format("woff2");
 }
 
-i[class^="mas-"]:before, i[class*=" mas-"]:before {
-    font-family: brands !important;
+i[class^="mas-brands--filled"]:before, i[class*=" mas-brands--filled"]:before {
+    font-family: brands--filled !important;
     font-style: normal;
     font-weight: normal !important;
     font-variant: normal;
@@ -16,246 +16,192 @@ i[class^="mas-"]:before, i[class*=" mas-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.mas-0:before {
-    content: "\[object Object]";
-}
-.mas-1:before {
-    content: "\[object Object]";
-}
-.mas-2:before {
-    content: "\[object Object]";
-}
-.mas-3:before {
-    content: "\[object Object]";
-}
-.mas-4:before {
-    content: "\[object Object]";
-}
-.mas-5:before {
-    content: "\[object Object]";
-}
-.mas-6:before {
-    content: "\[object Object]";
-}
-.mas-7:before {
-    content: "\[object Object]";
-}
-.mas-8:before {
-    content: "\[object Object]";
-}
-.mas-9:before {
-    content: "\[object Object]";
-}
-.mas-10:before {
-    content: "\[object Object]";
-}
-.mas-11:before {
-    content: "\[object Object]";
-}
-.mas-12:before {
-    content: "\[object Object]";
-}
-.mas-13:before {
-    content: "\[object Object]";
-}
-.mas-14:before {
-    content: "\[object Object]";
-}
-.mas-15:before {
-    content: "\[object Object]";
-}
-.mas-16:before {
-    content: "\[object Object]";
-}
-.mas-17:before {
-    content: "\[object Object]";
-}
 .mas-amazon-logo-filled:before {
-    content: "\f101";
+    content: "\e073";
 }
 .mas-android-logo-filled:before {
-    content: "\f102";
+    content: "\e074";
 }
 .mas-angular-logo-filled:before {
-    content: "\f103";
+    content: "\e075";
 }
 .mas-app-store-logo-filled:before {
-    content: "\f104";
+    content: "\e076";
 }
 .mas-apple-logo-filled:before {
-    content: "\f105";
+    content: "\e077";
 }
 .mas-apple-podcasts-logo-filled:before {
-    content: "\f106";
+    content: "\e078";
 }
 .mas-behance-logo-filled:before {
-    content: "\f107";
+    content: "\e079";
 }
 .mas-coda-logo-filled:before {
-    content: "\f108";
+    content: "\e07a";
 }
 .mas-codepen-logo-filled:before {
-    content: "\f109";
+    content: "\e07b";
 }
 .mas-codesandbox-logo-filled:before {
-    content: "\f10a";
+    content: "\e07c";
 }
 .mas-dev-to-logo-filled:before {
-    content: "\f10b";
+    content: "\e07d";
 }
 .mas-discord-logo-filled:before {
-    content: "\f10c";
+    content: "\e07e";
 }
 .mas-dribbble-logo-filled:before {
-    content: "\f10d";
+    content: "\e07f";
 }
 .mas-dropbox-logo-filled:before {
-    content: "\f10e";
+    content: "\e080";
 }
 .mas-facebook-logo-filled:before {
-    content: "\f10f";
+    content: "\e081";
 }
 .mas-figma-logo-filled:before {
-    content: "\f110";
+    content: "\e082";
 }
 .mas-framer-logo-filled:before {
-    content: "\f111";
+    content: "\e083";
 }
 .mas-github-logo-filled:before {
-    content: "\f112";
+    content: "\e084";
 }
 .mas-gitlab-logo-filled:before {
-    content: "\f113";
+    content: "\e085";
 }
 .mas-gitlab-logo-simple-filled:before {
-    content: "\f114";
+    content: "\e086";
 }
 .mas-goodreads-logo-filled:before {
-    content: "\f115";
+    content: "\e087";
 }
 .mas-google-chrome-logo-filled:before {
-    content: "\f116";
+    content: "\e088";
 }
 .mas-google-drive-logo-filled:before {
-    content: "\f117";
+    content: "\e089";
 }
 .mas-google-logo-filled:before {
-    content: "\f118";
+    content: "\e08a";
 }
 .mas-google-photos-logo-filled:before {
-    content: "\f119";
+    content: "\e08b";
 }
 .mas-google-play-logo-filled:before {
-    content: "\f11a";
+    content: "\e08c";
 }
 .mas-google-podcasts-logo-filled:before {
-    content: "\f11b";
+    content: "\e08d";
 }
 .mas-instagram-logo-filled:before {
-    content: "\f11c";
+    content: "\e08e";
 }
 .mas-linkedin-logo-filled:before {
-    content: "\f11d";
+    content: "\e08f";
 }
 .mas-linux-logo-filled:before {
-    content: "\f11e";
+    content: "\e090";
 }
 .mas-medium-logo-filled:before {
-    content: "\f11f";
+    content: "\e091";
 }
 .mas-messenger-logo-filled:before {
-    content: "\f120";
+    content: "\e092";
 }
 .mas-meta-logo-filled:before {
-    content: "\f121";
+    content: "\e093";
 }
 .mas-microsoft-excel-logo-filled:before {
-    content: "\f122";
+    content: "\e094";
 }
 .mas-microsoft-outlook-logo-filled:before {
-    content: "\f123";
+    content: "\e095";
 }
 .mas-microsoft-powerpoint-logo-filled:before {
-    content: "\f124";
+    content: "\e096";
 }
 .mas-microsoft-teams-logo-filled:before {
-    content: "\f125";
+    content: "\e097";
 }
 .mas-microsoft-word-logo-filled:before {
-    content: "\f126";
+    content: "\e098";
 }
 .mas-notion-logo-filled:before {
-    content: "\f127";
+    content: "\e099";
 }
 .mas-ny-times-logo-filled:before {
-    content: "\f128";
+    content: "\e09a";
 }
 .mas-patreon-logo-filled:before {
-    content: "\f129";
+    content: "\e09b";
 }
 .mas-paypal-logo-filled:before {
-    content: "\f12a";
+    content: "\e09c";
 }
 .mas-phosphor-logo-filled:before {
-    content: "\f12b";
+    content: "\e09d";
 }
 .mas-pinterest-logo-filled:before {
-    content: "\f12c";
+    content: "\e09e";
 }
 .mas-read-cv-logo-filled:before {
-    content: "\f12d";
+    content: "\e09f";
 }
 .mas-reddit-logo-filled:before {
-    content: "\f12e";
+    content: "\e0a0";
 }
 .mas-sketch-logo-filled:before {
-    content: "\f12f";
+    content: "\e0a1";
 }
 .mas-slack-logo-filled:before {
-    content: "\f130";
+    content: "\e0a2";
 }
 .mas-snapchat-logo-filled:before {
-    content: "\f131";
+    content: "\e0a3";
 }
 .mas-soundcloud-logo-filled:before {
-    content: "\f132";
+    content: "\e0a4";
 }
 .mas-spotify-logo-filled:before {
-    content: "\f133";
+    content: "\e0a5";
 }
 .mas-square-logo-filled:before {
-    content: "\f134";
+    content: "\e0a6";
 }
 .mas-stack-overflow-logo-filled:before {
-    content: "\f135";
+    content: "\e0a7";
 }
 .mas-stripe-logo-filled:before {
-    content: "\f136";
+    content: "\e0a8";
 }
 .mas-telegram-logo-filled:before {
-    content: "\f137";
+    content: "\e0a9";
 }
 .mas-tidal-logo-filled:before {
-    content: "\f138";
+    content: "\e0aa";
 }
 .mas-tiktok-logo-filled:before {
-    content: "\f139";
+    content: "\e0ab";
 }
 .mas-twitch-logo-filled:before {
-    content: "\f13a";
+    content: "\e0ac";
 }
 .mas-twitter-logo-filled:before {
-    content: "\f13b";
+    content: "\e0ad";
 }
 .mas-wechat-logo-filled:before {
-    content: "\f13c";
+    content: "\e0ae";
 }
 .mas-whatsapp-logo-filled:before {
-    content: "\f13d";
+    content: "\e0af";
 }
 .mas-windows-logo-filled:before {
-    content: "\f13e";
+    content: "\e0b0";
 }
 .mas-youtube-logo-filled:before {
-    content: "\f13f";
+    content: "\e0b1";
 }
