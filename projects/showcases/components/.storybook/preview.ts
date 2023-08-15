@@ -1,6 +1,6 @@
 import type { Preview } from '@storybook/angular';
 import '@masoni/css/dist/index.css';
-
+import DocumentationTemplate from './DocumentationTemplate.mdx';
 const preview: Preview = {
   parameters: {
     options: {
@@ -14,6 +14,10 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/,
       },
+    },
+    docs: {
+      toc: true,
+      page: DocumentationTemplate,
     },
   },
 };
