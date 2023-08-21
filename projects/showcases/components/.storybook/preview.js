@@ -1,7 +1,7 @@
-import type { Preview } from '@storybook/angular';
+import { Preview } from '@storybook/angular';
 import '@masoni/css/dist/index.css';
 import DocumentationTemplate from './DocumentationTemplate.mdx';
-const preview: Preview = {
+const preview = {
   parameters: {
     options: {
       storySort: {
