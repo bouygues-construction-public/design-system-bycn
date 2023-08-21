@@ -1,4 +1,4 @@
-# `@mas/css`
+# `@masoni/css`
 
 > Bouygues Design System - Masoni global CSS styles library
 
@@ -22,13 +22,13 @@ Once you have installed this package, you just have to import CSS styles!
 With a bundler that supports CSS imports in JS files:
 
 ```javascript
-import '@masori/css/dist/index.css';
+import '@masoni/css/dist/index.css';
 ```
 
 Otherwise include it in your HTML file:
 
 ```html
-<link rel="stylesheet" href="./node_modules/@masori/css/dist/index.css" />
+<link rel="stylesheet" href="./node_modules/@masoni/css/dist/index.css" />
 ```
 
 ## Development
@@ -41,9 +41,10 @@ For example:
 <p style="color: var(--mas-primitive-color_red500)">Hello World!</p>
 ```
 
-You can see the different CSS Custom Properties [here](#).
+You can see the different CSS Custom Properties [here](https://github.com/bouygues-construction/design-system-bycn/tree/dangkhoa/project-initialize/projects/css/src/design_tokens).
 
 CSS Variables naming as following rules:
+
 - prefix with `--mas`.
 - have foundation name.
 
@@ -55,6 +56,8 @@ For example:\
 Please file the issue [here](https://github.com/bouygues-construction/design-system-bycn/issues/new).
 
 ## Contributing
+
+See [the contribuiting docs](https://github.com/bouygues-construction/design-system-bycn/blob/dangkhoa/project-initialize/CONTRIBUTING.md)
 
 ## License
 

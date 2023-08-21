@@ -1,11 +1,13 @@
 {
-  "name": "@masoni/showcase-components",
+  "name": "@masoni/showcases-components",
   "version": "1.0.0",
   "description": "Bouygues Design System - Masoni components showcase",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ng run @masoni/showcases-components:storybook",
+    "build-storybook": "echo build"
   },
-  "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@masoni/css": "file:../../css"
+  }
 }

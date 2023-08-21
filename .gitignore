@@ -42,4 +42,8 @@ testem.log
 Thumbs.db
 **/dist
 **/node_modules
+<<<<<<< HEAD
 /docs/main/showcases-css/favicon.svg
+=======
+/docs/main/showcases-css/favicon.svg
+>>>>>>> c7a40f2e6e3147173a1c4994ab8986935831c277

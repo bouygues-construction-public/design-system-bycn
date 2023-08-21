@@ -23,6 +23,10 @@ design-system-bycn/
         showcases/
             css/
             icons/
+<<<<<<< HEAD
+=======
+            components/
+>>>>>>> c7a40f2e6e3147173a1c4994ab8986935831c277
 ```
 
 # Local development
