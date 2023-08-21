@@ -13,9 +13,14 @@ const meta: Meta<MasRadioButton> = {
     }),
   ],
   parameters: {
+    componentSubtitle:
+      'Radio buttons are intended for selecting one option among mutually exclusive choices, rather than multiple options.',
     docs: {
-      component:
-        'Radio buttons are intended for selecting one option among mutually exclusive choices, rather than multiple options.<br>',
+      description: {
+        component: ` 
+        * When you want to retrieve some information or allow your user to make some unique choices.
+        * In data table, side panels, any settings action or area.`,
+      },
     },
   },
   render: (args: MasRadioButton) => ({
