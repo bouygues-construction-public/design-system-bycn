@@ -12,6 +12,17 @@ const meta: Meta<MasSelect> = {
       imports: [CommonModule, MasErrorModule, MasHelperModule, MasLabelModule, MasSelectModule],
     }),
   ],
+  parameters: {
+    componentSubtitle:
+      'Selects are intended for selecting options from a reduced list. The list must contain a minimum of 3 items. It is a component that allows the user to input data and provide context for their choices or journey.',
+    docs: {
+      description: {
+        component: ` 
+        * Use the select element to make a selection from a predefined list of items. The items should be as concise and understandable as possible.
+        * The select element is primarily used in forms.`,
+      },
+    },
+  },
   render: (args: MasSelect) => ({
     props: {
       ...args,
@@ -41,7 +52,7 @@ const meta: Meta<MasSelect> = {
       type: { name: 'string', required: false },
       description: 'Placeholder to be shown if no value has been selected.',
     },
-    onChange: {action: 'click'}
+    onChange: { action: 'click' },
   },
 };
 

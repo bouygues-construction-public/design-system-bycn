@@ -1,7 +1,7 @@
-import type { Preview } from '@storybook/angular';
+import { Preview } from '@storybook/angular';
 import '@masoni/css/dist/index.css';
-
-const preview: Preview = {
+import DocumentationTemplate from './DocumentationTemplate.mdx';
+const preview = {
   parameters: {
     options: {
       storySort: {
@@ -14,6 +14,10 @@ const preview: Preview = {
         color: /(background|color)$/i,
         date: /Date$/,
       },
+    },
+    docs: {
+      toc: true,
+      page: DocumentationTemplate,
     },
   },
 };

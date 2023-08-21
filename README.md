@@ -6,7 +6,7 @@
     alt="Vitamin Decathlon Design System logo" />
 </p>
 
-<h1 align="center">Bouygues Contruction IT - </h1>
+<h1 align="center">Bouygues Construction IT - </h1>
 
 <p align="center">Masoni Design System libraries for Angular applications</p>
 
@@ -52,8 +52,8 @@ These following packages allow the consumption of elements with a higher level o
 
 This package provides you with a library of SVG icons that you can include in your project:
 
-|             |                |          |
-| ----------- | -------------- | -------- |
+|                                                                                                                  |                |          |
+| ---------------------------------------------------------------------------------------------------------------- | -------------- | -------- |
 | [README](https://github.com/bouygues-construction/design-system-bycn/blob/DTB-75/icons/projects/icons/README.md) | [Storybook](#) | [npm](#) |
 
 ### Components
