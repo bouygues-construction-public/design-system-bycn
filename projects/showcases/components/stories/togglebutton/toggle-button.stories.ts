@@ -12,10 +12,13 @@ const meta: Meta<MasToggleButton> = {
     }),
   ],
   parameters: {
+    componentSubtitle:
+      'Toggle button is a control component that allows you to switch a binary property between two states.',
     docs: {
       description: {
-        component:
-          'Toggle button is a control component that allows you to switch a binary property between two states.<br/>',
+        component: ` 
+          * The toggle buttons has several situations where it is best to use it. The most common is in the settings where the user can enable or disable options.
+          * When a user wants a selection that doesn't impact the system but selects one or more items, it is recommended to use checkboxes and radio buttons.`,
       },
     },
   },

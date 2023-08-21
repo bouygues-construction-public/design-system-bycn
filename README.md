@@ -6,7 +6,7 @@
     alt="Vitamin Decathlon Design System logo" />
 </p>
 
-<h1 align="center">Bouygues Contruction IT - </h1>
+<h1 align="center">Bouygues Construction IT - </h1>
 
 <p align="center">Masoni Design System libraries for Angular applications</p>
 
