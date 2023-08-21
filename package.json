@@ -45,7 +45,7 @@
     "@angular-eslint/schematics": "15.2.1",
     "@angular-eslint/template-parser": "15.2.1",
     "@angular/cli": "~15.2.5",
-    "@angular/compiler-cli": "^15.2.0", 
+    "@angular/compiler-cli": "^15.2.0",
     "@storybook/addon-actions": "^7.0.26",
     "@storybook/addon-docs": "^7.0.18",
     "@storybook/addon-essentials": "^7.0.12",
@@ -81,7 +81,7 @@
       "projects/css",
       "projects/css/presets/tailwind/*",
       "projects/css/src/design_tokens",
-      "projects/css/src/components",
+      "projects/css/src/components/*",
       "projects/components",
       "projects/icons"
     ]

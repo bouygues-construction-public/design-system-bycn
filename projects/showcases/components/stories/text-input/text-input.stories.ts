@@ -14,11 +14,14 @@ const meta: Meta<MasTextInput> = {
     }),
   ],
   parameters: {
+    componentSubtitle: "Text inputs enable users to share query that can't be anticipated.",
     docs: {
       description: {
-        component: "Text inputs enable users to share query that can't be anticipated."
-      }
-    }
+        component: ` 
+        * When a user needs to provide specific information that cannot be anticipated using predefined choices (operationnal data, living data).
+        * When a user wants to input easily memorable data more efficiently using free-form text rather than a more intricate control method.`,
+      },
+    },
   },
   render: (args: MasTextInput) => ({
     template: `
