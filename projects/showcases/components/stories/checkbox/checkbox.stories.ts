@@ -7,7 +7,7 @@ const meta: Meta<MasCheckbox> = {
   component: MasCheckbox,
   argTypes: { onChange: { action: 'click' } },
   tags: ['autodocs'],
-  title: 'Components/Checkbox',
+  title: 'Components/Selection controls/Checkbox',
   decorators: [
     moduleMetadata({
       imports: [CommonModule, MasCheckboxModule],
@@ -29,23 +29,6 @@ const meta: Meta<MasCheckbox> = {
       ...args,
     },
   }),
-};
-
-export const Overview: Story = {
-  args: {
-    labelText: 'Overview checkbox',
-    identifier: '1',
-    checked: false,
-    disabled: false,
-    size: 'S',
-  },
-  argTypes: {
-    size: {
-      description: '',
-      control: 'radio',
-      options: ['S', 'L'],
-    },
-  },
 };
 
 export default meta;
@@ -79,6 +62,32 @@ export const Indeterminate: Story = {
     size: {
       description:
         "The checkbox has two sizes available: 'S' 'M'. The 'S' is used by default in the majority of cases.",
+      control: 'radio',
+      options: ['S', 'L'],
+    },
+  },
+};
+export const Overview: Story = {
+  render: (args: MasCheckbox) => ({
+      template: `
+      <mas-checkbox labelText="Sand"></mas-checkbox>
+      <mas-checkbox labelText="Bricks" [checked]="true"></mas-checkbox>
+      <mas-checkbox labelText="Stone and Rock" [disabled]=true [checked]="true"></mas-checkbox>
+      <mas-checkbox labelText="Wood and timber" [disabled]="true"></mas-checkbox>
+      <br>
+      <mas-checkbox labelText="I accept the term and conditions of BYCN" size="L"></mas-checkbox>
+      `
+  }),
+  args: {
+    labelText: 'Overview checkbox',
+    identifier: '1',
+    checked: false,
+    disabled: false,
+    size: 'S',
+  },
+  argTypes: {
+    size: {
+      description: '',
       control: 'radio',
       options: ['S', 'L'],
     },
