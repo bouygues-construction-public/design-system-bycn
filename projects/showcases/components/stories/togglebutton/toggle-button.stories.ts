@@ -1,11 +1,11 @@
 import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
 import { CommonModule } from '@angular/common';
-import { MasToggleButton } from 'projects/components/src/lib/togglebutton/toggle-button.component';
+import { MasToggleButton, ToggleButtonEvent } from 'projects/components/src/lib/togglebutton/toggle-button.component';
 import { MasToggleButtonModule } from 'projects/components/src/lib/togglebutton/toggle-button.module';
 const meta: Meta<MasToggleButton> = {
   component: MasToggleButton,
   tags: ['autodocs'],
-  title: 'Components/Toggle Button',
+  title: 'Components/Selection controls/Toggle Button',
   decorators: [
     moduleMetadata({
       imports: [CommonModule, MasToggleButtonModule],
@@ -53,3 +53,17 @@ export const Overview: Story = {
     onChange: { action: 'change' },
   },
 };
+export const Disabled: Story = {
+  args: {
+    disabled: true,
+  },
+}
+export const Size: Story = {
+  render: (args: MasToggleButton) => ({
+    template: `
+    <mas-toggle-button labelText="toggle button" size="S"></mas-toggle-button>
+    <br>
+    <mas-toggle-button labelText="toggle button" size="L"></mas-toggle-button>
+    `
+  })
+}

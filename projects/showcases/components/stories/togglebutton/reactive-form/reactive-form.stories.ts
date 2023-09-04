@@ -5,7 +5,7 @@ import { MasToggleButtonModule } from 'projects/components/src/lib/togglebutton/
 import { ReactiveFormsModule } from '@angular/forms';
 const meta: Meta<ToggleButtonExample> = {
   component: ToggleButtonExample,
-  title: 'Components/Toggle Button',
+  title: 'Components/Selection controls/Toggle Button/Reactive Form',
   decorators: [
     moduleMetadata({
       declarations: [ToggleButtonExample],
