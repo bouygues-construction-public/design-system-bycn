@@ -1,3 +1,5 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
 .mas-text-input {
   width: 280px;
   font-family: var(--mas-typo_font-family--inter);
