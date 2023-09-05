@@ -6,16 +6,21 @@ import { MasRadioButtonModule } from 'projects/components/src/lib/radiobutton/ra
 const meta: Meta<MasRadioButton> = {
   component: MasRadioButton,
   tags: ['autodocs'],
-  title: 'Components/Radio Button',
+  title: 'Components/Selection controls/Radio Button',
   decorators: [
     moduleMetadata({
       imports: [CommonModule, MasRadioButtonModule],
     }),
   ],
   parameters: {
+    componentSubtitle:
+      'Radio buttons are intended for selecting one option among mutually exclusive choices, rather than multiple options.',
     docs: {
-      component:
-        'Radio buttons are intended for selecting one option among mutually exclusive choices, rather than multiple options.<br>',
+      description: {
+        component: ` 
+        * When you want to retrieve some information or allow your user to make some unique choices.
+        * In data table, side panels, any settings action or area.`,
+      },
     },
   },
   render: (args: MasRadioButton) => ({
@@ -55,3 +60,25 @@ export const Overview: Story = {
     size: 'S',
   },
 };
+export const Disabled: Story = {
+  args: {
+    identifier: 'my-radio-button',
+    labelText: 'Disabled radio',
+    disabled: true,
+    checked: false,
+    size: 'S',
+  },
+};
+export const Size: Story = {
+  render: (args: MasRadioButton) => ({
+    template: `
+    <form [formGroup]="formGroup">
+      <mas-radio-group formControlName="radioGroup" disabled="true">
+        <mas-radio-button labelText="Radio Button 1" value="1" [disabled]="false" size="S"></mas-radio-button>
+        <br>
+        <mas-radio-button labelText="Radio Button 2" value="2" [disabled]="false" size="L"></mas-radio-button>
+        </mas-radio-group>
+    </form>
+    `
+  })
+}
