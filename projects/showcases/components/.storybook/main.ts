@@ -2,7 +2,8 @@ import type { StorybookConfig } from '@storybook/angular';
 
 const config: StorybookConfig = {
   stories: [
-    '../stories/overview.stories.mdx',
+     '../stories/overview.stories.mdx',
+     '../stories/**/*.@(ts|tsx|mdx)',
     '../stories/**/*.stories.@(ts|tsx|mdx)',
     '../stories/**/reactive-form/*.stories.ts',
   ],

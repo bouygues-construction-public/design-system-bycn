@@ -14,6 +14,7 @@
     "@masoni/css-toggle-button": "file:../../css/src/components/togglebutton",
     "@masoni/css-radio-button": "file:../../css/src/components/radiobutton",
     "@masoni/css-checkbox": "file:../../css/src/components/checkbox",
-    "@masoni/css-chip": "file:../../css/src/components/chip"
+    "@masoni/css-chip": "file:../../css/src/components/chip",
+    "@masoni/css-button": "file:../../css/src/components/button",
   }
 }

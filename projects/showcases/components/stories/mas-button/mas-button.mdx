@@ -1,0 +1,67 @@
+import { Meta , Canvas, Controls, Story,Preview, of} from '@storybook/addon-docs/blocks';
+import { MasButton } from 'projects/components/src/lib/button/button.component';
+import * as ButtonStories from './mas-button.stories';
+ 
+<Meta of={ButtonStories} />
+
+# MasButton
+
+The `MasButton` is a custom Button component serve as navigational element and can be used independently or inline with text.
+it offer a lightweight option for navigation.
+  
+## Usage
+
+To use the `MasButton`, you can pass the desired inputs to the component.
+
+<Canvas> 
+  <Story of={ButtonStories.Default} />  
+</Canvas>
+
+## `MasButton` component has the following properties: 
+<Controls />
+
+## Variant
+The component comes in different variants such as `primary`, `secondary`, `tertiary`, `accent` which you can use to alter the look and feel of the button.
+
+<Canvas>  
+  <Story of={ButtonStories.Primary} />  
+  <Story of={ButtonStories.Secondary} />  
+  <Story of={ButtonStories.Tertiary} />  
+  <Story of={ButtonStories.Accent} />     
+</Canvas>
+
+## Size
+The component comes in different sizes : `small`, `medium`
+
+<Canvas>  
+  <Story of={ButtonStories.ButtonSmall} />     
+  <Story of={ButtonStories.ButtonMedium} />     
+</Canvas>
+ 
+ ## Icons
+The component can contain icons whose placement depends on the context of use and type of action
+
+<Canvas>  
+  <Story of={ButtonStories.ButtonOnlyIcon} />     
+  <Story of={ButtonStories.ButtonLeftIcon} />    
+  <Story of={ButtonStories.ButtonRightIcon} />    
+  <Story of={ButtonStories.ButtonRightAndLeftIcon} />     
+</Canvas>
+
+
+# MasButton Directive
+
+The `MasButtonDirective` is a custom directive that provides button styles and behavior to any HTML element.
+
+## Usage
+
+To use the `MasButtonDirective`, you can apply the `MasButton` attribute to any HTML element and pass the desired inputs.
+
+
+## Examples
+
+<Canvas> 
+  <Story of={ButtonStories.Directive} />  
+</Canvas>
+
+ 
