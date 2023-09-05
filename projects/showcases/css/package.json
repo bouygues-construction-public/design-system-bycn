@@ -9,6 +9,7 @@
   "license": "ISC",
   "devDependencies": {
     "@masoni/css": "file:../../css",
+    "@masoni/css-button": "file:../../css/src/components/link",
     "@masoni/css-tailwind-preset": "file:../../css/presets/tailwind"
   }
 }
