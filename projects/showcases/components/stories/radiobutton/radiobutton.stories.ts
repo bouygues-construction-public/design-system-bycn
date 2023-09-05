@@ -6,7 +6,7 @@ import { MasRadioButtonModule } from 'projects/components/src/lib/radiobutton/ra
 const meta: Meta<MasRadioButton> = {
   component: MasRadioButton,
   tags: ['autodocs'],
-  title: 'Components/Radio Button',
+  title: 'Components/Selection controls/Radio Button',
   decorators: [
     moduleMetadata({
       imports: [CommonModule, MasRadioButtonModule],
@@ -60,3 +60,27 @@ export const Overview: Story = {
     size: 'S',
   },
 };
+export const Disabled: Story = {
+  args: {
+    identifier: 'my-radio-button',
+    labelText: 'Disabled radio',
+    disabled: true,
+    checked: false,
+    size: 'S',
+  },
+};
+export const Size: Story = {
+  render: (args: MasRadioButton) => ({
+    template: `
+    <form [formGroup]="formGroup">
+      <mas-radio-group formControlName="radioGroup" disabled="true">
+        <mas-radio-button labelText="Housing" value="1" [disabled]="false" size="S"></mas-radio-button>
+        <mas-radio-button labelText="Offices" value="2" [disabled]="false" size="S"></mas-radio-button>
+        <br>
+        <mas-radio-button labelText="Industry" value="3" [disabled]="false" size="L"></mas-radio-button>
+        <mas-radio-button labelText="Shopping centres" value="4" [disabled]="false" size="L"></mas-radio-button>
+        </mas-radio-group>
+    </form>
+    `
+  })
+}
