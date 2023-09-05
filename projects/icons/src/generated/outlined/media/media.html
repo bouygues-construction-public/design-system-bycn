@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>media</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .preview {
+            width: 100px;
+            display: inline-block;
+            margin: 10px;
+        }
+        .preview .inner {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            background: #f5f5f5;
+            -webkit-border-radius: 3px 3px 0 0;
+            -moz-border-radius: 3px 3px 0 0;
+            border-radius: 3px 3px 0 0;
+        }
+        .preview .inner  {
+            line-height: 85px;
+            font-size: 40px;
+            color: #333;
+        }
+        .label {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+            font-size: 10px;
+            font-family: Monaco, monospace;
+            color: #666;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background: #ddd;
+            -webkit-border-radius: 0 0 3px 3px;
+            -moz-border-radius: 0 0 3px 3px;
+            border-radius: 0 0 3px 3px;
+            color: #666;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="media.css" />
+</head>
+<body>
+
+    <h1>media</h1>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-airplay-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>airplay-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-aperture-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>aperture-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-article-medium-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>article-medium-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-article-ny-times-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>article-ny-times-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-article-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>article-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-camera-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>camera-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-camera-plus-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>camera-plus-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-camera-rotate-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>camera-rotate-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-camera-slash-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>camera-slash-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cassette-tape-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>cassette-tape-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-closed-captioning-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>closed-captioning-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-copyleft-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>copyleft-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-copyright-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>copyright-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-corners-in-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>corners-in-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-corners-out-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>corners-out-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-disc-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>disc-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-ear-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>ear-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-ear-slash-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>ear-slash-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-eject-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>eject-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-eject-simple-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>eject-simple-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-equalizer-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>equalizer-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-faders-horizontal-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>faders-horizontal-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-faders-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>faders-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-fast-forward-circle-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>fast-forward-circle-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-fast-forward-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>fast-forward-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-film-reel-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>film-reel-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-film-script-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>film-script-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-film-slate-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>film-slate-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-film-strip-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>film-strip-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-frame-corners-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>frame-corners-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-gif-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>gif-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-guitar-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>guitar-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-headphones-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>headphones-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-headset-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>headset-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-image-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>image-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-image-square-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>image-square-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-images-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>images-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-images-square-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>images-square-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-metronome-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>metronome-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-microphone-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>microphone-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-microphone-slash-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>microphone-slash-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-microphone-stage-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>microphone-stage-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-music-note-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>music-note-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-music-note-simple-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>music-note-simple-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-music-notes-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>music-notes-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-music-notes-plus-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>music-notes-plus-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-music-notes-simple-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>music-notes-simple-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-newspaper-clipping-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>newspaper-clipping-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-newspaper-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>newspaper-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-pause-circle-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>pause-circle-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-pause-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>pause-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-piano-keys-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>piano-keys-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-picture-in-picture-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>picture-in-picture-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-play-circle-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>play-circle-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-play-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>play-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-play-pause-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>play-pause-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-playlist-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>playlist-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-queue-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>queue-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-record-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>record-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-repeat-once-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>repeat-once-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-repeat-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>repeat-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-rewind-circle-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>rewind-circle-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-rewind-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>rewind-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-screencast-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>screencast-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-shuffle-angular-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>shuffle-angular-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-shuffle-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>shuffle-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-shuffle-simple-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>shuffle-simple-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-skip-back-circle-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>skip-back-circle-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-skip-back-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>skip-back-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-skip-forward-circle-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>skip-forward-circle-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-skip-forward-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>skip-forward-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-sliders-horizontal-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>sliders-horizontal-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-sliders-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>sliders-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-slideshow-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>slideshow-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-hifi-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-hifi-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-high-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-high-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-low-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-low-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-none-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-none-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-simple-high-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-simple-high-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-simple-low-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-simple-low-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-simple-none-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-simple-none-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-simple-slash-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-simple-slash-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-simple-x-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-simple-x-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-slash-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-slash-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-speaker-x-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>speaker-x-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-stop-circle-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>stop-circle-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-stop-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>stop-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-subtitles-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>subtitles-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-television-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>television-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-television-simple-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>television-simple-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-video-camera-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>video-camera-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-video-camera-slash-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>video-camera-slash-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-vinyl-record-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>vinyl-record-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-wave-sawtooth-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>wave-sawtooth-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-wave-sine-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>wave-sine-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-wave-square-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>wave-square-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-wave-triangle-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>wave-triangle-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-waveform-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>waveform-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-webcam-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>webcam-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-webcam-slash-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>webcam-slash-outlined</span>
+        </div>
+
+
+</body>
+</html>
