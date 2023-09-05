@@ -31,7 +31,8 @@ const argTypes = {
  
 
 export default {
-  title: 'Components / Link',
+  title: 'Components/Actions/Link',
+  tags: ['autodocs'],
   component: MasLink,
   decorators: [
     moduleMetadata({
@@ -40,9 +41,14 @@ export default {
   ], 
   argTypes:argTypes,
   parameters: {
+    componentSubtitle: "The MasLink is a custom Link component serve as navigational element and can be used independently or inline with text. It offers a lightweight option for navigation.",
     docs: {
       description: {
-        component: 'Links serve as navigational elements and can be used independently or inline with text. They offer a lightweight option for navigation.',
+        component: ` 
+        * Links serve as navigational elements and can be used independently or inline with text. 
+        * They offer a lightweight option for navigation.
+        * To use the \`MasLink\`, you can pass the desired inputs to the component.
+        * To use the \`MasLinkDirective\`, you can apply the \`masLink\` attribute to any HTML element and pass the desired inputs.`,
       },
     },
   },

@@ -1,10 +1,6 @@
 import type { StorybookConfig } from '@storybook/angular';
 const config: StorybookConfig = {
-  stories: [
-     '../stories/overview.stories.mdx',
-     '../stories/**/*.@(ts|tsx|mdx)',
-    '../stories/**/*.stories.@(ts|tsx|mdx)',
-  ],
+  stories: ['../stories/overview.stories.mdx', '../stories/**/*.stories.@(ts|tsx|mdx)'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-interactions',
@@ -28,7 +24,8 @@ const config: StorybookConfig = {
     options: {},
   },
   docs: {
-    autodocs: true,
+    autodocs: 'tag',
+    defaultName: 'Documentation',
   },
 };
 export default config;
