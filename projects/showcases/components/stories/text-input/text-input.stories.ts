@@ -7,7 +7,7 @@ import { MasErrorModule, MasHelperModule, MasLabelModule } from 'projects/compon
 const meta: Meta<MasTextInput> = {
   component: MasTextInput,
   tags: ['autodocs'],
-  title: 'Components/Text input',
+  title: 'Components/Selection controls/Text input',
   decorators: [
     moduleMetadata({
       imports: [CommonModule, MasTextInputModule, MasErrorModule, MasLabelModule, MasHelperModule],
@@ -18,7 +18,7 @@ const meta: Meta<MasTextInput> = {
     docs: {
       description: {
         component: ` 
-        * When a user needs to provide specific information that cannot be anticipated using predefined choices (operationnal data, living data).
+        * When a user needs to provide specific information that cannot be anticipated using predefined choices (operational data, living data).
         * When a user wants to input easily memorable data more efficiently using free-form text rather than a more intricate control method.`,
       },
     },
@@ -27,8 +27,8 @@ const meta: Meta<MasTextInput> = {
     template: `
     <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
     <mas-text-input [required]="required" [disabled]="disabled" [placeholder]="placeholder" [size]="size" [filled]="filled">
-    <mas-error >Something went wrong</mas-error>
-    <mas-helper >click to select</mas-helper>
+    <mas-error >Set your error message here...</mas-error>
+    <mas-helper >Helper text goes here</mas-helper>
     </mas-text-input>
     `,
     props: {
@@ -64,11 +64,34 @@ type Story = StoryObj<MasTextInput>;
 
 export const Overview: Story = {
   args: {
-    placeholder: 'type here',
+    placeholder: 'Placeholder text',
     disabled: false,
-    required: false,
+    required: true,
     filled: false,
     size: 'S',
     type: 'text',
   },
+};
+
+export const Error: Story = {
+  render: (args: MasTextInput) => ({
+    template: `
+    <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
+    <mas-text-input size="S" [filled]="false" [invalid]="true">
+    <mas-error >Set your error message here...</mas-error>
+    <mas-helper >Helper text goes here</mas-helper>
+    </mas-text-input>
+    `,
+  }),
+};
+export const Disabled: Story = {
+  render: (args: MasTextInput) => ({
+    template: `
+    <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
+    <mas-text-input [disabled]="true" placeholder="Placeholder text" [filled]="false">
+    <mas-error >Set your error message here...</mas-error>
+    <mas-helper >Helper text goes here</mas-helper>
+    </mas-text-input>
+    `,
+  }),
 };

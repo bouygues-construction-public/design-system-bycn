@@ -66,12 +66,12 @@ export class MasTextInput implements OnInit, ControlValueAccessor, AfterViewInit
     this._invalid = value;
   }
   get invalid(): boolean | undefined {
-    if (this.input) {
+    if (this.input && this._invalid === undefined) {
       return !this.input?.valid && this.input.touched;
     }
     return this._invalid;
   }
-  protected _invalid: boolean | undefined = false;
+  protected _invalid: boolean | undefined = undefined;
   set value(value: string) {
     this._value = value;
   }
