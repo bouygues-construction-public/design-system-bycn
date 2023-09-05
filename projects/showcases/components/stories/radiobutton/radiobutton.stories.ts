@@ -74,9 +74,11 @@ export const Size: Story = {
     template: `
     <form [formGroup]="formGroup">
       <mas-radio-group formControlName="radioGroup" disabled="true">
-        <mas-radio-button labelText="Radio Button 1" value="1" [disabled]="false" size="S"></mas-radio-button>
+        <mas-radio-button labelText="Housing" value="1" [disabled]="false" size="S"></mas-radio-button>
+        <mas-radio-button labelText="Offices" value="2" [disabled]="false" size="S"></mas-radio-button>
         <br>
-        <mas-radio-button labelText="Radio Button 2" value="2" [disabled]="false" size="L"></mas-radio-button>
+        <mas-radio-button labelText="Industry" value="3" [disabled]="false" size="L"></mas-radio-button>
+        <mas-radio-button labelText="Shopping centres" value="4" [disabled]="false" size="L"></mas-radio-button>
         </mas-radio-group>
     </form>
     `
