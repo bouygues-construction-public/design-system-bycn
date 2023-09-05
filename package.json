@@ -81,7 +81,7 @@
       "projects/css",
       "projects/css/presets/tailwind/*",
       "projects/css/src/design_tokens",
-      "projects/css/src/components",
+      "projects/css/src/components/*",
       "projects/components",
       "projects/icons"
     ]

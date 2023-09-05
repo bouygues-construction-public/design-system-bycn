@@ -19,8 +19,9 @@
         "url": "git+https://github.com/bouygues-construction/design-system-bycn.git"
     },
     "scripts": {
-        "build": "npm run build:css",
-        "build:css": "postcss ./index.css -o dist/index.css"
+        "build": "npm run build:components && npm run build:css",
+        "build:css": "postcss ./index.css -o dist/index.css",
+        "build:components": "npm run build -ws"
     },
     "publishConfig": {
         "access": "public"

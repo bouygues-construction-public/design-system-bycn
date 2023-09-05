@@ -3,3 +3,5 @@
 @import './checkbox/src/index.css';
 @import './link/src/index.css';
 @import './chip/src/index.css';
+@import './sub-elements/dist/index.css';
+@import './select/dist/index.css';
