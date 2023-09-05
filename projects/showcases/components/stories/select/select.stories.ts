@@ -5,7 +5,7 @@ import { MasSelectModule, MasSelect } from 'projects/components/src/public-api';
 
 const meta: Meta<MasSelect> = {
   component: MasSelect,
-  title: 'Components/Select controls/Select',
+  title: 'Components/Forms/Select',
   tags: ['autodocs'],
   decorators: [
     moduleMetadata({
