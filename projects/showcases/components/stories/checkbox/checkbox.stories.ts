@@ -1,22 +1,26 @@
 import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
-import { userEvent, within } from '@storybook/testing-library';
 import { CommonModule } from '@angular/common';
 import { MasCheckbox } from 'projects/components/src/lib/checkbox/checkbox.component';
 import { MasCheckboxModule } from 'projects/components/src/lib/checkbox/checkbox.module';
+
 const meta: Meta<MasCheckbox> = {
   component: MasCheckbox,
   argTypes: { onChange: { action: 'click' } },
   tags: ['autodocs'],
-  title: 'Components/Checkbox',
+  title: 'Components/Selection controls/Checkbox',
   decorators: [
     moduleMetadata({
       imports: [CommonModule, MasCheckboxModule],
     }),
   ],
   parameters: {
+    componentSubtitle: 'Checkboxes are used to let a user select one or more options of a limited number of choices.',
     docs: {
       description: {
-        component: 'Checkboxes are used to let a user select one or more options of a limited number of choices.<br/>',
+        component: ` 
+        * Checkboxes are recommended to allow the user to select one or more items from a list.
+        * It can also be used on its own to activate a parameter in body content or a form.
+        * A checkbox can also be used without a label to integrate it into a component (Example : a row of a data table)`,
       },
     },
   },
@@ -29,6 +33,7 @@ const meta: Meta<MasCheckbox> = {
 
 export default meta;
 type Story = StoryObj<MasCheckbox>;
+
 export const Indeterminate: Story = {
   args: {
     labelText: 'Indeterminate checkbox',
@@ -62,8 +67,17 @@ export const Indeterminate: Story = {
     },
   },
 };
-// More on writing stories with args: https://storybook.js.org/docs/angular/writing-stories/args
 export const Overview: Story = {
+  render: (args: MasCheckbox) => ({
+      template: `
+      <mas-checkbox labelText="Sand"></mas-checkbox>
+      <mas-checkbox labelText="Bricks" [checked]="true"></mas-checkbox>
+      <mas-checkbox labelText="Stone and Rock" [disabled]=true [checked]="true"></mas-checkbox>
+      <mas-checkbox labelText="Wood and timber" [disabled]="true"></mas-checkbox>
+      <br>
+      <mas-checkbox labelText="I accept the term and conditions of BYCN" size="L"></mas-checkbox>
+      `
+  }),
   args: {
     labelText: 'Overview checkbox',
     identifier: '1',
