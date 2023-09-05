@@ -7,7 +7,7 @@ import { MasErrorModule, MasHelperModule, MasLabelModule } from 'projects/compon
 const meta: Meta<MasTextInput> = {
   component: MasTextInput,
   tags: ['autodocs'],
-  title: 'Components/Selection controls/Text input',
+  title: 'Components/Forms/Text input',
   decorators: [
     moduleMetadata({
       imports: [CommonModule, MasTextInputModule, MasErrorModule, MasLabelModule, MasHelperModule],
