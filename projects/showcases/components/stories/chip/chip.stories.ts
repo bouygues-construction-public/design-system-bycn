@@ -1,12 +1,23 @@
 import { Meta, Story, StoryObj, moduleMetadata } from "@storybook/angular";
 import { MasChip } from "projects/components/src/lib/chip";
 
- 
+const icons = ['mas-arrow-arc-left-outlined mas-arrows--outlined',
+'mas-arrow-circle-left-outlined mas-arrows--outlined',
+'mas-arrow-arc-right-outlined mas-arrows--outlined',
+'mas-arrow-circle-right-outlined mas-arrows--outlined',
+'mas-arrow-square-out-outlined mas-arrows--outlined',
+'mas-info-outlined mas-security-and-warnings--outlined',
+'mas-warning-circle-outlined mas-security-and-warnings--outlined',
+'mas-calendar-blank-outlined mas-time--outlined',
+'mas-smiley-meh-outlined mas-people--outlined',
+'mas-check-outlined mas-system-and-device--outlined',
+'mas-upload-simple-outlined mas-system-and-device--outlined',
+'mas-currency-btc-outlined mas-commerce--outlined',
+'mas-x-outlined mas-math-and-finance--outlined'];
 
 export default {
-  title: 'Components/Chip',
+  title: 'Components / Selection controls / Chip',
   component: MasChip,
-  tags: ['autodocs'],
   decorators: [
     moduleMetadata({
       declarations: [MasChip],
@@ -53,14 +64,14 @@ Default.argTypes = {
     description: 'Icon name for the leading icon of the chip.', 
     defaultValue: null,
     control: 'select',
-    options: ['', 'mas-times', 'mas-music-note'],  
+    options: ['', ...icons],  
   },
   actionIcon: {
     type: { name: 'string', required: false },
     description: 'Icon name for the action icon of the chip.',
     defaultValue: null,
     control: 'select',
-    options: ['', 'mas-times', 'mas-music-note'],  
+    options: ['', ...icons],  
   },
   imageUrl: {
     type: { name: 'string', required: false },
@@ -76,14 +87,7 @@ FilterChip.args = {
   label: 'Filter chip',
   selectable:true,
 };
-/*
-FilterChip.parameters= {
-  docs: {
-    description: {
-      story: 'Filter.',
-    },
-  },
-};*/
+
 
 /** REMOVABLE CHIP */
 export const Removable = Template.bind({});
@@ -109,7 +113,7 @@ export const leadingIcon = Template.bind({});
 leadingIcon.args = {
   label: 'Input chip',
   removable:false, 
-  leadingIcon:'mas-music-note',
+  leadingIcon:'mas-check-outlined mas-system-and-device--outlined',
 };
 
 
@@ -118,7 +122,7 @@ export const actionIcon = Template.bind({});
 actionIcon.args = {
   label: 'Input chip',
     removable:false,
-    actionIcon:'mas-times',
+    actionIcon:'mas-x-outlined mas-math-and-finance--outlined',
 };
 actionIcon.argTypes = {onAction: { action: 'Action clicked' } };
 
@@ -129,8 +133,8 @@ LeadingAndActionIcon.args = {
   
   label: 'Input chip',
   removable:false,
-  leadingIcon:'mas-music-note',
-  actionIcon:'mas-times',
+  leadingIcon:'mas-check-outlined mas-system-and-device--outlined',
+  actionIcon:'mas-x-outlined mas-math-and-finance--outlined',
 };
 
 LeadingAndActionIcon.argTypes = {onAction: { action: 'Action clicked' } };

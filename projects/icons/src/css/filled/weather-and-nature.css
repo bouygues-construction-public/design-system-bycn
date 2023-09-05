@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "weather-and-nature--filled";
+    src: url("../../fonts/filled/weather-and-nature/weather-and-nature.ttf?dc2e2052effe6d75104df9c11cbc6857") format("truetype"),
+url("../../fonts/filled/weather-and-nature/weather-and-nature.woff?dc2e2052effe6d75104df9c11cbc6857") format("woff"),
+url("../../fonts/filled/weather-and-nature/weather-and-nature.woff2?dc2e2052effe6d75104df9c11cbc6857") format("woff2");
+}
+
+i[class^="mas-weather-and-nature--filled"]:before, i[class*=" mas-weather-and-nature--filled"]:before {
+    font-family: weather-and-nature--filled !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-atom-filled:before {
+    content: "\e4ac";
+}
+.mas-bird-filled:before {
+    content: "\e4ad";
+}
+.mas-bone-filled:before {
+    content: "\e4ae";
+}
+.mas-butterfly-filled:before {
+    content: "\e4af";
+}
+.mas-cactus-filled:before {
+    content: "\e4b0";
+}
+.mas-campfire-filled:before {
+    content: "\e4b1";
+}
+.mas-cat-filled:before {
+    content: "\e4b2";
+}
+.mas-cloud-filled:before {
+    content: "\e4b3";
+}
+.mas-cloud-fog-filled:before {
+    content: "\e4b4";
+}
+.mas-cloud-lighting-filled:before {
+    content: "\e4b5";
+}
+.mas-cloud-moon-filled:before {
+    content: "\e4b6";
+}
+.mas-cloud-rain-filled:before {
+    content: "\e4b7";
+}
+.mas-cloud-snow-filled:before {
+    content: "\e4b8";
+}
+.mas-cloud-sun-filled:before {
+    content: "\e4b9";
+}
+.mas-dog-filled:before {
+    content: "\e4ba";
+}
+.mas-drop-filled:before {
+    content: "\e4bb";
+}
+.mas-feather-filled:before {
+    content: "\e4bc";
+}
+.mas-fire-filled:before {
+    content: "\e4bd";
+}
+.mas-fire-simple-filled:before {
+    content: "\e4be";
+}
+.mas-fish-filled:before {
+    content: "\e4bf";
+}
+.mas-fish-simple-filled:before {
+    content: "\e4c0";
+}
+.mas-flame-filled:before {
+    content: "\e4c1";
+}
+.mas-flower-filled:before {
+    content: "\e4c2";
+}
+.mas-flower-lotus-filled:before {
+    content: "\e4c3";
+}
+.mas-flower-tulip-filled:before {
+    content: "\e4c4";
+}
+.mas-leaf-filled:before {
+    content: "\e4c5";
+}
+.mas-moon-filled:before {
+    content: "\e4c6";
+}
+.mas-moon-stars-filled:before {
+    content: "\e4c7";
+}
+.mas-mountains-filled:before {
+    content: "\e4c8";
+}
+.mas-paw-print-filled:before {
+    content: "\e4c9";
+}
+.mas-planet-filled:before {
+    content: "\e4ca";
+}
+.mas-plant-filled:before {
+    content: "\e4cb";
+}
+.mas-rainbow-cloud-filled:before {
+    content: "\e4cc";
+}
+.mas-rainbow-filled:before {
+    content: "\e4cd";
+}
+.mas-shooting-star-filled:before {
+    content: "\e4ce";
+}
+.mas-shrimp-filled:before {
+    content: "\e4cf";
+}
+.mas-snowflake-filled:before {
+    content: "\e4d0";
+}
+.mas-sparkle-filled:before {
+    content: "\e4d1";
+}
+.mas-star-four-filled:before {
+    content: "\e4d2";
+}
+.mas-sun-dim-filled:before {
+    content: "\e4d3";
+}
+.mas-sun-filled:before {
+    content: "\e4d4";
+}
+.mas-sun-horizon-filled:before {
+    content: "\e4d5";
+}
+.mas-thermometer-cold-filled:before {
+    content: "\e4d6";
+}
+.mas-thermometer-filled:before {
+    content: "\e4d7";
+}
+.mas-thermometer-hot-filled:before {
+    content: "\e4d8";
+}
+.mas-thermometer-simple-filled:before {
+    content: "\e4d9";
+}
+.mas-tree-evergreen-filled:before {
+    content: "\e4da";
+}
+.mas-tree-filled:before {
+    content: "\e4db";
+}
+.mas-umbrella-filled:before {
+    content: "\e4dc";
+}
+.mas-umbrella-simple-filled:before {
+    content: "\e4dd";
+}
+.mas-waves-filled:before {
+    content: "\e4de";
+}
+.mas-wind-filled:before {
+    content: "\e4df";
+}

@@ -1,0 +1,378 @@
+@font-face {
+    font-family: "office-and-editing--filled";
+    src: url("../../fonts/filled/office-and-editing/office-and-editing.ttf?94fa05172120b4302a6a76008e8eb66e") format("truetype"),
+url("../../fonts/filled/office-and-editing/office-and-editing.woff?94fa05172120b4302a6a76008e8eb66e") format("woff"),
+url("../../fonts/filled/office-and-editing/office-and-editing.woff2?94fa05172120b4302a6a76008e8eb66e") format("woff2");
+}
+
+i[class^="mas-office-and-editing--filled"]:before, i[class*=" mas-office-and-editing--filled"]:before {
+    font-family: office-and-editing--filled !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-archive-box-filled:before {
+    content: "\e336";
+}
+.mas-archive-filled:before {
+    content: "\e337";
+}
+.mas-archive-tray-filled:before {
+    content: "\e338";
+}
+.mas-briefcase-filled:before {
+    content: "\e339";
+}
+.mas-briefcase-metal-filled:before {
+    content: "\e33a";
+}
+.mas-cards-filled:before {
+    content: "\e33b";
+}
+.mas-clipboard-filled:before {
+    content: "\e33c";
+}
+.mas-clipboard-text-filled:before {
+    content: "\e33d";
+}
+.mas-copy-filled:before {
+    content: "\e33e";
+}
+.mas-copy-simple-filled:before {
+    content: "\e33f";
+}
+.mas-cursor-text-filled:before {
+    content: "\e340";
+}
+.mas-file-archive-filled:before {
+    content: "\e341";
+}
+.mas-file-arrow-down-filled:before {
+    content: "\e342";
+}
+.mas-file-arrow-up-filled:before {
+    content: "\e343";
+}
+.mas-file-audio-filled:before {
+    content: "\e344";
+}
+.mas-file-cloud-filled:before {
+    content: "\e345";
+}
+.mas-file-code-filled:before {
+    content: "\e346";
+}
+.mas-file-css-filled:before {
+    content: "\e347";
+}
+.mas-file-csv-filled:before {
+    content: "\e348";
+}
+.mas-file-dashed-filled:before {
+    content: "\e349";
+}
+.mas-file-doc-filled:before {
+    content: "\e34a";
+}
+.mas-file-filled:before {
+    content: "\e34b";
+}
+.mas-file-html-filled:before {
+    content: "\e34c";
+}
+.mas-file-image-filled:before {
+    content: "\e34d";
+}
+.mas-file-jpg-filled:before {
+    content: "\e34e";
+}
+.mas-file-js-filled:before {
+    content: "\e34f";
+}
+.mas-file-jsx-filled:before {
+    content: "\e350";
+}
+.mas-file-lock-filled:before {
+    content: "\e351";
+}
+.mas-file-minus-filled:before {
+    content: "\e352";
+}
+.mas-file-pdf-filled:before {
+    content: "\e353";
+}
+.mas-file-plus-filled:before {
+    content: "\e354";
+}
+.mas-file-png-filled:before {
+    content: "\e355";
+}
+.mas-file-ppt-filled:before {
+    content: "\e356";
+}
+.mas-file-rs-filled:before {
+    content: "\e357";
+}
+.mas-file-search-filled:before {
+    content: "\e358";
+}
+.mas-file-sql-filled:before {
+    content: "\e359";
+}
+.mas-file-svg-filled:before {
+    content: "\e35a";
+}
+.mas-file-text-filled:before {
+    content: "\e35b";
+}
+.mas-file-ts-filled:before {
+    content: "\e35c";
+}
+.mas-file-tsx-filled:before {
+    content: "\e35d";
+}
+.mas-file-video-filled:before {
+    content: "\e35e";
+}
+.mas-file-vue-filled:before {
+    content: "\e35f";
+}
+.mas-file-x-filled:before {
+    content: "\e360";
+}
+.mas-file-xls-filled:before {
+    content: "\e361";
+}
+.mas-file-zip-filled:before {
+    content: "\e362";
+}
+.mas-files-filled:before {
+    content: "\e363";
+}
+.mas-floppy-disk-back-filled:before {
+    content: "\e364";
+}
+.mas-floppy-disk-filled:before {
+    content: "\e365";
+}
+.mas-folder-dashed-filled:before {
+    content: "\e366";
+}
+.mas-folder-filled:before {
+    content: "\e367";
+}
+.mas-folder-lock-filled:before {
+    content: "\e368";
+}
+.mas-folder-minus-filled:before {
+    content: "\e369";
+}
+.mas-folder-notch-filled:before {
+    content: "\e36a";
+}
+.mas-folder-notch-minus-filled:before {
+    content: "\e36b";
+}
+.mas-folder-notch-open-filled:before {
+    content: "\e36c";
+}
+.mas-folder-notch-plus-filled:before {
+    content: "\e36d";
+}
+.mas-folder-open-filled:before {
+    content: "\e36e";
+}
+.mas-folder-plus-filled:before {
+    content: "\e36f";
+}
+.mas-folder-simple-dashed-filled:before {
+    content: "\e370";
+}
+.mas-folder-simple-filled:before {
+    content: "\e371";
+}
+.mas-folder-simple-lock-filled:before {
+    content: "\e372";
+}
+.mas-folder-simple-minus-filled:before {
+    content: "\e373";
+}
+.mas-folder-simple-plus-filled:before {
+    content: "\e374";
+}
+.mas-folder-simple-star-filled:before {
+    content: "\e375";
+}
+.mas-folder-simple-user-filled:before {
+    content: "\e376";
+}
+.mas-folder-star-filled:before {
+    content: "\e377";
+}
+.mas-folder-user-filled:before {
+    content: "\e378";
+}
+.mas-folders-filled:before {
+    content: "\e379";
+}
+.mas-funnel-filled:before {
+    content: "\e37a";
+}
+.mas-funnel-simple-filled:before {
+    content: "\e37b";
+}
+.mas-kanban-filled:before {
+    content: "\e37c";
+}
+.mas-list-bullets-filled:before {
+    content: "\e37d";
+}
+.mas-list-checks-filled:before {
+    content: "\e37e";
+}
+.mas-list-dashes-filled:before {
+    content: "\e37f";
+}
+.mas-list-filled:before {
+    content: "\e380";
+}
+.mas-list-numbers-filled:before {
+    content: "\e381";
+}
+.mas-list-plus-filled:before {
+    content: "\e382";
+}
+.mas-note-blank-filled:before {
+    content: "\e383";
+}
+.mas-note-filled:before {
+    content: "\e384";
+}
+.mas-note-pencil-filled:before {
+    content: "\e385";
+}
+.mas-notebook-filled:before {
+    content: "\e386";
+}
+.mas-notepad-filled:before {
+    content: "\e387";
+}
+.mas-paperclip-filled:before {
+    content: "\e388";
+}
+.mas-paperclip-horizontal-filled:before {
+    content: "\e389";
+}
+.mas-paragraph-filled:before {
+    content: "\e38a";
+}
+.mas-presentation-chart-filled:before {
+    content: "\e38b";
+}
+.mas-presentation-filled:before {
+    content: "\e38c";
+}
+.mas-printer-filled:before {
+    content: "\e38d";
+}
+.mas-projector-screen-chart-filled:before {
+    content: "\e38e";
+}
+.mas-projector-screen-filled:before {
+    content: "\e38f";
+}
+.mas-push-pin-filled:before {
+    content: "\e390";
+}
+.mas-push-pin-simple-filled:before {
+    content: "\e391";
+}
+.mas-push-pin-simple-slash-filled:before {
+    content: "\e392";
+}
+.mas-push-pin-slash-filled:before {
+    content: "\e393";
+}
+.mas-sort-ascending-filled:before {
+    content: "\e394";
+}
+.mas-sort-descending-filled:before {
+    content: "\e395";
+}
+.mas-text-aa-filled:before {
+    content: "\e396";
+}
+.mas-text-align-center-filled:before {
+    content: "\e397";
+}
+.mas-text-align-justify-filled:before {
+    content: "\e398";
+}
+.mas-text-align-left-filled:before {
+    content: "\e399";
+}
+.mas-text-align-right-filled:before {
+    content: "\e39a";
+}
+.mas-text-b-filled:before {
+    content: "\e39b";
+}
+.mas-text-columns-filled:before {
+    content: "\e39c";
+}
+.mas-text-h-filled:before {
+    content: "\e39d";
+}
+.mas-text-h-five-filled:before {
+    content: "\e39e";
+}
+.mas-text-h-four-filled:before {
+    content: "\e39f";
+}
+.mas-text-h-one-filled:before {
+    content: "\e3a0";
+}
+.mas-text-h-six-filled:before {
+    content: "\e3a1";
+}
+.mas-text-h-three-filled:before {
+    content: "\e3a2";
+}
+.mas-text-h-two-filled:before {
+    content: "\e3a3";
+}
+.mas-text-indent-filled:before {
+    content: "\e3a4";
+}
+.mas-text-italic-filled:before {
+    content: "\e3a5";
+}
+.mas-text-outdent-filled:before {
+    content: "\e3a6";
+}
+.mas-text-strikethrough-filled:before {
+    content: "\e3a7";
+}
+.mas-text-t-filled:before {
+    content: "\e3a8";
+}
+.mas-text-underline-filled:before {
+    content: "\e3a9";
+}
+.mas-textbox-filled:before {
+    content: "\e3aa";
+}
+.mas-trash-filled:before {
+    content: "\e3ab";
+}
+.mas-trash-simple-filled:before {
+    content: "\e3ac";
+}
+.mas-tray-filled:before {
+    content: "\e3ad";
+}
