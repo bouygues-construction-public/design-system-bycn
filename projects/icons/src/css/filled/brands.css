@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "brands--filled";
+    src: url("../../fonts/filled/brands/brands.ttf?e0d166952f02188dfd3347014459c09c") format("truetype"),
+url("../../fonts/filled/brands/brands.woff?e0d166952f02188dfd3347014459c09c") format("woff"),
+url("../../fonts/filled/brands/brands.woff2?e0d166952f02188dfd3347014459c09c") format("woff2");
+}
+
+i[class^="mas-brands--filled"]:before, i[class*=" mas-brands--filled"]:before {
+    font-family: brands--filled !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-amazon-logo-filled:before {
+    content: "\e073";
+}
+.mas-android-logo-filled:before {
+    content: "\e074";
+}
+.mas-angular-logo-filled:before {
+    content: "\e075";
+}
+.mas-app-store-logo-filled:before {
+    content: "\e076";
+}
+.mas-apple-logo-filled:before {
+    content: "\e077";
+}
+.mas-apple-podcasts-logo-filled:before {
+    content: "\e078";
+}
+.mas-behance-logo-filled:before {
+    content: "\e079";
+}
+.mas-coda-logo-filled:before {
+    content: "\e07a";
+}
+.mas-codepen-logo-filled:before {
+    content: "\e07b";
+}
+.mas-codesandbox-logo-filled:before {
+    content: "\e07c";
+}
+.mas-dev-to-logo-filled:before {
+    content: "\e07d";
+}
+.mas-discord-logo-filled:before {
+    content: "\e07e";
+}
+.mas-dribbble-logo-filled:before {
+    content: "\e07f";
+}
+.mas-dropbox-logo-filled:before {
+    content: "\e080";
+}
+.mas-facebook-logo-filled:before {
+    content: "\e081";
+}
+.mas-figma-logo-filled:before {
+    content: "\e082";
+}
+.mas-framer-logo-filled:before {
+    content: "\e083";
+}
+.mas-github-logo-filled:before {
+    content: "\e084";
+}
+.mas-gitlab-logo-filled:before {
+    content: "\e085";
+}
+.mas-gitlab-logo-simple-filled:before {
+    content: "\e086";
+}
+.mas-goodreads-logo-filled:before {
+    content: "\e087";
+}
+.mas-google-chrome-logo-filled:before {
+    content: "\e088";
+}
+.mas-google-drive-logo-filled:before {
+    content: "\e089";
+}
+.mas-google-logo-filled:before {
+    content: "\e08a";
+}
+.mas-google-photos-logo-filled:before {
+    content: "\e08b";
+}
+.mas-google-play-logo-filled:before {
+    content: "\e08c";
+}
+.mas-google-podcasts-logo-filled:before {
+    content: "\e08d";
+}
+.mas-instagram-logo-filled:before {
+    content: "\e08e";
+}
+.mas-linkedin-logo-filled:before {
+    content: "\e08f";
+}
+.mas-linux-logo-filled:before {
+    content: "\e090";
+}
+.mas-medium-logo-filled:before {
+    content: "\e091";
+}
+.mas-messenger-logo-filled:before {
+    content: "\e092";
+}
+.mas-meta-logo-filled:before {
+    content: "\e093";
+}
+.mas-microsoft-excel-logo-filled:before {
+    content: "\e094";
+}
+.mas-microsoft-outlook-logo-filled:before {
+    content: "\e095";
+}
+.mas-microsoft-powerpoint-logo-filled:before {
+    content: "\e096";
+}
+.mas-microsoft-teams-logo-filled:before {
+    content: "\e097";
+}
+.mas-microsoft-word-logo-filled:before {
+    content: "\e098";
+}
+.mas-notion-logo-filled:before {
+    content: "\e099";
+}
+.mas-ny-times-logo-filled:before {
+    content: "\e09a";
+}
+.mas-patreon-logo-filled:before {
+    content: "\e09b";
+}
+.mas-paypal-logo-filled:before {
+    content: "\e09c";
+}
+.mas-phosphor-logo-filled:before {
+    content: "\e09d";
+}
+.mas-pinterest-logo-filled:before {
+    content: "\e09e";
+}
+.mas-read-cv-logo-filled:before {
+    content: "\e09f";
+}
+.mas-reddit-logo-filled:before {
+    content: "\e0a0";
+}
+.mas-sketch-logo-filled:before {
+    content: "\e0a1";
+}
+.mas-slack-logo-filled:before {
+    content: "\e0a2";
+}
+.mas-snapchat-logo-filled:before {
+    content: "\e0a3";
+}
+.mas-soundcloud-logo-filled:before {
+    content: "\e0a4";
+}
+.mas-spotify-logo-filled:before {
+    content: "\e0a5";
+}
+.mas-square-logo-filled:before {
+    content: "\e0a6";
+}
+.mas-stack-overflow-logo-filled:before {
+    content: "\e0a7";
+}
+.mas-stripe-logo-filled:before {
+    content: "\e0a8";
+}
+.mas-telegram-logo-filled:before {
+    content: "\e0a9";
+}
+.mas-tidal-logo-filled:before {
+    content: "\e0aa";
+}
+.mas-tiktok-logo-filled:before {
+    content: "\e0ab";
+}
+.mas-twitch-logo-filled:before {
+    content: "\e0ac";
+}
+.mas-twitter-logo-filled:before {
+    content: "\e0ad";
+}
+.mas-wechat-logo-filled:before {
+    content: "\e0ae";
+}
+.mas-whatsapp-logo-filled:before {
+    content: "\e0af";
+}
+.mas-windows-logo-filled:before {
+    content: "\e0b0";
+}
+.mas-youtube-logo-filled:before {
+    content: "\e0b1";
+}
