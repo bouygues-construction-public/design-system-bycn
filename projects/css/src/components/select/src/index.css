@@ -91,7 +91,7 @@
   pointer-events: none;
   color: var(--mas-semantic-color_icon-secondary);
 }
-.mas-check-outlined {
+mas-option.mas-check-outlined {
   pointer-events: none;
   color: var(--mas-semantic-color_icon-secondary);
 }

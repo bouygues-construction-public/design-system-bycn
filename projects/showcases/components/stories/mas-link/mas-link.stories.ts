@@ -31,7 +31,7 @@ const argTypes = {
  
 
 export default {
-  title: 'Components / Link',
+  title: 'Components / Actions / Link',
   component: MasLink,
   decorators: [
     moduleMetadata({
@@ -59,8 +59,38 @@ const Template: Story<MasLink> = (args: MasLink) => ({
 export const Overview  = Template.bind({});
 Overview .args = {};
  
+export const LinkIcon = () => ({
+  template: `
+    <mas-link  iconAlong="true"  href="#">
+      Link
+    </mas-link>
+  `,
+});
 
-  
+export const LinkLarge = () => ({
+  template: `
+    <mas-link size="large"  href="#">
+      Link
+    </mas-link>
+  `,
+});
+
+export const LinkMedium = () => ({
+  template: `
+    <mas-link size="medium"  href="#">
+      Link
+    </mas-link>
+  `,
+});
+
+export const LinkSmall = () => ({
+  template: `
+    <mas-link size="small"  href="#">
+      Link
+    </mas-link>
+  `,
+});
+
 const TemplateDirective: Story<MasLinkDirective> = (args: MasLinkDirective) => ({
     props: args,
     template: `<a masLink [size]="size" [standalone]="standalone" [iconAlong]="iconAlong" 
