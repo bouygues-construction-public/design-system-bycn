@@ -10,7 +10,7 @@ import '@masoni/css-sub-elements/dist/index.css';
     role: 'alert',
   },
   template: `
-    <i class="mas-icon mas-warningcircle-filled"></i>
+    <i class="mas-icon mas-warning-circle-filled mas-security-and-warnings--filled"></i>
     <ng-content *ngIf="!isTemplate(errorMessage)"></ng-content>
     <ng-template *ngIf="isTemplate(errorMessage)" [ngTemplateOutlet]="errorMessage"></ng-template>
   `,

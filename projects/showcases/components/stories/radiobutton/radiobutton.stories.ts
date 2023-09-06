@@ -5,7 +5,7 @@ import { MasRadioButton } from 'projects/components/src/lib/radiobutton/radiobut
 import { MasRadioButtonModule } from 'projects/components/src/lib/radiobutton/radiobutton.module';
 const meta: Meta<MasRadioButton> = {
   component: MasRadioButton,
-  tags: ['autodocs'],
+  // tags: ['autodocs'],
   title: 'Components/Selection controls/Radio Button',
   decorators: [
     moduleMetadata({

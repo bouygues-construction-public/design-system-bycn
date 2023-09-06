@@ -86,7 +86,7 @@
   pointer-events: none;
   color: var(--mas-semantic-color_icon-secondary);
 }
-.mas-warningcircle-outlined {
+.mas-warning-circle-outlined {
   margin-inline-end: 8px;
   pointer-events: none;
   color: var(--mas-semantic-color_icon-secondary);

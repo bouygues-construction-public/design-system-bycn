@@ -6,7 +6,7 @@ import { MasErrorModule, MasHelperModule, MasLabelModule } from 'projects/compon
 
 const meta: Meta<MasTextInput> = {
   component: MasTextInput,
-  tags: ['autodocs'],
+  // tags: ['autodocs'],
   title: 'Components/Forms/Text input',
   decorators: [
     moduleMetadata({
@@ -26,7 +26,7 @@ const meta: Meta<MasTextInput> = {
   render: (args: MasTextInput) => ({
     template: `
     <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
-    <mas-text-input [required]="required" [disabled]="disabled" [placeholder]="placeholder" [size]="size" [filled]="filled">
+    <mas-text-input [type]="type" [required]="required" [disabled]="disabled" [placeholder]="placeholder" [size]="size" [filled]="filled">
     <mas-error >Set your error message here...</mas-error>
     <mas-helper >Helper text goes here</mas-helper>
     </mas-text-input>

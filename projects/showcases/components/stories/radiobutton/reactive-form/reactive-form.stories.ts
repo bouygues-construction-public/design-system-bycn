@@ -5,7 +5,7 @@ import { RadioButtonExample } from './radiobutton-example.component';
 import { MasRadioButtonModule } from 'projects/components/src/lib/radiobutton/radiobutton.module';
 const meta: Meta<RadioButtonExample> = {
   component: RadioButtonExample,
-  title: 'Components/Selection controls/Radio Button/Reactive Form',
+  title: 'Components/Selection controls/Radio Button',
   decorators: [
     moduleMetadata({
       declarations: [RadioButtonExample],

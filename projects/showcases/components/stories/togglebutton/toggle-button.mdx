@@ -1,11 +1,9 @@
 import { Meta, Title, Subtitle, Description, Primary, Controls, Stories, Story, Toc } from '@storybook/blocks';
 
-{/* TODO: import Component and Component's stories */}
+import { MasToggleButton } from 'projects/components/src/lib/togglebutton/toggle-button.component';
+import * as ToggleButtonStories from './toggle-button.stories';
 
-// import { MasComponent } from 'projects/path/to/component';
-// import * as ComponentStories from './path/to/component/stories';
-
-<Meta of={ComponentStories} />
+<Meta of={ToggleButtonStories} />
 
 <Title />
 
@@ -28,7 +26,12 @@ import { Meta, Title, Subtitle, Description, Primary, Controls, Stories, Story, 
 
 ## Usage
 
-{/* TODO: Relevant main usage */}
+### When to use
+
+- Toggle buttons are recommended for activating or deactivating boolean options which allow to have an immediate effect for the user.
+
+### When not to use
+- As boolean options with immediate effect, toggle buttons are not necessarily suitable for all cases
 
 ## Variants
 
@@ -38,9 +41,7 @@ import { Meta, Title, Subtitle, Description, Primary, Controls, Stories, Story, 
 
 ## Guidelines
 
-{/* TODO: Link to component best practices on Zeroheight */}
-
-- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/992e69-components/b/348056)
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/855c3c-toggle/b/423cea)
 
 ## Feedback & contact
 

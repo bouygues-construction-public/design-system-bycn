@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
-import '@masoni/icons/dist/css/mas-icons.css';
-import '@masoni/css-text-input/dist/index.css';
+import '@masoni/icons/dist/css/filled/index.css';
+import '@masoni/icons/dist/css/outlined/index.css';
 import {
   ControlValueAccessor,
   FormControl,
@@ -85,22 +85,22 @@ export class MasTextInput implements OnInit, ControlValueAccessor, AfterViewInit
     let icon: string = 'none';
     switch (this.type) {
       case 'search':
-        icon = 'mas-magnifyingglass-outlined';
+        icon = 'mas-magnifying-glass-outlined mas-system-and-device--outlined';
         break;
       case 'email':
-        icon = 'mas-envelopesimple-outlined';
+        icon = 'mas-envelope-simple-outlined mas-communication--outlined';
         break;
       case 'password':
-        icon = 'mas-lockkey-outlined';
+        icon = 'mas-lock-key-outlined mas-security-and-warnings--outlined';
         break;
       case 'tel':
-        icon = 'mas-phone-outlined';
+        icon = 'mas-phone-outlined mas-communication--outlined';
         break;
     }
     return icon;
   }
   get trailingIcon(): string {
-    return this.type === 'password' ? 'mas-eye-filled' : 'none';
+    return this.type === 'password' ? 'mas-eye-filled mas-design--filled' : 'none';
   }
   protected onChangeHandler = (_: any) => {};
   protected onTouchedHandler = () => {};

@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
     <label [for]="identifier" class="mas-label-wrapper">
       <ng-content></ng-content>
       <ng-container *ngIf="infoIcon">
-        <i class="mas-question-outlined mas-label-info-icon"></i>
+        <i class="mas-question-outlined mas-label-info-icon mas-security-and-warnings--outlined"></i>
       </ng-container>
       <ng-container *ngIf="optional">
         <span class="mas-label-optional">(optional)</span>

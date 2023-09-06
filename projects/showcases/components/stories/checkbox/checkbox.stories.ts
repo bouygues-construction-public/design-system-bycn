@@ -6,7 +6,7 @@ import { MasCheckboxModule } from 'projects/components/src/lib/checkbox/checkbox
 const meta: Meta<MasCheckbox> = {
   component: MasCheckbox,
   argTypes: { onChange: { action: 'click' } },
-  tags: ['autodocs'],
+  // tags: ['autodocs'],
   title: 'Components/Selection controls/Checkbox',
   decorators: [
     moduleMetadata({

@@ -6,7 +6,7 @@ import { CheckboxExample } from './checkbox-example.component';
 const meta: Meta<CheckboxExample> = {
   component: CheckboxExample,
   argTypes: {},
-  title: 'Components/Selection controls/Checkbox/Reactive Form',
+  title: 'Components/Selection controls/Checkbox',
   decorators: [
     moduleMetadata({
       imports: [CommonModule, MasCheckboxModule, ReactiveFormsModule, MasCheckboxModule],

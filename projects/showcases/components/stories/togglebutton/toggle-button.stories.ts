@@ -4,7 +4,7 @@ import { MasToggleButton, ToggleButtonEvent } from 'projects/components/src/lib/
 import { MasToggleButtonModule } from 'projects/components/src/lib/togglebutton/toggle-button.module';
 const meta: Meta<MasToggleButton> = {
   component: MasToggleButton,
-  tags: ['autodocs'],
+  // tags: ['autodocs'],
   title: 'Components/Selection controls/Toggle Button',
   decorators: [
     moduleMetadata({

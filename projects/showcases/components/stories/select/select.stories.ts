@@ -6,7 +6,7 @@ import { MasSelectModule, MasSelect } from 'projects/components/src/public-api';
 const meta: Meta<MasSelect> = {
   component: MasSelect,
   title: 'Components/Forms/Select',
-  tags: ['autodocs'],
+  // tags: ['autodocs'],
   decorators: [
     moduleMetadata({
       imports: [CommonModule, MasErrorModule, MasHelperModule, MasLabelModule, MasSelectModule],
@@ -14,7 +14,7 @@ const meta: Meta<MasSelect> = {
   ],
   parameters: {
     componentSubtitle:
-      'Selects are intended for selecting options from a reduced list. The list must contain a minimum of 3 items. It is a component that allows the user to input data and provide context for their choices or journey.',
+      '',
     docs: {
       description: {
         component: ` 

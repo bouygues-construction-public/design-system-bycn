@@ -6,7 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MasErrorModule, MasHelperModule, MasLabelModule } from 'projects/components/src/lib/sub-elements';
 const meta: Meta<TextInputExample> = {
   component: TextInputExample,
-  title: 'Components/Forms/Text input/Reactive Form',
+  title: 'Components/Forms/Text input',
   decorators: [
     moduleMetadata({
       declarations: [TextInputExample],

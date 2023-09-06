@@ -7,7 +7,7 @@
   [ngClass]="{ 'mas-select_listbox--opened': panelOpen }"
 >
   <ng-container *ngSwitchCase="true">
-    <i class="mas-warningcircle-outlined mas-icon"></i>
+    <i class="mas-warning-circle-outlined mas-icon mas-security-and-warnings--outlined"></i>
     <span class="mas-select_placeholder mas-select-min-line" [ngClass]="{ 'mas-select--filled': filled }">{{
       placeholder
     }}</span></ng-container
@@ -16,7 +16,7 @@
   <span class="mas-select_text mas-select-min-line" *ngSwitchCase="false" >
     {{ triggerValue }}
   </span>
-  <i class="mas-caretdown-outlined mas-icon"></i>
+  <i class="mas-caret-down-outlined mas-icon mas-arrows--outlined"></i>
 </div>
 <!-- ! listbox -->
 <ng-template [ngIf]="panelOpen && !disabled">
