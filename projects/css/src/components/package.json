@@ -20,7 +20,7 @@
     },
     "scripts": {
         "build": "npm run build:css",
-        "build:css": "postcss ./index.css -o dist/index.css"
+        "build:css": "postcss ./index.css -o dist/index.css --use postcss-import"
     },
     "publishConfig": {
         "access": "public"

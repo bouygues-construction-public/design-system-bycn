@@ -3,7 +3,7 @@
   <img
     width="300px"
     src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/2539ca31ff4f12b26ccf4d131fc19e16.png"
-    alt="Vitamin Decathlon Design System logo" />
+    alt="Bouygues Construction Design System logo" />
 </p>
 
 <h1 align="center">Bouygues Construction IT - </h1>

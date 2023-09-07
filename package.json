@@ -21,7 +21,7 @@
     "format:check": "prettier --check \"**/*.{js,ts,d.ts}\"",
     "test": "ng test",
     "lint": "ng lint",
-    "build:chromatic": "npx chromatic"
+    "chromatic": "npx chromatic --project-token chpt_4175ab076232461 -d dist/showcases-components"
   },
   "engines": {
     "node": "^16.20.0",
@@ -90,6 +90,7 @@
       "projects/css/presets/tailwind/*",
       "projects/css/src/design_tokens",
       "projects/css/src/components/*",
+      "projects/css/src/components",
       "projects/components",
       "projects/icons"
     ]
@@ -98,5 +99,7 @@
     "gitUsername": "Dang Khoa - BYCN IT VN",
     "gitEmail": "k.vudang@bouygues-construction.com",
     "commitMessage": "chore: deploy storybook"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "design-system-bycn@0.0.0"
 }
