@@ -20,7 +20,8 @@
     "format": "prettier --write \"**/*.{js,ts,d.ts}\"",
     "format:check": "prettier --check \"**/*.{js,ts,d.ts}\"",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "build:chromatic": "npx chromatic"
   },
   "engines": {
     "node": "^16.20.0",
@@ -66,8 +67,8 @@
     "@types/jasmine": "~4.3.0",
     "@typescript-eslint/eslint-plugin": "5.48.2",
     "@typescript-eslint/parser": "5.48.2",
-    "chromatic": "^6.21.0",
     "@whitespace/storybook-addon-html": "^5.1.6",
+    "chromatic": "^6.24.1",
     "css-loader": "^6.8.1",
     "eslint": "^8.33.0",
     "eslint-plugin-storybook": "^0.6.12",

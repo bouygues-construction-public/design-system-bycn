@@ -1,0 +1,57 @@
+import { Meta , Canvas, Controls, Story,Preview, of} from '@storybook/addon-docs/blocks';
+import { MasChip } from 'projects/components/src/lib/chip/chip.component';
+import * as ChipStories from './chip.stories';
+ 
+<Meta of={ChipStories} />
+
+# MasChip
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
+
+## Overview
+
+`MasChip` can display data or be used for short action
+
+<Canvas> 
+  <Story of={ChipStories.Default} />  
+</Canvas>
+
+## Props
+
+<Controls />
+
+## Usage
+Chips are used to fill in data when a user gives queries, or act as a filter to interact with content. They can be exclusive or complementary.
+
+
+
+## Variants
+
+### Chip with Image
+The component can contain image on left
+
+<Canvas>  
+  <Story of={ChipStories.Image} />          
+</Canvas>
+
+
+### Chip with Icons
+The component can contain icons whose placement depends on the context of use
+
+<Canvas>  
+  <Story of={ChipStories.leadingIcon} />     
+  <Story of={ChipStories.actionIcon} />    
+  <Story of={ChipStories.LeadingAndActionIcon} />      
+</Canvas>
+
+## Guidelines
+
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/779f6f-chips/b/964f27)
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

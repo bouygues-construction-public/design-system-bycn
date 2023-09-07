@@ -1,0 +1,107 @@
+import { Meta, Story, Preview, Props, Description, Canvas } from '@storybook/addon-docs/blocks'; 
+
+<Meta title="Components / Selection controls / Chip" />
+
+# Chip
+
+`Chips` can display data or be used for short action
+
+## Usage
+Chips are used to fill in data when a user gives queries, or act as a filter to interact with content. They can be exclusive or complementary.
+
+For more details, see our [Chip guideline](https://zeroheight.com/9b39bb2a0/p/779f6f-chips/b/964f27)
+
+
+
+## Default
+<Canvas> 
+    <div class="chip">
+      <div class="chip-label">Default</div>
+    </div>
+</Canvas> 
+ 
+CSS styles for `Chip` component:
+
+```css
+/* Chip styles */
+.chip {
+  /* chip styles here */
+}
+.chip-label {
+  /* chip-label styles here */
+}
+```
+
+## Filter Chip
+<Canvas> 
+    <div class="filter-chip selected">
+      <div class="left-content"><i class="mas-icon mas-checked"></i></div>
+      <div class="chip-label">Filter Chip</div>
+    </div>
+</Canvas> 
+ 
+CSS styles :
+
+```css
+/* Chip styles */
+.filter-chip {
+  /* filter-chip styles here */
+}
+.chip-label {
+  /* chip-label styles here */
+}
+```
+
+## Chip with Image
+
+<Canvas> 
+    <div class="chip has-left-img">
+      <div class="left-content">
+        <img class="chip-image" src="/assets/img/chip-img.png"/>
+      </div>
+      <div class="chip-label">Input chip</div>
+    </div>
+</Canvas>
+
+CSS styles :
+
+```css
+/* Chip styles whene has image */
+.has-left-img {
+  /* styles here */
+}
+.chip-image {
+  /* styles here */
+}
+```
+
+## Chip with icons
+
+<Canvas> 
+    <div class="chip has-left-icon">
+      <div class="left-content">
+        <i class="mas-check-outlined mas-icon mas-system-and-device--outlined"></i>
+      </div>
+      <div class="chip-label">
+        Input chip
+      </div>
+      <div class="right-content">
+        <i class="mas-icon mas-math-and-finance--outlined mas-x-outlined right"></i>
+      </div>
+    </div>
+</Canvas>
+
+CSS styles :
+
+```css
+/* Chip styles whene has Icons */
+.has-left-icon {
+  /* styles here */
+}
+.left-content {
+  /* styles here */
+}
+.right-content {
+  /* styles here */
+}
+```

@@ -1,5 +1,16 @@
-import { Meta, Title, Subtitle, Description, Primary, Controls, Stories, Story, Toc } from '@storybook/blocks';
-
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+  Toc,
+  Canvas,
+  of,
+} from '@storybook/blocks';
 import { MasTextInput } from 'projects/components/src/lib/text-input/text-input.component';
 import * as TextInputStories from './text-input.stories';
 
@@ -39,9 +50,48 @@ Text inputs enable users to share query that can't be anticipated.
 
 ## Variants
 
-{/* TODO: Define component variants that can be used by other developers */}
+### Overview
 
-<Stories />
+`mas-text-input can be used with sub-elements: `mas-label`, `mas-error`, `mas-helper`.\
+
+<Canvas>
+  <Story of={TextInputStories.Overview} />
+</Canvas>
+
+### Status
+
+Use `mas-error` to display error message.
+
+<Canvas>
+  <Story of={TextInputStories.Basic} />
+  <Story of={TextInputStories.Error} />
+  <Story of={TextInputStories.Disabled} />
+</Canvas>
+
+### Helper text
+
+If required, an helper text can be displayed with `mas-helper` component.
+
+<Canvas>
+  <Story of={TextInputStories.Basic} />
+  <Story of={TextInputStories.HelperText} />
+</Canvas>
+
+### Size
+
+The text input has two sizes available: `small` and `medium`. The `small` size is used by default.
+
+<Canvas>
+  <Story of={TextInputStories.Size} />
+</Canvas>
+
+### Type
+
+The input field can show a Leading icon to indicate the type of data and an Trailing icon for a status or a small action.
+
+<Canvas>
+  <Story of={TextInputStories.Type} />
+</Canvas>
 
 ## Guidelines
 

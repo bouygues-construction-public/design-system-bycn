@@ -40,7 +40,7 @@ export const Indeterminate: Story = {
     identifier: '1',
     disabled: false,
     indeterminate: true,
-    size: 'L',
+    size: 'S',
     checked: true,
   },
   argTypes: {
@@ -67,16 +67,35 @@ export const Indeterminate: Story = {
     },
   },
 };
+export const Determinate: Story = {
+  args: {
+    labelText: 'Determinate checkbox',
+    identifier: '1',
+    disabled: false,
+    indeterminate: false,
+    size: 'S',
+    checked: true,
+  },
+};
+export const Size: Story = {
+  render: (args: MasCheckbox) => ({
+    template: `
+      <mas-checkbox labelText="Small size" size="S"></mas-checkbox>
+      <br>
+      <mas-checkbox labelText="Large size" size="L"></mas-checkbox>
+      `,
+  }),
+}
 export const Overview: Story = {
   render: (args: MasCheckbox) => ({
-      template: `
+    template: `
       <mas-checkbox labelText="Sand"></mas-checkbox>
       <mas-checkbox labelText="Bricks" [checked]="true"></mas-checkbox>
       <mas-checkbox labelText="Stone and Rock" [disabled]=true [checked]="true"></mas-checkbox>
       <mas-checkbox labelText="Wood and timber" [disabled]="true"></mas-checkbox>
       <br>
       <mas-checkbox labelText="I accept the term and conditions of BYCN" size="L"></mas-checkbox>
-      `
+      `,
   }),
   args: {
     labelText: 'Overview checkbox',

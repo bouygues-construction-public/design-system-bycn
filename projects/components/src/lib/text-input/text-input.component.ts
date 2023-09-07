@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
+import '@masoni/css-text-input/dist/index.css';
 import '@masoni/icons/dist/css/filled/index.css';
 import '@masoni/icons/dist/css/outlined/index.css';
 import {

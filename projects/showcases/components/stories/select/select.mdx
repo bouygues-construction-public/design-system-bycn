@@ -1,4 +1,16 @@
-import { Meta, Title, Subtitle, Description, Primary, Controls, Stories, Story, Toc } from '@storybook/blocks';
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+  Toc,
+  Canvas,
+  of,
+} from '@storybook/blocks';
 
 import { MasSelect } from 'projects/components/src/lib/select/select.component';
 import * as SelectStories from './select.stories';
@@ -33,7 +45,47 @@ Selects are intended for selecting options from a reduced list. The list must co
 
 {/* TODO: Define component variants that can be used by other developers */}
 
-<Stories />
+### Overview
+
+`mas-select` can be used with sub-elements: `mas-label`, `mas-error`, `mas-helper`.\
+Select's options is nested inside `mas-select` component.
+
+<Canvas>
+  <Story of={SelectStories.Overview} />
+</Canvas>
+
+### Status
+
+Use `mas-error` to display error message.
+
+<Canvas>
+  <Story of={SelectStories.Basic} />
+  <Story of={SelectStories.Error} />
+  <Story of={SelectStories.Disabled} />
+</Canvas>
+
+### Helper text
+
+If required, an helper text can be displayed with `mas-helper` component.
+
+<Canvas>
+  <Story of={SelectStories.HelperText} />
+  <Story of={SelectStories.Basic} />
+</Canvas>
+
+### Size
+
+The select has two sizes available: `small` and `medium`. The `small` size is used by default.
+
+<Canvas>
+  <Story of={SelectStories.Size} />
+</Canvas>
+
+### Filled
+
+<Canvas>
+  <Story of={SelectStories.Filled} />
+</Canvas>
 
 ## Guidelines
 

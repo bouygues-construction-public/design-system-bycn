@@ -1,4 +1,4 @@
-import { Meta, Title, Subtitle, Description, Primary, Controls, Stories, Story, Toc } from '@storybook/blocks';
+import { Meta, Title, Subtitle, Description, Primary, Controls, Stories, Story, Canvas, Toc } from '@storybook/blocks';
 
 {/* TODO: import Component and Component's stories */}
 
@@ -36,7 +36,21 @@ Radio buttons are intended for selecting one option among mutually exclusive cho
 
 {/* TODO: Define component variants that can be used by other developers */}
 
-<Stories />
+### Overview
+
+When using list of `mas-radio-button`s, they have to be grap inside a `mas-radio-group` to manage.
+
+<Canvas>
+  <Story of={RadioButtonStories.Overview} />
+</Canvas>
+
+### Size
+
+The Radio Button has two sizes available: `small` and `large`. The `small` size is used by default.
+
+<Canvas>
+  <Story of={RadioButtonStories.Size} />
+</Canvas>
 
 ## Guidelines
 

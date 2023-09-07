@@ -27,8 +27,8 @@ const meta: Meta<MasTextInput> = {
     template: `
     <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
     <mas-text-input [type]="type" [required]="required" [disabled]="disabled" [placeholder]="placeholder" [size]="size" [filled]="filled">
-    <mas-error >Set your error message here...</mas-error>
-    <mas-helper >Helper text goes here</mas-helper>
+      <mas-error >Set your error message here...</mas-error>
+      <mas-helper >Helper text goes here</mas-helper>
     </mas-text-input>
     `,
     props: {
@@ -62,7 +62,7 @@ const meta: Meta<MasTextInput> = {
 export default meta;
 type Story = StoryObj<MasTextInput>;
 
-export const Overview: Story = {
+export const Basic: Story = {
   args: {
     placeholder: 'Placeholder text',
     disabled: false,
@@ -73,21 +73,77 @@ export const Overview: Story = {
   },
 };
 
+export const Overview: Story = {
+  render: (args: MasTextInput) => ({
+    template: `
+    <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
+    <mas-text-input [type]="type" [required]="required" [disabled]="disabled" [placeholder]="placeholder" [size]="size" [filled]="filled">
+      <mas-error >Set your error message here...</mas-error>
+      <mas-helper >Helper text goes here</mas-helper>
+    </mas-text-input>
+    `,
+  }),
+};
 export const Error: Story = {
   render: (args: MasTextInput) => ({
     template: `
     <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
     <mas-text-input size="S" [filled]="false" [invalid]="true">
     <mas-error >Set your error message here...</mas-error>
+    </mas-text-input>
+    `,
+  }),
+};
+export const HelperText: Story = {
+  render: (args: MasTextInput) => ({
+    template: `
+    <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
+    <mas-text-input size="S" [filled]="false" [invalid]="false">
     <mas-helper >Helper text goes here</mas-helper>
     </mas-text-input>
+    `,
+  }),
+};
+export const Size: Story = {
+  render: (args: MasTextInput) => ({
+    template: `
+    <mas-label [optional]="true" [infoIcon]="true">Small Text Input</mas-label>
+    <mas-text-input size="S" [filled]="false" [invalid]="false">
+    </mas-text-input>
+    <br>
+    <mas-label [optional]="true" [infoIcon]="true">Large Text Input</mas-label>
+    <mas-text-input size="L" [filled]="false" [invalid]="false">
+    </mas-text-input>
+    `,
+  }),
+};
+export const Type: Story = {
+  render: (args: MasTextInput) => ({
+    template: `
+    <br>
+      <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
+        <mas-text-input size="S" [filled]="false" type="text">
+      </mas-text-input>
+    <br>
+      <mas-label [optional]="false" [infoIcon]="true">Telephone number</mas-label>
+        <mas-text-input size="S" [filled]="false" type="tel">
+      </mas-text-input>
+    <br>
+      <mas-label [optional]="true" [infoIcon]="true">Password</mas-label>
+        <mas-text-input size="S" [filled]="false" type="password">
+      </mas-text-input>
+    <br>
+      <mas-label [optional]="true" [infoIcon]="true">Email</mas-label>
+      <mas-text-input size="S" [filled]="false" type="email"></mas-text-input>
+    <br>
+    <mas-text-input size="S" [filled]="false" type="search" placeholder="Search.."></mas-text-input>
     `,
   }),
 };
 export const Disabled: Story = {
   render: (args: MasTextInput) => ({
     template: `
-    <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
+    <mas-label>Disabled State</mas-label>
     <mas-text-input [disabled]="true" placeholder="Placeholder text" [filled]="false">
     <mas-error >Set your error message here...</mas-error>
     <mas-helper >Helper text goes here</mas-helper>

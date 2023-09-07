@@ -32,11 +32,12 @@ const meta: Meta<MasToggleButton> = {
 export default meta;
 type Story = StoryObj<MasToggleButton>;
 
-export const Overview: Story = {
+export const Basic: Story = {
   args: {
     identifier: 'my-toggle-button',
     size: 'S',
     disabled: false,
+    checked: false
   },
   argTypes: {
     identifier: {
@@ -50,6 +51,7 @@ export const Overview: Story = {
       control: 'radio',
       options: ['S', 'L'],
     },
+    checked: { control: 'boolean', description: 'Whether the toggle button is checked.' },
     onChange: { action: 'change' },
   },
 };
@@ -57,13 +59,36 @@ export const Disabled: Story = {
   args: {
     disabled: true,
   },
-}
+};
 export const Size: Story = {
   render: (args: MasToggleButton) => ({
     template: `
     <mas-toggle-button labelText="toggle button" size="S"></mas-toggle-button>
     <br>
     <mas-toggle-button labelText="toggle button" size="L"></mas-toggle-button>
-    `
-  })
-}
+    `,
+  }),
+};
+export const Overview: Story = {
+  render: (args: MasToggleButton) => ({
+    template: `
+    <div >
+      <label style="display: flex; align-items: center"><mas-toggle-button labelText="toggle button" size="S">
+        </mas-toggle-button> <span style="margin-left: 10px">Quality</span>
+      </label>
+
+      <label style="display: flex; align-items: center"><mas-toggle-button labelText="toggle button" size="S" [disabled]="true" [checked]="true">
+        </mas-toggle-button> <span style="margin-left: 10px">Relational</span>
+      </label>
+
+      <label style="display: flex; align-items: center"><mas-toggle-button labelText="toggle button" size="S" [checked]="true">
+        </mas-toggle-button> <span style="margin-left: 10px">Security</span>
+      </label>
+
+      <label style="display: flex; align-items: center"><mas-toggle-button labelText="toggle button" size="S">
+        </mas-toggle-button> <span style="margin-left: 10px" class="ml-10">Technicality</span>
+      </label>
+    <div>
+    `,
+  }),
+};

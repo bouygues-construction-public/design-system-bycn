@@ -1,4 +1,16 @@
-import { Meta, Title, Subtitle, Description, Primary, Controls, Stories, Story, Toc } from '@storybook/blocks';
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+  Toc,
+  Canvas,
+  of,
+} from '@storybook/blocks';
 
 import { MasToggleButton } from 'projects/components/src/lib/togglebutton/toggle-button.component';
 import * as ToggleButtonStories from './toggle-button.stories';
@@ -31,13 +43,24 @@ import * as ToggleButtonStories from './toggle-button.stories';
 - Toggle buttons are recommended for activating or deactivating boolean options which allow to have an immediate effect for the user.
 
 ### When not to use
+
 - As boolean options with immediate effect, toggle buttons are not necessarily suitable for all cases
 
 ## Variants
 
-{/* TODO: Define component variants that can be used by other developers */}
+### Overview
 
-<Stories />
+<Canvas>
+  <Story of={ToggleButtonStories.Overview} />
+</Canvas>
+
+### Size
+
+The toggle button has two sizes available: `small` and `large`. The `small` size is used by default in the majority of cases.
+
+<Canvas>
+  <Story of={ToggleButtonStories.Size} />
+</Canvas>
 
 ## Guidelines
 

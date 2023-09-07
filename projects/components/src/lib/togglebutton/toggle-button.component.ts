@@ -30,8 +30,8 @@ export class MasToggleButton implements OnInit, ControlValueAccessor {
 
   @Input()
   set checked(value: boolean) {
-    if (this.checked !== value) {
-      this.checked = value;
+    if (this._checked !== value) {
+      this._checked = value;
     }
     this.cd.markForCheck();
   }
