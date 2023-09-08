@@ -40,4 +40,6 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+**/dist
+**/node_modules
 /docs/main/showcases-css/favicon.svg
