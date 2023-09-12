@@ -1,5 +1,5 @@
 <ng-content select="mas-label"></ng-content>
-<div class="mas-text-input_input-wrapper">
+<div class="mas-text-input_input-wrapper" [ngClass]="{'mas-text-input--focus': focused}">
   <i *ngIf="leadingIcon !== 'none'" class="{{ leadingIcon }} mas-icon mas-leading-icon"></i>
   <input
     #textinput
@@ -11,6 +11,8 @@
     [formControl]="input"
     [value]="value"
     (change)="onChange($event)"
+    (focus)="_focusChanged(true)"
+    (blur)="_focusChanged(false)"
   />
   <i
     *ngIf="trailingIcon !== 'none'"

@@ -29,6 +29,12 @@ import {
   },
 })
 export class MasTextInput implements OnInit, ControlValueAccessor, AfterViewInit {
+  focused: boolean = false;
+  _focusChanged(isFocused: boolean) {
+    if (isFocused !== this.focused) {
+      this.focused = isFocused;
+    }
+  }
   static textInputCount = 0;
   @Input() identifier: string = `text-input-${MasTextInput.textInputCount++}`;
   @Input()
