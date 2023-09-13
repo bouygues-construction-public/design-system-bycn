@@ -30,8 +30,8 @@ export class MasToggleButton implements OnInit, ControlValueAccessor {
 
   @Input()
   set checked(value: boolean) {
-    if (this.checked !== value) {
-      this.checked = value;
+    if (this._checked !== value) {
+      this._checked = value;
     }
     this.cd.markForCheck();
   }
@@ -43,13 +43,15 @@ export class MasToggleButton implements OnInit, ControlValueAccessor {
   @Input() size: 'S' | 'L' = 'S';
   @Input()
   set disabled(value: boolean) {
-    this._disabled = value;
+    if (value !== null) {
+      this._disabled = value;
+    }
   }
   get disabled(): boolean {
     return this._disabled;
   }
   @Output() change: EventEmitter<ToggleButtonEvent> = new EventEmitter<ToggleButtonEvent>();
-  @ViewChild('tbutton') inputViewChild!: ElementRef;
+  @ViewChild('toggleButton') inputViewChild!: ElementRef;
   model: any;
   onModelChange: Function = () => {};
   onModelTouched: Function = () => {};
