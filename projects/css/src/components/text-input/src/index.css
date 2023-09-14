@@ -50,11 +50,11 @@
   user-select: none;
   color: var(--mas-semantic-color_text-tiertiary);
 }
-/* hover */
+/* ! hover */
 :not(.mas-text-input--disabled) > .mas-text-input_input-wrapper:hover {
   box-shadow: 0 0 0 1px var(--mas-semantic-color_action-tiertiary--default);
 }
-:not(.mas-text-input--disabled) > .mas-text-input_input-wrapper:active {
+:not(.mas-text-input--disabled) > .mas-text-input_input-wrapper:hover {
   box-shadow: 0 0 0 1px var(--mas-semantic-color_action-primary--default), 0 0 0 4px hsla(200, 100%, 42%, 0.16);
 }
 /* ! invalid */
@@ -90,6 +90,10 @@
 /* ! Filled */
 .mas-text-input--filled input::placeholder {
   color: var(--mas-semantic-color_text-primary);
+}
+/* ! Focus */
+.mas-text-input--focus {
+  box-shadow: 0 0 0 1px var(--mas-semantic-color_action-primary--default), 0 0 0 4px hsla(200, 100%, 42%, 0.16);
 }
 
 .mas-text-input input:-webkit-autofill,

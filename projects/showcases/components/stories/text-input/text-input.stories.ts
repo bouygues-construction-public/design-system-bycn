@@ -77,7 +77,7 @@ export const Overview: Story = {
   render: (args: MasTextInput) => ({
     template: `
     <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
-    <mas-text-input [type]="type" [required]="required" [disabled]="disabled" [placeholder]="placeholder" [size]="size" [filled]="filled">
+    <mas-text-input [type]="type" [required]="required" [disabled]="disabled" placeholder="Placeholder text" [size]="size" [filled]="filled">
       <mas-error >Set your error message here...</mas-error>
       <mas-helper >Helper text goes here</mas-helper>
     </mas-text-input>
@@ -112,7 +112,7 @@ export const Size: Story = {
     </mas-text-input>
     <br>
     <mas-label [optional]="true" [infoIcon]="true">Large Text Input</mas-label>
-    <mas-text-input size="L" [filled]="false" [invalid]="false">
+    <mas-text-input size="M" [filled]="false" [invalid]="false">
     </mas-text-input>
     `,
   }),
