@@ -1,0 +1,102 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+  Toc,
+  Canvas,
+  of,
+} from '@storybook/blocks';
+import { MasTextInput } from 'projects/components/src/lib/text-input/text-input.component';
+import * as TextInputStories from './text-input.stories';
+
+<Meta of={TextInputStories} />
+
+<Title />
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
+
+## Overview
+
+Text inputs enable users to share query that can't be anticipated.
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Usage
+
+### When to use
+
+- A text field allow the user to enter a small amount of text.
+- It can be used alone or in a group of input fields to compose a form.
+- There are several types of data that have different behaviors, such as date, password, email address, etc.
+
+### When not to use
+
+- There isn't really a case of non-usage, but there are some best practices, particularly regarding minimizing the available item list.
+- Text inputs shouldn't be confused with other input components such as selects, search bars and text area.
+
+## Variants
+
+### Overview
+
+`mas-text-input can be used with sub-elements: `mas-label`, `mas-error`, `mas-helper`.\
+
+<Canvas>
+  <Story of={TextInputStories.Overview} />
+</Canvas>
+
+### Status
+
+Use `mas-error` to display error message.
+
+<Canvas>
+  <Story of={TextInputStories.Basic} />
+  <Story of={TextInputStories.Error} />
+  <Story of={TextInputStories.Disabled} />
+</Canvas>
+
+### Helper text
+
+If required, an helper text can be displayed with `mas-helper` component.
+
+<Canvas>
+  <Story of={TextInputStories.Basic} />
+  <Story of={TextInputStories.HelperText} />
+</Canvas>
+
+### Size
+
+The text input has two sizes available: `small` and `medium`. The `small` size is used by default.
+
+<Canvas>
+  <Story of={TextInputStories.Size} />
+</Canvas>
+
+### Type
+
+The input field can show a Leading icon to indicate the type of data and an Trailing icon for a status or a small action.
+
+<Canvas>
+  <Story of={TextInputStories.Type} />
+</Canvas>
+
+## Guidelines
+
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/42baf6-text-input/b/964f27)
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
