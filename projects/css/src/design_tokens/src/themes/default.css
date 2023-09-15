@@ -97,4 +97,10 @@
   --mas-semantic-color_text-blue: var(--mas-primitive-color_blue700);
   --mas-semantic-color_text-purple: var(--mas-primitive-color_purple600);
   --mas-semantic-color_text-red: var(--mas-primitive-color_red700);
+  /* State */
+  --mas-semantic-success--default: #6c931a;
+  --mas-semantic-alert--default: #D21E3C;
+  --mas-semantic-warning--default: #C78100;
+  --mas-semantic-primary--default: #007AB7;
+  --mas-semantic-brand--default: #C74D10;
 }

@@ -1,0 +1,41 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+.mas-badge {
+
+}
+
+/* ! Size */
+.mas-badge--small {
+    
+}
+
+.mas-badge--medium {
+
+}
+
+.mas-badge--large {
+
+}
+
+/* ! Color */
+.mas-badge-color--success {
+    background-color: var(--mas-semantic-success--default);
+}
+.mas-badge-color--warning {
+    background-color: var(--mas-semantic-warning--default);
+}
+.mas-badge-color--alert {
+    background-color: var(--mas-semantic-alert--default);
+}
+.mas-badge-color--primary {
+    background-color: var(--mas-semantic-primary--default);
+}
+.mas-badge-color--brand {
+    background-color: var(--mas-semantic-brand--default);
+}
+
+/* ! icon */
+.mas-badge--with-icon {
+
+}
+
