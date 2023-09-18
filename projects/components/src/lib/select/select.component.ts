@@ -135,7 +135,6 @@ import {
     }
     focus() {}
     onChange(event: any) {
-      console.log("abc")
       this.onChangeHandler(event.target.value);
       this.change.emit();
     }

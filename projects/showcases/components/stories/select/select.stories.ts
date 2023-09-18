@@ -6,7 +6,7 @@ import { MasSelectModule, MasSelect } from 'projects/components/src/public-api';
 const meta: Meta<MasSelect> = {
   component: MasSelect,
   title: 'Components/Forms/Select',
-  tags: ['autodocs'],
+  // tags: ['autodocs'],
   decorators: [
     moduleMetadata({
       imports: [CommonModule, MasErrorModule, MasHelperModule, MasLabelModule, MasSelectModule],
@@ -14,7 +14,7 @@ const meta: Meta<MasSelect> = {
   ],
   parameters: {
     componentSubtitle:
-      'Selects are intended for selecting options from a reduced list. The list must contain a minimum of 3 items. It is a component that allows the user to input data and provide context for their choices or journey.',
+      '',
     docs: {
       description: {
         component: ` 
@@ -34,8 +34,7 @@ const meta: Meta<MasSelect> = {
       <mas-option value="option2">Option 2</mas-option>
       <mas-option value="option3">Option 3</mas-option>
     </mas-select>
-    <mas-error *ngIf="invalid">Something went wrong</mas-error>
-    <mas-helper *ngIf="!invalid">Helper text here...</mas-helper>
+    <br>
     `,
   }),
   argTypes: {
@@ -60,7 +59,7 @@ export default meta;
 type Story = StoryObj<MasSelect>;
 
 // More on writing stories with args: https://storybook.js.org/docs/angular/writing-stories/args
-export const Overview: Story = {
+export const Basic: Story = {
   args: {
     invalid: false,
     disabled: false,
@@ -69,11 +68,25 @@ export const Overview: Story = {
     size: 'S',
   },
 };
+export const Overview: Story = {
+  render: (args: MasSelect) => ({
+    template: `
+    <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
+    <mas-select placeholder="Placeholder text" [size]="size" [filled]="false" [disabled]="false">
+      <mas-option value="option1">Option 1</mas-option>
+      <mas-option value="option2">Option 2</mas-option>
+      <mas-option value="option3">Option 3</mas-option>
+    </mas-select>
+    <mas-error *ngIf="false">Something went wrong</mas-error>
+    <mas-helper *ngIf="true">Helper text here...</mas-helper>
+    `,
+  }),
+};
 
 export const Error: Story = {
   render: (args: MasSelect) => ({
     template: `
-    <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
+    <mas-label [optional]="true" [infoIcon]="true">With Error Message</mas-label>
     <mas-select placeholder="Placeholder text" [size]="size" [filled]="false" [invalid]="true">
       <mas-option value="option1">Option 1</mas-option>
       <mas-option value="option2">Option 2</mas-option>
@@ -83,17 +96,50 @@ export const Error: Story = {
     `,
   }),
 }
+export const HelperText: Story = {
+  render: (args: MasSelect) => ({
+    template: `
+    <mas-label [optional]="true" [infoIcon]="true">With Helper Text</mas-label>
+    <mas-select placeholder="Placeholder text" [size]="size" [filled]="false">
+      <mas-option value="option_1">Option 1</mas-option>
+      <mas-option value="option_2">Option 2</mas-option>
+      <mas-option value="option_3">Option 3</mas-option>
+    </mas-select>
+    <mas-helper *ngIf="true">Helper text here...</mas-helper>
+
+    `,
+  }),
+}
+
 export const Disabled: Story = {
   render: (args: MasSelect) => ({
     template: `
-    <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
+    <mas-label>Disabled State</mas-label>
     <mas-select placeholder="Placeholder text" [size]="size" [filled]="false" [disabled]="true">
+      <mas-option value="option_1">Option 1</mas-option>
+      <mas-option value="option_2">Option 2</mas-option>
+      <mas-option value="option_3">Option 3</mas-option>
+    </mas-select>
+    <mas-helper *ngIf="true">Helper text here...</mas-helper>
+    `,
+  }),
+}
+export const Size: Story = {
+  render: (args: MasSelect) => ({
+    template: `
+    <mas-label [optional]="true" [infoIcon]="true">Small select</mas-label>
+    <mas-select placeholder="Placeholder text" size="S" [filled]="false" [disabled]="false">
       <mas-option value="option1">Option 1</mas-option>
       <mas-option value="option2">Option 2</mas-option>
       <mas-option value="option3">Option 3</mas-option>
     </mas-select>
-    <mas-error *ngIf="false">Something went wrong</mas-error>
-    <mas-helper *ngIf="true">Helper text here...</mas-helper>
+    <br>
+    <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
+    <mas-select placeholder="Placeholder text" size="M" [filled]="false" [disabled]="false">
+      <mas-option value="option1">Option 1</mas-option>
+      <mas-option value="option2">Option 2</mas-option>
+      <mas-option value="option3">Option 3</mas-option>
+    </mas-select>
     `,
   }),
 }
