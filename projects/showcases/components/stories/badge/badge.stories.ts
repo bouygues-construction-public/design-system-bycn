@@ -1,6 +1,7 @@
 import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
 import { CommonModule } from '@angular/common';
 import { MasBadgeModule, MasBadge } from 'projects/components/src/public-api';
+import '@masoni/icons/dist/css/filled/time.css';
 
 const meta: Meta<MasBadge> = {
   component: MasBadge,
@@ -35,7 +36,9 @@ type Story = StoryObj<MasBadge>;
 export const Overview: Story = {
   args: {
     size: 'M',
-    number: 10,
-    type: 'number'
+    number: 1,
+    type: 'number',
+    color: 'primary',
+    icon: 'mas-hourglass-low-filled mas-time--filled'
   },
 };

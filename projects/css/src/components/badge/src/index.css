@@ -1,41 +1,97 @@
 @import '@masoni/css-design-tokens/dist/index.css';
 
 .mas-badge {
-
+  font-family: var(--mas-typo_font-family--inter);
+  font-size: var(--mas-typo_caption-font-size);
+  font-style: normal;
+  font-weight: var(--mas-typo_caption-font-weight);
+  line-height: var(--mas-typo_caption-line-height);
+  display: inline-flex;
+  block-size: 18px;
+  min-inline-size: 18px;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--mas-radius_full);
+  background-color: var(--mas-semantic-primary--default);
+  color: var(--mas-semantic-color_text-reverse);
+  box-shadow: inset 0 0 0 1px var(--mas-semantic-primary--default);
+  padding-block: 0;
+  padding-inline: 6px;
+}
+.mas-badge:empty {
+  min-inline-size: 8px;
+  block-size: 8px;
+  padding: 0;
 }
 
 /* ! Size */
 .mas-badge--small {
-    
+  display: inline-block;
+  block-size: 16px;
+  font-size: 16px !important;
 }
 
 .mas-badge--medium {
-
+  display: inline-block;
+  block-size: 24px;
+  font-size: 24px !important;
 }
 
 .mas-badge--large {
-
+  display: inline-block;
+  block-size: 32px;
+  font-size: 32px !important;
 }
 
 /* ! Color */
 .mas-badge-color--success {
-    background-color: var(--mas-semantic-success--default);
+  background-color: var(--mas-semantic-success--default);
 }
 .mas-badge-color--warning {
-    background-color: var(--mas-semantic-warning--default);
+  background-color: var(--mas-semantic-warning--default);
+  box-shadow: none;
 }
 .mas-badge-color--alert {
-    background-color: var(--mas-semantic-alert--default);
+  background-color: var(--mas-semantic-alert--default);
+  box-shadow: none;
 }
 .mas-badge-color--primary {
-    background-color: var(--mas-semantic-primary--default);
+  background-color: var(--mas-semantic-primary--default);
 }
 .mas-badge-color--brand {
-    background-color: var(--mas-semantic-brand--default);
+  background-color: var(--mas-semantic-brand--default);
+  box-shadow: none;
 }
 
 /* ! icon */
 .mas-badge--with-icon {
+  display: inline-block;
+  position: relative;
 
+  & .mas-badge--small + .mas-badge-type--dot {
+    position: absolute;
+    top: 0;
+    left: 8px;
+  }
+  & .mas-badge--medium + .mas-badge-type--dot {
+    position: absolute;
+    top: 2px;
+    left: 16px;
+  }
+  & .mas-badge--large + .mas-badge-type--dot {
+    position: absolute;
+    top: 3px;
+    left: 21px;
+  }
+
+  & .mas-badge--medium +  .mas-badge-type--number {
+    position: absolute;
+    top: -6px;
+    left: 12px;
+  }
+  & .mas-badge--large +  .mas-badge-type--number {
+    position: absolute;
+    top: -2px;
+    left: 16px;
+  }
 }
-
