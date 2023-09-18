@@ -109,7 +109,7 @@ mas-option.mas-check-outlined {
 .mas.mas-option--selected:hover .mas-check-outlined {
   color: inherit;
 }
-:not(.mas-select--disabled) > .mas-select_value-wrapper:hover:not(.mas-select_listbox--opened) {
+:not(.mas-select--disabled, .mas-select--invalid, :active) > .mas-select_value-wrapper:hover:not(.mas-select_listbox--opened) {
   box-shadow: 0 0 0 1px var(--mas-semantic-color_action-tiertiary--default);
 }
 /* ! pressed (active) */
@@ -119,24 +119,23 @@ mas-option.mas-check-outlined {
 }
 
 :not(.mas-select--disabled) {
-  .mas-select_listbox--opened {
+  & > .mas-select_listbox--opened {
     box-shadow: 0 0 0 1px var(--mas-semantic-color_action-primary--default), 0 0 0 4px hsla(200, 100%, 42%, 0.16);
   }
-  .mas-select_value-wrapper:active {
+  & > .mas-select_value-wrapper:active {
     box-shadow: 0 0 0 1px var(--mas-semantic-color_action-primary--default), 0 0 0 4px hsla(200, 100%, 42%, 0.16);
   }
 }
 /* ! disabled */
 
 .mas-select--disabled {
-  cursor: not-allowed;
   opacity: 0.4;
 }
 /* ! invalid */
 .mas-select--invalid .mas-select_value-wrapper {
   box-shadow: 0 0 0 1px var(--mas-primitive-color_red600);
 }
-.mas-select--invalid .mas-select_value-wrapper:hover {
+.mas-select--invalid > .mas-select_value-wrapper:hover {
   box-shadow: 0 0 0 1px var(--mas-primitive-color_red600),
     0 0 0 4px
       hsla(
@@ -147,7 +146,7 @@ mas-option.mas-check-outlined {
       );
 }
 
-/* Size */
+/* ! Size */
 .mas-select--medium {
   font-family: var(--mas-typo_font-family--inter);
   font-weight: var(--mas-typo_body-font-weight);

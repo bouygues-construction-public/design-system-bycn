@@ -51,17 +51,24 @@
   color: var(--mas-semantic-color_text-tiertiary);
 }
 /* ! hover */
-:not(.mas-text-input--disabled) > .mas-text-input_input-wrapper:hover {
+:not(.mas-text-input--disabled, .mas-text-input--invalid) > .mas-text-input_input-wrapper:hover:not(.mas-text-input--focus ) {
   box-shadow: 0 0 0 1px var(--mas-semantic-color_action-tiertiary--default);
-}
-:not(.mas-text-input--disabled) > .mas-text-input_input-wrapper:hover {
-  box-shadow: 0 0 0 1px var(--mas-semantic-color_action-primary--default), 0 0 0 4px hsla(200, 100%, 42%, 0.16);
 }
 /* ! invalid */
 .mas-text-input--invalid .mas-text-input_input-wrapper {
   box-shadow: 0 0 0 1px var(--mas-primitive-color_red600);
 }
 .mas-text-input--invalid .mas-text-input_input-wrapper:hover {
+  box-shadow: 0 0 0 1px var(--mas-primitive-color_red600),
+    0 0 0 4px
+      hsla(
+        var(--mas-primitive-color_red500--h),
+        var(--mas-primitive-color_red500--s),
+        var(--mas-primitive-color_red500--l),
+        0.16
+      );
+}
+.mas-text-input--invalid .mas-text-input--focus {
   box-shadow: 0 0 0 1px var(--mas-primitive-color_red600),
     0 0 0 4px
       hsla(
