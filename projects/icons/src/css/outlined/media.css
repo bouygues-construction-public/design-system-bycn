@@ -1,0 +1,318 @@
+@font-face {
+    font-family: "media--outlined";
+    src: url("../../fonts/outlined/media/media.ttf?84f0791fdb6d5ee9f543126fa4951fe3") format("truetype"),
+url("../../fonts/outlined/media/media.woff?84f0791fdb6d5ee9f543126fa4951fe3") format("woff"),
+url("../../fonts/outlined/media/media.woff2?84f0791fdb6d5ee9f543126fa4951fe3") format("woff2");
+}
+
+i[class^="mas-media--outlined"]:before, i[class*=" mas-media--outlined"]:before {
+    font-family: media--outlined !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-airplay-outlined:before {
+    content: "\e7b2";
+}
+.mas-aperture-outlined:before {
+    content: "\e7b3";
+}
+.mas-article-medium-outlined:before {
+    content: "\e7b4";
+}
+.mas-article-ny-times-outlined:before {
+    content: "\e7b5";
+}
+.mas-article-outlined:before {
+    content: "\e7b6";
+}
+.mas-camera-outlined:before {
+    content: "\e7b7";
+}
+.mas-camera-plus-outlined:before {
+    content: "\e7b8";
+}
+.mas-camera-rotate-outlined:before {
+    content: "\e7b9";
+}
+.mas-camera-slash-outlined:before {
+    content: "\e7ba";
+}
+.mas-cassette-tape-outlined:before {
+    content: "\e7bb";
+}
+.mas-closed-captioning-outlined:before {
+    content: "\e7bc";
+}
+.mas-copyleft-outlined:before {
+    content: "\e7bd";
+}
+.mas-copyright-outlined:before {
+    content: "\e7be";
+}
+.mas-corners-in-outlined:before {
+    content: "\e7bf";
+}
+.mas-corners-out-outlined:before {
+    content: "\e7c0";
+}
+.mas-disc-outlined:before {
+    content: "\e7c1";
+}
+.mas-ear-outlined:before {
+    content: "\e7c2";
+}
+.mas-ear-slash-outlined:before {
+    content: "\e7c3";
+}
+.mas-eject-outlined:before {
+    content: "\e7c4";
+}
+.mas-eject-simple-outlined:before {
+    content: "\e7c5";
+}
+.mas-equalizer-outlined:before {
+    content: "\e7c6";
+}
+.mas-faders-horizontal-outlined:before {
+    content: "\e7c7";
+}
+.mas-faders-outlined:before {
+    content: "\e7c8";
+}
+.mas-fast-forward-circle-outlined:before {
+    content: "\e7c9";
+}
+.mas-fast-forward-outlined:before {
+    content: "\e7ca";
+}
+.mas-film-reel-outlined:before {
+    content: "\e7cb";
+}
+.mas-film-script-outlined:before {
+    content: "\e7cc";
+}
+.mas-film-slate-outlined:before {
+    content: "\e7cd";
+}
+.mas-film-strip-outlined:before {
+    content: "\e7ce";
+}
+.mas-frame-corners-outlined:before {
+    content: "\e7cf";
+}
+.mas-gif-outlined:before {
+    content: "\e7d0";
+}
+.mas-guitar-outlined:before {
+    content: "\e7d1";
+}
+.mas-headphones-outlined:before {
+    content: "\e7d2";
+}
+.mas-headset-outlined:before {
+    content: "\e7d3";
+}
+.mas-image-outlined:before {
+    content: "\e7d4";
+}
+.mas-image-square-outlined:before {
+    content: "\e7d5";
+}
+.mas-images-outlined:before {
+    content: "\e7d6";
+}
+.mas-images-square-outlined:before {
+    content: "\e7d7";
+}
+.mas-metronome-outlined:before {
+    content: "\e7d8";
+}
+.mas-microphone-outlined:before {
+    content: "\e7d9";
+}
+.mas-microphone-slash-outlined:before {
+    content: "\e7da";
+}
+.mas-microphone-stage-outlined:before {
+    content: "\e7db";
+}
+.mas-music-note-outlined:before {
+    content: "\e7dc";
+}
+.mas-music-note-simple-outlined:before {
+    content: "\e7dd";
+}
+.mas-music-notes-outlined:before {
+    content: "\e7de";
+}
+.mas-music-notes-plus-outlined:before {
+    content: "\e7df";
+}
+.mas-music-notes-simple-outlined:before {
+    content: "\e7e0";
+}
+.mas-newspaper-clipping-outlined:before {
+    content: "\e7e1";
+}
+.mas-newspaper-outlined:before {
+    content: "\e7e2";
+}
+.mas-pause-circle-outlined:before {
+    content: "\e7e3";
+}
+.mas-pause-outlined:before {
+    content: "\e7e4";
+}
+.mas-piano-keys-outlined:before {
+    content: "\e7e5";
+}
+.mas-picture-in-picture-outlined:before {
+    content: "\e7e6";
+}
+.mas-play-circle-outlined:before {
+    content: "\e7e7";
+}
+.mas-play-outlined:before {
+    content: "\e7e8";
+}
+.mas-play-pause-outlined:before {
+    content: "\e7e9";
+}
+.mas-playlist-outlined:before {
+    content: "\e7ea";
+}
+.mas-queue-outlined:before {
+    content: "\e7eb";
+}
+.mas-record-outlined:before {
+    content: "\e7ec";
+}
+.mas-repeat-once-outlined:before {
+    content: "\e7ed";
+}
+.mas-repeat-outlined:before {
+    content: "\e7ee";
+}
+.mas-rewind-circle-outlined:before {
+    content: "\e7ef";
+}
+.mas-rewind-outlined:before {
+    content: "\e7f0";
+}
+.mas-screencast-outlined:before {
+    content: "\e7f1";
+}
+.mas-shuffle-angular-outlined:before {
+    content: "\e7f2";
+}
+.mas-shuffle-outlined:before {
+    content: "\e7f3";
+}
+.mas-shuffle-simple-outlined:before {
+    content: "\e7f4";
+}
+.mas-skip-back-circle-outlined:before {
+    content: "\e7f5";
+}
+.mas-skip-back-outlined:before {
+    content: "\e7f6";
+}
+.mas-skip-forward-circle-outlined:before {
+    content: "\e7f7";
+}
+.mas-skip-forward-outlined:before {
+    content: "\e7f8";
+}
+.mas-sliders-horizontal-outlined:before {
+    content: "\e7f9";
+}
+.mas-sliders-outlined:before {
+    content: "\e7fa";
+}
+.mas-slideshow-outlined:before {
+    content: "\e7fb";
+}
+.mas-speaker-hifi-outlined:before {
+    content: "\e7fc";
+}
+.mas-speaker-high-outlined:before {
+    content: "\e7fd";
+}
+.mas-speaker-low-outlined:before {
+    content: "\e7fe";
+}
+.mas-speaker-none-outlined:before {
+    content: "\e7ff";
+}
+.mas-speaker-simple-high-outlined:before {
+    content: "\e800";
+}
+.mas-speaker-simple-low-outlined:before {
+    content: "\e801";
+}
+.mas-speaker-simple-none-outlined:before {
+    content: "\e802";
+}
+.mas-speaker-simple-slash-outlined:before {
+    content: "\e803";
+}
+.mas-speaker-simple-x-outlined:before {
+    content: "\e804";
+}
+.mas-speaker-slash-outlined:before {
+    content: "\e805";
+}
+.mas-speaker-x-outlined:before {
+    content: "\e806";
+}
+.mas-stop-circle-outlined:before {
+    content: "\e807";
+}
+.mas-stop-outlined:before {
+    content: "\e808";
+}
+.mas-subtitles-outlined:before {
+    content: "\e809";
+}
+.mas-television-outlined:before {
+    content: "\e80a";
+}
+.mas-television-simple-outlined:before {
+    content: "\e80b";
+}
+.mas-video-camera-outlined:before {
+    content: "\e80c";
+}
+.mas-video-camera-slash-outlined:before {
+    content: "\e80d";
+}
+.mas-vinyl-record-outlined:before {
+    content: "\e80e";
+}
+.mas-wave-sawtooth-outlined:before {
+    content: "\e80f";
+}
+.mas-wave-sine-outlined:before {
+    content: "\e810";
+}
+.mas-wave-square-outlined:before {
+    content: "\e811";
+}
+.mas-wave-triangle-outlined:before {
+    content: "\e812";
+}
+.mas-waveform-outlined:before {
+    content: "\e813";
+}
+.mas-webcam-outlined:before {
+    content: "\e814";
+}
+.mas-webcam-slash-outlined:before {
+    content: "\e815";
+}

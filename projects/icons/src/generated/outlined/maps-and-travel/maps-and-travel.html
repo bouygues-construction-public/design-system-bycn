@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>maps-and-travel</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .preview {
+            width: 100px;
+            display: inline-block;
+            margin: 10px;
+        }
+        .preview .inner {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            background: #f5f5f5;
+            -webkit-border-radius: 3px 3px 0 0;
+            -moz-border-radius: 3px 3px 0 0;
+            border-radius: 3px 3px 0 0;
+        }
+        .preview .inner  {
+            line-height: 85px;
+            font-size: 40px;
+            color: #333;
+        }
+        .label {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+            font-size: 10px;
+            font-family: Monaco, monospace;
+            color: #666;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background: #ddd;
+            -webkit-border-radius: 0 0 3px 3px;
+            -moz-border-radius: 0 0 3px 3px;
+            border-radius: 0 0 3px 3px;
+            color: #666;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="maps-and-travel.css" />
+</head>
+<body>
+
+    <h1>maps-and-travel</h1>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-air-traffic-control-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>air-traffic-control-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-airplane-in-flight-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>airplane-in-flight-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-airplane-landing-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>airplane-landing-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-airplane-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>airplane-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-airplane-takeoff-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>airplane-takeoff-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-airplane-tilt-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>airplane-tilt-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-anchor-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>anchor-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-anchor-simple-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>anchor-simple-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-barricade-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>barricade-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-bicycle-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>bicycle-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-boat-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>boat-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-bus-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>bus-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-car-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>car-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-car-profile-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>car-profile-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-car-simple-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>car-simple-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-charging-station-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>charging-station-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-church-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>church-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-compass-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>compass-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-crosshair-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>crosshair-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-crosshair-simple-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>crosshair-simple-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-elevator-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>elevator-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-engine-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>engine-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-escalator-down-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>escalator-down-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-escalator-up-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>escalator-up-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-flag-banner-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>flag-banner-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-flag-checkered-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>flag-checkered-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-flag-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>flag-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-flag-pennant-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>flag-pennant-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-gas-can-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>gas-can-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-gas-pump-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>gas-pump-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-globe-hemisphere-east-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>globe-hemisphere-east-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-globe-hemisphere-west-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>globe-hemisphere-west-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-globe-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>globe-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-globe-simple-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>globe-simple-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-globe-stand-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>globe-stand-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-goggles-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>goggles-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-headlights-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>headlights-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-house-line-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>house-line-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-house-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>house-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-house-simple-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>house-simple-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-jeep-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>jeep-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-lighthouse-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>lighthouse-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-lockers-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>lockers-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-map-pin-line-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>map-pin-line-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-map-pin-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>map-pin-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-map-trifold-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>map-trifold-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-moped-front-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>moped-front-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-moped-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>moped-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-mosque-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>mosque-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-motorcycle-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>motorcycle-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-navigation-arrow-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>navigation-arrow-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-park-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>park-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-path-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>path-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-police-car-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>police-car-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-road-horizon-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>road-horizon-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-rocket-launch-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>rocket-launch-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-rocket-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>rocket-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-scooter-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>scooter-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-signpost-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>signpost-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-steering-wheel-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>steering-wheel-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-steps-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>steps-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-suitcase-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>suitcase-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-suitcase-rolling-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>suitcase-rolling-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-suitcase-simple-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>suitcase-simple-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-swimming-pool-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>swimming-pool-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-synagogue-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>synagogue-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-taxi-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>taxi-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-tent-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>tent-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-tipi-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>tipi-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-traffic-cone-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>traffic-cone-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-traffic-sign-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>traffic-sign-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-traffic-signal-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>traffic-signal-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-train-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>train-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-train-regional-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>train-regional-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-train-simple-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>train-simple-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-tram-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>tram-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-truck-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>truck-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-van-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>van-outlined</span>
+        </div>
+
+
+</body>
+</html>

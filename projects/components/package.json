@@ -20,5 +20,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "devDependencies": {
+    "@masoni/css-tag": "file:../css/src/components/tag"
+  }
 }
