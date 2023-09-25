@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weather-and-nature</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .preview {
+            width: 100px;
+            display: inline-block;
+            margin: 10px;
+        }
+        .preview .inner {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            background: #f5f5f5;
+            -webkit-border-radius: 3px 3px 0 0;
+            -moz-border-radius: 3px 3px 0 0;
+            border-radius: 3px 3px 0 0;
+        }
+        .preview .inner  {
+            line-height: 85px;
+            font-size: 40px;
+            color: #333;
+        }
+        .label {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+            font-size: 10px;
+            font-family: Monaco, monospace;
+            color: #666;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background: #ddd;
+            -webkit-border-radius: 0 0 3px 3px;
+            -moz-border-radius: 0 0 3px 3px;
+            border-radius: 0 0 3px 3px;
+            color: #666;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="weather-and-nature.css" />
+</head>
+<body>
+
+    <h1>weather-and-nature</h1>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-atom-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>atom-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-bird-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>bird-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-bone-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>bone-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-butterfly-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>butterfly-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cactus-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>cactus-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-campfire-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>campfire-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cat-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>cat-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cloud-fog-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-fog-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cloud-lighting-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-lighting-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cloud-moon-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-moon-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cloud-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cloud-rain-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-rain-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cloud-snow-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-snow-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-cloud-sun-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>cloud-sun-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-dog-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>dog-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-drop-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>drop-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-feather-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>feather-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-fire-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>fire-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-fire-simple-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>fire-simple-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-fish-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>fish-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-fish-simple-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>fish-simple-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-flame-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>flame-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-flower-lotus-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>flower-lotus-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-flower-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>flower-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-flower-tulip-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>flower-tulip-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-leaf-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>leaf-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-moon-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>moon-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-moon-stars-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>moon-stars-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-mountains-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>mountains-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-paw-print-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>paw-print-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-planet-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>planet-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-plant-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>plant-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-rainbow-cloud-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>rainbow-cloud-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-rainbow-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>rainbow-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-shooting-star-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>shooting-star-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-shrimp-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>shrimp-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-snowflake-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>snowflake-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-sparkle-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>sparkle-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-star-four-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>star-four-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-sun-dim-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>sun-dim-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-sun-horizon-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>sun-horizon-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-sun-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>sun-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-thermometer-cold-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>thermometer-cold-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-thermometer-hot-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>thermometer-hot-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-thermometer-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>thermometer-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-thermometer-simple-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>thermometer-simple-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-tree-evergreen-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>tree-evergreen-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-tree-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>tree-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-umbrella-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>umbrella-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-umbrella-simple-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>umbrella-simple-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-waves-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>waves-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-wind-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>wind-outlined</span>
+        </div>
+
+
+</body>
+</html>
