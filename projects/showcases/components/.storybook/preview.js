@@ -1,8 +1,8 @@
 import { Preview } from '@storybook/angular';
 import '@masoni/css/dist/index.css';
 import DocumentationTemplate from './DocumentationTemplate.mdx';
-// import '@masoni/icons/dist/css/filled/index.css'
-// import '@masoni/icons/dist/css/outlined/index.css'
+import '@masoni/icons/dist/css/filled/index.css'
+import '@masoni/icons/dist/css/outlined/index.css'
 
 const preview = {
   parameters: {

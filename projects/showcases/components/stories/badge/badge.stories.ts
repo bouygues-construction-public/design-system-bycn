@@ -54,7 +54,7 @@ export const Overview: Story = {
     number: 1,
     type: 'number',
     color: 'primary',
-    icon: 'mas-hourglass-low-filled mas-time--filled',
+    icon: 'mas-envelope-simple-outlined mas-communication--outlined',
   },
 };
 
@@ -87,11 +87,11 @@ export const Number: Story = {
 export const WithIcon: Story = {
   render: (args: MasBadge) => ({
     template: `
-      <mas-badge color="primary" [number]="0" type="number" icon=""></mas-badge>
+      <mas-badge color="primary" [number]="0" type="number" icon="mas-user-outlined mas-people--outlined"></mas-badge>
       <br>
-      <mas-badge color="primary" [number]="9" type="number" icon=""></mas-badge>
+      <mas-badge color="primary" [number]="9" type="number" icon="mas-bookmark-simple-outlined mas-education--outlined"></mas-badge>
       <br>
-      <mas-badge color="primary" [number]="100" type="number" icon=""></mas-badge>
+      <mas-badge color="primary" [number]="100" type="number" icon="mas-chat-circle-dots-outlined mas-communication--outlined"></mas-badge>
       `,
   }),
 };

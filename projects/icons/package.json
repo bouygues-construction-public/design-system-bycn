@@ -1,0 +1,54 @@
+{
+  "name": "@masoni/icons",
+  "version": "0.0.1",
+  "description": "Bouygues Construction Design System - Masoni icons library",
+  "keywords": [
+    "design-system",
+    "ui-kit",
+    "libraries",
+    "icons",
+    "masoni"
+  ],
+  "homepage": "https://github.com/bouygues-construction/design-system-bycn/projects/icons",
+  "bugs": {
+    "url": "https://github.com/bouygues-construction/design-system-bycn/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bouygues-construction/design-system-bycn.git"
+  },
+  "license": "Apache-2.0",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "shx mkdir -p dist && npm run build:svg && npm run build:fonts && npm run build:css",
+    "build:css": "shx cp -r src/css dist && postcss src/css/filled/index.css -o dist/css/filled/index.css && postcss src/css/outlined/index.css -o dist/css/outlined/index.css",
+    "build:fonts": "shx cp -r src/fonts dist && shx cp -r src/generated dist",
+    "build:svg": "shx cp -r src/svg dist"
+  },
+  "devDependencies": {
+    "@masoni/css-postcss-config": "file:../css/config/postcss",
+    "@masoni/css-tailwind-preset": "file:../css/presets/tailwind",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
+    "postcss-discard-comments": "^6.0.0",
+    "postcss-encode-background-svgs": "^1.0.4",
+    "postcss-import": "^15.1.0",
+    "postcss-prettify": "^0.3.4",
+    "shx": "^0.3.4",
+    "svgo": "^2.7.0",
+    "tailwindcss": "^3.3.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ]
+}
