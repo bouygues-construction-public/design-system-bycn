@@ -11,8 +11,9 @@
     "deploy-storybook:develop": "npx -p @storybook/storybook-deployer storybook-to-ghpages --branch gh-pages --out docs/develop",
     "start:css-storybook": "ng run showcases-css:storybook",
     "start:components-storybook": "ng run showcases-components:storybook",
-    "build-storybook": "ng run showcases-components:build-storybook && ng run showcases-css:build-storybook && ng run showcases-icons:build-storybook",
+    "build-storybook": "ng run showcases-css:build-storybook && ng run showcases-components:build-storybook && ng run showcases-icons:build-storybook",
     "build:css": "npm run build -w projects/css",
+    "build:icons": "npm run build -w projects/icons",
     "watch": "ng build --watch --configuration development",
     "format": "prettier --write \"**/*.{js,ts,d.ts}\"",
     "format:check": "prettier --check \"**/*.{js,ts,d.ts}\"",
@@ -44,7 +45,7 @@
     "@angular-eslint/schematics": "15.2.1",
     "@angular-eslint/template-parser": "15.2.1",
     "@angular/cli": "~15.2.5",
-    "@angular/compiler-cli": "^15.2.0", 
+    "@angular/compiler-cli": "^15.2.0",
     "@storybook/addon-actions": "^7.0.26",
     "@storybook/addon-docs": "^7.0.18",
     "@storybook/addon-essentials": "^7.0.12",
@@ -80,8 +81,9 @@
       "projects/css",
       "projects/css/presets/tailwind/*",
       "projects/css/src/design_tokens",
-      "projects/css/src/components",
-      "projects/components"
+      "projects/css/src/components/*",
+      "projects/components",
+      "projects/icons"
     ]
   },
   "storybook-deployer": {
