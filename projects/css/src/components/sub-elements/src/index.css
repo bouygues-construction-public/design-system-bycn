@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
 }
-.mas-warningcircle-filled::before {
+.mas-warning-circle-filled::before {
   position: relative;
   color: var(--mas-primitive-color_red600);
   block-size: 16px;
@@ -34,9 +34,14 @@
 .mas-label-wrapper {
   display:flex;
   gap: 4px;
+  align-items: center;
+
 }
 .mas-label-info-icon {
   color: var(--mas-semantic-color_icon-secondary);
+  block-size: 16px;
+  inline-size: 16px;
+  margin-block-end: 2px;
 }
 .mas-label-optional {
   color: var(--mas-semantic-color_text-tiertiary);
