@@ -1,0 +1,70 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+.mas-tag {
+  display: inline-flex;
+  align-items: center;  
+  margin-right: 4px;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-feature-settings: 'calt' off;
+  font-family: var(--mas-typo_font-family--inter);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; 
+
+}
+
+.mas-tag i{
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.mas-tag-small {
+  font-size: 12px;
+}
+
+.mas-tag-medium {
+  font-size: 14px;
+}
+
+.leading-icon {
+  margin-right: 4px;
+}
+
+.mas-tag-color-orange{
+  background: var(--decorative-surface-orange, #FBDED0);
+  color: var(--decorative-text-orange, #A6400D);
+}
+.mas-tag-color-amber{
+  background: var(--decorative-surface-amber, #FCEECF);
+  color: var(--decorative-text-amber, #7A4700);
+}
+.mas-tag-color-green{
+  background: var(--decorative-surface-green, #E8F4CD);
+  color: var(--decorative-text-green, #465F11);
+}
+.mas-tag-color-teal{
+  background: var(--decorative-surface-teal, #CBF6F5);
+  color: var(--decorative-text-teal, #006B6A);
+}
+.mas-tag-color-blue{
+  background: var(--decorative-surface-blue, #C8E9F9);
+  color: var(--decorative-text-blue, #069);
+}
+.mas-tag-color-purple{
+  background: var(--decorative-surface-purple, #F2E7F3);
+  color: var(--decorative-text-purple, #904997);
+
+}
+.mas-tag-color-red{
+  background: var(--decorative-surface-red, #FCD9DF);
+  color: var(--decorative-text-red, #AA1830);
+}
+.mas-tag-color-roc{
+  background: var(--decorative-surface-roc, #F9F9FA);
+  color: var(--decorative-text-roc, #38383D);
+
+}

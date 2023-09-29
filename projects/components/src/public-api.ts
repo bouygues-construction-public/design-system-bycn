@@ -9,3 +9,4 @@ export * from './lib/link';
 export * from './lib/chip';
 export * from './lib/button'
 export * from './lib/badge';
+export * from './lib/tag';
