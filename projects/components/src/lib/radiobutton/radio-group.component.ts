@@ -80,8 +80,8 @@ export class MasRadioGroup implements ControlValueAccessor, AfterContentInit, Af
     return this._value;
   }
   checkSelectedRadio() {
-    if (this.selected && !this._selected!.checked) {
-      this.selected.checked = true;
+    if (this._selected && !this._selected!.checked) {
+      this._selected.checked = true;
     }
   }
   updateSelectedRadioFromValue() {
