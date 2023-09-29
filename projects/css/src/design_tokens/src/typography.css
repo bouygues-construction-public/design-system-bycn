@@ -1,7 +1,7 @@
 :root {
   /** Font Family */
   --mas-typo_font-family: 'Raleway';
-  --mas-typo_font-family--inter: 'Inter Tight';
+  --mas-typo_font-family--inter: 'Inter';
   /** Font Weight  */
   --mas-typo_display-font-weight: 700;
   --mas-typo_headline-font-weight: 700;
