@@ -31,6 +31,7 @@
     "@masoni/css-select": "file:../css/src/components/select",
     "@masoni/css-sub-elements": "file:../css/src/components/sub-elements",
     "@masoni/css-text-input": "file:../css/src/components/text-input",
-    "@masoni/css-toggle-button": "file:../css/src/components/togglebutton"
+    "@masoni/css-toggle-button": "file:../css/src/components/togglebutton",
+    "@masoni/css-badge": "file:../css/src/components/badge"
   }
 }

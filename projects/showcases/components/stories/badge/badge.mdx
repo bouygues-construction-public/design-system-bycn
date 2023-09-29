@@ -1,0 +1,70 @@
+import { Meta, Title, Subtitle, Description, Primary, Controls, Stories, Story, Toc, Canvas } from '@storybook/blocks';
+import { MasBadge } from 'projects/components/src/lib/badge/badge.component';
+import * as BadgeStories from './badge.stories';
+
+<Meta of={BadgeStories} />
+
+<Title />
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
+
+## Overview
+
+A badge is a visual indicator used to display notification or status.
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Usage
+
+- The badge is a visual indicator.
+- It can be used alone or with an icon.
+- It gives additional information to an element.
+
+## Variants
+
+### Color
+
+There are ? badge's colors go with different meaning:
+- Succes - Green
+- Warning - Amber
+- Alert - Red
+- Primary - Blue
+- Brand - Orange
+
+<Canvas>
+  <Story of={BadgeStories.Color} />
+</Canvas>
+
+### Number
+
+<Canvas>
+  <Story of={BadgeStories.Number} />
+</Canvas>
+
+### With icon
+
+2 badge's types with icon are available:
+
+- Number : use a badge with a number
+- Dot : use a badge without a number
+
+<Canvas>
+  <Story of={BadgeStories.WithIcon} />
+</Canvas>
+
+## Guidelines
+
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/903d6b-badge/b/964f27)
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
