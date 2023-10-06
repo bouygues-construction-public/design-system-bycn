@@ -30,7 +30,7 @@
   background: var(--action-primary-hovered, #069);
   color: #fff !important;
 } 
-.filter-chip.pressed {
+.filter-chip:active {
   background: var(--action-primary-pressed, #005885);
   color: #fff;
 } 
@@ -39,7 +39,7 @@
   border: 1px solid var(--action-tertiary-hovered, #8B8B8E);
   background: rgba(177, 177, 179, 0.10); 
 } 
-.chip.pressed {
+.chip:active {
   border: 1px solid var(--action-tertiary-pressed, #717174);
   background: rgba(177, 177, 179, 0.20); 
 } 
