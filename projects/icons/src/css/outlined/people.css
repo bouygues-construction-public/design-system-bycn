@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "people--outlined";
+    src: url("../../fonts/outlined/people/people.ttf?8d85c9655bdf99929b824f0285f81244") format("truetype"),
+url("../../fonts/outlined/people/people.woff?8d85c9655bdf99929b824f0285f81244") format("woff"),
+url("../../fonts/outlined/people/people.woff2?8d85c9655bdf99929b824f0285f81244") format("woff2");
+}
+
+i[class^="mas-people--outlined"]:before, i[class*=" mas-people--outlined"]:before {
+    font-family: people--outlined !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-baby-outlined:before {
+    content: "\e88e";
+}
+.mas-footprints-outlined:before {
+    content: "\e88f";
+}
+.mas-gender-female-outlined:before {
+    content: "\e890";
+}
+.mas-gender-intersex-outlined:before {
+    content: "\e891";
+}
+.mas-gender-male-outlined:before {
+    content: "\e892";
+}
+.mas-gender-neuter-outlined:before {
+    content: "\e893";
+}
+.mas-gender-nonbinary-outlined:before {
+    content: "\e894";
+}
+.mas-gender-transgender-outlined:before {
+    content: "\e895";
+}
+.mas-hand-eye-outlined:before {
+    content: "\e896";
+}
+.mas-hand-fist-outlined:before {
+    content: "\e897";
+}
+.mas-hand-grabbing-outlined:before {
+    content: "\e898";
+}
+.mas-hand-outlined:before {
+    content: "\e899";
+}
+.mas-hand-palm-outlined:before {
+    content: "\e89a";
+}
+.mas-hand-pointing-outlined:before {
+    content: "\e89b";
+}
+.mas-hand-waving-outlined:before {
+    content: "\e89c";
+}
+.mas-hands-clapping-outlined:before {
+    content: "\e89d";
+}
+.mas-hands-praying-outlined:before {
+    content: "\e89e";
+}
+.mas-handshake-outlined:before {
+    content: "\e89f";
+}
+.mas-identification-badge-outlined:before {
+    content: "\e8a0";
+}
+.mas-identification-card-outlined:before {
+    content: "\e8a1";
+}
+.mas-person-arms-spread-outlined:before {
+    content: "\e8a2";
+}
+.mas-person-outlined:before {
+    content: "\e8a3";
+}
+.mas-person-simple-bike-outlined:before {
+    content: "\e8a4";
+}
+.mas-person-simple-outlined:before {
+    content: "\e8a5";
+}
+.mas-person-simple-run-outlined:before {
+    content: "\e8a6";
+}
+.mas-person-simple-throw-outlined:before {
+    content: "\e8a7";
+}
+.mas-person-simple-walk-outlined:before {
+    content: "\e8a8";
+}
+.mas-smiley-angry-outlined:before {
+    content: "\e8a9";
+}
+.mas-smiley-blank-outlined:before {
+    content: "\e8aa";
+}
+.mas-smiley-meh-outlined:before {
+    content: "\e8ab";
+}
+.mas-smiley-nervous-outlined:before {
+    content: "\e8ac";
+}
+.mas-smiley-outlined:before {
+    content: "\e8ad";
+}
+.mas-smiley-sad-outlined:before {
+    content: "\e8ae";
+}
+.mas-smiley-sticker-outlined:before {
+    content: "\e8af";
+}
+.mas-smiley-wink-outlined:before {
+    content: "\e8b0";
+}
+.mas-smiley-x-eyes-outlined:before {
+    content: "\e8b1";
+}
+.mas-user-circle-gear-outlined:before {
+    content: "\e8b2";
+}
+.mas-user-circle-minus-outlined:before {
+    content: "\e8b3";
+}
+.mas-user-circle-outlined:before {
+    content: "\e8b4";
+}
+.mas-user-circle-plus-outlined:before {
+    content: "\e8b5";
+}
+.mas-user-focus-outlined:before {
+    content: "\e8b6";
+}
+.mas-user-gear-outlined:before {
+    content: "\e8b7";
+}
+.mas-user-list-outlined:before {
+    content: "\e8b8";
+}
+.mas-user-minus-outlined:before {
+    content: "\e8b9";
+}
+.mas-user-outlined:before {
+    content: "\e8ba";
+}
+.mas-user-plus-outlined:before {
+    content: "\e8bb";
+}
+.mas-user-rectangle-outlined:before {
+    content: "\e8bc";
+}
+.mas-user-square-outlined:before {
+    content: "\e8bd";
+}
+.mas-user-switch-outlined:before {
+    content: "\e8be";
+}
+.mas-users-four-outlined:before {
+    content: "\e8bf";
+}
+.mas-users-outlined:before {
+    content: "\e8c0";
+}
+.mas-users-three-outlined:before {
+    content: "\e8c1";
+}
+.mas-wheelchair-motion-outlined:before {
+    content: "\e8c2";
+}
+.mas-wheelchair-outlined:before {
+    content: "\e8c3";
+}

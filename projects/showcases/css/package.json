@@ -9,6 +9,7 @@
   "license": "ISC",
   "devDependencies": {
     "@masoni/css": "file:../../css",
+    "@masoni/css-progress-bar": "file:../css/src/components/progress-bar",
     "@masoni/css-tailwind-preset": "file:../../css/presets/tailwind"
   }
 }
