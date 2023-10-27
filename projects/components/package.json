@@ -33,6 +33,8 @@
     "@masoni/css-text-input": "file:../css/src/components/text-input",
     "@masoni/css-toggle-button": "file:../css/src/components/togglebutton",
     "@masoni/css-badge": "file:../css/src/components/badge",
-    "@masoni/css-tag": "file:../css/src/components/tag"
+    "@masoni/css-tag": "file:../css/src/components/tag",
+    "@masoni/css-progress-bar": "file:../css/src/components/progress-bar"
+
   }
 }

@@ -22,11 +22,12 @@
   margin-right: 8px;
 }
 
-.mas-tag-small {
+.mas-tag-small .mas-tag-label{
+  font-weight: 600;
+  line-height: 16px;
   font-size: 12px;
 }
-
-.mas-tag-medium {
+.mas-tag-medium .mas-tag-label{
   font-size: 14px;
 }
 

@@ -6,7 +6,7 @@
   border: 1px solid var(--action-tertiary-default, #B1B1B3); 
   font-family: var(--mas-typo_font-family--inter); 
   color: var(--text-primary, #0C0C0D);
-  padding: 6px 8px 6px 12px;
+  padding: 6px 12px 6px 12px;
   cursor: pointer;
   height: 32px;
 
@@ -25,10 +25,14 @@
 .filter-chip.selected {
   background: var(--action-primary-default, #007AB7);
   color: #fff;
+  border: none;
 } 
 .filter-chip:hover {
   background: var(--action-primary-hovered, #069);
-  color: #fff !important;
+} 
+.filter-chip:not(.selected ):hover {
+  background: rgba(177, 177, 179, 0.10);
+  color: var(--text-primary, #0C0C0D);
 } 
 .filter-chip.pressed {
   background: var(--action-primary-pressed, #005885);

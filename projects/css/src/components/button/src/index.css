@@ -17,6 +17,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  height: 44px;
 }
 a.mas-btn {
   cursor: pointer;
@@ -71,6 +72,10 @@ background: var(--action-reverse-default, #FFF);
   background-color: var(--alpha-grey-pressed, rgba(144, 144, 162, 0.16));
 }
 
+.mas-btn_variant--tertiary:not(:disabled):hover {
+  background: var(--alpha-grey-hovered, rgba(144, 144, 162, 0.08));
+}
+
 .mas-btn_variant--tertiary:disabled {
   opacity: 0.5;
 }
@@ -99,6 +104,7 @@ background: var(--action-reverse-default, #FFF);
   font-weight: 600;
   line-height: 20px;
   padding: 8px 16px;
+  height: 36px;
 }
 
 .mas-btn_size--medium {

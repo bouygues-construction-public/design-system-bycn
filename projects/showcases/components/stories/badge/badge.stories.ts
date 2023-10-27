@@ -4,7 +4,7 @@ import { MasBadgeModule, MasBadge } from 'projects/components/src/public-api';
 
 const meta: Meta<MasBadge> = {
   component: MasBadge,
-  title: 'Components/Indicator/Badge',
+  title: 'Components / Indicators / Badge',
   // tags: ['autodocs'],
   decorators: [
     moduleMetadata({
