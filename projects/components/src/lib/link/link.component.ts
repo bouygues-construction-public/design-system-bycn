@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-// import '@masoni/css-link/dist/index.css';
 
 @Component({
   selector: 'mas-link',

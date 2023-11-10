@@ -1,6 +1,4 @@
 import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
-// import '@masoni/icons/dist/css/filled/index.css';
-// import '@masoni/icons/dist/css/outlined/index.css';
 
 @Component({
   selector: 'mas-option',

@@ -10,7 +10,6 @@ import {
   QueryList,
   forwardRef,
 } from '@angular/core';
-// import '@masoni/css-radio-button/dist/index.css';
 import { MasRadioButton } from './radiobutton.component';
 import { RadioButtonClickEvent } from './radio-change';
 

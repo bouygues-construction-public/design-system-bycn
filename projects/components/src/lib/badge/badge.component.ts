@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-// import '@masoni/css-badge/dist/index.css';
 @Component({
   selector: 'mas-badge',
   template: ` <i

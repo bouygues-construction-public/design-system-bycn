@@ -2,7 +2,6 @@ import { Component, NgModule, Input, OnInit, TemplateRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-// import '@masoni/css-sub-elements/dist/index.css';
 @Component({
   selector: 'mas-helper',
   host: {
@@ -14,9 +13,9 @@ import { FormsModule } from '@angular/forms';
   `,
 })
 export class MasHelper {
-  @Input() helperText: any | TemplateRef<any>; // ! can be TemplateRef
+  @Input() helperText: any | TemplateRef<any>;
   public isTemplate(value: any) {
-    return value instanceof TemplateRef; // ? what's this ?
+    return value instanceof TemplateRef;
   }
 }
 @NgModule({

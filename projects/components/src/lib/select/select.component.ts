@@ -13,7 +13,6 @@ import {
   HostListener,
 } from "@angular/core";
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
-// import '@masoni/css-select/dist/index.css';
 import { MasOption } from "./option.component";
 import {
   Observable,
