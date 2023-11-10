@@ -1,0 +1,59 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+  Toc,
+  Canvas,
+  of,
+} from '@storybook/blocks';
+
+import { MasDropdown } from 'projects/components/src/lib/dropdown/dropdown.component';
+import * as DropdownStories from './dropdown.stories';
+
+<Meta of={DropdownStories} />
+
+<Title />
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
+
+## Overview
+
+{/* todo: writing overview here */}
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Usage
+
+{/* todo: writing usage here */}
+
+## Variants
+
+{/* TODO: Define component variants that can be used by other developers */}
+
+### Overview
+
+<Canvas>
+  <Story of={DropdownStories.Overview} />
+</Canvas>
+
+## Guidelines
+
+- Best practices are available [here]({/* todo: insert dropdown's guideline link here */})
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

@@ -7,6 +7,7 @@ export * from './lib/togglebutton';
 export * from './lib/radiobutton';
 export * from './lib/link';
 export * from './lib/chip';
-export * from './lib/button'
+export * from './lib/button';
 export * from './lib/badge';
 export * from './lib/tag';
+export * from './lib/dropdown';

@@ -47,6 +47,9 @@ npm run build-storybook
 npm run start:components-storybook
 ## the css
 npm run start:css-storybook
+
+# Deploying to Chromatic
+npm run chromatic
 ```
 
 For your information, here are the showcases' URLs:
