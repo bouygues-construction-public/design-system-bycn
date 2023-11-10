@@ -11,7 +11,7 @@ import {
   forwardRef,
 } from '@angular/core';
 import { FormControl, ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import '@masoni/css-checkbox/dist/index.css';
+// import '@masoni/css-checkbox/dist/index.css';
 
 export interface CheckboxChangeEvent {
   /**

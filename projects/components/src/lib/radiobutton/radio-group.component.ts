@@ -10,7 +10,7 @@ import {
   QueryList,
   forwardRef,
 } from '@angular/core';
-import '@masoni/css-radio-button/dist/index.css';
+// import '@masoni/css-radio-button/dist/index.css';
 import { MasRadioButton } from './radiobutton.component';
 import { RadioButtonClickEvent } from './radio-change';
 
@@ -123,6 +123,7 @@ export class MasRadioGroup implements ControlValueAccessor, AfterContentInit, Af
       setTimeout(() => {
         this.radios!.forEach((radio) => {
           radio.name = this.name;
+          radio.checked = this.value === radio.value
         });
       });
     }

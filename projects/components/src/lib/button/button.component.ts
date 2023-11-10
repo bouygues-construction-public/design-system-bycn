@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import '@masoni/css-button/dist/index.css';
+// import '@masoni/css-button/dist/index.css';
 
 @Component({
   selector: 'mas-button',

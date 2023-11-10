@@ -10,7 +10,7 @@ import {
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { RadioButtonClickEvent } from './radio-change';
-import '@masoni/css-radio-button/dist/index.css';
+// import '@masoni/css-radio-button/dist/index.css';
 
 @Component({
   selector: 'mas-radio-button',
