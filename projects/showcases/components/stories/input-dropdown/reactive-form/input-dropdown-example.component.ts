@@ -5,13 +5,13 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-dropdown',
+  selector: 'app-input-dropdown',
   template: `
     <form [formGroup]="formGroup">
     </div>
   `,
 })
-export class DropdownExample implements OnInit {
+export class InputDropdownExample implements OnInit {
   public formGroup: FormGroup;
   constructor(protected formBuilder: FormBuilder) {}
 

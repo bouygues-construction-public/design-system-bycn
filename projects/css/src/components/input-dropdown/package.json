@@ -1,7 +1,7 @@
 {
-  "name": "@masoni/css-dropdown",
+  "name": "@masoni/css-input-dropdown",
   "version": "0.0.1",
-  "description": "Bouygues Design System - Masoni specific CSS styles for dropdown",
+  "description": "Bouygues Design System - Masoni specific CSS styles for input dropdown",
   "keywords": [
     "design-system",
     "css",
@@ -13,7 +13,7 @@
     "dist",
     "src"
   ],
-  "homepage": "https://github.com/bouygues-construction/design-system-bycn/tree/main/projects/css/src/components/src/dropdown",
+  "homepage": "https://github.com/bouygues-construction/design-system-bycn/tree/main/projects/css/src/components/src/input-dropdown",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bouygues-construction/design-system-bycn.git"
