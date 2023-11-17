@@ -1,5 +1,7 @@
 @import '@masoni/css-design-tokens/dist/index.css';
-
+body {
+  overflow: overlay;
+}
 .mas-input-dropdown {
   font-family: var(--mas-typo_font-family--inter);
   font-weight: var(--mas-typo_body-font-weight);
@@ -9,17 +11,15 @@
   inline-size: min-content;
   white-space: nowrap;
 }
-.mas-people--outlined {
-  text-align: center;
-}
 .mas-dropdown-option {
   display: flex;
-  padding: 4px 8px;
+  padding: 8px 12px;
   align-items: center;
   cursor: pointer;
   gap: 8px;
-  background-color: var(--mas-semantic-color-surface-primary);
+  background: var(--mas-semantic-color_surface-primary);
   align-self: stretch;
+  block-size: 36px;
 }
 .mas-dropdown-option_text {
   width: 100%;
@@ -32,15 +32,18 @@
   width: 100%;
   align-items: center;
   box-shadow: 0 0 0 1px var(--mas-semantic-color_border-primary);
+  background-color: var(--mas-semantic-color_surface-primary);
   border-radius: var(--mas-radius_2);
   color: inherit;
   font-family: inherit;
   font-size: inherit;
   margin: 0;
+  gap: 8px;
   line-height: inherit;
   inline-size: 280px;
-  block-size: 32px;
+  block-size: 36px;
   padding-inline: 12px;
+  padding-block: 8px;
   cursor: pointer;
 }
 
@@ -51,34 +54,50 @@
 }
 .mas-input-dropdown_placeholder {
   color: var(--mas-semantic-color_text-tiertiary);
-  padding: 8px;
   user-select: none;
+  padding-inline-end: 8px;
 }
 .mas-input-dropdown_text {
   appearance: none;
   display: block;
   background-color: var(--mas-semantic-color-surface-primary);
   transition: var(--mas-transition_focus-visible);
+  padding-inline-end: 8px;
 }
 
 .mas-input-dropdown_listbox-wrapper {
   position: absolute;
   box-shadow: var(--mas-shadow_200);
-  border-radius: var(--mas-radius_1);
+  border-radius: var(--mas-radius_2);
   background-color: var(--mas-semantic-color_surface-primary);
   border: 1px solid var(--mas-semantic-color_border-primary);
-  margin-top: 0.5px;
+  margin-top: 4px;
   padding: 4px 0;
   z-index: 10 !important;
   width: 280px;
+  max-block-size: 296px;
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
 }
-.mas-input-dropdown--filled {
-  color: var(--mas-semantic-color_text-primary);
+/* ! scrollbar */
+::-webkit-scrollbar {
+  width: 16px;
 }
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--mas-semantic-color_border-primary);
+  border-radius: var(--mas-radius_full);
+  background-clip: content-box;
+  border: 4px solid transparent;
+}
+
 /* ! icons */
 .mas-icon {
   display: flex;
-  height: 16px;
+  font-size: 16px;
+  max-block-size: 16px;
   width: 16px;
   align-items: center;
   justify-content: center;
@@ -86,14 +105,14 @@
 .mas-caretdown-outlined {
   margin-inline-start: 8px;
   pointer-events: none;
-  color: var(--mas-semantic-color_icon-secondary);
+  color: var(--mas-semantic-color_action-primary--default);
 }
 .mas-warning-circle-outlined {
   margin-inline-end: 8px;
   pointer-events: none;
   color: var(--mas-semantic-color_icon-secondary);
 }
-mas-dropdown-option.mas-check-outlined {
+.mas-dropdown-option--selected .mas-check-outlined {
   pointer-events: none;
   color: var(--mas-semantic-color_action-primary--default);
 }
@@ -102,16 +121,10 @@ mas-dropdown-option.mas-check-outlined {
 }
 /* ! hover */
 .mas-dropdown-option:hover {
-  background-color: var(--mas-primitive-color_grey300);
+  background-color: rgba(144, 144, 162, 0.08); /* --alpha-grey--hovered */
 }
 .mas-dropdown-option--selected:hover {
-  background-color: rgba(144, 144, 162, 0.08);
-  .mas-check-outlined {
-    color: inherit;
-  }
-}
-.mas-dropdown-option--selected:hover .mas-check-outlined {
-  color: inherit;
+  background-color: rgba(144, 144, 162, 0.16); /* --alpha-grey--pressed */
 }
 :not(.mas-input-dropdown--disabled, .mas-input-dropdown--invalid, :active)
   > .mas-input-dropdown_value-wrapper:hover:not(.mas-input-dropdown_listbox--opened) {
@@ -131,10 +144,15 @@ mas-dropdown-option.mas-check-outlined {
     box-shadow: 0 0 0 1px var(--mas-semantic-color_action-primary--default), 0 0 0 4px hsla(200, 100%, 42%, 0.16);
   }
 }
+:not(.mas-dropdown-disabled) {
+  & .mas-dropdown-option:active {
+    background-color: rgba(144, 144, 162, 0.16); /* --alpha-grey--pressed */
+  }
+}
 /* ! disabled */
 
 .mas-input-dropdown--disabled {
-  opacity: 0.4;
+  opacity: 0.5;
 }
 /* ! invalid */
 .mas-input-dropdown--invalid .mas-input-dropdown_value-wrapper {
@@ -153,15 +171,21 @@ mas-dropdown-option.mas-check-outlined {
 
 /* ! Size */
 .mas-input-dropdown--medium {
-  font-family: var(--mas-typo_font-family--inter);
   font-weight: var(--mas-typo_body-font-weight);
   font-size: var(--mas-typo_body-2-font-size);
   line-height: var(--mas-typo_body-2-line-height);
   .mas-input-dropdown_value-wrapper {
-    block-size: 40px;
+    block-size: 44px;
+  }
+  .mas-dropdown-option--medium {
+    block-size: 44px;
+  }
+  .mas-input-dropdown_listbox-wrapper {
+    max-block-size: 360px;
   }
 }
 
+/* ! checkbox */
 .mas-dropdown-option-checkbox {
   display: flex;
   border-style: solid;
@@ -174,6 +198,7 @@ mas-dropdown-option.mas-check-outlined {
   border-color: var(--mas-semantic-color_action-tiertiary--default);
   transition: var(--mas-transition_focus-visible);
 }
+
 .mas-dropdown-option-checkbox:hover {
   box-shadow: 0 0 0 4px
     hsla(
@@ -185,5 +210,12 @@ mas-dropdown-option.mas-check-outlined {
 }
 .mas-checkbox-box--active {
   background-color: var(--mas-semantic-color_action-primary--default);
+  color: brown;
   border-color: var(--mas-semantic-color_action-primary--default) !important;
+}
+/* ! image */
+.mas-dropdown-option-image {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
 }

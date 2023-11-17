@@ -3,27 +3,22 @@ import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@
 @Component({
   selector: 'mas-dropdown-option',
   template: `
-    <img
-      src="{{ imageUrl }}"
-      alt="dropdown item image"
-      class="mas-dropdown-option-image"
-      *ngIf="imageUrl !== '' && !isMultiple"
-    />
-    <i class="{{ icon }} mas-dropdown-option-icon" *ngIf="imageUrl === '' && icon !== '' && !isMultiple"></i>
-    <ng-container *ngIf="isMultiple">
+    <img src="{{ imageUrl }}" class="mas-dropdown-option-image" *ngIf="type === 'image'" />
+    <i class="{{ icon }} mas-icon" *ngIf="type === 'icon' && icon !== ''"></i>
+    <ng-container *ngIf="isMultiple && type === 'checkbox'">
       <div class="mas-dropdown-option-checkbox" [ngClass]="{ 'mas-checkbox-box--active': selected }">
-        <ng-container *ngIf="selected && size === 'S'">
-          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none">
-            <path d="M1 5L3 7L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </ng-container>
+        <i class="mas-check-outlined mas-system-and-device--outlined mas-icon" style="color: white; z-index: 1" *ngIf="selected"></i>
       </div>
     </ng-container>
-    <span class="mas-typo_body-3 mas-option_text" #text><ng-content></ng-content></span>
-    <i class="mas-check-outlined mas-icon mas-system-and-device--outlined" *ngIf="selected && !isMultiple"></i>
+    <span class="mas-option_text" #text [ngClass]="{ 'mas-typo_body-3': size === 'S', 'mas-typo_body-2': size === 'M' }"
+      ><ng-content></ng-content
+    ></span>
+    <i class="mas-check-outlined mas-icon mas-system-and-device--outlined" *ngIf="selected && type !== 'checkbox'"></i>
   `,
   host: {
     '[class.mas-dropdown-option--selected]': '_selected',
+    '[class.mas-dropdown-option--medium]': 'size === "M"',
+    '[class.mas-dropdown-option--small]': 'size === "S"',
     class: 'mas-dropdown-option',
     '(click)': 'onOptionClick($event)',
     role: 'option',
@@ -33,7 +28,7 @@ export class MasDropdownOption {
   private _selected: boolean = false;
   @Input() imageUrl: string = '';
   @Input() icon: string = '';
-
+  @Input() type: 'checkbox' | 'image' | 'icon' | 'text' = 'text';
   @Input() isMultiple: boolean = false;
   @Input() value: any = '';
   @Input() disabled: boolean;

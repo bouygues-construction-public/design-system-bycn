@@ -30,24 +30,23 @@ interface selectedOption {
   ],
   host: {
     class: 'mas-input-dropdown',
-    '[class.mas-select--invalid]': 'invalid',
-    '[class.mas-select--disabled]': 'disabled',
-    '[class.mas-select--medium]': 'size === "M"',
-    '[class.mas-select--small]': 'size === "S"',
+    '[class.mas-input-dropdown--invalid]': 'invalid',
+    '[class.mas-input-dropdown--disabled]': 'disabled',
+    '[class.mas-input-dropdown--medium]': 'size === "M"',
+    '[class.mas-input-dropdown--small]': 'size === "S"',
   },
 })
 export class MasInputDropdown implements OnInit, ControlValueAccessor, AfterContentInit {
-  @Input() leadingIcon: string;
+  @Input() leadingIcon: string = '';
   @Input() labelText: string;
   @Input() placeholder: string = '';
-  @Input() caretIcon: string;
-  @Input() inputField: string;
   @Input() helperText: string;
   @Input() identifier = `input-dropdown-${MasInputDropdown.dropdownCount++}`;
   @Input() disabled: boolean = false;
   @Input() invalid: boolean = false;
   @Input() size: 'M' | 'S' = 'S';
   @Input() multi: boolean = false;
+  @Input() type: 'checkbox' | 'image' | 'icon' | 'text' = 'text';
 
   @Output() change = new EventEmitter();
   readonly _destroy = new Subject<void>();
@@ -59,15 +58,13 @@ export class MasInputDropdown implements OnInit, ControlValueAccessor, AfterCont
   private _ngZone: any;
 
   get triggerValue(): string {
-    return this.isEmpty ? '' : this.valuesAsString;
-  }
-
-  get valuesAsString(): string {
-    let values = '';
-    this._values.forEach((value) => {
-      values = values.concat(value, ', ');
+    let triggerValue: string = '';
+    this.selectedOptions.forEach((option) => {
+      if (option.option?.text) {
+        triggerValue = triggerValue.concat(option.option.text, ', ');
+      }
     });
-    return values.slice(0, -2);
+    return this.isEmpty ? '' : triggerValue.slice(0, -2);
   }
   get isEmpty() {
     return !this.options || this.selectedOptions.size === 0;
@@ -79,7 +76,9 @@ export class MasInputDropdown implements OnInit, ControlValueAccessor, AfterCont
       this._resetOptions();
     });
     // todo: optimized
-    this.options.map((option) => (option.isMultiple = this.multi));
+    this.options.map(
+      (option) => ((option.isMultiple = this.multi), (option.type = this.type), (option.size = this.size))
+    );
   }
   protected onChangeHandler = (_: any) => {};
   protected onTouchedHandler = () => {};
@@ -121,7 +120,7 @@ export class MasInputDropdown implements OnInit, ControlValueAccessor, AfterCont
     });
   }
   // todo: declare function
-  _onChange(event: any) {
+  onChange(event: any) {
     this.onChangeHandler(event);
     this.change.emit(event);
   }
@@ -142,7 +141,7 @@ export class MasInputDropdown implements OnInit, ControlValueAccessor, AfterCont
       this.selectedOptions.delete(option.value);
       this._values.delete(option.value);
     }
-    this._onChange(this.selectedOptions);
+    this.onChange(Array.from(this.selectedOptions, ([_, value]) => ({ value })));
   }
   _onToggle() {
     this._panelOpen ? this.close() : this.open();

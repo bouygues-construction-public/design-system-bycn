@@ -3,14 +3,14 @@
   <label [for]="identifier" class="mas-label" *ngSwitchCase="false">{{ labelText }}</label>
 </ng-container>
 <div
-  (focus)="_onChange($event)"
+  (focus)="onChange($event)"
   class="mas-input-dropdown_value-wrapper"
   [ngSwitch]="isEmpty"
   (click)="_onToggle()"
   [ngClass]="{ 'mas-input-dropdown_listbox--opened': _panelOpen }"
 >
   <ng-container *ngSwitchCase="true">
-    <i class="{{ leadingIcon }}"></i>
+    <i class="mas-icon {{ leadingIcon }}" *ngIf="leadingIcon !== ''"></i>
     <span class="mas-input-dropdown_placeholder mas-input-dropdown-min-line">{{ placeholder }}</span></ng-container
   >
   <span class="mas-input-dropdown_text mas-input-dropdown-min-line" *ngSwitchCase="false">
@@ -27,7 +27,7 @@
     [ngClass]="{ 'mas-input-dropdown--disabled': disabled }"
     class="mas-input-dropdown_listbox-wrapper"
   >
-    <ng-content select="mas-dropdown-option" [isMultiple]="multi" [size]="size"></ng-content>
+    <ng-content select="mas-dropdown-option" [isMultiple]="multi" [size]="size" [type]="type"></ng-content>
   </div>
 </ng-template>
 <ng-content select="mas-error" *ngIf="invalid"></ng-content>
