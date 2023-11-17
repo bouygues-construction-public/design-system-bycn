@@ -204,6 +204,9 @@
     var(--mas-primitive-color_grey900--s),
     var(--mas-primitive-color_grey900--l)
   );
+  /** Alpha */
+  --mas-primitive-color_alpha-grey100: hsla(240, 9%, 60%, 0.08);
+  --mas-primitive-color_alpha-grey200: hsla(240, 9%, 60%, 0.16);
   /** White */
   --mas-primitive-color_white--h: 0;
   --mas-primitive-color_white--s: 0%;
