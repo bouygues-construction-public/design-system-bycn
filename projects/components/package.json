@@ -34,7 +34,8 @@
     "@masoni/css-toggle-button": "file:../css/src/components/togglebutton",
     "@masoni/css-badge": "file:../css/src/components/badge",
     "@masoni/css-tag": "file:../css/src/components/tag",
-    "@masoni/css-progress-bar": "file:../css/src/components/progress-bar"
+    "@masoni/css-progress-bar": "file:../css/src/components/progress-bar",
+    "@masoni/css-circular-progress-bar": "file:../css/src/components/circular-progress-bar"
 
   }
 }
