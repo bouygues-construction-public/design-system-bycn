@@ -1,0 +1,59 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+  Toc,
+  Canvas,
+  of,
+} from '@storybook/blocks';
+
+import { MasActionDropdown } from 'projects/components/src/lib/action-dropdown/action-dropdown.component';
+import * as ActionDropdownStories from './action-dropdown.stories';
+
+<Meta of={ActionDropdownStories} />
+
+<Title />
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
+
+## Overview
+
+{/* todo: writing overview here */}
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Usage
+
+{/* todo: writing component's usages here */}
+
+## Variants
+
+{/* TODO: Define component variants that can be used by other developers */}
+
+### Overview
+
+<Canvas>
+  <Story of={ActionDropdownStories.Overview} />
+</Canvas>
+
+## Guidelines
+
+- Best practices are available [here]( {/* todo: insert component's zeroheight guideline here*/})
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
