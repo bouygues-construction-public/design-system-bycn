@@ -1,0 +1,37 @@
+<ng-container [ngSwitch]="labelText === ''">
+  <ng-content select="mas-label" *ngSwitchCase="true"></ng-content>
+  <label [for]="identifier" class="mas-label" *ngSwitchCase="false">{{ labelText }}</label>
+</ng-container>
+<div
+  (focus)="onChange($event)"
+  class="mas-input-dropdown_value-wrapper"
+  [ngSwitch]="isEmpty"
+  (click)="_onToggle()"
+  [ngClass]="{ 'mas-input-dropdown_listbox--opened': _panelOpen }"
+>
+  <ng-container *ngSwitchCase="true">
+    <i class="mas-icon {{ leadingIcon }}" *ngIf="leadingIcon !== ''"></i>
+    <span class="mas-input-dropdown_placeholder mas-input-dropdown-min-line">{{ placeholder }}</span></ng-container
+  >
+  <span class="mas-input-dropdown_text mas-input-dropdown-min-line" *ngSwitchCase="false">
+    {{ triggerValue }}
+  </span>
+  <i class="mas-caret-down-outlined mas-icon mas-arrows--outlined"></i>
+</div>
+
+<!-- listbox -->
+<ng-template [ngIf]="_panelOpen && !disabled">
+  <div
+    #inputdropdown
+    role="listbox"
+    [ngClass]="{ 'mas-input-dropdown--disabled': disabled }"
+    class="mas-input-dropdown_listbox-wrapper"
+  >
+    <ng-content select="mas-dropdown-option" [isMultiple]="multi" [size]="size" [type]="type"></ng-content>
+  </div>
+</ng-template>
+<ng-content select="mas-error" *ngIf="invalid"></ng-content>
+<ng-container *ngIf="!invalid" [ngSwitch]="labelText === ''">
+  <ng-content select="mas-helper" *ngSwitchCase="true"></ng-content>
+  <span class="mas-helper" *ngSwitchCase="false">{{ helperText }}</span>
+</ng-container>

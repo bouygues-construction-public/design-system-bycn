@@ -1,0 +1,92 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+  Toc,
+  Canvas,
+  of,
+} from '@storybook/blocks';
+
+import { MasInputDropdown } from 'projects/components/src/lib/input-dropdown/input-dropdown.component';
+import * as DropdownStories from './input-dropdown.stories';
+
+<Meta of={DropdownStories} />
+
+<Title />
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
+
+## Overview
+
+- The input dropdown allows the user to select one or more items from the dropdown menu.
+- Unlike Select, the Input dropdown can display an icon or an image next to the text of the list items.
+- Input dropdowns can be used to activate an action, filter content or as a navigation element.
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Usage
+
+- To allow users to select multiple items from a list.
+- When the number of elements in the menu list is too large.
+- When it's necessary to display additional elements with the text. (icon or image)
+
+## Variants
+
+### Overview
+
+Input dropdown offers several types of menu compared to select which can only display text in the list.
+
+- `Text only`: To show text only
+- `Icon + Text`: Add a leading icon to the left of the text
+- `Image + Text`: Add a image to the left of the text
+- `Checkbox`: To present a list for multi-selection with a checkbox
+
+<Canvas>
+  <Story of={DropdownStories.Overview} />
+</Canvas>
+
+### Icon
+
+Using the 'icon' and set `type="icon"` to add a leading icon to the left of the text. Icons library is listed [here](https://bouygues-construction.github.io/design-system-bycn/main/showcase-icons).
+
+<Canvas>
+  <Story of={DropdownStories.Icon} />
+</Canvas>
+
+### Image
+
+Using the `imageUrl` and set `type="image"` to add image to Input Dropdown's options.
+
+<Canvas>
+  <Story of={DropdownStories.Image} />
+</Canvas>
+
+### Checkbox
+
+Set `type="checkbox"` to present a list for multi-selection with a checkbox. Checkbox is only be using with `multi="true"`
+
+<Canvas>
+  <Story of={DropdownStories.Checkbox} />
+</Canvas>
+
+## Guidelines
+
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/325a1c-input-dropdown/b/964f27)
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
