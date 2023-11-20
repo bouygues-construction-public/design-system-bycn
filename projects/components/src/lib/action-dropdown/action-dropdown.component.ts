@@ -11,13 +11,9 @@ import {
   QueryList,
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { MasDropdownOption } from './dropdown-option.component';
+import { MasActionDropdownOption } from './action-dropdown-option.component';
 import { Observable, Subject, defer, merge, startWith, switchMap, take, takeUntil } from 'rxjs';
 import '../../../../css/src/components/action-dropdown/dist/index.css';
-interface selectedOption {
-  option: MasDropdownOption | undefined;
-  isSelected: boolean;
-}
 @Component({
   selector: 'mas-action-dropdown',
   templateUrl: 'action-dropdown.component.html',
@@ -36,63 +32,34 @@ interface selectedOption {
     '[class.mas-action-dropdown--small]': 'size === "S"',
   },
 })
-export class MasActionDropdown implements OnInit, ControlValueAccessor, AfterContentInit {
+export class MasActionDropdown implements OnInit, AfterContentInit {
   @Input() leadingIcon: string = '';
-  @Input() labelText: string;
-  @Input() placeholder: string = '';
-  @Input() helperText: string;
+  @Input() labelText: string = '';
   @Input() identifier = `action-dropdown-${MasActionDropdown.dropdownCount++}`;
   @Input() disabled: boolean = false;
-  @Input() invalid: boolean = false;
   @Input() size: 'M' | 'S' = 'S';
-  @Input() multi: boolean = false;
-  @Input() type: 'checkbox' | 'image' | 'icon' | 'text' = 'text';
 
   @Output() change = new EventEmitter();
   readonly _destroy = new Subject<void>();
-  @ContentChildren(MasDropdownOption) options: QueryList<MasDropdownOption>;
+  @ContentChildren(MasActionDropdownOption) options: QueryList<MasActionDropdownOption>;
   static dropdownCount: number = 0;
-  protected _values: Set<any> = new Set();
-  protected selectedOptions: Map<any, selectedOption> = new Map();
   protected _panelOpen: boolean = false;
   private _ngZone: any;
 
-  get triggerValue(): string {
-    let triggerValue: string = '';
-    this.selectedOptions.forEach((option) => {
-      if (option.option?.text) {
-        triggerValue = triggerValue.concat(option.option.text, ', ');
-      }
-    });
-    return this.isEmpty ? '' : triggerValue.slice(0, -2);
-  }
-  get isEmpty() {
-    return !this.options || this.selectedOptions.size === 0;
-  }
   constructor(protected eRef: ElementRef) {}
   ngAfterContentInit(): void {
-    this.updateValue();
     this.options.changes.pipe(startWith(null), takeUntil(this._destroy)).subscribe(() => {
-      this._resetOptions();
+      const changeOrDestroyed = merge(this.options.changes, this._destroy);
+      this.optionChanges.pipe(takeUntil(changeOrDestroyed)).subscribe((event: any) => {
+        this._onSelect(event.option);
+        if (this._panelOpen) {
+          this.close();
+          this.focusOut();
+        }
+      });
     });
     // todo: optimized
-    this.options.map(
-      (option) => ((option.isMultiple = this.multi), (option.type = this.type), (option.size = this.size))
-    );
-  }
-  protected onChangeHandler = (_: any) => {};
-  protected onTouchedHandler = () => {};
-  writeValue(obj: any): void {
-    this._values = obj;
-  }
-  registerOnChange(fn: any): void {
-    this.onChangeHandler = fn;
-  }
-  registerOnTouched(fn: any): void {
-    this.onTouchedHandler = fn;
-  }
-  setDisabledState?(isDisabled: boolean): void {
-    this.disabled = isDisabled;
+    this.options.map((option) => ((option.size = this.size)));
   }
 
   ngOnInit() {}
@@ -101,7 +68,7 @@ export class MasActionDropdown implements OnInit, ControlValueAccessor, AfterCon
     if (options) {
       return options.changes.pipe(
         startWith(options),
-        switchMap(() => merge(...options.map((option) => option.onChange)))
+        switchMap(() => merge(...options.map((option) => option.change)))
       );
     }
     return this._ngZone.onStable.pipe(
@@ -109,39 +76,13 @@ export class MasActionDropdown implements OnInit, ControlValueAccessor, AfterCon
       switchMap(() => this.optionChanges)
     );
   }) as Observable<any>;
-  private _resetOptions(): void {
-    const changedOrDestroyed = merge(this.options.changes, this._destroy);
-    this.optionChanges.pipe(takeUntil(changedOrDestroyed)).subscribe((event) => {
-      this._onSelect(event.option);
-      if (this._panelOpen && !this.multi) {
-        this.close();
-        this.focusOut();
-      }
-    });
-  }
+
   // todo: declare function
   onChange(event: any) {
-    this.onChangeHandler(event);
     this.change.emit(event);
   }
-  private _onSelect(option: MasDropdownOption): void {
-    if (!option.selected) {
-      if (!this.multi) {
-        this.options.map((option) => {
-          if (option.selected) option.deselect();
-        });
-        this.selectedOptions.clear();
-        this._values.clear();
-      }
-      option.select();
-      this.selectedOptions.set(option.value, { isSelected: true, option });
-      this._values.add(option.value);
-    } else if (this.multi) {
-      option.deselect();
-      this.selectedOptions.delete(option.value);
-      this._values.delete(option.value);
-    }
-    this.onChange(Array.from(this.selectedOptions, ([_, value]) => ({ value })));
+  private _onSelect(option: MasActionDropdownOption): void {
+    this.onChange(option);
   }
   _onToggle() {
     this._panelOpen ? this.close() : this.open();
@@ -152,21 +93,11 @@ export class MasActionDropdown implements OnInit, ControlValueAccessor, AfterCon
   private open() {
     this._panelOpen = true;
   }
-  focusOut() {
-    this.onTouchedHandler();
-  }
+  private focusOut() {}
   @HostListener('document:click', ['$event'])
   clickOut(event: Event) {
     if (!this.eRef.nativeElement.contains(event.target)) {
       this.close();
-    }
-  }
-  updateValue() {
-    if (this.options) {
-      const option = this.options.find((option) => this._values.has(option.value));
-      if (option) {
-        this._onSelect(option);
-      }
     }
   }
 }

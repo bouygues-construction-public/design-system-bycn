@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 
 import { MasActionDropdown } from './action-dropdown.component';
 import { CommonModule } from '@angular/common';
-import { MasDropdownOption } from './dropdown-option.component';
+import { MasActionDropdownOption } from './action-dropdown-option.component';
 
 @NgModule({
   imports: [CommonModule],
-  exports: [MasActionDropdown, MasDropdownOption],
-  declarations: [MasActionDropdown, MasDropdownOption],
+  exports: [MasActionDropdown, MasActionDropdownOption],
+  declarations: [MasActionDropdown, MasActionDropdownOption],
 })
 export class MasActionDropdownModule {}
