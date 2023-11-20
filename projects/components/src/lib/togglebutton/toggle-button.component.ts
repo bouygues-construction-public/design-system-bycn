@@ -10,7 +10,6 @@ import {
   forwardRef,
 } from '@angular/core';
 import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR } from '@angular/forms';
-import '@masoni/css-toggle-button/dist/index.css';
 
 export interface ToggleButtonEvent {}
 @Component({

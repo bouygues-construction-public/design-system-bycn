@@ -1,7 +1,4 @@
 import { AfterViewInit, Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
-import '@masoni/css-text-input/dist/index.css';
-import '@masoni/icons/dist/css/filled/index.css';
-import '@masoni/icons/dist/css/outlined/index.css';
 import {
   ControlValueAccessor,
   FormControl,
@@ -59,7 +56,6 @@ export class MasTextInput implements OnInit, ControlValueAccessor, AfterViewInit
   protected _value: string = '';
   model: any;
   @ViewChild('textinput') inputViewChild: ElementRef | undefined;
-  @Input() formControlName: FormControlName | undefined;
   @Input() placeholder: string = '';
   @Input() required: boolean = false;
   @Input() size: 'M' | 'S' = 'S';

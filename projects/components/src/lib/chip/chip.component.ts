@@ -1,5 +1,4 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import '@masoni/css-chip/src/index.css';
 
 @Component({
   selector: 'mas-chip',

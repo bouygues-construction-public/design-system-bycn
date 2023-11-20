@@ -1,10 +1,9 @@
 import { Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
-import '@masoni/icons/dist/css/filled/index.css';
-import '@masoni/icons/dist/css/outlined/index.css';
 
 @Component({
   selector: 'mas-option',
-  template: `<i class="mas-check-outlined mas-icon mas-system-and-device--outlined" *ngIf="selected"></i>
+  template: `
+  <i class="mas-check-outlined mas-icon mas-system-and-device--outlined" *ngIf="selected"></i>
     <span class="mas-typo_body-3 mas-option_text" #text><ng-content></ng-content></span> `,
   host: {
     '[class.mas-option--selected]': '_selected',

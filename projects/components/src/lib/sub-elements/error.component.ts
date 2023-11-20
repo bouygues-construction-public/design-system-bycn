@@ -2,7 +2,6 @@ import { Component, NgModule, Input, OnInit, TemplateRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import '@masoni/css-sub-elements/dist/index.css';
 @Component({
   selector: 'mas-error',
   host: {

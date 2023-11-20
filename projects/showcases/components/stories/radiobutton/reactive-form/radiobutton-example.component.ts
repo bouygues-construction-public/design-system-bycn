@@ -5,7 +5,7 @@ import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
   selector: 'app-radio-button',
   template: `
     <form [formGroup]="formGroup">
-      <mas-radio-group formControlName="radioGroup" disabled="true">
+      <mas-radio-group formControlName="radioGroup" disabled="true" value="2">
         <mas-radio-button labelText="Radio Button 1" value="1" [disabled]="formGroup.disabled"></mas-radio-button>
         <mas-radio-button labelText="Radio Button 2" value="2" [disabled]="formGroup.disabled"></mas-radio-button>
         <mas-radio-button labelText="Radio Button 3" value="3" [disabled]="formGroup.disabled"></mas-radio-button>
@@ -34,7 +34,7 @@ export class RadioButtonExample implements OnInit {
 
   ngOnInit() {
     this.formGroup = this.formBuilder.group({
-      radioGroup: new FormControl(),
+      radioGroup: new FormControl('1'),
     });
   }
   toggleRadio() {
