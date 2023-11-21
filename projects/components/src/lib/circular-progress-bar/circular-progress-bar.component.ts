@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import '@masoni/css-circular-progress-bar/dist/index.css';
 
 @Component({
   selector: 'circular-progress-bar',
