@@ -1,6 +1,6 @@
 {
   "name": "@masoni/css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Bouygues Design System - Masoni global CSS styles library",
   "keywords": [
     "design-system",
@@ -31,7 +31,7 @@
     "url": "https://github.com/bouygues-construction/design-system-bycn/issues"
   },
   "devDependencies": {
-    "@masoni/css-design-tokens": "file:src/design_tokens",
+    "@masoni/css-design-tokens": "^0.0.3",
     "@masoni/css-tailwind-preset": "file:presets/tailwind",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.23",

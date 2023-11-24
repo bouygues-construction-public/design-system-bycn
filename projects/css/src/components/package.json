@@ -30,7 +30,6 @@
         "url": "https://github.com/bouygues-construction/design-system-bycn/issues"
     },
     "devDependencies": {
-        "@masoni/css-design-tokens": "file:../design_tokens",
         "postcss": "^8.4.23",
         "postcss-cli": "^10.1.0",
         "postcss-import": "^15.1.0",

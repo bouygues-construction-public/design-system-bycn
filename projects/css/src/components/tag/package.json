@@ -1,6 +1,6 @@
 {
     "name": "@masoni/css-tag",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Bouygues Design System - Masoni specific CSS styles for button",
     "keywords": [
         "design-system",
@@ -29,7 +29,7 @@
         "url": "https://github.com/bouygues-construction/design-system-bycn/issues"
     },
     "devDependencies": {
-        "@masoni/css-design-tokens": "file:../../design_tokens",
+        "@masoni/css-design-tokens": "^0.0.3",
         "@masoni/css-postcss-config": "file:../../../config/postcss",
         "postcss-cli": "^10.1.0"
     }

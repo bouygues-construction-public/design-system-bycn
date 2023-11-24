@@ -1,6 +1,8 @@
 /*
  * Public API Surface of components
  */
+export * from './lib/checkbox';
+export * from './lib/sub-elements';
 export * from './lib/text-input';
 export * from './lib/select';
 export * from './lib/togglebutton';

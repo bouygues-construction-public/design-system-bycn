@@ -13,7 +13,7 @@ import {
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { MasDropdownOption } from './dropdown-option.component';
 import { Observable, Subject, defer, merge, startWith, switchMap, take, takeUntil } from 'rxjs';
-import '../../../../css/src/components/input-dropdown/dist/index.css';
+
 interface selectedOption {
   option: MasDropdownOption | undefined;
   isSelected: boolean;
