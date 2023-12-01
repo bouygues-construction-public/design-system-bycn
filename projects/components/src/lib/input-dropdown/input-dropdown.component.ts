@@ -71,7 +71,7 @@ export class MasInputDropdown implements OnInit, ControlValueAccessor, AfterCont
   }
   constructor(protected eRef: ElementRef) {}
   ngAfterContentInit(): void {
-    this.updateValue();
+    this.options.changes.subscribe({next: () => this.updateValue()})
     this.options.changes.pipe(startWith(null), takeUntil(this._destroy)).subscribe(() => {
       this._resetOptions();
     });
@@ -83,7 +83,12 @@ export class MasInputDropdown implements OnInit, ControlValueAccessor, AfterCont
   protected onChangeHandler = (_: any) => {};
   protected onTouchedHandler = () => {};
   writeValue(obj: any): void {
-    this._values = obj;
+    if (this.options) {
+      const selected = this.options.find((option) => option.value === obj);
+      if (selected) {
+        this._onSelect(selected);
+      }
+    }
   }
   registerOnChange(fn: any): void {
     this.onChangeHandler = fn;
@@ -121,8 +126,8 @@ export class MasInputDropdown implements OnInit, ControlValueAccessor, AfterCont
   }
   // todo: declare function
   onChange(event: any) {
-    this.onChangeHandler(event);
-    this.change.emit(event);
+    this.onChangeHandler(event.map((selected: any) => selected.value.option.value));
+    this.change.emit();
   }
   private _onSelect(option: MasDropdownOption): void {
     if (!option.selected) {

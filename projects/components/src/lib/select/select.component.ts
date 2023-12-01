@@ -11,9 +11,9 @@ import {
   TemplateRef,
   AfterContentInit,
   HostListener,
-} from "@angular/core";
-import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
-import { MasOption } from "./option.component";
+} from '@angular/core';
+import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { MasOption } from './option.component';
 import {
   Observable,
   Subject,
@@ -25,14 +25,14 @@ import {
   take,
   takeUntil,
   tap,
-} from "rxjs";
+} from 'rxjs';
 export interface selectedOption {
   option: MasOption | undefined;
   isSelected: boolean;
 }
 @Component({
-  selector: "mas-select",
-  templateUrl: "./select.component.html",
+  selector: 'mas-select',
+  templateUrl: './select.component.html',
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
@@ -41,23 +41,23 @@ export interface selectedOption {
     },
   ],
   host: {
-    class: "mas-select",
-    "[class.mas-select--invalid]": "invalid",
-    "[class.mas-select--disabled]": "disabled",
-    "[class.mas-select--medium]": 'size === "M"',
-    "[class.mas-select--small]": 'size === "S"',
+    class: 'mas-select',
+    '[class.mas-select--invalid]': 'invalid',
+    '[class.mas-select--disabled]': 'disabled',
+    '[class.mas-select--medium]': 'size === "M"',
+    '[class.mas-select--small]': 'size === "S"',
   },
 })
 export class MasSelect implements ControlValueAccessor, AfterContentInit {
   static selectCount = 0;
-  protected _value: string = "";
+  protected _value: string = '';
   protected selected: selectedOption = { option: undefined, isSelected: false };
   private _panelOpen: boolean = false;
 
   @Input() identifier = `select-${MasSelect.selectCount++}`;
   @Input() disabled: boolean = false;
   @Input() invalid: boolean = false;
-  @Input() size: "M" | "S" = "S";
+  @Input() size: 'M' | 'S' = 'S';
   @Input() filled: boolean = false;
   @Input()
   set value(value: string) {
@@ -70,7 +70,7 @@ export class MasSelect implements ControlValueAccessor, AfterContentInit {
     }
     return this.options.filter((option) => option.selected)[0].value;
   }
-  @Input() placeholder: string = "";
+  @Input() placeholder: string = '';
   get panelOpen(): boolean {
     return this._panelOpen;
   }
@@ -78,7 +78,7 @@ export class MasSelect implements ControlValueAccessor, AfterContentInit {
   readonly _destroy = new Subject<void>();
   get triggerValue() {
     if (this.empty) {
-      return "";
+      return '';
     }
     return this.selected.option?.text;
   }
@@ -88,7 +88,11 @@ export class MasSelect implements ControlValueAccessor, AfterContentInit {
   @ContentChildren(MasOption) options: QueryList<MasOption>;
 
   ngAfterContentInit() {
-    this.updateValue();
+    this.options.changes.subscribe({
+      next: () => {
+        this.updateValue();
+      },
+    });
     this.options.changes
       .pipe(startWith(null), takeUntil(this._destroy))
       .subscribe(() => {
@@ -96,7 +100,7 @@ export class MasSelect implements ControlValueAccessor, AfterContentInit {
       });
   }
   constructor(protected _ngZone: NgZone, protected eRef: ElementRef) {}
-  @HostListener("document:click", ["$event"])
+  @HostListener('document:click', ['$event'])
   clickOut(event: Event) {
     if (!this.eRef.nativeElement.contains(event.target)) {
       this.close();
@@ -180,8 +184,8 @@ export class MasSelect implements ControlValueAccessor, AfterContentInit {
   }
   updateValue() {
     if (this.options) {
-      const option = this.options.find((option) => option.value === this.value)
-      if(option){
+      const option = this.options.find((option) => option.value === this.value);
+      if (option) {
         this._onSelect(option);
       }
     }
