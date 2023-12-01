@@ -1,5 +1,11 @@
 # Change Log
 
+## [0.0.8] (2023-12-1)
+
+[npm package ](https://www.npmjs.com/package/@masoni/components/v/0.0.8)
+
+**Note:** fixed `mas-input-dropdown` and `select` option.
+
 ## [0.0.7]() (2023-11-23)
 
 [npm package ](https://www.npmjs.com/package/@masoni/components/v/0.0.7)
