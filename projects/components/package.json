@@ -1,6 +1,6 @@
 {
   "name": "@masoni/components",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Bouygues Design System - Masoni components library",
   "peerDependencies": {
     "@angular/common": "^16.2.0",
