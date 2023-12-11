@@ -7,5 +7,6 @@
 @import './select/dist/index.css';
 @import './text-input/dist/index.css';
 @import './button/dist/index.css';
+@import './popover/dist/index.css';
 @import './tag/src/index.css';
 @import './progress-bar/src/index.css'

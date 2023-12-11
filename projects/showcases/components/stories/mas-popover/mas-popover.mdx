@@ -1,0 +1,119 @@
+import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/addon-docs/blocks';
+import { MasPopOver } from 'projects/components/src/lib/popover/popover.component';
+import * as MasPopOverStories from './mas-popover.stories';
+
+<Meta of={MasPopOverStories} />
+
+# MasPopover
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Style](#style)
+- [MasPopover Directive](#maspopoverdirective)
+
+
+## Overview
+A popover is a layered component that appears above all other page content. 
+
+The `MasPopover` component provides a flexible and customizable way to display contextual information or actions in a sleek and user-friendly manner. 
+With various positioning options, styling choices, and content configurations
+
+<Canvas>
+ 
+    <Story of={MasPopOverStories.Default} />
+ 
+</Canvas>
+
+## Props
+
+<Controls />
+
+## Usage
+
+To use the `MasPopover`, you can pass the desired inputs to the component.
+
+## Style
+
+### Placements
+
+The component comes with different orientations such as `top`, `bottom`, `right`, `left` , `top-left`, `top-right`, `bottom-left`, `bottom-left` which you can use to alter the look and feel of the popoover.
+
+<Canvas>
+
+<div  style={{ margin: '150px 250px'}}>
+  <div style={{  display : 'flex', justifyContent : 'space-between' }}>
+     <Story of={MasPopOverStories.TOPLEFTWithDirective} /> 
+       <Story of={MasPopOverStories.TOPWithDirective} /> 
+        <Story of={MasPopOverStories.TOPRIGHTWithDirective} />
+  
+  </div>
+ <div style={{  display : 'flex',  justifyContent : 'space-between' }}>
+       <Story of={MasPopOverStories.LEFTWithDirective} />   
+        <Story of={MasPopOverStories.RIGHTWithDirective} />
+  
+  </div>
+   <div style={{  display : 'flex', justifyContent : 'space-between' }}>
+       <Story of={MasPopOverStories.BOTTOMLEFTWithDirective} />
+       <Story of={MasPopOverStories.BOTTOMWithDirective} /> 
+       <Story of={MasPopOverStories.BOTTOMRIGHTWithDirective} />
+    
+  </div>
+
+</div>
+ 
+</Canvas>
+
+### ShowTitle
+
+Popover can be used with and without title.
+
+<Canvas>
+ 
+    <Story of={MasPopOverStories.WithTitle} />
+    <Story of={MasPopOverStories.WithoutTitle} />
+ 
+</Canvas>
+
+### ShowButton
+
+To ensure the message is acknowledged, a validation button can be used.
+
+
+<Canvas>
+ 
+    <Story of={MasPopOverStories.WithButton} />
+    <Story of={MasPopOverStories.WithoutButton} />
+ 
+</Canvas>
+
+
+
+
+## MasPopoverDirective
+
+The `MasPopoverDirective` is a custom directive that provides popover behavior to any HTML element.
+
+### Usage
+
+To use the `MasPopover`, you can apply the `masPopover` attribute to any HTML element and pass the desired inputs.
+
+### Examples
+
+<Canvas>
+
+
+ <Story of={MasPopOverStories.Directive} />
+
+ 
+</Canvas>
+
+## Guidelines
+
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/9981e5-popover/b/75c0d1)
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

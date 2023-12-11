@@ -24,6 +24,7 @@
   "sideEffects": false,
   "devDependencies": {
     "@masoni/css-button": "file:../css/src/components/button",
+    "@masoni/css-popover": "file:../css/src/components/popover",
     "@masoni/css-checkbox": "file:../css/src/components/checkbox",
     "@masoni/css-chip": "file:../css/src/components/chip",
     "@masoni/css-link": "file:../css/src/components/link",
