@@ -130,6 +130,9 @@ mas-option.mas-check-outlined {
 
 .mas-select--disabled {
   opacity: 0.4;
+  & > .mas-select_value-wrapper {
+    cursor: not-allowed;
+  }
 }
 /* ! invalid */
 .mas-select--invalid .mas-select_value-wrapper {

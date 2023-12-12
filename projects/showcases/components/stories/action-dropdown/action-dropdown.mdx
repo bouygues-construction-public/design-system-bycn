@@ -1,0 +1,82 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+  Toc,
+  Canvas,
+  of,
+} from '@storybook/blocks';
+
+import { MasActionDropdown } from 'projects/components/src/lib/action-dropdown/action-dropdown.component';
+import * as ActionDropdownStories from './action-dropdown.stories';
+
+<Meta of={ActionDropdownStories} />
+
+<Title />
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
+
+## Overview
+
+The dropdown action allows the user to reveal a dropdown menu of actions behind a single button, in the form of a dropdown list.
+These actions are semantically related to the same purpose, and they are themselves linked to the most important element on the page and in the user's journey.
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Usage
+
+- The dropdown action allows the user to reveal a dropdown menu of actions behind a single button, in the form of a dropdown list.
+- These actions are semantically related to the same purpose, and they are themselves linked to the most important element on the page and in the user's journey.
+- The list of actions should be placed close to the content with which it offers a continuation of the user's experience. Consider using container angles to emphasize this type of information.
+
+## Variants
+
+### Overview
+
+<Canvas>
+  <Story of={ActionDropdownStories.Basic} />
+</Canvas>
+
+### Leading Icon
+
+Action dropdown can be used with leading icon.
+
+<Canvas>
+  <Story of={ActionDropdownStories.LeadingIcon} />
+</Canvas>
+
+### Size
+
+The action dropdown has two sizes available: `small` and `medium`. The `small` size is used by default.
+
+<Canvas>
+  <Story of={ActionDropdownStories.Size} />
+</Canvas>
+
+### Disabled
+
+<Canvas>
+  <Story of={ActionDropdownStories.Disabled} />
+</Canvas>
+
+## Guidelines
+
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/13104b-action-dropdown/b/964f27)
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

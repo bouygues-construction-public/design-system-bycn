@@ -1,0 +1,24 @@
+<div
+  (focus)="onChange($event)"
+  (click)="_onToggle()"
+  class="mas-action-dropdown-button"
+  [ngClass]="{ 'mas-action-dropdown_listbox--opened': _panelOpen }"
+>
+    <i class="mas-icon {{ leadingIcon }}" *ngIf="leadingIcon !== ''"></i>
+    <span class="mas-action-dropdown_text mas-action-dropdown-min-line">
+      {{ labelText }}
+    </span>
+  <i class="mas-caret-down-outlined mas-icon mas-arrows--outlined"></i>
+</div>
+
+<!-- listbox -->
+<ng-template [ngIf]="_panelOpen && !disabled">
+  <div
+    #actiondropdown
+    role="listbox"
+    [ngClass]="{ 'mas-action-dropdown--disabled': disabled }"
+    class="mas-action-dropdown_listbox-wrapper"
+  >
+    <ng-content select="mas-dropdown-option" [isMultiple]="multi" [size]="size" [type]="type"></ng-content>
+  </div>
+</ng-template>
