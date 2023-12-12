@@ -17,7 +17,18 @@ npm i -S @masoni/css
 
 ## Usage
 
+This package include `@masoni/css-design-tokens`, you could checkout the package's usage [here](https://github.com/bouygues-construction/design-system-bycn/blob/merge/projects/css/src/design_tokens/README.md)
+
 Once you have installed this package, you just have to import CSS styles!
+
+Insert `@masoni/css` in Your Angular App by Updating the angular.json
+
+```json
+"styles": [
+    "node_modules/@masoni/css/dist/index.css"
+    "src/styles.css",
+],
+```
 
 With a bundler that supports CSS imports in JS files:
 
