@@ -28,7 +28,8 @@ import * as ActionDropdownStories from './action-dropdown.stories';
 
 ## Overview
 
-{/* todo: writing overview here */}
+The dropdown action allows the user to reveal a dropdown menu of actions behind a single button, in the form of a dropdown list.
+These actions are semantically related to the same purpose, and they are themselves linked to the most important element on the page and in the user's journey.
 
 <Primary />
 
@@ -38,21 +39,43 @@ import * as ActionDropdownStories from './action-dropdown.stories';
 
 ## Usage
 
-{/* todo: writing component's usages here */}
+- The dropdown action allows the user to reveal a dropdown menu of actions behind a single button, in the form of a dropdown list.
+- These actions are semantically related to the same purpose, and they are themselves linked to the most important element on the page and in the user's journey.
+- The list of actions should be placed close to the content with which it offers a continuation of the user's experience. Consider using container angles to emphasize this type of information.
 
 ## Variants
-
-{/* TODO: Define component variants that can be used by other developers */}
 
 ### Overview
 
 <Canvas>
-  <Story of={ActionDropdownStories.Overview} />
+  <Story of={ActionDropdownStories.Basic} />
+</Canvas>
+
+### Leading Icon
+
+Action dropdown can be used with leading icon.
+
+<Canvas>
+  <Story of={ActionDropdownStories.LeadingIcon} />
+</Canvas>
+
+### Size
+
+The action dropdown has two sizes available: `small` and `medium`. The `small` size is used by default.
+
+<Canvas>
+  <Story of={ActionDropdownStories.Size} />
+</Canvas>
+
+### Disabled
+
+<Canvas>
+  <Story of={ActionDropdownStories.Disabled} />
 </Canvas>
 
 ## Guidelines
 
-- Best practices are available [here]( {/* todo: insert component's zeroheight guideline here*/})
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/13104b-action-dropdown/b/964f27)
 
 ## Feedback & contact
 

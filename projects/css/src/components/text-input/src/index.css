@@ -11,6 +11,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  background-color: var(--mas-semantic-color_surface-primary);
   box-shadow: 0 0 0 1px var(--mas-semantic-color_border-primary);
   border-radius: var(--mas-radius_2);
   color: inherit;
@@ -51,7 +52,8 @@
   color: var(--mas-semantic-color_text-tiertiary);
 }
 /* ! hover */
-:not(.mas-text-input--disabled, .mas-text-input--invalid) > .mas-text-input_input-wrapper:hover:not(.mas-text-input--focus ) {
+:not(.mas-text-input--disabled, .mas-text-input--invalid)
+  > .mas-text-input_input-wrapper:hover:not(.mas-text-input--focus) {
   box-shadow: 0 0 0 1px var(--mas-semantic-color_action-tiertiary--default);
 }
 /* ! invalid */
@@ -91,8 +93,14 @@
   }
 }
 /* ! disabled */
-.mas-text-input--disabled .mas-text-input_input-wrapper {
+.mas-text-input--disabled {
   opacity: 0.4;
+  & > .mas-text-input_input-wrapper {
+    cursor: not-allowed;
+    & > .mas-text-input_input {
+      cursor: not-allowed;
+    }
+  }
 }
 /* ! Filled */
 .mas-text-input--filled input::placeholder {
