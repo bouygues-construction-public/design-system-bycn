@@ -80,8 +80,7 @@ body {
   scrollbar-gutter: stable;
 }
 /* ! scrollbar */
-/* todo: check if overflow worked */
-.input-dropdown--overlay {
+.mas-input-dropdown--overlay {
   & > ::-webkit-scrollbar {
     width: 16px;
   }

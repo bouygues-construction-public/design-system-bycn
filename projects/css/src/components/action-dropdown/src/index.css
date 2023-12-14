@@ -19,6 +19,7 @@ body {
   align-items: center;
   cursor: pointer;
   gap: 8px;
+  border-radius: 4px;
   background: var(--mas-semantic-color_surface-primary);
   align-self: stretch;
   block-size: 36px;
@@ -79,7 +80,7 @@ body {
   border: 1px solid var(--mas-semantic-color_border-primary);
   margin-top: 44px;
   right: 10px;
-  padding: 4px 0;
+  padding: 4px;
   z-index: 10 !important;
   width: 280px;
   max-block-size: 296px;

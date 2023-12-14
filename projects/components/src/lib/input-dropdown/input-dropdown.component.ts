@@ -30,7 +30,7 @@ interface selectedOption {
   ],
   host: {
     class: 'mas-input-dropdown',
-    '[class.input-dropdown--overlay]': 'options.length > 8',
+    '[class.mas-input-dropdown--overlay]': 'options.length > 8',
     '[class.mas-input-dropdown--invalid]': 'invalid',
     '[class.mas-input-dropdown--disabled]': 'disabled',
     '[class.mas-input-dropdown--medium]': 'size === "M"',
