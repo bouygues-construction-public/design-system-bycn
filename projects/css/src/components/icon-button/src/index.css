@@ -1,0 +1,200 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+.mas-btn {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px; 
+  color: var(--text-reverse, #FFF);
+  font-feature-settings: 'calt' off;
+  /* Body/Semibold/Body 3 */ 
+  font-family: var(--mas-typo_font-family--inter); 
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 44px;
+}
+a.mas-btn {
+  cursor: pointer;
+}
+/* Primary button */
+.mas-btn_variant--primary {
+  background-color: var(--action-primary-default, #007AB7);  
+}
+
+.mas-btn_variant--primary:not(:disabled):hover {
+  background-color: var(--action-primary-hovered, #069); 
+}
+
+.mas-btn_variant--primary:not(:disabled):active {
+  background-color: var(--action-primary-pressed, #005885);
+}
+
+.mas-btn_variant--primary:disabled {
+  opacity: 0.5;
+  background-color: var(--action-primary-default, #005885);
+}
+ 
+/* Secondary button */
+.mas-btn_variant--secondary {
+  color: var(--text-primary, #0C0C0D);
+  border: 1px solid var(--border-primary, #D7D7DB);
+  background: var(--action-reverse-default, #FFF); 
+}
+
+.mas-btn_variant--secondary:not(:disabled):hover {
+  border: 1px solid var(--border-primary, #D7D7DB);
+background: var(--action-reverse-hovered, #F9F9FA);
+}
+
+.mas-btn_variant--secondary:not(:disabled):active {
+  border: 1px solid var(--border-primary, #D7D7DB);
+background: var(--action-reverse-pressed, #EDEDF0); 
+}
+
+.mas-btn_variant--secondary:disabled {
+  border: 1px solid var(--border-primary, #D7D7DB);
+opacity: 0.5;
+background: var(--action-reverse-default, #FFF);
+}
+
+/* Tertiary button */
+.mas-btn_variant--tertiary {
+  color: var(--text-primary, #0C0C0D);
+}
+
+.mas-btn_variant--tertiary:not(:disabled):active {
+  background-color: var(--alpha-grey-pressed, rgba(144, 144, 162, 0.16));
+}
+
+.mas-btn_variant--tertiary:not(:disabled):hover {
+  background: var(--alpha-grey-hovered, rgba(144, 144, 162, 0.08));
+}
+
+.mas-btn_variant--tertiary:disabled {
+  opacity: 0.5;
+}
+
+/* Accent button */
+.mas-btn_variant--accent {
+  background-color: var(--action-brand-default, #C74D10);  
+}
+
+.mas-btn_variant--accent:not(:disabled):hover {
+  background-color: var(--action-brand-hovered, #A6400D); 
+}
+
+.mas-btn_variant--accent:not(:disabled):active {
+  background-color: var(--action-brand-pressed, #84330A);
+}
+
+.mas-btn_variant--accent:disabled {
+  opacity: 0.5;
+  background-color: var(--action-brand-default, #C74D10);
+}
+
+/* Sizes */
+.mas-btn_size--small {
+  font-size: 14px; 
+  font-weight: 600;
+  line-height: 20px;
+  padding: 8px 16px;
+  height: 36px;
+}
+
+.mas-btn_size--medium {
+  font-size: 16px; 
+  font-weight: 600;
+  line-height: 24px;
+  padding: 10px 20px;
+}
+
+
+/* Button icons  */
+.mas-btn--icon-alone {
+  inline-size: 48px;
+  block-size: 48px;
+  padding: 14px;
+}
+
+.mas-btn--icon-alone i[class^='mas-'] {
+  font-size: 24px;
+}
+
+.mas-btn_size--small.mas-btn--icon-alone {
+  inline-size: 32px;
+  block-size: 32px;
+  padding: 8px;
+}
+
+.mas-btn_size--small.mas-btn--icon-alone i[class^='mas-'] {
+  font-size: 20px;
+}
+
+.mas-btn_size--medium.mas-btn--icon-alone {
+  inline-size: 48px;
+  block-size: 48px;
+  padding: 14px;
+}
+
+.mas-btn_size--medium.mas-btn--icon-alone i[class^='mas-'] {
+  font-size: 24px;
+}
+
+ 
+
+.mas-btn--icon-left i[class^='mas-'],
+.mas-btn_size--medium.mas-btn--icon-left i[class^='mas-'] {
+  padding-inline-end: 8px;
+  font-size: 20px;
+}
+
+.mas-btn_size--small.mas-btn--icon-left i[class^='mas-'] {
+  padding-inline-end: 6px;
+  font-size: 16px;
+}
+
+.mas-btn_size--small.mas-btn--icon-right i[class^='mas-'] {
+  padding-inline-start: 6px;
+  font-size: 16px;
+}
+
+.mas-btn_size--small.mas-btn--icon-left svg {
+  margin-inline-end: 6px;
+}
+
+.mas-btn_size--small.mas-btn--icon-right svg {
+  margin-inline-start: 6px;
+}
+
+.mas-btn--icon-right i[class^='mas-'],
+.mas-btn_size--medium.mas-btn--icon-right i[class^='mas-'] {
+  padding-inline-start: 8px;
+  font-size: 20px;
+}
+
+
+.mas-icon-left{
+  margin-right: 8px;
+}
+.mas-icon-right{
+  margin-left: 8px;
+}  
+
+.mas-icon {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    font-size: 14px; 
+  }
+ 
