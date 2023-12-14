@@ -13,7 +13,7 @@ import {
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { MasActionDropdownOption } from './action-dropdown-option.component';
 import { Observable, Subject, defer, merge, startWith, switchMap, take, takeUntil } from 'rxjs';
-import '../../../../css/src/components/action-dropdown/dist/index.css';
+
 @Component({
   selector: 'mas-action-dropdown',
   templateUrl: 'action-dropdown.component.html',
