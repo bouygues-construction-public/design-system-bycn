@@ -4,7 +4,9 @@
     <i *ngIf="state=='success'" class="mas-progress-circular-bar-icon mas-check-outlined mas-system-and-device--outlined "></i> 
     <i  *ngIf="state=='error'" class="mas-progress-circular-bar-icon mas-x-outlined mas-math-and-finance--outlined " ></i> 
   </div>
-  <span *ngIf="loadingText!='' && state=='loading'" class="label" >{{loadingText}}</span>
-  <span *ngIf="successText!='' && state=='success'" class="label" >{{successText}}</span>
-  <span *ngIf="errorText!='' && state=='error'" class="label" >{{errorText}}</span>
+  <div class="mas-progress-circular-bar-label">
+    <span *ngIf="loadingText!='' && state=='loading'" >{{loadingText}}</span>
+    <span *ngIf="successText!='' && state=='success'" >{{successText}}</span>
+    <span *ngIf="errorText!='' && state=='error'" >{{errorText}}</span>
+  </div>
 </div>
