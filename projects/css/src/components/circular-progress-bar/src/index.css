@@ -1,7 +1,7 @@
 @import '@masoni/css-design-tokens/dist/index.css';
 
 .mas-progress-circular-bar {
-  font-family: var(--mas-typo_font-family--inter);
+
   width: 16px;
   height: 16px;
   color: #D7D7DB;
@@ -28,8 +28,14 @@
 }
 
 .mas-progress-circular-bar-label {
-  color: #0C0C0D;
-  margin: 0 5px;
+  color: var(--Text-Primary, #0C0C0D);
+  font-feature-settings: 'calt' off;
+  /* Body/Semibold/Body 3 */
+  font-family: var(--mas-typo_font-family--inter);
+  font-weight:var(--mas-typo_caption-font-weight);
+  font-size:   var( --mas-typo_subtitle-3-font-size) ;
+  font-style: normal;
+  line-height: var(--mas-typo_subtitle-3-line-height); /* 142.857% */
 }
 
 .mas-progress-circular-bar-icon {
