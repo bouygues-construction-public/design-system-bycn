@@ -19,14 +19,22 @@ body {
   align-items: center;
   cursor: pointer;
   gap: 8px;
+  border-radius: 4px;
   background: var(--mas-semantic-color_surface-primary);
   align-self: stretch;
   block-size: 36px;
 }
 .mas-dropdown-option_text {
+  color: var(--mas-semantic-color_text-secondary);
   width: 100%;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.mas-dropdown-option_icon {
+  color: var(--mas-semantic-color_icon-secondary);
+}
+.mas-action-dropdown-button_icon {
+  color: var(--mas-semantic-color_icon-primary);
 }
 .mas-action-dropdown-button {
   position: relative;
@@ -63,6 +71,7 @@ body {
   appearance: none;
   display: block;
   user-select: none;
+  color: var(--mas-semantic-color_text-primary);
   font-family: var(--mas-typo_font-family--inter);
   font-weight: var(--mas-typo_body-font-weight--bold);
   font-size: var(--mas-typo_body-2-font-size);
@@ -79,7 +88,7 @@ body {
   border: 1px solid var(--mas-semantic-color_border-primary);
   margin-top: 44px;
   right: 10px;
-  padding: 4px 0;
+  padding: 4px;
   z-index: 10 !important;
   width: 280px;
   max-block-size: 296px;
@@ -115,7 +124,7 @@ body {
 :not(.mas-action-dropdown--disabled) {
   & > .mas-action-dropdown-button:hover {
     background-color: var(--mas-semantic-color_action-reverse--hovered);
-    box-shadow: 0 0 0 1px var(--mas-semantic-color_border-primary), 0 0 0 8px hsla(240, 9%, 60%, 0.08);
+    box-shadow: 0 0 0 1px var(--mas-semantic-color_border-primary), 0 0 0 4px hsla(240, 9%, 60%, 0.08);
   }
 }
 .mas-dropdown-option:hover {
@@ -129,7 +138,7 @@ body {
 
 :not(.mas-action-dropdown--disabled) {
   & > .mas-action-dropdown_listbox--opened {
-    box-shadow: 0 0 0 1px var(--mas-semantic-color_border-primary), 0 0 0 8px hsla(240, 9%, 60%, 0.08);
+    box-shadow: 0 0 0 1px var(--mas-semantic-color_border-primary), 0 0 0 4px hsla(240, 9%, 60%, 0.08);
   }
   & > .mas-action-dropdown-button:active {
     background-color: var(--mas-semantic-color_action-reverse--pressed);

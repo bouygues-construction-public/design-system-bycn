@@ -29,8 +29,14 @@
 .mas-text-input-min-line {
   /* width: 100%; */
 }
-
+.mas-leading-icon {
+  color: var(--mas-semantic-color_icon-secondary);
+}
+.mas-trailing-icon {
+  color: var(--mas-semantic-color_icon-secondary);
+}
 .mas-text-input_input {
+  color: var(--mas-semantic-color_text-primary);
   display: block;
   min-inline-size: 208px;
   inline-size: 100%;
