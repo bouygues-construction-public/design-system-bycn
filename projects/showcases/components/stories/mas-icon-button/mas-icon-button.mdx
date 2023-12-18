@@ -1,8 +1,8 @@
 import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/addon-docs/blocks';
-import { MasButton } from 'projects/components/src/lib/button/button.component';
-import * as ButtonStories from './mas-icon-button.stories';
+import { MasIconButton } from 'projects/components/src/lib/button/button.component';
+import * as IconButtonStories from './mas-icon-button.stories';
 
-<Meta of={ButtonStories} />
+<Meta of={IconButtonStories} />
 
 # MasButton
 
@@ -15,11 +15,10 @@ import * as ButtonStories from './mas-icon-button.stories';
 
 ## Overview
 
-The `MasButton` is a custom Button component serve as navigational element and can be used independently or inline with text.
-it offer a lightweight option for navigation.
+The `MasIconButton` is an action component that works like the other buttons but its design is simpler, which allows it to be used when you need to add actions that take up less space or when grouping several actions together in a restricted layout.
 
 <Canvas>
-  <Story of={ButtonStories.Default} />
+  <Story of={IconButtonStories.Default} />
 </Canvas>
 
 ## Props
@@ -28,17 +27,25 @@ it offer a lightweight option for navigation.
 
 ## Usage
 
-To use the `MasButton`, you can pass the desired inputs to the component.
+To use the `MasIconButton`, you can pass the desired inputs to the component.
 
 ## Variants
+
+### Default
+
+<Canvas>
+  <Story of={IconButtonStories.ButtonOnlyIcon} />
+</Canvas>
+
+### Primary, Secondary, Tertiary, Accent
 
 The component comes in different variants such as `primary`, `secondary`, `tertiary`, `accent` which you can use to alter the look and feel of the button.
 
 <Canvas>
-  <Story of={ButtonStories.Primary} />
-  <Story of={ButtonStories.Secondary} />
-  <Story of={ButtonStories.Tertiary} />
-  <Story of={ButtonStories.Accent} />
+  <Story of={IconButtonStories.Primary} />
+  <Story of={IconButtonStories.Secondary} />
+  <Story of={IconButtonStories.Tertiary} />
+  <Story of={IconButtonStories.Accent} />
 </Canvas>
 
 ### Size
@@ -46,36 +53,13 @@ The component comes in different variants such as `primary`, `secondary`, `terti
 The component comes in different sizes : `small`, `medium`
 
 <Canvas>
-  <Story of={ButtonStories.ButtonSmall} />
-  <Story of={ButtonStories.ButtonMedium} />
-</Canvas>
-
-### Icons The component can contain icons whose placement depends on the context of use and type of action
-
-<Canvas>
-  <Story of={ButtonStories.ButtonOnlyIcon} />
-  <Story of={ButtonStories.ButtonLeftIcon} />
-  <Story of={ButtonStories.ButtonRightIcon} />
-  <Story of={ButtonStories.ButtonRightAndLeftIcon} />
-</Canvas>
-
-## MasButton Directive
-
-The `MasButtonDirective` is a custom directive that provides button styles and behavior to any HTML element.
-
-### Usage
-
-To use the `MasButtonDirective`, you can apply the `MasButton` attribute to any HTML element and pass the desired inputs.
-
-### Examples
-
-<Canvas>
-  <Story of={ButtonStories.Directive} />
+  <Story of={IconButtonStories.ButtonSmall} />
+  <Story of={IconButtonStories.ButtonMedium} />
 </Canvas>
 
 ## Guidelines
 
-- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/520f9f-button/b/964f27)
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/36313b-icon-button/b/964f27)
 
 ## Feedback & contact
 

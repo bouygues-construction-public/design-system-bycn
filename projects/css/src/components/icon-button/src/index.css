@@ -5,7 +5,7 @@
   padding: 10px 20px;
   justify-content: center;
   align-items: center;
-  border-radius: 8px; 
+  border-radius: var(--mas-radius_full); 
   color: var(--text-reverse, #FFF);
   font-feature-settings: 'calt' off;
   /* Body/Semibold/Body 3 */ 

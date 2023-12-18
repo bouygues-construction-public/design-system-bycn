@@ -88,51 +88,45 @@ Default.args = {
   variant: 'primary',
   size: 'medium',
   disabled: false,
-  iconAlone: null,
+  iconAlone: "mas-eject-outlined mas-media--outlined",
 };
 
 export const Primary = () => ({
   template: `
-    <mas-icon-button variant="primary">Primary</mas-icon-button>
+    <mas-icon-button variant="primary" iconAlone="mas-hand-palm-outlined mas-people--outlined">Primary</mas-icon-button>
   `,
 });
 
 export const Secondary = () => ({
   template: `
-    <mas-icon-button variant="secondary">Secondary</mas-icon-button>
+    <mas-icon-button variant="secondary" iconAlone="mas-hand-pointing-outlined mas-people--outlined">Secondary</mas-icon-button>
   `,
 });
 export const Accent = () => ({
   template: `
-    <mas-icon-button variant="accent">Accent</mas-icon-button>
+    <mas-icon-button variant="accent" iconAlone="mas-hands-praying-outlined mas-people--outlined">Accent</mas-icon-button>
   `,
 });
 export const Tertiary = () => ({
   template: `
-    <mas-icon-button variant="tertiary">Tertiary</mas-icon-button>
+    <mas-icon-button variant="tertiary" iconAlone="mas-hand-waving-outlined mas-people--outlined">Tertiary</mas-icon-button>
   `,
 });
  
 export const ButtonMedium = () => ({
   template: `
-    <mas-icon-button variant="primary" size="medium">Medium</mas-icon-button>
+    <mas-icon-button variant="primary" size="medium" iconAlone="mas-fingerprint-outlined mas-security-and-warnings--outlined">Medium</mas-icon-button>
   `,
 });
 
 export const ButtonSmall = () => ({
   template: `
-    <mas-icon-button variant="primary" size="small">Small</mas-icon-button>
+    <mas-icon-button variant="primary" size="small" iconAlone="mas-fingerprint-outlined mas-security-and-warnings--outlined">Small</mas-icon-button>
   `,
 });
 export const ButtonOnlyIcon = () => ({
   template: `
     <mas-icon-button variant="primary" iconAlone="mas-check-outlined mas-system-and-device--outlined"></mas-icon-button>
-  `,
-});
-
-export const Directive = () => ({
-  template: `
-    <a MasIconButton variant="primary">Link</a>
   `,
 });
  
