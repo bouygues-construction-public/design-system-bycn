@@ -74,8 +74,8 @@ body {
   color: var(--mas-semantic-color_text-primary);
   font-family: var(--mas-typo_font-family--inter);
   font-weight: var(--mas-typo_body-font-weight--bold);
-  font-size: var(--mas-typo_body-2-font-size);
-  line-height: var(--mas-typo_body-2-line-height);
+  font-size: var(--mas-typo_body-3-font-size);
+  line-height: var(--mas-typo_body-3-line-height);
   background-color: var(--mas-semantic-color-surface-primary);
   transition: var(--mas-transition_focus-visible);
 }
@@ -178,6 +178,10 @@ body {
   font-weight: var(--mas-typo_body-font-weight);
   font-size: var(--mas-typo_body-2-font-size);
   line-height: var(--mas-typo_body-2-line-height);
+  .mas-action-dropdown_text {
+    font-size: var(--mas-typo_body-2-font-size);
+    line-height: var(--mas-typo_body-2-line-height);
+  }
   .mas-action-dropdown-button {
     block-size: 44px;
   }
