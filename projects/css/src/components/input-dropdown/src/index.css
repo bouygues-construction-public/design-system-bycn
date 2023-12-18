@@ -22,7 +22,8 @@ body {
   align-self: stretch;
   block-size: 36px;
 }
-.mas-dropdown-option_text {
+.mas-input-dropdown-option_text {
+  color: var(--mas-semantic-color_text-primary);
   width: 100%;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -47,7 +48,15 @@ body {
   padding-block: 8px;
   cursor: pointer;
 }
-
+.mas-input-dropdown_leading-icon {
+  color: var(--mas-semantic-color_icon-secondary);
+}
+.mas-input-dropdown_trailing-icon {
+  color: var(--mas-semantic-color_icon-secondary);
+}
+.mas-input-dropdown_icon {
+  color: var(--mas-semantic-color_icon-primary);
+}
 .mas-input-dropdown-min-line {
   width: 100%;
   text-overflow: ellipsis;
@@ -61,6 +70,7 @@ body {
 .mas-input-dropdown_text {
   appearance: none;
   display: block;
+  color: var(--mas-semantic-color_text-primary);
   background-color: var(--mas-semantic-color-surface-primary);
   transition: var(--mas-transition_focus-visible);
   padding-inline-end: 8px;
