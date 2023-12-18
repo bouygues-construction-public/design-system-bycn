@@ -68,12 +68,12 @@ background: var(--action-reverse-default, #FFF);
   color: var(--text-primary, #0C0C0D);
 }
 
-.mas-btn_variant--tertiary:not(:disabled):active {
-  background-color: var(--alpha-grey-pressed, rgba(144, 144, 162, 0.16));
-}
-
 .mas-btn_variant--tertiary:not(:disabled):hover {
   background: var(--alpha-grey-hovered, rgba(144, 144, 162, 0.08));
+}
+
+.mas-btn_variant--tertiary:not(:disabled):active {
+  background-color: var(--alpha-grey-pressed, rgba(144, 144, 162, 0.16));
 }
 
 .mas-btn_variant--tertiary:disabled {
