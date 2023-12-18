@@ -4,8 +4,8 @@ import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@
   selector: 'mas-dropdown-option',
   template: `
     <img src="{{ imageUrl }}" class="mas-dropdown-option-image" *ngIf="type === 'image'" />
-    <i class="{{ icon }} mas-icon" *ngIf="type === 'icon' && icon !== ''"></i>
-    <span class="mas-option_text" #text [ngClass]="{ 'mas-typo_body-3': size === 'S', 'mas-typo_body-2': size === 'M' }"
+    <i class="{{ icon }} mas-icon mas-dropdown-option_icon" *ngIf="type === 'icon' && icon !== ''"></i>
+    <span class="mas-dropdown-option_text" #text [ngClass]="{ 'mas-typo_body-3': size === 'S', 'mas-typo_body-2': size === 'M' }"
       ><ng-content></ng-content
     ></span>
   `,
