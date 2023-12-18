@@ -16,10 +16,10 @@ export class MasIconButton {
 
   get classes(): { [key: string]: boolean } {
     return {
-      'mas-btn': true,
-      [`mas-btn_variant--${this.variant}`]: true,
-      [`mas-btn_size--${this.size}`]: true,
-      'mas-btn--icon-alone': !this.isEmpty(this.iconAlone),
+      'mas-icon-button': true,
+      [`mas-icon-button_variant--${this.variant}`]: true,
+      [`mas-icon-button_size--${this.size}`]: true,
+      'mas-icon-button--icon-alone': !this.isEmpty(this.iconAlone),
     };
   }
 
