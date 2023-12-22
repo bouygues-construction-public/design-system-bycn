@@ -1,0 +1,68 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+.mas-tab {
+  gap: 8px;
+  font-family: ;
+}
+
+/* Size */
+.mas-tab--medium {
+  padding: 12px;
+  font-size: ;
+  font-style: ;
+  font-weight: var(--mas-typo_body-font-weight);
+  line-height: ;
+}
+
+.mas-tab--large {
+  padding: 16px;
+  font-size: ;
+  font-style: ;
+  font-weight: ;
+  line-height: ;
+}
+
+/* Hovered */
+:not(.mas-tab--disabled, .mas-tab--selected, :active).mas-tab:hover {
+  background-color: var(--mas-semantic-color_alpha--hovered);
+}
+:not(.mas-tab--disabled, :active).mas-tab:hover.mas-tab--selected {
+  background-color: var(--mas-semantic-color_alpha-blue--hovered);
+}
+/* Actived */
+:not(.mas-tab--disabled, .mas-tab--selected).mas-tab:active {
+  background-color: var(--mas-semantic-color_alpha--pressed);
+}
+:not(.mas-tab--disabled).mas-tab:active.mas-tab--selected {
+  background-color: var(--mas-semantic-color_alpha-blue--pressed);
+}
+/* Selected */
+:not(.mas-tab--disabled).mas-tab--selected {
+  & > .mas-tab_text {
+    color: var(--mas-semantic-color_action-primary--default);
+  }
+  & > .mas-tab_icon {
+    color: var(--mas-semantic-color_action-primary--default);
+  }
+}
+/* Orientation */
+.mas-tab--horizontal.mas-tab--selected {
+  border-bottom: 2px solid var(--mas-semantic-color_action-primary--default);
+}
+.mas-tab--vertical.mas-tab--selected {
+  border-right: 2px solid var(--mas-semantic-color_action-primary--default);
+}
+
+.mas-tab_icon {
+  block-size: 16px;
+  inline-size: 16px;
+  color: var(--mas-semantic-color_icon-secondary);
+}
+.mas-tab_text {
+  color: var(--mas-semantic-color_text-secondary);
+  font-family: var(--mas-typo_family--inter);
+  font-size: var(--mas-typo_body-3-font-size);
+  font-style: normal;
+  font-weight: var(--mas-typo_body-font-weight);
+  line-height: var(--mas-typo_headline-3-font-size);
+}

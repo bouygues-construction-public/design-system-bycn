@@ -207,6 +207,18 @@
   /** Alpha */
   --mas-primitive-color_alpha-grey100: hsla(240, 9%, 60%, 0.08);
   --mas-primitive-color_alpha-grey200: hsla(240, 9%, 60%, 0.16);
+  --mas-primitive-color_alpha-blue100: hsla(
+    var(--mas-primitive-color_blue500--h),
+    var(--mas-primitive-color_blue500--s),
+    var(--mas-primitive-color_blue500--l),
+    0.08
+  );
+  --mas-primitive-color_alpha-blue200: hsla(
+    var(--mas-primitive-color_blue500--h),
+    var(--mas-primitive-color_blue500--s),
+    var(--mas-primitive-color_blue500--l),
+    0.16
+  );
   /** White */
   --mas-primitive-color_white--h: 0;
   --mas-primitive-color_white--s: 0%;

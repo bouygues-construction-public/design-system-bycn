@@ -1,49 +1,55 @@
-import { Meta, Story, StoryObj, moduleMetadata } from "@storybook/angular";
-import { MasTab } from "projects/components/src/lib/tab";  
+import { Meta, Story, StoryObj, moduleMetadata } from '@storybook/angular';
+import { MasTab } from 'projects/components/src/lib/tab';
 
-const icons = ['mas-arrow-arc-left-outlined mas-arrows--outlined',
-                'mas-arrow-circle-left-outlined mas-arrows--outlined',
-                'mas-arrow-arc-right-outlined mas-arrows--outlined',
-                'mas-arrow-circle-right-outlined mas-arrows--outlined',
-                'mas-arrow-square-out-outlined mas-arrows--outlined',
-                'mas-info-outlined mas-security-and-warnings--outlined',
-                'mas-warning-circle-outlined mas-security-and-warnings--outlined',
-                'mas-calendar-blank-outlined mas-time--outlined',
-                'mas-smiley-meh-outlined mas-people--outlined',
-                'mas-check-outlined mas-system-and-device--outlined',
-                'mas-upload-simple-outlined mas-system-and-device--outlined',
-                'mas-currency-btc-outlined mas-commerce--outlined']
-const colors = ['orange', 'amber', 'green', 'teal', 'blue', 'purple', 'red', 'roc']
+const icons = [
+  'mas-arrow-arc-left-outlined mas-arrows--outlined',
+  'mas-arrow-circle-left-outlined mas-arrows--outlined',
+  'mas-arrow-arc-right-outlined mas-arrows--outlined',
+  'mas-arrow-circle-right-outlined mas-arrows--outlined',
+  'mas-arrow-square-out-outlined mas-arrows--outlined',
+  'mas-info-outlined mas-security-and-warnings--outlined',
+  'mas-warning-circle-outlined mas-security-and-warnings--outlined',
+  'mas-calendar-blank-outlined mas-time--outlined',
+  'mas-smiley-meh-outlined mas-people--outlined',
+  'mas-check-outlined mas-system-and-device--outlined',
+  'mas-upload-simple-outlined mas-system-and-device--outlined',
+  'mas-currency-btc-outlined mas-commerce--outlined',
+];
+const colors = ['orange', 'amber', 'green', 'teal', 'blue', 'purple', 'red', 'roc'];
 const argTypes = {
-  
-    label: {
-      type: { name: 'string', required: false },
-      description: 'The label of the tab', 
-      defaultValue: 'Text',
-      control: 'text', 
-    },
-    size: {
-      type: { name: 'string', required: false },
-      description: 'The size of the tab. Available options: \'medium\', \'large\'. Default: \'medium\'', 
-      defaultValue: 'medium',
-      control: 'radio', 
-      options: ['medium', 'large'],
-    },
-    leadingIcon: {
-      type: { name: 'string', required: false },
-      description: 'The name of the leading  icon to display on the left side of the tab.',
-      defaultValue: '',
-      control:'select',
-      options: ['', ...icons],
-    },
-    number: {
-      type: { name: 'number', required: false },
-      description: '',
-      defaultValue: '0',
-      control: 'number',
-    }
-  };
- 
+  label: {
+    type: { name: 'string', required: false },
+    description: 'The label of the tab',
+    defaultValue: 'Text',
+    control: 'text',
+  },
+  size: {
+    type: { name: 'string', required: false },
+    description: "The size of the tab. Available options: 'medium', 'large'. Default: 'medium'",
+    defaultValue: 'medium',
+    control: 'radio',
+    options: ['medium', 'large'],
+  },
+  orientation: {
+    type: { name: 'string', required: false },
+    description: '',
+    control: 'radio',
+    options: ['horizontal', 'vertical'],
+  },
+  leadingIcon: {
+    type: { name: 'string', required: false },
+    description: 'The name of the leading  icon to display on the left side of the tab.',
+    defaultValue: '',
+    control: 'select',
+    options: ['', ...icons],
+  },
+  number: {
+    type: { name: 'number', required: false },
+    description: '',
+    defaultValue: '0',
+    control: 'number',
+  },
+};
 
 export default {
   title: 'Components / Navigation / Tabs',
@@ -52,8 +58,8 @@ export default {
     moduleMetadata({
       declarations: [MasTab],
     }),
-  ], 
-  argTypes:argTypes,
+  ],
+  argTypes: argTypes,
   parameters: {
     docs: {
       description: {
@@ -69,25 +75,24 @@ const Template: Story<MasTab> = (args: MasTab) => ({
             <mas-tab
               [size]="size"
               [leadingIcon]="leadingIcon"
-              [number]="number">{{label}}
+              [number]="number"
+              [orientation]="orientation">Label text
             </mas-tab>
             `,
 });
- 
+
 /** Basic : A tab with default settings */
 
 export const Default = Template.bind({});
 Default.args = {
-  label: 'Text',
-  size: 'medium'
+  size: 'M',
 };
-
 
 export const ShowcaseSizes = () => ({
   template: `
   <div style="display: flex; flex-wrap: wrap;">
-       <mas-tab size="M">{{label}}</mas-tab>
-       <mas-tab label="L" size="medium">{{label}}</mas-tab>
+       <mas-tab size="M">Label text</mas-tab>
+       <mas-tab label="L" size="medium">Label text</mas-tab>
   </div>
   `,
   props: {
@@ -98,7 +103,7 @@ export const ShowcaseColors = () => ({
   template: `
       <div style="display: flex; flex-wrap: wrap;">
         <ng-container *ngFor="let color of colors">
-           <mas-tab size="M" ></mas-tab>
+           <mas-tab size="M" >Label text</mas-tab>
         </ng-container>
       </div>
   `,
@@ -109,7 +114,7 @@ export const ShowcaseColors = () => ({
 export const ShowcaseBadge = () => ({
   template: `
       <div style="display: flex; flex-wrap: wrap;">
-        <mas-tab size="M" [number]="10"></mas-tab>
+        <mas-tab size="M" [number]="10">Label text</mas-tab>
       </div>
   `,
   props: {
@@ -119,8 +124,8 @@ export const ShowcaseBadge = () => ({
 export const ShowcaseOrientation = () => ({
   template: `
       <div style="display: flex; flex-wrap: wrap;">
-        <mas-tab size="M" orientation=""></mas-tab>
-        <mas-tab size="M" orientation=""></mas-tab>
+        <mas-tab size="M" orientation="">Label text</mas-tab>
+        <mas-tab size="M" orientation="">Label text</mas-tab>
       </div>
   `,
   props: {
@@ -132,8 +137,3 @@ export const ShowcaseIcon = () => ({
     <mas-tab leadingIcon="mas-check-outlined mas-system-and-device--outlined">Leading Icon</mas-tab>
   `,
 });
- 
- 
-
-  
- 
