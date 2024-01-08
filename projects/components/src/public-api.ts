@@ -16,4 +16,4 @@ export * from './lib/circular-progress-bar';
 export * from './lib/input-dropdown';
 export * from './lib/action-dropdown';
 export * from './lib/popover';
-export * from './lib/icon-button';
+export * from './lib/icon-button';export * from './lib/alert';
