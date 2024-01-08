@@ -18,9 +18,9 @@
   color: var(--Text-Reverse, #FFF);
   font-feature-settings: 'calt' off;
   font-family: var(--mas-typo_font-family--inter); 
-  font-size:   var( --mas-typo_subtitle-3-font-size) ;
+  font-size:   var( --mas-typo_body-3-font-size) ;
   font-style: normal;
-  line-height: var(--mas-typo_subtitle-3-line-height); /* 142.857% */
+  line-height: var(--mas-typo_body-3-line-height); /* 142.857% */
   
 }
 .padding-bar {
@@ -222,9 +222,9 @@
   border: 1px solid var(--Border-Primary, #D7D7DB);
   background: var(--Action-Reverse-Default, #FFF);
   font-family: var(--mas-typo_font-family--inter); 
-  font-size:   var( --mas-typo_subtitle-3-font-size) ;
+  font-size:   var( --mas-typo_body-3-font-size) ;
   font-weight:var(--mas-typo_caption-font-weight);
-  line-height: var(--mas-typo_subtitle-3-line-height); /* 142.857% */
+  line-height: var( --mas-typo_body-3-line-height); /* 142.857% */
 
   display: flex;
   width: fit-content;
