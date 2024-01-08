@@ -1,0 +1,40 @@
+<div class="mas-checkbox" [ngClass]="{ 'mas-checkbox--large': size === 'L', 'mas-checkbox--disabled': disabled }">
+  <input
+    class="hidden-accessible"
+    type="checkbox"
+    #input
+    [id]="identifier"
+    [checked]="checked"
+    [indeterminate]="indeterminate"
+    [disabled]="disabled"
+    (change)="handleChange($event)"
+    (blur)="onBlur()"
+  />
+  <div class="mas-checkbox_touch-target" (click)="_onInputClick($event, input)"></div>
+
+  <div class="mas-checkbox-box" [ngClass]="{ 'mas-checkbox-box--active': checked || indeterminate }">
+    <ng-container *ngIf="checked && size === 'S'">
+      <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 5L3 7L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </ng-container>
+    <ng-container *ngIf="indeterminate && size === 'S'">
+      <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1H9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </ng-container>
+
+    <ng-container *ngIf="checked && size === 'L'">
+      <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 7L4 10L13 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </ng-container>
+    <ng-container *ngIf="indeterminate && !checked && size === 'L'">
+      <svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1H13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </ng-container>
+  </div>
+  <label class="mas-checkbox_label" [for]="identifier">{{ labelText }}</label>
+</div>
+<br />

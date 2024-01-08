@@ -1,0 +1,61 @@
+import { Meta, Title, Subtitle, Description, Primary, Controls, Stories, Story, Canvas, Toc } from '@storybook/blocks';
+
+{/* TODO: import Component and Component's stories */}
+
+import { MasRadioButton } from 'projects/components/src/lib/radiobutton/radiobutton.component';
+import * as RadioButtonStories from './radiobutton.stories';
+
+<Meta of={RadioButtonStories} />
+
+<Title />
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
+
+## Overview
+
+Radio buttons are intended for selecting one option among mutually exclusive choices, rather than multiple options.
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Usage
+
+- Radio buttons are recommended to allow user to select a single item from a multiple item list. Only one radio button can be selected at the time.
+- Radio button should take part of a list of radio button that include a least two choices, and include mutually exclusive option (each option must be independent from every other option in the list).
+- It's best to avoid nesting radio buttons or using them to select multiple options.
+
+## Variants
+
+{/* TODO: Define component variants that can be used by other developers */}
+
+### Overview
+
+When using list of `mas-radio-button`s, they have to be grap inside a `mas-radio-group` to manage.
+
+<Canvas>
+  <Story of={RadioButtonStories.Overview} />
+</Canvas>
+
+### Size
+
+The Radio Button has two sizes available: `small` and `large`. The `small` size is used by default.
+
+<Canvas>
+  <Story of={RadioButtonStories.Size} />
+</Canvas>
+
+## Guidelines
+
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/62eca3-radio-button/b/914f72)
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

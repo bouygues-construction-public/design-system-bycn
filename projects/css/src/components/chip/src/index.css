@@ -1,0 +1,77 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+.chip, .filter-chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 16px;
+  border: 1px solid var(--action-tertiary-default, #B1B1B3); 
+  font-family: var(--mas-typo_font-family--inter); 
+  color: var(--text-primary, #0C0C0D);
+  padding: 6px 12px 6px 12px;
+  cursor: pointer;
+  height: 32px;
+
+}
+.chip.has-left-img{
+  padding: 4px 8px 4px 4px;
+}
+.chip.has-left-icon{
+  padding: 6px 8px;
+}
+.chip.disabled.selected {
+  background-color: #a0d3ff;
+  color: #fff;
+} 
+
+.filter-chip.selected {
+  background: var(--action-primary-default, #007AB7);
+  color: #fff;
+  border: none;
+} 
+.filter-chip:hover {
+  background: var(--action-primary-hovered, #069);
+} 
+.filter-chip:not(.selected ):hover {
+  background: rgba(177, 177, 179, 0.10);
+  color: var(--text-primary, #0C0C0D);
+} 
+.filter-chip.pressed {
+  background: var(--action-primary-pressed, #005885);
+  color: #fff;
+} 
+
+.chip:hover {
+  border: 1px solid var(--action-tertiary-hovered, #8B8B8E);
+  background: rgba(177, 177, 179, 0.10); 
+} 
+.chip.pressed {
+  border: 1px solid var(--action-tertiary-pressed, #717174);
+  background: rgba(177, 177, 179, 0.20); 
+} 
+
+  
+.chip-label {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* Body/Regular/Body 3 */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+} 
+
+.chip-image {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.left-content {
+  display: flex;
+  align-items: center; 
+  margin-right: 8px;
+}
+.right-content { 
+  cursor: pointer;
+  margin-left: 8px;
+}

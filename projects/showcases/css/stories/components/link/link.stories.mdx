@@ -1,0 +1,47 @@
+import { Meta, Story, Preview, Props, Description, Canvas } from '@storybook/addon-docs/blocks'; 
+
+<Meta title="Components / Actions / Link" />
+
+# Link
+
+## Introduction
+Links serve as navigational elements and can be used independently or inline with text. They offer a lightweight option for navigation.
+For more details, see our [Link guideline](https://zeroheight.com/9b39bb2a0/p/967eb4-link/b/964f27)
+
+## Default
+<Canvas> 
+    <a   href="#" class="mas-link mas-link_size--medium"> Link </a>
+</Canvas>
+ CSS styles for `Link` component:
+
+```css
+/* Link styles */
+.mas-link {
+  /* styles here */
+} 
+```
+## Size
+
+The component comes in different sizes : `small`, `medium`, `large`
+<Canvas> 
+    
+    <a   href="#" class="mas-link mas-link_size--small"> small </a> 
+    <a   href="#" class="mas-link mas-link_size--medium"> medium </a> 
+    <a   href="#" class="mas-link mas-link_size--large"> large </a>
+</Canvas>
+
+CSS styles for size used by the `Link` component:
+
+```css
+/* Size styles */
+.mas-link_size--small {
+  /* Small size styles here */
+}
+.mas-link_size--medium {
+  /* medium size styles here */
+}
+.mas-link_size--large {
+  /* large size styles here */
+}
+
+```

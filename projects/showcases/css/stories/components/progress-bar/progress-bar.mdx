@@ -1,0 +1,162 @@
+import { Meta, Story, Preview, Props, Description, Canvas } from '@storybook/addon-docs/blocks'; 
+
+<Meta title="Components / Indicators / Progress bar" />
+
+# Progress bar
+
+## Overview
+A `MasProgressBar` serves as an indicator that signifies the acknowledgment of the user's request and signifies that the application is actively advancing towards fulfilling the requested task. These visual elements are designed to keep users informed about the current state of ongoing processes, provide estimates for the duration of a task, and indicate when a request is in the process of execution
+
+## Default
+
+<Canvas> 
+    <div class="mas-progress-bar active">
+      <div class="mas-progress-bar-label">
+        <div class="label">Progress</div>
+      </div>
+      <div class="mas-progress-wrapper">
+          <div class="mas-progress-bar-inner" style={{width: '50%'}}></div>
+      </div>
+      <div class="helper">helper </div>
+   </div>
+</Canvas>
+
+CSS styles :
+
+```css
+
+.mas-progress-bar {
+  /* styles here */
+}
+.mas-progress-bar-label {
+  /* styles here */
+}
+.mas-progress-wrapper {
+  /* styles here */
+}
+.mas-progress-bar-inner {
+  /* styles here */
+}
+.label {
+  /* styles here */
+}
+.helper {
+  /* styles here */
+}
+```
+
+## Variant
+
+### Type
+<Canvas> 
+   <div class="mas-progress-bar active inline">
+      <div class="mas-progress-bar-label">
+        <div class="label">Inline</div>
+      </div>
+      <div class="mas-progress-wrapper">
+          <div class="mas-progress-bar-inner" style={{width: '50%'}}></div>
+      </div> 
+   </div>
+</Canvas>
+<Canvas>  
+  <div class="mas-progress-bar active">
+      <div class="mas-progress-bar-label">
+        <div class="label">Default</div>
+      </div>
+      <div class="mas-progress-wrapper">
+          <div class="mas-progress-bar-inner" style={{width: '50%'}}></div>
+      </div>
+      <div class="helper">helper </div>
+   </div>
+</Canvas>
+CSS styles for Type used by the `tag` component:
+
+```css
+/* Inline styles */
+  .mas-progress-bar .inline {
+
+  }
+```
+
+### States
+The `state` property allows to provide a user feedback regarding the `success` / `fail` of the process.
+<Canvas>  
+  <div class="mas-progress-bar active">
+      <div class="mas-progress-bar-label">
+        <div class="label">Active</div>
+      </div>
+      <div class="mas-progress-wrapper">
+          <div class="mas-progress-bar-inner" style={{width: '50%'}}></div>
+      </div>
+      <div class="helper">helper </div>
+   </div>
+</Canvas>
+<Canvas>  
+  <div class="mas-progress-bar success">
+      <div class="mas-progress-bar-label">
+        <div class="label">Success</div>
+        <i class="mas-icon mas-check-circle-filled mas-system-and-device--filled"></i>
+      </div>
+      <div class="mas-progress-wrapper">
+          <div class="mas-progress-bar-inner" style={{width: '100%'}}></div>
+      </div>
+      <div class="helper">helper </div>
+   </div>
+</Canvas>
+<Canvas>  
+  <div class="mas-progress-bar error">
+      <div class="mas-progress-bar-label">
+        <div class="label">Error</div>
+        <i class="mas-icon mas-prohibit-inset-filled mas-security-and-warnings--filled"></i>
+      </div>
+      <div class="mas-progress-wrapper">
+          <div class="mas-progress-bar-inner" style={{width: '100%'}}></div>
+      </div>
+      <div class="helper">helper </div>
+   </div>
+</Canvas>
+
+```css
+/* States styles */
+  .mas-progress-bar .success {
+
+  }
+  .mas-progress-bar .error {
+
+  }
+```
+
+## Size
+<Canvas> 
+     
+  <div class="mas-progress-bar active small">
+      <div class="mas-progress-bar-label">
+        <div class="label">Small Progress</div>
+      </div>
+      <div class="mas-progress-wrapper">
+          <div class="mas-progress-bar-inner" style={{width: '50%'}}></div>
+      </div>
+      <div class="helper">helper </div>
+   </div>
+</Canvas>   
+<Canvas> 
+   <div class="mas-progress-bar active">
+      <div class="mas-progress-bar-label">
+        <div class="label">Large Progress</div>
+      </div>
+      <div class="mas-progress-wrapper">
+          <div class="mas-progress-bar-inner" style={{width: '50%'}}></div>
+      </div> 
+      <div class="helper">helper </div>
+   </div>
+</Canvas>
+
+CSS styles for size used by the `tag` component:
+
+```css
+/* Size styles */
+.mas-progress-bar .small {
+  /* Small size styles here */
+}
+```
+ 

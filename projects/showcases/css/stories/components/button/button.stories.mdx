@@ -1,0 +1,120 @@
+import { Meta, Story, Preview, Props, Description, Canvas } from '@storybook/addon-docs/blocks'; 
+
+<Meta title="Components / Actions / Button" />
+
+# Button
+
+## Introduction
+The `Button` element is an interactive user-activated element.
+
+Once activated, it then performs an action on the interface, such as submitting a form, changing the state of an element on the interface, or opening a dialog box.
+
+For more details, see our [Button guideline](https://zeroheight.com/9b39bb2a0/p/520f9f-button/b/75c0d1)
+
+## Basic
+<Canvas> 
+    <button class="mas-btn mas-btn_size--medium mas-btn_variant--primary">
+      button
+    </button>
+    <button class="mas-btn mas-btn_size--medium mas-btn_variant--primary" disabled>
+      button
+    </button>
+    <a class="mas-btn mas-btn_size--medium mas-btn_variant--primary" >
+      Link
+    </a>  
+</Canvas>
+
+## Variant
+
+<Canvas> 
+    <button class="mas-btn mas-btn_size--medium mas-btn_variant--primary">
+      button
+    </button>
+    <button class="mas-btn mas-btn_size--medium mas-btn_variant--secondary">
+      button
+    </button>
+    <button class="mas-btn mas-btn_size--medium mas-btn_variant--tertiary">
+      button
+    </button>
+    <button class="mas-btn mas-btn_size--medium mas-btn_variant--accent">
+      button
+    </button>
+</Canvas>
+CSS styles for variant used by the `Button` component:
+
+```css
+/* Variant styles */
+.mas-btn_variant--primary {
+  /* primary variant styles here */
+}
+.mas-btn_variant--secondary {
+  /* secondary variant styles here */
+}
+.mas-btn_variant--tertiary {
+  /* tertiary variant styles here */
+}
+.mas-btn_variant--accent {
+  /* accent variant styles here */
+}
+```
+## Size
+
+<Canvas> 
+    <button class="mas-btn mas-btn_size--small mas-btn_variant--primary">
+      button
+    </button>
+    <button class="mas-btn mas-btn_size--medium mas-btn_variant--primary">
+      button
+    </button> 
+</Canvas>
+
+CSS styles for size used by the `Button` component:
+
+```css
+/* Size styles */
+.mas-btn_size--small {
+  /* Small size styles here */
+}
+.mas-btn_size--medium {
+  /* Medium size styles here */
+}
+```
+## Icons
+
+<Canvas>
+    <button class="mas-btn mas-btn_size--medium mas-btn_variant--primary">
+      <i class="mas-icon mas-icon-alone mas-check-outlined mas-system-and-device--outlined"></i>
+    </button>
+    <button class="mas-btn mas-btn_size--medium mas-btn_variant--primary">
+      <i class="mas-icon mas-icon-left mas-check-outlined mas-system-and-device--outlined"></i>
+      left icon
+    </button>
+    <button class="mas-btn mas-btn_size--medium mas-btn_variant--primary">
+      Right icon
+      <i class="mas-icon mas-icon-right mas-check-outlined mas-system-and-device--outlined"></i>
+    </button> 
+    
+    <button class="mas-btn mas-btn_size--medium mas-btn_variant--primary">
+      <i class="mas-icon mas-icon-left mas-check-outlined mas-system-and-device--outlined"></i>
+      Button
+      <i class="mas-icon mas-icon-right mas-check-outlined mas-system-and-device--outlined"></i>
+    </button> 
+</Canvas>
+CSS styles for size used by the `Button` component:
+
+```css
+/* Icon styles */
+.mas-btn--icon-left {
+  /* Left icon styles here */
+}
+
+.mas-btn--icon-right {
+  /* Right icon styles here */
+}
+
+/* Icon button styles */
+.mas-btn--icon-alone {
+  /* icon styles here */
+}
+```
+ 

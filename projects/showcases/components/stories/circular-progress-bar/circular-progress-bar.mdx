@@ -1,0 +1,59 @@
+import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/addon-docs/blocks';
+import { CircularProgressBar } from 'projects/components/src/lib/circular-progress-bar/circular-progress-bar.component';
+import * as CircularProgressBarStories from './circular-progress-bar.stories';
+
+<Meta of={CircularProgressBarStories} />
+
+# Circular Progress Bar
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
+
+## Overview
+
+Circular progress bar is employed to indicate ongoing actions and reassure users that their requests are in progress. While they don't offer specific insights into backend processes, they provide users with the assurance that their actions are being processed.
+
+Particularly beneficial for actions involving data creation, updates, or deletions, especially when dealing with substantial datasets. They can be seamlessly integrated into various elements such as tables, triggered by primary or secondary button clicks, or even within modals
+
+
+<Canvas>
+  <Story of={CircularProgressBarStories.Default} />
+</Canvas>
+
+## Props
+
+<Controls />
+
+## Usage
+
+Circular progress bar is employed to indicate ongoing actions and reassure users that their requests are in progress. While they don't offer specific insights into backend processes, they provide users with the assurance that their actions are being processed.
+
+## Variants
+
+### States
+
+The circular progress bar is used to indicate that a data-related process is currently being processed. This should necessarily be a short action, the outcome of which is known. The circular progress bar must lead to a state change, either to "success" or "default."
+
+<Canvas>
+  <Story of={CircularProgressBarStories.States} />
+</Canvas>
+
+### Label
+
+The label is used to provide information about the type of ongoing process. It is not mandatory. 
+
+<Canvas>
+  <Story of={CircularProgressBarStories.WithLabel} />
+</Canvas>
+
+## Guidelines
+
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/1803fd-circular-progress-bar/b/75c0d1)
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

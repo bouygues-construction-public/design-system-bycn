@@ -1,0 +1,96 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+  Toc,
+  Canvas,
+  of,
+} from '@storybook/blocks';
+
+import { MasSelect } from 'projects/components/src/lib/select/select.component';
+import * as SelectStories from './select.stories';
+
+<Meta of={SelectStories} />
+
+<Title />
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
+
+## Overview
+
+Selects are intended for selecting options from a reduced list. The list must contain a minimum of 3 items. It is a component that allows the user to input data and provide context for their choices or journey.
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Usage
+
+- Use select component to make a selection from a predefined list of items, and when user have to set data.
+- Be careful when using select to allow the user to enter data in a form. In the case of a navigation action, select is not appropriate.
+
+## Variants
+
+{/* TODO: Define component variants that can be used by other developers */}
+
+### Overview
+
+`mas-select` can be used with sub-elements: `mas-label`, `mas-error`, `mas-helper`.\
+Select's options is nested inside `mas-select` component.
+
+<Canvas>
+  <Story of={SelectStories.Overview} />
+</Canvas>
+
+### Status
+
+Use `mas-error` to display error message.
+
+<Canvas>
+  <Story of={SelectStories.Basic} />
+  <Story of={SelectStories.Error} />
+  <Story of={SelectStories.Disabled} />
+</Canvas>
+
+### Helper text
+
+If required, an helper text can be displayed with `mas-helper` component.
+
+<Canvas>
+  <Story of={SelectStories.HelperText} />
+  <Story of={SelectStories.Basic} />
+</Canvas>
+
+### Size
+
+The select has two sizes available: `small` and `medium`. The `small` size is used by default.
+
+<Canvas>
+  <Story of={SelectStories.Size} />
+</Canvas>
+
+### Filled
+
+<Canvas>
+  <Story of={SelectStories.Filled} />
+</Canvas>
+
+## Guidelines
+
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/251d55-select/b/964f27)
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

@@ -1,0 +1,67 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+.mas-progress-circular-bar {
+
+  width: 16px;
+  height: 16px;
+  color: #D7D7DB;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 5px 12px;
+
+}
+
+.mas-progress-circular-bar-loading {
+  border: 4px solid transparent;
+  border-color: #EDEDF0;
+  border-top-color: #007AB7;
+  animation: spin 0.8s linear infinite;
+}
+
+.mas-progress-circular-bar-success {
+  background-color: #6C931A;
+}
+
+.mas-progress-circular-bar-error {
+  background-color: #D21E3C;
+}
+
+.mas-progress-circular-bar-label {
+  color: var(--Text-Primary, #0C0C0D);
+  font-feature-settings: 'calt' off;
+  /* Body/Semibold/Body 3 */
+  font-family: var(--mas-typo_font-family--inter);
+  font-weight:var(--mas-typo_caption-font-weight);
+  font-size:   var( --mas-typo_body-3-font-size) ;
+  font-style: normal;
+  line-height: var(--mas-typo_body-3-line-height); /* 142.857% */
+}
+
+.mas-progress-circular-bar-icon {
+  font-size: 10px !important;
+  color: white !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+
+  
+
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    animation: spin 0.5s linear infinite;
+  }
+
+  50% {
+    transform: rotate(230deg);
+    animation: spin 1.5s linear infinite;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    animation: spin 0.5s linear infinite;
+  }
+}

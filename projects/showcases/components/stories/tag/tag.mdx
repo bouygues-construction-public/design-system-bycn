@@ -1,0 +1,68 @@
+import { Meta, Title, Subtitle, Description, Primary, Controls, Stories, Story, Toc, Canvas } from '@storybook/blocks';
+
+{/* TODO: import Component and Component's stories */}
+
+import { MasTag } from 'projects/components/src/lib/tag/tag.component';
+import * as TagStories from './tag.stories';
+ 
+<Meta of={TagStories} />
+
+<Title />
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
+
+## Overview
+
+The `MasTag` is used to categorize, label and organize adjacent items using keywords to describe them.
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Usage
+
+Tags are used to group content by category.
+
+It have to be mainly used for create visual hierarchy or share secondary indicators with users.
+
+## Variants
+
+### Colors
+The component comes in different variants such as `orange`,`amber`, `green`, `teal`, `blue`, `purple`, `red`, `roc`
+
+<Canvas>  
+  <Story of={TagStories.ShowcaseColors} />          
+</Canvas>
+
+
+### Sizes
+The component comes in different sizes : `small`, `medium`
+
+<Canvas>  
+  <Story of={TagStories.ShowcaseSizes} />          
+</Canvas>
+
+### Tag with Icon
+The component can contain icon on the left
+
+<Canvas>  
+  <Story of={TagStories.ShowcaseIcon} />          
+</Canvas>
+
+
+## Guidelines
+
+{/* TODO: Link to component best practices on Zeroheight */}
+
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/992e69-components/b/348056)
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
