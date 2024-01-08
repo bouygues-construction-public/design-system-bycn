@@ -33,9 +33,9 @@
   /* Body/Semibold/Body 3 */
   font-family: var(--mas-typo_font-family--inter);
   font-weight:var(--mas-typo_caption-font-weight);
-  font-size:   var( --mas-typo_subtitle-3-font-size) ;
+  font-size:   var( --mas-typo_body-3-font-size) ;
   font-style: normal;
-  line-height: var(--mas-typo_subtitle-3-line-height); /* 142.857% */
+  line-height: var(--mas-typo_body-3-line-height); /* 142.857% */
 }
 
 .mas-progress-circular-bar-icon {
