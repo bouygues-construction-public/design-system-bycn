@@ -41,6 +41,7 @@
     "@masoni/css-text-input": "^0.0.2",
     "@masoni/css-toggle-button": "^0.0.1",
     "@masoni/css-action-dropdown": "file:../css/src/components/action-dropdown",
-    "@masoni/css-popover": "file:../css/src/components/popover"
+    "@masoni/css-popover": "file:../css/src/components/popover",
+    "@masoni/css-alert": "file:../css/src/components/alert"
   }
 }
