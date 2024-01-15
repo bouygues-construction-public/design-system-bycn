@@ -1,0 +1,70 @@
+import { Meta, Title, Subtitle, Description, Primary, Controls, Stories, Story, Toc, Canvas } from '@storybook/blocks';
+
+{/* TODO: import Component and Component's stories */}
+
+import { MasTab } from 'projects/components/src/lib/tab/tab.component';
+import * as TabStories from './tab.stories'
+ 
+<Meta of={TabStories} />
+
+<Title />
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
+
+## Overview
+
+`MasTab` provides a simple way to organize and present content on different sections. Users can easily navigate between different sections or categories, optimizing space and enhancing user experience on the layout.
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Usage
+
+- Use Tabs when you have related content that can be logically grouped into different sections or categories.
+- When content has a clear hierarchy, Tabs can visually represent this structure, making it easier for users to understand and navigate.
+- When the application provides simple navigation with few pages, Tabs can be used in the navigation bar to navigate between large pages and sections.
+
+## Variants
+
+### Choice of orientation
+
+<Canvas>  
+  <Story of={TabStories.ShowcaseOrientation} />          
+</Canvas>
+
+### Badge
+
+<Canvas>  
+  <Story of={TabStories.ShowcaseBadge} />          
+</Canvas>
+
+### Sizes
+The component comes in different sizes : `medium`, `large`
+
+<Canvas>  
+  <Story of={TabStories.ShowcaseSizes} />          
+</Canvas>
+
+### Leading Icon
+The component can contain with `leadingIcon` attribute configure
+
+<Canvas>  
+  <Story of={TabStories.ShowcaseIcon} />          
+</Canvas>
+
+
+## Guidelines
+
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/416e8e-tabs/b/964f27)
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

@@ -1,5 +1,8 @@
 @import '@masoni/css-design-tokens/dist/index.css';
-
+mas-badge {
+  display: flex;
+  align-items: center;
+}
 .mas-badge {
   font-family: var(--mas-typo_font-family--inter);
   font-size: var(--mas-typo_caption-font-size);

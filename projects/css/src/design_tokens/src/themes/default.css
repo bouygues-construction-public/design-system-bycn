@@ -99,14 +99,19 @@
   --mas-semantic-color_text-red: var(--mas-primitive-color_red700);
   /* State */
   --mas-semantic-success--default: #6c931a;
-  --mas-semantic-alert--default: #D21E3C;
-  --mas-semantic-warning--default: #C78100;
-  --mas-semantic-primary--default: #007AB7;
-  --mas-semantic-brand--default: #C74D10;
+  --mas-semantic-alert--default: #d21e3c;
+  --mas-semantic-warning--default: #c78100;
+  --mas-semantic-primary--default: #007ab7;
+  --mas-semantic-brand--default: #c74d10;
 }
-  /** Alpha */
-  /* Neutral */
-  :root {
-    --mas-semantic-color_alpha--hovered: var(--mas-primitive-color_alpha-grey100);
-    --mas-semantic-color_alpha--pressed: var(--mas-primitive-color_alpha-grey200);
-  }
+/** Alpha */
+/* Neutral */
+:root {
+  --mas-semantic-color_alpha--hovered: var(--mas-primitive-color_alpha-grey100);
+  --mas-semantic-color_alpha--pressed: var(--mas-primitive-color_alpha-grey200);
+}
+/* Primary */
+:root {
+  --mas-semantic-color_alpha-blue--hovered: var(--mas-primitive-color_alpha-blue100);
+  --mas-semantic-color_alpha-blue--pressed: var(--mas-primitive-color_alpha-blue200);
+}

@@ -1,0 +1,106 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+.mas-tab_header {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-family: var(--mas-typo_font-family--inter);
+  user-select: none;
+  flex-shrink: 0;
+}
+/* Size */
+.mas-tab--medium > .mas-tab_header {
+  max-height: 44px;
+  padding: 12px;
+  & > .mas-tab_text {
+    font-size: var(--mas-typo_body-3-font-size);
+    font-style: normal;
+    font-weight: var(--mas-typo_body-font-weight);
+    line-height: var(--mas-typo_body-3-line-height);
+  }
+}
+
+.mas-tab--large > .mas-tab_header {
+  max-height: 56px;
+  padding: 16px;
+  & > .mas-tab_text {
+    font-size: var(--mas-typo_body-2-font-size);
+    font-style: normal;
+    font-weight: var(--mas-typo_body-font-weight);
+    line-height: var(--mas-typo_body-2-line-height);
+  }
+}
+
+/* Hovered */
+:not(.mas-tab--disabled, .mas-tab--selected, :active) > .mas-tab_header:hover {
+  background-color: var(--mas-semantic-color_alpha--hovered);
+}
+:not(.mas-tab--disabled, :active).mas-tab--selected > .mas-tab_header:hover {
+  background-color: var(--mas-semantic-color_alpha-blue--hovered);
+}
+/* Actived */
+:not(.mas-tab--disabled, .mas-tab--selected) > .mas-tab_header:active {
+  background-color: var(--mas-semantic-color_alpha--pressed);
+  & > .mas-tab_text {
+    color: var(--mas-semantic-color_text-primary);
+  }
+}
+:not(.mas-tab--disabled).mas-tab--selected > .mas-tab_header:active {
+  background-color: var(--mas-semantic-color_alpha-blue--pressed);
+}
+/* Selected */
+:not(.mas-tab--disabled).mas-tab--selected > .mas-tab_header {
+  & > .mas-tab_text {
+    color: var(--mas-semantic-color_action-primary--default);
+  }
+  & > .mas-tab_icon {
+    color: var(--mas-semantic-color_action-primary--default);
+  }
+}
+/* Orientation */
+.mas-tab--horizontal.mas-tab--selected > .mas-tab_header {
+  box-shadow: inset 0 -2px 0 0 var(--mas-semantic-color_action-primary--default);
+}
+.mas-tab--horizontal > .mas-tab_header {
+  max-width: fit-content;
+}
+.mas-tab-view--horizontal {
+  display: block;
+  & > .mas-tab-headers {
+    display: flex;
+  }
+  & > .mas-tab-contents {
+    display: block;
+  }
+}
+.mas-tab--vertical.mas-tab--selected > .mas-tab_header {
+  box-shadow: inset -2px 0 0 0 var(--mas-semantic-color_action-primary--default);
+}
+.mas-tab--vertical > .mas-tab_header {
+  width: 216px;
+}
+.mas-tab-view--vertical {
+  display: flex;
+  & > .mas-tab-headers {
+    flex-direction: column;
+  }
+  & > .mas-tab-contents {
+    flex-direction:row
+  }
+}
+.mas-tab_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  block-size: 16px;
+  inline-size: 16px;
+  color: var(--mas-semantic-color_icon-secondary);
+}
+.mas-tab_text {
+  color: var(--mas-semantic-color_text-secondary);
+  font-family: var(--mas-typo_family--inter);
+  font-size: var(--mas-typo_body-3-font-size);
+  font-style: normal;
+  font-weight: var(--mas-typo_body-font-weight);
+  line-height: var(--mas-typo_headline-3-font-size);
+}
