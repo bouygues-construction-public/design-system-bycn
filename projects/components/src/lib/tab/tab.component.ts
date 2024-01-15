@@ -1,31 +1,34 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'mas-tab',
-  templateUrl: 'tab.component.html',
+  template: `
+    <div class="mas-tab_content" role="tabpanel" *ngIf="render()" [ngStyle]="{ display: selected ? null : 'none' }">
+      <ng-content></ng-content>
+    </div>
+  `,
   host: {
     class: 'mas-tab',
     '[class.mas-tab--selected]': 'selected',
     '[class.mas-tab--disabled]': 'disabled',
-    '[class.mas-tab--medium]': 'size === "M"',
-    '[class.mas-tab--large]': 'size === "L"',
-    '[class.mas-tab--horizontal]': 'orientation === "horizontal"',
-    '[class.mas-tab--vertical]': 'orientation === "vertical"',
-    '(click)': 'onClick($event)',
   },
 })
 export class MasTab implements OnInit {
   static tabCount = 0;
   @Input() identifier = `tab-${MasTab.tabCount++}`;
   @Input() leadingIcon: string = '';
-  @Input() size: 'M' | 'L' = 'M';
-  @Input() orientation: 'horizontal' | 'vertical' = 'horizontal';
   @Input() disabled: boolean = false;
   @Input() selected: boolean = false;
   @Input() number: number = 0;
+  @Input() header: string = '';
+  @Output() select: EventEmitter<void> = new EventEmitter<void>();
   constructor() {}
-  onClick(event: Event) {
-    this.selected = !this.selected;
+  cacheActive = false;
+  render(): boolean {
+    return this.selected || this.cacheActive;
+  }
+  onSelect() {
+    this.select.emit();
   }
   ngOnInit() {}
 }

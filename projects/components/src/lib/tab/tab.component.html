@@ -1,9 +1,0 @@
-<ng-container *ngIf="leadingIcon !== ''">
-  <i class="{{ leadingIcon }} mas-tab_icon"></i>
-</ng-container>
-<span class="mas-tab_text">
-  <ng-content></ng-content>
-</span>
-<ng-container *ngIf="number !== 0">
-  <mas-badge [number]="number" [size]="size" type="number"></mas-badge>
-</ng-container>

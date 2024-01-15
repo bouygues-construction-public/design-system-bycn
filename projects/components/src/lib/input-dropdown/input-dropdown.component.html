@@ -9,13 +9,15 @@
   (click)="_onToggle()"
   [ngClass]="{ 'mas-input-dropdown_listbox--opened': _panelOpen }"
 >
+  <i class="mas-icon {{ leadingIcon }} mas-input-dropdown_leading-icon" *ngIf="leadingIcon !== ''"></i>
   <ng-container *ngSwitchCase="true">
-    <i class="mas-icon {{ leadingIcon }} mas-input-dropdown_leading-icon" *ngIf="leadingIcon !== ''"></i>
-    <span class="mas-input-dropdown_placeholder mas-input-dropdown-min-line">{{ placeholder }}</span></ng-container
-  >
-  <span class="mas-input-dropdown_text mas-input-dropdown-min-line" *ngSwitchCase="false">
-    {{ triggerValue }}
-  </span>
+    <span class="mas-input-dropdown_placeholder mas-input-dropdown-min-line">{{ placeholder }}</span>
+  </ng-container>
+  <ng-container *ngSwitchCase="false">
+    <span class="mas-input-dropdown_text mas-input-dropdown-min-line">
+      {{ triggerValue }}
+    </span>
+  </ng-container>
   <i class="mas-caret-down-outlined mas-icon mas-arrows--outlined mas-input-dropdown_trailing-icon"></i>
 </div>
 
