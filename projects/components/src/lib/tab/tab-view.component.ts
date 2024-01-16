@@ -6,13 +6,13 @@ import { MasTabHeader } from './tab-header.component';
   selector: 'mas-tab-view',
   template: `
     <div class="mas-tab-headers" *ngIf="skeleton">
-      <mas-tab-skeleton></mas-tab-skeleton>
+      <!-- <mas-tab-skeleton></mas-tab-skeleton> -->
     </div>
     <div class="mas-tab-headers" *ngIf="!skeleton">
       <ng-container *ngFor="let tab of tabs">
         <mas-tab-header
           #tabHeader
-          (click)="selectTab(tabHeader, tab)"
+          (click)="selectTab(tab)"
           [selected]="tab.selected"
           [header]="tab.header"
           [number]="tab.number"
@@ -58,7 +58,7 @@ export class MasTabView implements OnInit, AfterContentInit {
       }
     });
   }
-  selectTab(ref: HTMLElement, tab: MasTab) {
+  selectTab(tab: MasTab) {
     if (tab.disabled) {
       return;
     }

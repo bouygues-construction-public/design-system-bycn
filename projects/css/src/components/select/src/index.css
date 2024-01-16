@@ -46,6 +46,8 @@
   block-size: 32px;
   padding-inline: 12px;
   cursor: pointer;
+  border:0px;
+  outline:0px;
 }
 
 .mas-select-min-line {

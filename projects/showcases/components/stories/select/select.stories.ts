@@ -30,9 +30,9 @@ const meta: Meta<MasSelect> = {
     <div style="height: 150px;">
       <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
       <mas-select [invalid]="invalid" [disabled]="disabled" [placeholder]="placeholder" [size]="size" [filled]="filled">
-        <mas-option value="option1">Option 1</mas-option>
-        <mas-option value="option2">Option 2</mas-option>
-        <mas-option value="option3">Option 3</mas-option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
       </mas-select>
     </div>
     <br>
@@ -75,9 +75,9 @@ export const Overview: Story = {
     <div style="height: 150px;">
       <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
       <mas-select placeholder="Placeholder text" [size]="size" [filled]="false" [disabled]="false">
-        <mas-option value="option1">Option 1</mas-option>
-        <mas-option value="option2">Option 2</mas-option>
-        <mas-option value="option3">Option 3</mas-option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
       </mas-select>
       <mas-error *ngIf="false">Something went wrong</mas-error>
       <mas-helper *ngIf="true">Helper text here...</mas-helper>
@@ -93,9 +93,9 @@ export const Error: Story = {
     <div style="height: 150px;">
       <mas-label [optional]="true" [infoIcon]="true">With Error Message</mas-label>
       <mas-select placeholder="Placeholder text" [size]="size" [filled]="false" [invalid]="true">
-        <mas-option value="option1">Option 1</mas-option>
-        <mas-option value="option2">Option 2</mas-option>
-        <mas-option value="option3">Option 3</mas-option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
       </mas-select>
       <mas-error *ngIf="true">Something went wrong</mas-error>
     </div>
@@ -108,9 +108,9 @@ export const HelperText: Story = {
     <div style="height: 150px;">
       <mas-label [optional]="true" [infoIcon]="true">With Helper Text</mas-label>
       <mas-select placeholder="Placeholder text" [size]="size" [filled]="false">
-        <mas-option value="option_1">Option 1</mas-option>
-        <mas-option value="option_2">Option 2</mas-option>
-        <mas-option value="option_3">Option 3</mas-option>
+        <option value="option_1">Option 1</option>
+        <option value="option_2">Option 2</option>
+        <option value="option_3">Option 3</option>
       </mas-select>
       <mas-helper *ngIf="true">Helper text here...</mas-helper>
     </div>
@@ -123,9 +123,9 @@ export const Disabled: Story = {
     template: `
     <mas-label>Disabled State</mas-label>
     <mas-select placeholder="Placeholder text" [size]="size" [filled]="false" [disabled]="true">
-      <mas-option value="option_1">Option 1</mas-option>
-      <mas-option value="option_2">Option 2</mas-option>
-      <mas-option value="option_3">Option 3</mas-option>
+      <option value="option_1">Option 1</option>
+      <option value="option_2">Option 2</option>
+      <option value="option_3">Option 3</option>
     </mas-select>
     <mas-helper *ngIf="true">Helper text here...</mas-helper>
     `,
@@ -136,17 +136,17 @@ export const Size: Story = {
     template: `
     <mas-label [optional]="true" [infoIcon]="true">Small select</mas-label>
     <mas-select placeholder="Placeholder text" size="S" [filled]="false" [disabled]="false">
-      <mas-option value="option1">Option 1</mas-option>
-      <mas-option value="option2">Option 2</mas-option>
-      <mas-option value="option3">Option 3</mas-option>
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="option3">Option 3</option>
     </mas-select>
     <br>
     <div style="height: 150px;">
       <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
       <mas-select placeholder="Placeholder text" size="M" [filled]="false" [disabled]="false">
-        <mas-option value="option1">Option 1</mas-option>
-        <mas-option value="option2">Option 2</mas-option>
-        <mas-option value="option3">Option 3</mas-option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
       </mas-select>
     </div>
     `,
@@ -158,9 +158,9 @@ export const Filled: Story = {
     <div style="height: 150px;">
       <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
       <mas-select placeholder="Placeholder text" [size]="size" [filled]="true" [disabled]="false" [invalid]="false">
-        <mas-option value="option1">Option 1</mas-option>
-        <mas-option value="option2">Option 2</mas-option>
-        <mas-option value="option3">Option 3</mas-option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
       </mas-select>
       <mas-error *ngIf="false">Something went wrong</mas-error>
       <mas-helper *ngIf="true">Helper text here...</mas-helper>
