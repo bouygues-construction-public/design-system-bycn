@@ -9,7 +9,22 @@
   (click)="_onToggle()"
   [ngClass]="{ 'mas-input-dropdown_listbox--opened': _panelOpen }"
 >
-  <i class="mas-icon {{ leadingIcon }} mas-input-dropdown_leading-icon" *ngIf="leadingIcon !== ''"></i>
+  <!-- if selected -->
+  <ng-container *ngIf="selectedOptions.size > 0">
+    <ng-container [ngSwitch]="type">
+      <img
+        *ngSwitchCase="'image'"
+        src="{{ selectedOptions.get(_values.values().next().value)?.option?.imageUrl }}"
+        class="mas-dropdown-option-image"
+      />
+      <i
+        *ngSwitchCase="'icon'"
+        class="mas-icon {{ selectedOptions.get(_values.values().next().value)?.option?.icon }} mas-input-dropdown_leading-icon"
+      ></i>
+    </ng-container>
+  </ng-container>
+  <!-- by default but disappear when selected and option have image or icon-->
+  <i class="default mas-icon {{ leadingIcon }} mas-input-dropdown_leading-icon" *ngIf="leadingIcon !== '' && (selectedOptions.size === 0 || (type !== 'icon' && type !== 'image'))"></i>
   <ng-container *ngSwitchCase="true">
     <span class="mas-input-dropdown_placeholder mas-input-dropdown-min-line">{{ placeholder }}</span>
   </ng-container>

@@ -7,6 +7,7 @@
   font-family: var(--mas-typo_font-family--inter);
   user-select: none;
   flex-shrink: 0;
+  cursor: pointer;
 }
 /* Size */
 .mas-tab--medium > .mas-tab_header {

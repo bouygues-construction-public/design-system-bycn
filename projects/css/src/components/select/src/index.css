@@ -8,6 +8,14 @@
   box-sizing: border-box;
   inline-size: min-content;
   white-space: nowrap;
+  /* remove default select dropdown arrow */
+  & > select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+  select::-ms-expand {
+    display: none;
+  }
 }
 .mas-select_icon {
   color: var(--mas-semantic-color_icon-secondary);
@@ -48,6 +56,7 @@
   cursor: pointer;
   border:0px;
   outline:0px;
+
 }
 
 .mas-select-min-line {
