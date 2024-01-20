@@ -26,6 +26,6 @@ export class AlertService {
 export interface AlertBody {
     title: string;
     description?: string;
-    type: string;
+    type?: string;
     closeBtn?: boolean;
   }
