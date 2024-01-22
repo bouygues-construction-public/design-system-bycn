@@ -41,25 +41,51 @@ The `MasAlerts appears at the top right of the interface above the navigation ba
 
 
 ```html
-<button (click)="showInfoAlert()">  info  </button> <br/>
+<button (click)="showInfoAlert()">  Info  </button> <br/>
 <mas-alert> </mas-alert>
 ```
 ```javascript
 constructor(private alertService: AlertService) { }
 
 showInfoAlert(){
-this.alertService.showAlert({description:'description for toast', title:'Info' , type:'info'}) ;   
+this.alertService.showAlert({ title:'Info', description:'description for toast', type:'info', closeBtn:'true'}) ;   
 }
 ```
+The `showAlert` takes the following parameters:
+
+`title` (required): A string representing the title of the information alert.
+
+`description` (optional): A string providing additional information or details for the alert. It has a default value of an empty string.
+
+`type` (optional): A string indicating the type of alert. The default value is set to 'info'.
+
+`closeBtn` (optional): A boolean flag specifying whether to include a close button in the alert. The default value is true.
 
 
+The only mandatory parameter is the title, with optional parameters for description, type, and a close button, each having default values. This allows for flexible usage with minimal required input.
+
+<Canvas>
+  <Story of={AlertStories.Default} />
+</Canvas>
+
+```html
+<button (click)="showInfoAlert()">  Default  </button> <br/>
+<mas-alert> </mas-alert>
+```
+```javascript
+constructor(private alertService: AlertService) { }
+
+showInfoAlert(){
+this.alertService.showAlert({ title:'Title for the default alert'}) ;   
+}
+```
 
 To use the `MasAlerts`, you can pass the desired inputs to the component.
 
 
 ## Properties
 
-###Types
+### Types
 
 The `MasAlerts` component has 4 different types : `info`, `success`, `warning`, `error`. 
 These 4 types have their own semantic colors linked to their context of use and their meaning

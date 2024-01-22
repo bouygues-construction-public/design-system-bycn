@@ -118,15 +118,15 @@
 
 .alert-show {
   opacity: 1;
-  animation: fadeIn 0.3s ease-in-out;
+  animation: AlertFadeIn 0.3s ease-in-out;
 }
 
 .alert-hide {
   opacity: 0;
-  animation: fadeOut 0.3s ease-in-out;
+  animation: AlertFadeOut 0.3s ease-in-out;
 }
 
-@keyframes fadeIn {
+@keyframes AlertFadeIn {
   0% {
       opacity: 0;
       top: 5%;
@@ -137,7 +137,7 @@
   }
 }
 
-@keyframes fadeOut {
+@keyframes AlertFadeOut {
   0% {
       opacity: 1;
   }

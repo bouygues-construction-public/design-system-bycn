@@ -11,11 +11,11 @@ export class MasAlert {
   constructor(private alertService: AlertService) { }
 
 
-  @Input() title: string | undefined = '';
-  @Input() message: string | undefined = '';
-  @Input() show: boolean = false;
-  @Input() type: string | undefined = 'info';
-  @Input() closeBtn: boolean | undefined = true;
+  title: string | undefined = '';
+  message: string | undefined = '';
+  show: boolean = false;
+  type: string | undefined = 'info';
+  closeBtn: boolean | undefined = true;
 
   alertShow: boolean = false;
   timeoutId1: any
@@ -30,11 +30,11 @@ export class MasAlert {
       this.alertShow = false;
 
       if (alertBody) {
-
+        console.log(alertBody)
         this.message = alertBody.description;
         this.title = alertBody.title
-        this.type = alertBody.type
-        this.closeBtn = alertBody.closeBtn
+        this.type = alertBody.type?alertBody.type:"info";
+        this.closeBtn = alertBody.closeBtn!==undefined?alertBody.closeBtn : true
         setTimeout(() => {
           this.show = true
           this.alertShow = true;
