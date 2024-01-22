@@ -1,0 +1,99 @@
+import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/addon-docs/blocks';
+import { MasToast } from 'projects/components/src/lib/toast/toast.component';
+import * as ToastStories from './mas-toast.stories';
+
+import * as ActionButtonToastStories from './toast-service/action-button-toast.stories';
+import * as CloseButtonToastStories from './toast-service/close-button-toast.stories';
+
+
+<Meta of={ToastStories} />
+
+# MasToast
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Usage](#usage)
+- [Properties](#properties)
+
+## Overview
+
+The `MasToast` is used to give a user information on the state of the system and to provide non-disruptive feedback about the outcome of an event. 
+The toast gives instructions on how to move forward or resolve issues.
+
+<Canvas>
+ <div style={{ height: '200px'}}>
+  <Story of={ToastStories.Default} />
+ </div>
+</Canvas>
+
+
+## Usage
+### Basic
+
+The `MasToast` are displayed by calling the showToast method provided by the `ToastService`. 
+The `MasToast` appears at the bottom of the interface above the navigation bar and in front of the main content. It can be almost the entire width of the page, centered or aligned to the left while maintaining a small margin.
+
+The `MasToast` disappears after 10 seconds (if there is no action button) or when the user clicks on the closed button.
+
+```html
+<button (click)="showCustomToast()">  info  </button> <br/>
+ <mas-toast> </mas-toast>
+```
+```javascript
+  constructor(private toastService: ToastService) { }
+  actionButton  = { label: 'Action', action: this.myFunction }
+
+  showCustomToast(){
+    this.toastService.showToast({description:'description for toast',closeBtn : true , actionButton : this.actionButton}) ;
+  }
+    
+  myFunction() : any{
+   alert("Yes!")
+  }
+```
+
+The `showToast` takes the following parameters:
+
+`description` (required): A string providing the description or content of the toast.
+
+`actionButton` (optional): An optional action button for the toast, defined by the `actionButton` variable. In this case, the action button has a label of 'Button' and triggers the myFunction method when clicked.
+
+`closeBtn` (optional): A boolean flag specifying whether to include a close button for the toast. The default value is true.
+
+The only mandatory parameter is the description, with optional parameters for actionButton and a close button, each having default values. This allows for flexible usage with minimal required input.
+
+
+To use the `MasToast`, you can pass the desired inputs to the component.
+
+## Properties
+### Action Button
+The button can be used to allow an action related to what has just been performed. It can be used as secondary navigation, linked to the user context. 
+
+Pay attention :
+
+only include an action in toast if the same action is available elsewhere on the page, like relaoad a page or undo an action
+not to have the cancel or close action to dismiss the toast. 
+Whithout user action, toast will be dissmiss after 10 seconds. 
+<Canvas>
+  <div style={{ height: '300px'}}>
+    <Story of={ActionButtonToastStories.ToastWithActionButton} /> 
+  </div>
+</Canvas>
+
+### Close Button
+lose button is used to dismiss the toast component at the user's request. This is not a mandatory element. Indeed, toast will be dissmiss after 10 seconds whithout user action.
+<Canvas>
+ <div style={{ height: '300px'}}>
+   <Story of={CloseButtonToastStories.ToastWithCloseButton} />
+ </div> 
+</Canvas>
+
+
+## Guidelines
+
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/99e869-toast/b/75c0d1)
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
