@@ -1,0 +1,152 @@
+.mas-toast {
+    display: flex;
+    max-width: 1440px;
+    width: fit-content;
+    padding: 12px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 8px;
+    background: var(--Action-Secondary-Default, #0C0C0D);
+
+    /* Shadow/300 */
+    box-shadow: 0px 3px 3px 0px rgba(115, 115, 115, 0.25);
+
+    position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10%;
+  z-index: 999;
+}
+
+
+.mas-toast-content {
+    display: flex;
+    width: 376px;
+    height: 36px;
+    align-items: center;
+    gap: 16px;
+}
+
+.mas-toast-label {
+    flex: 1 0 0;
+    color: var(--Text-Reverse, #FFF);
+    font-feature-settings: 'calt' off;
+    white-space: nowrap;
+    /* Body/Regular/Body 3 */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mas-toast-buttons {
+    display: flex;
+    height: 36px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+.mas-toast-action-button {
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--Border-Primary, #D7D7DB);
+    background: var(--Action-Reverse-Default, #FFF);
+    cursor: pointer;
+
+    .text-button {
+        color: var(--Text-Primary, #0C0C0D);
+        font-feature-settings: 'calt' off;
+
+        /* Body/Semibold/Body 3 */
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        /* 142.857% */
+    }
+}
+
+.mas-toast-action-button:hover {
+    border: 1px solid var(--border-primary, #D7D7DB);
+    background: var(--action-reverse-hovered, #F9F9FA);
+}
+
+.mas-toast-action-button:active {
+    border: 1px solid var(--border-primary, #D7D7DB);
+    background: var(--action-reverse-pressed, #EDEDF0);
+}
+
+.mas-toast-close {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    color: white;
+
+}
+
+
+.mas-toast-close .mas-x-outlined,
+.mas-toast-close .mas-math-and-finance--outlined {
+    height: 16px;
+    width: 16px;
+    display: inline-grid;
+    justify-content: center;
+    align-content: center !important;
+}
+
+.mas-toast-close:hover {
+    cursor: pointer;
+    background: rgba(50, 50, 50, 0.7);
+}
+
+.mas-toast-close:active {
+    background: rgba(100, 100, 100, 0.5);
+}
+
+.toast-show {
+    opacity: 1;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .toast-hide {
+    opacity: 0;
+    animation: fadeOut 0.3s ease-in-out;
+  }
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        bottom: 5%;
+    }
+    100% {
+        opacity: 1;
+        bottom: 10%;
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+  

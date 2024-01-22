@@ -7,6 +7,7 @@ const config: StorybookConfig = {
     '../stories/**/*.stories.@(ts|tsx|mdx)',
     '../stories/**/reactive-form/*.stories.ts',
     '../stories/**/alert-service/*.stories.ts',
+    '../stories/**/toast-service/*.stories.ts',
   ],
   addons: [
     '@storybook/addon-links',
