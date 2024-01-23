@@ -19,3 +19,4 @@ export * from './lib/popover';
 export * from './lib/icon-button';
 export * from './lib/alert';
 export * from './lib/tab';
+export * from './lib/breadcrumbs';
