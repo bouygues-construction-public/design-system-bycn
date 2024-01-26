@@ -1,0 +1,42 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+.mas-breadcrumbs_nav {
+  display: flex;
+  align-items: center;
+}
+
+.mas-breadcrumb-item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--mas-semantic-color_text-tiertiary);
+  font-family: var(--mas-typo_font-family--inter);
+  font-size: var(--mas-typo_body-3-font-size);
+  font-weight: var(--mas-typo_body-font-weight);
+  line-height: var(--mas-typo_body-3-line-height);
+}
+
+.mas-breadcrumb-item::after {
+  font-family: arrows--outlined;
+  color: var(--mas-semantic-color_text-tiertiary);
+  content: '\e54f';
+  font-size: 16px;
+  margin-inline: 8px;
+}
+.mas-breadcrumb-item:last-child::after {
+  content: '';
+}
+.mas-breadcrumb_overflow {
+  line-height: var(--mas-typo_body-3-line-height);
+  color: var(--mas-semantic-color_text-tiertiary);
+  user-select: none;
+  font-size: 16px;
+
+}
+.mas-breadcrumb_overflow::after {
+  font-family: arrows--outlined;
+  color: var(--mas-semantic-color_text-tiertiary);
+  content: '\e54f';
+  font-size: 16px;
+  line-height: 20px;
+  margin-inline: 8px;
+}

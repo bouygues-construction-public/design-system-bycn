@@ -26,23 +26,24 @@
   },
   "sideEffects": false,
   "devDependencies": {
+    "@masoni/css-action-dropdown": "file:../css/src/components/action-dropdown",
+    "@masoni/css-alert": "file:../css/src/components/alert",
     "@masoni/css-badge": "^0.0.2",
+    "@masoni/css-breadcrumbs": "file:../css/src/components/breadcrumbs",
     "@masoni/css-button": "^0.0.1",
     "@masoni/css-checkbox": "^0.0.1",
     "@masoni/css-chip": "^0.0.1",
     "@masoni/css-circular-progress-bar": "^0.0.1",
+    "@masoni/css-icon-button": "file:../css/src/components/icon-button",
     "@masoni/css-input-dropdown": "^0.0.1",
     "@masoni/css-link": "^0.0.1",
+    "@masoni/css-popover": "file:../css/src/components/popover",
     "@masoni/css-progress-bar": "^0.0.1",
     "@masoni/css-radio-button": "^0.0.2",
     "@masoni/css-select": "^0.0.2",
     "@masoni/css-sub-elements": "^0.0.2",
     "@masoni/css-tag": "^0.0.2",
     "@masoni/css-text-input": "^0.0.2",
-    "@masoni/css-toggle-button": "^0.0.1",
-    "@masoni/css-action-dropdown": "file:../css/src/components/action-dropdown",
-    "@masoni/css-popover": "file:../css/src/components/popover",
-    "@masoni/css-icon-button": "file:../css/src/components/icon-button",
-    "@masoni/css-alert": "file:../css/src/components/alert"
+    "@masoni/css-toggle-button": "^0.0.1"
   }
 }

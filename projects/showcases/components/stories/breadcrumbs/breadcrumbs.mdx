@@ -1,0 +1,72 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+  Toc,
+  Canvas,
+  of,
+} from '@storybook/blocks';
+
+import { MasBreadcrumbs } from 'projects/components/src/lib/breadcrumbs/breadcrumbs.component';
+import { MasBreadcrumbItem } from 'projects/components/src/lib/breadcrumbs/breadcrumb-item.component';
+import * as BreadcrumbsStories from './breadcrumbs.stories';
+
+<Meta of={BreadcrumbsStories} />
+
+<Title />
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
+
+## Overview
+
+Contextual navigation that helps the user know where they are within the site and navigate within the site.
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Usage
+
+Use the Breadcrumbs to:
+
+- Show the actual steps the user took to get to the current page,
+- Reflect the site hierarchy and show the user where they are in that hierarchy.
+  Place the breadcrumbs at the top left of the page between the main navigation and the page title.
+
+To use breadcrumb, grap the `mas-breadcrumb-item` (with **content** and **href** attributes to display text and site to navigate) in the `mas-breadcrumbs`.
+
+## Variants
+
+### Overview
+
+<Canvas>
+  <Story of={BreadcrumbsStories.Overview} />
+</Canvas>
+
+### Collapse
+
+For breadcrumbs, a property to unfold hidden elements exists. Clicking on these “three little dots” unfolds the hidden elements.
+
+<Canvas>
+  <Story of={BreadcrumbsStories.Collapse} />
+</Canvas>
+
+## Guidelines
+
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/96bc2b-breadcrumb/b/964f27)
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
