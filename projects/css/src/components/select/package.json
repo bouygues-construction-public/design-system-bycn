@@ -1,6 +1,6 @@
 {
   "name": "@masoni/css-select",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Bouygues Design System - Masoni specific CSS styles for select",
   "keywords": [
     "design-system",
