@@ -22,3 +22,4 @@ export * from './lib/alert';
 export * from './lib/tab';
 export * from './lib/toast';
 export * from './lib/breadcrumbs';
+export * from './lib/divider';

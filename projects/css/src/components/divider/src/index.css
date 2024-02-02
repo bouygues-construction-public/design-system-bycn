@@ -1,0 +1,11 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+.mas-divider {
+  &.horizontal {
+    width: 124px;
+    border-bottom: 1px solid var(--mas-semantic-color_border-primary);
+  }
+  &.vertical {
+    border-left: 1px solid var(--mas-semantic-color_border-primary);
+    height: 124px;
+  }
+}

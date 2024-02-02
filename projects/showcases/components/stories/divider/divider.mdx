@@ -1,0 +1,58 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+  Toc,
+  Canvas,
+  of,
+} from '@storybook/blocks';
+
+import { MasDivider } from 'projects/components/src/lib/divider/divider.component';
+import * as DividerStories from './divider.stories';
+
+<Meta of={DividerStories} />
+
+<Title />
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
+
+## Overview
+
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Usage
+
+
+## Variants
+
+### Overview
+
+A divider is a thin line that divides content.
+
+<Canvas>
+  <Story of={DividerStories.Overview} />
+</Canvas>
+
+
+## Guidelines
+
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/84c6bc-divider/b/964f27)
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
