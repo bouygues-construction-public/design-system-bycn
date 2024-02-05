@@ -1,0 +1,69 @@
+import { Meta, ColorPalette, ColorItem, Source, Canvas } from '@storybook/addon-docs';
+import tailwind from '@masoni/css-tailwind-preset';
+
+<Meta title="Guidelines / Aspect ratio" />
+
+# Aspect ratio
+
+> Media ratios are designed to ensure consistency and visibility of media content, regardless of the surface on which it is displayed. By aligning our containers with web and image standards, we ensure availability across all digital media.
+
+For more detail, see our [Media ratio's guideline](https://zeroheight.com/9b39bb2a0/p/7303a4-media-ratio/b/505645)
+
+## Using [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+
+You can use different media ratio by applied utility class to the media container.
+
+<Canvas>
+    <div class="mas-flex mas-w-full mas-justify-between mas-flex-wrap">
+        <div class="mas-flex mas-flex-col mas-rounded-4 mas-items-center mas-content-center ">
+            <img scr="/assets/img/ratio-content.jpg" class="mas-aspect-ratio_1-1" style={{height: `${200}px`, background: '#F49D71'}}/>
+            <span class="mas-text-center mas-font-semibold mas-text-content-primary">Media ratio 1:1</span>
+        </div>
+        <div class="mas-flex mas-rounded-4 mas-items-center mas-content-center mas-flex-col">
+            <img scr="/assets/img/ratio-content.jpg"  class="mas-aspect-ratio_1-2"  style={{height: `${200}px`, background: '#F49D71'}}/>
+            <span class="mas-text-center mas-font-semibold mas-text-content-primary">Media ratio 1:2</span>
+        </div>
+        <div class="mas-flex mas-rounded-4 mas-items-center mas-content-center mas-flex-col">
+            <img scr="/static/assets/favicon.svg"  class="mas-aspect-ratio_2-1" style={{height: `${200}px`, background: '#F49D71'}}/>
+            <span class="mas-text-center mas-font-semibold mas-text-content-primary">Media ratio 2:1</span>
+        </div>
+        <div class="mas-flex mas-rounded-4 mas-items-center mas-content-center mas-flex-col">
+            <img scr="/assets/img/ratio-content.jpg"  class="mas-aspect-ratio_2-3" style={{height: `${200}px`, background: '#F49D71'}}/>
+            <span class="mas-text-center mas-font-semibold mas-text-content-primary">Media ratio 2:3</span>
+        </div>
+        <div class="mas-flex mas-rounded-4 mas-items-center mas-content-center mas-flex-col">
+            <img scr="/assets/img/ratio-content.jpg"  class="mas-aspect-ratio_3-4" style={{height: `${200}px`, background: '#F49D71'}}/>
+            <span class="mas-text-center mas-font-semibold mas-text-content-primary">Media ratio 3:4</span>
+        </div>
+        <div class="mas-flex mas-rounded-4 mas-items-center mas-content-center mas-flex-col">
+            <img scr="/assets/img/ratio-content.jpg"  class="mas-aspect-ratio_4-3" style={{width: `${200}px`, background: '#F49D71'}}/>
+            <span class="mas-text-center mas-font-semibold mas-text-content-primary">Media ratio 4:3</span>
+        </div>
+        <div class="mas-flex mas-rounded-4 mas-items-center mas-content-center mas-flex-col">
+            <img scr="/assets/img/ratio-content.jpg"  class="mas-aspect-ratio_9-16" style={{height: `${200}px`, background: '#F49D71'}}/>
+            <span class="mas-text-center mas-font-semibold mas-text-content-primary">Media ratio 9:16</span>
+        </div>
+        <div class="mas-flex mas-rounded-4 mas-items-center mas-content-center mas-flex-col">
+            <img scr="/assets/img/ratio-content.jpg"  class="mas-aspect-ratio_16-9" style={{width: `${200}px`, background: '#F49D71'}}/>
+            <span class="mas-text-center mas-font-semibold mas-text-content-primary">Media ratio 16:9</span>
+        </div>
+        <div class="mas-flex mas-rounded-4 mas-items-center mas-content-center mas-flex-col">
+            <img scr="/assets/img/ratio-content.jpg"  class="mas-aspect-ratio_3-2" style={{width: `${200}px`, background: '#F49D71'}}/>
+            <span class="mas-text-center mas-font-semibold mas-text-content-primary">Media ratio 3:2</span>
+        </div>
+    </div>
+</Canvas>
+
+For your information, here are the different CSS Custom Properties available for media ratio:
+
+```
+var(--mas-aspect-ratio_1-1);
+var(--mas-aspect-ratio_1-2);
+var(--mas-aspect-ratio_2-3);
+var(--mas-aspect-ratio_3-4);
+var(--mas-aspect-ratio_9-16);
+var(--mas-aspect-ratio_2-1);
+var(--mas-aspect-ratio_3-2);
+var(--mas-aspect-ratio_4-3);
+var(--mas-aspect-ratio_16-9);
+```

@@ -1,0 +1,39 @@
+:root {
+  --mas-aspect-ratio_1-1: 1/1;
+  --mas-aspect-ratio_1-2: 1/2;
+  --mas-aspect-ratio_2-3: 2/3;
+  --mas-aspect-ratio_3-4: 3/4;
+  --mas-aspect-ratio_9-16: 9/16;
+  --mas-aspect-ratio_2-1: 2/1;
+  --mas-aspect-ratio_3-2: 3/2;
+  --mas-aspect-ratio_4-3: 4/3;
+  --mas-aspect-ratio_16-9: 16/9;
+}
+
+.mas-aspect-ratio_1-1 {
+  aspect-ratio: var(--mas-aspect-ratio_1-1);
+}
+.mas-aspect-ratio_1-2 {
+  aspect-ratio: var(--mas-aspect-ratio_1-2);
+}
+.mas-aspect-ratio_2-3 {
+  aspect-ratio: var(--mas-aspect-ratio_2-3);
+}
+.mas-aspect-ratio_3-4 {
+  aspect-ratio: var(--mas-aspect-ratio_3-4);
+}
+.mas-aspect-ratio_9-16 {
+  aspect-ratio: var(--mas-aspect-ratio_9-16);
+}
+.mas-aspect-ratio_2-1 {
+  aspect-ratio: var(--mas-aspect-ratio_2-1);
+}
+.mas-aspect-ratio_3-2 {
+  aspect-ratio: var(--mas-aspect-ratio_3-2);
+}
+.mas-aspect-ratio_4-3 {
+  aspect-ratio: var(--mas-aspect-ratio_4-3);
+}
+.mas-aspect-ratio_16-9 {
+  aspect-ratio: var(--mas-aspect-ratio_16-9);
+}
