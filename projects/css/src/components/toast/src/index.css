@@ -57,7 +57,8 @@
   align-items: center;
   gap: 8px;
   border-radius: 8px;
-  border: 1px solid var(--Border-Primary, #D7D7DB);
+  box-shadow: inset 0px 0px 0px 1px var(--Border-Primary, #D7D7DB);
+  /* border: 1px solid var(--Border-Primary, #D7D7DB); */
   background: var(--Action-Reverse-Default, #FFF);
   cursor: pointer;
 }
@@ -67,15 +68,14 @@
   font-feature-settings: 'calt' off;
   font-style: normal;
   font-weight: var(--mas-typo_body-font-weight--bold);
+  line-height: 20px !important;
 }
 
 .mas-toast-action-button:hover {
-  border: 1px solid var(--border-primary, #D7D7DB);
   background: var(--action-reverse-hovered, #F9F9FA);
 }
 
 .mas-toast-action-button:active {
-  border: 1px solid var(--border-primary, #D7D7DB);
   background: var(--action-reverse-pressed, #EDEDF0);
 }
 
