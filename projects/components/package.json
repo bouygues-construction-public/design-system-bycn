@@ -38,6 +38,7 @@
     "@masoni/css-input-dropdown": "^0.0.1",
     "@masoni/css-link": "^0.0.1",
     "@masoni/css-popover": "file:../css/src/components/popover",
+    "@masoni/css-tooltip": "file:../css/src/components/tooltip",
     "@masoni/css-progress-bar": "^0.0.1",
     "@masoni/css-radio-button": "^0.0.2",
     "@masoni/css-select": "^0.0.2",

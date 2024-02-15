@@ -1,5 +1,5 @@
 import { Meta, Story, StoryObj, moduleMetadata } from '@storybook/angular';
-import { MasBadgeModule } from 'projects/components/dist';
+import { MasBadgeModule } from 'projects/components/src/public-api';
 import { MasTab, MasTabHeader, MasTabModule, MasTabView } from 'projects/components/src/lib/tab';
 
 const icons = [
