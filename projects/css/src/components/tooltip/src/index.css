@@ -10,10 +10,9 @@
 
   background: var(--Text-Primary, #0C0C0D);
   padding: 4px 12px;
-  gap: 4px;
+  gap: 8px;
 
   box-shadow: 0px 3px 3px 0px rgba(115, 115, 115, 0.25);
-  border:1px solid var(--border-primary, #D7D7DB);
   border-radius: 4px;
 
   color: var(--Text-Reverse, #FFF);
@@ -207,33 +206,4 @@
 .mas-tooltip-content {
   /* Body/Semibold/Body 3 */
   font-weight: var(  --mas-typo_body-font-weight );
-}
-
-.mas-tooltip-button {
-  display: flex;
-  justify-content: end;
-}
-
-.mas-tooltip-button .text-button {
-  color: var(--Text-Primary, #0C0C0D);
-
-  border-radius: 8px;
-  border: 1px solid var(--Border-Primary, #D7D7DB);
-  background: var(--Action-Reverse-Default, #FFF);
-  font-family: var(--mas-typo_font-family--inter); 
-  font-size:   var( --mas-typo_body-3-font-size) ;
-  font-weight:var(--mas-typo_caption-font-weight);
-  line-height: var( --mas-typo_body-3-line-height); /* 142.857% */
-
-  display: flex;
-  width: fit-content;
-
-  padding: 8px 16px;
-  cursor: pointer;
-}
-.mas-tooltip-button .text-button:hover {
-  background: var(--action-reverse-hovered, #F9F9FA);
-}
-.mas-tooltip-button .text-button:active {
-  background: var(--action-reverse-pressed, #EDEDF0); 
 }
