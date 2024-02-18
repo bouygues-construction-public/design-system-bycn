@@ -1,0 +1,14 @@
+<div class="mas-tooltip-container"
+  style="position: relative;display: inline-block; background-color: rgb(255, 255, 255);margin: 0px;">
+  <div (mouseenter)="focusOnTarget($event);showTooltip()" (mouseleave)="LostfocusOnTarget();hideTooltip()">
+    <span *ngIf="text" [innerHTML]="text"></span>
+    <ng-content></ng-content>
+  </div>
+  <div #masTooltip class="mas-tooltip" *ngIf="isVisible" [ngClass]="placementToDisplay">
+    <div class="padding-bar"></div>
+    <div class="arrow"></div>
+    <div class="mas-tooltip-inner">
+      <div class="mas-tooltip-content" *ngIf="content">{{ content }}</div>
+    </div>
+  </div>
+</div>
