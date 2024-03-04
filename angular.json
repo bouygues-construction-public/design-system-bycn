@@ -112,7 +112,75 @@
         }
       }
     },
-
+    "sample-app": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/sample-app",
+      "sourceRoot": "projects/sample-app/src",
+      "prefix": "sample",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/sample-app",
+            "index": "projects/sample-app/src/index.html",
+            "main": "projects/sample-app/src/main.ts",
+            "polyfills": ["zone.js"],
+            "tsConfig": "projects/sample-app/tsconfig.app.json",
+            "styles": [
+              "node_modules/@masoni/css-design-tokens/dist/index.css",
+              "node_modules/@masoni/css/dist/index.css",
+              "node_modules/@masoni/icons/dist/css/filled/index.css",
+              "node_modules/@masoni/icons/dist/css/outlined/index.css",
+              "projects/sample-app/src/styles.scss"
+            ],
+            "assets": ["projects/sample-app/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "sample-app:build:production"
+            },
+            "development": {
+              "browserTarget": "sample-app:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        }
+      }
+    },
     "showcases-icons": {
       "projectType": "application",
       "schematics": {},

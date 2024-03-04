@@ -6,6 +6,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build components",
+    "build:sample-app": "ng build sample-app",
+    "start:sample-app": "ng serve sample-app",
     "release": "",
     "deploy-storybook:main": "npx -p @storybook/storybook-deployer storybook-to-ghpages --branch gh-pages --out docs/main",
     "deploy-storybook:develop": "npx -p @storybook/storybook-deployer storybook-to-ghpages --branch gh-pages --out docs/develop",
@@ -39,7 +41,11 @@
     "rxjs": "~7.8.0",
     "shx": "^0.3.4",
     "tslib": "^2.3.0",
-    "zone.js": "~0.13.0"
+    "zone.js": "~0.13.0",
+    "@masoni/components": "file:projects/components",
+    "@masoni/icons": "file:projects/icons",
+    "@masoni/css": "file:projects/css",
+    "@masoni/css-design-tokens": "file:projects/css/src/design_tokens"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.2.0",
@@ -92,7 +98,8 @@
       "projects/css/src/components/*",
       "projects/css/src/components",
       "projects/components",
-      "projects/icons"
+      "projects/icons",
+      "projects/sample-app"
     ]
   },
   "storybook-deployer": {
