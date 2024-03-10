@@ -24,9 +24,27 @@ const meta: Meta<MasNavigationBar> = {
       ...args,
     },
     template: `
+      <div style="height: 50px">
+        <mas-navigation-bar 
+          [showNavDrawer]="showNavDrawer"
+          [searchBar]="searchBar" 
+          [type]="type" 
+          [productName]="productName" 
+          [showButton]="showButton" 
+          [showSetting]="showSetting" 
+          [showQuestionMark]="showQuestionMark" 
+          [showSearch]="showSearch" 
+          [showApps]="showApps" 
+          [showAccountLayer]="showAccountLayer"
+          [buttonTitle]="buttonTitle"
+          [avatar]="avatar"
+        ></mas-navigation-bar>
+      </div>
     `,
   }),
-  argTypes: {},
+  argTypes: {
+
+  },
 };
 
 export default meta;
@@ -34,10 +52,130 @@ type Story = StoryObj<MasNavigationBar>;
 
 // More on writing stories with args: https://storybook.js.org/docs/angular/writing-stories/args
 export const Basic: Story = {
-  args: {},
+  args: {
+    showNavDrawer: false,
+    searchBar: true,
+    type: 'brand',
+    productName: 'Design System',
+    showButton: true,
+    showSetting: true,
+    showQuestionMark: true,
+    showSearch: true,
+    showApps: true,
+    showAccountLayer: true,
+    buttonTitle: 'Button',
+    avatar: '/assets/img/chip-img.png',
+  },
 };
 export const Overview: Story = {
   render: (args: MasNavigationBar) => ({
-    template: ``,
+    template: `
+      <div style="height: 50px">
+        <mas-navigation-bar 
+          [showNavDrawer]="true"
+          [navDrawer]="true" 
+          [searchBar]="true" 
+          type="product" 
+          productName="Design System" 
+          [showButton]="false" 
+          [showSetting]="true" 
+          [showQuestionMark]="true" 
+          [showSearch]="true" 
+          [showApps]="true" 
+          [showAccountLayer]="true"
+          [showButton]="true"
+          buttonTitle="Button"
+          avatar="/assets/img/chip-img.png"
+        ></mas-navigation-bar>
+      </div>
+    `,
+  }),
+};
+
+export const NavigationBarBrandType: Story = {
+  render: (args: MasNavigationBar) => ({
+    template: `
+      <div style="height: 50px">
+        <mas-navigation-bar 
+          [showNavDrawer]="true"
+          [navDrawer]="true" 
+          [searchBar]="true" 
+          type="brand" 
+          [showButton]="false" 
+          [showSetting]="true" 
+          [showQuestionMark]="true" 
+          [showSearch]="true" 
+          [showApps]="true" 
+          [showAccountLayer]="true"
+          buttonTitle="Button"
+          avatar="/assets/img/chip-img.png"
+        ></mas-navigation-bar>
+    </div>
+    `,
+  }),
+};
+export const NavigationBarProductType: Story = {
+  render: (args: MasNavigationBar) => ({
+    template: `
+      <div style="height: 50px">
+        <mas-navigation-bar 
+          [showNavDrawer]="true"
+          [navDrawer]="true" 
+          [searchBar]="true" 
+          type="product" 
+          productName="Design System" 
+          [showButton]="false" 
+          [showSetting]="true" 
+          [showQuestionMark]="true" 
+          [showSearch]="true" 
+          [showApps]="true" 
+          [showAccountLayer]="true"
+          avatar="/assets/img/chip-img.png"
+        ></mas-navigation-bar>
+      </div>
+    `,
+  }),
+};
+export const NavigationBarWithSearchBar: Story = {
+  render: (args: MasNavigationBar) => ({
+    template: `
+      <div style="height: 50px">
+        <mas-navigation-bar 
+          [showNavDrawer]="true"
+          [navDrawer]="true" 
+          [searchBar]="true" 
+          type="product" 
+          productName="Design System" 
+          [showButton]="false" 
+          [showSetting]="true" 
+          [showQuestionMark]="true" 
+          [showSearch]="true" 
+          [showApps]="true" 
+          [showAccountLayer]="true"
+          avatar="/assets/img/chip-img.png"
+        ></mas-navigation-bar>
+      </div>
+    `,
+  }),
+};
+export const NavigationBarWithButton: Story = {
+  render: (args: MasNavigationBar) => ({
+    template: `
+      <div style="height: 50px">
+        <mas-navigation-bar 
+          [showNavDrawer]="true"
+          [navDrawer]="true" 
+          [searchBar]="true" 
+          type="product" 
+          productName="Design System" 
+          [showButton]="true" 
+          [showSetting]="true" 
+          [showQuestionMark]="true" 
+          [showAccountLayer]="true"
+          buttonTitle="Button"
+          avatar="/assets/img/chip-img.png"
+        ></mas-navigation-bar>
+      </div>
+    `,
   }),
 };

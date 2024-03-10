@@ -1,1 +1,52 @@
 @import '@masoni/css-design-tokens/dist/index.css';
+
+.mas-navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 64px;
+  padding: 12px;
+  .start-area {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    .mas-navigation-bar_brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      .product-name {
+        color: var(--Text-Primary, #0c0c0d);
+        line-height: 28px;
+      }
+    }
+  }
+  .mas-navigation-bar_search-bar {
+  }
+  .mas-navigation-bar_action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .mas-navigation-bar_account {
+      display: flex;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      img {
+        width: inherit;
+        height: inherit;
+      }
+    }
+  }
+}
+/* size */
+.mas-navigation-bar.mas-navigation-bar_small {
+  
+}
+.mas-navigation-bar.mas-navigation-medium {
+
+}
+.mas-navigation-bar.mas-navigation-bar_large {
+
+}
