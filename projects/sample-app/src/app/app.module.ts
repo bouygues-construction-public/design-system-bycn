@@ -18,6 +18,8 @@ import {
   MasLabelModule,
   MasHelperModule,
   MasErrorModule,
+  MasNavigationBarModule,
+  MasDividerModule,
 } from '@masoni/components/dist';
 import { LoginComponent } from './views/login/login.component';
 import { DefaultLayoutComponent } from './containers/default-layout.component';
@@ -40,6 +42,8 @@ import { DefaultLayoutComponent } from './containers/default-layout.component';
     MasLabelModule,
     MasHelperModule,
     MasErrorModule,
+    MasNavigationBarModule,
+    MasDividerModule,
   ],
   bootstrap: [AppComponent],
 })

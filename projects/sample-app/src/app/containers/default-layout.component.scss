@@ -1,13 +1,33 @@
-.navigation-drawer {
+:host {
+  display: flex;
+  flex-direction: column;
+  .sample-body {
     display: flex;
-    padding: 4px 12px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    align-self: stretch;
+    overflow-x: hidden;
+    .main {
+      height: calc(100vh - 64px);
+      width: calc(100vw - 150px);
+      margin-left: 150px;
+    }
+  }
+}
+.navigation-drawer {
+  margin-top: 64px;
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding: 4px 12px;
 }
 .navigation-item {
-    display: flex;
-    padding: 8;
-    align-items: center;
+  display: flex;
+  padding: 8px;
+  align-items: center;
+}
+.navigation-item:hover {
+  background-color: var(--mas-semantic-color_alpha-blue--hovered);
+  border-radius: 8px;
 }
