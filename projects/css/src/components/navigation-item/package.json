@@ -1,0 +1,36 @@
+{
+    "name": "@masoni/css-navigation-item",
+    "version": "0.0.1",
+    "description": "Bouygues Design System - Masoni specific CSS styles for navigation item",
+    "keywords": [
+        "design-system",
+        "css",
+        "libraries",
+        "masoni"
+    ],
+    "main": "dist/index.css",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "homepage": "https://github.com/bouygues-construction/design-system-bycn/tree/main/projects/css/src/components/src/navigation-item",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bouygues-construction/design-system-bycn.git"
+    },
+    "scripts": {
+        "build": "postcss src/index.css -o dist/index.css"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/bouygues-construction/design-system-bycn/issues"
+    },
+    "devDependencies": {
+        "@masoni/css-design-tokens": "^0.0.3",
+        "@masoni/css-postcss-config": "file:../../../config/postcss",
+        "postcss-cli": "^10.1.0"
+    }
+}
