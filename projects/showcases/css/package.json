@@ -22,6 +22,7 @@
     "@masoni/css-toast": "file:../../css/src/components/toast",
     "@masoni/css-link": "file:../../css/src/components/link",
     "@masoni/css-tag": "file:../../css/src/components/button",
-    "@masoni/css-progress-bar": "file:../../css/src/components/progress-bar"
+    "@masoni/css-progress-bar": "file:../../css/src/components/progress-bar",
+    "@masoni/css-navigation-item": "file:../../css/src/components/navigation-item"
   }
 }
