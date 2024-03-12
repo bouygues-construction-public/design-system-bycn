@@ -70,8 +70,8 @@
 
 
 .mas-tooltip.top .arrow {
-  bottom: -5px;
-  border-width: 6px 4px 0;
+  bottom: -4px;
+  border-width: 4px 4px 0;
   border-top-color: #000000;
   color: transparent;
   left: 50%;
@@ -87,8 +87,8 @@
 }
 
 .mas-tooltip.top-left .arrow {
-  bottom: -5px;
-  border-width: 6px 4px 0;
+  bottom: -4px;
+  border-width: 4px 4px 0;
   border-top-color: #000000;
   color: transparent;
   left: 15px;
@@ -102,8 +102,8 @@
 }
 
 .mas-tooltip.top-right .arrow {
-  bottom: -5px;
-  border-width: 6px 4px 0;
+  bottom: -4px;
+  border-width: 4px 4px 0;
   border-top-color: #000000;
   color: transparent;
   right: 15px;
@@ -117,10 +117,10 @@
 }
 
 .mas-tooltip.bottom .arrow {
-  top: -5px;
+  top: -4px;
   left: 50%;
   transform: translateX(-50%);
-  border-width: 0 4px 6px;
+  border-width: 0 4px 4px;
   border-bottom-color: #000000;
   color: transparent;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
@@ -134,9 +134,9 @@
 }
 
 .mas-tooltip.bottom-left .arrow {
-  top: -5px;
+  top: -4px;
   left: 15px;
-  border-width: 0 4px 6px;
+  border-width: 0 4px 4px;
   border-bottom-color: #000000;
   color: transparent;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
@@ -151,9 +151,9 @@
 
 
 .mas-tooltip.bottom-right .arrow {
-  top: -5px;
+  top: -4px;
   right: 15px;
-  border-width: 0 4px 6px;
+  border-width: 0 4px 4px;
   border-bottom-color: #000000;
   color: transparent;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
@@ -169,8 +169,8 @@
 .mas-tooltip.left .arrow {
   top: 50%;
   transform: translateY(-50%);
-  right: -5px;
-  border-width: 4px 0 4px 6px;
+  right: -4px;
+  border-width: 4px 0 4px 4px;
   border-left-color: #000000;
   color: transparent;
 }
@@ -183,8 +183,8 @@
 }
 
 .mas-tooltip.right .arrow {
-  left: -5px;
-  border-width: 4px 6px 4px 0;
+  left: -4px;
+  border-width: 4px 4px 4px 0;
   border-right-color: #000000;
   color: transparent;
   top: 50%;
