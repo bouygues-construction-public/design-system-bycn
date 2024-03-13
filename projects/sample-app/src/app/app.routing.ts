@@ -5,6 +5,10 @@ import { DefaultLayoutComponent } from './containers/default-layout.component';
 
 export const routes: Routes = [
   {
+    path: '**',
+    redirectTo: 'login',
+  },
+  {
     path: '',
     component: DefaultLayoutComponent,
     children: [
