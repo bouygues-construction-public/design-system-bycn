@@ -4,7 +4,6 @@ import { MasAvatar } from './avatar.component';
 
 
 
-
 @NgModule({ 
   imports: [
     CommonModule
