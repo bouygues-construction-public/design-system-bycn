@@ -13,6 +13,7 @@ const icons = ['mas-arrow-arc-left-outlined mas-arrows--outlined',
                 'mas-check-outlined mas-system-and-device--outlined',
                 'mas-upload-simple-outlined mas-system-and-device--outlined',
                 'mas-currency-btc-outlined mas-commerce--outlined']
+
 const argTypes = {
   
     variant: {
