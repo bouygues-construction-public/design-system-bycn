@@ -1,5 +1,5 @@
 import { Meta, Story, StoryObj, moduleMetadata } from "@storybook/angular";
-import { MasAvatar, MasAvatarDirective } from "projects/components/src/lib/avatar";  
+import { MasAvatar } from "projects/components/src/lib/avatar";  
 
 const icons = ['mas-user-outlined mas-people--outlined mas-icon',
                'mas-user-circle-outlined mas-people--outlined mas-icon',
@@ -62,7 +62,7 @@ export default {
   component: MasAvatar,
   decorators: [
     moduleMetadata({
-      declarations: [MasAvatar, MasAvatarDirective],
+      declarations: [MasAvatar],
     }),
   ], 
   argTypes:argTypes,

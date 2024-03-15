@@ -18,19 +18,12 @@ import * as AvatarStories from './avatar.stories';
 The `avatar` is a representation of the user. It allows the user to personalize themselves in the interface and link them to content
 
 - `size`: The size of the avatar. Accepts values: `'XS'`, `'S'`, `'M'`, `'L'`.
-- `type`: The variant of the avatar. Accepts values: `'Avatar'`, `'Icon'`, `'Initial'`.
+- `type`: The variant of the avatar. Accepts values: `'Image'`, `'Icon'`, `'Initial'`.
 - `initial`: The initial letter or character displayed in the avatar when the type is `'Initial'`.
-
-# When to Use
-
-- **Identifying Users**: Avatars are commonly used to visually represent users in the user interface, providing a recognizable visual identifier.
-- **Attaching Actions**: Avatars can also be used to attach actions or functionalities specific to each user, such as messaging or profile navigation.
-- **Expressing User Spaces**: Avatars can indicate areas or spaces dedicated to individual users, such as profile sections or comment threads.
+- `Image`: Used to display an image in the avatar. 
+- `Icon`: Used to display an icon in the avatar.
 
 
-# When Not to Use
-- **No Dedicated Actions**: Avoid using avatars if there are no specific actions or functionalities associated with individual users. In such cases, simpler visual representations like initials or generic icons may be more appropriate.
-- **Icons Are More Suitable**: Consider using icons instead of avatars when denoting groups or objects rather than individual users. Icons can provide clearer and more concise visual representations in such contexts.
 
 
 <Canvas>
@@ -49,7 +42,7 @@ To incorporate the Avatar component into your application, simply provide the ne
 
 The component comes in different Type `Image`,`Icon`,`Initial`  and different Size `Extra Small`,`Small`,`Medium`,`Large` :
 
-`Image`
+`Avatar`
 
 <Canvas>
   <Story of={AvatarStories.AvatarXS} />
