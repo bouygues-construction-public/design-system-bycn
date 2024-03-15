@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MasAvatar } from './avatar.component';
-import { MasAvatarDirective } from './avatar.directive';
+
 
 
 
@@ -9,7 +9,7 @@ import { MasAvatarDirective } from './avatar.directive';
   imports: [
     CommonModule
   ],
-  exports: [MasAvatar, MasAvatarDirective],
-  declarations: [MasAvatar, MasAvatarDirective],
+  exports: [MasAvatar],
+  declarations: [MasAvatar],
 })
 export class MasAvatarModule { }
