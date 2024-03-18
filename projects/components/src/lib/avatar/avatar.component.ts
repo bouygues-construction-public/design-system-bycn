@@ -13,7 +13,6 @@ import { Component, Input } from '@angular/core';
   `,
   
 })
-/* {{strokeAlignment=='Inside'? 'avatar-stroke-inside':'avatar-stroke-outside'}} */
 export class MasAvatar {
   @Input() UrlImg: string;
   @Input() Initial: string;

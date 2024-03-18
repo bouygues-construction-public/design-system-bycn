@@ -58,7 +58,7 @@ const argTypes = {
  
 
 export default {
-  title: 'Components / Actions / Avatar',
+  title: 'Components / Indicators / Avatar',
   component: MasAvatar,
   decorators: [
     moduleMetadata({
