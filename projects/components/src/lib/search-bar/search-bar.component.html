@@ -1,0 +1,6 @@
+<div class="mas-search-bar" role="search">
+  <i class="mas-search-bar--leading-icon"></i>
+  <input class="mas-search-bar--input" [placeholder]="placeholder" [value]="query" (keydown.enter)="onSearch($event)" />
+  <span class="mas-search-bar--clear" (click)="onClearClick($event)">Clear</span>
+  <i class="mas-search-bar--close-icon" (click)="onCloseClick($event)"></i>
+</div>
