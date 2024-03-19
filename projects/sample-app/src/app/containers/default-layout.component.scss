@@ -6,7 +6,7 @@
     overflow-x: hidden;
     .main {
       height: calc(100vh - 64px);
-      width: calc(100vw - 150px);
+      width: 83vw;
       margin-left: 150px;
     }
   }
@@ -14,15 +14,17 @@
 .navigation-drawer {
   margin-top: 64px;
   height: 100%;
-  width: 150px;
+  width: 17vw;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   overflow-x: hidden;
   padding: 4px 12px;
+  background-color: white;
 }
 .navigation-item {
+  width: calc(17vw - 20px);
   display: flex;
   padding: 8px;
   align-items: center;

@@ -2,10 +2,11 @@
   display: flex;
   height: 100%;
   .image-container {
-    flex: 50%;
+    flex: 33%;
     overflow: hidden;
     img {
-      aspect-ratio: 1/2 auto;
+      aspect-ratio: 1/2;
+      object-fit: cover;
     }
     background-repeat: no-repeat;
   }
@@ -23,6 +24,17 @@
       align-items: center;
       gap: 48px;
       flex: 1 0 0;
+      form {
+        .email-input {
+          width: 100%;
+        }
+      }
+      .submit-button {
+        width: 280px;
+        > button {
+          width: 100%;
+        }
+      }
     }
     .login-info_text {
       color: var(--mas-semantic-color_text-secondary);
