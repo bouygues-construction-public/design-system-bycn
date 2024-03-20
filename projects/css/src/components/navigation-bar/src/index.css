@@ -2,6 +2,7 @@
 
 .mas-navigation-bar {
   display: flex;
+  position: relative;
   justify-content: space-between;
   width: 100%;
   align-items: center;
@@ -13,6 +14,7 @@
     align-items: center;
     gap: 12px;
     .mas-navigation-bar_brand-logo {
+      cursor: pointer;
       display: flex;
       align-items: center;
       gap: 8px;
@@ -21,8 +23,6 @@
         line-height: 28px;
       }
     }
-  }
-  .mas-navigation-bar_search-bar {
   }
   .mas-navigation-bar_action {
     display: flex;
@@ -33,6 +33,7 @@
       align-items: center;
       width: 40px;
       height: 40px;
+      cursor: pointer;
       img {
         width: inherit;
         height: inherit;
@@ -42,11 +43,42 @@
 }
 /* size */
 .mas-navigation-bar.mas-navigation-bar_small {
-  
+  .mas-navigation-bar_search-bar {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    padding: 0 12px 12px 12px;
+    width: 100%;
+  }
+  .mas-navigation-bar_action {
+    .mas-navigation-bar_search {
+      display: none;
+    }
+    .mas-navigation-bar_question-mark {
+      display: none;
+    }
+    .mas-navigation-bar_setting {
+      display: none;
+    }
+    .mas-navigation-bar_show-apps {
+      display: none;
+    }
+    .mas-navigation-bar_button {
+      display: none;
+    }
+  }
 }
-.mas-navigation-bar.mas-navigation-medium {
-
+.mas-navigation-bar.mas-navigation-bar_medium {
+  .mas-navigation-bar_search-bar {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    padding: 0 12px 12px 12px;
+    width: 100%;
+  }
 }
 .mas-navigation-bar.mas-navigation-bar_large {
-
+  .mas-navigation-bar_search-bar {
+    width: 644px;
+  }
 }

@@ -24,7 +24,7 @@ const meta: Meta<MasNavigationBar> = {
       ...args,
     },
     template: `
-      <div style="height: 50px">
+      <div style="height: 140px">
         <mas-navigation-bar 
           [showNavDrawer]="showNavDrawer"
           [searchBar]="searchBar" 
@@ -43,7 +43,13 @@ const meta: Meta<MasNavigationBar> = {
     `,
   }),
   argTypes: {
-
+    onSearch: { action: 'search' },
+    onButtonClick: {action: 'buttonClick'},
+    onSearchClick: {action: 'iconSearchClick'},
+    onQuestionMarkClick: {action: 'iconQuestionClick'},
+    onSettingClick: {action: 'iconSettingClick'},
+    onAppClick: {action: 'iconAppClick'},
+    onAccountLayerClick: {action: 'accountClick'}
   },
 };
 
@@ -70,7 +76,7 @@ export const Basic: Story = {
 export const Overview: Story = {
   render: (args: MasNavigationBar) => ({
     template: `
-      <div style="height: 50px">
+      <div style="height: 140px">
         <mas-navigation-bar 
           [showNavDrawer]="true"
           [navDrawer]="true" 
@@ -95,7 +101,7 @@ export const Overview: Story = {
 export const NavigationBarBrandType: Story = {
   render: (args: MasNavigationBar) => ({
     template: `
-      <div style="height: 50px">
+      <div style="height: 140px">
         <mas-navigation-bar 
           [showNavDrawer]="true"
           [navDrawer]="true" 
@@ -117,7 +123,7 @@ export const NavigationBarBrandType: Story = {
 export const NavigationBarProductType: Story = {
   render: (args: MasNavigationBar) => ({
     template: `
-      <div style="height: 50px">
+      <div style="height: 140px">
         <mas-navigation-bar 
           [showNavDrawer]="true"
           [navDrawer]="true" 
@@ -139,7 +145,7 @@ export const NavigationBarProductType: Story = {
 export const NavigationBarWithSearchBar: Story = {
   render: (args: MasNavigationBar) => ({
     template: `
-      <div style="height: 50px">
+      <div style="height: 140px">
         <mas-navigation-bar 
           [showNavDrawer]="true"
           [navDrawer]="true" 
@@ -161,7 +167,7 @@ export const NavigationBarWithSearchBar: Story = {
 export const NavigationBarWithButton: Story = {
   render: (args: MasNavigationBar) => ({
     template: `
-      <div style="height: 50px">
+      <div style="height: 140px">
         <mas-navigation-bar 
           [showNavDrawer]="true"
           [navDrawer]="true" 

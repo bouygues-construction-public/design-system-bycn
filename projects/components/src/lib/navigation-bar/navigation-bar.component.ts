@@ -9,9 +9,12 @@ export class MasNavigationBar implements OnInit {
   @Input() navDrawer: boolean = false;
   @Output() clickNavDrawer: EventEmitter<Boolean>;
   @Input() searchBar: boolean = false;
+  @Input() brandLogoHref: string = '#';
   @Input() type: 'brand' | 'product' = 'brand';
   @Input() productName: string = '';
+  @Input() searchBarPlaceholder: string = '';
   public size: 'L' | 'S' | 'M';
+  @Output() search: EventEmitter<any>;
   // End instance
   @Input() showButton: boolean = false;
   @Output() buttonClick = new EventEmitter<Event>();
@@ -66,6 +69,9 @@ export class MasNavigationBar implements OnInit {
   onClickNavDrawer(event: boolean) {
     this.navDrawer = !event;
     this.clickNavDrawer.emit(this.navDrawer);
+  }
+  onSearch(event: any) {
+    this.search.emit(event);
   }
   ngOnInit() {}
 }
