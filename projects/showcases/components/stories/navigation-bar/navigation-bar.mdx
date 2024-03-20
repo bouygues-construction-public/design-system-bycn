@@ -1,0 +1,89 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+  Toc,
+  Canvas,
+  of,
+} from '@storybook/blocks';
+
+import { MasNavigationBar } from 'projects/components/src/lib/navigation-bar/navigation-bar.component';
+import * as NavigationBarStories from './navigation-bar.stories';
+
+<Meta of={NavigationBarStories} />
+
+<Title />
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
+
+## Overview
+
+Navigation bar provides consistent location, and allow navigation from a page to another one.
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Usage
+
+Navigation bar contains functionalities attached to the current product as well as the entire ecosystem.
+
+- It supports multiple feature as links, icons buttons, search-input, actions
+- It host the brand Identity on it's own.
+
+Use navigation bar as a persistent component through all your product(s)
+Because it represent our brand Identity on numerical product, navigation bar must always contain a visual link to the brand, whether to a product or to the company.
+
+## Variants
+
+### Overview
+
+Navigation bar can be use with optional actions such as setting, question mark, apps, search, account layer.
+
+<Canvas>
+  <Story of={NavigationBarStories.Overview} />
+</Canvas>
+
+### Type
+
+Navigation bar can be set up for both `brand` (display BYCN corporate logotype) and `product` (display BYCN symbol + product name) type.
+
+<Canvas>
+  <Story of={NavigationBarStories.NavigationBarBrandType} />
+</Canvas>
+
+<Canvas>
+  <Story of={NavigationBarStories.NavigationBarProductType} />
+</Canvas>
+
+### With Search bar
+
+<Canvas>
+  <Story of={NavigationBarStories.NavigationBarWithSearchBar} />
+</Canvas>
+
+### With Button
+
+<Canvas>
+  <Story of={NavigationBarStories.NavigationBarWithButton} />
+</Canvas>
+
+## Guidelines
+
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/7988b3-navigation-bar/b/964f27)
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

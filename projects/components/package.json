@@ -34,12 +34,10 @@
     "@masoni/css-checkbox": "^0.0.1",
     "@masoni/css-chip": "^0.0.1",
     "@masoni/css-circular-progress-bar": "^0.0.1",
-
     "@masoni/css-icon-button": "^0.0.1",
     "@masoni/css-divider": "file:../css/src/components/divider",
     "@masoni/css-input-dropdown": "^0.0.2",
     "@masoni/css-link": "^0.0.1",
-
     "@masoni/css-popover": "^0.0.1",
     "@masoni/css-progress-bar": "^0.0.1",
     "@masoni/css-radio-button": "^0.0.2",
@@ -48,6 +46,8 @@
     "@masoni/css-tab": "^0.0.1",
     "@masoni/css-tag": "^0.0.2",
     "@masoni/css-text-input": "^0.0.2",
-    "@masoni/css-toggle-button": "^0.0.1"
+    "@masoni/css-toggle-button": "^0.0.1",
+    "@masoni/css-navigation-bar": "file:../css/src/components/navigation-bar",
+    "@masoni/css-search-bar": "file:../css/src/components/search-bar"
   }
 }

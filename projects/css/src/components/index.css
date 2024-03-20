@@ -22,4 +22,6 @@
 @import './toast/dist/index.css';
 @import './breadcrumbs/dist/index.css';
 @import './divider/dist/index.css';
+@import './navigation-bar/dist/index.css';
 @import './navigation-item/dist/index.css';
+@import './search-bar/dist/index.css';

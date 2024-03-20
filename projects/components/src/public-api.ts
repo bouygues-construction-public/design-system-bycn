@@ -24,4 +24,6 @@ export * from './lib/tab';
 export * from './lib/toast';
 export * from './lib/breadcrumbs';
 export * from './lib/divider';
+export * from './lib/navigation-bar';
 export * from './lib/navigation-item';
+export * from './lib/search-bar';

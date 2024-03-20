@@ -1,0 +1,46 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+.mas-search-bar_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--mas-semantic-color_surface-tiertiary);
+  width: inherit;
+  height: 40px;
+  border-radius: var(--mas-radius_full);
+  padding: 8px 12px;
+  gap: 8px;
+  width: 100%;
+  ~ input::placeholder {
+    user-select: none;
+    color: var(--mas-semantic-color_text-tiertiary);
+  }
+  .mas-search-bar_input {
+    color: var(--mas-semantic-color_text-primary);
+    display: block;
+    width: inherit;
+    background-color: var(--mas-semantic-color-surface-primary);
+    cursor: pointer;
+    outline: none;
+    transition: var(--mas-transition_focus-visible);
+  }
+  .mas-search-bar_leading-icon {
+    color: var(--mas-semantic-color_icon-secondary);
+  }
+  .mas-search-bar_clear {
+    color: var(--mas-semantic-color_text-tiertiary);
+    cursor: pointer;
+    user-select: none;
+  }
+  .mas-search-bar_close-icon {
+    color: var(--mas-semantic-color_icon-secondary);
+  }
+  .mas-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+  }
+}
