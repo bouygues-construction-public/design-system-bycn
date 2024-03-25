@@ -13,7 +13,7 @@
   .content {
     display: flex;
     flex: 50%;
-    padding: 32px 128px;
+    padding: 32px 128px 64px;
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
@@ -25,12 +25,13 @@
       gap: 48px;
       flex: 1 0 0;
       form {
+        width: 100%;
         .email-input {
           width: 100%;
         }
       }
       .submit-button {
-        width: 280px;
+        width: 100%;
         > button {
           width: 100%;
         }
