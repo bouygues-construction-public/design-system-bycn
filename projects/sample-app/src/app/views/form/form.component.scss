@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  padding-left: 17vw;
+  form {
+    .headline {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      .headline_note {
+        padding: 8px;
+        border-radius: 4px;
+        background-color: var(--mas-semantic-color_surface-secondary);
+        width: max-content;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--mas-typo_font-family--inter);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14.52px;
+        .note-icon {
+          width: 16px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    .fields {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .information_container {
+    }
+    .description_container {
+    }
+    .detail_container {
+      .detail_grid-container {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        gap: 16px 32px;
+      }
+    }
+    .compliance_container {
+    }
+    .action_container {
+      width: 600px;
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+      padding: 24px 0 64px 0;
+      .cancel-button {
+        flex: 50%;
+      }
+      .confirm-button {
+        flex: 50%;
+      }
+    }
+  }
+}

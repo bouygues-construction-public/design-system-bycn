@@ -1,13 +1,13 @@
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { LoginComponent } from './views/login/login.component';
-import { NgModule } from '@angular/core';
 import { DefaultLayoutComponent } from './containers/default-layout.component';
+import { FormComponent } from './views/form/form.component';
 
 export const routes: Routes = [
-  {
-    path: '**',
-    redirectTo: 'login',
-  },
+  // {
+  //   path: '**',
+  //   redirectTo: 'login',
+  // },
   {
     path: '',
     component: DefaultLayoutComponent,
@@ -15,8 +15,13 @@ export const routes: Routes = [
       {
         path: 'login',
         component: LoginComponent,
-        title: 'login',
+        title: 'Login example',
       },
+      {
+        path: 'form',
+        component: FormComponent,
+        title: 'Form example'
+      }
     ],
   },
 ];

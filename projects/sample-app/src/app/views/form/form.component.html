@@ -1,0 +1,45 @@
+<div class="container">
+  <form>
+    <div class="headline">
+      <h1 class="mas-typo_headline-3">Market review</h1>
+      <div class="headline_note">
+        <i class="note-icon mas-warning-circle-outlined mas-security-and-warnings--outlined"></i>
+        <span class="">Please fill in the form with real infos</span>
+      </div>
+    </div>
+
+    <div class="information_container fields">
+      <span class="information_label mas-typo_subtitle-1">Informations</span>
+      <mas-text-input class="information_name" placeholder="Case name"></mas-text-input>
+      <mas-text-input class="information_name" placeholder="Case number"></mas-text-input>
+      <mas-text-input class="information_name" placeholder="Case amount"></mas-text-input>
+    </div>
+    <div class="description_container fields">
+      <span class="description_label mas-typo_subtitle-1">Description</span>
+      <mas-text-input class="description_detail" placeholder="Added details"></mas-text-input>
+    </div>
+
+    <div class="detail_container fields">
+      <span class="detail_label mas-typo_subtitle-1">Details</span>
+      <div class="detail_grid-container">
+        <mas-text-input class="detail_sales-closing" placeholder="Sales closing"></mas-text-input>
+        <mas-text-input class="detail_sales-post-closing" placeholder="Post-closing sales"></mas-text-input>
+        <mas-text-input class="detail_gross-margin" placeholder="Gross margin"></mas-text-input>
+        <mas-text-input class="detail_beneficial-margin" placeholder="Beneficial margin"></mas-text-input>
+      </div>
+    </div>
+
+    <div class="compliance_container fields">
+      <span class="compliance_label mas-typo_subtitle-1">Compliance</span>
+      <span class="compliance-text mas-typo_body-2">Does the file comply with the initial offer?</span>
+      <mas-radio-group class="radio-button-group" orientation="horizontal">
+        <mas-radio-button labelText="Yes" value="yes" size="S"></mas-radio-button>
+        <mas-radio-button labelText="No" value="no" size="S"></mas-radio-button>
+      </mas-radio-group>
+    </div>
+    <div class="action_container">
+      <button class="cancel-button" MasButton variant="secondary" size="small">Cancel</button>
+      <button class="confirm-button" MasButton variant="accent" size="small">Confirm</button>
+    </div>
+  </form>
+</div>

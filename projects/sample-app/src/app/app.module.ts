@@ -23,9 +23,10 @@ import {
 } from '@masoni/components/dist';
 import { LoginComponent } from './views/login/login.component';
 import { DefaultLayoutComponent } from './containers/default-layout.component';
+import { FormComponent } from './views/form/form.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, DefaultLayoutComponent],
+  declarations: [AppComponent, LoginComponent, FormComponent, DefaultLayoutComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

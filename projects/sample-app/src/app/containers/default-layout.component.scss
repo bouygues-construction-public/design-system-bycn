@@ -23,11 +23,17 @@
   padding: 4px 12px;
   background-color: white;
 }
+.section-title {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+}
 .navigation-item {
   width: calc(17vw - 20px);
   display: flex;
   padding: 8px;
   align-items: center;
+  cursor: pointer;
 }
 .navigation-item:hover {
   background-color: var(--mas-semantic-color_alpha-blue--hovered);
