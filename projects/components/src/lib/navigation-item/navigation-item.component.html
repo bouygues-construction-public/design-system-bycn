@@ -6,7 +6,7 @@
         <div *ngIf="!collapsed"   class="mas-navigation-item-label">{{label}}</div>
     </div> 
     <div class="mas-nav-badge-submenu">
-        <div *ngIf="badgeContent" [class]="classes">
+        <div *ngIf="badgeContent" class="mas-nav-badge" [ngClass]="{'mas-nav-badge--collapsed': collapsed}">
           <span class="badgeLabel">
             {{badgeContent}}
           </span> 

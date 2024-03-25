@@ -24,8 +24,6 @@ export class MasNavigationItem implements OnInit{
   
   get classes(): { [key: string]: boolean } {
     return {
-      'mas-nav-badge': true,
-      'mas-nav-badge--collapsed': this.collapsed,
       'mas-navigation-item': true,
       'mas-navigation-item--collapsed': this.collapsed,
       [`mas-navigation-item--${this.selectedClass()}`]: true,
