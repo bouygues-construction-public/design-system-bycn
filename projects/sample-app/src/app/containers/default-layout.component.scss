@@ -5,14 +5,19 @@
     display: flex;
     overflow-x: hidden;
     .main {
-      height: calc(100vh - 64px);
+      height: calc(100vh - 65px);
       width: 83vw;
       margin-left: 150px;
+      padding-top: 10px
     }
+  }
+  mas-navigation-bar {
+    border-bottom: 1px solid var(--mas-semantic-color_border-secondary);
   }
 }
 .navigation-drawer {
-  margin-top: 64px;
+  border-right: 1px solid var(--mas-semantic-color_border-secondary);
+  margin-top: 74px;
   height: 100%;
   width: 17vw;
   position: fixed;
@@ -21,7 +26,7 @@
   left: 0;
   overflow-x: hidden;
   background-color: white;
-  .content-section{
+  .content-section {
     padding: 4px 12px;
   }
   .logo-BYCN {
