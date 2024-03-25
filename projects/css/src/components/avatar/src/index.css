@@ -1,0 +1,150 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+
+
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var( --mas-semantic-brand--default, #C74D10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  
+  & p{
+    text-align: center;
+    font-family: var(--mas-typo_font-family--inter);
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: center;
+    
+  }
+  & img{
+   
+    height: 100%;
+    width: 100%;
+    
+
+  }
+}
+
+
+  /* Taille */
+  .avatar-XS {
+    
+    height: 20px;
+    width: 20px;
+    top: 206px;
+    left: 179px;
+    
+    & i{
+      /* width: 9.76px;
+      height: 9.38px; */
+      font-size: 10px;
+      
+      top: 1.12px;
+      left: 1.12px;
+     
+      
+    }
+    & p{
+      font-size: 10px;
+      text-align: center;
+      line-height: 12px;
+      
+
+ 
+    }
+  }
+
+.avatar-S {
+
+    height: 24px;
+    width: 24px;
+    top: 145px;
+    left: 177px;
+   
+    & i{
+
+
+     /* width: 13.01px;
+     height: 12.51px; */
+
+      font-size: 14px;
+      
+      top: 1.5px;
+      left: 1.49px;
+     
+    }
+    & p{
+      font-size: 14px;
+      text-align: center;
+      
+    }
+  }
+
+
+
+  
+.avatar-M {
+  
+    height: 32px;
+    width: 32px;
+    top: 84px;
+    left: 173px;
+    
+    & i{
+     /*  // width: 19.52px;
+     height: 18.77px; */
+      font-size: 22px;
+      
+      top: 2.25px;
+      left: 2.24px;
+      
+     
+    }
+    & p{
+      text-align: center;
+      font-size: 16px;
+      line-height: 24px;
+      
+    }
+  }
+
+
+  .avatar-L {
+ 
+    height: 40px;
+    width: 40px;
+    top: 23px;
+    left: 169px;
+    
+    & i{
+      /*  width: 19.52px;
+      height: 18.77px; */
+      font-size: 30px;
+      top: 2.25px;
+      left: 2.24px;
+      
+      
+    }
+    & p{
+      font-size: 18px;
+      text-align: center;
+      line-height: 24px;
+      
+    }
+ 
+  }
+
+  
+  .avatar-stroke-inside {
+     border:1px solid #EDEDF0; 
+   
+  }
+  
+  .avatar-stroke-outside {
+    border:1px solid #EDEDF0;
+  }
+  
+  

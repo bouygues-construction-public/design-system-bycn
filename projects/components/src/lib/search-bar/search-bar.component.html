@@ -1,0 +1,18 @@
+<div class="mas-search-bar_container" role="search">
+  <i class="mas-search-bar_leading-icon mas-magnifying-glass-outlined mas-system-and-device--outlined mas-icon"></i>
+  <input
+    #searchinput
+    class="mas-search-bar_input mas-typo_body-2"
+    [formControl]="input"
+    [placeholder]="placeholder"
+    [value]="query"
+    (keydown.enter)="onSearch(query)"
+    (focus)="onFocus(true)"
+  />
+  <span *ngIf="!empty" class="mas-search-bar_clear mas-typo_body-3" (click)="onClearClick($event)">Clear</span>
+  <i
+    *ngIf="focused"
+    class="mas-search-bar_close-icon mas-x-outlined mas-math-and-finance--outlined mas-icon"
+    (click)="onCloseClick($event)"
+  ></i>
+</div>

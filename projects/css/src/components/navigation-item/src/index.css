@@ -1,0 +1,153 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+.mas-navigation-item {
+  width: 256px;
+  height: 36px;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--Text-Reverse, #0C0C0D);
+  cursor: pointer;
+}
+
+.mas-nav-item-icon {
+  display: flex;
+  gap: 8px;
+}
+
+.mas-navigation-item-label {
+  font-feature-settings: 'calt' off;
+  font-family: var(--mas-typo_font-family--inter);
+  font-size: var(--mas-typo_body-3-font-size);
+  font-weight: var(--mas-typo_body-font-weight);
+  font-style: normal;
+  line-height: var(--mas-typo_body-3-line-height);
+  /* 142.857% */
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.mas-navigation-item--collapsed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px !important;
+  height: 36px !important;
+}
+
+
+.mas-navigation-item-icon,
+.mas-navigation-item-submenu-icon {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.mas-navigation-item-icon i,
+.mas-navigation-item-submenu-icon i {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.mas-navigation-item-submenu-icon {
+  color: var(--Text-Reverse, #0C0C0D);
+}
+
+.mas-nav-badge-submenu {
+  display: flex;
+  gap: 10px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.mas-nav-badge {
+  padding: 0px 6px 0px 6px;
+  border-radius: 999px;
+  background-color: #C74D10;
+
+}
+
+.mas-nav-badge .badgeLabel {
+  display: flex;
+  color: #FFFFFF;
+  font-feature-settings: 'calt' off;
+  font-family: var(--mas-typo_font-family--inter);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+
+}
+
+.mas-nav-badge--collapsed {
+  position: fixed;
+  transform: translate(12px, -8px);
+}
+
+/* Default navigation item */
+.mas-navigation-item--default {}
+
+.mas-navigation-item--default:not(:disabled):hover {
+  background-color: var(--action-primary-hovered, #9090A214);
+}
+
+.mas-navigation-item--default:not(:disabled):active {
+  background-color: var(--action-primary-pressed, #9090A229);
+}
+
+.mas-navigation-item--default.disabled {
+  opacity: 0.5;
+  background-color: var(--action-primary-default, #9090A229);
+  pointer-events: none;
+}
+
+
+/* selected navigation item */
+.mas-navigation-item--selected {
+  color: #007AB7;
+  background-color: var(--action-primary-default, #008FD614)
+}
+
+.mas-navigation-item--selected:not(:disabled):hover {
+  color: #006699;
+  background-color: var(--action-primary-hovered, #008FD614);
+}
+
+.mas-navigation-item--selected:not(:disabled):active {
+  color: #005885;
+  background-color: var(--action-primary-pressed, #008FD629);
+}
+
+.mas-navigation-item--selected.disabled {
+  opacity: 0.5;
+  color: #007AB7;
+  background-color: var(--action-primary-default, #008FD629);
+  pointer-events: none;
+}
+
+/* selected sebmenu navigation item */
+.mas-navigation-item--selected-submenu {
+  color: #007AB7;
+}
+
+.mas-navigation-item--selected-submenu:not(:disabled):hover {
+  color: #006699;
+  background-color: var(--action-primary-hovered, #9090A214);
+}
+
+.mas-navigation-item--selected-submenu:not(:disabled):active {
+  color: #005885;
+  background-color: var(--action-primary-pressed, #9090A229);
+}
+
+.mas-navigation-item--selected-submenu.disabled {
+  color: #007AB7;
+  opacity: 0.5;
+  background-color: var(--action-primary-default, #9090A229);
+  pointer-events: none;
+}
