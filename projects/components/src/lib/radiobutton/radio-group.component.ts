@@ -27,6 +27,10 @@ import { RadioButtonClickEvent } from './radio-change';
       multi: true,
     },
   ],
+  host: {
+    '[class.mas-radio-group--horizontal]': 'orientation === "horizontal"',
+    '[class.mas-radio-group--vertical]': 'orientation === "vertical"',
+  },
 })
 export class MasRadioGroup implements ControlValueAccessor, AfterContentInit, AfterViewInit {
   static radioCount = 0;
@@ -47,6 +51,7 @@ export class MasRadioGroup implements ControlValueAccessor, AfterContentInit, Af
   get disabled(): boolean {
     return this._disabled;
   }
+  @Input() orientation: 'horizontal' | 'vertical' = 'vertical';
   protected _disabled: boolean = false;
   protected _name: string = `radio-group-${MasRadioGroup.radioCount++}`;
   protected _selected: MasRadioButton | null = null;
@@ -122,7 +127,7 @@ export class MasRadioGroup implements ControlValueAccessor, AfterContentInit, Af
       setTimeout(() => {
         this.radios!.forEach((radio) => {
           radio.name = this.name;
-          radio.checked = this.value === radio.value
+          radio.checked = this.value === radio.value;
         });
       });
     }

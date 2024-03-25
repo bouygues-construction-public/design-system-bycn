@@ -112,5 +112,15 @@
 }
 .mas-radio-group {
   display: flex;
-  flex-direction: column;
+}
+.mas-radio-group--vertical {
+  .mas-radio-group {
+    flex-direction: column;
+  }
+}
+.mas-radio-group--horizontal {
+  .mas-radio-group {
+    flex-direction: row;
+    gap: 32px;
+  }
 }
