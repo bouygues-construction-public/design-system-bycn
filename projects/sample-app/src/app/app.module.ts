@@ -20,13 +20,15 @@ import {
   MasErrorModule,
   MasNavigationBarModule,
   MasDividerModule,
+  MasTabModule,
 } from '@masoni/components/dist';
 import { LoginComponent } from './views/login/login.component';
 import { DefaultLayoutComponent } from './containers/default-layout.component';
 import { FormComponent } from './views/form/form.component';
+import { SettingComponent } from './views/setting/setting.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, FormComponent, DefaultLayoutComponent],
+  declarations: [AppComponent, LoginComponent, FormComponent, SettingComponent, DefaultLayoutComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -45,6 +47,7 @@ import { FormComponent } from './views/form/form.component';
     MasErrorModule,
     MasNavigationBarModule,
     MasDividerModule,
+    MasTabModule,
   ],
   bootstrap: [AppComponent],
 })
