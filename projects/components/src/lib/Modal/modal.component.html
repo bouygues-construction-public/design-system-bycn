@@ -1,0 +1,46 @@
+<mas-button (click)="openModal()" variant="secondary" size="medium">Open Modal</mas-button>
+<div *ngIf="showModal" class="modal" (click)="closeModal()">
+  <div [ngClass]="'modalThree modal-' + size" (click)="$event.stopPropagation()">
+    <div [ngClass]="'modal-header modal-header-' + size">
+      <h1 [ngClass]="'modal-title-' + size"  >{{ title }}</h1>
+      <span class="close" (click)="closeModal()"><i style="font-size: 16px; width:16px; height:16px;" class="mas-x-outlined mas-math-and-finance--outlined mas-icon"></i></span>
+    </div>
+    <div [ngClass]="'content-scroll-' + size" >
+      <div  class="modal-content">
+        <p >{{ content }}</p>
+      </div>
+      <div class="modal-content-component" >
+        <ng-content ></ng-content>
+      </div>
+       
+    </div>
+
+    <div [ngClass]="'modal-footer-' + size" *ngIf="size !== 'small' && buttonOptions === 'Show_Buttons'">
+      <mas-button class="btn" (click)="cancelAction()" variant="secondary" size="small">{{ buttonLabelsecondary }}</mas-button>                   
+      <mas-button  class="btn" (click)="confirmAction()" variant="primary" size="small">{{ buttonLabelprimary }}</mas-button>
+    </div>
+    <div [ngClass]="'modal-footer-' + size" *ngIf="size === 'small' && buttonOptions === 'Show_Buttons'"> 
+      <a style="width: 100%;" MasButton class="btnS" (click)="confirmAction()" variant="primary" size="small">{{ buttonLabelprimary }}</a> 
+      <a style="width: 100%;" MasButton class="btnS" (click)="confirmAction()" variant="secondary" size="small">{{ buttonLabelsecondary }}</a>                   
+            
+    </div>
+    <div [ngClass]="'modal-footer-' + size" class="single-button-footer" *ngIf="size === 'small' && buttonOptions === 'Show_Secondary_Button'">
+      <a style="width: 100%;" MasButton class="btnS" (click)="confirmAction()" variant="secondary" size="small">{{ buttonLabelsecondary }}</a>
+                         
+    </div>
+    <div [ngClass]="'modal-footer-' + size" class="single-button-footer" *ngIf="size === 'small' && buttonOptions === 'Show_Primary_Button'">
+      <a style="width: 100%;" MasButton class="btnS" (click)="confirmAction()" variant="primary" size="small">{{ buttonLabelprimary }}</a> 
+    </div>
+   
+    <div [ngClass]="'modal-footer-' + size"*ngIf="size !== 'small' && buttonOptions === 'Show_Primary_Button'">
+      <mas-button class="btn" (click)="confirmAction()" variant="primary" size="small">{{ buttonLabelprimary }}</mas-button>
+    </div>
+    <div [ngClass]="'modal-footer-' + size" *ngIf="size !== 'small' && buttonOptions === 'Show_Secondary_Button'">
+      <mas-button class="btn " (click)="cancelAction()" variant="secondary" size="small">{{ buttonLabelsecondary }}</mas-button>                   
+    </div>
+    <div *ngIf="buttonOptions === 'No_Buttons'">
+      
+    </div>
+  
+  </div>
+</div>

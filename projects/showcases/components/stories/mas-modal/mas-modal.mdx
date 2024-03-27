@@ -1,0 +1,122 @@
+import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/addon-docs/blocks';
+import { MasModal } from 'projects/components/src/lib/Modal/modal.component';
+import * as MasModalStories from './mas-modal.stories';
+
+<Meta of={MasModalStories} />
+
+# MasModal
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Style](#style)
+
+
+## Overview
+A modal is a simulated window that appears above the main content and requires user interaction.
+
+The `MasModal` is used to provide critical information or ask for a decision.
+ It disables the main content (by a black background with opacity) until the user explicitly interacts with the modal dialog. 
+A modal interrupts the user journey, so it should be used sparingly. Only use it when you need the user's full attention for the period of time the modal is displayed.
+<Canvas >
+    <div>
+        <Story of={MasModalStories.Default} />
+    </div>
+</Canvas>
+
+## Props
+
+<Controls />
+
+## Usage
+- **Modal Usage**
+  - Use modals when the information you want to provide deserves detail or multiple sentences.
+  - Use modals to ask a user to confirm that they want to perform an action.
+  - Use modals in case of blocking actions that necessarily require user action.
+
+
+
+To use `MasModal`, it serves to incorporate specific elements such as forms, tables, or any other complex components.
+ It can be omitted if the modal consists solely of text.
+
+## Style
+
+### Screen Sizes
+
+The `Modal` component is available in three sizes, each responsive to different screen sizes:
+
+- **Small Size**: Used for mobile devices with breakpoints from 0px to 600px.
+<Canvas>
+ <Story of={MasModalStories.Modal_Small} />
+</Canvas>
+- **Medium Size**: Employed for tablets with breakpoints from 600px to 1440px.
+<Canvas>
+ <Story of={MasModalStories.Modal_Medium} />
+</Canvas>
+
+- **Large Size**: Utilized for desktop screens beyond 1440px.
+ <Canvas>
+ <Story of={MasModalStories.Modal_Large} />
+</Canvas>
+
+
+
+
+### Modal without buttons
+
+`Without Buttons` Small
+<Canvas>
+ <Story of={MasModalStories.Modal_WithoutButtonsSmall} />
+</Canvas>
+
+`Without Buttons` Medium
+<Canvas>
+ <Story of={MasModalStories.Modal_WithoutButtonsMedium} />
+</Canvas>
+
+`Without Buttons` Large
+<Canvas>
+ <Story of={MasModalStories.Modal_WithoutButtonsLarge} />
+</Canvas>
+
+### Modal without Primary button
+`Without Primary button` Small 
+<Canvas>
+ <Story of={MasModalStories.WithoutButtonPrimary_S} />
+</Canvas>
+
+`Without Primary button` Medium 
+<Canvas>
+ <Story of={MasModalStories.WithoutButtonPrimary_M} />
+</Canvas>
+
+`Without Primary button`  Large 
+<Canvas>
+ <Story of={MasModalStories.WithoutButtonPrimary_L} />
+</Canvas>
+
+### Modal without Secondary button
+
+`Without Secondary button` Small
+<Canvas>
+ <Story of={MasModalStories.Modal_WithoutButtonSecondary_S} />
+</Canvas>
+`Without Secondary button` Medium
+<Canvas>
+ <Story of={MasModalStories.Modal_WithoutButtonSecondary_M} />
+</Canvas>
+`Without Secondary button` Large
+<Canvas>
+ <Story of={MasModalStories.Modal_WithoutButtonSecondary_L} />
+</Canvas>
+
+
+## Guidelines
+
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/928b40-modal/b/75c0d1)
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

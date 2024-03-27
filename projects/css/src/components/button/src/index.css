@@ -105,6 +105,7 @@ background: var(--action-reverse-default, #FFF);
   line-height: 20px;
   padding: 8px 16px;
   height: 36px;
+
 }
 
 .mas-btn_size--medium {
