@@ -41,6 +41,7 @@
     "@masoni/css-link": "^0.0.1",
 
     "@masoni/css-popover": "^0.0.1",
+    "@masoni/css-modal": "^0.0.1",
     "@masoni/css-progress-bar": "^0.0.1",
     "@masoni/css-radio-button": "^0.0.2",
     "@masoni/css-select": "^0.0.3",

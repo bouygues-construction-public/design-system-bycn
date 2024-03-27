@@ -17,6 +17,7 @@ export * from './lib/circular-progress-bar';
 export * from './lib/input-dropdown';
 export * from './lib/action-dropdown';
 export * from './lib/popover';
+export * from './lib/Modal';
 export * from './lib/tooltip';
 export * from './lib/icon-button';
 export * from './lib/alert';

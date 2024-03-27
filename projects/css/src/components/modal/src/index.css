@@ -1,0 +1,223 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+ .modal {
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0,0,0,0.5); 
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.modalThree {
+  background-color:rgba(255, 255, 255, 1);
+  box-shadow: var( --mas-shadow_400);;
+  margin: 15% auto; 
+  border-radius: 8px;
+  max-height: 90vh;  
+  align-items: center; 
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap:16px;
+  top: 20px;
+  left: 20px;
+}
+
+.modal-medium {
+  width:600px; 
+  min-height:204px;
+}
+
+
+.modal-large {
+  width: 900px; 
+  min-height: 204px;
+
+}
+
+
+.modal-small {
+   width: 375px;
+   min-height: 236px;
+}
+
+
+.modal-header {
+  gap:16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;  
+}
+
+.modal-header-large {
+  width: 836px;
+  height: 32px;
+}
+
+
+.modal-header-small {
+  width: 327px;
+  height: 32px;
+}
+
+
+.modal-header-medium {
+  width: 536px;
+  height: 32px;
+}
+
+
+.modal-title-medium {
+  width: 488px;
+  height: 32px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: var(--mas-typo_font-family);
+  line-height: 32px;
+  color: rgba(12, 12, 13, 1);
+  margin: 0;
+}
+
+.modal-title-large {
+  width: 788px;
+  height: 32px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: var(--mas-typo_font-family);
+  line-height: 32px;
+  color: rgba(12, 12, 13, 1);
+  margin: 0;
+}
+
+.modal-title-small {
+  width: 279px;
+  height: 32px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: var(--mas-typo_font-family);
+  line-height: 32px;
+  color: rgba(12, 12, 13, 1);
+  margin: 0;
+}
+
+/* Bouton de fermeture */
+.close {
+  width: 32px;
+  height: 32px;
+  gap: 8px;
+  padding:8px;
+  color: var(--mas-primitive-color_black);
+  font-size: 16px;
+
+  
+}
+
+.close:hover,
+.close:focus {
+  color: var(--mas-primitive-color_black);
+  text-decoration: none;
+  cursor: pointer;
+}
+.content-scroll{
+  min-height: 40px;
+  gap: 16px;
+  
+}
+
+.content-scroll-small {
+  width: 327px;
+}
+
+
+
+.content-scroll-large {
+  width: 836px;
+
+}
+
+.content-scroll-medium {
+  width: 536px;
+
+ 
+}
+
+
+.modal-content {
+  text-align: center;
+  overflow: auto;
+  max-height: calc(90vh - 200px);
+  overflow-y: auto;
+  scrollbar-color: #cccccc transparent;
+  scrollbar-width: thin; 
+}
+.modal-content-component{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.single-button-footer {
+  height: 42px !important;
+}
+
+ .modal-footer-medium {
+  width:536px;
+  height: 36px;
+  gap: 12px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: auto;
+
+}
+.modal-footer-large {
+  width:836px;
+  height: 36px;
+  gap: 12px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: auto;
+
+}
+
+.modal-footer-small {
+  width:327px;
+  height: 84px;
+  gap: 12px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: auto;
+}
+
+.btn {
+  gap:8px;
+  text-align: right;
+ }
+
+ .btnS {
+  gap:8px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
