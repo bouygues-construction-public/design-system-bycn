@@ -1,6 +1,7 @@
 @import '@masoni/css-design-tokens/dist/index.css';
 
- .modal {
+
+.modal {
   position: fixed; 
   z-index: 1; 
   left: 0;
@@ -128,6 +129,11 @@
 .content-scroll{
   min-height: 40px;
   gap: 16px;
+  overflow: auto;
+  max-height: calc(90vh - 200px);
+  overflow-y: auto;
+  scrollbar-color: #cccccc transparent;
+  scrollbar-width: thin; 
   
 }
 
@@ -150,14 +156,11 @@
 
 
 .modal-content {
-  text-align: center;
-  overflow: auto;
-  max-height: calc(90vh - 200px);
-  overflow-y: auto;
-  scrollbar-color: #cccccc transparent;
-  scrollbar-width: thin; 
-}
+    text-align: center;
+  
+  }
 .modal-content-component{
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
