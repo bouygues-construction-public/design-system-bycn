@@ -3,11 +3,10 @@ import { Component, Input, Output, EventEmitter,ElementRef, ContentChild, AfterC
 @Component({
   selector: 'mas-modal',
   templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.html'],
 })
 export class MasModal{
   
-  @Input() text: string ;
+
   @Input() showModal: boolean = false;
   @Input() title: string = '';
   @Input() content: string = '';
@@ -17,7 +16,7 @@ export class MasModal{
   @Input() size: string = '';
   @Output() cancel: EventEmitter<void> = new EventEmitter<void>();
   @Output() confirm: EventEmitter<void> = new EventEmitter<void>();
-
+  @Output() showModalChange: EventEmitter<boolean> = new EventEmitter<boolean>();
   constructor() { }
 
   public openModal() {
@@ -27,6 +26,7 @@ export class MasModal{
   closeModal(): void {
     this.showModal = false;
     this.cancel.emit();
+    this.showModalChange.emit(this.showModal); 
   }
 
   confirmAction(): void {

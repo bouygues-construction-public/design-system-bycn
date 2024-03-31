@@ -1,6 +1,5 @@
 @import '@masoni/css-design-tokens/dist/index.css';
 
-
 .modal {
   position: fixed; 
   z-index: 1; 
@@ -157,15 +156,18 @@
 
 .modal-content {
     text-align: center;
+    
   
   }
-.modal-content-component{
-  margin-top: 30px;
+.modal-content .custom-ng-content{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
+.custom-ng-content.with-margin-top {
+    margin-top: 20px;
+  }
 
 .single-button-footer {
   height: 42px !important;
@@ -211,6 +213,17 @@
  .btnS {
   gap:8px;
  }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

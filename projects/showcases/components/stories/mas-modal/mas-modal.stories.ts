@@ -2,9 +2,11 @@ import { Meta, Story, StoryObj, moduleMetadata } from "@storybook/angular";
 import { MasModal} from "projects/components/src/lib/Modal";  
 import { MasButton,MasButtonDirective } from "projects/components/src/public-api";
 const argTypes = {
-  text: {
-    type: { name: 'string', required: false },
-    description: 'The text to click', 
+  showModal: {
+    type: { name: 'boolean', required: false },
+    description: ' Show modal',
+    defaultValue: false,
+    control:'boolean', 
   },
   title: {
     type: { name: 'string', required: false },
@@ -44,7 +46,6 @@ const argTypes = {
 
 
   };
- 
 
   export default {
     title: 'Components / Overlays / Modal',
@@ -69,16 +70,17 @@ const argTypes = {
     template: `
       
       <div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
+       <mas-button variant="secondary" (click)="showModal = !showModal">Open Modal</mas-button>
         <mas-modal 
-          [text]="text"
+          [showModal]="showModal"
           [size]="size"
           [title]="title"
           [content]="content"
           [buttonLabelprimary]="buttonLabelprimary"
           [buttonLabelsecondary]="buttonLabelsecondary"
           [buttonOptions]="buttonOptions"
-          (cancel)="closeModal()"
-          (confirm)="confirmAction()" >      
+          (cancel)="showModal=false"
+          (confirm)="showModal=false" >      
         </mas-modal>
         
       </div>
@@ -86,7 +88,7 @@ const argTypes = {
   });
   export const Default = Template.bind({});
   Default.args = {
-    text:'Open modal',
+    showModal:false,
     size: 'small',
     title: 'It’s the title',
     content: 'The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be an equal amount of space at the top and bottom of the viewport',
@@ -96,43 +98,39 @@ const argTypes = {
 
   };
 
-export const Modal_Small = () => ({
-  template: `
-<div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
+  export const Modal_Small = () => ({
+    template: `
+      <div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
+        <mas-button variant="secondary" (click)="showModal = !showModal">Open Modal</mas-button>
         <mas-modal 
- 
+          [showModal]="showModal"
           [size]="'small'"
           [title]="'It’s the title'"
           [content]="'The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be an equal amount of space at the top and bottom of the viewport'"
           [buttonLabelprimary]="'Confirm'"
           [buttonLabelsecondary]="'Cancel'"
           [buttonOptions]="'Show_Buttons'"
-          (cancel)="closeModal()"
-          (confirm)="confirmAction()" >
-        
-          
-          <mas-button class="first-content" variant="secondary">Open Modal</mas-button>
-          
+          (cancel)="showModal=false"
+          (confirm)="showModal=false" >
         </mas-modal>
-        
       </div>
-  `,
-});
+    `,
+  });
 
 export const Modal_Medium = () => ({
   template: `
   <div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
+  <mas-button variant="secondary" (click)="showModal = !showModal">Open Modal</mas-button>
   <mas-modal 
- 
+    [showModal]="showModal"
     [size]="'medium'"
     [title]="'It’s the title'"
     [content]="'The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be an equal amount of space at the top and bottom of the viewport'"
     [buttonLabelprimary]="'Confirm'"
     [buttonLabelsecondary]="'Cancel'"
     [buttonOptions]="'Show_Buttons'"
-    (cancel)="closeModal()"
-    (confirm)="confirmAction()" >
-    <mas-button class="first-content" variant="secondary">Open Modal</mas-button>
+    (cancel)="showModal=false"
+    (confirm)="showModal=false" >
   </mas-modal>
   
 </div>
@@ -144,17 +142,17 @@ export const Modal_Medium = () => ({
 export const Modal_Large = () => ({
   template: `
   <div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
+  <mas-button variant="secondary" (click)="showModal = !showModal">Open Modal</mas-button>
   <mas-modal 
- 
+    [showModal]="showModal"
     [size]="'large'"
     [title]="'It’s the title'"
     [content]="'The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be an equal amount of space at the top and bottom of the viewport'"
     [buttonLabelprimary]="'Confirm'"
     [buttonLabelsecondary]="'Cancel'"
     [buttonOptions]="'Show_Buttons'"
-    (cancel)="closeModal()"
-    (confirm)="confirmAction()" >
-    <mas-button class="first-content" variant="secondary">Open Modal</mas-button>
+    (cancel)="showModal=false"
+    (confirm)="showModal=false" >
   </mas-modal>
   
 </div>
@@ -169,17 +167,17 @@ export const Modal_WithoutButtonsSmall = () => ({
   template: `
  
   <div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
+  <mas-button variant="secondary" (click)="showModal = !showModal">Open Modal</mas-button>
   <mas-modal 
-
+    [showModal]="showModal"
     [size]="'small'"
     [title]="'It’s the title'"
     [content]="'The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be an equal amount of space at the top and bottom of the viewport'"
     [buttonLabelprimary]="'Confirm'"
     [buttonLabelsecondary]="'Cancel'"
     [buttonOptions]="'No_Buttons'"
-    (cancel)="closeModal()"
-    (confirm)="confirmAction()" >
-    <mas-button class="first-content" variant="secondary">Open Modal</mas-button>
+    (cancel)="showModal=false"
+    (confirm)="showModal=false" >
   </mas-modal>
   </div>
 
@@ -191,17 +189,17 @@ export const Modal_WithoutButtonsMedium = () => ({
   template: `
  
   <div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
+  <mas-button variant="secondary" (click)="showModal = !showModal">Open Modal</mas-button>
   <mas-modal 
- 
+    [showModal]="showModal"
     [size]="'medium'"
     [title]="'It’s the title'"
     [content]="'The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be an equal amount of space at the top and bottom of the viewport'"
     [buttonLabelprimary]="'Confirm'"
     [buttonLabelsecondary]="'Cancel'"
     [buttonOptions]="'No_Buttons'"
-    (cancel)="closeModal()"
-    (confirm)="confirmAction()" >
-    <mas-button class="first-content" variant="secondary">Open Modal</mas-button>
+    (cancel)="showModal=false"
+    (confirm)="showModal=false" >
   </mas-modal>
   </div>
 
@@ -213,17 +211,17 @@ export const Modal_WithoutButtonsLarge = () => ({
   template: `
  
   <div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
+  <mas-button variant="secondary" (click)="showModal = !showModal">Open Modal</mas-button>
   <mas-modal 
-
+    [showModal]="showModal"
     [size]="'large'"
     [title]="'It’s the title'"
     [content]="'The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be an equal amount of space at the top and bottom of the viewport'"
     [buttonLabelprimary]="'Confirm'"
     [buttonLabelsecondary]="'Cancel'"
     [buttonOptions]="'No_Buttons'"
-    (cancel)="closeModal()"
-    (confirm)="confirmAction()" >
-    <mas-button class="first-content" variant="secondary">Open Modal</mas-button>
+    (cancel)="showModal=false"
+    (confirm)="showModal=false" >
   </mas-modal>
   </div>
 
@@ -235,17 +233,17 @@ export const WithoutButtonPrimary_S = () => ({
   template: `
  
   <div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
-<mas-modal 
-
+  <mas-button variant="secondary" (click)="showModal = !showModal">Open Modal</mas-button>
+  <mas-modal 
+  [showModal]="showModal"
   [size]="'small'"
   [title]="'It’s the title'"
   [content]="'The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be an equal amount of space at the top and bottom of the viewport'"
   [buttonLabelprimary]="'Confirm'"
   [buttonLabelsecondary]="'Cancel'"
   [buttonOptions]="'Show_Secondary_Button'"
-  (cancel)="closeModal()"
-  (confirm)="confirmAction()" >
-  <mas-button class="first-content" variant="secondary">Open Modal</mas-button>
+  (cancel)="showModal=false"
+  (confirm)="showModal=false" >
 </mas-modal>
 </div>
 
@@ -258,18 +256,19 @@ export const WithoutButtonPrimary_S = () => ({
 export const WithoutButtonPrimary_M = () => ({
   template: `
  
+  
   <div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
-<mas-modal 
-
+  <mas-button variant="secondary" (click)="showModal = !showModal">Open Modal</mas-button>
+  <mas-modal 
+  [showModal]="showModal"
   [size]="'medium'"
   [title]="'It’s the title'"
   [content]="'The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be an equal amount of space at the top and bottom of the viewport'"
   [buttonLabelprimary]="'Confirm'"
   [buttonLabelsecondary]="'Cancel'"
   [buttonOptions]="'Show_Secondary_Button'"
-  (cancel)="closeModal()"
-  (confirm)="confirmAction()" >
-  <mas-button class="first-content" variant="secondary">Open Modal</mas-button>
+  (cancel)="showModal=false"
+  (confirm)="showModal=false" >
 </mas-modal>
 </div>
 
@@ -283,17 +282,17 @@ export const WithoutButtonPrimary_L = () => ({
   template: `
  
   <div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
-<mas-modal 
-
+  <mas-button variant="secondary" (click)="showModal = !showModal">Open Modal</mas-button>
+  <mas-modal 
+  [showModal]="showModal"
   [size]="'large'"
   [title]="'It’s the title'"
   [content]="'The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be an equal amount of space at the top and bottom of the viewport'"
   [buttonLabelprimary]="'Confirm'"
   [buttonLabelsecondary]="'Cancel'"
   [buttonOptions]="'Show_Secondary_Button'"
-  (cancel)="closeModal()"
-  (confirm)="confirmAction()" >
-  <mas-button class="first-content" variant="secondary">Open Modal</mas-button>
+  (cancel)="showModal=false"
+  (confirm)="showModal=false" >
 </mas-modal>
 </div>
 
@@ -306,17 +305,17 @@ export const Modal_WithoutButtonSecondary_S = () => ({
   template: `
  
   <div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
-<mas-modal 
-
+  <mas-button variant="secondary" (click)="showModal = !showModal">Open Modal</mas-button>
+  <mas-modal 
+  [showModal]="showModal"
   [size]="'small'"
   [title]="'It’s the title'"
   [content]="'The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be an equal amount of space at the top and bottom of the viewport'"
   [buttonLabelprimary]="'Confirm'"
   [buttonLabelsecondary]="'Cancel'"
   [buttonOptions]="'Show_Primary_Button'"
-  (cancel)="closeModal()"
-  (confirm)="confirmAction()" >
-  <mas-button class="first-content" variant="secondary">Open Modal</mas-button>
+  (cancel)="showModal=false"
+  (confirm)="showModal=false" >
 </mas-modal>
 </div>
 
@@ -328,17 +327,17 @@ export const Modal_WithoutButtonSecondary_M = () => ({
   template: `
  
   <div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
-<mas-modal 
-
+  <mas-button variant="secondary" (click)="showModal = !showModal">Open Modal</mas-button>
+  <mas-modal 
+  [showModal]="showModal"
   [size]="'medium'"
   [title]="'It’s the title'"
   [content]="'The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be an equal amount of space at the top and bottom of the viewport'"
   [buttonLabelprimary]="'Confirm'"
   [buttonLabelsecondary]="'Cancel'"
   [buttonOptions]="'Show_Primary_Button'"
-  (cancel)="closeModal()"
-  (confirm)="confirmAction()" >
-  <mas-button class="first-content" variant="secondary">Open Modal</mas-button>
+  (cancel)="showModal=false"
+  (confirm)="showModal=false" >
 </mas-modal>
 </div>
 
@@ -348,22 +347,20 @@ export const Modal_WithoutButtonSecondary_M = () => ({
 
 export const Modal_WithoutButtonSecondary_L = () => ({
   template: `
- 
-  <div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
-<mas-modal 
-
-  [size]="'large'"
-  [title]="'It’s the title'"
-  [content]="'The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be an equal amount of space at the top and bottom of the viewport'"
-  [buttonLabelprimary]="'Confirm'"
-  [buttonLabelsecondary]="'Cancel'"
-  [buttonOptions]="'Show_Primary_Button'"
-  (cancel)="closeModal()"
-  (confirm)="confirmAction()" >
-  <mas-button class="first-content" variant="secondary">Open Modal</mas-button>
-</mas-modal>
-</div>
-
+    <div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
+    <mas-button variant="secondary" (click)="showModal = !showModal">Open Modal</mas-button>
+      <mas-modal 
+        [showModal]="showModal"
+        [size]="'large'"
+        [title]="'It’s the title'"
+        [content]="'The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be an equal amount of space at the top and bottom of the viewport'"
+        [buttonLabelprimary]="'Confirm'"
+        [buttonLabelsecondary]="'Cancel'"
+        [buttonOptions]="'Show_Primary_Button'"
+        (cancel)="showModal=false"
+        (confirm)="showModal=false" >
+      </mas-modal>
+    </div>
   `,
 });
 
