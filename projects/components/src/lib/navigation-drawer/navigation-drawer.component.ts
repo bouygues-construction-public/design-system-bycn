@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { AfterContentInit, Component, ContentChildren, Input, Output, QueryList, TemplateRef, forwardRef } from '@angular/core';
+import { MasNavigationDrawerSection } from './navigation-drawer-section.component';
 
 @Component({
   selector: 'mas-navigation-drawer',
@@ -8,11 +9,28 @@ import { Component, Input, OnInit } from '@angular/core';
     '[class.mas-navigation-drawer--collapsed]': 'collapsed === true',
   },
 })
-export class MasNavigationDrawer implements OnInit {
+export class MasNavigationDrawer implements AfterContentInit {
   constructor() {}
+  ngAfterContentInit(): void {
+    this.onCollapse(this.collapsed);
+  }
+  @ContentChildren(forwardRef((): any => MasNavigationDrawerSection))
+  navigationSections?: QueryList<MasNavigationDrawerSection>;
 
-  ngOnInit() {}
   @Input() showDivider: boolean = true;
   @Input() showLogo: boolean = true;
-  @Input() collapsed: boolean = false;
+  @Input() headerComponent: TemplateRef<any>;
+  @Input() footerComponent: TemplateRef<any>;
+  onCollapse(isCollapsed: boolean) {
+    this.navigationSections?.map((section) => (section.collapsed = isCollapsed));
+  }
+  _collapsed: boolean = false;
+  @Input()
+  set collapsed(isCollapsed: boolean) {
+    this._collapsed = isCollapsed;
+    this.onCollapse(isCollapsed);
+  }
+  get collapsed(): boolean {
+    return this._collapsed;
+  }
 }

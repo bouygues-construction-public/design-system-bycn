@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { AfterContentInit, Component, ContentChildren, Input, OnInit, QueryList, forwardRef } from '@angular/core';
+import { MasNavigationItem } from 'projects/components/src/public-api';
 
 @Component({
   selector: 'mas-navigation-drawer-section',
@@ -11,12 +12,26 @@ import { Component, Input, OnInit } from '@angular/core';
   `,
   host: {
     class: 'mas-navigation-drawer-section',
+    '[class.mas-navigation-drawer-section--collapsed]': 'collapsed === true',
   },
 })
-export class MasNavigationDrawerSection implements OnInit {
+export class MasNavigationDrawerSection implements AfterContentInit {
   constructor() {}
+  ngAfterContentInit(): void {
+    this.onCollapse(this.collapsed);
+  }
+  @ContentChildren(forwardRef((): any => MasNavigationItem)) navigationItems?: QueryList<MasNavigationItem>;
 
-  ngOnInit() {}
-
+  onCollapse(isCollapsed: boolean) {
+    this.navigationItems?.map((item) => (item.collapsed = isCollapsed));
+  }
   @Input() heading: string = '';
+  protected _collapsed: boolean = false;
+  set collapsed(isCollapsed: boolean) {
+    this._collapsed = isCollapsed;
+    this.onCollapse(isCollapsed);
+  }
+  get collapsed(): boolean {
+    return this._collapsed;
+  }
 }

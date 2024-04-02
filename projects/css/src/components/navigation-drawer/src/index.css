@@ -14,6 +14,9 @@
     overflow-x: hidden;
     background-color: var(--mas-semantic-color_surface-primary);
     .mas-navigation-drawer_header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: inherit;
       height: 64px;
       padding: 12px;
@@ -31,18 +34,39 @@
       }
     }
     .mas-navigation-drawer_footer {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
       position: fixed;
-      bottom: 12px;
+      bottom: 0;
       .mas-navigation-drawer_footer-component {
+        display: flex;
+        flex-direction: row;
         width: inherit;
         height: 64px;
         padding: 12px;
         gap: 8px;
       }
       .logo-BYCN {
+        padding: 12px;
       }
     }
   }
 }
 .mas-navigation-drawer.mas-navigation-drawer--collapsed {
+  .mas-navigation-drawer_header {
+    display: none;
+  }
+  .mas-navigation-drawer_container {
+    .mas-navigation-drawer-section--collapsed {
+      .section-heading {
+        display: none;
+      }
+    }
+  }
+  .mas-navigation-drawer_footer {
+    .mas-navigation-drawer_footer-component {
+      display: none;
+    }
+  }
 }

@@ -4,6 +4,8 @@ import {
   MasNavigationDrawerModule,
   MasNavigationDrawer,
   MasNavigationItemModule,
+  MasButtonModule,
+  MasSearchBarModule,
 } from 'projects/components/src/public-api';
 
 const meta: Meta<MasNavigationDrawer> = {
@@ -12,7 +14,7 @@ const meta: Meta<MasNavigationDrawer> = {
   // tags: ['autodocs'],
   decorators: [
     moduleMetadata({
-      imports: [CommonModule, MasNavigationDrawerModule, MasNavigationItemModule],
+      imports: [CommonModule, MasNavigationDrawerModule, MasNavigationItemModule, MasButtonModule, MasSearchBarModule],
     }),
   ],
   parameters: {
@@ -29,18 +31,25 @@ const meta: Meta<MasNavigationDrawer> = {
       ...args,
     },
     template: `
-      <mas-navigation-drawer [showDivider]="showDivider" [showLogo]="showLogo" [collapsed]="collapsed">
+      <ng-template #headerComponent>
+        <mas-search-bar placeholder="Search here..."></mas-search-bar>
+      </ng-template>
+      <mas-navigation-drawer [showDivider]="showDivider" [showLogo]="showLogo" [collapsed]="collapsed" [headerComponent]="headerComponent" [footerComponent]="footerComponent">
         <mas-navigation-drawer-section heading="section heading">
           <mas-navigation-item label="Label 1"></mas-navigation-item>
           <mas-navigation-item label="Label 2"></mas-navigation-item>
           <mas-navigation-item label="Label 3"></mas-navigation-item>
         </mas-navigation-drawer-section>
         <mas-navigation-drawer-section heading="section heading">
-        <mas-navigation-item label="Label 1"></mas-navigation-item>
-        <mas-navigation-item label="Label 2"></mas-navigation-item>
-        <mas-navigation-item label="Label 3"></mas-navigation-item>
-      </mas-navigation-drawer-section>
+          <mas-navigation-item label="Label 1"></mas-navigation-item>
+          <mas-navigation-item label="Label 2"></mas-navigation-item>
+          <mas-navigation-item label="Label 3"></mas-navigation-item>
+        </mas-navigation-drawer-section>
       </mas-navigation-drawer>
+      <ng-template #footerComponent>
+        <mas-button variant="primary" size="small" iconLeft="mas-plus-outlined mas-math-and-finance--outlined">Create</mas-button>
+        <mas-button variant="secondary" size="small" iconLeft="mas-upload-simple-outlined mas-system-and-device--outlined">Export</mas-button>
+      </ng-template>
     `,
   }),
   argTypes: {},
@@ -56,4 +65,59 @@ export const Basic: Story = {
     showLogo: true,
     collapsed: false,
   },
+};
+export const WithHeaderComponent: Story = {
+  args: {},
+  render: (args: MasNavigationDrawer) => ({
+    template: `
+    <ng-template #headerComponent>
+      <mas-search-bar placeholder="Search here..."></mas-search-bar>
+    </ng-template>
+    <mas-navigation-drawer [showDivider]="true" [showLogo]="true" [collapsed]="false" [headerComponent]="headerComponent">
+      <mas-navigation-drawer-section heading="section heading">
+        <mas-navigation-item label="Label 1"></mas-navigation-item>
+        <mas-navigation-item label="Label 2"></mas-navigation-item>
+        <mas-navigation-item label="Label 3"></mas-navigation-item>
+      </mas-navigation-drawer-section>
+    </mas-navigation-drawer>
+    `
+  })
+};
+export const WithFooterComponent: Story = {
+  args: {},
+  render: (args: MasNavigationDrawer) => ({
+    template: `
+    <mas-navigation-drawer [showDivider]="true" [showLogo]="true" [collapsed]="false" [footerComponent]="footerComponent">
+      <mas-navigation-drawer-section heading="section heading">
+        <mas-navigation-item label="Label 1"></mas-navigation-item>
+        <mas-navigation-item label="Label 2"></mas-navigation-item>
+        <mas-navigation-item label="Label 3"></mas-navigation-item>
+      </mas-navigation-drawer-section>
+    </mas-navigation-drawer>
+    <ng-template #footerComponent>
+      <mas-button variant="primary" size="small" iconLeft="mas-plus-outlined mas-math-and-finance--outlined">Create</mas-button>
+      <mas-button variant="secondary" size="small" iconLeft="mas-upload-simple-outlined mas-system-and-device--outlined">Export</mas-button>
+    </ng-template>
+    `
+  })
+};
+
+export const Collapsed: Story = {
+  args: {},
+  render: (args: MasNavigationDrawer) => ({
+    template: `
+    <mas-navigation-drawer [showDivider]="true" [showLogo]="true" [collapsed]="true">
+      <mas-navigation-drawer-section heading="section heading">
+        <mas-navigation-item label="Label 1"></mas-navigation-item>
+        <mas-navigation-item label="Label 2"></mas-navigation-item>
+        <mas-navigation-item label="Label 3"></mas-navigation-item>
+      </mas-navigation-drawer-section>
+      <mas-navigation-drawer-section heading="section heading">
+        <mas-navigation-item label="Label 1"></mas-navigation-item>
+        <mas-navigation-item label="Label 2"></mas-navigation-item>
+        <mas-navigation-item label="Label 3"></mas-navigation-item>
+      </mas-navigation-drawer-section>
+    </mas-navigation-drawer>
+    `
+  })
 };
