@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'mas-avatar',
   template: `
-  <div class="avatar avatar-{{size}} avatar-stroke-outside" >
+  <div class="avatar avatar-{{size}} avatar-stroke" >
     <ng-container *ngIf="type === 'Image'">
       <img src="{{UrlImg}}" alt="Avatar" />
     </ng-container>
@@ -11,7 +11,7 @@ import { Component, Input } from '@angular/core';
     <ng-container *ngIf="type === 'Initial'"><p>{{Initial.toUpperCase()}}</p></ng-container>
   </div>
   `,
-  
+  styleUrls: ['./avatar.component.scss'],
 })
 export class MasAvatar {
   @Input() UrlImg: string;
