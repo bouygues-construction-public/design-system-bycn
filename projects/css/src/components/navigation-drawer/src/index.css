@@ -55,7 +55,9 @@
 }
 .mas-navigation-drawer.mas-navigation-drawer--collapsed {
   .mas-navigation-drawer_header {
-    display: none;
+    .mas-navigation_header-component{
+      display: none;
+    }
   }
   .mas-navigation-drawer_container {
     .mas-navigation-drawer-section--collapsed {

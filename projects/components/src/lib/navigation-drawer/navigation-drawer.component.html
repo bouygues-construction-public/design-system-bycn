@@ -1,5 +1,5 @@
 <div class="mas-navigation-drawer_container">
-  <div class="mas-navigation-drawer_header">
+  <div class="mas-navigation-drawer_header" *ngIf="headerComponent">
     <div class="mas-navigation_header-component">
       <ng-container *ngTemplateOutlet="headerComponent"></ng-container>
     </div>
@@ -11,7 +11,13 @@
       <ng-container *ngTemplateOutlet="footerComponent"></ng-container>
     </div>
     <div class="logo-BYCN" *ngIf="showLogo">
-      <svg attr.width="{{collapsed ? '40': '78'}}" height="40" viewBox="0 0 250 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        attr.width="{{ collapsed ? '40' : '78' }}"
+        height="40"
+        viewBox="0 0 250 127"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <g clip-path="url(#clip0_1_37)">
           <path d="M211.113 41.016H39.423V86.4467H211.113V41.016Z" fill="white" />
           <path
