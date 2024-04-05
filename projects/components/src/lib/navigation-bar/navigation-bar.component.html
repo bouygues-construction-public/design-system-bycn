@@ -192,8 +192,8 @@
       (click)="onAppClick($event)"
       *ngIf="showApps"
     ></mas-icon-button>
-    <div class="mas-navigation-bar_account" *ngIf="showAccountLayer">
-      <img [src]="avatar" alt="" (click)="onAccountLayerClick($event)" />
+    <div class="mas-navigation-bar_account" *ngIf="showAccountLayer" (click)="onAccountLayerClick($event)">
+      <mas-avatar size="M" type="Image" [UrlImg]="avatar"></mas-avatar>
     </div>
   </div>
 </div>
