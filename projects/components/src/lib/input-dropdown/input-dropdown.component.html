@@ -19,12 +19,17 @@
       />
       <i
         *ngSwitchCase="'icon'"
-        class="mas-icon {{ selectedOptions.get(_values.values().next().value)?.option?.icon }} mas-input-dropdown_leading-icon"
+        class="mas-icon {{
+          selectedOptions.get(_values.values().next().value)?.option?.icon
+        }} mas-input-dropdown_leading-icon"
       ></i>
     </ng-container>
   </ng-container>
   <!-- by default but disappear when selected and option have image or icon-->
-  <i class="default mas-icon {{ leadingIcon }} mas-input-dropdown_leading-icon" *ngIf="leadingIcon !== '' && (selectedOptions.size === 0 || (type !== 'icon' && type !== 'image'))"></i>
+  <i
+    class="default mas-icon {{ leadingIcon }} mas-input-dropdown_leading-icon"
+    *ngIf="leadingIcon !== '' && (selectedOptions.size === 0 || (type !== 'icon' && type !== 'image'))"
+  ></i>
   <ng-container *ngSwitchCase="true">
     <span class="mas-input-dropdown_placeholder mas-input-dropdown-min-line">{{ placeholder }}</span>
   </ng-container>
@@ -48,7 +53,5 @@
   </div>
 </ng-template>
 <ng-content select="mas-error" *ngIf="invalid"></ng-content>
-<ng-container *ngIf="!invalid" [ngSwitch]="labelText === ''">
-  <ng-content select="mas-helper" *ngSwitchCase="true"></ng-content>
-  <span class="mas-helper" *ngSwitchCase="false">{{ helperText }}</span>
-</ng-container>
+<ng-content select="mas-helper" *ngIf="helperText !== '' && !invalid"></ng-content>
+<!-- <span class="mas-helper" *ngSwitchCase="false">{{ helperText }}</span> -->
