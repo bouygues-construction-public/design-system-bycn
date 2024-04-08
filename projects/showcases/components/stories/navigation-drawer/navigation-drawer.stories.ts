@@ -10,7 +10,7 @@ import {
 
 const meta: Meta<MasNavigationDrawer> = {
   component: MasNavigationDrawer,
-  title: 'Components/Navigation/Navigation Drawer',
+  title: 'Components/Navigations/Navigation Drawer',
   // tags: ['autodocs'],
   decorators: [
     moduleMetadata({

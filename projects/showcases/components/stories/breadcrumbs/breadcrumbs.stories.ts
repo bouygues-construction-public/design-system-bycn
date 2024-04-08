@@ -9,7 +9,7 @@ const meta: Meta<MasBreadcrumb> = {
   subcomponents: {MasBreadcrumbItem},
   argTypes: {},
   // tags: ['autodocs'],
-  title: 'Components/Navigation/Breadcrumbs',
+  title: 'Components/Navigations/Breadcrumbs',
   decorators: [
     moduleMetadata({
       imports: [CommonModule, MasBreadcrumbModule],

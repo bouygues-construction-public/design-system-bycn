@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
 
 const meta: Meta<MasSearchBar> = {
   component: MasSearchBar,
-  title: 'Components/Navigation/Search Bar',
+  title: 'Components/Navigations/Search Bar',
   // tags: ['autodocs'],
   decorators: [
     moduleMetadata({

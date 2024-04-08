@@ -46,7 +46,7 @@ const argTypes = {
 };
 
 export default {
-  title: 'Components / Navigation / Tabs',
+  title: 'Components / Navigations / Tabs',
   component: MasTabView,
   decorators: [
     moduleMetadata({

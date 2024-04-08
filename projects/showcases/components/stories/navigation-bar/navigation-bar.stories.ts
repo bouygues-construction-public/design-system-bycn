@@ -4,7 +4,7 @@ import { MasNavigationBarModule, MasNavigationBar } from 'projects/components/sr
 
 const meta: Meta<MasNavigationBar> = {
   component: MasNavigationBar,
-  title: 'Components/Navigation/Navigation Bar',
+  title: 'Components/Navigations/Navigation Bar',
   // tags: ['autodocs'],
   decorators: [
     moduleMetadata({
