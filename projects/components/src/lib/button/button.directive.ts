@@ -5,7 +5,7 @@ import { Directive, ElementRef, Input, Renderer2, OnChanges, SimpleChanges, Host
   selector: '[MasButton]', 
 })
 export class MasButtonDirective implements OnChanges{
-  @Input() variant: 'primary' | 'secondary' | ' tertiary' | ' accent' = 'primary';
+  @Input() variant: 'primary' | 'secondary' | 'tertiary' | 'accent' = 'primary';
   @Input() size: 'small' | 'medium' = 'medium';
   @Input() disabled: boolean = false;
   @Input() iconLeft: string | null = null;

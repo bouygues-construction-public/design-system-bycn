@@ -20,7 +20,7 @@
   line-height: inherit;
   margin: 0;
   min-inline-size: 280px;
-  inline-size: 280px;
+  inline-size: inherit;
   block-size: 32px;
   padding-inline: 12px;
   cursor: pointer;

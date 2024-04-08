@@ -153,7 +153,7 @@
     </a>
   </div>
   <div class="mas-navigation-bar_search-bar">
-    <mas-search-bar [placeholder]="searchBarPlaceholder" (search)="onSearch($event)"></mas-search-bar>
+    <mas-search-bar [placeholder]="searchBarPlaceholder" (search)="onSearch($event)" *ngIf="searchBar"></mas-search-bar>
   </div>
   <div class="mas-navigation-bar_action">
     <mas-button
