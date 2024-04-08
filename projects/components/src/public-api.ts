@@ -28,3 +28,4 @@ export * from './lib/divider';
 export * from './lib/navigation-bar';
 export * from './lib/navigation-item';
 export * from './lib/search-bar';
+export * from './lib/navigation-drawer';

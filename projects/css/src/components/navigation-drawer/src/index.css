@@ -1,0 +1,74 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+.mas-navigation-drawer {
+  .mas-navigation-drawer_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid var(--mas-semantic-color_border-secondary);
+    height: 100%;
+    width: fit-content;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-color: var(--mas-semantic-color_surface-primary);
+    .mas-navigation-drawer_header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: inherit;
+      height: 64px;
+      padding: 12px;
+      gap: 8px;
+    }
+    .mas-navigation-drawer-section {
+      .section-heading {
+        display: flex;
+        padding: 6px 8px 6px 8px;
+        align-items: center;
+        user-select: none;
+      }
+      .mas-navigation-drawer-section_container {
+        padding: 12px;
+      }
+    }
+    .mas-navigation-drawer_footer {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: fixed;
+      bottom: 0;
+      .mas-navigation-drawer_footer-component {
+        display: flex;
+        flex-direction: row;
+        width: inherit;
+        height: 64px;
+        padding: 12px;
+        gap: 8px;
+      }
+      .logo-BYCN {
+        padding: 12px;
+      }
+    }
+  }
+}
+.mas-navigation-drawer.mas-navigation-drawer--collapsed {
+  .mas-navigation-drawer_header {
+    .mas-navigation_header-component{
+      display: none;
+    }
+  }
+  .mas-navigation-drawer_container {
+    .mas-navigation-drawer-section--collapsed {
+      .section-heading {
+        display: none;
+      }
+    }
+  }
+  .mas-navigation-drawer_footer {
+    .mas-navigation-drawer_footer-component {
+      display: none;
+    }
+  }
+}
