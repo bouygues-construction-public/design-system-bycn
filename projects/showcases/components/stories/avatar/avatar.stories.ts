@@ -103,25 +103,25 @@ Default.args = {
 
 
  
-export const AvatarXS = () => ({
+export const ImageXS = () => ({
   template: `
     <mas-avatar  type="Image" size="XS" UrlImg="https://cdn.pixabay.com/photo/2016/04/01/11/25/avatar-1300331_1280.png" ></mas-avatar>
   `,
 });
 
-export const AvatarS = () => ({
+export const ImageS = () => ({
   template: `
     <mas-avatar type="Image" size="S" UrlImg="https://cdn.pixabay.com/photo/2016/04/01/11/25/avatar-1300331_1280.png"></mas-avatar>
   `,
 });
 
-export const AvatarM = () => ({
+export const ImageM = () => ({
   template: `
     <mas-avatar type="Image" size="M" UrlImg="https://cdn.pixabay.com/photo/2016/04/01/11/25/avatar-1300331_1280.png"></mas-avatar>
   `,
 });
 
-export const AvatarL = () => ({
+export const ImageL = () => ({
   template: `
     <mas-avatar type="Image" size="L" UrlImg="https://cdn.pixabay.com/photo/2016/04/01/11/25/avatar-1300331_1280.png" ></mas-avatar>
   `,

@@ -11,7 +11,6 @@ import { Component, Input } from '@angular/core';
     <ng-container *ngIf="type === 'Initial'"><p>{{Initial.toUpperCase()}}</p></ng-container>
   </div>
   `,
-  styleUrls: ['./avatar.component.scss'],
 })
 export class MasAvatar {
   @Input() UrlImg: string;
