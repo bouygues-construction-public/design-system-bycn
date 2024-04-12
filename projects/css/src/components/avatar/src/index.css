@@ -1,7 +1,6 @@
 @import '@masoni/css-design-tokens/dist/index.css';
 
 
-
 .avatar {
   border-radius: 50%;
   overflow: hidden;
@@ -16,7 +15,9 @@
     font-family: var(--mas-typo_font-family--inter);
     font-weight: 600;
     letter-spacing: 0em;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
   }
   & img{
@@ -31,7 +32,6 @@
 
   /* Taille */
   .avatar-XS {
-    
     height: 20px;
     width: 20px;
     top: 206px;
@@ -40,25 +40,23 @@
     & i{
       /* width: 9.76px;
       height: 9.38px; */
-      font-size: 10px;
-      
+      font-size:12px;  
       top: 1.12px;
-      left: 1.12px;
-     
-      
+      left: 1.12px;       
     }
     & p{
       font-size: 10px;
-      text-align: center;
+      width: 12px;
+      height: 12px;
       line-height: 12px;
-      
+
+
 
  
     }
   }
 
 .avatar-S {
-
     height: 24px;
     width: 24px;
     top: 145px;
@@ -66,19 +64,18 @@
    
     & i{
 
-
-     /* width: 13.01px;
-     height: 12.51px; */
-
-      font-size: 14px;
-      
+      font-size: 16px;
       top: 1.5px;
       left: 1.49px;
      
     }
     & p{
       font-size: 14px;
-      text-align: center;
+      line-height: 20px;
+      width: 16px;
+      height: 16px;
+
+
       
     }
   }
@@ -96,7 +93,7 @@
     & i{
      /*  // width: 19.52px;
      height: 18.77px; */
-      font-size: 22px;
+      font-size:24px;
       
       top: 2.25px;
       left: 2.24px;
@@ -104,9 +101,12 @@
      
     }
     & p{
-      text-align: center;
+
       font-size: 16px;
       line-height: 24px;
+      width: 24px;
+      height: 24px;
+
       
     }
   }
@@ -122,7 +122,7 @@
     & i{
       /*  width: 19.52px;
       height: 18.77px; */
-      font-size: 30px;
+      font-size: 24px;
       top: 2.25px;
       left: 2.24px;
       
@@ -130,21 +130,21 @@
     }
     & p{
       font-size: 18px;
-      text-align: center;
       line-height: 24px;
+      width: 32px;
+      height: 32px;
+
       
     }
  
   }
 
   
-  .avatar-stroke-inside {
+  .avatar-stroke {
      border:1px solid #EDEDF0; 
    
   }
   
-  .avatar-stroke-outside {
-    border:1px solid #EDEDF0;
-  }
+
   
   

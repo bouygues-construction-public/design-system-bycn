@@ -9,7 +9,7 @@ const icons = ['mas-user-outlined mas-people--outlined mas-icon',
             
                ]
                
-const Img: string = 'https://www.fair-agenceweb.fr/wp-content/uploads/2021/02/construction-url-site-web.jpg';
+const Img: string = 'https://cdn.pixabay.com/photo/2016/04/01/11/25/avatar-1300331_1280.png';
           
 const argTypes = {
   UrlImg: {
@@ -103,27 +103,27 @@ Default.args = {
 
 
  
-export const AvatarXS = () => ({
+export const ImageXS = () => ({
   template: `
-    <mas-avatar  type="Image" size="XS" UrlImg="https://s3-alpha-sig.figma.com/img/1c55/7945/b6ce93a8cf47c5fec6e01fad5d5e1e72?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JUoagnJaJBSU5uRkg9l5h24WBGN2FfuiQQjUjuGb9nUR6r0wvx5yIqX58Fu4NDjS4CXeKdgrFwh1OOmd35tCG9Eb11b5LKGkUWctH2fYOJTUrVzBX16smBppYemY2baN~dAdGsfrTejZFmmm3qsoCmd1hYfJ9R-VFkBQw8wIxAsKrNi2a0uiNF-I5jk~YOL9jF2ku0YwIvjjsb4rDo-RIjv69Z-Q-awKryODhgo6IK28T7uC9m1ncY66W53AC3b8vKn1Eh0pi14Ukp4kcMoQYefukLEcngTOpAsEcjJy4HnV-MwqBcaCr4ftW2s0Tmd8WxwDsLlDbtTn~BN-40iBPQ__" ></mas-avatar>
+    <mas-avatar  type="Image" size="XS" UrlImg="https://cdn.pixabay.com/photo/2016/04/01/11/25/avatar-1300331_1280.png" ></mas-avatar>
   `,
 });
 
-export const AvatarS = () => ({
+export const ImageS = () => ({
   template: `
-    <mas-avatar type="Image" size="S" UrlImg="https://s3-alpha-sig.figma.com/img/1c55/7945/b6ce93a8cf47c5fec6e01fad5d5e1e72?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JUoagnJaJBSU5uRkg9l5h24WBGN2FfuiQQjUjuGb9nUR6r0wvx5yIqX58Fu4NDjS4CXeKdgrFwh1OOmd35tCG9Eb11b5LKGkUWctH2fYOJTUrVzBX16smBppYemY2baN~dAdGsfrTejZFmmm3qsoCmd1hYfJ9R-VFkBQw8wIxAsKrNi2a0uiNF-I5jk~YOL9jF2ku0YwIvjjsb4rDo-RIjv69Z-Q-awKryODhgo6IK28T7uC9m1ncY66W53AC3b8vKn1Eh0pi14Ukp4kcMoQYefukLEcngTOpAsEcjJy4HnV-MwqBcaCr4ftW2s0Tmd8WxwDsLlDbtTn~BN-40iBPQ__"></mas-avatar>
+    <mas-avatar type="Image" size="S" UrlImg="https://cdn.pixabay.com/photo/2016/04/01/11/25/avatar-1300331_1280.png"></mas-avatar>
   `,
 });
 
-export const AvatarM = () => ({
+export const ImageM = () => ({
   template: `
-    <mas-avatar type="Image" size="M" UrlImg="https://s3-alpha-sig.figma.com/img/1c55/7945/b6ce93a8cf47c5fec6e01fad5d5e1e72?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JUoagnJaJBSU5uRkg9l5h24WBGN2FfuiQQjUjuGb9nUR6r0wvx5yIqX58Fu4NDjS4CXeKdgrFwh1OOmd35tCG9Eb11b5LKGkUWctH2fYOJTUrVzBX16smBppYemY2baN~dAdGsfrTejZFmmm3qsoCmd1hYfJ9R-VFkBQw8wIxAsKrNi2a0uiNF-I5jk~YOL9jF2ku0YwIvjjsb4rDo-RIjv69Z-Q-awKryODhgo6IK28T7uC9m1ncY66W53AC3b8vKn1Eh0pi14Ukp4kcMoQYefukLEcngTOpAsEcjJy4HnV-MwqBcaCr4ftW2s0Tmd8WxwDsLlDbtTn~BN-40iBPQ__"></mas-avatar>
+    <mas-avatar type="Image" size="M" UrlImg="https://cdn.pixabay.com/photo/2016/04/01/11/25/avatar-1300331_1280.png"></mas-avatar>
   `,
 });
 
-export const AvatarL = () => ({
+export const ImageL = () => ({
   template: `
-    <mas-avatar type="Image" size="L" UrlImg="https://s3-alpha-sig.figma.com/img/1c55/7945/b6ce93a8cf47c5fec6e01fad5d5e1e72?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JUoagnJaJBSU5uRkg9l5h24WBGN2FfuiQQjUjuGb9nUR6r0wvx5yIqX58Fu4NDjS4CXeKdgrFwh1OOmd35tCG9Eb11b5LKGkUWctH2fYOJTUrVzBX16smBppYemY2baN~dAdGsfrTejZFmmm3qsoCmd1hYfJ9R-VFkBQw8wIxAsKrNi2a0uiNF-I5jk~YOL9jF2ku0YwIvjjsb4rDo-RIjv69Z-Q-awKryODhgo6IK28T7uC9m1ncY66W53AC3b8vKn1Eh0pi14Ukp4kcMoQYefukLEcngTOpAsEcjJy4HnV-MwqBcaCr4ftW2s0Tmd8WxwDsLlDbtTn~BN-40iBPQ__" ></mas-avatar>
+    <mas-avatar type="Image" size="L" UrlImg="https://cdn.pixabay.com/photo/2016/04/01/11/25/avatar-1300331_1280.png" ></mas-avatar>
   `,
 });
 
