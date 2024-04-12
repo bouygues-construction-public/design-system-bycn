@@ -1,6 +1,6 @@
 import { Meta, Story, StoryObj, moduleMetadata } from "@storybook/angular";
 import { MasModal} from "projects/components/src/lib/Modal";  
-import { MasButton,MasButtonDirective } from "projects/components/src/public-api";
+import { MasButton,MasButtonDirective, MasIconButton } from "projects/components/src/public-api";
 const argTypes = {
   showModal: {
     type: { name: 'boolean', required: false },
@@ -13,7 +13,7 @@ const argTypes = {
     description: 'The title of the modal', 
   },
   content: {
-    type: { name: 'string', required: false },
+    type: { name: 'string', required: true },
     description: 'The body of the modal', 
   },
   buttonLabelprimary: {
@@ -52,7 +52,7 @@ const argTypes = {
     component: MasModal,
     decorators: [
       moduleMetadata({
-        declarations: [MasModal, MasButton,MasButtonDirective],
+        declarations: [MasModal, MasButton,MasButtonDirective, MasIconButton],
       }),
     ], 
     argTypes:argTypes,
