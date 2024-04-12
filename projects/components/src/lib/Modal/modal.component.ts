@@ -1,9 +1,8 @@
-import { Component, Input, Output, EventEmitter,ElementRef, ContentChild, AfterContentInit} from '@angular/core';
+import { Component, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'mas-modal',
   templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.html'],
 })
 export class MasModal{
   
@@ -18,6 +17,7 @@ export class MasModal{
   @Output() cancel: EventEmitter<void> = new EventEmitter<void>();
   @Output() confirm: EventEmitter<void> = new EventEmitter<void>();
 
+  @Output() showModalChange: EventEmitter<boolean> = new EventEmitter<boolean>();
   constructor() { }
 
   public openModal() {
@@ -27,6 +27,7 @@ export class MasModal{
   closeModal(): void {
     this.showModal = false;
     this.cancel.emit();
+    this.showModalChange.emit(this.showModal); 
   }
 
   confirmAction(): void {

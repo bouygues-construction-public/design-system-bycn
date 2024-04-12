@@ -1,6 +1,4 @@
 @import '@masoni/css-design-tokens/dist/index.css';
-
-
 .modal {
   position: fixed; 
   z-index: 1; 
@@ -24,7 +22,6 @@
   align-items: center; 
   display: flex;
   flex-direction: column;
-  padding: 32px;
   gap:16px;
   top: 20px;
   left: 20px;
@@ -33,19 +30,21 @@
 .modal-medium {
   width:600px; 
   min-height:204px;
+  padding: 32px;
 }
 
 
 .modal-large {
   width: 900px; 
   min-height: 204px;
-
+  padding: 32px;
 }
 
 
 .modal-small {
    width: 375px;
    min-height: 236px;
+   padding: 24px;
 }
 
 
@@ -79,7 +78,7 @@
   width: 488px;
   height: 32px;
   font-size: 24px;
-  font-weight: 700;
+  font-weight:var(--mas-typo_headline-font-weight);
   font-family: var(--mas-typo_font-family);
   line-height: 32px;
   color: rgba(12, 12, 13, 1);
@@ -90,7 +89,7 @@
   width: 788px;
   height: 32px;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: var(--mas-typo_headline-font-weight);
   font-family: var(--mas-typo_font-family);
   line-height: 32px;
   color: rgba(12, 12, 13, 1);
@@ -101,31 +100,14 @@
   width: 279px;
   height: 32px;
   font-size: 24px;
-  font-weight: 700;
+  font-weight:var(--mas-typo_headline-font-weight);
   font-family: var(--mas-typo_font-family);
   line-height: 32px;
   color: rgba(12, 12, 13, 1);
   margin: 0;
 }
 
-/* Bouton de fermeture */
-.close {
-  width: 32px;
-  height: 32px;
-  gap: 8px;
-  padding:8px;
-  color: var(--mas-primitive-color_black);
-  font-size: 16px;
 
-  
-}
-
-.close:hover,
-.close:focus {
-  color: var(--mas-primitive-color_black);
-  text-decoration: none;
-  cursor: pointer;
-}
 .content-scroll{
   min-height: 40px;
   gap: 16px;
@@ -157,15 +139,18 @@
 
 .modal-content {
     text-align: center;
+    
   
   }
-.modal-content-component{
-  margin-top: 30px;
+.modal-content .custom-ng-content{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
+.custom-ng-content.with-margin-top {
+    margin-top: 20px;
+  }
 
 .single-button-footer {
   height: 42px !important;
@@ -211,6 +196,17 @@
  .btnS {
   gap:8px;
  }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
