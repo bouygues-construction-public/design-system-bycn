@@ -16,7 +16,7 @@ export class MasAvatar {
   @Input() UrlImg: string;
   @Input() Initial: string;
   @Input() size: 'XS' | 'S' | 'M' | 'L';
-  @Input() type: 'Avatar' | 'Icon' | 'Initial';
+  @Input() type: 'Image' | 'Icon' | 'Initial';
   @Input() icon: string | null = null;
 
 
