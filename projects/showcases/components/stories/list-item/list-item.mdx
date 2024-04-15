@@ -1,0 +1,59 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+  Toc,
+  Canvas,
+  of,
+} from '@storybook/blocks';
+
+import { MasListItem } from 'projects/components/src/lib/list-item/list-item.component';
+import * as ListItemStories from './list-item.stories';
+
+<Meta of={ListItemStories} />
+
+<Title />
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
+
+## Overview
+
+{/* todo: overview */}
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Usage
+
+{/* todo: usages */}
+
+## Variants
+
+### Overview
+
+<Canvas>
+  <Story of={ListItemStories.Overview} />
+</Canvas>
+
+{/* todo: Story variants */}
+
+## Guidelines
+
+- Best practices are available [here]({/* todo: place best practices link here*/})
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
