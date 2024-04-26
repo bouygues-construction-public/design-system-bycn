@@ -6,6 +6,7 @@
 @import './sub-elements/dist/index.css';
 @import './select/dist/index.css';
 @import './text-input/dist/index.css';
+@import './text-area/dist/index.css';
 @import './button/dist/index.css';
 @import './avatar/dist/index.css';
 @import './tag/dist/index.css';

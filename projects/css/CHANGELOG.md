@@ -20,6 +20,7 @@
 - [sub-elements](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/css/src/components/sub-elements) (0.0.2)
 - [tag](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/css/src/components/tag) (0.0.2)
 - [text-input](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/css/src/components/text-input) (0.0.2)
+- [text-area](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/css/src/components/text-area) (0.0.2)
 - [togglebutton](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/css/src/components/togglebutton) (0.0.1)
 
 ### Design tokens

@@ -4,6 +4,7 @@
 export * from './lib/checkbox';
 export * from './lib/sub-elements';
 export * from './lib/text-input';
+export * from './lib/text-area';
 export * from './lib/select';
 export * from './lib/togglebutton';
 export * from './lib/radiobutton';
