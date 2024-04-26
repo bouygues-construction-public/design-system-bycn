@@ -47,6 +47,7 @@
     "@masoni/css-tab": "^0.0.1",
     "@masoni/css-tag": "^0.0.2",
     "@masoni/css-text-input": "^0.0.2",
+    "@masoni/css-text-area": "^0.0.2",
     "@masoni/css-toggle-button": "^0.0.1",
     "@masoni/css-navigation-bar": "file:../css/src/components/navigation-bar",
     "@masoni/css-search-bar": "file:../css/src/components/search-bar"

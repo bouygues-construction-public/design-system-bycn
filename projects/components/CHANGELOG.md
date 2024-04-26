@@ -26,4 +26,5 @@
 - [sub-elements](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/sub-elements)
 - [tag](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/tag)
 - [text-input](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/text-input/README.md)
+- [text-area](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/text-area/README.md)
 - [togglebutton](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/togglebutton/README.md)
