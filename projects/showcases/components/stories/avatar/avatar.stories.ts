@@ -105,25 +105,25 @@ Default.args = {
  
 export const ImageXS = () => ({
   template: `
-    <mas-avatar  type="Image" size="XS" UrlImg="https://cdn.pixabay.com/photo/2016/04/01/11/25/avatar-1300331_1280.png" ></mas-avatar>
+    <mas-avatar  type="Image" size="XS" UrlImg="https://img.freepik.com/photos-gratuite/vue-face-du-travailleur-lunettes-protection-casque_23-2148773446.jpg?w=740&t=st=1715947346~exp=1715947946~hmac=41e1d88d8811c420c08071b57590219e3d638eb053bc2c16c4e90d071152d39a" ></mas-avatar>
   `,
 });
 
 export const ImageS = () => ({
   template: `
-    <mas-avatar type="Image" size="S" UrlImg="https://cdn.pixabay.com/photo/2016/04/01/11/25/avatar-1300331_1280.png"></mas-avatar>
+    <mas-avatar type="Image" size="S" UrlImg="https://img.freepik.com/photos-gratuite/vue-face-du-travailleur-lunettes-protection-casque_23-2148773446.jpg?w=740&t=st=1715947346~exp=1715947946~hmac=41e1d88d8811c420c08071b57590219e3d638eb053bc2c16c4e90d071152d39a"></mas-avatar>
   `,
 });
 
 export const ImageM = () => ({
   template: `
-    <mas-avatar type="Image" size="M" UrlImg="https://cdn.pixabay.com/photo/2016/04/01/11/25/avatar-1300331_1280.png"></mas-avatar>
+    <mas-avatar type="Image" size="M" UrlImg="https://img.freepik.com/photos-gratuite/vue-face-du-travailleur-lunettes-protection-casque_23-2148773446.jpg?w=740&t=st=1715947346~exp=1715947946~hmac=41e1d88d8811c420c08071b57590219e3d638eb053bc2c16c4e90d071152d39a"></mas-avatar>
   `,
 });
 
 export const ImageL = () => ({
   template: `
-    <mas-avatar type="Image" size="L" UrlImg="https://cdn.pixabay.com/photo/2016/04/01/11/25/avatar-1300331_1280.png" ></mas-avatar>
+    <mas-avatar type="Image" size="L" UrlImg="https://img.freepik.com/photos-gratuite/vue-face-du-travailleur-lunettes-protection-casque_23-2148773446.jpg?w=740&t=st=1715947346~exp=1715947946~hmac=41e1d88d8811c420c08071b57590219e3d638eb053bc2c16c4e90d071152d39a" ></mas-avatar>
   `,
 });
 
