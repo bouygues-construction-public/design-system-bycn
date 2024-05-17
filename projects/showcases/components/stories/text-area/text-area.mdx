@@ -46,7 +46,7 @@ To use the `Textarea` component, it serves to incorporate user input of longer t
 
 ### Overview
 
-`mas-text-area ccomponent can be used in conjunction with sub-elements, such as : `mas-label`.
+`mas-text-area` ccomponent can be used in conjunction with sub-elements, such as : `mas-label`.
 
 <Canvas>
   <Story of={TextAreaStories.Overview} />
@@ -54,30 +54,22 @@ To use the `Textarea` component, it serves to incorporate user input of longer t
 
 ### Status
 
-Use `mas-text-area` with error message and with counter.
+The default state of the `mas-text-area` when the user enters text and there is no alert information to display.
 <Canvas>
 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '20px' }}>
-  <Story of={TextAreaStories.Default} />
-  <Story of={TextAreaStories.ErrorWithMessage} />
+  <Story of={TextAreaStories.DefaultVersion} />
   <Story of={TextAreaStories.Disabled} />
 </div>
 </Canvas>
 
-Use `mas-text-area` withOut error message .
-<Canvas>
-<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '20px' }}>
-  <Story of={TextAreaStories.WidthOutErrorMessage} />
-  <Story of={TextAreaStories.ErrorWidthOutErrorMessage} />
-  <Story of={TextAreaStories.WidthOutErrorMessageDisabled} />
-</div>
-</Canvas>
 
-Use `mas-text-area` without making them required .
+
+The error state of the `mas-text-area` When the data entered by the user presents an error or doesn't respect the requested input.
 
 <Canvas>
 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '20px' }}>
-  <Story of={TextAreaStories.NotRequired} />
-  <Story of={TextAreaStories.NotRequiredDisabled} />
+  <Story of={TextAreaStories.ErrorVersion} />
+  <Story of={TextAreaStories.ErrorVersionDisabled} />
 </div>
 </Canvas>
 
