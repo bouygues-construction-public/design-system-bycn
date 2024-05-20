@@ -42,8 +42,11 @@ export default {
 const Template: Story<MasLogotype> = (args: MasLogotype) => ({
   props: args,
   template: `
-            <mas-logotype  [variant]="variant">
-            </mas-logotype>
+            <div style="width:250px;height:127px">
+                <mas-logotype  [variant]="variant">
+                </mas-logotype>
+            </div>
+            
             `,
 });
  
@@ -57,21 +60,27 @@ Default.args = {
 
 export const DefaultLogotype = () => ({
   template: `
-  <mas-logotype variant="Default" >
-  </mas-logotype>
+  <div style="width:250px;height:127px">
+                <mas-logotype variant="Default" >
+                </mas-logotype>
+            </div>
   `,
 });
 
 export const BlackLogotype = () => ({
   template: `
-  <mas-logotype variant="Black">
-  </mas-logotype>
+  <div style="width:250px;height:127px">
+        <mas-logotype variant="Black">
+        </mas-logotype>
+  </div>
   `,
 });
 
 export const WhiteLogotype = () => ({
   template: `
-  <mas-logotype variant="White">
-  </mas-logotype>
+  <div style="width:250px;height:127px">
+        <mas-logotype variant="White">
+        </mas-logotype>
+  </div>
   `,
 });
