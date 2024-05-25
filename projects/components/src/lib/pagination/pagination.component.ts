@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, QueryList, ViewChild, ViewChildren } from '@angular/core';
 
 @Component({
   selector: 'mas-pagination',
@@ -18,7 +18,7 @@ export class MasPagination {
   pages: number[] = [];
   pageSizeOptions: number[] = [10, 20, 30, 50];
   truncatedPages: (number | string)[] = [];
-
+  constructor(private elementRef: ElementRef) {}
   ngOnInit() {
     console.log('ngOnInit - totalItems:', this.totalItems);
     console.log('ngOnInit - initialPageSize:', this.initialPageSize);
@@ -31,7 +31,6 @@ export class MasPagination {
     console.log('ngOnInit - totalPages:', this.totalPages);
     console.log('ngOnInit - pages:', this.pages);
   }
-
   calculateTotalPages() {
     this.totalPages = Math.ceil(this.totalItems / this.pageSize);
     console.log('calculateTotalPages - totalPages:', this.totalPages);
@@ -78,6 +77,7 @@ export class MasPagination {
       this.goToPage(inputPage);
     }
   }
+
 
   updateTruncatedPages() {
     const totalPagesToShow = 10;
@@ -144,4 +144,7 @@ export class MasPagination {
     }
     return classes;
   }
+
+
+
 }

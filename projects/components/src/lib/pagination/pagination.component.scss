@@ -82,6 +82,20 @@
     min-width: 223px;
     min-height: 36px;
 
+
+  }
+  ::ng-deep .mas-action-dropdown--medium  {
+    position: relative;
+  }
+  ::ng-deep .mas-action-dropdown--small  {
+    position: relative;
+  }
+  
+  ::ng-deep .mas-action-dropdown_listbox-wrapper {
+    position: absolute;
+    z-index: 10 !important;
+    width: 280px;
+    right:0px;
   }
   
  .input{
@@ -121,14 +135,14 @@
 
   .mas-text-input{
     display: flex;
-    padding: 8px 12px;
+    font-feature-settings: 'calt' off;
     align-items: center;
+    text-align: center;
+    justify-content: center;
     gap: 8px;
     outline: none;
     transition: var(--mas-transition_focus-visible);
     border-radius: 8px;
-    width: 34px;
-    height: 36px;
     border: 1px solid var(--Border-Primary, #D7D7DB);
     background: var(--color-text-inverse, #FFF);
     color: var(--Text-Primary, #0C0C0D);
@@ -142,13 +156,15 @@
     cursor: pointer;
   }
   .mas-text-input-small{
-
-    min-width: 34px;
-    min-height: 36px;
+    padding: 8px 12px;
+    width: 42px;
+    height: 36px;
     line-height: 20px; 
   }
   .mas-text-input-medium{ 
-    min-width: 34px;
-    min-height: 44px;
+    padding: 10px 12px;
+    width: 44px;
+    height: 44px;
     line-height: 24px; 
   }
+
