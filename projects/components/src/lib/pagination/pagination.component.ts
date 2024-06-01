@@ -1,51 +1,48 @@
-import { Component, ElementRef, HostListener, Input, QueryList, ViewChild, ViewChildren } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, ViewChild} from '@angular/core';
+import { MasActionDropdown } from '../action-dropdown/action-dropdown.component';
 
 @Component({
   selector: 'mas-pagination',
   templateUrl: './pagination.component.html',
-  styleUrls: ['./pagination.component.scss']
 })
 export class MasPagination {
+  @ViewChild(MasActionDropdown) dropdownComponent: MasActionDropdown;
+  @ViewChild('dropdown') dropdown: MasActionDropdown;
+  @ViewChild('firstFocusable') firstFocusable: ElementRef;
   @Input() size: 'small' | 'medium';
   @Input() type: 'Numbers' | 'Input';
   @Input() itemsPerPage: boolean = false;
-
-  @Input() totalItems: number = 500;
-  @Input() initialPageSize: number = 24;
+  @Input() totalItems: number;
+  @Input() initialPageSize: number;
+ 
+  dropdownToggleElement: HTMLElement | null = null;
+  selectedIndex: number = -1;
+  selectedOption: number;
   currentPage: number = 1;
   pageSize: number;
   totalPages: number;
   pages: number[] = [];
   pageSizeOptions: number[] = [10, 20, 30, 50];
   truncatedPages: (number | string)[] = [];
-  constructor(private elementRef: ElementRef) {}
+
+  constructor() {}
+
   ngOnInit() {
-    console.log('ngOnInit - totalItems:', this.totalItems);
-    console.log('ngOnInit - initialPageSize:', this.initialPageSize);
-    
     this.pageSize = this.initialPageSize;
     this.calculateTotalPages();
     this.generatePages();
     this.updateTruncatedPages();
-    
-    console.log('ngOnInit - totalPages:', this.totalPages);
-    console.log('ngOnInit - pages:', this.pages);
   }
+
   calculateTotalPages() {
     this.totalPages = Math.ceil(this.totalItems / this.pageSize);
-    console.log('calculateTotalPages - totalPages:', this.totalPages);
   }
 
   generatePages() {
     this.pages = Array.from({ length: this.totalPages }, (_, i) => i + 1);
-    console.log('generatePages - pages:', this.pages);
   }
 
-  goToPage(page: number) {
-    this.currentPage = page;
-    this.updateTruncatedPages();
-    console.log('goToPage - currentPage:', this.currentPage);
-  }
+
 
   goToPreviousPage() {
     if (this.currentPage > 1) {
@@ -61,15 +58,7 @@ export class MasPagination {
     }
   }
 
-  onPageSizeChange(newPageSize: number) {
-    this.pageSize = +newPageSize;
-    this.currentPage = 1;
-    this.calculateTotalPages();
-    this.generatePages();
-    this.updateTruncatedPages();
-    this.goToPage(this.currentPage);
-    console.log('onPageSizeChange - newPageSize:', this.pageSize);
-  }
+
 
   onPageInputChange(event: any) {
     const inputPage = Number(event.target.value);
@@ -78,37 +67,41 @@ export class MasPagination {
     }
   }
 
-
-  updateTruncatedPages() {
-    const totalPagesToShow = 10;
-    const half = Math.floor(totalPagesToShow / 2);
-    let start = Math.max(1, this.currentPage - half);
-    let end = Math.min(this.totalPages, this.currentPage + half);
-
-    if (end - start < totalPagesToShow - 1) {
-      if (start === 1) {
-        end = Math.min(totalPagesToShow, this.totalPages);
-      } else if (end === this.totalPages) {
-        start = Math.max(1, this.totalPages - totalPagesToShow + 1);
-      }
+  goToPage(page: number | string) {
+    if (typeof page === 'number') {
+        this.currentPage = page;
+        this.updateTruncatedPages();
     }
+  }
+ updateTruncatedPages() {
+  const totalPagesToShow = 10;
+  const half = Math.floor(totalPagesToShow / 2);
+  let start = Math.max(1, this.currentPage - half);
+  let end = Math.min(this.totalPages, this.currentPage + half);
+  if (end - start < totalPagesToShow - 1) {
+      if (start === 1) {
+          end = Math.min(totalPagesToShow, this.totalPages);
+      } else if (end === this.totalPages) {
+          start = Math.max(1, this.totalPages - totalPagesToShow + 1);
+      }
+  }
 
-    this.truncatedPages = [];
-    if (start > 1) {
+  this.truncatedPages = [];
+  if (start > 1) {
       this.truncatedPages.push(1);
       if (start > 2) {
-        this.truncatedPages.push('...');
+          this.truncatedPages.push('...');
       }
-    }
-    for (let i = start; i <= end; i++) {
+  }
+  for (let i = start; i <= end; i++) {
       this.truncatedPages.push(i);
-    }
-    if (end < this.totalPages) {
+  }
+  if (end < this.totalPages) {
       if (end < this.totalPages - 1) {
-        this.truncatedPages.push('...');
+          this.truncatedPages.push('...');
       }
       this.truncatedPages.push(this.totalPages);
-    }
+  }
   }
 
   getButtonClasses(): string {
@@ -145,6 +138,77 @@ export class MasPagination {
     return classes;
   }
 
-
-
+  onPageSizeChange(newPageSize: number) {
+    this.pageSize = +newPageSize;
+    this.currentPage = 1;
+    this.calculateTotalPages();
+    this.generatePages();
+    this.updateTruncatedPages();
+    this.goToPage(this.currentPage);
+  }
+ 
+  onToggleDropdown(): void {
+    this.dropdownComponent._onToggle();
+    this.selectedIndex = -1;
+    setTimeout(() => {
+      const options = Array.from(document.querySelectorAll('mas-dropdown-option'));
+      if (options.length > 0) {
+        if (this.selectedIndex < 0 || this.selectedIndex >= options.length) {
+          this.selectedIndex = 0;
+        }
+        (options[this.selectedIndex] as HTMLElement).focus();
+      }
+    }, 0);
+  }
+  
+  handleKeydown(event: KeyboardEvent, action: string, option?: number, index?: number): void {
+    if (event.key === 'Enter' || event.key === ' ') {
+      if (action === 'Previous') {
+        this.goToPreviousPage();
+      } else if (action === 'Next') {
+        this.goToNextPage();
+      } else if (action === 'OpenDropdown') {
+        this.onToggleDropdown();
+      } else if (action === 'Option') {
+        this.onPageSizeChange(option!);
+      }
+    } else if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+      event.preventDefault();
+      this.navigateOptions(event, index!);
+    } else if (event.key === 'Tab') {
+      this.handleTabKey(event);
+    }
+  }
+  
+  navigateOptions(event: KeyboardEvent, currentIndex: number): void {
+    const options = Array.from(document.querySelectorAll('mas-dropdown-option'));
+    if (options.length > 0) {
+      if (event.key === 'ArrowDown') {
+        this.selectedIndex = (currentIndex + 1) % options.length;
+      } else if (event.key === 'ArrowUp') {
+        this.selectedIndex = (currentIndex - 1 + options.length) % options.length;
+      }
+      (options[this.selectedIndex] as HTMLElement).focus();
+    }
+  }
+  
+  @HostListener('document:keydown', ['$event'])
+  handleTabKey(event: KeyboardEvent): void {
+    const focusableElements = this.getFocusableElements();
+    const lastElement = focusableElements[focusableElements.length - 1];
+    const firstElement = focusableElements[0];
+  
+    if (event.shiftKey && document.activeElement === firstElement) {
+      event.preventDefault();
+      lastElement.focus();
+    } else if (!event.shiftKey && document.activeElement === lastElement) {
+      event.preventDefault();
+      firstElement.focus();
+    }
+  }
+  
+  private getFocusableElements(): HTMLElement[] {
+    const dropdown = document.querySelector('.dd');
+    return Array.from(dropdown?.querySelectorAll('button, input, mas-action-dropdown, [tabindex]:not([tabindex="-1"])') || []);
+  }
 }

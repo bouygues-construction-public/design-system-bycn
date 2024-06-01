@@ -27,8 +27,20 @@ const argTypes = {
       defaultValue: true,
       control:'boolean', 
     },
+    totalItems: {
+      type: { name: 'string', required: false },
+      description: 'total Items', 
+      defaultValue: 500 ,
+      control: 'text', 
+    },
+    initialPageSize: {
+      type: { name: 'string', required: false },
+      description: 'Initial Page Size', 
+      defaultValue: 24,
+      control: 'text', 
+    },
   };
- 
+  
   
 export default {
   title: 'Components / Structure / Pagination',
@@ -56,6 +68,8 @@ const Template: Story<MasPagination> = (args: MasPagination) => ({
             [type]="type"
             [size]="size"
             [itemsPerPage]="itemsPerPage"
+            [totalItems]="totalItems"
+            [initialPageSize]="initialPageSize"
             >
           </mas-pagination></div>
           
@@ -69,15 +83,93 @@ Default.args = {
   type: 'Numbers',
   size: 'medium',
   itemsPerPage: true,
+  totalItems:200,
+  initialPageSize:24,
 
 };
 
 
  
 
-
-   
+export const PaginationSmallNumbers = () => ({
+  template: `
+  <div style="height:250px; padding:0px">
+      <mas-pagination
+          [type]="'Numbers'"
+          [size]="'small'"
+          [itemsPerPage]="true"
+          [totalItems]="240"
+          [initialPageSize]="24">
+      </mas-pagination>
+ </div>
+  `,
+});
+export const PaginationSmallInput = () => ({
+  template: `
+  <div style="height:250px; padding:0px">
+      <mas-pagination
+          [type]="'Input'"
+          [size]="'small'"
+          [itemsPerPage]="true"
+          [totalItems]="240"
+          [initialPageSize]="24">
+      </mas-pagination>
+  </div> 
+  `,
+});   
  
-
+export const PaginationMediumNumbers = () => ({
+  template: `
+  <div style="height:250px; padding:0px">
+      <mas-pagination
+          [type]="'Numbers'"
+          [size]="'medium'"
+          [itemsPerPage]="true"
+          [totalItems]="240"
+          [initialPageSize]="24">
+      </mas-pagination>
+    </div>  
+  `,
+});
+export const PaginationMediumInput = () => ({
+  template: `
+  <div style="height:250px; padding:0px">
+      <mas-pagination
+          [type]="'Input'"
+          [size]="'medium'"
+          [itemsPerPage]="true"
+          [totalItems]="240"
+          [initialPageSize]="24">
+      </mas-pagination>
+    </div>  
+  `,
+});   
   
  
+export const PaginationNumber = () => ({
+  template: `
+  <div style="height:250px; padding:0px">
+      <mas-pagination
+          [type]="'Numbers'"
+          [size]="'small'"
+          [itemsPerPage]="true"
+          [totalItems]="240"
+          [initialPageSize]="24">
+      </mas-pagination>
+  </div>
+  `,
+});
+export const PaginationInput = () => ({
+  template: `
+  <div style="height:250px; padding:0px">
+        <mas-pagination
+            [type]="'Input'"
+            [size]="'small'"
+            [itemsPerPage]="true"
+            [totalItems]="240"
+            [initialPageSize]="24"
+            >
+        </mas-pagination>
+  </div>
+  `,
+}); 
