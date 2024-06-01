@@ -7,6 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class MasLogotype {
   @Input() variant: string;
+  @Input() width: string = '100%';
+  @Input() height: string = '100%';
 
 
 
