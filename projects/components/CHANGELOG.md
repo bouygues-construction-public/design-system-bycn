@@ -16,6 +16,7 @@
 - [button](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/button/README.md)
 - [avatar](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/avatar/README.md)
 - [pagination](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/pagination/README.md)
+- [logotype](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/logotype/README.md)
 - [checkbox](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/checkbox/README.md)
 - [chip](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/chip)
 - [circular-progress-bar](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/circular-progress-bar)
