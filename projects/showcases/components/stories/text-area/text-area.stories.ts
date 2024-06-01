@@ -26,10 +26,10 @@ const meta: Meta<MasTextArea> = {
   render: (args: MasTextArea) => ({
     template: `
     <mas-label [optional]="true" [infoIcon]="true" style="width:294px; height:20px;">Label text</mas-label>
-    <mas-text-area [TextErrorMsg]="TextErrorMsg" [maxLength]="maxLength"   [ShowErrMsg]="ShowErrMsg" [ShowCounter]="ShowCounter" [required]="required" [disabled]="disabled" [placeholder]="placeholder" [filled]="filled">
+    <mas-text-area [TextErrorMsg]="TextErrorMsg" [maxLength]="maxLength"   [errorMessage]="errorMessage" [numberText]="numberText" [required]="required" [disabled]="disabled" [placeholder]="placeholder" [filled]="filled">
     </mas-text-area>
     `,
-    props: {
+    props: { 
       ...args,
     },
   }),
@@ -46,8 +46,8 @@ const meta: Meta<MasTextArea> = {
       description: 'The maxLength of the textArea', 
     },
     filled: { type: { name: 'boolean', required: false }, description: 'Whether the placeholder is filled' },
-    ShowCounter: { type: { name: 'boolean', required: false}, description: 'Indicates whether a character counter should be displayed for the textarea. If set to true, a counter will be shown.' },
-    ShowErrMsg: { type: { name: 'boolean', required: false}, description: 'Controls the display of an error message for the textarea. If required is true, the message appears when validation fails due to an empty field; otherwise, ShowErrMsg has no effect.' },
+    numberText: { type: { name: 'boolean', required: false}, description: 'Indicates whether a character counter should be displayed for the textarea. If set to true, a counter will be shown.' },
+    errorMessage: { type: { name: 'boolean', required: false}, description: 'Controls the display of an error message for the textarea. If required is true, the message appears when validation fails due to an empty field; otherwise, ShowErrMsg has no effect.' },
     
 
    
@@ -67,8 +67,8 @@ export const Default: Story = {
     disabled: false,
     required: true,
     filled: false,
-    ShowCounter:true,
-    ShowErrMsg:true,
+    numberText:true,
+    errorMessage:true,
     TextErrorMsg:"Set your error message here...",
     maxLength:200
 
@@ -79,18 +79,18 @@ export const Overview: Story = {
   render: (args: MasTextArea) => ({
     template: `
 
-    <mas-label [optional]="true" [infoIcon]="true" style="width:294px; height:20px;">Label text</mas-label>
-    <mas-text-area [TextErrorMsg]="'Set your error message here...'" [maxLength]="200"   [ShowErrMsg]="true" [ShowCounter]="true" [required]="true" [disabled]="false" [placeholder]="'placeholder'" [filled]="false">
+    <mas-label [optional]="false" [infoIcon]="false" style="width:294px; height:20px;">Label text</mas-label>
+    <mas-text-area [TextErrorMsg]="'Set your error message here...'" [maxLength]="200"   [errorMessage]="true" [numberText]="true" [required]="true" [disabled]="false" [placeholder]="'placeholder'" [filled]="false">
     </mas-text-area>
     `,
   }),
 };
 
-export const ErrorWithMessage: Story = {
+export const DefaultVersion: Story = {
   render: (args: MasTextArea) => ({
     template: `
     <mas-label [optional]="true" [infoIcon]="true" style="width:294px; height:20px;">Label text</mas-label>
-    <mas-text-area [TextErrorMsg]="'Set your error message here...'" [maxLength]="200"   [ShowErrMsg]="true" [ShowCounter]="true" [required]="true"  [placeholder]="'placeholder'" [invalid]="true" >
+    <mas-text-area  [maxLength]="200"   [errorMessage]="false" [numberText]="true" [required]="false"  [placeholder]="'placeholder'" [invalid]="false" >
     </mas-text-area>
     `,
   }),
@@ -102,42 +102,7 @@ export const Disabled: Story = {
   render: (args: MasTextArea) => ({
     template: `
     <mas-label [optional]="true" [infoIcon]="true" style="width:294px; height:20px;">Label text</mas-label>
-    <mas-text-area [TextErrorMsg]="'Set your error message here...'" [maxLength]="200"   [ShowErrMsg]="true" [ShowCounter]="true" [required]="true"  [placeholder]="'placeholder'" [invalid]="true" [disabled]="true"  >
-    </mas-text-area>
-    `,
-  }),
-};
-
-
-
-export const WidthOutErrorMessage: Story = {
-  render: (args: MasTextArea) => ({
-    template: `
-
-    <mas-label [optional]="true" [infoIcon]="true" style="width:294px; height:20px;">Label text</mas-label>
-    <mas-text-area [TextErrorMsg]="'Set your error message here...'" [maxLength]="200"   [ShowErrMsg]="false" [ShowCounter]="true" [required]="true" [disabled]="false" [placeholder]="'placeholder'" [filled]="false">
-    </mas-text-area>
-    `,
-  }),
-};
-
-export const ErrorWidthOutErrorMessage: Story = {
-  render: (args: MasTextArea) => ({
-    template: `
-    <mas-label [optional]="true" [infoIcon]="true" style="width:294px; height:20px;">Label text</mas-label>
-    <mas-text-area [TextErrorMsg]="'Set your error message here...'" [maxLength]="200"   [ShowErrMsg]="false" [ShowCounter]="true" [required]="true"  [placeholder]="'placeholder'" [invalid]="true" >
-    </mas-text-area>
-    `,
-  }),
-};
-
-
-
-export const WidthOutErrorMessageDisabled: Story = {
-  render: (args: MasTextArea) => ({
-    template: `
-    <mas-label [optional]="true" [infoIcon]="true" style="width:294px; height:20px;">Label text</mas-label>
-    <mas-text-area [TextErrorMsg]="'Set your error message here...'" [maxLength]="200"   [ShowErrMsg]="false" [ShowCounter]="true" [required]="true"  [placeholder]="'placeholder'" [invalid]="true" [disabled]="true"  >
+    <mas-text-area  [maxLength]="200"   [errorMessage]="false" [numberText]="true" [required]="false"  [placeholder]="'placeholder'" [invalid]="false" [disabled]="true"  >
     </mas-text-area>
     `,
   }),
@@ -148,23 +113,25 @@ export const WidthOutErrorMessageDisabled: Story = {
 
 
 
-export const NotRequired: Story = {
+
+
+export const ErrorVersion: Story = {
   render: (args: MasTextArea) => ({
     template: `
 
     <mas-label [optional]="true" [infoIcon]="true" style="width:294px; height:20px;">Label text</mas-label>
-    <mas-text-area [TextErrorMsg]="'Set your error message here...'" [maxLength]="200"   [ShowErrMsg]="false" [ShowCounter]="true" [required]="false" [disabled]="false" [placeholder]="'placeholder'" [filled]="false">
+    <mas-text-area [TextErrorMsg]="'Set your error message here...'" [maxLength]="200"   [errorMessage]="true" [numberText]="true" [required]="true" [disabled]="false" [placeholder]="'placeholder'" [filled]="false">
     </mas-text-area>
     `,
   }),
 };
 
 
-export const NotRequiredDisabled: Story = {
+export const ErrorVersionDisabled: Story = {
   render: (args: MasTextArea) => ({
     template: `
     <mas-label [optional]="true" [infoIcon]="true" style="width:294px; height:20px;">Label text</mas-label>
-    <mas-text-area [TextErrorMsg]="'Set your error message here...'" [maxLength]="200"   [ShowErrMsg]="false" [ShowCounter]="true" [required]="false"  [placeholder]="'placeholder'" [disabled]="true"  >
+    <mas-text-area [TextErrorMsg]="'Set your error message here...'" [maxLength]="200"   [errorMessage]="true" [numberText]="true" [required]="true" [invalid]="true" [placeholder]="'placeholder'" [disabled]="true"  >
     </mas-text-area>
     `,
   }),

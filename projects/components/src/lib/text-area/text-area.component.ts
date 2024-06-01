@@ -44,8 +44,8 @@ export class MasTextArea implements OnInit {
   @Input() maxLength: number=200;
   @Input() TextErrorMsg: string;
   @Input() placeholder: string = '';
-  @Input() ShowCounter: boolean = false;
-  @Input() ShowErrMsg: boolean = false;
+  @Input() numberText: boolean = false;
+  @Input() errorMessage: boolean = false;
   @Input() required: boolean = false;
   @Input() formControl: FormControl | undefined;
   @Input() filled: boolean = false;
