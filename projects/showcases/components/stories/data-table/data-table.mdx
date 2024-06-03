@@ -2,6 +2,7 @@ import { Meta, Title, Subtitle, Description, Primary, Controls, Stories, Story, 
 
 import { MasDataTable } from 'projects/components/src/lib/data-table/data-table.component';
 import * as DataTableStories from './data-table.stories';
+import * as DataTableExampleStories from './data-table-example/data-table-example.stories';
 
 <Meta of={DataTableStories} />
 
@@ -15,8 +16,6 @@ import * as DataTableStories from './data-table.stories';
 - [Variants](#variants)
 
 ## Overview
-
-{/* todo: overview */}
 
 <Primary />
 
@@ -33,7 +32,43 @@ import * as DataTableStories from './data-table.stories';
 ### Overview
 
 <Canvas>
-  <Story of={DataTableStories.Overview} />
+  <Story of={DataTableStories.Basic} />
+</Canvas>
+
+### Singgle Selection
+
+<Canvas>
+  <Story of={DataTableStories.SingleSelection} />
+</Canvas>
+
+### Multi-Selection
+
+<Canvas>
+  <Story of={DataTableStories.MultiSelection} />
+</Canvas>
+
+### Template
+
+<Canvas>
+  <Story of={DataTableStories.HeaderTemplate} />
+</Canvas>
+
+<Canvas>
+  <Story of={DataTableStories.BodyTemplate} />
+</Canvas>
+
+<Canvas>
+  <Story of={DataTableStories.FooterTemplate} />
+</Canvas>
+
+<Canvas>
+  <Story of={DataTableStories.NoDataTemplate} />
+</Canvas>
+
+### Cell Types
+
+<Canvas>
+  <Story of={DataTableExampleStories.CellTypes} />
 </Canvas>
 
 {/* todo: other variants */}
