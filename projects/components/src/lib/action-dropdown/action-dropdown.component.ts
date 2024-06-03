@@ -10,7 +10,7 @@ import {
   Output,
   QueryList,
 } from '@angular/core';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { MasActionDropdownOption } from './action-dropdown-option.component';
 import { Observable, Subject, defer, merge, startWith, switchMap, take, takeUntil } from 'rxjs';
 
@@ -30,6 +30,7 @@ import { Observable, Subject, defer, merge, startWith, switchMap, take, takeUnti
     '[class.mas-action-dropdown--disabled]': 'disabled',
     '[class.mas-action-dropdown--medium]': 'size === "M"',
     '[class.mas-action-dropdown--small]': 'size === "S"',
+    role: 'select',
   },
 })
 export class MasActionDropdown implements OnInit, AfterContentInit {
@@ -45,6 +46,7 @@ export class MasActionDropdown implements OnInit, AfterContentInit {
   static dropdownCount: number = 0;
   protected _panelOpen: boolean = false;
   private _ngZone: any;
+  focusIndex: number = -1;
 
   constructor(protected eRef: ElementRef) {}
   ngAfterContentInit(): void {
@@ -59,7 +61,7 @@ export class MasActionDropdown implements OnInit, AfterContentInit {
       });
     });
     // todo: optimized
-    this.options.map((option) => ((option.size = this.size)));
+    this.options.map((option) => (option.size = this.size));
   }
 
   ngOnInit() {}
@@ -85,6 +87,7 @@ export class MasActionDropdown implements OnInit, AfterContentInit {
     this.onChange(option);
   }
   _onToggle() {
+    this.focusIndex = -1;
     this._panelOpen ? this.close() : this.open();
   }
   private close() {
@@ -98,6 +101,44 @@ export class MasActionDropdown implements OnInit, AfterContentInit {
   clickOut(event: Event) {
     if (!this.eRef.nativeElement.contains(event.target)) {
       this.close();
+    }
+  }
+  handleButtonKeydown(event: KeyboardEvent) {}
+  handleOptionKeydown(event: KeyboardEvent) {
+    switch (event.key) {
+      case 'ArrowUp':
+        // focus next
+        event.preventDefault();
+        if (this.options.get(this.focusIndex)) {
+          this.options.get(this.focusIndex)!.isFocus = false;
+          this.focusIndex = (this.focusIndex - 1 + this.options.length) % this.options.length;
+          this.options.get(this.focusIndex)!.isFocus = true;
+        }
+        break;
+      case 'ArrowDown':
+        //focus previous
+        event.preventDefault();
+        if (this.options.get(this.focusIndex)) {
+          this.options.get(this.focusIndex)!.isFocus = false;
+          this.focusIndex = (this.focusIndex + 1) % this.options.length;
+          this.options.get(this.focusIndex)!.isFocus = true;
+        }
+        break;
+      case ' ':
+        // choose that action
+        event.preventDefault();
+        if (this.options.get(this.focusIndex) !== undefined) {
+          this._onSelect(this.options.get(this.focusIndex)!);
+          this.options.get(this.focusIndex)!.isFocus = false;
+          this._onToggle();
+        } else {
+          this._onToggle();
+          this.focusIndex = 0;
+          this.options.get(this.focusIndex)!.isFocus = true;
+        }
+        break;
+      default:
+        break;
     }
   }
 }

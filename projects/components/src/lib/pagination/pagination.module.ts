@@ -1,14 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MasPagination } from './pagination.component';
-import { MasButton,MasActionDropdown,MasDropdownOption,MasButtonDirective ,MasTextInput} from "projects/components/src/public-api";
+import { MasButtonModule, MasActionDropdownModule, MasTextInputModule } from 'projects/components/src/public-api';
 
-
-@NgModule({ 
-  imports: [
-    CommonModule
-  ],
-  exports: [MasPagination,MasButton,MasActionDropdown,MasDropdownOption,MasButtonDirective,MasTextInput],
-  declarations: [MasPagination,MasButton,MasActionDropdown,MasDropdownOption,MasButtonDirective,MasTextInput],
+@NgModule({
+  imports: [CommonModule, MasActionDropdownModule, MasTextInputModule, MasButtonModule],
+  exports: [MasPagination],
+  declarations: [MasPagination],
 })
-export class MasPaginationModule { }
+export class MasPaginationModule {}
