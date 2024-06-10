@@ -85,3 +85,35 @@
   .mas-data-table_tfoot {
   }
 }
+.mas-data-table--large {
+  .mas-data-table_tbody {
+    & > tr {
+      td {
+        height: 48px;
+      }
+    }
+    .mas-data-table_thead {
+      & > tr {
+        th {
+          height: 48px
+        }
+      }
+    }
+  }
+}
+.mas-data-table--small {
+  .mas-data-table_tbody {
+    & > tr {
+      td {
+        height: 40px;
+      }
+    }
+    .mas-data-table_thead {
+      & > tr {
+        th {
+          height: 40px
+        }
+      }
+    }
+  }
+}

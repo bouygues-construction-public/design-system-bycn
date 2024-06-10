@@ -15,9 +15,16 @@ import { Column } from './data-table.model';
   templateUrl: 'data-table.component.html',
   host: {
     class: 'mas-data-table',
+    '[class.mas-data-table--large]': 'size === "L"',
+    '[class.mas-data-table--small]': 'size === "S"',
   },
 })
 export class MasDataTable implements AfterViewInit, OnDestroy {
+  /**
+   * the cell size of table
+   */
+  @Input()
+  size: 'S' | 'L' = 'L'
   /**
    * An array of objects to display.
    */
