@@ -1,0 +1,48 @@
+<div *ngIf="variant === 'default'">     
+    <footer [ngClass]="{'footer':true, 'footer-mobile': size === 'mobile', 'footer-default': size === 'desktop'}" (keydown.enter)="handleKeyPress($event)" (keydown.space)="handleKeyPress($event)">
+     <div *ngIf="Logotype" [ngClass]="{'logo-container': true, 'logo-container-mobile': size === 'mobile', 'logo-container-default': size === 'desktop'}">
+         <mas-logotype variant="Default" [width]="'141.732px'" [height]="'72px'"></mas-logotype>
+     </div>
+     <div *ngIf="MiddleFooter" [ngClass]="{'middle-footer': true, 'middle-footer-mobile': size === 'mobile', 'middle-footer-default': size === 'desktop'}">
+          <ng-container *ngFor="let blockIndex of getBlockIndices(); let i = index">
+            <div *ngIf="blockTitles[i] && blockLinks[i]" [ngClass]="{'block-link': true, 'block-link-mobile': size === 'mobile', 'block-link-default': size === 'desktop'}">
+              <h3>{{blockTitles[i]}}</h3>
+              <ul>
+                <li *ngFor="let link of blockLinks[i]">
+                  <a [href]="link[1]">{{link[0]}}</a>
+                </li>
+              </ul>
+            </div>
+          </ng-container>
+          <div *ngIf="SocialMedia" [ngClass]="{'social-media': true, 'social-media-mobile': size === 'mobile', 'social-media-default': size === 'desktop'}">
+            <div class="block-social-media">
+              <p class="title-social-media">{{ socialNetworkTitle }}</p>
+              <div class="icon-button-social-media">
+                <ng-container *ngFor="let icon of socialMediaIcons; let i=index">
+                  <a tabindex="-1" [href]="socialMediaLinks[i]">
+                    <mas-icon-button variant="accent" size="small" [iconAlone]="icon"></mas-icon-button>
+                  </a>
+                </ng-container>
+              </div>
+            </div>
+          </div>
+     </div>
+     <div class="bottom-footer">
+        <mas-divider class="mas-divider" [ngClass]="{'horizontal-mobile': size === 'mobile', 'horizontal-default': size === 'desktop'}"  orientation="horizontal"></mas-divider>
+        <div class="link-bottom" [ngClass]="{'link-bottom-mobile': size === 'mobile', 'link-bottom-default': size === 'desktop'}" >
+          <ng-container *ngFor="let title of personalDataTitle; let i=index; let isLast=last">
+            <a class="link" [href]="personalDataUrl[i]">{{ title }}</a>
+            <ng-container *ngIf="!isLast">
+              <mas-divider class="mas-divider" [ngClass]="{'vertical-mobile': size === 'mobile', 'vertical-default': size === 'desktop'}" orientation="vertical"></mas-divider>
+            </ng-container>
+          </ng-container>
+        </div>
+      </div>
+ </footer>
+ </div>
+ <div *ngIf="variant === 'swapComponent'" >
+     <footer [ngClass]="{'footer':true, 'footer-mobile-swap': size === 'mobile', 'footer-default-swap': size === 'desktop'}">
+         <ng-content></ng-content>
+     </footer>
+ </div>
+ 
