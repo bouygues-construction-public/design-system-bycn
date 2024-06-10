@@ -26,8 +26,8 @@
     "chromatic": "npx chromatic --project-token chpt_4175ab076232461 -d dist/showcases-components"
   },
   "engines": {
-    "node": "^16.20.0",
-    "npm": ">=7.24.0"
+    "node": "^18.13.0",
+    "npm": ">=8.19.0"
   },
   "dependencies": {
     "@angular/animations": "^16.2.0",
