@@ -160,10 +160,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "sample-app:build:production"
+              "buildTarget": "sample-app:build:production"
             },
             "development": {
-              "browserTarget": "sample-app:build:development"
+              "buildTarget": "sample-app:build:development"
             }
           },
           "defaultConfiguration": "development"
