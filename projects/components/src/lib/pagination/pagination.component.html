@@ -1,0 +1,35 @@
+<div class="pagination" [ngClass]="getPaginationClasses()"> 
+  <mas-button #firstFocusable  iconLeft="mas-caret-left-outlined mas-arrows--outlined mas-icon" variant="tertiary" [size]="size" (click)="goToPreviousPage()" [disabled]="currentPage === 1" tabindex="0" (keydown)="handleKeydown($event, 'Previous')">Previous</mas-button>
+  
+  <div *ngIf="type === 'Numbers'" class="items-pagination">
+      <button  tabindex="0"  class="button-tertiary" [ngClass]="getButtonClasses()"
+          [class.button-active]="page === currentPage" *ngFor="let page of truncatedPages" (click)="goToPage(page)">
+          {{ page }}
+      </button>
+  </div>
+  
+  <div *ngIf="type === 'Input'">
+      <div class="input">
+          <input tabindex="0" class="mas-text-input" [ngClass]="getInputClasses()" [value]="currentPage" (input)="onPageInputChange($event)" />
+          <div class="totalpages">/{{ totalPages }}</div>
+      </div>
+  </div>
+  
+  <mas-button tabindex="-1" (keydown)="handleKeydown($event, 'Next')" iconRight="mas-caret-right-outlined mas-arrows--outlined mas-icon" variant="tertiary" [size]="size" [disabled]="currentPage === totalPages" (click)="goToNextPage()">Next</mas-button>
+  
+  <div *ngIf="itemsPerPage" class="ContainerItemsPerPage">
+    <mas-action-dropdown #dropdown tabindex="0" (keydown)="handleKeydown($event, 'OpenDropdown')" class="dd custom-dropdown" [size]="size === 'medium' ? 'M' : 'S'" labelText="items per page">
+      <mas-dropdown-option *ngFor="let option of pageSizeOptions; let i = index" 
+                           [tabindex]="i === selectedIndex ? 0 : -1" 
+                           (click)="onPageSizeChange(option)" 
+                           (keydown)="handleKeydown($event, 'Option', option, i)">
+        {{ option }} per page
+      </mas-dropdown-option>
+    </mas-action-dropdown>
+    <p class="item-counter" [ngClass]="{'item-counter-medium': size === 'medium', 'item-counter-small': size === 'small'}">
+      on {{ totalItems }} items
+    </p>
+  </div>
+
+</div>
+

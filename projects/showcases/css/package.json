@@ -18,6 +18,7 @@
     "@masoni/css-button": "file:../../css/src/components/button",
     "@masoni/css-popover": "file:../../css/src/components/popover",
     "@masoni/css-modal": "file:../../css/src/components/Modal",
+    "@masoni/css-footer": "file:../../css/src/components/Footer",
     "@masoni/css-alert": "file:../../css/src/components/alert",
     "@masoni/css-toast": "file:../../css/src/components/toast",
     "@masoni/css-link": "file:../../css/src/components/link",

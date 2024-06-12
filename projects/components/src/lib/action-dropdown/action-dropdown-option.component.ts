@@ -13,6 +13,7 @@ import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@
     '[class.mas-dropdown-option--selected]': '_selected',
     '[class.mas-dropdown-option--medium]': 'size === "M"',
     '[class.mas-dropdown-option--small]': 'size === "S"',
+    '[class.mas-dropdown-option--focus]': 'isFocus',
     class: 'mas-dropdown-option',
     '(click)': 'onOptionClick($event)',
     role: 'option',
@@ -20,6 +21,13 @@ import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@
 })
 export class MasActionDropdownOption {
   public size: 'S' | 'M' = 'S';
+  _isFocus: boolean = false;
+  get isFocus() {
+    return this._isFocus;
+  }
+  set isFocus(value: boolean) {
+    this._isFocus = value;
+  }
   @Input() imageUrl: string = '';
   @Input() icon: string = '';
   @Input() type: 'checkbox' | 'image' | 'icon' | 'text' = 'text';
@@ -28,6 +36,7 @@ export class MasActionDropdownOption {
   @Output() change: EventEmitter<any> = new EventEmitter();
   @Output() onClick: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
   @ViewChild('text', { static: true }) _text: ElementRef<HTMLElement> | undefined;
+  constructor(public elRef: ElementRef) {}
   get text(): any {
     return this._text?.nativeElement.outerText;
   }

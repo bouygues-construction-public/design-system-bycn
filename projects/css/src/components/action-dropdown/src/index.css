@@ -127,7 +127,10 @@ body {
     box-shadow: 0 0 0 1px var(--mas-semantic-color_border-primary);
   }
 }
-.mas-dropdown-option:hover {
+.mas-dropdown-option:hover:not(.mas-dropdown-option--focus) {
+  background-color: rgba(144, 144, 162, 0.08); /* --alpha-grey--hovered */
+}
+:not(.mas-action-dropdown_listbox-wrapper:hover) > .mas-dropdown-option--focus{
   background-color: rgba(144, 144, 162, 0.08); /* --alpha-grey--hovered */
 }
 /* ! pressed (active) */
