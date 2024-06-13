@@ -55,14 +55,16 @@
 }
 .mas-navigation-drawer.mas-navigation-drawer--collapsed {
   .mas-navigation-drawer_header {
-    .mas-navigation_header-component{
+    .mas-navigation_header-component {
       display: none;
     }
   }
   .mas-navigation-drawer_container {
     .mas-navigation-drawer-section--collapsed {
       .section-heading {
-        display: none;
+        visibility: hidden;
+        width: 0px;
+        height: 24px;
       }
     }
   }
