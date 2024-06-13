@@ -16,7 +16,7 @@
         </ng-container>
         <ng-container *ngFor="let column of columns">
           <th [style.width]="column.width || '280px'">
-            <i class="mas-data-table_thead--leading-icon {{column?.leadingIcon}}"></i>
+            <i class="mas-data-table_thead--leading-icon mas-icon {{column?.leadingIcon}}"></i>
             <span class="mas-data-table_thead--text">
               {{ column.header }}
             </span>
