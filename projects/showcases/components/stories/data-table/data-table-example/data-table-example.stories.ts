@@ -5,7 +5,7 @@ import { MasDataTableModule } from 'projects/components/src/lib/data-table/data-
 import { ReactiveFormsModule } from '@angular/forms';
 const meta: Meta<DataTableExample> = {
   component: DataTableExample,
-  title: 'Components/Data Table',
+  title: 'Components/Structure/Data Table',
   decorators: [
     moduleMetadata({
       declarations: [DataTableExample],

@@ -7,7 +7,7 @@ import { CellType } from 'projects/components/src/lib/data-table/data-table.mode
 
 const meta: Meta<MasDataTable> = {
   component: MasDataTable,
-  title: 'Components/Data Table',
+  title: 'Components/ Structure/ Data Table',
   decorators: [
     moduleMetadata({
       imports: [CommonModule, FormsModule, MasDataTableModule],
