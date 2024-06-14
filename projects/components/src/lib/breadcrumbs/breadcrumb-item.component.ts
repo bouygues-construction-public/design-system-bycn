@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'mas-breadcrumb-item',
   template: `
-    <a (click)="navigate($event)" [href]="this.domSanitizer.bypassSecurityTrustUrl(this._href)" style="user-select: none;">
+    <a (click)="navigate($event)" (keydown.space)="navigate($event)" [href]="this.domSanitizer.bypassSecurityTrustUrl(this._href)" style="user-select: none;">
       {{content}}
     </a>
   `,

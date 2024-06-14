@@ -30,7 +30,7 @@ const MINIMUM_OVERFLOW_THRESHOLD = 4;
         [content]="first.content"
       />
       <div class="mas-breadcrumb_overflow" (click)="toggleOverflow()">
-        <i class="mas-dots-three-outlined mas-system-and-device--outlined" style="line-height: 20px; height: 20px;"></i>
+        <i class="mas-dots-three-outlined mas-system-and-device--outlined" style="line-height: 20px; height: 20px;" tabindex="0" (keydown.space)="toggleOverflow()" (keydown.enter)="toggleOverflow()"></i>
       </div>
       <mas-breadcrumb-item
         *ngIf="last !== null"
