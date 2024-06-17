@@ -1,4 +1,4 @@
-import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/blocks';
 
 import * as InfoAlertStories from './alert-service/info-alert.stories';
 import * as SuccessAlertStories from './alert-service/success-alert.stories';
@@ -10,8 +10,6 @@ import * as DescriptionAlertStories from './alert-service/alert-description.stor
 
 import * as AllAlertStories from './alert-service/all-alert.stories';
 
-
-
 import * as AlertStories from './mas-alert.stories';
 
 <Meta of={AlertStories} />
@@ -20,30 +18,28 @@ import * as AlertStories from './mas-alert.stories';
 
 {/* Table of Contents */}
 
-- [Overview](#overview)
-- [Usage](#usage)
-- [Properties](#properties)
+* [Overview](#overview)
+* [Usage](#usage)
+* [Properties](#properties)
 
 ## Overview
 
 The `MasAlerts` are used to communicate important information to the user and attract their attention. It is contextual to the message.
 
-<Canvas>
-  <Story of={InfoAlertStories.InfoAlert} />
-</Canvas>
+<Canvas of={InfoAlertStories.InfoAlert} />
 
 ## Usage
 
 ### Basic
 
-The `MasAlerts` are displayed by calling the showAlert method provided by the `AlertService`. 
-The `MasAlerts appears at the top right of the interface above the navigation bar and in front of the main content. It disappears after 10 seconds or when the user clicks on the closed button.
-
+The `MasAlerts` are displayed by calling the showAlert method provided by the `AlertService`.
+The \`MasAlerts appears at the top right of the interface above the navigation bar and in front of the main content. It disappears after 10 seconds or when the user clicks on the closed button.
 
 ```html
 <button (click)="showInfoAlert()">  Info  </button> <br/>
 <mas-alert> </mas-alert>
 ```
+
 ```javascript
 constructor(private alertService: AlertService) { }
 
@@ -51,6 +47,7 @@ showInfoAlert(){
 this.alertService.showAlert({ title:'Info', description:'description for toast', type:'info', closeBtn:'true'}) ;   
 }
 ```
+
 The `showAlert` takes the following parameters:
 
 `title` (required): A string representing the title of the information alert.
@@ -61,17 +58,15 @@ The `showAlert` takes the following parameters:
 
 `closeBtn` (optional): A boolean flag specifying whether to include a close button in the alert. The default value is true.
 
-
 The only mandatory parameter is the title, with optional parameters for description, type, and a close button, each having default values. This allows for flexible usage with minimal required input.
 
-<Canvas>
-  <Story of={AlertStories.Default} />
-</Canvas>
+<Canvas of={AlertStories.Default} />
 
 ```html
 <button (click)="showInfoAlert()">  Default  </button> <br/>
 <mas-alert> </mas-alert>
 ```
+
 ```javascript
 constructor(private alertService: AlertService) { }
 
@@ -82,39 +77,32 @@ this.alertService.showAlert({ title:'Title for the default alert'}) ;
 
 To use the `MasAlerts`, you can pass the desired inputs to the component.
 
-
 ## Properties
 
 ### Types
 
-The `MasAlerts` component has 4 different types : `info`, `success`, `warning`, `error`. 
+The `MasAlerts` component has 4 different types : `info`, `success`, `warning`, `error`.
 These 4 types have their own semantic colors linked to their context of use and their meaning
 
-<Canvas>
-  <Story of={AllAlertStories.AlertService} />
-</Canvas>
+<Canvas  of={AllAlertStories.AlertService} />
 
 ### Alert Description
 
-Description is used to have more information about the alert. This is not a mandatory element. 
-<Canvas>
-   <Story of={DescriptionAlertStories.AlertsWithDescrition} />
-</Canvas>
+Description is used to have more information about the alert. This is not a mandatory element.
+
+<Canvas of={DescriptionAlertStories.AlertsWithDescrition} />
 
 ### Close Button
 
-Close button is used to dismiss the alert component at the user's request. This is not a mandatory element. 
+Close button is used to dismiss the alert component at the user's request. This is not a mandatory element.
 Indeed, alert will be dissmiss after 10 seconds whithout user action.
 
-<Canvas>
-   <Story of={ CloseBtnAlertStories.AlertWithCloseButton} />
-</Canvas>
-
+<Canvas of={ CloseBtnAlertStories.AlertWithCloseButton} />
 
 ## Guidelines
 
-- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/520f9f-button/b/964f27)
+* Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/520f9f-button/b/964f27)
 
 ## Feedback & contact
 
-- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
+* Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

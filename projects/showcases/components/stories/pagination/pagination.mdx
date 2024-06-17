@@ -1,4 +1,4 @@
-import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/blocks';
 import { MasPagination } from 'projects/components/src/lib/pagination/pagination.component';
 import * as PaginationStories from './pagination.stories';
 
@@ -8,15 +8,15 @@ import * as PaginationStories from './pagination.stories';
 
 {/* Table of Contents */}
 
-- [Overview](#overview)
-- [Props](#props)
-- [Usage](#usage)
-- [Size](#size)
-- [Type](#type)
+* [Overview](#overview)
+* [Props](#props)
+* [Usage](#usage)
+* [Size](#size)
+* [Type](#type)
 
 ## Overview
 
-The `Pagination` component divides a collection of data or other content types such as images, cards, or search results into multiple pages showing a fixed number of items per page. 
+The `Pagination` component divides a collection of data or other content types such as images, cards, or search results into multiple pages showing a fixed number of items per page.
 The pagination component is used under elements that are paginated. This can be the case at the bottom of a page, a table or within another component.
 
 -Pagination allows you to:
@@ -27,17 +27,14 @@ optimize space and loading times on the page
 control the amount of information they want to see per page and
 to browse all types of data or content in a smaller, more controlled view.
 
-
-<Canvas >
- <Story of={PaginationStories.Default} />
-</Canvas>
+<Canvas />
 
 ## Props
 
 <Controls />
 
-
 ## Usage
+
 The `pagination` component is used to navigate between different pages. It allows information to be divided across multiple pages instead of displaying it all on one.
 
 ## Size
@@ -45,37 +42,33 @@ The `pagination` component is used to navigate between different pages. It allow
 Pagination are available in two sizes: `Small` and `Medium`:
 
 `Small`:The Small pagination offers two different types: Input and Numbers.
-<Canvas>
-    <Story of={PaginationStories.PaginationSmallNumbers} />
-</Canvas>
-<Canvas>
-    <Story of={PaginationStories.PaginationSmallInput} />
-</Canvas>
+
+<Canvas of={PaginationStories.PaginationSmallNumbers} />
+
+<Canvas of={PaginationStories.PaginationSmallInput} />
+
 `Medium`:The Medium pagination offers two different types: Input and Numbers.
 
-<Canvas>
-    <Story of={PaginationStories.PaginationMediumNumbers} />
-</Canvas>
+<Canvas of={PaginationStories.PaginationMediumNumbers} />
 
-<Canvas>
-    <Story of={PaginationStories.PaginationMediumInput} />
-</Canvas>
+<Canvas of={PaginationStories.PaginationMediumInput} />
+
 ## Type
+
 2 types of pagination are available:
 
 `Numbers`: To select the desired page.
-<Canvas>
-    <Story of={PaginationStories.PaginationNumber} />
-</Canvas>
+
+<Canvas of={PaginationStories.PaginationNumber}/>
+
 `Input`: To enter the desired page in an input text field.
-<Canvas >
- <Story of={PaginationStories.PaginationInput} />
-</Canvas>
+
+<Canvas of={PaginationStories.PaginationInput} />
+
 ## Guidelines
 
-- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/99a7f3-pagination/b/75c0d1)
+* Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/99a7f3-pagination/b/75c0d1)
 
 ## Feedback & contact
 
-- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
-
+* Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

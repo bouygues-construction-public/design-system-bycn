@@ -3,8 +3,8 @@
   "version": "0.0.8",
   "description": "Bouygues Design System - Masoni components library",
   "peerDependencies": {
-    "@angular/common": "^16.2.0",
-    "@angular/core": "^16.2.0",
+    "@angular/common": "^17.2.0",
+    "@angular/core": "^17.2.0",
     "@masoni/icons": "^0.0.1"
   },
   "homepage": "https://github.com/bouygues-construction/design-system-bycn",
