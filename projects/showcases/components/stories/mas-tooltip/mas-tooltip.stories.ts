@@ -1,4 +1,4 @@
-import { Meta, Story, StoryObj, moduleMetadata } from "@storybook/angular";
+import { Meta, StoryObj, moduleMetadata } from "@storybook/angular";
 import { MasTooltip, MasTooltipDirective  } from "projects/components/src/lib/tooltip";  
 import { MasButton } from "projects/components/src/public-api";
 
@@ -47,25 +47,22 @@ export default {
       },
     },
   },
+  render: (args) => ({
+    props: args,
+    template: `
+    <div style="padding:60px 400px">
+      <mas-tooltip
+        [text]="text" 
+        [content]="content" 
+        [placement]="placement">
+      </mas-tooltip>
+    <div>`,
+  })
 } as Meta;
-
-const Template: Story<MasTooltip> = (args: MasTooltip) => ({
-  props: args,
-  template: `
-  <div style="padding:60px 400px">
-    <mas-tooltip
-      [text]="text" 
-      [content]="content" 
-      [placement]="placement">
-    </mas-tooltip>
-  <div>
-
-            `,
-});
  
 /** Basic : A button with default settings */
 
-export const Default = Template.bind({});
+export const Default: StoryObj<MasTooltip> = {};
 Default.args = {
   text: 'Hover me!' ,
   content :'Tooltip text.', 
@@ -78,7 +75,7 @@ Default.args = {
 export const Examples = () => ({
   template: `
   <div style="padding:50px 180px">
-    <div style="display:flex;justifyContent:space-between;align-items:end;width:450px">
+    <div style="display:flex;justify-content:space-between;align-items:center;width:450px">
     
           <mas-tooltip
             [content]="'Sentence tooltip text'" 
@@ -89,7 +86,7 @@ export const Examples = () => ({
               align-items: center;
               gap: 8px;border-radius: 100px;
               background: rgba(144, 144, 162, 0.08)">
-                 <i class="mas-circle-outlined mas-design--outlined"></i> 
+                 <i class="mas-circle-outlined mas-design--outlined mas-icon"></i> 
               </div>
            
         </mas-tooltip>

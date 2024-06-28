@@ -12,9 +12,8 @@ const meta: Meta<RadioButtonExample> = {
       imports: [CommonModule, ReactiveFormsModule, MasRadioButtonModule],
     }),
   ],
-  render: (args: RadioButtonExample) => ({
+  render: () => ({
     props: {
-      ...args,
     },
   }),
 };

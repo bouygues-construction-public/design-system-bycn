@@ -101,6 +101,27 @@
     align-items: center;
     min-width: 70px;
     min-height: 36px;
+    .mas-text-input{
+      display: flex;
+      font-feature-settings: 'calt' off;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      gap: 8px;
+      outline: none;
+      transition: var(--mas-transition_focus-visible);
+      border-radius: 8px;
+      border: 1px solid var(--Border-Primary, #D7D7DB);
+      background: var(--color-text-inverse, #FFF);
+      color: var(--Text-Primary, #0C0C0D);
+      font-feature-settings: 'calt' off;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; 
+      cursor: pointer;
+    }
  }
 
   .items-pagination{
@@ -126,28 +147,6 @@
     min-width: 99px;
   }
 
-
-  .mas-text-input{
-    display: flex;
-    font-feature-settings: 'calt' off;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap: 8px;
-    outline: none;
-    transition: var(--mas-transition_focus-visible);
-    border-radius: 8px;
-    border: 1px solid var(--Border-Primary, #D7D7DB);
-    background: var(--color-text-inverse, #FFF);
-    color: var(--Text-Primary, #0C0C0D);
-    font-feature-settings: 'calt' off;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; 
-    cursor: pointer;
-  }
   .mas-text-input-small{
     padding: 8px 12px;
     width: 42px;

@@ -10,10 +10,13 @@ const meta: Meta<CloseButtonToastServiceExample> = {
       imports: [ MasToastModule],
     }),
   ],
-  render: (args: CloseButtonToastServiceExample) => ({
-    props: {
-      ...args,
-    },
+  render: ({...args}) => ({
+    props: args,
+    template: `
+      <div style="height: 300px">
+        <close-button-toast-sevice-example></close-button-toast-sevice-example>
+      </div>
+    `
   }),
 };
 

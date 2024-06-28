@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Meta, Story, StoryObj, moduleMetadata } from "@storybook/angular";
+import { Meta, StoryObj, moduleMetadata } from "@storybook/angular";
 import { MasPagination } from "projects/components/src/lib/pagination";  
 import { MasButton,MasActionDropdown,MasActionDropdownOption,MasButtonDirective,MasTextInput} from "projects/components/src/public-api";       
 const argTypes = {
@@ -28,16 +28,14 @@ const argTypes = {
       control:'boolean', 
     },
     totalItems: {
-      type: { name: 'string', required: false },
+      type: { name: 'number', required: false },
       description: 'total Items', 
       defaultValue: 500 ,
-      control: 'text', 
     },
     initialPageSize: {
-      type: { name: 'string', required: false },
+      type: { name: 'number', required: false },
       description: 'Initial Page Size', 
       defaultValue: 24,
-      control: 'text', 
     },
   };
   
@@ -58,33 +56,32 @@ export default {
       },
     },
   },
+  render: ({...args}) => ({
+    props: args,
+    template: `
+    <div style="height:250px; padding:0px">  
+    <mas-pagination
+    [type]="type"
+    [size]="size"
+    [itemsPerPage]="itemsPerPage"
+    [totalItems]="totalItems"
+    [initialPageSize]="initialPageSize"
+    >
+  </mas-pagination></div>
+  
+    `,
+  })
 } as Meta;
-
-const Template: Story<MasPagination> = (args: MasPagination) => ({
-  props: args,
-  template: `
-            <div style="height:250px; padding:0px">  
-            <mas-pagination
-            [type]="type"
-            [size]="size"
-            [itemsPerPage]="itemsPerPage"
-            [totalItems]="totalItems"
-            [initialPageSize]="initialPageSize"
-            >
-          </mas-pagination></div>
-          
-            `,
-});
  
 /** Basic : A avatar with default settings */
 
-export const Default = Template.bind({});
+export const Default: StoryObj<MasPagination> = {};
 Default.args = {
   type: 'Numbers',
   size: 'medium',
   itemsPerPage: true,
-  totalItems:200,
-  initialPageSize:24,
+  totalItems: 200,
+  initialPageSize: 24,
 
 };
 

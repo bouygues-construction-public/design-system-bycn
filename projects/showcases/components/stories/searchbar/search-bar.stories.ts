@@ -22,10 +22,8 @@ const meta: Meta<MasSearchBar> = {
       },
     },
   },
-  render: (args: MasSearchBar) => ({
-    props: {
-      ...args,
-    },
+  render: ({...args}) => ({
+    props: args,
     template: `
     <div>
       <mas-search-bar [placeholder]="placeholder" ></mas-search-bar>
@@ -44,7 +42,7 @@ export const Basic: Story = {
   },
 };
 export const Overview: Story = {
-  render: (args: MasSearchBar) => ({
+  render: () => ({
     template: `
       <div style="display: flex; gap: 16px; justify-content: center; flex-direction: column;">
         <mas-search-bar placeholder='Search "Suggestion"'></mas-search-bar>

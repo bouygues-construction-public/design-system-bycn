@@ -26,9 +26,8 @@ const meta: Meta<MasNavigationDrawer> = {
       },
     },
   },
-  render: (args: MasNavigationDrawer) => ({
+  render: () => ({
     props: {
-      ...args,
     },
     template: `
     <div style="height: 500px">
@@ -70,7 +69,7 @@ export const Basic: Story = {
 };
 export const WithHeaderComponent: Story = {
   args: {},
-  render: (args: MasNavigationDrawer) => ({
+  render: () => ({
     template: `
     <div style="height: 500px">
       <ng-template #headerComponent>
@@ -94,7 +93,7 @@ export const WithHeaderComponent: Story = {
 };
 export const WithFooterComponent: Story = {
   args: {},
-  render: (args: MasNavigationDrawer) => ({
+  render: () => ({
     template: `
     <div style="height: 500px">
       <mas-navigation-drawer [showDivider]="true" [showLogo]="true" [collapsed]="false" [footerComponent]="footerComponent">
@@ -120,7 +119,7 @@ export const WithFooterComponent: Story = {
 
 export const Collapsed: Story = {
   args: {},
-  render: (args: MasNavigationDrawer) => ({
+  render: () => ({
     template: `
     <div style="height: 500px">
       <mas-navigation-drawer [showDivider]="true" [showLogo]="true" [collapsed]="true">

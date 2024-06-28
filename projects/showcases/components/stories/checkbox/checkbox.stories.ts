@@ -24,10 +24,8 @@ const meta: Meta<MasCheckbox> = {
       },
     },
   },
-  render: (args: MasCheckbox) => ({
-    props: {
-      ...args,
-    },
+  render: ({...args}) => ({
+    props: args,
   }),
 };
 
@@ -78,16 +76,16 @@ export const Determinate: Story = {
   },
 };
 export const Size: Story = {
-  render: (args: MasCheckbox) => ({
+  render: () => ({
     template: `
       <mas-checkbox labelText="Small size" size="S"></mas-checkbox>
       <br>
       <mas-checkbox labelText="Large size" size="L"></mas-checkbox>
       `,
   }),
-}
+};
 export const Overview: Story = {
-  render: (args: MasCheckbox) => ({
+  render: () => ({
     template: `
       <mas-checkbox labelText="Sand"></mas-checkbox>
       <mas-checkbox labelText="Bricks" [checked]="true"></mas-checkbox>

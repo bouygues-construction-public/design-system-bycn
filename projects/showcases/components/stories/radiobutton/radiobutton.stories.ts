@@ -5,7 +5,6 @@ import { MasRadioButton } from 'projects/components/src/lib/radiobutton/radiobut
 import { MasRadioButtonModule } from 'projects/components/src/lib/radiobutton/radiobutton.module';
 const meta: Meta<MasRadioButton> = {
   component: MasRadioButton,
-  // tags: ['autodocs'],
   title: 'Components/Selection controls/Radio Button',
   decorators: [
     moduleMetadata({
@@ -23,10 +22,8 @@ const meta: Meta<MasRadioButton> = {
       },
     },
   },
-  render: (args: MasRadioButton) => ({
-    props: {
-      ...args,
-    },
+  render: (args) => ({
+    props: args
   }),
   argTypes: {
     identifier: {
@@ -61,7 +58,7 @@ export const Basic: Story = {
   },
 };
 export const Overview: Story = {
-  render: (args: MasRadioButton) => ({
+  render: () => ({
     template: `
     <form [formGroup]="formGroup">
       <mas-radio-group formControlName="radioGroup">
@@ -78,7 +75,7 @@ export const Overview: Story = {
   }),
 };
 export const Size: Story = {
-  render: (args: MasRadioButton) => ({
+  render: () => ({
     template: `
       <mas-radio-group formControlName="radioGroup">
         <mas-radio-button labelText="Small size" value="1" [disabled]="false" size="S"></mas-radio-button>
