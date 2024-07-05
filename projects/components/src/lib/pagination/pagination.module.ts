@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MasPagination } from './pagination.component';
-import { MasButtonModule, MasActionDropdownModule, MasTextInputModule } from 'projects/components/src/public-api';
+import { MasButtonModule} from '../button';
+import { MasActionDropdownModule } from '../action-dropdown';
+import {MasTextInputModule} from '../text-input';
 
 @NgModule({
   imports: [CommonModule, MasActionDropdownModule, MasTextInputModule, MasButtonModule],

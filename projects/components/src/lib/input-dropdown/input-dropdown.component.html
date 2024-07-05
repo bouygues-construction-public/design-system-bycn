@@ -1,4 +1,4 @@
-<ng-container [ngSwitch]="labelText === ''">
+<ng-container [ngSwitch]="labelText === undefined">
   <ng-content select="mas-label" *ngSwitchCase="true"></ng-content>
   <label [for]="identifier" class="mas-label" *ngSwitchCase="false">{{ labelText }}</label>
 </ng-container>

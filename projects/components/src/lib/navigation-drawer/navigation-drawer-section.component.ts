@@ -1,5 +1,5 @@
 import { AfterContentInit, Component, ContentChildren, Input, OnInit, QueryList, forwardRef } from '@angular/core';
-import { MasNavigationItem } from 'projects/components/src/public-api';
+import { MasNavigationItem } from '../navigation-item';
 
 @Component({
   selector: 'mas-navigation-drawer-section',
