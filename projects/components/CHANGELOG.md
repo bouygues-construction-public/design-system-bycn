@@ -1,5 +1,25 @@
 # Change Log
 
+## [0.0.9] (2024-7-5)
+
+[npm package](https://www.npmjs.com/package/@masoni/components/v/0.0.9)
+
+### New components
+
+- [alert](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/alert/README.md)
+- [divider](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/divider/README.md)
+- [modal](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/modal/README.md)
+- [navigation-bar](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/navigation-bar/README.md)
+- [navigation-drawer](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/navigation-drawer/README.md)
+- [navigation-item](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/navigation-item/README.md)
+- [search-bar](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/search-bar/README.md)
+- [toast](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/toast/README.md)
+- [tooltip](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/tooltip/README.md)
+- [action-dropdown](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/action-dropdown/README.md)
+- [icon-button](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/icon-button/README.md)
+- [popover](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/popover/README.md)
+- [tab](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/tag/README.md)
+
 ## [0.0.8] (2023-12-1)
 
 [npm package ](https://www.npmjs.com/package/@masoni/components/v/0.0.8)
@@ -29,4 +49,4 @@
 - [tag](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/tag)
 - [text-input](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/text-input/README.md)
 - [text-area](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/text-area/README.md)
-- [togglebutton](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/togglebutton/README.md)
+- [toggle-button](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/togglebutton/README.md)

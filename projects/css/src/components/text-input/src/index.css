@@ -1,7 +1,7 @@
 @import '@masoni/css-design-tokens/dist/index.css';
 
 .mas-text-input {
-  width: 280px;
+  width: inherit;
   font-family: var(--mas-typo_font-family--inter);
   font-weight: var(--mas-typo_body-font-weight);
   font-size: var(--mas-typo_body-3-font-size);
@@ -19,12 +19,15 @@
   font-size: inherit;
   line-height: inherit;
   margin: 0;
-  min-inline-size: 280px;
+  min-inline-size: inherit;
   inline-size: inherit;
   block-size: 32px;
   padding-inline: 12px;
   cursor: pointer;
   gap: 8px;
+  & > input {
+    border: none;
+  }
 }
 .mas-text-input-min-line {
   /* width: 100%; */
@@ -38,8 +41,8 @@
 .mas-text-input_input {
   color: var(--mas-semantic-color_text-primary);
   display: block;
-  min-inline-size: 208px;
-  inline-size: 100%;
+  /* min-inline-size: inherit; */
+  inline-size: inherit;
   background-color: var(--mas-semantic-color-surface-primary);
   cursor: pointer;
   outline: none;

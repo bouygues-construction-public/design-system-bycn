@@ -1,4 +1,4 @@
-import { Meta, Story, StoryObj, moduleMetadata } from "@storybook/angular";
+import { Meta, StoryObj, moduleMetadata } from "@storybook/angular";
 import { MasLogotype } from "projects/components/src/lib/logotype";  
 
 
@@ -34,22 +34,16 @@ export default {
       },
     },
   },
-} as Meta;
-
-
-
-
-const Template: Story<MasLogotype> = (args: MasLogotype) => ({
-  props: args,
-  template: `
+  render: ({...args}) => ({
+    props: args,
+    template: `
             <mas-logotype [width]="width" [height]="height"  [variant]="variant">
             </mas-logotype>
-
-            
-            `,
-});
+    `
+  })
+} as Meta;
  
-export const Default = Template.bind({});
+export const Default: StoryObj<MasLogotype> = {}
 Default.args = {
   variant: 'Default',
   width:'250px',

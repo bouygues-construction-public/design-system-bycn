@@ -20,13 +20,15 @@ import * as TextAreaStories from './text-area.stories';
 
 {/* Table of Contents */}
 
-- [Overview](#overview)
-- [Props](#props)
-- [Usage](#usage)
-- [Variants](#variants)
+* [Overview](#overview)
+* [Props](#props)
+* [Usage](#usage)
+* [Variants](#variants)
 
 ## Overview
+
 Textareas allow users to input unanticipated queries or longer text content not suitable for standard text inputs
+
 <Primary />
 
 ## Props
@@ -35,10 +37,10 @@ Textareas allow users to input unanticipated queries or longer text content not 
 
 ## Usage
 
-- **Textarea Usage**
-  - Use textareas when users need to input larger amounts of text, such as paragraphs, comments, or other lengthy content.
-  - Use textareas in forms for fields that require longer input, such as comments sections or message boxes.
-  - Textareas are suitable for scenarios where users need to provide detailed descriptions, feedback, or write-ups.
+* **Textarea Usage**
+  * Use textareas when users need to input larger amounts of text, such as paragraphs, comments, or other lengthy content.
+  * Use textareas in forms for fields that require longer input, such as comments sections or message boxes.
+  * Textareas are suitable for scenarios where users need to provide detailed descriptions, feedback, or write-ups.
 
 To use the `Textarea` component, it serves to incorporate user input of longer text content.
 
@@ -48,35 +50,24 @@ To use the `Textarea` component, it serves to incorporate user input of longer t
 
 `mas-text-area` ccomponent can be used in conjunction with sub-elements, such as : `mas-label`.
 
-<Canvas>
-  <Story of={TextAreaStories.Overview} />
-</Canvas>
+<Canvas of={TextAreaStories.Overview} />
 
 ### Status
 
 The default state of the `mas-text-area` when the user enters text and there is no alert information to display.
-<Canvas>
-<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '20px' }}>
-  <Story of={TextAreaStories.DefaultVersion} />
-  <Story of={TextAreaStories.Disabled} />
-</div>
+
+<Canvas of={TextAreaStories.Disabled}>
 </Canvas>
-
-
 
 The error state of the `mas-text-area` When the data entered by the user presents an error or doesn't respect the requested input.
 
-<Canvas>
-<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '20px' }}>
-  <Story of={TextAreaStories.ErrorVersion} />
-  <Story of={TextAreaStories.ErrorVersionDisabled} />
-</div>
+<Canvas of={TextAreaStories.ErrorVersion} >
 </Canvas>
 
 ## Guidelines
 
-- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/42baf6-text-area/b/964f27)
+* Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/42baf6-text-area/b/964f27)
 
 ## Feedback & contact
 
-- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
+* Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

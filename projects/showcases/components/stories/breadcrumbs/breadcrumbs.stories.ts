@@ -23,10 +23,8 @@ const meta: Meta<MasBreadcrumb> = {
       },
     },
   },
-  render: (args: MasBreadcrumb) => ({
-    props: {
-      ...args,
-    },
+  render: ({...args}) => ({
+    props: args
   }),
 };
 
@@ -34,7 +32,7 @@ export default meta;
 type Story = StoryObj<MasBreadcrumb>;
 
 export const Overview: Story = {
-  render: (args: MasBreadcrumb) => ({
+  render: () => ({
     template: `
     <mas-breadcrumbs [threshold]="threshold">
       <mas-breadcrumb-item href="/#" content="Accueil"/>
@@ -56,7 +54,7 @@ export const Overview: Story = {
 };
 
 export const Collapse: Story = {
-  render: (args: MasBreadcrumb) => ({
+  render: () => ({
     template: `
     <mas-breadcrumbs>
       <mas-breadcrumb-item href="/#" content="Acces and delegation"/>

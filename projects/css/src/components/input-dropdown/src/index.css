@@ -10,6 +10,7 @@ body {
   box-sizing: border-box;
   inline-size: min-content;
   white-space: nowrap;
+  position: relative;
 }
 .mas-dropdown-option {
   display: flex;
@@ -42,7 +43,7 @@ body {
   margin: 0;
   gap: 8px;
   line-height: inherit;
-  inline-size: 280px;
+  inline-size: inherit;
   block-size: 36px;
   padding-inline: 12px;
   padding-block: 8px;

@@ -1,4 +1,4 @@
-import { Meta, ColorPalette, ColorItem, Source } from '@storybook/addon-docs';
+import { Meta, ColorPalette, ColorItem, Source } from '@storybook/blocks';
 import tailwind from '@masoni/css-tailwind-preset';
 
 <Meta title="Guidelines / Colors" />
@@ -6,7 +6,6 @@ import tailwind from '@masoni/css-tailwind-preset';
 # Colors
 
 > Colors are an important element of BYCN Design system, as they play a key role in establishing brand identity, conveying meaning, and creating visual hierarchy.
-
 
 For more detail, see our [Colors' guideline](https://zeroheight.com/9b39bb2a0/p/27aa26-colors/b/38114b)
 
@@ -16,11 +15,12 @@ If you don't know CSS Custom Properties, you can see basic usage documentation [
 
 <ColorPalette>
   {Object.keys(tailwind.theme.colors).map((key) => {
-    if (typeof tailwind.theme.colors[key] === 'string') {
-      return <ColorItem title={key} colors={[tailwind.theme.colors[key]]} />;
-    }
-  })}
+      if (typeof tailwind.theme.colors[key] === 'string') {
+        return <ColorItem title={key} colors={[tailwind.theme.colors[key]]} />;
+      }
+    })}
 </ColorPalette>
+
 ## Using [Tailwind CSS](https://tailwindcss.com) utility classes
 
 You can use colors with Tailwind CSS utility classes for [Background Color](https://tailwindcss.com/docs/background-color) & [Text Color](https://tailwindcss.com/docs/text-color) for example.

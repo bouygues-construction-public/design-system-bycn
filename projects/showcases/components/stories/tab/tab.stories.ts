@@ -1,4 +1,4 @@
-import { Meta, Story, StoryObj, moduleMetadata } from '@storybook/angular';
+import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
 import { MasBadgeModule } from 'projects/components/src/public-api';
 import { MasTab, MasTabHeader, MasTabModule, MasTabView } from 'projects/components/src/lib/tab';
 
@@ -26,22 +26,15 @@ const argTypes = {
   },
   orientation: {
     type: { name: 'string', required: false },
-    description: '',
+    description: 'horizontal',
     control: 'radio',
     options: ['horizontal', 'vertical'],
   },
   leadingIcon: {
     type: { name: 'string', required: false },
     description: 'The name of the leading  icon to display on the left side of the tab.',
-    defaultValue: '',
     control: 'select',
     options: ['', ...icons],
-  },
-  number: {
-    type: { name: 'number', required: false },
-    description: '',
-    defaultValue: '0',
-    control: 'number',
   },
 };
 
@@ -53,19 +46,9 @@ export default {
       imports: [MasBadgeModule, MasTabModule],
     }),
   ],
-  argTypes: argTypes,
-  parameters: {
-    docs: {
-      description: {
-        component: '',
-      },
-    },
-  },
-} as Meta;
-
-const Template: Story<MasTab> = (args: MasTab) => ({
-  props: args,
-  template: `
+  render: (args) => ({
+    props: args,
+    template: `
             <mas-tab-view [skeleton]="false" size="M" orientation="horizontal">
               <mas-tab
                 header="{{header}} 1"
@@ -87,12 +70,21 @@ const Template: Story<MasTab> = (args: MasTab) => ({
                   </div>
               </mas-tab>
             </mas-tab-view>
-          `,
-});
+    `
+  }),
+  argTypes: argTypes,
+  parameters: {
+    docs: {
+      description: {
+        component: '',
+      },
+    },
+  },
+} as Meta;
 
 /** Basic : A tab with default settings */
 
-export const Default = Template.bind({});
+export const Default: StoryObj<MasTab> = {};
 Default.args = {
   leadingIcon: '',
   number: 0,
@@ -107,6 +99,7 @@ export const ShowcaseSizes = () => ({
       <mas-tab header="Header 2">Content 2</mas-tab>
     </mas-tab-view>
   </div>
+  <br/>
   <div style="display: flex; flex-wrap: wrap;">
     <mas-tab-view [skeleton]="false" size="L" orientation="horizontal">
       <mas-tab header="Header 1">Content 1</mas-tab>
@@ -142,8 +135,8 @@ export const ShowcaseOrientation = () => ({
   </div>
   <div style="display: flex; flex-wrap: wrap;">
     <mas-tab-view [skeleton]="false" orientation="vertical">
-      <mas-tab size="M" header="Header 1">Vertical view - Label text 1</mas-tab>
-      <mas-tab size="M" header="Header 2">Vertical view - Label text 2</mas-tab>
+      <mas-tab size="M" header="Header 1"><span style="margin-left: 6px">Vertical view - Label text 1</span></mas-tab>
+      <mas-tab size="M" header="Header 2"><span style="margin-left: 6px">Vertical view - Label text 2</span></mas-tab>
     </mas-tab-view>
   </div>
   `,

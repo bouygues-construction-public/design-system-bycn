@@ -1,4 +1,4 @@
-import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/blocks';
 import { MasTooltip } from 'projects/components/src/lib/tooltip/tooltip.component';
 import * as MasTooltipStories from './mas-tooltip.stories';
 
@@ -8,12 +8,11 @@ import * as MasTooltipStories from './mas-tooltip.stories';
 
 {/* Table of Contents */}
 
-- [Overview](#overview)
-- [Props](#props)
-- [Usage](#usage)
-- [Style](#style)
-- [MasTooltip Directive](#mastooltipdirective)
-
+* [Overview](#overview)
+* [Props](#props)
+* [Usage](#usage)
+* [Style](#style)
+* [MasTooltip Directive](#mastooltipdirective)
 
 ## Overview
 
@@ -21,10 +20,7 @@ The `MasTooltip` is an overlay that shows the user a small description of a comp
 
 It appears when hovering over the component for a few seconds and disappears as soon as the cursor leaves the component.
 
-<Canvas>
- 
-    <Story of={MasTooltipStories.Default} />
- 
+<Canvas of={MasTooltipStories.Default} > 
 </Canvas>
 
 ## Props
@@ -38,17 +34,15 @@ To use the `MasTooltip`, you can pass the desired inputs to the component.
 ## Style
 
 ### Placements
+
 Tooltip has different directions to adapt to the hovered component's location and layout such as `top`, `bottom`, `right`, `left` , `top-left`, `top-right`, `bottom-left`, `bottom-left` which you can use to alter the look and feel of the tooltip.
 
-<Canvas>
- <Story of={MasTooltipStories.AllPlacements} />  
+<Canvas of={MasTooltipStories.AllPlacements} >
 </Canvas>
 
 
 ## Examples
-<Canvas>
- <Story of={MasTooltipStories.Examples} />  
- 
+<Canvas of={MasTooltipStories.Examples} > 
 </Canvas>
 
 
@@ -64,16 +58,13 @@ To use the `MasTooltip`, you can apply the `MasTooltip` attribute to any HTML el
 
 ### Examples
 
-<Canvas>
-
- <Story of={MasTooltipStories.Directive} />  
- 
+<Canvas of={MasTooltipStories.Directive} > 
 </Canvas>
 
 ## Guidelines
 
-- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/57882f-tooltip/b/75c0d1)
+* Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/57882f-tooltip/b/75c0d1)
 
 ## Feedback & contact
 
-- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
+* Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

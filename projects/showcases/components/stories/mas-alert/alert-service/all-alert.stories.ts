@@ -10,9 +10,8 @@ const meta2: Meta<AllAlertServiceExample> = {
       imports: [ MasAlertModule],
     }),
   ],
-  render: (args: AllAlertServiceExample) => ({
+  render: () => ({
     props: {
-      ...args,
     },
   }),
 };

@@ -12,10 +12,8 @@ const meta: Meta<ToggleButtonExample> = {
       imports: [CommonModule, MasToggleButtonModule, ReactiveFormsModule],
     }),
   ],
-  render: (args: ToggleButtonExample) => ({
-    props: {
-      ...args,
-    },
+  render: ({...args}) => ({
+    props: args
   }),
 };
 

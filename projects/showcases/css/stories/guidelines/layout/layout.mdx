@@ -1,4 +1,4 @@
-import { Meta, Source } from '@storybook/addon-docs';
+import { Meta, Source } from '@storybook/blocks';
 import tailwind from '@masoni/css-tailwind-preset';
 
 <Meta title="Guidelines / Layout" />
@@ -14,7 +14,9 @@ For more detail, see our [Layout's guideline](https://zeroheight.com/9b39bb2a0/p
 Every utility class in [Tailwind CSS](https://tailwindcss.com) can be applied conditionally at different breakpoints, which makes it a piece of cake to build complex responsive interfaces without ever leaving your HTML.
 Here is the list of our breakpoints in Tailwind CSS Configuration, the values are the `min-width` where that breakpoint should start:
 
-<Source language="json" code={JSON.stringify(tailwind.theme.screens, null, 2)} />{' '}
+<Source language="json" code={JSON.stringify(tailwind.theme.screens, null, 2)} />
+
+{' '}
 
 Detail If you want to use our utility classes
 from Tailwind CSS for Responsive Design, [see this documentation](https://tailwindcss.com/docs/responsive-design).
@@ -25,14 +27,14 @@ As you've probably seen on our [Layout's guideline](https://www.decathlon.design
 
 If you want to apply this guideline, you just need to follow documentation from Tailwind CSS:
 
-- [Grid Template Columns](https://tailwindcss.com/docs/grid-template-columns)
-- [Grid Column Start / End](https://tailwindcss.com/docs/grid-column)
-- [Grid Template Rows](https://tailwindcss.com/docs/grid-template-rows)
-- [Grid Row Start / End](https://tailwindcss.com/docs/grid-row)
-- [Grid Auto Flow](https://tailwindcss.com/docs/grid-auto-flow)
-- [Grid Auto Columns](https://tailwindcss.com/docs/grid-auto-columns)
-- [Grid Auto Rows](https://tailwindcss.com/docs/grid-auto-rows)
-- [Gap](https://tailwindcss.com/docs/gap)
+* [Grid Template Columns](https://tailwindcss.com/docs/grid-template-columns)
+* [Grid Column Start / End](https://tailwindcss.com/docs/grid-column)
+* [Grid Template Rows](https://tailwindcss.com/docs/grid-template-rows)
+* [Grid Row Start / End](https://tailwindcss.com/docs/grid-row)
+* [Grid Auto Flow](https://tailwindcss.com/docs/grid-auto-flow)
+* [Grid Auto Columns](https://tailwindcss.com/docs/grid-auto-columns)
+* [Grid Auto Rows](https://tailwindcss.com/docs/grid-auto-rows)
+* [Gap](https://tailwindcss.com/docs/gap)
 
 Every Tailwind CSS utility classes from grid follows our configuration about breakpoints & spacings detailed above.
 

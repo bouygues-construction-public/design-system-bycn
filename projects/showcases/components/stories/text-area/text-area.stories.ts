@@ -6,7 +6,6 @@ import { MasErrorModule, MasHelperModule, MasLabelModule } from 'projects/compon
 
 const meta: Meta<MasTextArea> = {
   component: MasTextArea,
-  // tags: ['autodocs'],
   title: 'Components/Forms/Text area',
   decorators: [
     moduleMetadata({
@@ -23,15 +22,13 @@ const meta: Meta<MasTextArea> = {
       },
     },
   },
-  render: (args: MasTextArea) => ({
+  render: ({...args}) => ({
     template: `
     <mas-label [optional]="true" [infoIcon]="true" style="width:294px; height:20px;">Label text</mas-label>
     <mas-text-area [TextErrorMsg]="TextErrorMsg" [maxLength]="maxLength"   [errorMessage]="errorMessage" [numberText]="numberText" [required]="required" [disabled]="disabled" [placeholder]="placeholder" [filled]="filled">
     </mas-text-area>
     `,
-    props: { 
-      ...args,
-    },
+    props: args
   }),
   argTypes: {
     
@@ -76,7 +73,7 @@ export const Default: Story = {
 };
 
 export const Overview: Story = {
-  render: (args: MasTextArea) => ({
+  render: () => ({
     template: `
 
     <mas-label [optional]="false" [infoIcon]="false" style="width:294px; height:20px;">Label text</mas-label>
@@ -87,7 +84,7 @@ export const Overview: Story = {
 };
 
 export const DefaultVersion: Story = {
-  render: (args: MasTextArea) => ({
+  render: () => ({
     template: `
     <mas-label [optional]="true" [infoIcon]="true" style="width:294px; height:20px;">Label text</mas-label>
     <mas-text-area  [maxLength]="200"   [errorMessage]="false" [numberText]="true" [required]="false"  [placeholder]="'placeholder'" [invalid]="false" >
@@ -96,10 +93,8 @@ export const DefaultVersion: Story = {
   }),
 };
 
-
-
 export const Disabled: Story = {
-  render: (args: MasTextArea) => ({
+  render: () => ({
     template: `
     <mas-label [optional]="true" [infoIcon]="true" style="width:294px; height:20px;">Label text</mas-label>
     <mas-text-area  [maxLength]="200"   [errorMessage]="false" [numberText]="true" [required]="false"  [placeholder]="'placeholder'" [invalid]="false" [disabled]="true"  >
@@ -108,17 +103,9 @@ export const Disabled: Story = {
   }),
 };
 
-
-
-
-
-
-
-
 export const ErrorVersion: Story = {
-  render: (args: MasTextArea) => ({
+  render: () => ({
     template: `
-
     <mas-label [optional]="true" [infoIcon]="true" style="width:294px; height:20px;">Label text</mas-label>
     <mas-text-area [TextErrorMsg]="'Set your error message here...'" [maxLength]="200"   [errorMessage]="true" [numberText]="true" [required]="true" [disabled]="false" [placeholder]="'placeholder'" [filled]="false">
     </mas-text-area>
@@ -126,9 +113,8 @@ export const ErrorVersion: Story = {
   }),
 };
 
-
 export const ErrorVersionDisabled: Story = {
-  render: (args: MasTextArea) => ({
+  render: () => ({
     template: `
     <mas-label [optional]="true" [infoIcon]="true" style="width:294px; height:20px;">Label text</mas-label>
     <mas-text-area [TextErrorMsg]="'Set your error message here...'" [maxLength]="200"   [errorMessage]="true" [numberText]="true" [required]="true" [invalid]="true" [placeholder]="'placeholder'" [disabled]="true"  >

@@ -10,9 +10,8 @@ const meta2: Meta<AlertWithDescrition> = {
       imports: [ MasAlertModule],
     }),
   ],
-  render: (args: AlertWithDescrition) => ({
+  render: () => ({
     props: {
-      ...args,
     },
   }),
 };

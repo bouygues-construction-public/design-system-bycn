@@ -21,10 +21,8 @@ const meta: Meta<MasInputDropdown> = {
       },
     },
   },
-  render: (args: MasInputDropdown) => ({
-    props: {
-      ...args,
-    },
+  render: ({...args}) => ({
+    props: args,
     template: `
     <div style="height: 300px">
       <mas-input-dropdown [type]="type" [placeholder]="placeholder" [labelText]="labelText" [helperText]="helperText" [leadingIcon]="leadingIcon" [multi]="multi" [size]="size" [disabled]="disabled" [invalid]="invalid">
@@ -98,7 +96,7 @@ export const Basic: Story = {
   },
 };
 export const Overview: Story = {
-  render: (args: MasInputDropdown) => ({
+  render: () => ({
     template: `
       <div style="height: 500px">
         <mas-input-dropdown placeholder="Select dropdown item" labelText="Label text" type="text" [invalid]="true">
@@ -142,7 +140,7 @@ export const Overview: Story = {
 };
 
 export const Icon: Story = {
-  render: (args: MasInputDropdown) => ({
+  render: () => ({
     template: `
       <div style="height: 250px">
         <mas-input-dropdown placeholder="Select type of function" labelText="Type of function" leadingIcon="mas-toolbox-outlined mas-commerce--outlined" type="icon" helperText="Helper text">
@@ -159,7 +157,7 @@ export const Icon: Story = {
 };
 
 export const Image: Story = {
-  render: (args: MasInputDropdown) => ({
+  render: () => ({
     template: `
       <div style="height: 300px">
         <mas-input-dropdown placeholder="Select contact" labelText="Project contact" leadingIcon="mas-user-outlined mas-people--outlined" type="image" helperText="Helper text">
@@ -176,7 +174,7 @@ export const Image: Story = {
 };
 
 export const Checkbox: Story = {
-  render: (args: MasInputDropdown) => ({
+  render: () => ({
     template: `
     <div style="height: 250px">
       <mas-input-dropdown placeholder="Select options..." labelText="Label text" [multi]="true" type="checkbox" helperText="Helper text">

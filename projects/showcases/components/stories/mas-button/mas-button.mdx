@@ -1,4 +1,4 @@
-import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/blocks';
 import { MasButton } from 'projects/components/src/lib/button/button.component';
 import * as ButtonStories from './mas-button.stories';
 
@@ -8,19 +8,17 @@ import * as ButtonStories from './mas-button.stories';
 
 {/* Table of Contents */}
 
-- [Overview](#overview)
-- [Props](#props)
-- [Usage](#usage)
-- [Variants](#variants)
+* [Overview](#overview)
+* [Props](#props)
+* [Usage](#usage)
+* [Variants](#variants)
 
 ## Overview
 
 The `MasButton` is a custom Button component serve as navigational element and can be used independently or inline with text.
 it offer a lightweight option for navigation.
 
-<Canvas>
-  <Story of={ButtonStories.Default} />
-</Canvas>
+<Canvas of={ButtonStories.Default} />
 
 ## Props
 
@@ -34,29 +32,19 @@ To use the `MasButton`, you can pass the desired inputs to the component.
 
 The component comes in different variants such as `primary`, `secondary`, `tertiary`, `accent` which you can use to alter the look and feel of the button.
 
-<Canvas>
-  <Story of={ButtonStories.Primary} />
-  <Story of={ButtonStories.Secondary} />
-  <Story of={ButtonStories.Tertiary} />
-  <Story of={ButtonStories.Accent} />
+<Canvas of={ButtonStories.ButtonType}>
 </Canvas>
 
 ### Size
 
 The component comes in different sizes : `small`, `medium`
 
-<Canvas>
-  <Story of={ButtonStories.ButtonSmall} />
-  <Story of={ButtonStories.ButtonMedium} />
+<Canvas of={ButtonStories.ButtonSize}>
 </Canvas>
 
 ### Icons The component can contain icons whose placement depends on the context of use and type of action
 
-<Canvas>
-  <Story of={ButtonStories.ButtonOnlyIcon} />
-  <Story of={ButtonStories.ButtonLeftIcon} />
-  <Story of={ButtonStories.ButtonRightIcon} />
-  <Story of={ButtonStories.ButtonRightAndLeftIcon} />
+<Canvas of={ButtonStories.ButtonIcon}>
 </Canvas>
 
 ## MasButton Directive
@@ -69,14 +57,12 @@ To use the `MasButtonDirective`, you can apply the `MasButton` attribute to any 
 
 ### Examples
 
-<Canvas>
-  <Story of={ButtonStories.Directive} />
-</Canvas>
+<Canvas of={ButtonStories.Directive} />
 
 ## Guidelines
 
-- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/520f9f-button/b/964f27)
+* Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/520f9f-button/b/964f27)
 
 ## Feedback & contact
 
-- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
+* Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

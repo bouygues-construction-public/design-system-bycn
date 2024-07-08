@@ -1,4 +1,4 @@
-import { Meta, Story, StoryObj, moduleMetadata } from "@storybook/angular";
+import { Meta, StoryObj, moduleMetadata } from "@storybook/angular";
 import { MasNavigationItem } from "projects/components/src/lib/navigation-item";  
 
 const icons = ['mas-circle-filled mas-design--filled',
@@ -84,27 +84,26 @@ export default {
       },
     },
   },
+  render: ({...args}) => ({
+    props: args,
+    template: `
+    <mas-navigation-item
+      [iconItem]="iconItem" 
+      [label]="label" 
+      [disabled]="disabled" 
+      [selected]="selected"
+      [collapsed]="collapsed"
+      [submenu]="submenu"
+      [submenuIcon]="submenuIcon"
+      [badgeContent]="badgeContent">
+    </mas-navigation-item>
+    `,
+  })
 } as Meta;
-
-const Template: Story<MasNavigationItem> = (args: MasNavigationItem) => ({
-  props: args,
-  template: `
-            <mas-navigation-item
-              [iconItem]="iconItem" 
-              [label]="label" 
-              [disabled]="disabled" 
-              [selected]="selected"
-              [collapsed]="collapsed"
-              [submenu]="submenu"
-              [submenuIcon]="submenuIcon"
-              [badgeContent]="badgeContent">
-            </mas-navigation-item>
-            `,
-});
  
 /** Basic : A button with default settings */
 
-export const Default = Template.bind({});
+export const Default: StoryObj<MasNavigationItem> = {};
 
 Default.args = {
   iconItem: 'mas-house-outlined mas-maps-and-travel--outlined' ,
@@ -117,40 +116,34 @@ Default.args = {
   badgeContent : ''  , 
 
 };
-export const Single = () => ({
-  template: `
-  <mas-navigation-item
-    [label]="'Dashboard'">
-  </mas-navigation-item>
-  `,
-});
-export const Submenu = () => ({
-  template: `
-  <mas-navigation-item
-    [label]="'Dashboard'" 
-    [submenu]="true">
-  </mas-navigation-item>
-  `,
-});
+
+export const Type = {
+  render: () => ({
+    template: `
+      <mas-navigation-item
+        [label]="'Dashboard'">
+      </mas-navigation-item>
+      <mas-navigation-item
+        [label]="'Dashboard'" 
+        [submenu]="true">
+      </mas-navigation-item>
+    `
+  })
+}
 
 export const Collapsed = () => ({
   template: `
- <mas-navigation-item
-    [label]="'Dashboard'" 
-    [iconItem]="'mas-house-outlined mas-maps-and-travel--outlined'"
-    [collapsed]="true">
-</mas-navigation-item>
-  `,
-});
-
-export const CollapsedWithBadge = () => ({
-  template: `
- <mas-navigation-item
-    [label]="'Dashboard'" 
-    [iconItem]="'mas-house-outlined mas-maps-and-travel--outlined'"
-    [collapsed]="true"
-    [badgeContent]="99">
-</mas-navigation-item>
+    <mas-navigation-item
+      [label]="'Dashboard'" 
+      [iconItem]="'mas-house-outlined mas-maps-and-travel--outlined'"
+      [collapsed]="true">
+    </mas-navigation-item>
+    <mas-navigation-item
+      [label]="'Dashboard'" 
+      [iconItem]="'mas-house-outlined mas-maps-and-travel--outlined'"
+      [collapsed]="true"
+      [badgeContent]="99">
+    </mas-navigation-item>
   `,
 });
 
@@ -178,22 +171,17 @@ export const disabled = () => ({
 
 export const withBadge = () => ({
   template: `
- <mas-navigation-item
+    <mas-navigation-item
               [label]="'Dashboard'" 
               [iconItem]="'mas-house-outlined mas-maps-and-travel--outlined'"
               [badgeContent]="99"
               >
-</mas-navigation-item>
-  `,
-});
-export const withoutBadge = () => ({
-  template: `
- <mas-navigation-item
+    </mas-navigation-item>
+    <mas-navigation-item
               [label]="'Dashboard'" 
               [iconItem]="'mas-house-outlined mas-maps-and-travel--outlined'"
-      
               >
-</mas-navigation-item>
+    </mas-navigation-item>
   `,
 });
 

@@ -1,4 +1,4 @@
-import { Meta, Canvas, Controls, Story, of } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, Controls, Story, of } from '@storybook/blocks';
 import { MasLinkDirective } from 'projects/components/src/lib/link';
 
 import * as LinkStories from './mas-link.stories';
@@ -9,19 +9,17 @@ import * as LinkStories from './mas-link.stories';
 
 {/* Table of Contents */}
 
-- [Overview](#overview)
-- [Props](#props)
-- [Usage](#usage)
-- [Variants](#variants)
+* [Overview](#overview)
+* [Props](#props)
+* [Usage](#usage)
+* [Variants](#variants)
 
 ## Overview
 
 The `MasLink` is a custom Link component serve as navigational element and can be used independently or inline with text.
 it offer a lightweight option for navigation.
 
-<Canvas>
-  <Story of={LinkStories.Overview} />
-</Canvas>
+<Canvas of={LinkStories.Overview}/>
 
 ## Props
 
@@ -37,19 +35,13 @@ To use the `MasLink`, you can pass the desired inputs to the component.
 
 An icon can be displayed alongside the link text
 
-<Canvas>
-  <Story of={LinkStories.LinkIcon} />
-</Canvas>
+<Canvas of={LinkStories.LinkIcon}/>
 
 ### Size
 
 The component comes in different sizes : `small`, `medium`
 
-<Canvas>
-  <Story of={LinkStories.LinkSmall} />
-  <Story of={LinkStories.LinkMedium} />
-  <Story of={LinkStories.LinkLarge} />
-</Canvas>
+<Canvas of={LinkStories.LinkSize}/>
 
 ## MasLink Directive
 
@@ -61,14 +53,12 @@ To use the `MasLinkDirective`, you can apply the `masLink` attribute to any HTML
 
 ### Examples
 
-<Canvas>
-  <Story of={LinkStories.Directive} />
-</Canvas>
+<Canvas of={LinkStories.Directive}/>
 
 ## Guidelines
 
-- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/62eca3-radio-button/b/914f72)
+* Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/62eca3-radio-button/b/914f72)
 
 ## Feedback & contact
 
-- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
+* Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

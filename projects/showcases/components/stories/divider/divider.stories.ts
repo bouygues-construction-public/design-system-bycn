@@ -5,7 +5,6 @@ import { MasDivider } from 'projects/components/src/public-api';
 const meta: Meta<MasDivider> = {
   component: MasDivider,
   title: 'Components/Structure/Divider',
-  // tags: ['autodocs'],
   decorators: [
     moduleMetadata({
       imports: [CommonModule],
@@ -20,10 +19,8 @@ const meta: Meta<MasDivider> = {
       },
     },
   },
-  render: (args: MasDivider) => ({
-    props: {
-      ...args,
-    },
+  render: ({...args}) => ({
+    props: args,
     template: `
       <div style="height: 124px">
         <mas-divider [orientation]="orientation"></mas-divider>
@@ -50,7 +47,7 @@ export const Basic: Story = {
   },
 };
 export const Overview: Story = {
-  render: (args: MasDivider) => ({
+  render: () => ({
     template: `
     <div style="display: flex; flex-direction: column; align-items: center; font-family: var(--mas-typo_font-family);">
       <h2 style="font-weight: var(--mas-typo_headline-font-weight)">Bouygues Construction Expert in building</h2>

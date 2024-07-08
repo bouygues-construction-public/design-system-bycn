@@ -6,7 +6,6 @@ import { MasErrorModule, MasHelperModule, MasLabelModule } from 'projects/compon
 const meta: Meta<MasActionDropdown> = {
   component: MasActionDropdown,
   title: 'Components/Actions/Action Dropdown',
-  // tags: ['autodocs'],
   decorators: [
     moduleMetadata({
       imports: [CommonModule, MasErrorModule, MasHelperModule, MasLabelModule, MasActionDropdownModule],
@@ -21,10 +20,8 @@ const meta: Meta<MasActionDropdown> = {
       },
     },
   },
-  render: (args: MasActionDropdown) => ({
-    props: {
-      ...args,
-    },
+  render: ({ ...args }) => ({
+    props: args,
     template: `
       <div style="height: 180px;">
         <mas-action-dropdown [disabled]="disabled" [labelText]="labelText" [size]="size">
@@ -38,7 +35,7 @@ const meta: Meta<MasActionDropdown> = {
     `,
   }),
   argTypes: {
-    labelText: {type: {name: "string", required: true}},
+    labelText: { type: { name: 'string', required: true } },
     size: {
       type: { name: 'string', required: false },
       control: 'radio',
@@ -56,14 +53,14 @@ type Story = StoryObj<MasActionDropdown>;
 // More on writing stories with args: https://storybook.js.org/docs/angular/writing-stories/args
 export const Basic: Story = {
   args: {
-    labelText: "More",
+    labelText: 'More',
     disabled: false,
     size: 'S',
   },
 };
 
 export const LeadingIcon: Story = {
-  render: (args: MasActionDropdown) => ({
+  render: () => ({
     template: `
       <div style="height: 150px;">
         <mas-action-dropdown [disabled]="disabled" [size]="size" labelText="Button" leadingIcon="mas-info-outlined mas-security-and-warnings--outlined mas-icon">
@@ -78,7 +75,7 @@ export const LeadingIcon: Story = {
 };
 
 export const Size: Story = {
-  render: (args: MasActionDropdown) => ({
+  render: () => ({
     template: `
       <div style="height: 150px; width: 100%">
         <mas-action-dropdown size="S" labelText="Button small size" >
@@ -99,7 +96,7 @@ export const Size: Story = {
   }),
 };
 export const Disabled: Story = {
-  render: (args: MasActionDropdown) => ({
+  render: () => ({
     template: `
       <mas-action-dropdown [size]="M" labelText="Button" [disabled]="true">
         <mas-dropdown-option value="option_1">Option 1</mas-dropdown-option>

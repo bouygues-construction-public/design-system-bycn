@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MasModal } from './modal.component';
-import { MasButtonModule } from 'projects/components/src/public-api';
-import { MasIconButtonModule } from 'projects/components/src/public-api';
+import { MasModal} from './modal.component';
+import { MasButtonModule } from "../button";
+import { MasIconButtonModule } from "../icon-button";
 
 @NgModule({
   imports: [CommonModule, MasButtonModule, MasIconButtonModule],

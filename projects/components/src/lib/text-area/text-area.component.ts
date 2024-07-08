@@ -42,6 +42,7 @@ export class MasTextArea implements OnInit {
   model: any;
   @ViewChild('textarea') inputViewChild: ElementRef | undefined;
   @Input() maxLength: number=200;
+  @Input() identifier: string = '';
   @Input() TextErrorMsg: string;
   @Input() placeholder: string = '';
   @Input() numberText: boolean = false;

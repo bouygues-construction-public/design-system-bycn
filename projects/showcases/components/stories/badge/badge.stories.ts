@@ -5,17 +5,14 @@ import { MasBadgeModule, MasBadge } from 'projects/components/src/public-api';
 const meta: Meta<MasBadge> = {
   component: MasBadge,
   title: 'Components / Indicators / Badge',
-  // tags: ['autodocs'],
   decorators: [
     moduleMetadata({
       imports: [CommonModule, MasBadgeModule],
     }),
   ],
   parameters: {},
-  render: (args: MasBadge) => ({
-    props: {
-      ...args,
-    },
+  render: ({...args}) => ({
+    props: args
   }),
   argTypes: {
     number: {
@@ -59,39 +56,39 @@ export const Overview: Story = {
 };
 
 export const Color: Story = {
-  render: (args: MasBadge) => ({
+  render: () => ({
     template: `
-      <mas-badge color="primary" icon="mas-design--outlined mas-circle-outlined"></mas-badge>
-      <br>
-      <mas-badge color="warning" icon="mas-design--outlined mas-circle-outlined"></mas-badge>
-      <br>
-      <mas-badge color="success" icon="mas-design--outlined mas-circle-outlined"></mas-badge>
-      <br>
-      <mas-badge color="alert" icon="mas-design--outlined mas-circle-outlined"></mas-badge>
-      <br>
-      <mas-badge color="brand" icon="mas-design--outlined mas-circle-outlined"></mas-badge>  
+      <div style="display: flex; gap: 20px">
+        <mas-badge color="primary" icon="mas-design--outlined mas-circle-outlined"></mas-badge>
+        <mas-badge color="warning" icon="mas-design--outlined mas-circle-outlined"></mas-badge>
+        <mas-badge color="success" icon="mas-design--outlined mas-circle-outlined"></mas-badge>
+        <mas-badge color="alert" icon="mas-design--outlined mas-circle-outlined"></mas-badge>
+        <mas-badge color="brand" icon="mas-design--outlined mas-circle-outlined"></mas-badge> 
+      </div>
+ 
       `,
   }),
 };
 export const Number: Story = {
-  render: (args: MasBadge) => ({
+  render: () => ({
     template: `
-      <mas-badge color="primary" [number]="0" type="number"></mas-badge>
-      <br>
-      <mas-badge color="primary" [number]="9" type="number"></mas-badge>
-      <br>
-      <mas-badge color="primary" [number]="100" type="number"></mas-badge>
+      <div style="display: flex; gap: 20px">
+        <mas-badge color="primary" [number]="0" type="number"></mas-badge>
+        <mas-badge color="primary" [number]="9" type="number"></mas-badge>
+        <mas-badge color="primary" [number]="100" type="number"></mas-badge>
+      </div>
+
       `,
   }),
 };
 export const WithIcon: Story = {
-  render: (args: MasBadge) => ({
+  render: () => ({
     template: `
-      <mas-badge color="primary" [number]="0" type="number" icon="mas-user-outlined mas-people--outlined"></mas-badge>
-      <br>
-      <mas-badge color="primary" [number]="9" type="number" icon="mas-bookmark-simple-outlined mas-education--outlined"></mas-badge>
-      <br>
-      <mas-badge color="primary" [number]="100" type="number" icon="mas-chat-circle-dots-outlined mas-communication--outlined"></mas-badge>
+      <div style="display: flex; gap: 20px">
+        <mas-badge color="primary" [number]="0" type="number" icon="mas-user-outlined mas-people--outlined"></mas-badge>
+        <mas-badge color="primary" [number]="9" type="number" icon="mas-bookmark-simple-outlined mas-education--outlined"></mas-badge>
+        <mas-badge color="primary" [number]="100" type="number" icon="mas-chat-circle-dots-outlined mas-communication--outlined"></mas-badge>
+      </div>
       `,
   }),
 };

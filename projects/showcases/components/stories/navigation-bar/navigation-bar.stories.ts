@@ -5,7 +5,6 @@ import { MasNavigationBarModule, MasNavigationBar } from 'projects/components/sr
 const meta: Meta<MasNavigationBar> = {
   component: MasNavigationBar,
   title: 'Components/Navigations/Navigation Bar',
-  // tags: ['autodocs'],
   decorators: [
     moduleMetadata({
       imports: [CommonModule, MasNavigationBarModule],
@@ -19,10 +18,8 @@ const meta: Meta<MasNavigationBar> = {
       },
     },
   },
-  render: (args: MasNavigationBar) => ({
-    props: {
-      ...args,
-    },
+  render: ({...args}) => ({
+    props: args,
     template: `
       <div style="height: 140px">
         <mas-navigation-bar 
@@ -74,7 +71,7 @@ export const Basic: Story = {
   },
 };
 export const Overview: Story = {
-  render: (args: MasNavigationBar) => ({
+  render: () => ({
     template: `
       <div style="height: 140px">
         <mas-navigation-bar 
@@ -99,7 +96,7 @@ export const Overview: Story = {
 };
 
 export const NavigationBarBrandType: Story = {
-  render: (args: MasNavigationBar) => ({
+  render: () => ({
     template: `
       <div style="height: 140px">
         <mas-navigation-bar 
@@ -121,7 +118,7 @@ export const NavigationBarBrandType: Story = {
   }),
 };
 export const NavigationBarProductType: Story = {
-  render: (args: MasNavigationBar) => ({
+  render: () => ({
     template: `
       <div style="height: 140px">
         <mas-navigation-bar 
@@ -143,7 +140,7 @@ export const NavigationBarProductType: Story = {
   }),
 };
 export const NavigationBarWithSearchBar: Story = {
-  render: (args: MasNavigationBar) => ({
+  render: () => ({
     template: `
       <div style="height: 140px">
         <mas-navigation-bar 
@@ -165,7 +162,7 @@ export const NavigationBarWithSearchBar: Story = {
   }),
 };
 export const NavigationBarWithButton: Story = {
-  render: (args: MasNavigationBar) => ({
+  render: () => ({
     template: `
       <div style="height: 140px">
         <mas-navigation-bar 
