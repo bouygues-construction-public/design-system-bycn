@@ -6,10 +6,10 @@
      <div *ngIf="MiddleFooter" [ngClass]="{'middle-footer': true, 'middle-footer-mobile': size === 'mobile', 'middle-footer-default': size === 'desktop'}">
           <ng-container *ngFor="let blockIndex of getBlockIndices(); let i = index">
             <div *ngIf="blockTitles[i] && blockLinks[i]" [ngClass]="{'block-link': true, 'block-link-mobile': size === 'mobile', 'block-link-default': size === 'desktop'}">
-              <h3>{{blockTitles[i]}}</h3>
+              <span class="title">{{blockTitles[i]}}</span>
               <ul>
                 <li *ngFor="let link of blockLinks[i]">
-                  <a [href]="link[1]">{{link[0]}}</a>
+                  <a class="linkMiddle" [href]="link[1]">{{link[0]}}</a>
                 </li>
               </ul>
             </div>
