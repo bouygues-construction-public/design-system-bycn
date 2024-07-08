@@ -9,6 +9,7 @@
     "build:sample-app": "ng build sample-app",
     "start:sample-app": "ng serve sample-app",
     "release:components": "npm run release --workspace projects/components",
+    "release:css": "npm run release --workspace projects/css",
     "deploy-storybook:main": "npx -p @storybook/storybook-deployer storybook-to-ghpages --branch gh-pages --out docs/main",
     "deploy-storybook:develop": "npx -p @storybook/storybook-deployer storybook-to-ghpages --branch gh-pages --out docs/develop",
     "start:css-storybook": "ng run showcases-css:storybook",
