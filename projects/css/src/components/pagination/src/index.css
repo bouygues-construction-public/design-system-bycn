@@ -40,12 +40,16 @@
     padding: 8px 16px;
     font-size: 14px;
     line-height: 20px;
+    width: 36px;
+    height: 36px;
   }
   
   .button-tertiary-medium {
     padding: 10px 20px;
     font-size: 16px;
     line-height: 24px;
+    width: 44px;
+    height: 44px;
   }
   .button-tertiary:not(:disabled):hover {
     background: var(--alpha-grey-hovered, rgba(144, 144, 162, 0.08));
@@ -77,7 +81,7 @@
     line-height: 20px;
   }
 
-  .ContainerItemsPerPage{
+  .containerItemsPerPage{
     display: flex;
     align-items: center;
     gap: 8px;
@@ -149,7 +153,7 @@
 
   .mas-text-input-small{
     padding: 8px 12px;
-    width: 42px;
+    width: 36px;
     height: 36px;
     line-height: 20px; 
   }
