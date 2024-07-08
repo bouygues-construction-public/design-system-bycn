@@ -109,6 +109,14 @@
   min-height: 168px;
 }
 
+.title{
+  font-family:var(--mas-typo_font-family--inter);
+  font-size: var(--mas-typo_body-2-font-size);
+  font-weight: var(--mas-typo_body-font-weight--bold);
+  line-height: var(--mas-typo_body-2-line-height);
+  text-align: left;
+}
+
 /* Container for social media */
 .social-media {
   display: flex;
@@ -200,6 +208,15 @@
   line-height: 20px;
 }
 
+.linkMiddle{
+  font-family:var(--mas-typo_font-family--inter);
+  font-size: var(--mas-typo_body-3-font-size);
+  font-weight: var(--mas-typo_body-font-weight);
+  line-height: var(--mas-typo_body-3-line-height);
+  text-align: left;
+
+}
+
 /* Divider */
 .mas-divider {
 
@@ -207,7 +224,7 @@
 
 /* Default horizontal divider */
 .mas-divider.horizontal-default {
-  width: 1360px;
+  width: 100%;
   height: 1px;
   display: flex;
   justify-content: center;
@@ -237,7 +254,7 @@
 
 /* Horizontal divider on mobile */
 .mas-divider.horizontal-mobile {
-  width: 265px;
+  width: 100%;
   height: 1px;
   display: flex;
   justify-content: center;
