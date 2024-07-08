@@ -1,6 +1,6 @@
 {
   "name": "@masoni/components",
-  "version": "0.0.9",
+  "version": "0.1.1",
   "description": "Bouygues Design System - Masoni components library",
   "peerDependencies": {
     "@angular/common": "^17.2.0",
@@ -15,14 +15,16 @@
     "angular",
     "masoni"
   ],
-  "files": [
-    "dist"
-  ],
   "dependencies": {
     "tslib": "^2.3.0"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "ng build",
+    "release": "cd dist && npm publish"
   },
   "sideEffects": false,
   "devDependencies": {
