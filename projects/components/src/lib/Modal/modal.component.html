@@ -1,12 +1,12 @@
 <div  *ngIf="showModal"  class="modal" (click)="closeModal()">
     <div  [ngClass]="'modalThree modal-' + size" (click)="$event.stopPropagation()">
       <div [ngClass]="'modal-header modal-header-' + size">
-        <h1 [ngClass]="'modal-title-' + size"  >{{ title }}</h1>
+        <span [ngClass]="'modal-title-' + size"  >{{ title }}</span>
         <mas-icon-button #firstFocusable tabindex="-1"  size="small" variant="tertiary" iconAlone="mas-x-outlined mas-math-and-finance--outlined mas-icon" (click)="closeModal()" (keydown)="handleKeydown($event, 'cancel')" aria-label="cancel"></mas-icon-button>
       </div>
       <div [ngClass]="'content-scroll content-scroll-' + size" >
         <div  class="modal-content">
-          <p >{{ content }}</p>
+          <p class="textContent">{{ content }}</p>
           <div  class="custom-ng-content"><ng-content></ng-content></div>
             
         </div>
