@@ -10,9 +10,9 @@
     [required]="required"
     [formControl]="input"
     [value]="value"
-    (change)="onChange($event)"
-    (focus)="_focusChanged(true)"
-    (blur)="_focusChanged(false)"
+    (change)="_onChange($event)"
+    (focus)="_onFocus(true)"
+    (blur)="_onFocus(false)"
   />
   <i
     *ngIf="trailingIcon !== 'none'"

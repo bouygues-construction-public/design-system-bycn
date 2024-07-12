@@ -57,7 +57,7 @@ const meta: Meta<MasInputDropdown> = {
     identifier: {
       description: 'A unique id for the input dropdown. If none is supplied, it will be auto-generated.',
     },
-    invalid: { type: { name: 'boolean', required: false }, description: 'Whether the component is disabled' },
+    invalid: { type: { name: 'boolean', required: false }, description: 'Whether the component is invalid' },
     disabled: { type: { name: 'boolean', required: false }, description: 'Whether the component is disabled' },
     size: {
       type: { name: 'string', required: false },
