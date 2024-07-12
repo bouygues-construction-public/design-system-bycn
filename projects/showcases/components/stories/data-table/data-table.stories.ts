@@ -21,7 +21,7 @@ const meta: Meta<MasDataTable> = {
       },
     },
   },
-  render: (args: MasDataTable) => ({
+  render: (args) => ({
     props: {
       ...args,
     },
@@ -171,7 +171,7 @@ export const Basic: Story = {
 };
 
 export const SingleSelection: Story = {
-  render: (args: MasDataTable) => ({
+  render: (args) => ({
     props: { ...args },
     template: `
     <div style="height: 300px">
@@ -229,7 +229,7 @@ export const SingleSelection: Story = {
   argTypes: {},
 };
 export const MultiSelection: Story = {
-  render: (args: MasDataTable) => ({
+  render: (args) => ({
     props: { ...args },
     template: `
     <div style="height: 300px">
@@ -288,7 +288,7 @@ export const MultiSelection: Story = {
 };
 
 export const HeaderTemplate: Story = {
-  render: (args: MasDataTable) => ({
+  render: (args) => ({
     props: { ...args },
     template: `
     <div style="height: 300px">
@@ -351,7 +351,7 @@ export const HeaderTemplate: Story = {
   },
 };
 export const BodyTemplate: Story = {
-  render: (args: MasDataTable) => ({
+  render: (args) => ({
     props: { ...args },
     template: `
     <div style="height: 300px">
@@ -414,7 +414,7 @@ export const BodyTemplate: Story = {
   argTypes: {},
 };
 export const FooterTemplate: Story = {
-  render: (args: MasDataTable) => ({
+  render: (args) => ({
     props: { ...args },
     template: `
     <div style="height: 300px">
@@ -473,7 +473,7 @@ export const FooterTemplate: Story = {
   },
 };
 export const NoDataTemplate: Story = {
-  render: (args: MasDataTable) => ({
+  render: (args) => ({
     props: { ...args },
     template: `
     <div style="height: 300px">

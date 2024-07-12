@@ -19,10 +19,7 @@ import * as MasFooterStories from './mas-footer.stories';
 The `MasFooter` component provides a consistent place to display secondary content, navigation, site information and copyright data.
 
 The `MasFooter` is used to provide additional information or supplementary functionality to the main user interface. It is typically located at the bottom of the page and may contain navigation links, contact information, legal notices, or other similar elements
-<Canvas >
-    <div>
-        <Story of={MasFooterStories.Default} />
-    </div>
+<Canvas of={MasFooterStories.Default}>
 </Canvas>
 
 ## Props
@@ -43,12 +40,10 @@ The `MasFooter` should be used to complement the primary content and functionali
 
 The `MasFooter` component is accessible on both desktop and mobile devices, ensuring consistent visibility and functionality across various screen sizes.
 - **Desktop**: Tailored for larger screens and desktop devices.
-<Canvas>
-     <Story of={MasFooterStories.Footer_Desktop } />
+<Canvas of={MasFooterStories.Footer_Desktop }>
 </Canvas>
 - **Mobile**: Designed for smaller screens and mobile devices.
-<Canvas>
-     <Story of={MasFooterStories.Footer_Mobile} />
+<Canvas of={MasFooterStories.Footer_Mobile}>
 </Canvas>
 
 
@@ -56,21 +51,17 @@ The `MasFooter` component is accessible on both desktop and mobile devices, ensu
 The `MasFooter` component has 2 different types : default and swap component
 ### `default`:
 ### 1- desktop:
-<Canvas>
-     <Story of={MasFooterStories.Footer_Default_desktop } />
+<Canvas of={MasFooterStories.Footer_Default_desktop }>
 </Canvas>
 ### 2- mobile:
-<Canvas>
-     <Story of={MasFooterStories.Footer_Default_Mobile} />
+<Canvas of={MasFooterStories.Footer_Default_Mobile}>
 </Canvas>
 ### `swapComponent`:
 ### 1- desktop:
-<Canvas>
-     <Story of={MasFooterStories.Footer_SwapComponent_desktop} />
+<Canvas of={MasFooterStories.Footer_SwapComponent_desktop}>
 </Canvas>
 ### 2- mobile:
-<Canvas>
-     <Story of={MasFooterStories.Footer_SwapComponent_mobile} />
+<Canvas of={MasFooterStories.Footer_SwapComponent_mobile}>
 </Canvas>
 
 
@@ -86,8 +77,7 @@ To display the footer with two blocks, use the `blockTitles` and `blockLinks` pr
 The footer can also be configured to display up to three blocks. Use the `blockTitles` and `blockLinks` properties to specify the titles and links of each block. You can specify up to three elements in the `blockTitles` and `blockLinks` arrays. Simply ensure that the `NumberOfBloc` attribute is set to 3 or less to indicate that you want to display up to three blocks in the `MasFooter`.
 
 `Here is an example, two Block links`:
-<Canvas>
-     <Story of={MasFooterStories.Footer_Default_desktop_Two_Blocks} />
+<Canvas of={MasFooterStories.Footer_Default_desktop_Two_Blocks}>
 </Canvas>
 
 
@@ -114,23 +104,20 @@ The `MasFooter` component offers the flexibility to customize social media links
 By utilizing these attributes, you can seamlessly integrate and customize social media links within the footer component to suit your application's needs.
 
 `Here is an example without displaying social media in the MasFooter`:
-<Canvas>
-     <Story of={MasFooterStories.Footer_Default_desktop_Without_socialMedia} />
+<Canvas of={MasFooterStories.Footer_Default_desktop_Without_socialMedia}>
 </Canvas>
 
 ### Footer without Logo
 
 To display the `MasFooter` without the logo, set the `Logotype` attribute to `false`. This will remove the logo from the `MasFooter`.
 `Here is an example without displaying Logotype in the MasFooter`:
-<Canvas>
-     <Story of={MasFooterStories.Footer_Default_desktop_Without_Logotype} />
+<Canvas of={MasFooterStories.Footer_Default_desktop_Without_Logotype}>
 </Canvas>
 
 ### Footer without Middle Footer
 
 To display the `MasFooter` without the middle section, set the `MiddleFooter` attribute to `false`. This will remove the middle section from the `MasFooter`.
-<Canvas>
-     <Story of={MasFooterStories.Footer_Default_desktop_Without_MiddleFooter} />
+<Canvas of={MasFooterStories.Footer_Default_desktop_Without_MiddleFooter}>
 </Canvas>
 ## Guidelines
 

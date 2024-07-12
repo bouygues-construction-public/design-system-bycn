@@ -1,4 +1,4 @@
-import { Meta, Story, StoryObj, moduleMetadata } from "@storybook/angular";
+import { Meta, moduleMetadata, StoryObj } from "@storybook/angular";
 import { MasFooter} from "projects/components/src/lib/Footer";  
 import { MasLogotype, MasIconButton,MasDivider} from "projects/components/src/public-api";
 const argTypes = {
@@ -104,34 +104,34 @@ const argTypes = {
       },
     },
   } as Meta;
+  type Story = StoryObj<MasFooter>;
   
-  const Template: Story<Partial<MasFooter>> = (args: Partial<MasFooter>) => ({
-    props: args,
-    template: `
-    
-      <mas-footer 
-        [Logotype]="Logotype"
-        [size]="size"
-        [MiddleFooter]="MiddleFooter"
-        [variant]="variant"
-        [NumberOfBloc]="NumberOfBloc"
-        [blockTitles]="blockTitles"
-        [blockLinks]="blockLinks"
-        [SocialMedia]="SocialMedia"
-        [socialNetworkTitle]="socialNetworkTitle"
-        [socialMediaIcons]="socialMediaIcons"
-        [socialMediaLinks]="socialMediaLinks"
-        [personalDataTitle]="personalDataTitle"
-        [personalDataUrl]="personalDataUrl"
-        >
-      </mas-footer>
-        
+  const Template: Story = {
+    render: (args) => ({
+        props: args,
+        template: `
+          <mas-footer 
+            [Logotype]="Logotype"
+            [size]="size"
+            [MiddleFooter]="MiddleFooter"
+            [variant]="variant"
+            [NumberOfBloc]="NumberOfBloc"
+            [blockTitles]="blockTitles"
+            [blockLinks]="blockLinks"
+            [SocialMedia]="SocialMedia"
+            [socialNetworkTitle]="socialNetworkTitle"
+            [socialMediaIcons]="socialMediaIcons"
+            [socialMediaLinks]="socialMediaLinks"
+            [personalDataTitle]="personalDataTitle"
+            [personalDataUrl]="personalDataUrl"
+            >
+          </mas-footer>
+        `,
+      })
+  }
 
-    `,
-  });
 
-
-  export const Default = Template.bind({});
+  export const Default = Template;
   Default.args = {
     Logotype: true,
     size: 'desktop', 
@@ -342,33 +342,37 @@ const argTypes = {
        </mas-footer>
     `,
   });
-  export const Footer_SwapComponent_desktop: Story<Partial<MasFooter>> = (args: Partial<MasFooter>) => ({
-    props: {
-      ...args,
-      variant: 'swapComponent',
-      size: 'desktop',
-    },
-    template: `
-      <mas-footer 
-        [size]="'desktop'"
-        [variant]="'swapComponent'">
-      </mas-footer>
-    `,
-  });
+  export const Footer_SwapComponent_desktop: Story = {
+    render: (args) => ({
+      args: {
+        ...args,
+        variant: 'swapComponent',
+        size: 'desktop',
+      },
+      template: `
+        <mas-footer 
+          [size]="'desktop'"
+          [variant]="'swapComponent'">
+        </mas-footer>
+      `,
+    })
+  };
   
-  export const Footer_SwapComponent_mobile: Story<Partial<MasFooter>> = (args: Partial<MasFooter>) => ({
-    props: {
-      ...args,
-      variant: 'swapComponent',
-      size: 'mobile',
-    },
-    template: `
-      <mas-footer 
-        [size]="'mobile'"
-        [variant]="'swapComponent'">
-      </mas-footer>
-    `,
-  });
+  export const Footer_SwapComponent_mobile: Story = {
+    render: (args) => ({
+      args: {
+          ...args,
+          variant: 'swapComponent',
+          size: 'mobile',
+        },
+        template: `
+          <mas-footer 
+            [size]="'mobile'"
+            [variant]="'swapComponent'">
+          </mas-footer>
+        `,
+      })
+  };
 
 
  
