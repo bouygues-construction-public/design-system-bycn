@@ -37,8 +37,10 @@ export default {
   render: ({...args}) => ({
     props: args,
     template: `
+    <div style="background-color: rgba(0, 0, 0, 0.18); padding: 10px;">
             <mas-logotype [width]="width" [height]="height"  [variant]="variant">
             </mas-logotype>
+    </div>
     `
   })
 } as Meta;

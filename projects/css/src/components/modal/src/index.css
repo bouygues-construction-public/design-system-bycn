@@ -145,7 +145,7 @@
 .textContent{
     font-size: var(--mas-typo_body-2-font-size);
     font-weight: var(--mas-typo_body-font-weight);
-    font-family: var(--mas-typo_font-family);
+    font-family: var(--mas-typo_font-family--inter);
     line-height: var(--mas-typo_body-2-line-height);
     letter-spacing:0px;
   }
