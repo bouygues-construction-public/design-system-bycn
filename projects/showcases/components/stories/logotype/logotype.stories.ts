@@ -37,8 +37,10 @@ export default {
   render: ({...args}) => ({
     props: args,
     template: `
+    <div style="background-color: rgba(0, 0, 0, 0.18); padding: 10px;">
             <mas-logotype [width]="width" [height]="height"  [variant]="variant">
             </mas-logotype>
+    </div>
     `
   })
 } as Meta;
@@ -72,9 +74,9 @@ export const BlackLogotype = () => ({
 
 export const WhiteLogotype = () => ({
   template: `
-
+    <div style="background-color: rgba(0, 0, 0, 0.25); padding: 10px;">
       <mas-logotype variant="White" [width]="'250px'" [height]="'127px'">
       </mas-logotype>
-
+    </div>
   `,
 });

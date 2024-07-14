@@ -34,7 +34,7 @@ const meta: Meta<MasNavigationDrawer> = {
       <ng-template #headerComponent>
         <mas-search-bar placeholder="Search here..."></mas-search-bar>
       </ng-template>
-      <mas-navigation-drawer [showDivider]="showDivider" [showLogo]="showLogo" [collapsed]="collapsed" [headerComponent]="headerComponent" [footerComponent]="footerComponent">
+      <mas-navigation-drawer [showDivider]="showDivider" [showLogo]="showLogo" [collapsed]="collapsed">
         <mas-navigation-drawer-section heading="section heading">
           <mas-navigation-item label="Label 1" iconItem="mas-house-outlined mas-maps-and-travel--outlined"></mas-navigation-item>
           <mas-navigation-item label="Label 2" iconItem="mas-identification-badge-outlined mas-people--outlined"></mas-navigation-item>

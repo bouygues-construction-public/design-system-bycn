@@ -1,7 +1,8 @@
 import { dirname, join } from "path";
 import type { StorybookConfig } from '@storybook/angular';
 const config: StorybookConfig = {
-  stories: ['../stories/guidelines/**/*.@(mdx|stories.@(ts|tsx))', '../stories/overview/*.stories.@(mdx)', '../stories/components/**/*.@(mdx|stories.@(ts))', '../stories/components/**/*.@(mdx)'],
+  stories: ['../stories/guidelines/**/*.@(mdx|stories.@(ts|tsx))', '../stories/components/**/*.@(mdx|stories.@(ts))', '../stories/components/**/*.@(mdx)'],
+  
   addons: [
     getAbsolutePath("@storybook/addon-links"),
     getAbsolutePath("@storybook/addon-essentials"),

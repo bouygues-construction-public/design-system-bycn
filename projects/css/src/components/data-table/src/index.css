@@ -1,0 +1,119 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+.mas-data-table {
+  /* text style */
+  .mas-data-table_thead {
+    & > tr {
+      flex-direction: row;
+      display: flex;
+      th {
+        display: flex;
+        flex-direction: row;
+        padding: 8px;
+        width: 280px;
+        height: 40px;
+        align-items: center;
+
+        gap: 4px;
+        flex-shrink: 0;
+        background-color: var(--mas-semantic-color_surface-secondary);
+        border-bottom: 1px solid var(--mas-semantic-color_border-primary);
+        mas-data-table_thead--leading-icon {
+          display: flex;
+        }
+        .mas-data-table_thead--text {
+          display: flex;
+          width: 100%;
+          align-items: first baseline;
+        }
+        mas-data-table_thead--trailing-icon {
+          display: flex;
+        }
+        mas-data-table_thead--sort {
+        }
+        mas-data-table_thead--filter {
+        }
+      }
+      .mas-data-table_thead--select-all {
+        mas-checkbox {
+          display: flex;
+        }
+        .mas-radio-button {
+          display: flex;
+        }
+        width: 40px;
+      }
+    }
+  }
+  .mas-data-table_tbody {
+    & > tr {
+      display: flex;
+      flex-direction: row;
+      td {
+        display: flex;
+        width: 280px;
+        height: 40px;
+        padding: 8px;
+        align-items: center;
+        gap: 4px;
+        flex-shrink: 0;
+        border-bottom: 1px solid var(--mas-semantic-color_border-primary);
+        .mas-data-table_tbody--leading-icon {
+          display: flex;
+        }
+        .mas-data-table-tbody--text {
+        }
+        .mas-data-table_tbody--trailing-icon {
+          display: flex;
+        }
+      }
+      .mas-data-table_tbody--checkbox {
+        mas-checkbox {
+          display: flex;
+        }
+        width: 40px;
+      }
+      .mas-data-table_tbody--radio-button {
+        .mas-radio-button {
+          display: flex;
+        }
+        width: 40px;
+      }
+      /* todo: table data sizes */
+    }
+  }
+  .mas-data-table_tfoot {
+  }
+}
+.mas-data-table--large {
+  .mas-data-table_tbody {
+    & > tr {
+      td {
+        height: 48px;
+      }
+    }
+    .mas-data-table_thead {
+      & > tr {
+        th {
+          height: 48px
+        }
+      }
+    }
+  }
+}
+.mas-data-table--small {
+  .mas-data-table_tbody {
+    & > tr {
+      td {
+        height: 40px;
+      }
+    }
+    .mas-data-table_thead {
+      & > tr {
+        th {
+          height: 40px
+        }
+      }
+    }
+  }
+}

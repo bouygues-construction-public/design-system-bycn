@@ -81,7 +81,7 @@
   font-weight:var(--mas-typo_headline-font-weight);
   font-family: var(--mas-typo_font-family);
   line-height: 32px;
-  color: rgba(12, 12, 13, 1);
+  color: var(--colors-blocks-content-text-styleguide-body, #212121);;
   margin: 0;
 }
 
@@ -92,7 +92,7 @@
   font-weight: var(--mas-typo_headline-font-weight);
   font-family: var(--mas-typo_font-family);
   line-height: 32px;
-  color: rgba(12, 12, 13, 1);
+  color: var(--colors-blocks-content-text-styleguide-body, #212121);;
   margin: 0;
 }
 
@@ -103,7 +103,7 @@
   font-weight:var(--mas-typo_headline-font-weight);
   font-family: var(--mas-typo_font-family);
   line-height: 32px;
-  color: rgba(12, 12, 13, 1);
+  color: var(--colors-blocks-content-text-styleguide-body, #212121);;
   margin: 0;
 }
 
@@ -141,6 +141,13 @@
     text-align: center;
     
   
+  }
+.textContent{
+    font-size: var(--mas-typo_body-2-font-size);
+    font-weight: var(--mas-typo_body-font-weight);
+    font-family: var(--mas-typo_font-family--inter);
+    line-height: var(--mas-typo_body-2-line-height);
+    letter-spacing:0px;
   }
 .modal-content .custom-ng-content{
   display: flex;

@@ -50,6 +50,10 @@ export class MasTextArea implements OnInit {
   @Input() required: boolean = false;
   @Input() formControl: FormControl | undefined;
   @Input() filled: boolean = false;
+  @Input() showLabel: boolean = true;
+  @Input() labelText: string = '';
+  @Input() optional: boolean = true;
+  @Input() infoIcon: boolean = true;
   @Output() change: EventEmitter<any> = new EventEmitter();
   @Output() inputChangeEvent: EventEmitter<string> = new EventEmitter();
   @Input()

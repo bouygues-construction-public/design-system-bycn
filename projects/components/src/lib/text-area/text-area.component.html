@@ -1,4 +1,4 @@
-<ng-content select="mas-label"></ng-content>
+<mas-label *ngIf="showLabel"  [optional]="optional" [infoIcon]="infoIcon" style="width:294px; height:20px;">{{labelText}}</mas-label>
 <div class="textarea-container">
   <div class="mas-text-area-wrapper"   [ngClass]="{'mas-text-area--focus': focused}">
     <textarea
