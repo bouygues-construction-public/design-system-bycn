@@ -1,5 +1,5 @@
 <div *ngIf="variant === 'default'">     
-    <footer [ngClass]="{'footer':true, 'footer-mobile': size === 'mobile', 'footer-default': size === 'desktop'}" (keydown.enter)="handleKeyPress($event)" (keydown.space)="handleKeyPress($event)">
+    <footer [ngClass]="{'footer':true, 'footer-mobile': size === 'mobile', 'footer-default': size === 'desktop'}" (keydown)="handleKeyPress($event)">
      <div *ngIf="Logotype" [ngClass]="{'logo-container': true, 'logo-container-mobile': size === 'mobile', 'logo-container-default': size === 'desktop'}">
          <mas-logotype variant="Default" [width]="'141.732px'" [height]="'72px'"></mas-logotype>
      </div>
