@@ -9,4 +9,8 @@ export class SettingComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+  emailFrequency: any;
+  onChange(event: Event){
+    console.log(event);
+  }
 }
