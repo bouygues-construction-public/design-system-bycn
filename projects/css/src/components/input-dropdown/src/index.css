@@ -8,12 +8,13 @@ body {
   font-size: var(--mas-typo_body-3-font-size);
   line-height: var(--mas-typo_body-3-line-height);
   box-sizing: border-box;
-  inline-size: min-content;
+  min-inline-size: 280px;
   white-space: nowrap;
   position: relative;
 }
 .mas-dropdown-option {
   display: flex;
+  box-sizing: border-box;
   padding: 8px 12px;
   align-items: center;
   cursor: pointer;
@@ -32,6 +33,7 @@ body {
 .mas-input-dropdown_value-wrapper {
   position: relative;
   display: flex;
+  box-sizing: border-box;
   width: 100%;
   align-items: center;
   box-shadow: 0 0 0 1px var(--mas-semantic-color_border-primary);
@@ -46,7 +48,6 @@ body {
   inline-size: inherit;
   block-size: 36px;
   padding-inline: 12px;
-  padding-block: 8px;
   cursor: pointer;
 }
 .mas-input-dropdown_leading-icon {
@@ -86,7 +87,7 @@ body {
   margin-top: 4px;
   padding: 4px;
   z-index: 10 !important;
-  width: 280px;
+  min-width: 280px;
   max-block-size: 296px;
   scrollbar-gutter: stable;
 }

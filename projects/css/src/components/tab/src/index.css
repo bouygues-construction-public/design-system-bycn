@@ -8,6 +8,7 @@
   user-select: none;
   flex-shrink: 0;
   cursor: pointer;
+  box-sizing: border-box;
 }
 /* Size */
 .mas-tab--medium > .mas-tab_header {

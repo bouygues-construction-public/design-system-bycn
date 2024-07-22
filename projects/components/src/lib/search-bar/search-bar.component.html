@@ -1,4 +1,4 @@
-<div class="mas-search-bar_container" role="search">
+<div class="mas-search-bar_container" role="search" >
   <i class="mas-search-bar_leading-icon mas-magnifying-glass-outlined mas-system-and-device--outlined mas-icon"></i>
   <input
     #searchinput
@@ -8,8 +8,11 @@
     [value]="query"
     (keydown.enter)="onSearch(query)"
     (focus)="onFocus(true)"
+    (blur)="onFocus(false)"
   />
-  <span *ngIf="!empty" class="mas-search-bar_clear mas-typo_body-3" (click)="onClearClick($event)">Clear</span>
+  <button *ngIf="!empty" (click)="onClearClick($event)">
+    <span class="mas-search-bar_clear mas-typo_body-3">Clear</span>
+  </button>
   <i
     *ngIf="focused"
     class="mas-search-bar_close-icon mas-x-outlined mas-math-and-finance--outlined mas-icon"

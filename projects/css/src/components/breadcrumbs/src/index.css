@@ -13,6 +13,10 @@
   font-size: var(--mas-typo_body-3-font-size);
   font-weight: var(--mas-typo_body-font-weight);
   line-height: var(--mas-typo_body-3-line-height);
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .mas-breadcrumb-item::after {

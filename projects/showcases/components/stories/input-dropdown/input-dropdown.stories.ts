@@ -51,9 +51,6 @@ const meta: Meta<MasInputDropdown> = {
     placeholder: {
       description: 'Placeholder to be shown if no value has been selected',
     },
-    helperText: {
-      description: 'If required, an helper text can be displayed',
-    },
     identifier: {
       description: 'A unique id for the input dropdown. If none is supplied, it will be auto-generated.',
     },
@@ -87,7 +84,6 @@ export const Basic: Story = {
     invalid: false,
     disabled: false,
     labelText: 'Label text',
-    helperText: 'Helper text',
     placeholder: 'Placeholder text...',
     leadingIcon: 'mas-user-outlined mas-people--outlined',
     multi: false,

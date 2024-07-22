@@ -2,6 +2,7 @@
 
 .pagination{
     display: flex;
+    box-sizing: border-box;
     align-items: flex-start;
     gap: 16px;
   }
@@ -29,6 +30,8 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
+    border: none;
+    background-color: transparent;
     color: var(--Text-Primary, #0C0C0D);
     font-feature-settings: 'calt' off;
     font-family:var(--mas-typo_font-family--inter); 
@@ -52,15 +55,25 @@
     height: 44px;
   }
   .button-tertiary:not(:disabled):hover {
-    background: var(--alpha-grey-hovered, rgba(144, 144, 162, 0.08));
+    background: var(--mas-semantic-color_action-reverse--hovered, #F9F9FA);
   }
-  
-  
-  .bbutton-tertiary:not(:disabled):active,
+  .button-tertiary:not(:disabled):active {
+    background: var(--mas-semantic-color_action-reverse--pressed, #EDEDF0);
+  }
   .button-active {
-      border: 1px solid var(--Action-Primary-Default, #007AB7);
-      background: var(--Surface-Primary, #FFF);
-      color: var(--Action-Primary-Default, #007AB7);
+    border: 1px solid var(--mas-semantic-color_action-primary--default, #007AB7);
+    background: var(--mas-semantic-color_surface-primary, #FFF);
+    color: var(--mas-semantic-color_action-primary--default, #007AB7);
+  }
+  .button-active:not(:disabled):hover {
+    border: 2px solid var(--mas-semantic-color_action-primary--hovered, #006699);
+    background: var(--mas-semantic-color_surface-primary, #FFF);
+    color: var(--mas-semantic-color_action-primary--hovered, #006699);
+  }
+  .button-active:not(:disabled):active {
+    border: 2px solid var(--mas-semantic-color_action-primary--pressed, #005885);
+    background: var(--mas-semantic-color_surface-primary, #FFF);
+    color: var(--mas-semantic-color_action-primary--pressed, #005885);
   }
 
   .totalpages{
@@ -87,8 +100,7 @@
     gap: 8px;
     min-width: 223px;
     min-height: 36px;
-
-
+    max-height: 44px;
   }
   .custom-dropdown{
     position: relative !important;

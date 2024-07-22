@@ -41,7 +41,7 @@ export class MasRadioButton {
   @Input() value: any = null;
   @Input() size: 'S' | 'L' = 'S';
   @Input() formControlName: string | undefined;
-  @Output() change: EventEmitter<RadioButtonClickEvent> = new EventEmitter<RadioButtonClickEvent>();
+  @Output() onChange: EventEmitter<RadioButtonClickEvent> = new EventEmitter<RadioButtonClickEvent>();
   @Output() onFocus: EventEmitter<Event> = new EventEmitter<Event>();
   @Output() onBlur: EventEmitter<Event> = new EventEmitter<Event>();
   @ViewChild('rbutton') inputViewChild!: ElementRef;
@@ -54,23 +54,23 @@ export class MasRadioButton {
       this.inputViewChild.nativeElement.checked = true;
       this.checked = this.inputViewChild.nativeElement.checked;
       this.radioChangeHandler({ originalEvent: event, value: this.value, source: this });
-      this.change.emit({ originalEvent: event, value: this.value, source: this });
+      this.onChange.emit({ originalEvent: event, value: this.value, source: this });
     }
   }
   registerRadioChangeHandler(fn: (event: RadioButtonClickEvent) => void) {
     this.radioChangeHandler = fn;
   }
-  onChange(event: Event) {
+  _onChange(event: Event) {
     this.onClick(event);
   }
   public focus() {
     this.inputViewChild.nativeElement.focus();
   }
-  onInputFocus(event: Event) {
+  _onInputFocus(event: Event) {
     this.focused = true;
     this.onFocus.emit(event);
   }
-  onInputBlur(event: Event) {
+  _onInputBlur(event: Event) {
     this.focused = false;
     this.onBlur.emit(event);
   }

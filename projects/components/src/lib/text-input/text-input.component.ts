@@ -31,7 +31,7 @@ import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR, Validators } from
 export class MasTextInput implements ControlValueAccessor, AfterViewInit {
   static textInputCount = 0;
   /**
-   * A unique id for the MasTextInput If none is supplied, it will be auto-generated.
+   * A unique id for the MasTextInput. If none is supplied, it will be auto-generated.
    */
   @Input() identifier: string = `text-input-${MasTextInput.textInputCount++}`;
   /**
@@ -46,7 +46,7 @@ export class MasTextInput implements ControlValueAccessor, AfterViewInit {
     value ? this.input.disable() : this.input.enable();
   }
   /**
-   * Placeholder to be shown if no value has been selected.
+   * Placeholder to be shown if no value has been entered.
    */
   @Input() placeholder: string = '';
   /**
@@ -81,17 +81,17 @@ export class MasTextInput implements ControlValueAccessor, AfterViewInit {
     }
     return this._invalid;
   }
+  @Input() maxLength: number;
   @Input() filled: boolean = false;
   /**
    * Callback to invoke when value of MasTextInput changes.
    */
   @Output() onChange: EventEmitter<any> = new EventEmitter();
-  @ViewChild('textinput') inputViewChild: ElementRef | undefined;
+  @ViewChild('textinput', {static: true}) inputViewChild: ElementRef | undefined;
 
   protected _disabled: boolean = false;
   protected focused: boolean = false;
   protected input = new FormControl('');
-  protected _labelText: string;
   protected _value: string = '';
   protected _invalid: boolean | undefined = undefined;
   set value(value: string) {
@@ -162,10 +162,10 @@ export class MasTextInput implements ControlValueAccessor, AfterViewInit {
       input.setAttribute('type', 'password');
     }
   }
-  ngAfterViewInit(): void {
+  ngAfterViewInit(): void {  
     if (this.focused) {
       this.inputViewChild?.nativeElement.focus();
-    }
+    } 
     this.input.valueChanges.subscribe((value) => {
       this.onChangeHandler(value?.trim());
       this.value = value ?? '';

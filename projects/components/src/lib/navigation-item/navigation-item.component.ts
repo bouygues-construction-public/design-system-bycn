@@ -1,19 +1,40 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'mas-navigation-item',
   templateUrl:'./navigation-item.component.html'
 })
-export class MasNavigationItem implements OnInit{
+export class MasNavigationItem {
 
-  @Input() label: String = "Label text";
+  /**
+   * Label for MasNavigationItem.
+   */
+  @Input() label: String = "";
+  /**
+   * Whether to show icon.
+   */
   @Input() showIcon: boolean = false;
+  /**
+   * The name of the icon to display on the left side of MasNavigationItem.
+   */
   @Input() iconItem: string | undefined = "mas-circle-filled mas-design--filled"
-  @Input()  showLabel : boolean = true;
-  @Input()  disabled : boolean = false;
-  @Input()  selected : boolean = false;
+  /**
+   * Whether to show label.
+   */
+  @Input() showLabel : boolean = true;
+  /**
+   * Whether the navigation Item should be disabled.
+   */
+  @Input() disabled : boolean = false;
+  /**
+   * Whether the navigation Item is selected.
+   */
+  @Input() selected : boolean = false;
 
-  @Input()  collapsed : boolean = false;
+  /**
+   * Whether the navigation menu is collapsed.
+   */
+  @Input() collapsed : boolean = false;
   @Input() submenu : boolean = false
 
   @Input() badgeContent : string | undefined  
@@ -30,10 +51,6 @@ export class MasNavigationItem implements OnInit{
      
     };
   }
-
-  ngOnInit(): void {
-    console.log(this.badgeContent)
-   }
 
   selectedClass() : string {
     if(this.selected){

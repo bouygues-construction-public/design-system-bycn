@@ -4,6 +4,6 @@ module.exports = {
   theme: theme, 
   plugins: [],
   corePlugins: {
-    // preflight: false,
+    preflight: false,
   },
 };

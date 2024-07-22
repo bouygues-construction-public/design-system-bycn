@@ -57,6 +57,7 @@
 }
 .mas-checkbox-box {
   display: flex;
+  box-sizing: border-box;
   border-width: 1.5px;
   border-style: solid;
   margin-block-start: 0px;

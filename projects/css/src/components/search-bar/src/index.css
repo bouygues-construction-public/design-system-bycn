@@ -2,27 +2,31 @@
 
 .mas-search-bar_container {
   display: flex;
+  box-sizing: border-box;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: var(--mas-semantic-color_surface-tiertiary);
-  width: inherit;
   height: 40px;
   border-radius: var(--mas-radius_full);
   padding: 8px 12px;
   gap: 8px;
-  width: 100%;
+  width: auto;
   ~ input::placeholder {
     user-select: none;
     color: var(--mas-semantic-color_text-tiertiary);
   }
+  button {
+    border: none;
+  }
   .mas-search-bar_input {
     color: var(--mas-semantic-color_text-primary);
     display: block;
-    width: inherit;
+    width: 100%;
     background-color: var(--mas-semantic-color-surface-primary);
     cursor: pointer;
     outline: none;
     transition: var(--mas-transition_focus-visible);
+    border: none;
   }
   .mas-search-bar_leading-icon {
     color: var(--mas-semantic-color_icon-secondary);

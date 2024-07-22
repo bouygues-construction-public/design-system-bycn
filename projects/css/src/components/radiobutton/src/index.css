@@ -52,6 +52,7 @@
 }
 
 .mas-radio-button-container {
+  box-sizing: border-box;
   display: flex;
   border-width: 1px;
   border-style: solid;
