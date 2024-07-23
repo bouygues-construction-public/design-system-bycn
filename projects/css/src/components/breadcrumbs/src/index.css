@@ -30,11 +30,12 @@
   content: '';
 }
 .mas-breadcrumb_overflow {
+  display: flex;
   line-height: var(--mas-typo_body-3-line-height);
   color: var(--mas-semantic-color_text-tiertiary);
   user-select: none;
   font-size: 16px;
-
+  line-height: 20px
 }
 .mas-breadcrumb_overflow::after {
   font-family: arrows--outlined;
