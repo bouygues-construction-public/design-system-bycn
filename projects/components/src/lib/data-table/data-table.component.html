@@ -75,11 +75,12 @@
                   <mas-icon-button
                     [iconAlone]="value[i][column.field].icon"
                     (click)="value[i][column.field].action()"
+                    size="small"
                     variant="tertiary"
                   ></mas-icon-button>
                 </ng-container>
                 <ng-container *ngIf="column.cellType === 'checkbox'">
-                  <mas-checkbox [checked]="value[i][column.field].selected"></mas-checkbox>
+                  <mas-checkbox [checked]="value[i][column.field].selected" size="S"></mas-checkbox>
                 </ng-container>
                 <ng-container *ngIf="column.cellType === 'personal'">
                   <!-- todo: add personal cell -->
@@ -88,6 +89,7 @@
                   <mas-tag
                     [label]="value[i][column.field].label"
                     [leadingIcon]="value[i][column.field]?.icon"
+                    size="small"
                   ></mas-tag>
                 </ng-container>
               </td>
