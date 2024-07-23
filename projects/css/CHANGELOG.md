@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.0.6](https://www.npmjs.com/package/@masoni/css/v/1.0.6) (2024-7-22)
+
+- modify component style according to the removal of tailwind's presets
+
 ## [1.0.5](https://www.npmjs.com/package/@masoni/css/v/1.0.5) (2024-7-5)
 
 - update new css build config (remove tailwind's presets) to prevent conflict with other styling library.

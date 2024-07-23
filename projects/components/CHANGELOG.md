@@ -1,5 +1,24 @@
 # Change Log
 
+## [0.1.3] (2024-7-22)
+
+[npm package](https://www.npmjs.com/package/@masoni/components/v/0.1.3)
+
+### Update on components
+
+- [alert](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/alert/README.md): missing export for alert.service
+- [text-input](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/text-input/README.md): add autofocus and maxLength & fix missing ngModel
+- [logotype](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/logotype/README.md)
+- [pagination](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/pagination/README.md)
+- [modal](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/modal/README.md)
+- [input-dropdown](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/input-dropdown/README.md): fix ngModel error
+- [badge](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/badge/README.md): fix badge number type
+- [search-bar](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/search-bar/README.md): fix focus issue
+
+#### New components
+
+- [footer](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/footer/README.md)
+
 ## [0.0.9] (2024-7-5)
 
 [npm package](https://www.npmjs.com/package/@masoni/components/v/0.0.9)
