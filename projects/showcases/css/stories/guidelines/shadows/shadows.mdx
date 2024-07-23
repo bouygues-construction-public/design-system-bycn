@@ -1,0 +1,49 @@
+import { Meta, Canvas, Source } from '@storybook/blocks';
+import tailwind from '@masoni/css-tailwind-preset';
+
+<Meta title="Guidelines / Shadows" />
+
+# Shadows
+
+> Shadows should be consistent and subtle, with consideration given to the size, direction, and intensity of the light source. The use of shadows should be intentional and purposeful, serving to enhance the user experience rather than hinder it.
+
+For more details, see our [Shadows' guideline](https://zeroheight.com/9b39bb2a0/p/99c217-shadows/b/30ca23)
+
+## Using [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+
+If you don't know CSS Custom Properties, you can see basic usage documentation [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#Basic_usage). All our CSS Custom Properties for colors are listed at "Swatches" column just below:
+
+```
+var(--mas-shadow_100);
+var(--mas-shadow_200);
+var(--mas-shadow_300);
+var(--mas-shadow_400);
+```
+
+## Using [Tailwind CSS](https://tailwindcss.com) utility classes
+
+You can use shadows with Tailwind CSS utility classes about [Box Shadow](https://tailwindcss.com/docs/box-shadow). Here is the list of shadows extented by BYCN IT:
+
+<Source language="json" code={JSON.stringify(tailwind.theme.extend.boxShadow, null, 2)} />
+
+So, here is an example with associated code:
+
+<Canvas>
+  <div class="mas-flex mas-w-full mas-justify-between">
+    <div class="mas-flex mas-shadow-100 mas-rounded-4 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
+      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-shadow-100</span>
+    </div>
+
+    <div class="mas-flex mas-shadow-200 mas-rounded-4 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
+      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-shadow-200</span>
+    </div>
+
+    <div class="mas-flex mas-shadow-300 mas-rounded-4 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
+      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-shadow-300</span>
+    </div>
+
+    <div class="mas-flex mas-shadow-400 mas-rounded-4 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
+      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-shadow-400</span>
+    </div>
+  </div>
+</Canvas>

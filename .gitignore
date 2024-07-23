@@ -43,3 +43,4 @@ Thumbs.db
 **/dist
 **/node_modules
 /docs/main/showcases-css/favicon.svg
+/build-storybook.log

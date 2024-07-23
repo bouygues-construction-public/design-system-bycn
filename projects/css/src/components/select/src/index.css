@@ -1,0 +1,197 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+.mas-select {
+  font-family: var(--mas-typo_font-family--inter);
+  font-weight: var(--mas-typo_body-font-weight);
+  font-size: var(--mas-typo_body-3-font-size);
+  line-height: var(--mas-typo_body-3-line-height);
+  box-sizing: border-box;
+  inline-size: min-content;
+  white-space: nowrap;
+  /* remove default select dropdown arrow */
+  & > select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+}
+.mas-select_icon {
+  color: var(--mas-semantic-color_icon-secondary);
+}
+.mas-option {
+  display: flex;
+  padding: 4px 8px;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+  background-color: var(--mas-semantic-color-surface-primary);
+  align-self: stretch;
+}
+.mas-option_text {
+  color: var(--mas-semantic-color_text-secondary);
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.mas-option_icon {
+  color: var(--mas-semantic-color_icon-secondary);
+}
+.mas-select_value-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  box-shadow: 0 0 0 1px var(--mas-semantic-color_border-primary);
+  border-radius: var(--mas-radius_2);
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  line-height: inherit;
+  inline-size: 280px;
+  block-size: 32px;
+  padding-inline: 12px;
+  cursor: pointer;
+  border:0px;
+  outline:0px;
+
+}
+
+.mas-select-min-line {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.mas-select_placeholder {
+  color: var(--mas-semantic-color_text-tiertiary);
+  user-select: none;
+}
+.mas-select_text {
+  appearance: none;
+  display: block;
+  color: var(--mas-semantic-color_text-primary);
+  background-color: var(--mas-semantic-color-surface-primary);
+  transition: var(--mas-transition_focus-visible);
+}
+
+.mas-select_listbox-wrapper {
+  position: absolute;
+  box-shadow: var(--mas-shadow_200);
+  border-radius: var(--mas-radius_1);
+  background-color: var(--mas-semantic-color_surface-secondary);
+  border: 1px solid var(--mas-semantic-color_border-primary);
+  margin-top: 0.5px;
+  padding: 4px 0;
+  z-index: 10 !important;
+  width: 280px;
+}
+.mas-select--filled {
+  color: var(--mas-semantic-color_text-primary);
+}
+/* ! icons */
+.mas-icon {
+  display: flex;
+  height: 16px;
+  width: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.mas-caretdown-outlined {
+  margin-inline-start: 8px;
+  pointer-events: none;
+  color: var(--mas-semantic-color_icon-secondary);
+}
+.mas-warning-circle-outlined {
+  margin-inline-end: 8px;
+  pointer-events: none;
+  color: var(--mas-semantic-color_icon-secondary);
+}
+mas-option.mas-check-outlined {
+  pointer-events: none;
+  color: var(--mas-semantic-color_icon-secondary);
+}
+/* ! hover */
+.mas-option:hover {
+  background-color: var(--mas-primitive-color_grey300);
+}
+.mas-option--selected:hover {
+  background-color: var(--mas-primitive-color_blue600);
+  color: var(--mas-semantic-color_text-reverse);
+  .mas-check-outlined {
+    color: inherit;
+  }
+  .mas-option_text {
+    color: inherit;
+  }
+}
+.mas.mas-option--selected:hover .mas-check-outlined {
+  color: inherit;
+}
+:not(.mas-select--disabled, .mas-select--invalid, :active)
+  > .mas-select_value-wrapper:hover:not(.mas-select_listbox--opened) {
+  box-shadow: 0 0 0 1px var(--mas-semantic-color_action-tiertiary--default);
+}
+/* ! pressed (active) */
+.mas-option::after:active {
+  position: absolute;
+  content: '';
+}
+
+:not(.mas-select--disabled) {
+  & > .mas-select_listbox--opened {
+    box-shadow: 0 0 0 1px var(--mas-semantic-color_action-primary--default), 0 0 0 4px hsla(200, 100%, 42%, 0.16);
+  }
+  & > .mas-select_value-wrapper:active {
+    box-shadow: 0 0 0 1px var(--mas-semantic-color_action-primary--default), 0 0 0 4px hsla(200, 100%, 42%, 0.16);
+  }
+}
+/* ! disabled */
+
+.mas-select--disabled {
+  opacity: 0.4;
+  & > .mas-select_value-wrapper {
+    cursor: not-allowed;
+  }
+}
+/* ! invalid */
+.mas-select--invalid .mas-select_value-wrapper {
+  box-shadow: 0 0 0 1px var(--mas-primitive-color_red600);
+}
+.mas-select--invalid:not(.mas-select--disabled, :active) > .mas-select_value-wrapper:hover:not(.mas-select_listbox--opened) {
+  box-shadow: 0 0 0 1px var(--mas-primitive-color_red700);
+}
+.mas-select--invalid {
+  & > .mas-select_listbox--opened {
+    box-shadow: 0 0 0 1px var(--mas-primitive-color_red600),
+      0 0 0 4px
+        hsla(
+          var(--mas-primitive-color_red500--h),
+          var(--mas-primitive-color_red500--s),
+          var(--mas-primitive-color_red500--l),
+          0.16
+        );
+  }
+  & > .mas-select_value-wrapper:active {
+    box-shadow: 0 0 0 1px var(--mas-primitive-color_red600),
+      0 0 0 4px
+        hsla(
+          var(--mas-primitive-color_red500--h),
+          var(--mas-primitive-color_red500--s),
+          var(--mas-primitive-color_red500--l),
+          0.16
+        );
+  }
+}
+
+/* ! Size */
+.mas-select--medium {
+  font-family: var(--mas-typo_font-family--inter);
+  font-weight: var(--mas-typo_body-font-weight);
+  font-size: var(--mas-typo_body-2-font-size);
+  line-height: var(--mas-typo_body-2-line-height);
+  .mas-select_value-wrapper {
+    block-size: 40px;
+  }
+}

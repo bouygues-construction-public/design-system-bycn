@@ -1,16 +1,17 @@
 @import '@masoni/css-design-tokens/dist/index.css';
-
 .mas-text-input {
-  width: 280px;
+  width: inherit;
   font-family: var(--mas-typo_font-family--inter);
   font-weight: var(--mas-typo_body-font-weight);
   font-size: var(--mas-typo_body-3-font-size);
   line-height: var(--mas-typo_body-3-line-height);
+  box-sizing: border-box;
 }
 .mas-text-input_input-wrapper {
   position: relative;
   display: flex;
   align-items: center;
+  background-color: var(--mas-semantic-color_surface-primary);
   box-shadow: 0 0 0 1px var(--mas-semantic-color_border-primary);
   border-radius: var(--mas-radius_2);
   color: inherit;
@@ -18,21 +19,35 @@
   font-size: inherit;
   line-height: inherit;
   margin: 0;
-  min-inline-size: 280px;
-  inline-size: 280px;
-  block-size: 32px;
+  min-inline-size: inherit;
+  inline-size: inherit;
+  block-size: 36px;
   padding-inline: 12px;
   cursor: pointer;
   gap: 8px;
+  & > input {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: none;
+    width: 100%;
+  }
 }
 .mas-text-input-min-line {
   /* width: 100%; */
 }
-
+.mas-leading-icon {
+  color: var(--mas-semantic-color_icon-secondary);
+}
+.mas-trailing-icon {
+  color: var(--mas-semantic-color_icon-secondary);
+}
 .mas-text-input_input {
+  color: var(--mas-semantic-color_text-primary);
   display: block;
-  min-inline-size: 208px;
-  inline-size: 100%;
+  /* min-inline-size: inherit; */
+  inline-size: inherit;
   background-color: var(--mas-semantic-color-surface-primary);
   cursor: pointer;
   outline: none;
@@ -51,17 +66,25 @@
   color: var(--mas-semantic-color_text-tiertiary);
 }
 /* ! hover */
-:not(.mas-text-input--disabled) > .mas-text-input_input-wrapper:hover {
+:not(.mas-text-input--disabled, .mas-text-input--invalid)
+  > .mas-text-input_input-wrapper:hover:not(.mas-text-input--focus) {
   box-shadow: 0 0 0 1px var(--mas-semantic-color_action-tiertiary--default);
-}
-:not(.mas-text-input--disabled) > .mas-text-input_input-wrapper:hover {
-  box-shadow: 0 0 0 1px var(--mas-semantic-color_action-primary--default), 0 0 0 4px hsla(200, 100%, 42%, 0.16);
 }
 /* ! invalid */
 .mas-text-input--invalid .mas-text-input_input-wrapper {
   box-shadow: 0 0 0 1px var(--mas-primitive-color_red600);
 }
 .mas-text-input--invalid .mas-text-input_input-wrapper:hover {
+  box-shadow: 0 0 0 1px var(--mas-primitive-color_red600),
+    0 0 0 4px
+      hsla(
+        var(--mas-primitive-color_red500--h),
+        var(--mas-primitive-color_red500--s),
+        var(--mas-primitive-color_red500--l),
+        0.16
+      );
+}
+.mas-text-input--invalid .mas-text-input--focus {
   box-shadow: 0 0 0 1px var(--mas-primitive-color_red600),
     0 0 0 4px
       hsla(
@@ -80,12 +103,18 @@
   line-height: var(--mas-typo_body-2-line-height);
 
   .mas-text-input_input-wrapper {
-    block-size: 40px;
+    block-size: 44px;
   }
 }
 /* ! disabled */
-.mas-text-input--disabled .mas-text-input_input-wrapper {
+.mas-text-input--disabled {
   opacity: 0.4;
+  & > .mas-text-input_input-wrapper {
+    cursor: not-allowed;
+    & > .mas-text-input_input {
+      cursor: not-allowed;
+    }
+  }
 }
 /* ! Filled */
 .mas-text-input--filled input::placeholder {

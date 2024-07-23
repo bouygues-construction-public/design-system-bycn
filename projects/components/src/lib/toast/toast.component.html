@@ -1,0 +1,17 @@
+<div class="mas-toast"  [ngClass]="{'toast-show ':toastShow, 'toast-hide ': !toastShow}" *ngIf="show">
+    <div class="mas-toast-content">
+        <div class="mas-toast-label">
+            {{description}}
+        </div>
+        <div class="mas-toast-buttons" *ngIf="actionBtn || closeBtn">
+            <div *ngIf="actionBtn" class="mas-toast-action-button" >
+                <div (click)="action()"  class="text-button">
+                    {{buttonLabel}}
+                </div>
+            </div>
+            <div *ngIf="closeBtn" class="mas-toast-close"  (click)="closeToast()">
+                <i class="mas-x-outlined mas-math-and-finance--outlined " ></i> 
+            </div>
+        </div>
+    </div>
+</div>

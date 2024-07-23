@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "security-and-warnings--filled";
+    src: url("../../fonts/filled/security-and-warnings/security-and-warnings.ttf?3bde6897e16a2bad6bced1292da96042") format("truetype"),
+url("../../fonts/filled/security-and-warnings/security-and-warnings.woff?3bde6897e16a2bad6bced1292da96042") format("woff"),
+url("../../fonts/filled/security-and-warnings/security-and-warnings.woff2?3bde6897e16a2bad6bced1292da96042") format("woff2");
+}
+
+i[class^="mas-security-and-warnings--filled"]:before, i[class*=" mas-security-and-warnings--filled"]:before {
+    font-family: security-and-warnings--filled !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-detective-filled:before {
+    content: "\e3e4";
+}
+.mas-fingerprint-filled:before {
+    content: "\e3e5";
+}
+.mas-fingerprint-simple-filled:before {
+    content: "\e3e6";
+}
+.mas-fire-extinguisher-filled:before {
+    content: "\e3e7";
+}
+.mas-info-filled:before {
+    content: "\e3e8";
+}
+.mas-key-filled:before {
+    content: "\e3e9";
+}
+.mas-keyhole-filled:before {
+    content: "\e3ea";
+}
+.mas-lock-filled:before {
+    content: "\e3eb";
+}
+.mas-lock-key-filled:before {
+    content: "\e3ec";
+}
+.mas-lock-key-open-filled:before {
+    content: "\e3ed";
+}
+.mas-lock-laminated-filled:before {
+    content: "\e3ee";
+}
+.mas-lock-laminated-open-filled:before {
+    content: "\e3ef";
+}
+.mas-lock-open-filled:before {
+    content: "\e3f0";
+}
+.mas-lock-simple-filled:before {
+    content: "\e3f1";
+}
+.mas-lock-simple-open-filled:before {
+    content: "\e3f2";
+}
+.mas-password-filled:before {
+    content: "\e3f3";
+}
+.mas-prohibit-filled:before {
+    content: "\e3f4";
+}
+.mas-prohibit-inset-filled:before {
+    content: "\e3f5";
+}
+.mas-question-filled:before {
+    content: "\e3f6";
+}
+.mas-radioactive-filled:before {
+    content: "\e3f7";
+}
+.mas-seal-check-filled:before {
+    content: "\e3f8";
+}
+.mas-seal-filled:before {
+    content: "\e3f9";
+}
+.mas-seal-question-filled:before {
+    content: "\e3fa";
+}
+.mas-seal-warning-filled:before {
+    content: "\e3fb";
+}
+.mas-shield-check-filled:before {
+    content: "\e3fc";
+}
+.mas-shield-checkered-filled:before {
+    content: "\e3fd";
+}
+.mas-shield-chevron-filled:before {
+    content: "\e3fe";
+}
+.mas-shield-filled:before {
+    content: "\e3ff";
+}
+.mas-shield-plus-filled:before {
+    content: "\e400";
+}
+.mas-shield-slash-filled:before {
+    content: "\e401";
+}
+.mas-shield-star-filled:before {
+    content: "\e402";
+}
+.mas-shield-warning-filled:before {
+    content: "\e403";
+}
+.mas-siren-filled:before {
+    content: "\e404";
+}
+.mas-vault-filled:before {
+    content: "\e405";
+}
+.mas-wall-filled:before {
+    content: "\e406";
+}
+.mas-warning-circle-filled:before {
+    content: "\e407";
+}
+.mas-warning-diamond-filled:before {
+    content: "\e408";
+}
+.mas-warning-filled:before {
+    content: "\e409";
+}
+.mas-warning-octagon-filled:before {
+    content: "\e40a";
+}

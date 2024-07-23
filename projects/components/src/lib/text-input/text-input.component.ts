@@ -1,14 +1,14 @@
-import { AfterViewInit, Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
-import '@masoni/icons/dist/css/mas-icons.css';
-import '@masoni/css-text-input/dist/index.css';
 import {
-  ControlValueAccessor,
-  FormControl,
-  FormControlName,
-  NG_VALUE_ACCESSOR,
-  NgForm,
-  Validators,
-} from '@angular/forms';
+  AfterViewInit,
+  Component,
+  ElementRef,
+  EventEmitter,
+  forwardRef,
+  Input,
+  Output,
+  ViewChild,
+} from '@angular/core';
+import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR, Validators } from '@angular/forms';
 
 @Component({
   selector: 'mas-text-input',
@@ -16,7 +16,7 @@ import {
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
-      useExisting: MasTextInput,
+      useExisting: forwardRef(() => MasTextInput),
       multi: true,
     },
   ],
@@ -28,15 +28,15 @@ import {
     '[class.mas-text-input--medium]': 'size === "M"',
   },
 })
-export class MasTextInput implements OnInit, ControlValueAccessor, AfterViewInit {
-  focused: boolean = false;
-  _focusChanged(isFocused: boolean) {
-    if (isFocused !== this.focused) {
-      this.focused = isFocused;
-    }
-  }
+export class MasTextInput implements ControlValueAccessor, AfterViewInit {
   static textInputCount = 0;
+  /**
+   * A unique id for the MasTextInput. If none is supplied, it will be auto-generated.
+   */
   @Input() identifier: string = `text-input-${MasTextInput.textInputCount++}`;
+  /**
+   * Whether the component is disabled.
+   */
   @Input()
   get disabled(): boolean {
     return this._disabled;
@@ -45,28 +45,32 @@ export class MasTextInput implements OnInit, ControlValueAccessor, AfterViewInit
     this._disabled = value;
     value ? this.input.disable() : this.input.enable();
   }
-  protected _disabled: boolean = false;
-  @Input()
-  get labelText(): string {
-    return this._labelText;
-  }
-  set labelText(value: string) {
-    this._labelText = value;
-  }
-  protected input = new FormControl('');
-  protected _labelText: string;
-  protected _value: string = '';
-  model: any;
-  @ViewChild('textinput') inputViewChild: ElementRef | undefined;
-  @Input() formControlName: FormControlName | undefined;
+  /**
+   * Placeholder to be shown if no value has been entered.
+   */
   @Input() placeholder: string = '';
+  /**
+   * Whether the component is required.
+   */
   @Input() required: boolean = false;
+  /**
+   * The size of the text-input. Availabel options: 'S', 'M'. Default: 'S'.
+   */
   @Input() size: 'M' | 'S' = 'S';
+  /**
+   * Indicates that an element is to be focused on page load.
+   */
+  @Input() set autofocus(isFocused: boolean) {
+    this.focused = isFocused !== false;
+  }
   @Input() formControl: FormControl | undefined;
+  /**
+   * Input type of the element. Available options: 'text', 'search', 'tel', 'password', 'email'. Default: 'text'.
+   */
   @Input() type: 'search' | 'tel' | 'text' | 'password' | 'email' = 'text';
-  @Input() filled: boolean = false;
-  @Output() change: EventEmitter<any> = new EventEmitter();
-  @Output() inputChangeEvent: EventEmitter<string> = new EventEmitter();
+  /**
+   * Whether the component is invalid.
+   */
   @Input()
   set invalid(value: boolean | undefined) {
     this._invalid = value;
@@ -77,9 +81,22 @@ export class MasTextInput implements OnInit, ControlValueAccessor, AfterViewInit
     }
     return this._invalid;
   }
+  @Input() maxLength: number;
+  @Input() filled: boolean = false;
+  /**
+   * Callback to invoke when value of MasTextInput changes.
+   */
+  @Output() onChange: EventEmitter<any> = new EventEmitter();
+  @ViewChild('textinput', {static: true}) inputViewChild: ElementRef | undefined;
+
+  protected _disabled: boolean = false;
+  protected focused: boolean = false;
+  protected input = new FormControl('');
+  protected _value: string = '';
   protected _invalid: boolean | undefined = undefined;
   set value(value: string) {
     this._value = value;
+    this.onChangeHandler(value);
   }
   get value(): string {
     return this._value;
@@ -91,26 +108,27 @@ export class MasTextInput implements OnInit, ControlValueAccessor, AfterViewInit
     let icon: string = 'none';
     switch (this.type) {
       case 'search':
-        icon = 'mas-magnifyingglass-outlined';
+        icon = 'mas-magnifying-glass-outlined mas-system-and-device--outlined';
         break;
       case 'email':
-        icon = 'mas-envelopesimple-outlined';
+        icon = 'mas-envelope-simple-outlined mas-communication--outlined';
         break;
       case 'password':
-        icon = 'mas-lockkey-outlined';
+        icon = 'mas-lock-key-outlined mas-security-and-warnings--outlined';
         break;
       case 'tel':
-        icon = 'mas-phone-outlined';
+        icon = 'mas-phone-outlined mas-communication--outlined';
         break;
     }
     return icon;
   }
   get trailingIcon(): string {
-    return this.type === 'password' ? 'mas-eye-filled' : 'none';
+    return this.type === 'password' ? 'mas-eye-filled mas-design--filled' : 'none';
   }
   protected onChangeHandler = (_: any) => {};
   protected onTouchedHandler = () => {};
   writeValue(obj: any): void {
+    this.value = obj;
     this.input.setValue(obj);
   }
   registerOnChange(fn: any): void {
@@ -124,16 +142,18 @@ export class MasTextInput implements OnInit, ControlValueAccessor, AfterViewInit
   }
   updateModel(event: Event) {
     let newModelValue = this.value;
-
-    this.onChangeHandler(newModelValue);
-    this.model = newModelValue;
     if (this.formControl) {
       this.formControl.setValue(newModelValue);
     }
-    this.change.emit({ value: newModelValue, originalEvent: event });
+    this.onChange.emit({ value: newModelValue, originalEvent: event });
   }
-  onChange(event: Event) {
+  _onChange(event: Event) {
     this.updateModel(event);
+  }
+  _onFocus(isFocused: boolean) {
+    if (isFocused !== this.focused) {
+      this.focused = isFocused;
+    }
   }
   showPassword(input: HTMLElement) {
     if (input.getAttribute('type') === 'password') {
@@ -142,8 +162,10 @@ export class MasTextInput implements OnInit, ControlValueAccessor, AfterViewInit
       input.setAttribute('type', 'password');
     }
   }
-  ngOnInit() {}
-  ngAfterViewInit(): void {
+  ngAfterViewInit(): void {  
+    if (this.focused) {
+      this.inputViewChild?.nativeElement.focus();
+    } 
     this.input.valueChanges.subscribe((value) => {
       this.onChangeHandler(value?.trim());
       this.value = value ?? '';

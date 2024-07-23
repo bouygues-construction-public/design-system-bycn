@@ -23,7 +23,8 @@ const meta: Meta<MasTextInput> = {
       },
     },
   },
-  render: (args: MasTextInput) => ({
+  render: ({...args}) => ({
+
     template: `
     <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
     <mas-text-input [type]="type" [required]="required" [disabled]="disabled" [placeholder]="placeholder" [size]="size" [filled]="filled">
@@ -31,9 +32,7 @@ const meta: Meta<MasTextInput> = {
       <mas-helper >Helper text goes here</mas-helper>
     </mas-text-input>
     `,
-    props: {
-      ...args,
-    },
+    props: args
   }),
   argTypes: {
     onChange: { action: 'change' },
@@ -74,7 +73,7 @@ export const Basic: Story = {
 };
 
 export const Overview: Story = {
-  render: (args: MasTextInput) => ({
+  render: () => ({
     template: `
     <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
     <mas-text-input [type]="type" [required]="required" [disabled]="disabled" placeholder="Placeholder text" [size]="size" [filled]="filled">
@@ -85,7 +84,7 @@ export const Overview: Story = {
   }),
 };
 export const Error: Story = {
-  render: (args: MasTextInput) => ({
+  render: () => ({
     template: `
     <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
     <mas-text-input size="S" [filled]="false" [invalid]="true">
@@ -95,7 +94,7 @@ export const Error: Story = {
   }),
 };
 export const HelperText: Story = {
-  render: (args: MasTextInput) => ({
+  render: () => ({
     template: `
     <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
     <mas-text-input size="S" [filled]="false" [invalid]="false">
@@ -105,7 +104,7 @@ export const HelperText: Story = {
   }),
 };
 export const Size: Story = {
-  render: (args: MasTextInput) => ({
+  render: () => ({
     template: `
     <mas-label [optional]="true" [infoIcon]="true">Small Text Input</mas-label>
     <mas-text-input size="S" [filled]="false" [invalid]="false">
@@ -118,7 +117,7 @@ export const Size: Story = {
   }),
 };
 export const Type: Story = {
-  render: (args: MasTextInput) => ({
+  render: () => ({
     template: `
     <br>
       <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
@@ -141,7 +140,7 @@ export const Type: Story = {
   }),
 };
 export const Disabled: Story = {
-  render: (args: MasTextInput) => ({
+  render: () => ({
     template: `
     <mas-label>Disabled State</mas-label>
     <mas-text-input [disabled]="true" placeholder="Placeholder text" [filled]="false">

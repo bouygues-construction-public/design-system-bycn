@@ -1,0 +1,16 @@
+<div class="mas-popover-container" style="position: relative;display: inline-block; background-color: rgb(255, 255, 255);margin: 0px;">
+  <span [innerHTML]="text" (mouseenter)="focusOnTarget($event);showPopover()" (mouseleave)="LostfocusOnTarget();hidePopover()"></span>  
+  <div #masPopover class="mas-popover" *ngIf="isVisible" [ngClass]="placementToDisplay" [style.width]="width" (mouseenter)="focusOnPopOver();showPopover()" (mouseleave)="LostfocusOnPopOver();hidePopover()">
+    <div class="padding-bar"></div> 
+    <div class="arrow"></div>
+        <div class="mas-popover-inner">
+          <div class="mas-popover-title" *ngIf="title">{{ title }}</div>
+          <div class="mas-popover-content" *ngIf="content">{{ content }}</div>
+          <div  class="mas-popover-button">
+            <div (click)="close()" *ngIf="buttonLabel" class="text-button text-right">
+                {{buttonLabel}}
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

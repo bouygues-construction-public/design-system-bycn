@@ -1,0 +1,35 @@
+.mas-icon {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    margin-bottom: 8px;
+}
+.mas-icon-label {
+    font-size: 15;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+.mas-icon-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: hsla(240, 9%, 98%, 1);
+}
+.icon-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 8px;
+    border-radius: 2px;
+    padding: 16px;
+    user-select: none;
+    background-color: white;
+}

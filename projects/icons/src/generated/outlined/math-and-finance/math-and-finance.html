@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>math-and-finance</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .preview {
+            width: 100px;
+            display: inline-block;
+            margin: 10px;
+        }
+        .preview .inner {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            background: #f5f5f5;
+            -webkit-border-radius: 3px 3px 0 0;
+            -moz-border-radius: 3px 3px 0 0;
+            border-radius: 3px 3px 0 0;
+        }
+        .preview .inner  {
+            line-height: 85px;
+            font-size: 40px;
+            color: #333;
+        }
+        .label {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px;
+            font-size: 10px;
+            font-family: Monaco, monospace;
+            color: #666;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background: #ddd;
+            -webkit-border-radius: 0 0 3px 3px;
+            -moz-border-radius: 0 0 3px 3px;
+            border-radius: 0 0 3px 3px;
+            color: #666;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="math-and-finance.css" />
+</head>
+<body>
+
+    <h1>math-and-finance</h1>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-bank-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>bank-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-calculator-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>calculator-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-chart-bar-horizontal-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>chart-bar-horizontal-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-chart-bar-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>chart-bar-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-chart-donut-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>chart-donut-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-chart-line-down-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>chart-line-down-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-chart-line-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>chart-line-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-chart-line-up-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>chart-line-up-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-chart-pie-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>chart-pie-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-chart-pie-slice-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>chart-pie-slice-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-chart-polar-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>chart-polar-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-chart-scatter-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>chart-scatter-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-divide-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>divide-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-equals-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>equals-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-function-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>function-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-graph-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>graph-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-infinity-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>infinity-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-math-operations-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>math-operations-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-minus-circle-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>minus-circle-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-minus-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>minus-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-minus-square-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>minus-square-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-circle-eight-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-circle-eight-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-circle-five-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-circle-five-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-circle-four-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-circle-four-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-circle-nine-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-circle-nine-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-circle-one-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-circle-one-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-circle-seven-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-circle-seven-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-circle-six-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-circle-six-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-circle-three-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-circle-three-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-circle-two-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-circle-two-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-circle-zero-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-circle-zero-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-eight-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-eight-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-five-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-five-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-four-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-four-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-nine-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-nine-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-one-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-one-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-seven-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-seven-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-six-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-six-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-square-eight-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-square-eight-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-square-five-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-square-five-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-square-four-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-square-four-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-square-nine-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-square-nine-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-square-one-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-square-one-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-square-seven-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-square-seven-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-square-six-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-square-six-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-square-three-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-square-three-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-square-two-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-square-two-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-square-zero-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-square-zero-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-three-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-three-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-two-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-two-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-number-zero-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>number-zero-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-percent-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>percent-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-pi-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>pi-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-plus-circle-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>plus-circle-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-plus-minus-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>plus-minus-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-plus-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>plus-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-plus-square-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>plus-square-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-radical-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>radical-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-sigma-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>sigma-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-table-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>table-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-trend-down-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>trend-down-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-trend-up-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>trend-up-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-x-circle-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>x-circle-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-x-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>x-outlined</span>
+        </div>
+
+
+        <div class="preview">
+            <span class="inner">
+                <i class="mas mas-x-square-outlined"></i>
+            </span>
+            <br>
+            <span class='label'>x-square-outlined</span>
+        </div>
+
+
+</body>
+</html>

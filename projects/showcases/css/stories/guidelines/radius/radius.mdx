@@ -1,0 +1,80 @@
+import { Meta, Source, Canvas } from '@storybook/blocks';
+import tailwind from '@masoni/css-tailwind-preset';
+
+<Meta title="Guidelines / Radius" />
+
+# Radius
+
+> Corner radius is the degree of curvature at the corners of an element, such as a button or a card. Corner radius play an important role in establishing visual hierarchy and creating a consistent visual language. Here are key principles to keep in mind when designing with corner radius.
+
+For more details, see our [Radius' guideline](https://zeroheight.com/9b39bb2a0/p/0230b8-corner-radius/b/967aaa)
+
+## Using [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+
+If you don't know CSS Custom Properties, you can see basic usage documentation [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#Basic_usage). All our CSS Custom Properties for colors are listed at "Swatches" column just below:
+
+```
+var(--mas-radius_0);
+var(--mas-radius_05);
+var(--mas-radius_1);
+var(--mas-radius_2);
+var(--mas-radius_3);
+var(--mas-radius_4);
+var(--mas-radius_5);
+var(--mas-radius_6);
+var(--mas-radius_7);
+var(--mas-radius_8);
+var(--mas-radius_full);
+```
+
+## Using [Tailwind CSS](https://tailwindcss.com) utility classes
+
+You can use shadows with Tailwind CSS utility classes about [Border Radius](https://tailwindcss.com/docs/border-radius). Here is the list of radius extented by BYCN IT:
+
+<Source language="json" code={JSON.stringify(tailwind.theme.extend.borderRadius, null, 2)} />
+
+So, here is an example with associated code:
+
+<Canvas>
+  <div class="mas-flex mas-flex-wrap mas-w-full mas-justify-between">
+    <div class="mas-flex mas-rounded-0.5 mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
+      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-0.5</span>
+    </div>
+
+    <div class="mas-flex mas-rounded-1 mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
+      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-1</span>
+    </div>
+
+    <div class="mas-flex mas-rounded-2 mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
+      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-2</span>
+    </div>
+
+    <div class="mas-flex mas-rounded-3 mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
+      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-3</span>
+    </div>
+
+    <div class="mas-flex mas-rounded-4 mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
+      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-4</span>
+    </div>
+
+    <div class="mas-flex mas-rounded-5 mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
+      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-5</span>
+    </div>
+
+    <div class="mas-flex mas-rounded-6 mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
+      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-6</span>
+    </div>
+
+    <div class="mas-flex mas-rounded-7 mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
+      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-7</span>
+    </div>
+
+    <div class="mas-flex mas-rounded-8 mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
+      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-8</span>
+    </div>
+
+    <div class="mas-flex mas-rounded-full mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
+      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-full</span>
+    </div>
+  </div>
+</Canvas>
