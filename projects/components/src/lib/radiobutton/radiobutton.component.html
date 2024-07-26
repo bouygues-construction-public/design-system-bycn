@@ -28,5 +28,5 @@
       </svg>
     </ng-container>
   </div>
-  <label [for]="identifier" class="mas-radio-button_label">{{ labelText }}</label>
+  <label *ngIf="labelText !== ''" [for]="identifier" class="mas-radio-button_label">{{ labelText }}</label>
 </div>

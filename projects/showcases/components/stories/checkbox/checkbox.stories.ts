@@ -88,8 +88,11 @@ export const Overview: Story = {
   render: () => ({
     template: `
       <mas-checkbox labelText="Sand"></mas-checkbox>
+      <br/>
       <mas-checkbox labelText="Bricks" [checked]="true"></mas-checkbox>
+      <br/>
       <mas-checkbox labelText="Stone and Rock" [disabled]=true [checked]="true"></mas-checkbox>
+      <br/>
       <mas-checkbox labelText="Wood and timber" [disabled]="true"></mas-checkbox>
       <br>
       <mas-checkbox labelText="I accept the term and conditions of BYCN" size="L"></mas-checkbox>
