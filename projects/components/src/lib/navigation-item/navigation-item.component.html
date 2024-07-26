@@ -1,0 +1,20 @@
+<div [class]="classes" [class.disabled]="disabled">   
+    <div class="mas-nav-item-icon">
+        <div  class="mas-navigation-item-icon"> 
+            <i  *ngIf="true"  [class]="adaptedIcon()"></i> 
+        </div>
+        <div *ngIf="!collapsed"   class="mas-navigation-item-label">{{label}}</div>
+    </div> 
+    <div class="mas-nav-badge-submenu">
+        <div *ngIf="badgeContent" class="mas-nav-badge" [ngClass]="{'mas-nav-badge--collapsed': collapsed}">
+          <span class="badgeLabel">
+            {{badgeContent}}
+          </span> 
+        </div>
+        <div *ngIf="submenu && !collapsed"   class="mas-navigation-item-submenu-icon"> 
+            <i class="{{submenuIcon}}"> </i> 
+        </div>
+    </div> 
+  
+</div>
+

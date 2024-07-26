@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "brands--outlined";
+    src: url("../../fonts/outlined/brands/brands.ttf?a2306d446f84430a9e5e5b929ab42fc4") format("truetype"),
+url("../../fonts/outlined/brands/brands.woff?a2306d446f84430a9e5e5b929ab42fc4") format("woff"),
+url("../../fonts/outlined/brands/brands.woff2?a2306d446f84430a9e5e5b929ab42fc4") format("woff2");
+}
+
+i[class^="mas-brands--outlined"]:before, i[class*=" mas-brands--outlined"]:before {
+    font-family: brands--outlined !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-mas-amazon-logo-outlined:before {
+    content: "\e553";
+}
+.mas-mas-android-logo-outlined:before {
+    content: "\e554";
+}
+.mas-mas-angular-logo-outlined:before {
+    content: "\e555";
+}
+.mas-mas-app-store-logo-outlined:before {
+    content: "\e556";
+}
+.mas-mas-apple-logo-outlined:before {
+    content: "\e557";
+}
+.mas-mas-apple-podcasts-logo-outlined:before {
+    content: "\e558";
+}
+.mas-mas-behance-logo-outlined:before {
+    content: "\e559";
+}
+.mas-mas-coda-logo-outlined:before {
+    content: "\e55a";
+}
+.mas-mas-codepen-logo-outlined:before {
+    content: "\e55b";
+}
+.mas-mas-codesandbox-logo-outlined:before {
+    content: "\e55c";
+}
+.mas-mas-dev-to-logo-outlined:before {
+    content: "\e55d";
+}
+.mas-mas-discord-logo-outlined:before {
+    content: "\e55e";
+}
+.mas-mas-dribbble-logo-outlined:before {
+    content: "\e55f";
+}
+.mas-mas-dropbox-logo-outlined:before {
+    content: "\e560";
+}
+.mas-mas-facebook-logo-outlined:before {
+    content: "\e561";
+}
+.mas-mas-figma-logo-outlined:before {
+    content: "\e562";
+}
+.mas-mas-framer-logo-outlined:before {
+    content: "\e563";
+}
+.mas-mas-github-logo-outlined:before {
+    content: "\e564";
+}
+.mas-mas-gitlab-logo-outlined:before {
+    content: "\e565";
+}
+.mas-mas-gitlab-logo-simple-outlined:before {
+    content: "\e566";
+}
+.mas-mas-goodreads-logo-outlined:before {
+    content: "\e567";
+}
+.mas-mas-google-chrome-logo-outlined:before {
+    content: "\e568";
+}
+.mas-mas-google-drive-logo-outlined:before {
+    content: "\e569";
+}
+.mas-mas-google-logo-outlined:before {
+    content: "\e56a";
+}
+.mas-mas-google-photos-logo-outlined:before {
+    content: "\e56b";
+}
+.mas-mas-google-play-logo-outlined:before {
+    content: "\e56c";
+}
+.mas-mas-google-podcasts-logo-outlined:before {
+    content: "\e56d";
+}
+.mas-mas-instagram-logo-outlined:before {
+    content: "\e56e";
+}
+.mas-mas-linkedin-logo-outlined:before {
+    content: "\e56f";
+}
+.mas-mas-linux-logo-outlined:before {
+    content: "\e570";
+}
+.mas-mas-medium-logo-outlined:before {
+    content: "\e571";
+}
+.mas-mas-messenger-logo-outlined:before {
+    content: "\e572";
+}
+.mas-mas-meta-logo-outlined:before {
+    content: "\e573";
+}
+.mas-mas-microsoft-excel-logo-outlined:before {
+    content: "\e574";
+}
+.mas-mas-microsoft-outlook-logo-outlined:before {
+    content: "\e575";
+}
+.mas-mas-microsoft-powerpoint-logo-outlined:before {
+    content: "\e576";
+}
+.mas-mas-microsoft-teams-logo-outlined:before {
+    content: "\e577";
+}
+.mas-mas-microsoft-word-logo-outlined:before {
+    content: "\e578";
+}
+.mas-mas-notion-logo-outlined:before {
+    content: "\e579";
+}
+.mas-mas-ny-times-logo-outlined:before {
+    content: "\e57a";
+}
+.mas-mas-patreon-logo-outlined:before {
+    content: "\e57b";
+}
+.mas-mas-paypal-logo-outlined:before {
+    content: "\e57c";
+}
+.mas-mas-phosphor-logo-outlined:before {
+    content: "\e57d";
+}
+.mas-mas-pinterest-logo-outlined:before {
+    content: "\e57e";
+}
+.mas-mas-read-cv-logo-outlined:before {
+    content: "\e57f";
+}
+.mas-mas-reddit-logo-outlined:before {
+    content: "\e580";
+}
+.mas-mas-sketch-logo-outlined:before {
+    content: "\e581";
+}
+.mas-mas-slack-logo-outlined:before {
+    content: "\e582";
+}
+.mas-mas-snapchat-logo-outlined:before {
+    content: "\e583";
+}
+.mas-mas-soundcloud-logo-outlined:before {
+    content: "\e584";
+}
+.mas-mas-spotify-logo-outlined:before {
+    content: "\e585";
+}
+.mas-mas-square-logo-outlined:before {
+    content: "\e586";
+}
+.mas-mas-stack-overflow-logo-outlined:before {
+    content: "\e587";
+}
+.mas-mas-stripe-logo-outlined:before {
+    content: "\e588";
+}
+.mas-mas-telegram-logo-outlined:before {
+    content: "\e589";
+}
+.mas-mas-tidal-logo-outlined:before {
+    content: "\e58a";
+}
+.mas-mas-tiktok-logo-outlined:before {
+    content: "\e58b";
+}
+.mas-mas-twitch-logo-outlined:before {
+    content: "\e58c";
+}
+.mas-mas-twitter-logo-outlined:before {
+    content: "\e58d";
+}
+.mas-mas-wechat-logo-outlined:before {
+    content: "\e58e";
+}
+.mas-mas-whatsapp-logo-outlined:before {
+    content: "\e58f";
+}
+.mas-mas-windows-logo-outlined:before {
+    content: "\e590";
+}
+.mas-mas-youtube-logo-outlined:before {
+    content: "\e591";
+}

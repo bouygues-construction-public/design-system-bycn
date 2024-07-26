@@ -112,7 +112,64 @@
         }
       }
     },
-
+    "sample-app": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/sample-app",
+      "sourceRoot": "projects/sample-app/src",
+      "prefix": "sample",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/sample-app",
+            "index": "projects/sample-app/src/index.html",
+            "main": "projects/sample-app/src/main.ts",
+            "polyfills": ["zone.js"],
+            "tsConfig": "projects/sample-app/tsconfig.app.json",
+            "styles": [
+              "node_modules/@masoni/css-design-tokens/dist/index.css",
+              "node_modules/@masoni/css/dist/index.css",
+              "node_modules/@masoni/icons/dist/css/filled/index.css",
+              "node_modules/@masoni/icons/dist/css/outlined/index.css",
+              "projects/sample-app/src/styles.scss"
+            ],
+            "assets": ["projects/sample-app/src/assets"]
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "all",
+              "baseHref": "/dist/sample-app/"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "sample-app:build:production"
+            },
+            "development": {
+              "buildTarget": "sample-app:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        }
+      }
+    },
     "showcases-icons": {
       "projectType": "application",
       "schematics": {},
@@ -131,7 +188,7 @@
           "options": {
             "configDir": "projects/showcases/icons/.storybook",
             "compodoc": false,
-            "outputDir": "dist/storybook/icons/showcases"
+            "outputDir": "dist/showcase-icons"
           }
         }
       }
@@ -161,10 +218,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "projects/shared/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }

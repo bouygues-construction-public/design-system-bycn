@@ -1,6 +1,6 @@
 {
   "name": "@masoni/css",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "description": "Bouygues Design System - Masoni global CSS styles library",
   "keywords": [
     "design-system",
@@ -10,7 +10,7 @@
   ],
   "main": "dist/index.css",
   "files": [
-    "dist"
+    "dist/**"
   ],
   "homepage": "https://github.com/bouygues-construction/design-system-bycn",
   "repository": {
@@ -24,14 +24,15 @@
     "build": "npm run build:design-tokens && npm run build:components && npm run build:base16",
     "build:base16": "postcss src/index.css -o dist/index.css",
     "build:components": "npm run build -w src/components",
-    "build:design-tokens": "npm run build -w src/design_tokens"
+    "build:design-tokens": "npm run build -w src/design_tokens",
+    "release": "npm publish"
   },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/bouygues-construction/design-system-bycn/issues"
   },
   "devDependencies": {
-    "@masoni/css-design-tokens": "file:src/design_tokens",
+    "@masoni/css-design-tokens": "^0.0.3",
     "@masoni/css-tailwind-preset": "file:presets/tailwind",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.23",

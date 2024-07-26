@@ -1,0 +1,240 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+.mas-popover {
+  position: absolute;
+  display: none;
+  z-index: 1060;
+  min-width: 250px;
+  opacity: 0;
+
+  background: var(--Text-Primary, #0C0C0D);
+  padding: 16px;
+  gap: 4px;
+
+  box-shadow: 0px 3px 3px 0px rgba(115, 115, 115, 0.25);
+  border:1px solid var(--border-primary, #D7D7DB);
+  border-radius: 4px;
+
+  color: var(--Text-Reverse, #FFF);
+  font-feature-settings: 'calt' off;
+  font-family: var(--mas-typo_font-family--inter); 
+  font-size:   var( --mas-typo_body-3-font-size) ;
+  font-style: normal;
+  line-height: var(--mas-typo_body-3-line-height); /* 142.857% */
+  
+}
+.padding-bar {
+  position: absolute;
+  padding: 10px;
+  transform: translateY(20px);
+}
+
+.mas-popover.top-left .padding-bar,
+.mas-popover.top-right .padding-bar,
+.mas-popover.top .padding-bar {
+  bottom: 0;
+  right: 0;
+  transform: translateY(20px);
+  width: inherit;
+}
+
+.mas-popover.bottom-left .padding-bar,
+.mas-popover.bottom-right .padding-bar,
+.mas-popover.bottom .padding-bar {
+  left : 0;
+  top: 0;
+  transform: translateY(-20px);
+  width: inherit;
+}
+.mas-popover.left .padding-bar,
+.mas-popover.right .padding-bar {
+  top : 0 ;
+  height: 100%;
+}
+.mas-popover.left .padding-bar  {
+  right: 0;
+  transform: translateX(20px);
+}
+
+.mas-popover.right .padding-bar {
+  left : 0 ; 
+  transform: translateX(-20px);
+}
+
+.mas-popover.top {
+  display: inline-block;
+  top: 0;
+  left: 52%;
+  transform: translate(-50%, calc(-100% - 12px));
+}
+
+
+.mas-popover.top .arrow {
+  bottom: -5px;
+  border-width: 6px 4px 0;
+  border-top-color: #000000;
+  color: transparent;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.mas-popover.top-left {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  transform: translate(0%, calc(-100% - 12px));
+}
+
+.mas-popover.top-left .arrow {
+  bottom: -5px;
+  border-width: 6px 4px 0;
+  border-top-color: #000000;
+  color: transparent;
+  left: 15px;
+}
+
+.mas-popover.top-right {
+  display: inline-block;
+  top: 0;
+  right: 0;
+  transform: translate(0%, calc(-100% - 12px));
+}
+
+.mas-popover.top-right .arrow {
+  bottom: -5px;
+  border-width: 6px 4px 0;
+  border-top-color: #000000;
+  color: transparent;
+  right: 15px;
+}
+
+.mas-popover.bottom {
+  display: inline-block;
+  bottom: 0;
+  left: 52%;
+  transform: translate(-50%, calc(100% + 12px));
+}
+
+.mas-popover.bottom .arrow {
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 4px 6px;
+  border-bottom-color: #000000;
+  color: transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.mas-popover.bottom-left {
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+  transform: translate(0%, calc(100% + 12px));
+}
+
+.mas-popover.bottom-left .arrow {
+  top: -5px;
+  left: 15px;
+  border-width: 0 4px 6px;
+  border-bottom-color: #000000;
+  color: transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.mas-popover.bottom-right {
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+  transform: translate(0%, calc(100% + 12px));
+}
+
+
+.mas-popover.bottom-right .arrow {
+  top: -5px;
+  right: 15px;
+  border-width: 0 4px 6px;
+  border-bottom-color: #000000;
+  color: transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.mas-popover.left {
+  display: inline-block;
+  left: 0;
+  top: 50%;
+  transform: translate(calc(-100% - 12px), -50%);
+}
+
+.mas-popover.left .arrow {
+  top: 50%;
+  transform: translateY(-50%);
+  right: -5px;
+  border-width: 4px 0 4px 6px;
+  border-left-color: #000000;
+  color: transparent;
+}
+
+.mas-popover.right {
+  display: inline-block;
+  right: 0;
+  top: 50%;
+  transform: translate(calc(100% + 12px), -50%);
+}
+
+.mas-popover.right .arrow {
+  left: -5px;
+  border-width: 4px 6px 4px 0;
+  border-right-color: #000000;
+  color: transparent;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mas-popover .arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.mas-popover-title {
+  /* Body/Semibold/Body 3 */
+  font-weight:var(--mas-typo_caption-font-weight);
+  margin-bottom: 12px;
+}
+
+.mas-popover-content {
+  /* Body/Semibold/Body 3 */
+  font-weight: var(  --mas-typo_body-font-weight );
+  margin-bottom: 12px;
+}
+
+.mas-popover-button {
+  display: flex;
+  justify-content: end;
+}
+
+.mas-popover-button .text-button {
+  color: var(--Text-Primary, #0C0C0D);
+
+  border-radius: 8px;
+  border: 1px solid var(--Border-Primary, #D7D7DB);
+  background: var(--Action-Reverse-Default, #FFF);
+  font-family: var(--mas-typo_font-family--inter); 
+  font-size:   var( --mas-typo_body-3-font-size) ;
+  font-weight:var(--mas-typo_caption-font-weight);
+  line-height: var( --mas-typo_body-3-line-height); /* 142.857% */
+
+  display: flex;
+  width: fit-content;
+
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.mas-popover-button .text-button:hover {
+  background: var(--action-reverse-hovered, #F9F9FA);
+}
+.mas-popover-button .text-button:active {
+  background: var(--action-reverse-pressed, #EDEDF0); 
+}

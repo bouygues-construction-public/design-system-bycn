@@ -1,0 +1,43 @@
+<div  *ngIf="showModal"  class="modal" (click)="closeModal()">
+    <div  [ngClass]="'modalThree modal-' + size" (click)="$event.stopPropagation()">
+      <div [ngClass]="'modal-header modal-header-' + size">
+        <span [ngClass]="'modal-title-' + size"  >{{ title }}</span>
+        <mas-icon-button #firstFocusable tabindex="-1"  size="small" variant="tertiary" iconAlone="mas-x-outlined mas-math-and-finance--outlined mas-icon" (click)="closeModal()" (keydown)="handleKeydown($event, 'cancel')" aria-label="cancel"></mas-icon-button>
+      </div>
+      <div [ngClass]="'content-scroll content-scroll-' + size" >
+        <div  class="modal-content">
+          <p class="textContent">{{ content }}</p>
+          <div  class="custom-ng-content"><ng-content></ng-content></div>
+            
+        </div>
+
+      </div>
+  
+      <div [ngClass]="'modal-footer-' + size" *ngIf="size !== 'small' && buttonOptions === 'Show_Buttons'">
+        <mas-button tabindex="0" (keydown)="handleKeydown($event, 'confirm')"  class="btn" (click)="cancelAction()" variant="secondary" size="small" aria-label="cancel">{{ buttonLabelsecondary }}</mas-button>                   
+        <mas-button tabindex="0" (keydown)="handleKeydown($event, 'confirm')"   class="btn" (click)="confirmAction()" variant="primary" size="small" #lastFocusable aria-label="confirm">{{ buttonLabelprimary }}</mas-button>
+      </div>
+      <div [ngClass]="'modal-footer-' + size" *ngIf="size === 'small' && buttonOptions === 'Show_Buttons'"> 
+        <a tabindex="0" (keydown)="handleKeydown($event, 'confirm')"  style="width: 100%;" MasButton class="btnS" (click)="confirmAction()" variant="primary" size="small" #lastFocusable aria-label="confirm">{{ buttonLabelprimary }}</a> 
+        <a tabindex="0" (keydown)="handleKeydown($event, 'confirm')"  style="width: 100%;" MasButton class="btnS" (click)="confirmAction()" variant="secondary" size="small" aria-label="cancel">{{ buttonLabelsecondary }}</a>                   
+              
+      </div>
+      <div [ngClass]="'modal-footer-' + size" class="single-button-footer" *ngIf="size === 'small' && buttonOptions === 'Show_Secondary_Button'">
+        <a tabindex="0" (keydown)="handleKeydown($event, 'confirm')"  style="width: 100%;" MasButton class="btnS" (click)="confirmAction()" variant="secondary" size="small" #lastFocusable aria-label="confirm">{{ buttonLabelsecondary }}</a>
+                           
+      </div>
+      <div [ngClass]="'modal-footer-' + size" class="single-button-footer" *ngIf="size === 'small' && buttonOptions === 'Show_Primary_Button'">
+        <a tabindex="0" (keydown)="handleKeydown($event, 'confirm')"  style="width: 100%;" MasButton class="btnS" (click)="confirmAction()" variant="primary" size="small" #lastFocusable aria-label="confirm">{{ buttonLabelprimary }}</a> 
+      </div>
+     
+      <div [ngClass]="'modal-footer-' + size" *ngIf="size !== 'small' && buttonOptions === 'Show_Primary_Button'">
+        <mas-button tabindex="0" (keydown)="handleKeydown($event, 'confirm')"  class="btn" (click)="confirmAction()" variant="primary" size="small" #lastFocusable aria-label="confirm" aria-label="cancel">{{ buttonLabelprimary }}</mas-button>
+      </div>
+      <div [ngClass]="'modal-footer-' + size" *ngIf="size !== 'small' && buttonOptions === 'Show_Secondary_Button'">
+        <mas-button tabindex="0" (keydown)="handleKeydown($event, 'confirm')"  class="btn " (click)="cancelAction()" variant="secondary" size="small" aria-label="cancel">{{ buttonLabelsecondary }}</mas-button>                   
+      </div>
+    
+    </div>
+  </div>
+
+

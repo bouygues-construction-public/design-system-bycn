@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "health-and-wellness--filled";
+    src: url("../../fonts/filled/health-and-wellness/health-and-wellness.ttf?9428dab88a69c51c6c02e17817796fab") format("truetype"),
+url("../../fonts/filled/health-and-wellness/health-and-wellness.woff?9428dab88a69c51c6c02e17817796fab") format("woff"),
+url("../../fonts/filled/health-and-wellness/health-and-wellness.woff2?9428dab88a69c51c6c02e17817796fab") format("woff2");
+}
+
+i[class^="mas-health-and-wellness--filled"]:before, i[class*=" mas-health-and-wellness--filled"]:before {
+    font-family: health-and-wellness--filled !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-bandaids-filled:before {
+    content: "\e22c";
+}
+.mas-barbell-filled:before {
+    content: "\e22d";
+}
+.mas-bed-filled:before {
+    content: "\e22e";
+}
+.mas-brain-filled:before {
+    content: "\e22f";
+}
+.mas-dna-filled:before {
+    content: "\e230";
+}
+.mas-face-mask-filled:before {
+    content: "\e231";
+}
+.mas-first-aid-filled:before {
+    content: "\e232";
+}
+.mas-first-aid-kit-filled:before {
+    content: "\e233";
+}
+.mas-flask-filled:before {
+    content: "\e234";
+}
+.mas-hand-heart-filled:before {
+    content: "\e235";
+}
+.mas-hand-soap-filled:before {
+    content: "\e236";
+}
+.mas-heartbeat-filled:before {
+    content: "\e237";
+}
+.mas-lifebuoy-filled:before {
+    content: "\e238";
+}
+.mas-pill-filled:before {
+    content: "\e239";
+}
+.mas-prescription-filled:before {
+    content: "\e23a";
+}
+.mas-pulse-filled:before {
+    content: "\e23b";
+}
+.mas-stethoscope-filled:before {
+    content: "\e23c";
+}
+.mas-syringe-filled:before {
+    content: "\e23d";
+}
+.mas-test-tube-filled:before {
+    content: "\e23e";
+}
+.mas-toilet-filled:before {
+    content: "\e23f";
+}
+.mas-toilet-paper-filled:before {
+    content: "\e240";
+}
+.mas-tooth-filled:before {
+    content: "\e241";
+}
+.mas-virus-filled:before {
+    content: "\e242";
+}

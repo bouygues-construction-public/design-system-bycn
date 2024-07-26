@@ -1,10 +1,11 @@
 {
   "name": "@masoni/components",
-  "version": "0.0.1",
+  "version": "0.1.3",
   "description": "Bouygues Design System - Masoni components library",
   "peerDependencies": {
-    "@angular/common": "^15.2.0",
-    "@angular/core": "^15.2.0"
+    "@angular/common": "^17.2.0",
+    "@angular/core": "^17.2.0",
+    "@masoni/icons": "^0.0.1"
   },
   "homepage": "https://github.com/bouygues-construction/design-system-bycn",
   "keywords": [
@@ -20,5 +21,44 @@
   "publishConfig": {
     "access": "public"
   },
-  "sideEffects": false
+  "type": "module",
+  "scripts": {
+    "build": "ng build",
+    "release": "cd dist && npm publish"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "@masoni/css-action-dropdown": "^0.0.1",
+    "@masoni/css-alert": "^0.0.1",
+    "@masoni/css-avatar": "^0.0.2",
+    "@masoni/css-badge": "^0.0.2",
+    "@masoni/css-breadcrumbs": "file:../css/src/components/breadcrumbs",
+    "@masoni/css-button": "^0.0.2",
+    "@masoni/css-checkbox": "^0.0.1",
+    "@masoni/css-chip": "^0.0.1",
+    "@masoni/css-circular-progress-bar": "^0.0.1",
+    "@masoni/css-divider": "^0.0.1",
+    "@masoni/css-icon-button": "^0.0.1",
+    "@masoni/css-input-dropdown": "^0.0.3",
+    "@masoni/css-link": "^0.0.1",
+    "@masoni/css-logotype": "^0.0.2",
+    "@masoni/css-modal": "^0.0.1",
+    "@masoni/css-navigation-bar": "^0.0.1",
+    "@masoni/css-navigation-drawer": "^0.0.1",
+    "@masoni/css-navigation-item": "^0.0.1",
+    "@masoni/css-pagination": "^0.0.2",
+    "@masoni/css-popover": "^0.0.1",
+    "@masoni/css-progress-bar": "^0.0.1",
+    "@masoni/css-radio-button": "^0.0.2",
+    "@masoni/css-search-bar": "^0.0.1",
+    "@masoni/css-select": "^0.0.3",
+    "@masoni/css-sub-elements": "^0.0.2",
+    "@masoni/css-tab": "^0.0.1",
+    "@masoni/css-tag": "^0.0.2",
+    "@masoni/css-text-area": "^0.0.2",
+    "@masoni/css-text-input": "^0.0.3",
+    "@masoni/css-toast": "^0.0.1",
+    "@masoni/css-toggle-button": "^0.0.1",
+    "@masoni/css-tooltip": "^0.0.1"
+  }
 }
