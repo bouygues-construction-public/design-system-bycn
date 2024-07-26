@@ -4,7 +4,6 @@ import {
   ContentChildren,
   ElementRef,
   EventEmitter,
-  HostListener,
   Input,
   Optional,
   Output,
@@ -48,6 +47,9 @@ const MINIMUM_OVERFLOW_THRESHOLD = 4;
 })
 export class MasBreadcrumb implements AfterContentInit {
   @ContentChildren(MasBreadcrumbItem) children: QueryList<MasBreadcrumbItem>;
+  /**
+   * Threshold of items to display before collapse.
+   */
   @Input()
   set threshold(threshold: number) {
     this._threshold = threshold;
