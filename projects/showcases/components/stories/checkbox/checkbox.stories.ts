@@ -24,10 +24,8 @@ const meta: Meta<MasCheckbox> = {
       },
     },
   },
-  render: (args: MasCheckbox) => ({
-    props: {
-      ...args,
-    },
+  render: ({...args}) => ({
+    props: args,
   }),
 };
 
@@ -78,20 +76,23 @@ export const Determinate: Story = {
   },
 };
 export const Size: Story = {
-  render: (args: MasCheckbox) => ({
+  render: () => ({
     template: `
       <mas-checkbox labelText="Small size" size="S"></mas-checkbox>
       <br>
       <mas-checkbox labelText="Large size" size="L"></mas-checkbox>
       `,
   }),
-}
+};
 export const Overview: Story = {
-  render: (args: MasCheckbox) => ({
+  render: () => ({
     template: `
       <mas-checkbox labelText="Sand"></mas-checkbox>
+      <br/>
       <mas-checkbox labelText="Bricks" [checked]="true"></mas-checkbox>
+      <br/>
       <mas-checkbox labelText="Stone and Rock" [disabled]=true [checked]="true"></mas-checkbox>
+      <br/>
       <mas-checkbox labelText="Wood and timber" [disabled]="true"></mas-checkbox>
       <br>
       <mas-checkbox labelText="I accept the term and conditions of BYCN" size="L"></mas-checkbox>

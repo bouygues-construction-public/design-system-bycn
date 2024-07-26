@@ -22,9 +22,8 @@ const meta: Meta<MasSelect> = {
       },
     },
   },
-  render: (args: MasSelect) => ({
+  render: () => ({
     props: {
-      ...args,
     },
     template: `
     <div style="height: 150px;">
@@ -70,7 +69,7 @@ export const Basic: Story = {
   },
 };
 export const Overview: Story = {
-  render: (args: MasSelect) => ({
+  render: () => ({
     template: `
     <div style="height: 150px;">
       <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>
@@ -88,7 +87,7 @@ export const Overview: Story = {
 };
 
 export const Error: Story = {
-  render: (args: MasSelect) => ({
+  render: () => ({
     template: `
     <div style="height: 150px;">
       <mas-label [optional]="true" [infoIcon]="true">With Error Message</mas-label>
@@ -103,7 +102,7 @@ export const Error: Story = {
   }),
 };
 export const HelperText: Story = {
-  render: (args: MasSelect) => ({
+  render: () => ({
     template: `
     <div style="height: 150px;">
       <mas-label [optional]="true" [infoIcon]="true">With Helper Text</mas-label>
@@ -119,7 +118,7 @@ export const HelperText: Story = {
 };
 
 export const Disabled: Story = {
-  render: (args: MasSelect) => ({
+  render: () => ({
     template: `
     <mas-label>Disabled State</mas-label>
     <mas-select placeholder="Placeholder text" [size]="size" [filled]="false" [disabled]="true">
@@ -132,7 +131,7 @@ export const Disabled: Story = {
   }),
 };
 export const Size: Story = {
-  render: (args: MasSelect) => ({
+  render: () => ({
     template: `
     <mas-label [optional]="true" [infoIcon]="true">Small select</mas-label>
     <mas-select placeholder="Placeholder text" size="S" [filled]="false" [disabled]="false">
@@ -153,7 +152,7 @@ export const Size: Story = {
   }),
 };
 export const Filled: Story = {
-  render: (args: MasSelect) => ({
+  render: () => ({
     template: `
     <div style="height: 150px;">
       <mas-label [optional]="true" [infoIcon]="true">Label text</mas-label>

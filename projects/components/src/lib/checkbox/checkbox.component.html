@@ -35,6 +35,5 @@
       </svg>
     </ng-container>
   </div>
-  <label class="mas-checkbox_label" [for]="identifier">{{ labelText }}</label>
+  <label *ngIf="labelText !== ''" class="mas-checkbox_label" [for]="identifier">{{ labelText }}</label>
 </div>
-<br />

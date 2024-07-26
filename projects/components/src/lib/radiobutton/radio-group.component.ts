@@ -27,10 +27,14 @@ import { RadioButtonClickEvent } from './radio-change';
       multi: true,
     },
   ],
+  host: {
+    '[class.mas-radio-group--horizontal]': 'orientation === "horizontal"',
+    '[class.mas-radio-group--vertical]': 'orientation === "vertical"',
+  },
 })
 export class MasRadioGroup implements ControlValueAccessor, AfterContentInit, AfterViewInit {
   static radioCount = 0;
-  @Output() change: EventEmitter<RadioButtonClickEvent> = new EventEmitter<RadioButtonClickEvent>();
+  @Output() onChange: EventEmitter<RadioButtonClickEvent> = new EventEmitter<RadioButtonClickEvent>();
   @ContentChildren(forwardRef((): any => MasRadioButton)) radios?: QueryList<MasRadioButton>;
   @Input()
   set name(value: string) {
@@ -47,6 +51,7 @@ export class MasRadioGroup implements ControlValueAccessor, AfterContentInit, Af
   get disabled(): boolean {
     return this._disabled;
   }
+  @Input() orientation: 'horizontal' | 'vertical' = 'vertical';
   protected _disabled: boolean = false;
   protected _name: string = `radio-group-${MasRadioGroup.radioCount++}`;
   protected _selected: MasRadioButton | null = null;
@@ -73,6 +78,7 @@ export class MasRadioGroup implements ControlValueAccessor, AfterContentInit, Af
       this._value = newValue;
       this.updateSelectedRadioFromValue();
       this.checkSelectedRadio();
+      this.onModelChange(newValue)
     }
   }
   get value() {
@@ -96,7 +102,7 @@ export class MasRadioGroup implements ControlValueAccessor, AfterContentInit, Af
         }
       });
       if (this.selected && !this.value) {
-        this._value = this.selected.value;
+        this.value = this.selected.value;
       }
     }
   }
@@ -110,8 +116,8 @@ export class MasRadioGroup implements ControlValueAccessor, AfterContentInit, Af
           this.selected.checked = false;
         }
         this._selected = event.source;
-        this._value = event.value;
-        this.change.emit(event);
+        this.value = event.value;
+        this.onChange.emit(event);
         this._controlValueAccessorChangeFn(event.value);
         this._onTouched();
       });
@@ -122,7 +128,7 @@ export class MasRadioGroup implements ControlValueAccessor, AfterContentInit, Af
       setTimeout(() => {
         this.radios!.forEach((radio) => {
           radio.name = this.name;
-          radio.checked = this.value === radio.value
+          radio.checked = this.value === radio.value;
         });
       });
     }
@@ -137,8 +143,8 @@ export class MasRadioGroup implements ControlValueAccessor, AfterContentInit, Af
   ngAfterViewInit() {
     this.updateRadios();
   }
-  public onModelChange: Function = () => {};
-  public onModelTouched: Function = () => {};
+  public onModelChange: Function = (_: any) => {};
+  public onModelTouched: Function = (_: any) => {};
   writeValue(value: any): void {
     this.value = value;
     this.updateSelectedRadioFromValue();

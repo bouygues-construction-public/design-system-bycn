@@ -1,0 +1,89 @@
+<div class="container">
+  <div class="title_container">
+    <h1 class="mas-typo_headline-3">Settings</h1>
+    <mas-icon-button variant="tertiary" iconAlone="mas-x-outlined mas-math-and-finance--outlined" class="exit-button"></mas-icon-button>
+  </div>
+  <mas-tab-view [skeleton]="false" orientation="vertical">
+    <mas-tab size="M" header="Profile">
+      <div class="tab-content">
+        <div class="firstName">
+          <mas-label>First name</mas-label>
+          <mas-text-input size="S" type="text" placeholder="Enter your First name" size="S"></mas-text-input>
+        </div>
+        <div class="lastName">
+          <mas-label>Last name</mas-label>
+          <mas-text-input type="text" placeholder="Enter your Last name" size="S"></mas-text-input>
+        </div>
+        <div class="email">
+          <mas-label>Email</mas-label>
+          <mas-text-input type="email" placeholder="example@gmail.com" size="S"></mas-text-input>
+        </div>
+        <div class="password">
+          <mas-label>Password</mas-label>
+          <mas-text-input type="password" placeholder="Enter your Password" size="S"></mas-text-input>
+        </div>
+        <mas-button
+          size="small"
+          variant="secondary"
+          iconLeft="mas-lock-key-outlined mas-security-and-warnings--outlined"
+          >Change Password</mas-button
+        >
+      </div>
+    </mas-tab>
+    <mas-tab size="M" header="Notifications">
+      <div class="tab-content">
+        <div class="notification-control_container">
+          <span class="label mas-typo_body-3">Enable email Notification</span>
+          <mas-toggle-button [checked]="false" [identifier]="'my-toggle-button'" size="L"></mas-toggle-button>
+        </div>
+        <div class="email-frequency-control_container">
+          <span class="label mas-typo_body-3">Email frequency</span>
+          <mas-input-dropdown placeholder="Choose email frequency" type="text" size="S" [multi]="true" [(ngModel)]="emailFrequency" (onChange)="onChange($event)">
+            <mas-dropdown-option value="once-a-week">Once a week</mas-dropdown-option>
+            <mas-dropdown-option value="twice-a-week">Twice a week</mas-dropdown-option>
+          </mas-input-dropdown>
+        </div>
+        <div class="in-app-noti-control_container">
+          <span class="label mas-typo_body-3">Enable in-app Notification</span>
+          <mas-toggle-button [checked]="true" size="L" [disabled]="true"></mas-toggle-button>
+        </div>
+      </div>
+    </mas-tab>
+    <mas-tab size="M" header="Languages & Time zone">
+      <div class="tab-content">
+        <div class="app-language_container">
+          <mas-label>App language</mas-label>
+          <mas-input-dropdown placeholder="Choose app language" type="text" size="S" [multi]="false">
+            <mas-dropdown-option value="Francais">Francais</mas-dropdown-option>
+          </mas-input-dropdown>
+        </div>
+        <div class="time-zone_container">
+          <mas-label>Time Zone</mas-label>
+          <mas-input-dropdown placeholder="Choose time zone" type="text" size="S" [multi]="false">
+            <mas-dropdown-option value="+1">GMT +1 (Paris, Madrid, Rome)</mas-dropdown-option>
+          </mas-input-dropdown>
+        </div>
+      </div>
+    </mas-tab>
+    <mas-tab size="M" header="Download settings">
+      <div class="tab-content">
+        <div class="download-destination_container">
+          <mas-label>Download destination folder</mas-label>
+          <mas-input-dropdown placeholder="Choose download destination" type="text" size="S" [multi]="false">
+            <mas-dropdown-option value="user/download">User/Download</mas-dropdown-option>
+          </mas-input-dropdown>
+        </div>
+        <div class="upload-button">
+          <mas-button
+            variant="secondary"
+            iconLeft="mas-folder-notch-outlined mas-office-and-editing--outlined"
+          >Upload folder</mas-button>
+        </div>
+      </div>
+    </mas-tab>
+  </mas-tab-view>
+  <div class="action_container">
+    <button class="cancel-button" MasButton variant="secondary" size="small">Cancel</button>
+    <button class="confirm-button" MasButton variant="primary" size="small">Confirm</button>
+  </div>
+</div>

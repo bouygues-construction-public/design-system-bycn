@@ -1,4 +1,4 @@
-import { Meta, Story, StoryObj, moduleMetadata } from "@storybook/angular";
+import { Meta, StoryObj, moduleMetadata } from "@storybook/angular";
 import { MasTag } from "projects/components/src/lib/tag";  
 
 const icons = ['mas-arrow-arc-left-outlined mas-arrows--outlined',
@@ -62,23 +62,22 @@ export default {
       },
     },
   },
-} as Meta;
-
-const Template: Story<MasTag> = (args: MasTag) => ({
-  props: args,
-  template: `
+  render: ({...args}) => ({
+    props: args,
+    template: `
             <mas-tag
               [label]="label"
               [size]="size"
               [leadingIcon]="leadingIcon"
               [color]="color">
             </mas-tag>
-            `,
-});
+    `
+  })
+} as Meta;
  
 /** Basic : A tag with default settings */
 
-export const Default = Template.bind({});
+export const Default: StoryObj<MasTag> = {}
 Default.args = {
   label: 'Text',
   size: 'medium'

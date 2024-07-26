@@ -26,7 +26,9 @@ mas-badge {
   block-size: 8px;
   padding: 0;
 }
-
+.mas-badge-type--number-minor {
+  padding-inline: 0;
+}
 /* ! Size */
 .mas-badge--small {
   display: inline-block;

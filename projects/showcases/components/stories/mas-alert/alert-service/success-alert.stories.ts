@@ -10,9 +10,8 @@ const meta: Meta<SuccessAlertServiceExample> = {
       imports: [ MasAlertModule],
     }),
   ],
-  render: (args: SuccessAlertServiceExample) => ({
+  render: () => ({
     props: {
-      ...args,
     },
   }),
 };

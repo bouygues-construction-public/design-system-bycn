@@ -1,6 +1,8 @@
 <div
+  tabindex="0"
   (focus)="onChange($event)"
   (click)="_onToggle()"
+  (keydown)="handleOptionKeydown($event)"
   class="mas-action-dropdown-button"
   [ngClass]="{ 'mas-action-dropdown_listbox--opened': _panelOpen }"
 >

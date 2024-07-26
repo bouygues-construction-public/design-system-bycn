@@ -13,10 +13,8 @@ const meta: Meta<DefaultToastServiceExample> = {
       imports: [ MasToastModule],
     }),
   ],
-  render: (args: DefaultToastServiceExample) => ({
-    props: {
-      ...args,
-    },
+  render: ({...args}) => ({
+    props: args
   }),
 };
 
@@ -25,6 +23,13 @@ type Story = StoryObj<DefaultToastServiceExample>;
 
 export const Default: Story = {
   args: {},
+  render: () => ({
+    template: `
+      <div style="height: 200px">
+        <default-toast-sevice-example></default-toast-sevice-example>
+      </div>
+    `
+  })
 };
   
  

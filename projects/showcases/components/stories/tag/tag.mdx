@@ -4,7 +4,7 @@ import { Meta, Title, Subtitle, Description, Primary, Controls, Stories, Story, 
 
 import { MasTag } from 'projects/components/src/lib/tag/tag.component';
 import * as TagStories from './tag.stories';
- 
+
 <Meta of={TagStories} />
 
 <Title />
@@ -35,27 +35,22 @@ It have to be mainly used for create visual hierarchy or share secondary indicat
 ## Variants
 
 ### Colors
+
 The component comes in different variants such as `orange`,`amber`, `green`, `teal`, `blue`, `purple`, `red`, `roc`
 
-<Canvas>  
-  <Story of={TagStories.ShowcaseColors} />          
-</Canvas>
-
+<Canvas of={TagStories.ShowcaseColors} />
 
 ### Sizes
+
 The component comes in different sizes : `small`, `medium`
 
-<Canvas>  
-  <Story of={TagStories.ShowcaseSizes} />          
-</Canvas>
+<Canvas of={TagStories.ShowcaseSizes} />
 
 ### Tag with Icon
+
 The component can contain icon on the left
 
-<Canvas>  
-  <Story of={TagStories.ShowcaseIcon} />          
-</Canvas>
-
+<Canvas of={TagStories.ShowcaseIcon} />
 
 ## Guidelines
 

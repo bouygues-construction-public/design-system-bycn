@@ -18,11 +18,11 @@
 .mas-checkbox--large > .mas-checkbox_label {
   font-size: var(--mas-typo_body-2-font-size);
   line-height: var(--mas-typo_body-2-line-height);
+  margin-inline-start: 12px;
 }
 .mas-checkbox--large > .mas-checkbox-box {
   border-width: 2px;
   margin-block-start: 0px;
-  margin-inline-end: 12px;
   justify-content: center;
   align-items: center;
   width: 24px;
@@ -54,13 +54,14 @@
   cursor: pointer;
   user-select: none;
   color: var(--mas-semantic-color_text-primary);
+  margin-inline-start: 8px;
 }
 .mas-checkbox-box {
   display: flex;
+  box-sizing: border-box;
   border-width: 1.5px;
   border-style: solid;
   margin-block-start: 0px;
-  margin-inline-end: 8px;
   justify-content: center;
   align-items: center;
   width: 16px;

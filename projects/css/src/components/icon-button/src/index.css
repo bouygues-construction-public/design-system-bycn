@@ -2,14 +2,15 @@
 
 .mas-icon-button {
   display: flex;
+  box-sizing: border-box;
   padding: 10px 20px;
   justify-content: center;
   align-items: center;
-  border-radius: var(--mas-radius_full); 
-  color: var(--text-reverse, #FFF);
+  border-radius: var(--mas-radius_full);
+  color: var(--text-reverse, #fff);
   font-feature-settings: 'calt' off;
-  /* Body/Semibold/Body 3 */ 
-  font-family: var(--mas-typo_font-family--inter); 
+  /* Body/Semibold/Body 3 */
+  font-family: var(--mas-typo_font-family--inter);
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -18,17 +19,18 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   height: 44px;
+  border: none;
 }
 a.mas-icon-button {
   cursor: pointer;
 }
 /* Primary button */
 .mas-icon-button_variant--primary {
-  background-color: var(--action-primary-default, #007AB7);  
+  background-color: var(--action-primary-default, #007ab7);
 }
 
 .mas-icon-button_variant--primary:not(:disabled):hover {
-  background-color: var(--action-primary-hovered, #069); 
+  background-color: var(--action-primary-hovered, #069);
 }
 
 .mas-icon-button_variant--primary:not(:disabled):active {
@@ -39,33 +41,34 @@ a.mas-icon-button {
   opacity: 0.5;
   background-color: var(--action-primary-default, #005885);
 }
- 
+
 /* Secondary button */
 .mas-icon-button_variant--secondary {
-  color: var(--text-primary, #0C0C0D);
-  border: 1px solid var(--border-primary, #D7D7DB);
-  background: var(--action-reverse-default, #FFF); 
+  color: var(--text-primary, #0c0c0d);
+  border: 1px solid var(--border-primary, #d7d7db);
+  background: var(--action-reverse-default, #fff);
 }
 
 .mas-icon-button_variant--secondary:not(:disabled):hover {
-  border: 1px solid var(--border-primary, #D7D7DB);
-background: var(--action-reverse-hovered, #F9F9FA);
+  border: 1px solid var(--border-primary, #d7d7db);
+  background: var(--action-reverse-hovered, #f9f9fa);
 }
 
 .mas-icon-button_variant--secondary:not(:disabled):active {
-  border: 1px solid var(--border-primary, #D7D7DB);
-background: var(--action-reverse-pressed, #EDEDF0); 
+  border: 1px solid var(--border-primary, #d7d7db);
+  background: var(--action-reverse-pressed, #ededf0);
 }
 
 .mas-icon-button_variant--secondary:disabled {
-  border: 1px solid var(--border-primary, #D7D7DB);
-opacity: 0.5;
-background: var(--action-reverse-default, #FFF);
+  border: 1px solid var(--border-primary, #d7d7db);
+  opacity: 0.5;
+  background: var(--action-reverse-default, #fff);
 }
 
 /* Tertiary button */
 .mas-icon-button_variant--tertiary {
-  color: var(--text-primary, #0C0C0D);
+  color: var(--text-primary, #0c0c0d);
+  background-color: transparent;
 }
 
 .mas-icon-button_variant--tertiary:not(:disabled):hover {
@@ -82,25 +85,25 @@ background: var(--action-reverse-default, #FFF);
 
 /* Accent button */
 .mas-icon-button_variant--accent {
-  background-color: var(--action-brand-default, #C74D10);  
+  background-color: var(--action-brand-default, #c74d10);
 }
 
 .mas-icon-button_variant--accent:not(:disabled):hover {
-  background-color: var(--action-brand-hovered, #A6400D); 
+  background-color: var(--action-brand-hovered, #a6400d);
 }
 
 .mas-icon-button_variant--accent:not(:disabled):active {
-  background-color: var(--action-brand-pressed, #84330A);
+  background-color: var(--action-brand-pressed, #84330a);
 }
 
 .mas-icon-button_variant--accent:disabled {
   opacity: 0.5;
-  background-color: var(--action-brand-default, #C74D10);
+  background-color: var(--action-brand-default, #c74d10);
 }
 
 /* Sizes */
 .mas-icon-button_size--small {
-  font-size: 14px; 
+  font-size: 14px;
   font-weight: 600;
   line-height: 20px;
   padding: 8px 16px;
@@ -108,12 +111,11 @@ background: var(--action-reverse-default, #FFF);
 }
 
 .mas-icon-button_size--medium {
-  font-size: 16px; 
+  font-size: 16px;
   font-weight: 600;
   line-height: 24px;
   padding: 10px 20px;
 }
-
 
 /* Button icons  */
 .mas-icon-button--icon-alone {
@@ -147,14 +149,13 @@ background: var(--action-reverse-default, #FFF);
 }
 
 .mas-icon {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 16px;
-    font-size: 16px; 
-  }
- 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+}

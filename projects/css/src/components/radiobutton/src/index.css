@@ -23,7 +23,7 @@
   border-width: 2px;
   width: 24px;
   height: 24px;
-  margin-inline-end: 12px;
+  margin-inline-start: 12px;
   margin-block-start: 0px;
 }
 .mas-radio-button_touch-target {
@@ -49,14 +49,15 @@
   cursor: pointer;
   user-select: none;
   color: var(--mas-semantic-color_text-primary);
+  margin-inline-start: 8px;
 }
 
 .mas-radio-button-container {
+  box-sizing: border-box;
   display: flex;
   border-width: 1px;
   border-style: solid;
   margin-block-start: 0px;
-  margin-inline-end: 8px;
   justify-content: center;
   align-items: center;
   width: 16px;
@@ -112,5 +113,15 @@
 }
 .mas-radio-group {
   display: flex;
-  flex-direction: column;
+}
+.mas-radio-group--vertical {
+  .mas-radio-group {
+    flex-direction: column;
+  }
+}
+.mas-radio-group--horizontal {
+  .mas-radio-group {
+    flex-direction: row;
+    gap: 32px;
+  }
 }

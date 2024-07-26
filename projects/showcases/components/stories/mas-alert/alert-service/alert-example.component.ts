@@ -97,7 +97,8 @@ export class InfoAlertServiceExample {
 @Component({
   selector: 'success-alert-sevice-example',
   template: `
-    <button (click)="showSuccessAlert()"> show success alert </button> <br/>
+    <button style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: auto;  padding: 8px 16px 8px 16px;
+        cursor: pointer;  margin:10px" (click)="showSuccessAlert()"> show success alert </button> <br/>
     <mas-alert> </mas-alert>
   `,
 })
@@ -112,7 +113,8 @@ export class SuccessAlertServiceExample {
 @Component({
   selector: 'error-alert-sevice-example',
   template: `
-    <button (click)="showErrorlert()"> show error alert </button> <br/>
+    <button style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: auto;  padding: 8px 16px 8px 16px;
+        cursor: pointer;  margin:10px" (click)="showErrorlert()"> show error alert </button> <br/>
     <mas-alert> </mas-alert>
   `,
 })
@@ -127,7 +129,8 @@ export class ErrorAlertServiceExample {
 @Component({
   selector: 'warning-alert-sevice-example',
   template: `
-    <button (click)="showWarningAlert()"> show warning alert </button> <br/>
+    <button style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: auto;  padding: 8px 16px 8px 16px;
+        cursor: pointer;  margin:10px" (click)="showWarningAlert()"> show warning alert </button> <br/>
     <mas-alert> </mas-alert>
   `,
 })
