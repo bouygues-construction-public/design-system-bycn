@@ -1,0 +1,146 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+.mas-alert {
+  display: inline-flex;
+  align-items: flex-start;
+  width: 400px;
+  border-radius: 10px 8px 8px 10px;
+  background: var(--Action-Secondary-Default, #0C0C0D);
+  box-shadow: 0px 3px 3px 0px rgba(115, 115, 115, 0.25);
+  position: fixed;
+  right: 2%;
+  top: 10%;
+  opacity: 0;
+  z-index: 999;
+}
+
+.mas-alert-icon {
+  display: flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px 0px 0px 8px;
+  color: #FFF;
+}
+
+.mas-alert-icon i {
+  width: 16px;
+  height: 16px;
+}
+
+.mas-alert-icon-info {
+  background: var(--Semantic-Info-Default, #009E9C);
+}
+
+.mas-alert-icon-error {
+  background: var(--Semantic-Error-Default, #D21E3C);
+}
+
+.mas-alert-icon-success {
+  background: var(--Semantic-Success-Default, #6C931A);
+}
+
+.mas-alert-icon-warning {
+  background: var(--Semantic-Warning-Default, #C78100);
+}
+
+.mas-alert-icon-warning .mas-warning-circle-filled::before {
+  color: #FFF;
+}
+
+.mas-alert-content {
+  color: var(--Text-Reverse, #FFF);
+  font-feature-settings: 'calt' off;
+  font-family: var(--mas-typo_font-family--inter);
+  font-size: var(--mas-typo_body-3-font-size );
+  font-style: normal;
+  line-height: var(--mas-typo_subtitle-3-line-height);
+  display: flex;
+  padding: 8px 12px;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.mas-alert-title {
+  width: 336px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+}
+
+.mas-alert-title-label {
+  font-weight: var(--mas-typo_body-font-weight--bold);
+  padding: 8px 0;
+}
+
+.mas-alert-close {
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  color: white;
+}
+.mas-alert-close .mas-x-outlined, 
+.mas-alert-close .mas-math-and-finance--outlined{
+  height: 16px;
+  width: 16px;
+  display: inline-grid;
+  justify-content: center;
+  align-content: center !important;
+}
+
+.mas-alert-close:hover {
+  cursor: pointer;
+  background: rgba(50, 50, 50, 0.7);
+}
+
+.mas-alert-close:active {
+  background: rgba(100, 100, 100, 0.5);
+}
+
+.mas-alert-description {
+  display: flex;
+  padding: 0px 0px 8px 0px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+.mas-alert-description-label {
+  font-weight: var(--mas-typo_body-font-weight);
+}
+
+
+.alert-show {
+  opacity: 1;
+  animation: AlertFadeIn 0.3s ease-in-out;
+}
+
+.alert-hide {
+  opacity: 0;
+  animation: AlertFadeOut 0.3s ease-in-out;
+}
+
+@keyframes AlertFadeIn {
+  0% {
+      opacity: 0;
+      top: 5%;
+  }
+  100% {
+      opacity: 1;
+      top: 10%;
+  }
+}
+
+@keyframes AlertFadeOut {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}

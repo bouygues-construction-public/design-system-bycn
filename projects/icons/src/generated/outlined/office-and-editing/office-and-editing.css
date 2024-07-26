@@ -1,0 +1,378 @@
+@font-face {
+    font-family: "office-and-editing";
+    src: url(".//office-and-editing.ttf?c1ad72948f78073045f516682d248f21") format("truetype"),
+url(".//office-and-editing.woff?c1ad72948f78073045f516682d248f21") format("woff"),
+url(".//office-and-editing.woff2?c1ad72948f78073045f516682d248f21") format("woff2");
+}
+
+i[class^="mas-"]:before, i[class*=" mas-"]:before {
+    font-family: office-and-editing !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-archive-box-outlined:before {
+    content: "\e816";
+}
+.mas-archive-outlined:before {
+    content: "\e817";
+}
+.mas-archive-tray-outlined:before {
+    content: "\e818";
+}
+.mas-briefcase-metal-outlined:before {
+    content: "\e819";
+}
+.mas-briefcase-outlined:before {
+    content: "\e81a";
+}
+.mas-cards-outlined:before {
+    content: "\e81b";
+}
+.mas-clipboard-outlined:before {
+    content: "\e81c";
+}
+.mas-clipboard-text-outlined:before {
+    content: "\e81d";
+}
+.mas-copy-outlined:before {
+    content: "\e81e";
+}
+.mas-copy-simple-outlined:before {
+    content: "\e81f";
+}
+.mas-cursor-text-outlined:before {
+    content: "\e820";
+}
+.mas-file-archive-outlined:before {
+    content: "\e821";
+}
+.mas-file-arrow-down-outlined:before {
+    content: "\e822";
+}
+.mas-file-arrow-up-outlined:before {
+    content: "\e823";
+}
+.mas-file-audio-outlined:before {
+    content: "\e824";
+}
+.mas-file-cloud-outlined:before {
+    content: "\e825";
+}
+.mas-file-code-outlined:before {
+    content: "\e826";
+}
+.mas-file-css-outlined:before {
+    content: "\e827";
+}
+.mas-file-csv-outlined:before {
+    content: "\e828";
+}
+.mas-file-dashed-outlined:before {
+    content: "\e829";
+}
+.mas-file-doc-outlined:before {
+    content: "\e82a";
+}
+.mas-file-html-outlined:before {
+    content: "\e82b";
+}
+.mas-file-image-outlined:before {
+    content: "\e82c";
+}
+.mas-file-jpg-outlined:before {
+    content: "\e82d";
+}
+.mas-file-js-outlined:before {
+    content: "\e82e";
+}
+.mas-file-jsx-outlined:before {
+    content: "\e82f";
+}
+.mas-file-lock-outlined:before {
+    content: "\e830";
+}
+.mas-file-minus-outlined:before {
+    content: "\e831";
+}
+.mas-file-outlined:before {
+    content: "\e832";
+}
+.mas-file-pdf-outlined:before {
+    content: "\e833";
+}
+.mas-file-plus-outlined:before {
+    content: "\e834";
+}
+.mas-file-png-outlined:before {
+    content: "\e835";
+}
+.mas-file-ppt-outlined:before {
+    content: "\e836";
+}
+.mas-file-rs-outlined:before {
+    content: "\e837";
+}
+.mas-file-search-outlined:before {
+    content: "\e838";
+}
+.mas-file-sql-outlined:before {
+    content: "\e839";
+}
+.mas-file-svg-outlined:before {
+    content: "\e83a";
+}
+.mas-file-text-outlined:before {
+    content: "\e83b";
+}
+.mas-file-ts-outlined:before {
+    content: "\e83c";
+}
+.mas-file-tsx-outlined:before {
+    content: "\e83d";
+}
+.mas-file-video-outlined:before {
+    content: "\e83e";
+}
+.mas-file-vue-outlined:before {
+    content: "\e83f";
+}
+.mas-file-x-outlined:before {
+    content: "\e840";
+}
+.mas-file-xls-outlined:before {
+    content: "\e841";
+}
+.mas-file-zip-outlined:before {
+    content: "\e842";
+}
+.mas-files-outlined:before {
+    content: "\e843";
+}
+.mas-floppy-disk-back-outlined:before {
+    content: "\e844";
+}
+.mas-floppy-disk-outlined:before {
+    content: "\e845";
+}
+.mas-folder-dashed-outlined:before {
+    content: "\e846";
+}
+.mas-folder-lock-outlined:before {
+    content: "\e847";
+}
+.mas-folder-minus-outlined:before {
+    content: "\e848";
+}
+.mas-folder-notch-minus-outlined:before {
+    content: "\e849";
+}
+.mas-folder-notch-open-outlined:before {
+    content: "\e84a";
+}
+.mas-folder-notch-outlined:before {
+    content: "\e84b";
+}
+.mas-folder-notch-plus-outlined:before {
+    content: "\e84c";
+}
+.mas-folder-open-outlined:before {
+    content: "\e84d";
+}
+.mas-folder-outlined:before {
+    content: "\e84e";
+}
+.mas-folder-plus-outlined:before {
+    content: "\e84f";
+}
+.mas-folder-simple-dashed-outlined:before {
+    content: "\e850";
+}
+.mas-folder-simple-lock-outlined:before {
+    content: "\e851";
+}
+.mas-folder-simple-minus-outlined:before {
+    content: "\e852";
+}
+.mas-folder-simple-outlined:before {
+    content: "\e853";
+}
+.mas-folder-simple-plus-outlined:before {
+    content: "\e854";
+}
+.mas-folder-simple-star-outlined:before {
+    content: "\e855";
+}
+.mas-folder-simple-user-outlined:before {
+    content: "\e856";
+}
+.mas-folder-star-outlined:before {
+    content: "\e857";
+}
+.mas-folder-user-outlined:before {
+    content: "\e858";
+}
+.mas-folders-outlined:before {
+    content: "\e859";
+}
+.mas-funnel-outlined:before {
+    content: "\e85a";
+}
+.mas-funnel-simple-outlined:before {
+    content: "\e85b";
+}
+.mas-kanban-outlined:before {
+    content: "\e85c";
+}
+.mas-list-bullets-outlined:before {
+    content: "\e85d";
+}
+.mas-list-checks-outlined:before {
+    content: "\e85e";
+}
+.mas-list-dashes-outlined:before {
+    content: "\e85f";
+}
+.mas-list-numbers-outlined:before {
+    content: "\e860";
+}
+.mas-list-outlined:before {
+    content: "\e861";
+}
+.mas-list-plus-outlined:before {
+    content: "\e862";
+}
+.mas-note-blank-outlined:before {
+    content: "\e863";
+}
+.mas-note-outlined:before {
+    content: "\e864";
+}
+.mas-note-pencil-outlined:before {
+    content: "\e865";
+}
+.mas-notebook-outlined:before {
+    content: "\e866";
+}
+.mas-notepad-outlined:before {
+    content: "\e867";
+}
+.mas-paperclip-horizontal-outlined:before {
+    content: "\e868";
+}
+.mas-paperclip-outlined:before {
+    content: "\e869";
+}
+.mas-paragraph-outlined:before {
+    content: "\e86a";
+}
+.mas-presentation-chart-outlined:before {
+    content: "\e86b";
+}
+.mas-presentation-outlined:before {
+    content: "\e86c";
+}
+.mas-printer-outlined:before {
+    content: "\e86d";
+}
+.mas-projector-screen-chart-outlined:before {
+    content: "\e86e";
+}
+.mas-projector-screen-outlined:before {
+    content: "\e86f";
+}
+.mas-push-pin-outlined:before {
+    content: "\e870";
+}
+.mas-push-pin-simple-outlined:before {
+    content: "\e871";
+}
+.mas-push-pin-simple-slash-outlined:before {
+    content: "\e872";
+}
+.mas-push-pin-slash-outlined:before {
+    content: "\e873";
+}
+.mas-sort-ascending-outlined:before {
+    content: "\e874";
+}
+.mas-sort-descending-outlined:before {
+    content: "\e875";
+}
+.mas-text-aa-outlined:before {
+    content: "\e876";
+}
+.mas-text-align-center-outlined:before {
+    content: "\e877";
+}
+.mas-text-align-justify-outlined:before {
+    content: "\e878";
+}
+.mas-text-align-left-outlined:before {
+    content: "\e879";
+}
+.mas-text-align-right-outlined:before {
+    content: "\e87a";
+}
+.mas-text-b-outlined:before {
+    content: "\e87b";
+}
+.mas-text-columns-outlined:before {
+    content: "\e87c";
+}
+.mas-text-h-five-outlined:before {
+    content: "\e87d";
+}
+.mas-text-h-four-outlined:before {
+    content: "\e87e";
+}
+.mas-text-h-one-outlined:before {
+    content: "\e87f";
+}
+.mas-text-h-outlined:before {
+    content: "\e880";
+}
+.mas-text-h-six-outlined:before {
+    content: "\e881";
+}
+.mas-text-h-three-outlined:before {
+    content: "\e882";
+}
+.mas-text-h-two-outlined:before {
+    content: "\e883";
+}
+.mas-text-indent-outlined:before {
+    content: "\e884";
+}
+.mas-text-italic-outlined:before {
+    content: "\e885";
+}
+.mas-text-outdent-outlined:before {
+    content: "\e886";
+}
+.mas-text-strikethrough-outlined:before {
+    content: "\e887";
+}
+.mas-text-t-outlined:before {
+    content: "\e888";
+}
+.mas-text-underline-outlined:before {
+    content: "\e889";
+}
+.mas-textbox-outlined:before {
+    content: "\e88a";
+}
+.mas-trash-outlined:before {
+    content: "\e88b";
+}
+.mas-trash-simple-outlined:before {
+    content: "\e88c";
+}
+.mas-tray-outlined:before {
+    content: "\e88d";
+}

@@ -5,7 +5,6 @@ import { MasRadioButton } from 'projects/components/src/lib/radiobutton/radiobut
 import { MasRadioButtonModule } from 'projects/components/src/lib/radiobutton/radiobutton.module';
 const meta: Meta<MasRadioButton> = {
   component: MasRadioButton,
-  tags: ['autodocs'],
   title: 'Components/Selection controls/Radio Button',
   decorators: [
     moduleMetadata({
@@ -23,10 +22,8 @@ const meta: Meta<MasRadioButton> = {
       },
     },
   },
-  render: (args: MasRadioButton) => ({
-    props: {
-      ...args,
-    },
+  render: (args) => ({
+    props: args
   }),
   argTypes: {
     identifier: {
@@ -51,7 +48,7 @@ const meta: Meta<MasRadioButton> = {
 export default meta;
 type Story = StoryObj<MasRadioButton>;
 
-export const Overview: Story = {
+export const Basic: Story = {
   args: {
     identifier: 'my-radio-button',
     labelText: 'checked radio',
@@ -60,27 +57,31 @@ export const Overview: Story = {
     size: 'S',
   },
 };
-export const Disabled: Story = {
-  args: {
-    identifier: 'my-radio-button',
-    labelText: 'Disabled radio',
-    disabled: true,
-    checked: false,
-    size: 'S',
-  },
-};
-export const Size: Story = {
-  render: (args: MasRadioButton) => ({
+export const Overview: Story = {
+  render: () => ({
     template: `
     <form [formGroup]="formGroup">
-      <mas-radio-group formControlName="radioGroup" disabled="true">
-        <mas-radio-button labelText="Housing" value="1" [disabled]="false" size="S"></mas-radio-button>
-        <mas-radio-button labelText="Offices" value="2" [disabled]="false" size="S"></mas-radio-button>
+      <mas-radio-group formControlName="radioGroup">
+          <mas-radio-button labelText="Stade de France " value="1" [disabled]="false" size="S"></mas-radio-button>
+          <mas-radio-button labelText="Grande Arche de la Défense" value="2" [disabled]="false" size="S"></mas-radio-button>
+          <mas-radio-button labelText="National Library of France" value="3" [disabled]="true" size="S" ></mas-radio-button>
         <br>
-        <mas-radio-button labelText="Industry" value="3" [disabled]="false" size="L"></mas-radio-button>
-        <mas-radio-button labelText="Shopping centres" value="4" [disabled]="false" size="L"></mas-radio-button>
+          <mas-radio-button labelText="Louvre Museum" value="4" [disabled]="true" size="L"></mas-radio-button>
+          <mas-radio-button labelText="Hassan II Mosque" value="5" [disabled]="false" size="L"></mas-radio-button>
+          <mas-radio-button labelText="Vélodrome stadium" value="6" [disabled]="false" size="L"></mas-radio-button>
         </mas-radio-group>
     </form>
-    `
-  })
-}
+    `,
+  }),
+};
+export const Size: Story = {
+  render: () => ({
+    template: `
+      <mas-radio-group formControlName="radioGroup">
+        <mas-radio-button labelText="Small size" value="1" [disabled]="false" size="S"></mas-radio-button>
+        <br>
+        <mas-radio-button labelText="Large size" value="3" [disabled]="false" size="L"></mas-radio-button>
+      </mas-radio-group>
+    `,
+  }),
+};

@@ -9,9 +9,9 @@
     id="{{ identifier }}"
     [checked]="checked"
     [disabled]="disabled"
-    (focus)="onInputFocus($event)"
-    (blur)="onInputBlur($event)"
-    (change)="onChange($event)"
+    (focus)="_onInputFocus($event)"
+    (blur)="_onInputBlur($event)"
+    (change)="_onChange($event)"
     [name]="name"
     [value]="value"
   />
@@ -28,5 +28,5 @@
       </svg>
     </ng-container>
   </div>
-  <label [for]="identifier" class="mas-radio-button_label">{{ labelText }}</label>
+  <label *ngIf="labelText !== ''" [for]="identifier" class="mas-radio-button_label">{{ labelText }}</label>
 </div>

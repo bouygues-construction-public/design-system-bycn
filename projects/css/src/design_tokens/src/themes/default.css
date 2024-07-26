@@ -6,6 +6,7 @@
   --mas-semantic-color_surface-primary: var(--mas-primitive-color_white);
   --mas-semantic-color_surface-secondary: var(--mas-primitive-color_grey100);
   --mas-semantic-color_surface-tiertiary: var(--mas-primitive-color_grey200);
+  --mas-semantic-color_surface-reverse: var(--mas-primitive-color_grey900);
   /** Text */
   --mas-semantic-color_text-primary: var(--mas-primitive-color_grey900);
   --mas-semantic-color_text-secondary: var(--mas-primitive-color_grey600);
@@ -73,7 +74,6 @@
   );
   /** Decorative */
   /* Surface */
-  /* HERE */
   --mas-semantic-color_surface-orange: var(--mas-primitive-color_orange100);
   --mas-semantic-color_surface-amber: var(--mas-primitive-color_amber100);
   --mas-semantic-color_surface-green: var(--mas-primitive-color_green100);
@@ -97,4 +97,21 @@
   --mas-semantic-color_text-blue: var(--mas-primitive-color_blue700);
   --mas-semantic-color_text-purple: var(--mas-primitive-color_purple600);
   --mas-semantic-color_text-red: var(--mas-primitive-color_red700);
+  /* State */
+  --mas-semantic-success--default: #6c931a;
+  --mas-semantic-alert--default: #d21e3c;
+  --mas-semantic-warning--default: #c78100;
+  --mas-semantic-primary--default: #007ab7;
+  --mas-semantic-brand--default: #c74d10;
+}
+/** Alpha */
+/* Neutral */
+:root {
+  --mas-semantic-color_alpha--hovered: var(--mas-primitive-color_alpha-grey100);
+  --mas-semantic-color_alpha--pressed: var(--mas-primitive-color_alpha-grey200);
+}
+/* Primary */
+:root {
+  --mas-semantic-color_alpha-blue--hovered: var(--mas-primitive-color_alpha-blue100);
+  --mas-semantic-color_alpha-blue--pressed: var(--mas-primitive-color_alpha-blue200);
 }

@@ -1,0 +1,30 @@
+<ng-content select="mas-label"></ng-content>
+<select
+  (focus)="onChange($event)"
+  class="mas-select_value-wrapper"
+  [ngSwitch]="empty"
+  (click)="toggle()"
+  [ngClass]="{ 'mas-select_listbox--opened': panelOpen }"
+  [disabled]="disabled"
+>
+  <ng-container *ngSwitchCase="true">
+    <i class="mas-warning-circle-outlined mas-icon mas-security-and-warnings--outlined"></i>
+    <span class="mas-select_placeholder mas-select-min-line" [ngClass]="{ 'mas-select--filled': filled }">{{
+      placeholder
+    }}</span></ng-container
+  >
+
+  <span class="mas-select_text mas-select-min-line" *ngSwitchCase="false">
+    {{ triggerValue }}
+  </span>
+  <i class="mas-caret-down-outlined mas-icon mas-arrows--outlined mas-select_icon"></i>
+  <ng-content select="option"></ng-content>
+</select>
+<!-- ! listbox -->
+<!-- <ng-template [ngIf]="panelOpen && !disabled">
+  <div #select role="listbox" [ngClass]="{ 'mas-select--disabled': disabled }" class="mas-select_listbox-wrapper">
+    <ng-content select="mas-option"></ng-content>
+  </div>
+</ng-template> -->
+<ng-content *ngIf="invalid" select="mas-error"></ng-content>
+<ng-content *ngIf="!invalid" select="mas-helper"></ng-content>

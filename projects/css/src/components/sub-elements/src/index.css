@@ -1,0 +1,59 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+.mas-error {
+  font-family: var(--mas-typo_font-family--inter);
+  font-size: var(--mas-typo_body-3-font-size);
+  font-weight: var(--mas-typo_body-font-weight);
+  line-height: var(--mas-typo_body-3-line-height);
+  position: relative;
+  color: var(--mas-primitive-color_red600);
+  block-size: 20px;
+  margin-block-start: 8px;
+  display: flex;
+  align-items: center;
+}
+.mas-warning-circle-filled::before {
+  position: relative;
+  color: var(--mas-primitive-color_red600);
+  block-size: 16px;
+  inline-size: 16px;
+  margin-inline-end: 4px;
+}
+.mas-helper {
+  font-family: var(--mas-typo_font-family--inter);
+  font-size: var(--mas-typo_body-3-font-size);
+  font-weight: var(--mas-typo_body-font-weight);
+  line-height: var(--mas-typo_body-3-line-height);
+  position: relative;
+  content: '';
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  display: inline-block;
+  color: var(--mas-semantic-color_text-tiertiary);
+  block-size: 20px;
+  margin-block-start: 8px;
+}
+.mas-label {
+  font-family: var(--mas-typo_font-family--inter);
+  font-size: var(--mas-typo_body-3-font-size);
+  font-weight: var(--mas-typo_body-font-weight);
+  line-height: var(--mas-typo_body-3-line-height);
+  color: var(--mas-semantic-color_text-primary);
+  margin-block-end: 8px;
+  display: inline-block;
+  inline-size: fit-content;
+}
+.mas-label-wrapper {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.mas-label-info-icon {
+  color: var(--mas-semantic-color_icon-secondary);
+  block-size: 16px;
+  inline-size: 16px;
+  margin-block-end: 2px;
+}
+.mas-label-optional {
+  color: var(--mas-semantic-color_text-tiertiary);
+}

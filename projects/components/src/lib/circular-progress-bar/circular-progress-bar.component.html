@@ -1,0 +1,12 @@
+<div style="display: flex;align-items: center;margin: 10px 5px">
+  <div  class="mas-progress-circular-bar mas-progress-circular-bar-{{state}}"> 
+    <i *ngIf="state=='loading'" class="mas-progress-circular-bar-icon"></i> 
+    <i *ngIf="state=='success'" class="mas-progress-circular-bar-icon mas-check-outlined mas-system-and-device--outlined "></i> 
+    <i  *ngIf="state=='error'" class="mas-progress-circular-bar-icon mas-x-outlined mas-math-and-finance--outlined " ></i> 
+  </div>
+  <div class="mas-progress-circular-bar-label">
+    <span *ngIf="loadingText!='' && state=='loading'" >{{loadingText}}</span>
+    <span *ngIf="successText!='' && state=='success'" >{{successText}}</span>
+    <span *ngIf="errorText!='' && state=='error'" >{{errorText}}</span>
+  </div>
+</div>

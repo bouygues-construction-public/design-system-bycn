@@ -1,0 +1,128 @@
+import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/addon-docs/blocks';
+import { MasFooter } from 'projects/components/src/lib/Footer/footer.component';
+import * as MasFooterStories from './mas-footer.stories';
+
+<Meta of={MasFooterStories} />
+
+# MasFooter
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Style](#style)
+- [Type](#type)
+
+
+## Overview
+The `MasFooter` component provides a consistent place to display secondary content, navigation, site information and copyright data.
+
+The `MasFooter` is used to provide additional information or supplementary functionality to the main user interface. It is typically located at the bottom of the page and may contain navigation links, contact information, legal notices, or other similar elements
+<Canvas of={MasFooterStories.Default}>
+</Canvas>
+
+## Props
+
+<Controls />
+
+## Usage
+- **Modal Usage**
+  - Utilize footers to provide additional information or supplementary functionality, such as navigation links, contact details, or legal notices.
+  - Ensure footers are employed judiciously, avoiding unnecessary clutter or distracting elements that may detract from the primary user experience.
+  - Use footers to enhance overall site or application navigation and provide users with essential contextual information without interrupting their main interaction flow.
+
+
+The `MasFooter` should be used to complement the primary content and functionality of the user interface, providing relevant information and navigation options while maintaining a cohesive user experience.
+## Style
+
+### Screen Sizes
+
+The `MasFooter` component is accessible on both desktop and mobile devices, ensuring consistent visibility and functionality across various screen sizes.
+- **Desktop**: Tailored for larger screens and desktop devices.
+<Canvas of={MasFooterStories.Footer_Desktop }>
+</Canvas>
+- **Mobile**: Designed for smaller screens and mobile devices.
+<Canvas of={MasFooterStories.Footer_Mobile}>
+</Canvas>
+
+
+## Type
+The `MasFooter` component has 2 different types : default and swap component
+### `default`:
+### 1- desktop:
+<Canvas of={MasFooterStories.Footer_Default_desktop }>
+</Canvas>
+### 2- mobile:
+<Canvas of={MasFooterStories.Footer_Default_Mobile}>
+</Canvas>
+### `swapComponent`:
+### 1- desktop:
+<Canvas of={MasFooterStories.Footer_SwapComponent_desktop}>
+</Canvas>
+### 2- mobile:
+<Canvas of={MasFooterStories.Footer_SwapComponent_mobile}>
+</Canvas>
+
+
+### `MasFooter` with display of a single block link
+
+To display the footer with a single block, use the `blockTitles` and `blockLinks` properties to specify the title and links of the block. Ensure that only one element is specified in the `blockTitles` and `blockLinks` arrays. Also, set the `NumberOfBloc` attribute to 1 to indicate that you want to display a single block in the `MasFooter`.
+
+### `MasFooter` with display of two block links
+
+To display the footer with two blocks, use the `blockTitles` and `blockLinks` properties to specify the titles and links of each block. Make sure to specify only two elements in the `blockTitles` and `blockLinks` arrays. Also, set the `NumberOfBloc` attribute to 2 to indicate that you want to display two blocks in the `MasFooter`.
+
+### `MasFooter` with display of Three block links at Maximum
+The footer can also be configured to display up to three blocks. Use the `blockTitles` and `blockLinks` properties to specify the titles and links of each block. You can specify up to three elements in the `blockTitles` and `blockLinks` arrays. Simply ensure that the `NumberOfBloc` attribute is set to 3 or less to indicate that you want to display up to three blocks in the `MasFooter`.
+
+`Here is an example, two Block links`:
+<Canvas of={MasFooterStories.Footer_Default_desktop_Two_Blocks}>
+</Canvas>
+
+
+
+
+The `MasFooter` component offers the flexibility to customize social media links, including their visibility, titles, icons, and URLs.
+
+### Social Media Visibility
+
+- **SocialMedia**: A boolean attribute that controls the visibility of the social media section. Set to `true` to display social media links in `MasFooter`.
+
+### Social Media Title
+
+- **socialNetworkTitle**: Specify the title for the social media section using this attribute. By default, it is set to "Our social networks".
+
+### Social Media Icons
+
+- **socialMediaIcons**: This array attribute allows you to specify icons for each social media link. You can provide the URLs for the icon images.
+
+### Social Media Links
+
+- **socialMediaLinks**: Use this array attribute to provide URLs for each social media link. Ensure that the URLs correspond to the respective social media icons specified.
+
+By utilizing these attributes, you can seamlessly integrate and customize social media links within the footer component to suit your application's needs.
+
+`Here is an example without displaying social media in the MasFooter`:
+<Canvas of={MasFooterStories.Footer_Default_desktop_Without_socialMedia}>
+</Canvas>
+
+### Footer without Logo
+
+To display the `MasFooter` without the logo, set the `Logotype` attribute to `false`. This will remove the logo from the `MasFooter`.
+`Here is an example without displaying Logotype in the MasFooter`:
+<Canvas of={MasFooterStories.Footer_Default_desktop_Without_Logotype}>
+</Canvas>
+
+### Footer without Middle Footer
+
+To display the `MasFooter` without the middle section, set the `MiddleFooter` attribute to `false`. This will remove the middle section from the `MasFooter`.
+<Canvas of={MasFooterStories.Footer_Default_desktop_Without_MiddleFooter}>
+</Canvas>
+## Guidelines
+
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/1999b2-footer/b/357f1d)
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

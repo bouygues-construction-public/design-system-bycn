@@ -1,0 +1,108 @@
+import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/blocks';
+
+import * as InfoAlertStories from './alert-service/info-alert.stories';
+import * as SuccessAlertStories from './alert-service/success-alert.stories';
+import * as ErrorAlertStories from './alert-service/error-alert.stories';
+import * as WarningAlertStories from './alert-service/warning-alert.stories';
+
+import * as CloseBtnAlertStories from './alert-service/alert-close-btn.stories';
+import * as DescriptionAlertStories from './alert-service/alert-description.stories';
+
+import * as AllAlertStories from './alert-service/all-alert.stories';
+
+import * as AlertStories from './mas-alert.stories';
+
+<Meta of={AlertStories} />
+
+# MasAlert
+
+{/* Table of Contents */}
+
+* [Overview](#overview)
+* [Usage](#usage)
+* [Properties](#properties)
+
+## Overview
+
+The `MasAlerts` are used to communicate important information to the user and attract their attention. It is contextual to the message.
+
+<Canvas of={InfoAlertStories.InfoAlert} />
+
+## Usage
+
+### Basic
+
+The `MasAlerts` are displayed by calling the showAlert method provided by the `AlertService`.
+The \`MasAlerts appears at the top right of the interface above the navigation bar and in front of the main content. It disappears after 10 seconds or when the user clicks on the closed button.
+
+```html
+<button (click)="showInfoAlert()">  Info  </button> <br/>
+<mas-alert> </mas-alert>
+```
+
+```javascript
+constructor(private alertService: AlertService) { }
+
+showInfoAlert(){
+this.alertService.showAlert({ title:'Info', description:'description for toast', type:'info', closeBtn:'true'}) ;   
+}
+```
+
+The `showAlert` takes the following parameters:
+
+`title` (required): A string representing the title of the information alert.
+
+`description` (optional): A string providing additional information or details for the alert. It has a default value of an empty string.
+
+`type` (optional): A string indicating the type of alert. The default value is set to 'info'.
+
+`closeBtn` (optional): A boolean flag specifying whether to include a close button in the alert. The default value is true.
+
+The only mandatory parameter is the title, with optional parameters for description, type, and a close button, each having default values. This allows for flexible usage with minimal required input.
+
+<Canvas of={AlertStories.Default} />
+
+```html
+<button (click)="showInfoAlert()">  Default  </button> <br/>
+<mas-alert> </mas-alert>
+```
+
+```javascript
+constructor(private alertService: AlertService) { }
+
+showInfoAlert(){
+this.alertService.showAlert({ title:'Title for the default alert'}) ;   
+}
+```
+
+To use the `MasAlerts`, you can pass the desired inputs to the component.
+
+## Properties
+
+### Types
+
+The `MasAlerts` component has 4 different types : `info`, `success`, `warning`, `error`.
+These 4 types have their own semantic colors linked to their context of use and their meaning
+
+<Canvas  of={AllAlertStories.AlertService} />
+
+### Alert Description
+
+Description is used to have more information about the alert. This is not a mandatory element.
+
+<Canvas of={DescriptionAlertStories.AlertsWithDescrition} />
+
+### Close Button
+
+Close button is used to dismiss the alert component at the user's request. This is not a mandatory element.
+Indeed, alert will be dissmiss after 10 seconds whithout user action.
+
+<Canvas of={ CloseBtnAlertStories.AlertWithCloseButton} />
+
+## Guidelines
+
+* Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/71a749-alert/b/964f27)
+
+## Feedback & contact
+
+* Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

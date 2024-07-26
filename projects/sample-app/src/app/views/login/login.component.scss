@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  height: 100%;
+  .image-container {
+    flex: 33%;
+    overflow: hidden;
+    img {
+      aspect-ratio: 1/2;
+      object-fit: cover;
+    }
+    background-repeat: no-repeat;
+  }
+  .content {
+    display: flex;
+    flex: 50%;
+    padding: 32px 128px 64px;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 48px;
+      flex: 1 0 0;
+      form {
+        width: 100%;
+        .email-input {
+          width: 100%;
+        }
+      }
+      .submit-button {
+        width: 100%;
+        > button {
+          width: 100%;
+        }
+      }
+    }
+    .login-info_text {
+      color: var(--mas-semantic-color_text-secondary);
+      align-self: stretch;
+      text-align: center;
+    }
+  }
+}

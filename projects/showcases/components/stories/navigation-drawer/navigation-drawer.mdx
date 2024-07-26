@@ -1,0 +1,67 @@
+import {
+  Meta,
+  Title,
+  Subtitle,
+  Description,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+  Toc,
+  Canvas,
+  of,
+} from '@storybook/blocks';
+
+import { MasNavigationDrawer } from 'projects/components/src/lib/navigation-drawer/navigation-drawer.component';
+import * as NavigationDrawerStories from './navigation-drawer.stories';
+
+<Meta of={NavigationDrawerStories} />
+
+<Title />
+
+{/* Table of Contents */}
+
+* [Overview](#overview)
+* [Props](#props)
+* [Usage](#usage)
+* [Variants](#variants)
+
+## Overview
+
+The navigation drawer allows users to navigate through multiple destinations in a hierarchical layout that is visible throughout the application.
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Usage
+
+The navigation drawer is a component that allows you to go further than the navigation bar. Its location and content makes it possible to accommodate a large number of destinations, as well as submenus and additional actions thanks to a header or footer. Its use is very common in mobile.
+
+## Variants
+
+### Overview
+
+<Canvas  of={NavigationDrawerStories.Basic} />
+
+### With Header component
+
+<Canvas of={NavigationDrawerStories.WithHeaderComponent} />
+
+### With Footer component
+
+<Canvas  of={NavigationDrawerStories.WithFooterComponent} />
+
+### Collapsed
+
+<Canvas of={NavigationDrawerStories.Collapsed}/>
+
+## Guidelines
+
+* Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/48b044-navigation-drawer/b/964f27)
+
+## Feedback & contact
+
+* Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
