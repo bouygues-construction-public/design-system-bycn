@@ -1,0 +1,363 @@
+@font-face {
+    font-family: "arrows--filled";
+    src: url("../../fonts/filled/arrows/arrows.ttf?178c682bb20328212a4d09928891ba9b") format("truetype"),
+url("../../fonts/filled/arrows/arrows.woff?178c682bb20328212a4d09928891ba9b") format("woff"),
+url("../../fonts/filled/arrows/arrows.woff2?178c682bb20328212a4d09928891ba9b") format("woff2");
+}
+
+i[class^="mas-arrows--filled"]:before, i[class*=" mas-arrows--filled"]:before {
+    font-family: arrows--filled !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-arrow-arc-left-filled:before {
+    content: "\e000";
+}
+.mas-arrow-arc-right-filled:before {
+    content: "\e001";
+}
+.mas-arrow-bend-double-up-left-filled:before {
+    content: "\e002";
+}
+.mas-arrow-bend-double-up-right-filled:before {
+    content: "\e003";
+}
+.mas-arrow-bend-down-left-filled:before {
+    content: "\e004";
+}
+.mas-arrow-bend-down-right-filled:before {
+    content: "\e005";
+}
+.mas-arrow-bend-left-down-filled:before {
+    content: "\e006";
+}
+.mas-arrow-bend-left-up-filled:before {
+    content: "\e007";
+}
+.mas-arrow-bend-right-down-filled:before {
+    content: "\e008";
+}
+.mas-arrow-bend-right-up-filled:before {
+    content: "\e009";
+}
+.mas-arrow-bend-up-left-filled:before {
+    content: "\e00a";
+}
+.mas-arrow-bend-up-right-filled:before {
+    content: "\e00b";
+}
+.mas-arrow-circle-down-filled:before {
+    content: "\e00c";
+}
+.mas-arrow-circle-down-left-filled:before {
+    content: "\e00d";
+}
+.mas-arrow-circle-down-right-filled:before {
+    content: "\e00e";
+}
+.mas-arrow-circle-left-filled:before {
+    content: "\e00f";
+}
+.mas-arrow-circle-right-filled:before {
+    content: "\e010";
+}
+.mas-arrow-circle-up-filled:before {
+    content: "\e011";
+}
+.mas-arrow-circle-up-left-filled:before {
+    content: "\e012";
+}
+.mas-arrow-circle-up-right-filled:before {
+    content: "\e013";
+}
+.mas-arrow-clockwise-filled:before {
+    content: "\e014";
+}
+.mas-arrow-counter-clockwise-filled:before {
+    content: "\e015";
+}
+.mas-arrow-down-filled:before {
+    content: "\e016";
+}
+.mas-arrow-down-left-filled:before {
+    content: "\e017";
+}
+.mas-arrow-down-right-filled:before {
+    content: "\e018";
+}
+.mas-arrow-elbow-down-left-filled:before {
+    content: "\e019";
+}
+.mas-arrow-elbow-down-right-filled:before {
+    content: "\e01a";
+}
+.mas-arrow-elbow-left-down-filled:before {
+    content: "\e01b";
+}
+.mas-arrow-elbow-left-filled:before {
+    content: "\e01c";
+}
+.mas-arrow-elbow-left-up-filled:before {
+    content: "\e01d";
+}
+.mas-arrow-elbow-right-down-filled:before {
+    content: "\e01e";
+}
+.mas-arrow-elbow-right-filled:before {
+    content: "\e01f";
+}
+.mas-arrow-elbow-right-up-filled:before {
+    content: "\e020";
+}
+.mas-arrow-elbow-up-left-filled:before {
+    content: "\e021";
+}
+.mas-arrow-elbow-up-right-filled:before {
+    content: "\e022";
+}
+.mas-arrow-fat-down-filled:before {
+    content: "\e023";
+}
+.mas-arrow-fat-left-filled:before {
+    content: "\e024";
+}
+.mas-arrow-fat-line-down-filled:before {
+    content: "\e025";
+}
+.mas-arrow-fat-line-left-filled:before {
+    content: "\e026";
+}
+.mas-arrow-fat-line-right-filled:before {
+    content: "\e027";
+}
+.mas-arrow-fat-line-up-filled:before {
+    content: "\e028";
+}
+.mas-arrow-fat-lines-down-filled:before {
+    content: "\e029";
+}
+.mas-arrow-fat-lines-left-filled:before {
+    content: "\e02a";
+}
+.mas-arrow-fat-lines-right-filled:before {
+    content: "\e02b";
+}
+.mas-arrow-fat-lines-up-filled:before {
+    content: "\e02c";
+}
+.mas-arrow-fat-right-filled:before {
+    content: "\e02d";
+}
+.mas-arrow-fat-up-filled:before {
+    content: "\e02e";
+}
+.mas-arrow-left-filled:before {
+    content: "\e02f";
+}
+.mas-arrow-line-down-filled:before {
+    content: "\e030";
+}
+.mas-arrow-line-down-left-filled:before {
+    content: "\e031";
+}
+.mas-arrow-line-down-right-filled:before {
+    content: "\e032";
+}
+.mas-arrow-line-left-filled:before {
+    content: "\e033";
+}
+.mas-arrow-line-right-filled:before {
+    content: "\e034";
+}
+.mas-arrow-line-up-filled:before {
+    content: "\e035";
+}
+.mas-arrow-line-up-left-filled:before {
+    content: "\e036";
+}
+.mas-arrow-line-up-right-filled:before {
+    content: "\e037";
+}
+.mas-arrow-right-filled:before {
+    content: "\e038";
+}
+.mas-arrow-square-down-filled:before {
+    content: "\e039";
+}
+.mas-arrow-square-down-left-filled:before {
+    content: "\e03a";
+}
+.mas-arrow-square-down-right-filled:before {
+    content: "\e03b";
+}
+.mas-arrow-square-in-filled:before {
+    content: "\e03c";
+}
+.mas-arrow-square-left-filled:before {
+    content: "\e03d";
+}
+.mas-arrow-square-out-filled:before {
+    content: "\e03e";
+}
+.mas-arrow-square-right-filled:before {
+    content: "\e03f";
+}
+.mas-arrow-square-up-filled:before {
+    content: "\e040";
+}
+.mas-arrow-square-up-left-filled:before {
+    content: "\e041";
+}
+.mas-arrow-square-up-right-filled:before {
+    content: "\e042";
+}
+.mas-arrow-u-down-left-filled:before {
+    content: "\e043";
+}
+.mas-arrow-u-down-right-filled:before {
+    content: "\e044";
+}
+.mas-arrow-u-left-down-filled:before {
+    content: "\e045";
+}
+.mas-arrow-u-left-up-filled:before {
+    content: "\e046";
+}
+.mas-arrow-u-right-down-filled:before {
+    content: "\e047";
+}
+.mas-arrow-u-right-up-filled:before {
+    content: "\e048";
+}
+.mas-arrow-u-up-left-filled:before {
+    content: "\e049";
+}
+.mas-arrow-u-up-right-filled:before {
+    content: "\e04a";
+}
+.mas-arrow-up-filled:before {
+    content: "\e04b";
+}
+.mas-arrow-up-left-filled:before {
+    content: "\e04c";
+}
+.mas-arrow-up-right-filled:before {
+    content: "\e04d";
+}
+.mas-arrows-clockwise-filled:before {
+    content: "\e04e";
+}
+.mas-arrows-counter-clockwise-filled:before {
+    content: "\e04f";
+}
+.mas-arrows-down-up-filled:before {
+    content: "\e050";
+}
+.mas-arrows-horizontal-filled:before {
+    content: "\e051";
+}
+.mas-arrows-in-cardinal-filled:before {
+    content: "\e052";
+}
+.mas-arrows-in-filled:before {
+    content: "\e053";
+}
+.mas-arrows-in-line-horizontal-filled:before {
+    content: "\e054";
+}
+.mas-arrows-in-line-vertical-filled:before {
+    content: "\e055";
+}
+.mas-arrows-in-simple-filled:before {
+    content: "\e056";
+}
+.mas-arrows-left-right-filled:before {
+    content: "\e057";
+}
+.mas-arrows-merge-filled:before {
+    content: "\e058";
+}
+.mas-arrows-out-cardinal-filled:before {
+    content: "\e059";
+}
+.mas-arrows-out-filled:before {
+    content: "\e05a";
+}
+.mas-arrows-out-line-horizontal-filled:before {
+    content: "\e05b";
+}
+.mas-arrows-out-line-vertical-filled:before {
+    content: "\e05c";
+}
+.mas-arrows-out-simple-filled:before {
+    content: "\e05d";
+}
+.mas-arrows-split-filled:before {
+    content: "\e05e";
+}
+.mas-arrows-vertical-filled:before {
+    content: "\e05f";
+}
+.mas-caret-circle-double-down-filled:before {
+    content: "\e060";
+}
+.mas-caret-circle-double-left-filled:before {
+    content: "\e061";
+}
+.mas-caret-circle-double-right-filled:before {
+    content: "\e062";
+}
+.mas-caret-circle-double-up-filled:before {
+    content: "\e063";
+}
+.mas-caret-circle-down-filled:before {
+    content: "\e064";
+}
+.mas-caret-circle-left-filled:before {
+    content: "\e065";
+}
+.mas-caret-circle-right-filled:before {
+    content: "\e066";
+}
+.mas-caret-circle-up-down-filled:before {
+    content: "\e067";
+}
+.mas-caret-circle-up-filled:before {
+    content: "\e068";
+}
+.mas-caret-double-down-filled:before {
+    content: "\e069";
+}
+.mas-caret-double-left-filled:before {
+    content: "\e06a";
+}
+.mas-caret-double-right-filled:before {
+    content: "\e06b";
+}
+.mas-caret-double-up-filled:before {
+    content: "\e06c";
+}
+.mas-caret-down-filled:before {
+    content: "\e06d";
+}
+.mas-caret-left-filled:before {
+    content: "\e06e";
+}
+.mas-caret-right-filled:before {
+    content: "\e06f";
+}
+.mas-caret-up-down-filled:before {
+    content: "\e070";
+}
+.mas-caret-up-filled:before {
+    content: "\e071";
+}
+.mas-recycle-filled:before {
+    content: "\e072";
+}

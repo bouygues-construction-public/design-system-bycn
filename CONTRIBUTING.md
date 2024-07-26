@@ -28,6 +28,8 @@ design-system-bycn/
 
 # Local development
 
+## NPM commands
+
 ```sh
 # Clone the `design-system-bycn`
 git clone https://github.com/bouygues-construction/design-system-bycn
@@ -41,12 +43,21 @@ npm i
 npm run build:css
 ## The Showcases
 npm run build-storybook
+## The components
+npm run build
 
 # start storybook
 ## the components
 npm run start:components-storybook
 ## the css
 npm run start:css-storybook
+## the icons
+npm run start:icons-storybook
+
+# Deploying to Chromatic
+npm run chromatic
+# Deploying to NPM
+npm pulish --access public
 ```
 
 For your information, here are the showcases' URLs:
@@ -56,6 +67,15 @@ For your information, here are the showcases' URLs:
 | CSS        | [localhost:6006](http://localhost:6006) |
 | Components | [localhost:6008](http://localhost:6007) |
 | Icons      | [localhost:6007](http://localhost:6008) |
+
+## Starting new component
+
+Here are the checklist when starting to develop new components:
+
+⬜️ Initial new css style for component in **/projects/css/src/components**\
+⬜️ Initial new component in **/projects/components/src** and import component' style\
+⬜️ Write component' showcase\
+⬜️ When finised, merge the component's branch into **develop** and publish to chromatic for Designers to review 
 
 # Code contributing
 

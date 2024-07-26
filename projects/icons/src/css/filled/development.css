@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "development--filled";
+    src: url("../../fonts/filled/development/development.ttf?71b1206666d7f9f6f8d7183e3e788e8c") format("truetype"),
+url("../../fonts/filled/development/development.woff?71b1206666d7f9f6f8d7183e3e788e8c") format("woff"),
+url("../../fonts/filled/development/development.woff2?71b1206666d7f9f6f8d7183e3e788e8c") format("woff2");
+}
+
+i[class^="mas-development--filled"]:before, i[class*=" mas-development--filled"]:before {
+    font-family: development--filled !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-brackets-angle-filled:before {
+    content: "\e1d1";
+}
+.mas-brackets-curly-filled:before {
+    content: "\e1d2";
+}
+.mas-brackets-round-filled:before {
+    content: "\e1d3";
+}
+.mas-brackets-square-filled:before {
+    content: "\e1d4";
+}
+.mas-bug-beetle-filled:before {
+    content: "\e1d5";
+}
+.mas-bug-droid-filled:before {
+    content: "\e1d6";
+}
+.mas-bug-filled:before {
+    content: "\e1d7";
+}
+.mas-code-block-filled:before {
+    content: "\e1d8";
+}
+.mas-code-filled:before {
+    content: "\e1d9";
+}
+.mas-code-simple-filled:before {
+    content: "\e1da";
+}
+.mas-cpu-filled:before {
+    content: "\e1db";
+}
+.mas-database-filled:before {
+    content: "\e1dc";
+}
+.mas-git-branch-filled:before {
+    content: "\e1dd";
+}
+.mas-git-commit-filled:before {
+    content: "\e1de";
+}
+.mas-git-diff-filled:before {
+    content: "\e1df";
+}
+.mas-git-fork-filled:before {
+    content: "\e1e0";
+}
+.mas-git-merge-filled:before {
+    content: "\e1e1";
+}
+.mas-git-pull-request-filled:before {
+    content: "\e1e2";
+}
+.mas-magnet-filled:before {
+    content: "\e1e3";
+}
+.mas-magnet-straight-filled:before {
+    content: "\e1e4";
+}
+.mas-robot-filled:before {
+    content: "\e1e5";
+}
+.mas-terminal-filled:before {
+    content: "\e1e6";
+}
+.mas-terminal-window-filled:before {
+    content: "\e1e7";
+}
+.mas-tree-structure-filled:before {
+    content: "\e1e8";
+}
+.mas-webhooks-logo-filled:before {
+    content: "\e1e9";
+}

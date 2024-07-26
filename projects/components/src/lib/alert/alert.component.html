@@ -1,0 +1,23 @@
+<div class="mas-alert"  [ngClass]="{'alert-show ':alertShow, 'alert-hide ': !alertShow}" *ngIf="show">
+    <div class="mas-alert-icon mas-alert-icon-{{type}}">
+        <i *ngIf="type==='info'" class="mas-info-filled mas-security-and-warnings--filled "></i> 
+        <i *ngIf="type==='error'" class=" mas-x-circle-filled mas-math-and-finance--filled"></i> 
+        <i *ngIf="type==='success'" class="mas-check-circle-filled mas-system-and-device--filled"></i> 
+        <i *ngIf="type==='warning'" class="mas-warning-circle-filled mas-security-and-warnings--filled"></i> 
+    </div>
+    <div class="mas-alert-content">
+        <div class="mas-alert-title">
+            <span class="mas-alert-title-label">
+                {{title}}
+            </span>
+            <div *ngIf="closeBtn" class="mas-alert-close" (click)="closeAlert()">
+                <i class="mas-x-outlined mas-math-and-finance--outlined " ></i> 
+            </div>    
+        </div>
+        <div  *ngIf="message" class="mas-alert-description">
+            <span class="mas-alert-description-label">
+                {{message}}
+            </span>
+        </div>
+    </div>
+</div>

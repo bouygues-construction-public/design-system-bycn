@@ -1,0 +1,209 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+.mas-tooltip {
+  position: absolute;
+  display: none;
+  z-index: 1060;
+  width: max-content;
+  max-width: 200px;
+  opacity: 0;
+
+  background: var(--Text-Primary, #0C0C0D);
+  padding: 4px 12px;
+  gap: 8px;
+
+  box-shadow: 0px 3px 3px 0px rgba(115, 115, 115, 0.25);
+  border-radius: 4px;
+
+  color: var(--Text-Reverse, #FFF);
+  font-feature-settings: 'calt' off;
+  font-family: var(--mas-typo_font-family--inter); 
+  font-size:   var( --mas-typo_body-3-font-size) ;
+  font-style: normal;
+  line-height: var(--mas-typo_body-3-line-height); /* 142.857% */
+  
+}
+.padding-bar {
+  position: absolute;
+  padding: 10px;
+  transform: translateY(20px);
+}
+
+.mas-tooltip.top-left .padding-bar,
+.mas-tooltip.top-right .padding-bar,
+.mas-tooltip.top .padding-bar {
+  bottom: 0;
+  right: 0;
+  transform: translateY(20px);
+  width: inherit;
+}
+
+.mas-tooltip.bottom-left .padding-bar,
+.mas-tooltip.bottom-right .padding-bar,
+.mas-tooltip.bottom .padding-bar {
+  left : 0;
+  top: 0;
+  transform: translateY(-20px);
+  width: inherit;
+}
+.mas-tooltip.left .padding-bar,
+.mas-tooltip.right .padding-bar {
+  top : 0 ;
+  height: 100%;
+}
+.mas-tooltip.left .padding-bar  {
+  right: 0;
+  transform: translateX(20px);
+}
+
+.mas-tooltip.right .padding-bar {
+  left : 0 ; 
+  transform: translateX(-20px);
+}
+
+.mas-tooltip.top {
+  display: inline-block;
+  top: 0;
+  left: 52%;
+  transform: translate(-50%, calc(-100% - 12px));
+}
+
+
+.mas-tooltip.top .arrow {
+  bottom: -4px;
+  border-width: 4px 4px 0;
+  border-top-color: #000000;
+  color: transparent;
+  left: 50%;
+  transform: translate(-50%, 0px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.mas-tooltip.top-left {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  transform: translate(0%, calc(-100% - 12px));
+}
+
+.mas-tooltip.top-left .arrow {
+  bottom: -4px;
+  border-width: 4px 4px 0;
+  border-top-color: #000000;
+  color: transparent;
+  left: 15px;
+}
+
+.mas-tooltip.top-right {
+  display: inline-block;
+  top: 0;
+  right: 0;
+  transform: translate(0%, calc(-100% - 12px));
+}
+
+.mas-tooltip.top-right .arrow {
+  bottom: -4px;
+  border-width: 4px 4px 0;
+  border-top-color: #000000;
+  color: transparent;
+  right: 15px;
+}
+
+.mas-tooltip.bottom {
+  display: inline-block;
+  bottom: 0;
+  left: 52%;
+  transform: translate(-50%, calc(100% + 12px));
+}
+
+.mas-tooltip.bottom .arrow {
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 4px 4px;
+  border-bottom-color: #000000;
+  color: transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.mas-tooltip.bottom-left {
+  display: inline-block;
+  bottom: 0;
+  left: 0;
+  transform: translate(0%, calc(100% + 12px));
+}
+
+.mas-tooltip.bottom-left .arrow {
+  top: -4px;
+  left: 15px;
+  border-width: 0 4px 4px;
+  border-bottom-color: #000000;
+  color: transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.mas-tooltip.bottom-right {
+  display: inline-block;
+  bottom: 0;
+  right: 0;
+  transform: translate(0%, calc(100% + 12px));
+}
+
+
+.mas-tooltip.bottom-right .arrow {
+  top: -4px;
+  right: 15px;
+  border-width: 0 4px 4px;
+  border-bottom-color: #000000;
+  color: transparent;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.mas-tooltip.left {
+  display: inline-block;
+  left: 0;
+  top: 50%;
+  transform: translate(calc(-100% - 12px), -50%);
+}
+
+.mas-tooltip.left .arrow {
+  top: 50%;
+  transform: translateY(-50%);
+  right: -4px;
+  border-width: 4px 0 4px 4px;
+  border-left-color: #000000;
+  color: transparent;
+}
+
+.mas-tooltip.right {
+  display: inline-block;
+  right: 0;
+  top: 50%;
+  transform: translate(calc(100% + 12px), -50%);
+}
+
+.mas-tooltip.right .arrow {
+  left: -4px;
+  border-width: 4px 4px 4px 0;
+  border-right-color: #000000;
+  color: transparent;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mas-tooltip .arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.mas-tooltip-title {
+  /* Body/Semibold/Body 3 */
+  font-weight:var(--mas-typo_caption-font-weight);
+}
+
+.mas-tooltip-content {
+  /* Body/Semibold/Body 3 */
+  font-weight: var(  --mas-typo_body-font-weight );
+}

@@ -13,7 +13,7 @@ npm i -S @masoni/css-design-tokens
 ## Install fonts
 
 [Raleway](https://fonts.google.com/specimen/Raleway) &
-[Inter Tight](https://fonts.google.com/specimen/Inter+Tight) fonts as described in [Textstyles](https://zeroheight.com/9b39bb2a0/p/32c8aa-textstyles/b/1922ad).
+[Inter](https://fonts.google.com/specimen/Inter) fonts as described in [Textstyles](https://zeroheight.com/9b39bb2a0/p/32c8aa-textstyles/b/1922ad).
 
 ## Usage
 

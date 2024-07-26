@@ -1,4 +1,7 @@
 import type { Preview } from '@storybook/angular';
+import '@masoni/icons/dist/css/filled/index.css'
+import '@masoni/icons/dist/css/outlined/index.css'
+
 
 const preview: Preview = {
   parameters: {

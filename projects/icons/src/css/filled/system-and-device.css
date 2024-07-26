@@ -1,0 +1,438 @@
+@font-face {
+    font-family: "system-and-device--filled";
+    src: url("../../fonts/filled/system-and-device/system-and-device.ttf?be3c9bcc28de1f605b89d2359e44d550") format("truetype"),
+url("../../fonts/filled/system-and-device/system-and-device.woff?be3c9bcc28de1f605b89d2359e44d550") format("woff"),
+url("../../fonts/filled/system-and-device/system-and-device.woff2?be3c9bcc28de1f605b89d2359e44d550") format("woff2");
+}
+
+i[class^="mas-system-and-device--filled"]:before, i[class*=" mas-system-and-device--filled"]:before {
+    font-family: system-and-device--filled !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-app-window-filled:before {
+    content: "\e40b";
+}
+.mas-backspace-filled:before {
+    content: "\e40c";
+}
+.mas-battery-charging-filled:before {
+    content: "\e40d";
+}
+.mas-battery-charging-vertical-filled:before {
+    content: "\e40e";
+}
+.mas-battery-empty-filled:before {
+    content: "\e40f";
+}
+.mas-battery-full-filled:before {
+    content: "\e410";
+}
+.mas-battery-high-filled:before {
+    content: "\e411";
+}
+.mas-battery-low-filled:before {
+    content: "\e412";
+}
+.mas-battery-medium-filled:before {
+    content: "\e413";
+}
+.mas-battery-plus-filled:before {
+    content: "\e414";
+}
+.mas-battery-plus-vertical-filled:before {
+    content: "\e415";
+}
+.mas-battery-vertical-empty-filled:before {
+    content: "\e416";
+}
+.mas-battery-vertical-full-filled:before {
+    content: "\e417";
+}
+.mas-battery-vertical-high-filled:before {
+    content: "\e418";
+}
+.mas-battery-vertical-low-filled:before {
+    content: "\e419";
+}
+.mas-battery-vertical-medium-filled:before {
+    content: "\e41a";
+}
+.mas-battery-warning-filled:before {
+    content: "\e41b";
+}
+.mas-battery-warning-vertical-filled:before {
+    content: "\e41c";
+}
+.mas-bell-filled:before {
+    content: "\e41d";
+}
+.mas-bell-ringing-filled:before {
+    content: "\e41e";
+}
+.mas-bell-simple-filled:before {
+    content: "\e41f";
+}
+.mas-bell-simple-ringing-filled:before {
+    content: "\e420";
+}
+.mas-bell-simple-slash-filled:before {
+    content: "\e421";
+}
+.mas-bell-simple-z-filled:before {
+    content: "\e422";
+}
+.mas-bell-slash-filled:before {
+    content: "\e423";
+}
+.mas-bell-z-filled:before {
+    content: "\e424";
+}
+.mas-bluetooth-connected-filled:before {
+    content: "\e425";
+}
+.mas-bluetooth-filled:before {
+    content: "\e426";
+}
+.mas-bluetooth-slash-filled:before {
+    content: "\e427";
+}
+.mas-bluetooth-x-filled:before {
+    content: "\e428";
+}
+.mas-browser-filled:before {
+    content: "\e429";
+}
+.mas-browsers-filled:before {
+    content: "\e42a";
+}
+.mas-cell-signal-full-filled:before {
+    content: "\e42b";
+}
+.mas-cell-signal-high-filled:before {
+    content: "\e42c";
+}
+.mas-cell-signal-low-filled:before {
+    content: "\e42d";
+}
+.mas-cell-signal-medium-filled:before {
+    content: "\e42e";
+}
+.mas-cell-signal-none-filled:before {
+    content: "\e42f";
+}
+.mas-cell-signal-slash-filled:before {
+    content: "\e430";
+}
+.mas-cell-signal-x-filled:before {
+    content: "\e431";
+}
+.mas-check-circle-filled:before {
+    content: "\e432";
+}
+.mas-check-fat-filled:before {
+    content: "\e433";
+}
+.mas-check-filled:before {
+    content: "\e434";
+}
+.mas-check-square-filled:before {
+    content: "\e435";
+}
+.mas-check-square-offset-filled:before {
+    content: "\e436";
+}
+.mas-checks-filled:before {
+    content: "\e437";
+}
+.mas-circuitry-filled:before {
+    content: "\e438";
+}
+.mas-cloud-arrow-down-filled:before {
+    content: "\e439";
+}
+.mas-cloud-arrow-up-filled:before {
+    content: "\e43a";
+}
+.mas-cloud-check-filled:before {
+    content: "\e43b";
+}
+.mas-cloud-slash-filled:before {
+    content: "\e43c";
+}
+.mas-cloud-warning-filled:before {
+    content: "\e43d";
+}
+.mas-cloud-x-filled:before {
+    content: "\e43e";
+}
+.mas-command-filled:before {
+    content: "\e43f";
+}
+.mas-computer-tower-filled:before {
+    content: "\e440";
+}
+.mas-control-filled:before {
+    content: "\e441";
+}
+.mas-cursor-click-filled:before {
+    content: "\e442";
+}
+.mas-cursor-filled:before {
+    content: "\e443";
+}
+.mas-desktop-filled:before {
+    content: "\e444";
+}
+.mas-desktop-tower-filled:before {
+    content: "\e445";
+}
+.mas-device-mobile-camera-filled:before {
+    content: "\e446";
+}
+.mas-device-mobile-filled:before {
+    content: "\e447";
+}
+.mas-device-mobile-speaker-filled:before {
+    content: "\e448";
+}
+.mas-device-tablet-camera-filled:before {
+    content: "\e449";
+}
+.mas-device-tablet-filled:before {
+    content: "\e44a";
+}
+.mas-device-tablet-speaker-filled:before {
+    content: "\e44b";
+}
+.mas-devices-filled:before {
+    content: "\e44c";
+}
+.mas-dot-filled:before {
+    content: "\e44d";
+}
+.mas-dot-outline-filled:before {
+    content: "\e44e";
+}
+.mas-dots-nine-filled:before {
+    content: "\e44f";
+}
+.mas-dots-six-filled:before {
+    content: "\e450";
+}
+.mas-dots-six-vertical-filled:before {
+    content: "\e451";
+}
+.mas-dots-three-circle-filled:before {
+    content: "\e452";
+}
+.mas-dots-three-circle-vertical-filled:before {
+    content: "\e453";
+}
+.mas-dots-three-filled:before {
+    content: "\e454";
+}
+.mas-dots-three-outline-filled:before {
+    content: "\e455";
+}
+.mas-dots-three-outline-vertical-filled:before {
+    content: "\e456";
+}
+.mas-dots-three-vertical-filled:before {
+    content: "\e457";
+}
+.mas-download-filled:before {
+    content: "\e458";
+}
+.mas-download-simple-filled:before {
+    content: "\e459";
+}
+.mas-flashlight-filled:before {
+    content: "\e45a";
+}
+.mas-gauge-filled:before {
+    content: "\e45b";
+}
+.mas-gear-filled:before {
+    content: "\e45c";
+}
+.mas-gear-six-filled:before {
+    content: "\e45d";
+}
+.mas-hand-swipe-left-filled:before {
+    content: "\e45e";
+}
+.mas-hand-swipe-right-filled:before {
+    content: "\e45f";
+}
+.mas-hand-tap-filled:before {
+    content: "\e460";
+}
+.mas-hard-drive-filled:before {
+    content: "\e461";
+}
+.mas-hard-drives-filled:before {
+    content: "\e462";
+}
+.mas-key-return-filled:before {
+    content: "\e463";
+}
+.mas-keyboard-filled:before {
+    content: "\e464";
+}
+.mas-laptop-filled:before {
+    content: "\e465";
+}
+.mas-lightbulb-filament-filled:before {
+    content: "\e466";
+}
+.mas-lightbulb-filled:before {
+    content: "\e467";
+}
+.mas-lightning-a-filled:before {
+    content: "\e468";
+}
+.mas-lightning-filled:before {
+    content: "\e469";
+}
+.mas-lightning-slash-filled:before {
+    content: "\e46a";
+}
+.mas-link-break-filled:before {
+    content: "\e46b";
+}
+.mas-link-filled:before {
+    content: "\e46c";
+}
+.mas-link-simple-break-filled:before {
+    content: "\e46d";
+}
+.mas-link-simple-filled:before {
+    content: "\e46e";
+}
+.mas-link-simple-horizontal-break-filled:before {
+    content: "\e46f";
+}
+.mas-link-simple-horizontal-filled:before {
+    content: "\e470";
+}
+.mas-list-magnifying-glass-filled:before {
+    content: "\e471";
+}
+.mas-magnifying-glass-filled:before {
+    content: "\e472";
+}
+.mas-magnifying-glass-minus-filled:before {
+    content: "\e473";
+}
+.mas-magnifying-glass-plus-filled:before {
+    content: "\e474";
+}
+.mas-monitor-filled:before {
+    content: "\e475";
+}
+.mas-monitor-play-filled:before {
+    content: "\e476";
+}
+.mas-mouse-filled:before {
+    content: "\e477";
+}
+.mas-mouse-simple-filled:before {
+    content: "\e478";
+}
+.mas-notification-filled:before {
+    content: "\e479";
+}
+.mas-nut-filled:before {
+    content: "\e47a";
+}
+.mas-option-filled:before {
+    content: "\e47b";
+}
+.mas-plug-charging-filled:before {
+    content: "\e47c";
+}
+.mas-plug-filled:before {
+    content: "\e47d";
+}
+.mas-plugs-connected-filled:before {
+    content: "\e47e";
+}
+.mas-plugs-filled:before {
+    content: "\e47f";
+}
+.mas-power-filled:before {
+    content: "\e480";
+}
+.mas-qr-code-filled:before {
+    content: "\e481";
+}
+.mas-radio-button-filled:before {
+    content: "\e482";
+}
+.mas-scan-filled:before {
+    content: "\e483";
+}
+.mas-sign-in-filled:before {
+    content: "\e484";
+}
+.mas-sign-out-filled:before {
+    content: "\e485";
+}
+.mas-sim-card-filled:before {
+    content: "\e486";
+}
+.mas-spinner-filled:before {
+    content: "\e487";
+}
+.mas-spinner-gap-filled:before {
+    content: "\e488";
+}
+.mas-swap-filled:before {
+    content: "\e489";
+}
+.mas-tabs-filled:before {
+    content: "\e48a";
+}
+.mas-toggle-left-filled:before {
+    content: "\e48b";
+}
+.mas-toggle-right-filled:before {
+    content: "\e48c";
+}
+.mas-upload-filled:before {
+    content: "\e48d";
+}
+.mas-upload-simple-filled:before {
+    content: "\e48e";
+}
+.mas-usb-filled:before {
+    content: "\e48f";
+}
+.mas-vibrate-filled:before {
+    content: "\e490";
+}
+.mas-wifi-high-filled:before {
+    content: "\e491";
+}
+.mas-wifi-low-filled:before {
+    content: "\e492";
+}
+.mas-wifi-medium-filled:before {
+    content: "\e493";
+}
+.mas-wifi-none-filled:before {
+    content: "\e494";
+}
+.mas-wifi-slash-filled:before {
+    content: "\e495";
+}
+.mas-wifi-x-filled:before {
+    content: "\e496";
+}

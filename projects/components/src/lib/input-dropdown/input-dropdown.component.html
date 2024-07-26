@@ -1,0 +1,57 @@
+<ng-container [ngSwitch]="labelText === undefined">
+  <ng-content select="mas-label" *ngSwitchCase="true"></ng-content>
+  <label [for]="identifier" class="mas-label" *ngSwitchCase="false">{{ labelText }}</label>
+</ng-container>
+<div
+  (focus)="_onChange($event)"
+  class="mas-input-dropdown_value-wrapper"
+  [ngSwitch]="isEmpty"
+  (click)="_onToggle()"
+  [ngClass]="{ 'mas-input-dropdown_listbox--opened': _panelOpen }"
+>
+  <!-- if selected -->
+  <ng-container *ngIf="selectedOptions.size > 0">
+    <ng-container [ngSwitch]="type">
+      <img
+        *ngSwitchCase="'image'"
+        src="{{ selectedOptions.get(_values.values().next().value)?.option?.imageUrl }}"
+        class="mas-dropdown-option-image"
+      />
+      <i
+        *ngSwitchCase="'icon'"
+        class="mas-icon {{
+          selectedOptions.get(_values.values().next().value)?.option?.icon
+        }} mas-input-dropdown_leading-icon"
+      ></i>
+    </ng-container>
+  </ng-container>
+  <!-- by default but disappear when selected and option have image or icon-->
+  <i
+    class="default mas-icon {{ leadingIcon }} mas-input-dropdown_leading-icon"
+    *ngIf="leadingIcon !== '' && (selectedOptions.size === 0 || (type !== 'icon' && type !== 'image'))"
+  ></i>
+  <ng-container *ngSwitchCase="true">
+    <span class="mas-input-dropdown_placeholder mas-input-dropdown-min-line">{{ placeholder }}</span>
+  </ng-container>
+  <ng-container *ngSwitchCase="false">
+    <span class="mas-input-dropdown_text mas-input-dropdown-min-line">
+      {{ triggerValue }}
+    </span>
+  </ng-container>
+  <i class="mas-caret-down-outlined mas-icon mas-arrows--outlined mas-input-dropdown_trailing-icon"></i>
+</div>
+
+<!-- listbox -->
+<ng-template [ngIf]="_panelOpen && !disabled">
+  <div
+    #inputdropdown
+    role="listbox"
+    [ngClass]="{ 'mas-input-dropdown--disabled': disabled }"
+    class="mas-input-dropdown_listbox-wrapper"
+  >
+    <ng-content select="mas-dropdown-option" [isMultiple]="multi" [size]="size" [type]="type"></ng-content>
+  </div>
+</ng-template>
+<ng-content select="mas-error" *ngIf="invalid"></ng-content>
+<ng-content select="mas-helper" *ngIf="!invalid"></ng-content>
+<!-- <span class="mas-helper" *ngSwitchCase="false">{{ helperText }}</span> -->

@@ -1,0 +1,66 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+.mas-progress-bar {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--mas-typo_font-family--inter);
+}
+.mas-progress-bar-label{
+display: flex;
+justify-content: space-between;
+}
+.inline {
+flex-direction: row;
+}
+
+.inline .label{
+  margin-right: 8px;
+}
+
+.small .mas-progress-wrapper {
+  height: 4px; 
+}
+
+.label {
+color: var(--text-primary, #0C0C0D);
+font-size: 14px;
+font-weight: 600;
+line-height: 20px;
+}
+
+.mas-progress-wrapper {
+width: 100%;
+height: 8px; 
+background-color: #f3f3f3; 
+border-radius: 8px; 
+margin-top: 8px; 
+}
+
+.mas-progress-bar-inner {
+height: 100%;
+background-color: var(--action-primary-default, #007AB7); 
+width: 0; 
+border-radius: 8px; 
+}
+
+.helper {
+color: var(--text-secondary, #4A4A4F);
+font-size: 12px;
+font-weight: 600;
+line-height: 16px;
+margin-top: 8px; 
+}
+
+.success .mas-progress-bar-inner {
+background-color: var(--semantic-success-default, #6C931A); 
+}
+
+.success .mas-icon{
+color: var(--semantic-success-default, #6C931A); 
+}
+.error .mas-progress-bar-inner {
+background-color: var(--semantic-error-default, #D21E3C);
+}
+.error .mas-icon{
+color: var(--semantic-error-default, #D21E3C);
+}
