@@ -296,8 +296,8 @@ export const HeaderTemplate: Story = {
       <ng-template #headerTemplate>
         <tr>
           <th>header 1</th>
-          <th>header 2</th>
-          <th>header 3</th>
+          <th style="width: 200px">header 2</th>
+          <th style="width: 200px">header 3</th>
         </tr>
       </ng-template>
     </div>

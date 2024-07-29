@@ -13,18 +13,18 @@ import { MasDataTableModule } from 'projects/components/src/public-api';
   selector: 'app-data-table',
   template: `
     <div style="height: 300px">
-      <mas-data-table [value]="textValue" [columns]="textColumns" [totalRecords]="textValue.length"> </mas-data-table>
+      <mas-data-table [value]="textValue" [columns]="textColumns" [totalRecords]="textValue.length" size="S"></mas-data-table>
     </div>
     <div style="height: 200px">
-      <mas-data-table [value]="actionValue" [columns]="actionColumns" [totalRecords]="actionValue.length">
+      <mas-data-table [value]="actionValue" [columns]="actionColumns" [totalRecords]="actionValue.length" size="S">
       </mas-data-table>
     </div>
     <div style="height: 300px">
-      <mas-data-table [value]="checkboxValue" [columns]="checkboxColumns" [totalRecords]="checkboxValue.length">
+      <mas-data-table [value]="checkboxValue" [columns]="checkboxColumns" [totalRecords]="checkboxValue.length" size="S">
       </mas-data-table>
     </div>
     <div style="height: 300px">
-      <mas-data-table [value]="tagValue" [columns]="tagColumns" [totalRecords]="tagValue.length"> </mas-data-table>
+      <mas-data-table [value]="tagValue" [columns]="tagColumns" [totalRecords]="tagValue.length" size="S"> </mas-data-table>
     </div>
   `,
 })
