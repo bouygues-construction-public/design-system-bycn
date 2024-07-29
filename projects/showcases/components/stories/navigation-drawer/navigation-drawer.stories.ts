@@ -26,9 +26,8 @@ const meta: Meta<MasNavigationDrawer> = {
       },
     },
   },
-  render: () => ({
-    props: {
-    },
+  render: (args) => ({
+    props: args,
     template: `
     <div style="height: 500px">
       <ng-template #headerComponent>
