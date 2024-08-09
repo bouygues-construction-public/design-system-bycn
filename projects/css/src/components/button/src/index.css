@@ -22,6 +22,7 @@ mas-button {
   white-space: nowrap;
   height: 44px;
   border: none;
+  gap: 8px;
 }
 a.mas-btn {
   cursor: pointer;
@@ -156,41 +157,21 @@ background: var(--action-reverse-default, #FFF);
 
 .mas-btn--icon-left i[class^='mas-'],
 .mas-btn_size--medium.mas-btn--icon-left i[class^='mas-'] {
-  padding-inline-end: 8px;
   font-size: 20px;
 }
 
 .mas-btn_size--small.mas-btn--icon-left i[class^='mas-'] {
-  padding-inline-end: 6px;
   font-size: 16px;
 }
 
 .mas-btn_size--small.mas-btn--icon-right i[class^='mas-'] {
-  padding-inline-start: 6px;
   font-size: 16px;
-}
-
-.mas-btn_size--small.mas-btn--icon-left svg {
-  margin-inline-end: 6px;
-}
-
-.mas-btn_size--small.mas-btn--icon-right svg {
-  margin-inline-start: 6px;
 }
 
 .mas-btn--icon-right i[class^='mas-'],
 .mas-btn_size--medium.mas-btn--icon-right i[class^='mas-'] {
-  padding-inline-start: 8px;
   font-size: 20px;
 }
-
-
-.mas-icon-left{
-  margin-right: 8px;
-}
-.mas-icon-right{
-  margin-left: 8px;
-}  
 
 .mas-icon {
     background-size: cover;
