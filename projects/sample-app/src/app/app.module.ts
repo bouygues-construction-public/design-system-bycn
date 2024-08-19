@@ -53,6 +53,7 @@ import { FormsModule } from '@angular/forms';
     MasDividerModule,
     MasTabModule,
     MasCheckboxModule,
+    MasTabModule,
     FormsModule,
   ],
   bootstrap: [AppComponent],

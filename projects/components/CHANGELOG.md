@@ -1,5 +1,13 @@
 # Change Log
 
+## [0.1.4] (2024-08-19)
+
+[npm package](https://www.npmjs.com/package/@masoni/components/v/0.1.4)
+
+### Update on components
+
+- [tab](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/tag/README.md): expose tab change event
+
 ## [0.1.3] (2024-7-22)
 
 [npm package](https://www.npmjs.com/package/@masoni/components/v/0.1.3)
