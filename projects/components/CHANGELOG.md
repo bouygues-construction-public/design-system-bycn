@@ -7,6 +7,7 @@
 ### Update on components
 
 - [tab](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/tag/README.md): expose tab change event
+- [action-dropdown](https://github.com/bouygues-construction/design-system-bycn/tree/merge/projects/components/src/lib/action-dropdown/README.md): fix change event
 
 ## [0.1.3] (2024-7-22)
 
