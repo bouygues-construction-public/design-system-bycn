@@ -1,4 +1,7 @@
 # Change Log
+## [1.0.7](https://www.npmjs.com/package/@masoni/css/v/1.0.7) (2024-8-14)
+
+- fix button css cause by icon padding.  
 
 ## [1.0.6](https://www.npmjs.com/package/@masoni/css/v/1.0.6) (2024-7-22)
 

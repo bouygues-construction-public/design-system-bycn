@@ -68,4 +68,4 @@ This package provides you with a library of Masoni Angular Components:
 
 ## License
 
-    Copyright 2023 BYCN.
+    Copyright 2024 BYCN.
