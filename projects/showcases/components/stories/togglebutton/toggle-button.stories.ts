@@ -22,10 +22,8 @@ const meta: Meta<MasToggleButton> = {
       },
     },
   },
-  render: (args: MasToggleButton) => ({
-    props: {
-      ...args,
-    },
+  render: ({...args}) => ({
+    props: args
   }),
 };
 
@@ -61,7 +59,7 @@ export const Disabled: Story = {
   },
 };
 export const Size: Story = {
-  render: (args: MasToggleButton) => ({
+  render: () => ({
     template: `
     <mas-toggle-button labelText="toggle button" size="S"></mas-toggle-button>
     <br>
@@ -70,7 +68,7 @@ export const Size: Story = {
   }),
 };
 export const Overview: Story = {
-  render: (args: MasToggleButton) => ({
+  render: () => ({
     template: `
     <div >
       <label style="display: flex; align-items: center"><mas-toggle-button labelText="toggle button" size="S">

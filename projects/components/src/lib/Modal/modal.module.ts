@@ -1,17 +1,13 @@
-import {NgModule} from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MasModal} from './modal.component';
-import { MasButton } from "projects/components/src/public-api";
-import { MasIconButton } from "projects/components/src/public-api";
+import { MasButtonModule } from "../button";
+import { MasIconButtonModule } from "../icon-button";
 
+@NgModule({
+  imports: [CommonModule, MasButtonModule, MasIconButtonModule],
 
-@NgModule({ 
-  imports: [
-    CommonModule
-  ],
-  
-  exports: [MasModal,MasButton,MasIconButton],
-  declarations: [MasModal,MasButton,MasIconButton],
-  
+  exports: [MasModal],
+  declarations: [MasModal],
 })
 export class MasModalModule {}

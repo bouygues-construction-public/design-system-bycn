@@ -57,7 +57,10 @@ npm run start:icons-storybook
 # Deploying to Chromatic
 npm run chromatic
 # Deploying to NPM
-npm pulish --access public
+## Deploying @masoni/components
+npm run release:components
+## Deploying @masoni/css
+npm run release:css
 ```
 
 For your information, here are the showcases' URLs:

@@ -13,9 +13,8 @@ const meta: Meta<TextInputExample> = {
       imports: [CommonModule, MasTextInputModule, ReactiveFormsModule, MasErrorModule, MasLabelModule, MasHelperModule],
     }),
   ],
-  render: (args: TextInputExample) => ({
+  render: () => ({
     props: {
-      ...args,
     },
   }),
   argTypes: {},

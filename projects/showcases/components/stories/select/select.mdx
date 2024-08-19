@@ -21,10 +21,10 @@ import * as SelectStories from './select.stories';
 
 {/* Table of Contents */}
 
-- [Overview](#overview)
-- [Props](#props)
-- [Usage](#usage)
-- [Variants](#variants)
+* [Overview](#overview)
+* [Props](#props)
+* [Usage](#usage)
+* [Variants](#variants)
 
 ## Overview
 
@@ -38,8 +38,8 @@ Selects are intended for selecting options from a reduced list. The list must co
 
 ## Usage
 
-- Use select component to make a selection from a predefined list of items, and when user have to set data.
-- Be careful when using select to allow the user to enter data in a form. In the case of a navigation action, select is not appropriate.
+* Use select component to make a selection from a predefined list of items, and when user have to set data.
+* Be careful when using select to allow the user to enter data in a form. In the case of a navigation action, select is not appropriate.
 
 ## Variants
 
@@ -50,47 +50,39 @@ Selects are intended for selecting options from a reduced list. The list must co
 `mas-select` can be used with sub-elements: `mas-label`, `mas-error`, `mas-helper`.\
 Select's options is nested inside `mas-select` component.
 
-<Canvas>
-  <Story of={SelectStories.Overview} />
-</Canvas>
+<Canvas of={SelectStories.Overview} />
 
 ### Status
 
 Use `mas-error` to display error message.
 
-<Canvas>
-  <Story of={SelectStories.Basic} />
-  <Story of={SelectStories.Error} />
-  <Story of={SelectStories.Disabled} />
+<Canvas of={SelectStories.Error}>
+</Canvas>
+
+<Canvas of={SelectStories.Disabled}>
 </Canvas>
 
 ### Helper text
 
 If required, an helper text can be displayed with `mas-helper` component.
 
-<Canvas>
-  <Story of={SelectStories.HelperText} />
-  <Story of={SelectStories.Basic} />
+<Canvas of={SelectStories.HelperText}>
 </Canvas>
 
 ### Size
 
 The select has two sizes available: `small` and `medium`. The `small` size is used by default.
 
-<Canvas>
-  <Story of={SelectStories.Size} />
-</Canvas>
+<Canvas  of={SelectStories.Size} />
 
 ### Filled
 
-<Canvas>
-  <Story of={SelectStories.Filled} />
-</Canvas>
+<Canvas of={SelectStories.Filled} />
 
 ## Guidelines
 
-- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/251d55-select/b/964f27)
+* Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/251d55-select/b/964f27)
 
 ## Feedback & contact
 
-- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
+* Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

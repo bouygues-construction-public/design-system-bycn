@@ -18,7 +18,8 @@ import { Component, Input, OnInit } from '@angular/core';
       'mas-badge-color--primary': color === 'primary',
       'mas-badge-color--brand': color === 'brand',
       'mas-badge-type--dot': type === 'dot',
-      'mas-badge-type--number': type === 'number'
+      'mas-badge-type--number': type === 'number',
+      'mas-badge-type--number-minor': number < 10,
     }"
       >{{ numberToString(number) }}</span
     >`,

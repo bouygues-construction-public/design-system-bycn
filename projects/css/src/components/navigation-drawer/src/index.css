@@ -24,6 +24,7 @@
     }
     .mas-navigation-drawer-section {
       .section-heading {
+        color: var(--mas-semantic-color_text-secondary);
         display: flex;
         padding: 6px 8px 6px 8px;
         align-items: center;
@@ -37,7 +38,7 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      position: fixed;
+      position: absolute;
       bottom: 0;
       .mas-navigation-drawer_footer-component {
         display: flex;
@@ -55,20 +56,34 @@
 }
 .mas-navigation-drawer.mas-navigation-drawer--collapsed {
   .mas-navigation-drawer_header {
-    .mas-navigation_header-component{
+    .mas-navigation_header-component {
       display: none;
     }
   }
   .mas-navigation-drawer_container {
     .mas-navigation-drawer-section--collapsed {
       .section-heading {
-        display: none;
+        visibility: hidden;
+        width: 0px;
+        height: 24px;
       }
     }
   }
   .mas-navigation-drawer_footer {
     .mas-navigation-drawer_footer-component {
       display: none;
+    }
+  }
+}
+@media screen and (max-height: 400px) {
+  .mas-navigation-drawer .mas-navigation-drawer_container{
+    .mas-navigation-drawer_footer {
+      .mas-navigation-drawer_footer-component{
+        display: none;
+      }
+      .logo-BYCN {
+        display: none;
+      }
     }
   }
 }

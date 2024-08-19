@@ -1,9 +1,9 @@
-<ng-container [ngSwitch]="labelText === ''">
+<ng-container [ngSwitch]="labelText === undefined">
   <ng-content select="mas-label" *ngSwitchCase="true"></ng-content>
   <label [for]="identifier" class="mas-label" *ngSwitchCase="false">{{ labelText }}</label>
 </ng-container>
 <div
-  (focus)="onChange($event)"
+  (focus)="_onChange($event)"
   class="mas-input-dropdown_value-wrapper"
   [ngSwitch]="isEmpty"
   (click)="_onToggle()"
@@ -53,5 +53,5 @@
   </div>
 </ng-template>
 <ng-content select="mas-error" *ngIf="invalid"></ng-content>
-<ng-content select="mas-helper" *ngIf="helperText !== '' && !invalid"></ng-content>
+<ng-content select="mas-helper" *ngIf="!invalid"></ng-content>
 <!-- <span class="mas-helper" *ngSwitchCase="false">{{ helperText }}</span> -->

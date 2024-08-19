@@ -1,4 +1,4 @@
-import { Meta, Story, StoryObj, moduleMetadata } from "@storybook/angular";
+import { Meta, StoryObj, moduleMetadata } from "@storybook/angular";
 import { MasButton, MasButtonDirective } from "projects/components/src/lib/button";  
 
 const icons = ['mas-arrow-arc-left-outlined mas-arrows--outlined',
@@ -81,11 +81,9 @@ export default {
       },
     },
   },
-} as Meta;
-
-const Template: Story<MasButton> = (args: MasButton) => ({
-  props: args,
-  template: `
+  render: ({...args}) => ({
+    props: args,
+    template: `
             <mas-button
               [variant]="variant"
               [size]="size"
@@ -95,12 +93,13 @@ const Template: Story<MasButton> = (args: MasButton) => ({
               [iconAlone]="iconAlone">
               Button
             </mas-button>
-            `,
-});
+    `
+  })
+} as Meta;
  
 /** Basic : A button with default settings */
 
-export const Default = Template.bind({});
+export const Default: StoryObj<MasButton> = {}
 Default.args = {
   variant: 'primary',
   size: 'medium',
@@ -110,59 +109,42 @@ Default.args = {
   iconAlone: null,
 };
 
-export const Primary = () => ({
-  template: `
-    <mas-button variant="primary">Primary</mas-button>
-  `,
-});
+export const ButtonType = {
+  render: () => ({
+    template: `
+      <div style="display: flex; justify-content: space-between">
+        <mas-button variant="primary">Primary</mas-button>
+        <mas-button variant="secondary">Secondary</mas-button>
+        <mas-button variant="accent">Accent</mas-button>
+        <mas-button variant="tertiary">Tertiary</mas-button>
+      </div>
+    `
+  })
+}
 
-export const Secondary = () => ({
-  template: `
-    <mas-button variant="secondary">Secondary</mas-button>
-  `,
-});
-export const Accent = () => ({
-  template: `
-    <mas-button variant="accent">Accent</mas-button>
-  `,
-});
-export const Tertiary = () => ({
-  template: `
-    <mas-button variant="tertiary">Tertiary</mas-button>
-  `,
-});
- 
-export const ButtonMedium = () => ({
-  template: `
-    <mas-button variant="primary" size="medium">Medium</mas-button>
-  `,
-});
+export const ButtonSize = {
+  render: () => ({
+    template: `
+      <div style="display: flex; gap: 20px; align-items: center">
+        <mas-button variant="primary" size="small">Small</mas-button>
+        <mas-button variant="primary" size="medium">Medium</mas-button>
+      </div>
+    `
+  })
+}
 
-export const ButtonSmall = () => ({
-  template: `
-    <mas-button variant="primary" size="small">Small</mas-button>
-  `,
-});
-export const ButtonOnlyIcon = () => ({
-  template: `
-    <mas-button variant="primary"  iconAlone="mas-check-outlined mas-system-and-device--outlined"></mas-button>
-  `,
-});
-export const ButtonLeftIcon = () => ({
-  template: `
-    <mas-button variant="primary" iconLeft="mas-check-outlined mas-system-and-device--outlined">Left button</mas-button>
-  `,
-});
-export const ButtonRightIcon = () => ({
-  template: `
-    <mas-button variant="primary" iconRight="mas-check-outlined mas-system-and-device--outlined">Right button</mas-button>
-  `,
-});
-export const ButtonRightAndLeftIcon = () => ({
-  template: `
-    <mas-button variant="primary" iconRight="mas-check-outlined mas-system-and-device--outlined" iconLeft="mas-check-outlined mas-system-and-device--outlined">Icon button</mas-button>
-  `,
-});
+export const ButtonIcon = {
+  render: () => ({
+    template: `
+      <div style="display: flex; justify-content: space-between">
+        <mas-button variant="primary"  iconAlone="mas-check-outlined mas-system-and-device--outlined"></mas-button>
+        <mas-button variant="primary" iconLeft="mas-check-outlined mas-system-and-device--outlined">Left button</mas-button>
+        <mas-button variant="primary" iconRight="mas-check-outlined mas-system-and-device--outlined">Right button</mas-button>
+        <mas-button variant="primary" iconRight="mas-check-outlined mas-system-and-device--outlined" iconLeft="mas-check-outlined mas-system-and-device--outlined">Icon button</mas-button>      
+      </div>
+      `
+  })
+}
 
 export const Directive = () => ({
   template: `

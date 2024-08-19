@@ -34,7 +34,7 @@ export interface CheckboxChangeEvent {
     },
   ],
 })
-export class MasCheckbox implements OnInit, ControlValueAccessor {
+export class MasCheckbox implements ControlValueAccessor {
   @Input() formControl: FormControl | undefined;
   @Input() labelText: string = '';
   @Input() identifier: string = '';
@@ -48,6 +48,7 @@ export class MasCheckbox implements OnInit, ControlValueAccessor {
   set checked(value: boolean) {
     if (this.checked === value) return;
     this._checked = value;
+    this.onModelChange(value)
     // reset indeterminate
     if (this._indeterminate) {
       this._indeterminate = false;
@@ -71,10 +72,10 @@ export class MasCheckbox implements OnInit, ControlValueAccessor {
   @Input()
   set indeterminate(value: boolean) {
     if (this._indeterminate === value) return;
-    if(this.checked) this._checked = false
+    if (this.checked) this.checked = false;
     this._indeterminate = value;
-    if(this.inputViewChild && this.inputViewChild.nativeElement){
-      this.inputViewChild.nativeElement.indeterminate = value
+    if (this.inputViewChild && this.inputViewChild.nativeElement) {
+      this.inputViewChild.nativeElement.indeterminate = value;
     }
     this.cd.markForCheck();
   }
@@ -86,15 +87,13 @@ export class MasCheckbox implements OnInit, ControlValueAccessor {
   @Output()
   onChange: EventEmitter<CheckboxChangeEvent> = new EventEmitter();
   @ViewChild('input') inputViewChild: ElementRef | undefined;
-  model: any;
-  onModelChange: Function = () => {};
-  onModelTouched: Function = () => {};
+  onModelChange: Function = (_: any) => {};
+  onModelTouched: Function = (_: any) => {};
 
   constructor(public cd: ChangeDetectorRef) {}
 
   writeValue(obj: boolean): void {
-    this.model = obj;
-    this._checked = obj
+    this.checked = obj;
     this.cd.markForCheck();
   }
   registerOnChange(fn: Function): void {
@@ -114,7 +113,6 @@ export class MasCheckbox implements OnInit, ControlValueAccessor {
     let newModelValue = this.checked;
 
     this.onModelChange(newModelValue);
-    this.model = newModelValue;
     if (this.formControl) {
       this.formControl.setValue(newModelValue);
     }
@@ -126,7 +124,7 @@ export class MasCheckbox implements OnInit, ControlValueAccessor {
       if (this.indeterminate) {
         this._indeterminate = false;
       }
-      this._checked = !this._checked;
+      this.checked = !this._checked;
       this.updateModel(event);
       checkbox.focus();
     }
@@ -138,5 +136,4 @@ export class MasCheckbox implements OnInit, ControlValueAccessor {
   focus() {
     this.inputViewChild?.nativeElement.focus();
   }
-  ngOnInit() {}
 }

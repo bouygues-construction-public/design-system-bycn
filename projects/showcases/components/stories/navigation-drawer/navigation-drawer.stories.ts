@@ -26,16 +26,14 @@ const meta: Meta<MasNavigationDrawer> = {
       },
     },
   },
-  render: (args: MasNavigationDrawer) => ({
-    props: {
-      ...args,
-    },
+  render: (args) => ({
+    props: args,
     template: `
     <div style="height: 500px">
       <ng-template #headerComponent>
         <mas-search-bar placeholder="Search here..."></mas-search-bar>
       </ng-template>
-      <mas-navigation-drawer [showDivider]="showDivider" [showLogo]="showLogo" [collapsed]="collapsed" [headerComponent]="headerComponent" [footerComponent]="footerComponent">
+      <mas-navigation-drawer [showDivider]="showDivider" [showLogo]="showLogo" [collapsed]="collapsed">
         <mas-navigation-drawer-section heading="section heading">
           <mas-navigation-item label="Label 1" iconItem="mas-house-outlined mas-maps-and-travel--outlined"></mas-navigation-item>
           <mas-navigation-item label="Label 2" iconItem="mas-identification-badge-outlined mas-people--outlined"></mas-navigation-item>
@@ -70,7 +68,7 @@ export const Basic: Story = {
 };
 export const WithHeaderComponent: Story = {
   args: {},
-  render: (args: MasNavigationDrawer) => ({
+  render: () => ({
     template: `
     <div style="height: 500px">
       <ng-template #headerComponent>
@@ -94,7 +92,7 @@ export const WithHeaderComponent: Story = {
 };
 export const WithFooterComponent: Story = {
   args: {},
-  render: (args: MasNavigationDrawer) => ({
+  render: () => ({
     template: `
     <div style="height: 500px">
       <mas-navigation-drawer [showDivider]="true" [showLogo]="true" [collapsed]="false" [footerComponent]="footerComponent">
@@ -120,7 +118,7 @@ export const WithFooterComponent: Story = {
 
 export const Collapsed: Story = {
   args: {},
-  render: (args: MasNavigationDrawer) => ({
+  render: () => ({
     template: `
     <div style="height: 500px">
       <mas-navigation-drawer [showDivider]="true" [showLogo]="true" [collapsed]="true">

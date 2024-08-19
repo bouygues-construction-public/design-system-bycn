@@ -34,7 +34,7 @@ export class MasDropdownOption {
   @Input() disabled: boolean;
   @Input() size: 'S' | 'M' = 'S'; // todo: follow parent
   @Output() onChange: EventEmitter<any> = new EventEmitter();
-  @Output() onClick: EventEmitter<MouseEvent> = new EventEmitter<MouseEvent>();
+  @Output() onClick: EventEmitter<any> = new EventEmitter<any>();
   @ViewChild('text', { static: true }) _text: ElementRef<HTMLElement> | undefined;
   get text(): any {
     return this._text?.nativeElement.outerText;

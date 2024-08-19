@@ -1,6 +1,7 @@
 @import '@masoni/css-design-tokens/dist/index.css';
 .chip, .filter-chip {
   display: inline-flex;
+  box-sizing: border-box;
   align-items: center;
   border-radius: 16px;
   border: 1px solid var(--action-tertiary-default, #B1B1B3); 

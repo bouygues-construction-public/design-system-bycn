@@ -1,4 +1,4 @@
-import { Meta, Story, StoryObj, moduleMetadata } from "@storybook/angular"; 
+import { Meta, StoryObj, moduleMetadata } from "@storybook/angular"; 
 import { MasProgressBar } from "projects/components/src/lib/progress-bar";
  
 const argTypes = {
@@ -63,25 +63,24 @@ export default {
       },
     },
   },
+  render: ({...args}) => ({
+    props: args,
+    template: `
+    <mas-progress-bar
+      [type]="type"
+      [size]="size"
+      [value]="value"
+      [state]="state"
+      [label]="label"
+      [helper]="helper">
+    </mas-progress-bar>
+    `,
+  })
 } as Meta;
-
-const Template: Story<MasProgressBar> = (args: MasProgressBar) => ({
-  props: args,
-  template: `
-            <mas-progress-bar
-              [type]="type"
-              [size]="size"
-              [value]="value"
-              [state]="state"
-              [label]="label"
-              [helper]="helper">
-            </mas-progress-bar>
-            `,
-});
  
 /** Basic : A ProgressBar with default settings */
 
-export const Default = Template.bind({});
+export const Default: StoryObj<MasProgressBar> = {};
 Default.args = {
   type:"default",
   size:"large",

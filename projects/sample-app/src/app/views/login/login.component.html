@@ -10,7 +10,7 @@
       </div>
       <form>
         <mas-label [infoIcon]="true">Enter your Email address</mas-label>
-        <mas-text-input class="email-input" placeholder="exemple@bouygues-construction.com"></mas-text-input>
+        <mas-text-input [maxLength]="2" [required]="true" [(ngModel)]="email" class="email-input" placeholder="exemple@bouygues-construction.com" [autofocus]="true" (onChange)="onChange($event)"></mas-text-input>
       </form>
       <button MasButton variant="accent" class="submit-button" size="small">Next</button>
     </div>

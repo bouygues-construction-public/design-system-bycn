@@ -1,4 +1,4 @@
-import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/blocks';
 import { MasIconButton } from 'projects/components/src/lib/button/button.component';
 import * as IconButtonStories from './mas-icon-button.stories';
 
@@ -8,18 +8,16 @@ import * as IconButtonStories from './mas-icon-button.stories';
 
 {/* Table of Contents */}
 
-- [Overview](#overview)
-- [Props](#props)
-- [Usage](#usage)
-- [Variants](#variants)
+* [Overview](#overview)
+* [Props](#props)
+* [Usage](#usage)
+* [Variants](#variants)
 
 ## Overview
 
 The `MasIconButton` is an action component that works like the other buttons but its design is simpler, which allows it to be used when you need to add actions that take up less space or when grouping several actions together in a restricted layout.
 
-<Canvas>
-  <Story of={IconButtonStories.Default} />
-</Canvas>
+<Canvas of={IconButtonStories.Default} />
 
 ## Props
 
@@ -33,34 +31,26 @@ To use the `MasIconButton`, you can pass the desired inputs to the component.
 
 ### Default
 
-<Canvas>
-  <Story of={IconButtonStories.ButtonOnlyIcon} />
-</Canvas>
+<Canvas of={IconButtonStories.ButtonOnlyIcon} />
 
 ### Primary, Secondary, Tertiary, Accent
 
 The component comes in different variants such as `primary`, `secondary`, `tertiary`, `accent` which you can use to alter the look and feel of the button.
 
-<Canvas>
-  <Story of={IconButtonStories.Primary} />
-  <Story of={IconButtonStories.Secondary} />
-  <Story of={IconButtonStories.Tertiary} />
-  <Story of={IconButtonStories.Accent} />
+<Canvas of={IconButtonStories.IconButtonType}>
 </Canvas>
 
 ### Size
 
 The component comes in different sizes : `small`, `medium`
 
-<Canvas>
-  <Story of={IconButtonStories.ButtonSmall} />
-  <Story of={IconButtonStories.ButtonMedium} />
+<Canvas of={IconButtonStories.IconButtonSize}>
 </Canvas>
 
 ## Guidelines
 
-- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/36313b-icon-button/b/964f27)
+* Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/36313b-icon-button/b/964f27)
 
 ## Feedback & contact
 
-- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
+* Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

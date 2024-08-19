@@ -13,9 +13,8 @@ const meta: Meta<InputDropdownExample> = {
       imports: [CommonModule, MasInputDropdownModule, ReactiveFormsModule, MasErrorModule, MasLabelModule, MasHelperModule],
     }),
   ],
-  render: (args: InputDropdownExample) => ({
+  render: () => ({
     props: {
-      ...args,
     },
   }),
   argTypes: {},

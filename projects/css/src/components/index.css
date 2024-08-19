@@ -10,6 +10,7 @@
 @import './button/dist/index.css';
 @import './avatar/dist/index.css';
 @import './pagination/dist/index.css';
+@import './logotype/dist/index.css';
 @import './tag/dist/index.css';
 @import './progress-bar/dist/index.css';
 @import './badge/dist/index.css';
@@ -17,6 +18,7 @@
 @import './circular-progress-bar/dist/index.css';
 @import './popover/dist/index.css';
 @import './modal/dist/index.css';
+@import './footer/dist/index.css';
 @import './tooltip/dist/index.css';
 @import './action-dropdown/dist/index.css';
 @import './icon-button/dist/index.css';
@@ -29,3 +31,4 @@
 @import './navigation-item/dist/index.css';
 @import './search-bar/dist/index.css';
 @import './navigation-drawer/dist/index.css';
+@import './data-table/dist/index.css';

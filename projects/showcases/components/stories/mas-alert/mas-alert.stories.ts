@@ -13,10 +13,8 @@ const meta2: Meta<DefaultAlertServiceExample> = {
       imports: [ MasAlertModule],
     }),
   ],
-  render: (args: DefaultAlertServiceExample) => ({
-    props: {
-      ...args,
-    },
+  render: ({...args}) => ({
+    props: args
   }),
 };
 

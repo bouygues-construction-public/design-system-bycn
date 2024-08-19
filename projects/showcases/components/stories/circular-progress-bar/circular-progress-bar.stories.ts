@@ -1,4 +1,4 @@
-import { Meta, Story, StoryObj, moduleMetadata } from "@storybook/angular";
+import { Meta, StoryObj, moduleMetadata } from "@storybook/angular";
 import { CircularProgressBar } from "projects/components/src/lib/circular-progress-bar";
 
 const states = [
@@ -44,6 +44,17 @@ export default {
       declarations: [CircularProgressBar],
     }),
   ],
+  render: ({...args}) => ({
+    template: `
+            <circular-progress-bar
+              [state]="state"
+              [loadingText]="loadingText"
+              [successText]="successText"
+              [errorText]="errorText">
+            </circular-progress-bar>
+    `,
+    props: args
+  }),
   argTypes: argTypes,
   parameters: {
     docs: {
@@ -54,22 +65,9 @@ export default {
   },
 } as Meta;
 
-const Template: Story<CircularProgressBar> = (args: CircularProgressBar) => ({
-  props: args,
-  template: `
-            <circular-progress-bar
-              [state]="state"
-              [loadingText]="loadingText"
-              [successText]="successText"
-              [errorText]="errorText">
-            </circular-progress-bar>
-            `,
-});
-
-
 /** Basic : A Circular Progress Bar with default settings */
 
-export const Default = Template.bind({});
+export const Default: StoryObj<CircularProgressBar> = {}
 Default.args = {
   state: 'loading',
   loadingText: '',
@@ -91,19 +89,6 @@ export const States = () => ({
     [state]="'error'">
   </circular-progress-bar>
   `
-});
-
-
-const Template2: Story<CircularProgressBar> = (args: CircularProgressBar) => ({
-  props: args,
-  template: `
-            <circular-progress-bar
-              [state]="state"
-              [loadingText]="loadingText"
-              [successText]="successText"
-              [errorText]="errorText">
-            </circular-progress-bar>
-            `,
 });
 
 export const WithLabel = () => ({

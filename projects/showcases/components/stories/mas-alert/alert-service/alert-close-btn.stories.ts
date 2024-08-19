@@ -10,10 +10,8 @@ const meta2: Meta<AlertWithClosebtn> = {
       imports: [ MasAlertModule],
     }),
   ],
-  render: (args: AlertWithClosebtn) => ({
-    props: {
-      ...args,
-    },
+  render: (args) => ({
+    props: args,
   }),
 };
 

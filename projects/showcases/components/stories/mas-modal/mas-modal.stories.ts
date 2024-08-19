@@ -1,4 +1,4 @@
-import { Meta, Story, StoryObj, moduleMetadata } from "@storybook/angular";
+import { Meta, StoryObj, moduleMetadata } from "@storybook/angular";
 import { MasModal} from "projects/components/src/lib/Modal";  
 import { MasButton,MasButtonDirective, MasIconButton } from "projects/components/src/public-api";
 const argTypes = {
@@ -63,12 +63,9 @@ const argTypes = {
         },
       },
     },
-  } as Meta;
-  
-  const Template: Story<Partial<MasModal>> = (args: Partial<MasModal>) => ({
-    props: args,
-    template: `
-      
+    render: ({...args}) => ({
+      props: args,
+      template: `
       <div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
        <mas-button variant="secondary" (click)="showModal = !showModal">Open Modal</mas-button>
         <mas-modal 
@@ -85,8 +82,10 @@ const argTypes = {
         
       </div>
     `,
-  });
-  export const Default = Template.bind({});
+    })
+  } as Meta;
+
+  export const Default: StoryObj<Partial<MasModal>> = {}
   Default.args = {
     showModal:false,
     size: 'small',

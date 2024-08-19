@@ -13,9 +13,8 @@ const meta: Meta<SelectExample> = {
       imports: [CommonModule, MasSelectModule, ReactiveFormsModule, MasErrorModule, MasLabelModule, MasHelperModule],
     }),
   ],
-  render: (args: SelectExample) => ({
+  render: () => ({
     props: {
-      ...args,
     },
   }),
   argTypes: {},

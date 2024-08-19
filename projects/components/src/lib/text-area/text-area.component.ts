@@ -42,13 +42,18 @@ export class MasTextArea implements OnInit {
   model: any;
   @ViewChild('textarea') inputViewChild: ElementRef | undefined;
   @Input() maxLength: number=200;
+  @Input() identifier: string = '';
   @Input() TextErrorMsg: string;
   @Input() placeholder: string = '';
-  @Input() ShowCounter: boolean = false;
-  @Input() ShowErrMsg: boolean = false;
+  @Input() numberText: boolean = false;
+  @Input() errorMessage: boolean = false;
   @Input() required: boolean = false;
   @Input() formControl: FormControl | undefined;
   @Input() filled: boolean = false;
+  @Input() showLabel: boolean = true;
+  @Input() labelText: string = '';
+  @Input() optional: boolean = true;
+  @Input() infoIcon: boolean = true;
   @Output() change: EventEmitter<any> = new EventEmitter();
   @Output() inputChangeEvent: EventEmitter<string> = new EventEmitter();
   @Input()

@@ -1,6 +1,6 @@
 # Components
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
 
 ## Code scaffolding
 
@@ -34,7 +34,7 @@ Run `ng build components` to build the project. The build artifacts will be stor
 
 ## Publishing
 
-After building your library with `ng build components`, go to the dist folder `cd projects/components` and run `npm publish`.
+After building your library with `ng build components`, make sure you go with the right version on `package.json`. Run the `npm run release:components`.
 
 ## Running unit tests
 

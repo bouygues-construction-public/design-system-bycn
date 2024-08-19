@@ -1,4 +1,4 @@
-import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/blocks';
 import { MasAvatar } from 'projects/components/src/lib/avatar/avatar.component';
 import * as AvatarStories from './avatar.stories';
 
@@ -8,34 +8,30 @@ import * as AvatarStories from './avatar.stories';
 
 {/* Table of Contents */}
 
-- [Overview](#overview)
-- [Props](#props)
-- [Usage](#usage)
-- [Size](#variants)
+* [Overview](#overview)
+* [Props](#props)
+* [Usage](#usage)
+* [Size](#variants)
 
 ## Overview
 
 The `avatar` is a representation of the user. It allows the user to personalize themselves in the interface and link them to content
 
-- `size`: The size of the avatar. Accepts values: `'XS'`, `'S'`, `'M'`, `'L'`.
-- `type`: The variant of the avatar. Accepts values: `'Image'`, `'Icon'`, `'Initial'`.
-- `initial`: The initial letter or character displayed in the avatar when the type is `'Initial'`.
-- `Image`: Used to display an image in the avatar. 
-- `Icon`: Used to display an icon in the avatar.
+* `size`: The size of the avatar. Accepts values: `'XS'`, `'S'`, `'M'`, `'L'`.
+* `type`: The variant of the avatar. Accepts values: `'Image'`, `'Icon'`, `'Initial'`.
+* `initial`: The initial letter or character displayed in the avatar when the type is `'Initial'`.
+* `Image`: Used to display an image in the avatar.
+* `Icon`: Used to display an icon in the avatar.
 
-
-
-
-<Canvas>
-  <Story of={AvatarStories.Default} />
+<Canvas of={AvatarStories.Default}>
 </Canvas>
 
 ## Props
 
 <Controls />
 
-
 ## Usage
+
 To incorporate the Avatar component into your application, simply provide the necessary inputs to the component. The Avatar component offers a range of customizable properties such as type, size, background color, border color, border weight, and border radius, allowing you to tailor the appearance of the avatar to suit your application's requirements.
 
 ## Size
@@ -44,36 +40,24 @@ The component comes in different Type `Image`,`Icon`,`Initial`  and different Si
 
 `Avatar`
 
-<Canvas>
-  <Story of={AvatarStories.ImageXS} />
-  <Story of={AvatarStories.ImageS} />
-  <Story of={AvatarStories.ImageM} />
-  <Story of={AvatarStories.ImageL} />
-
+<Canvas of={AvatarStories.ImageSize}>
 </Canvas>
 
- `Icon`
+`Icon`
 
-<Canvas>
-  <Story of={AvatarStories.IconXS} />
-  <Story of={AvatarStories.IconS} />
-  <Story of={AvatarStories.IconM} />
-  <Story of={AvatarStories.IconL} />
+<Canvas of={AvatarStories.IconSize}>
 </Canvas>
+
 `Initial`
-<Canvas>
-  <Story of={AvatarStories.InitialXS} />
-  <Story of={AvatarStories.InitialS} />
-  <Story of={AvatarStories.InitialM} />
-  <Story of={AvatarStories.InitialL} />
+
+<Canvas of={AvatarStories.Type}>
 </Canvas>
 
 
 ## Guidelines
 
-- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/812a2f-avatar/b/964f27)
+* Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/812a2f-avatar/b/964f27)
 
 ## Feedback & contact
 
-- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
-
+* Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

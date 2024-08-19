@@ -1,6 +1,7 @@
 <div
-  (focus)="onChange($event)"
+  tabindex="0"
   (click)="_onToggle()"
+  (keydown)="handleOptionKeydown($event)"
   class="mas-action-dropdown-button"
   [ngClass]="{ 'mas-action-dropdown_listbox--opened': _panelOpen }"
 >
@@ -19,6 +20,6 @@
     [ngClass]="{ 'mas-action-dropdown--disabled': disabled }"
     class="mas-action-dropdown_listbox-wrapper"
   >
-    <ng-content select="mas-dropdown-option" [isMultiple]="multi" [size]="size" [type]="type"></ng-content>
+    <ng-content select="mas-action-dropdown-option" [isMultiple]="multi" [size]="size" [type]="type"></ng-content>
   </div>
 </ng-template>

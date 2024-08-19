@@ -6,11 +6,10 @@ import {
   EventEmitter,
   HostListener,
   Input,
-  OnInit,
   Output,
   QueryList,
 } from '@angular/core';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { MasActionDropdownOption } from './action-dropdown-option.component';
 import { Observable, Subject, defer, merge, startWith, switchMap, take, takeUntil } from 'rxjs';
 
@@ -30,20 +29,39 @@ import { Observable, Subject, defer, merge, startWith, switchMap, take, takeUnti
     '[class.mas-action-dropdown--disabled]': 'disabled',
     '[class.mas-action-dropdown--medium]': 'size === "M"',
     '[class.mas-action-dropdown--small]': 'size === "S"',
+    role: 'select',
   },
 })
-export class MasActionDropdown implements OnInit, AfterContentInit {
+export class MasActionDropdown implements AfterContentInit {
+  /**
+   * Leading icon for MasActionDropdown.
+   */
   @Input() leadingIcon: string = '';
+  /**
+   * Label for MasActionDropdown.
+   */
   @Input() labelText: string = '';
+  /**
+   * A unique id for the MasActionDropdown. If none is supplied, it will be auto-generated.
+   */
   @Input() identifier = `action-dropdown-${MasActionDropdown.dropdownCount++}`;
+  /**
+   * Whether the component is disabled.
+   */
   @Input() disabled: boolean = false;
+  /**
+   * The size of the action-dropdown. Availabel options: 'S', 'M'. Default: 'S'.
+   */
   @Input() size: 'M' | 'S' = 'S';
-
-  @Output() change = new EventEmitter();
-  readonly _destroy = new Subject<void>();
+  /**
+   * Callback to invoke when value of MasInputDropdown changes.
+   */
+  @Output() onChange: EventEmitter<MasActionDropdownChangeEvent> = new EventEmitter();
   @ContentChildren(MasActionDropdownOption) options: QueryList<MasActionDropdownOption>;
   static dropdownCount: number = 0;
   protected _panelOpen: boolean = false;
+  protected focusIndex: number = -1;
+  readonly _destroy = new Subject<void>();
   private _ngZone: any;
 
   constructor(protected eRef: ElementRef) {}
@@ -51,7 +69,7 @@ export class MasActionDropdown implements OnInit, AfterContentInit {
     this.options.changes.pipe(startWith(null), takeUntil(this._destroy)).subscribe(() => {
       const changeOrDestroyed = merge(this.options.changes, this._destroy);
       this.optionChanges.pipe(takeUntil(changeOrDestroyed)).subscribe((event: any) => {
-        this._onSelect(event.option);
+        this._onChange(event?.originalEvent, event?.option)
         if (this._panelOpen) {
           this.close();
           this.focusOut();
@@ -59,16 +77,15 @@ export class MasActionDropdown implements OnInit, AfterContentInit {
       });
     });
     // todo: optimized
-    this.options.map((option) => ((option.size = this.size)));
+    this.options.map((option) => (option.size = this.size));
   }
 
-  ngOnInit() {}
   readonly optionChanges: Observable<any> = defer(() => {
     const options = this.options;
     if (options) {
       return options.changes.pipe(
         startWith(options),
-        switchMap(() => merge(...options.map((option) => option.change)))
+        switchMap(() => merge(...options.map((option) => option.onClick)))
       );
     }
     return this._ngZone.onStable.pipe(
@@ -77,14 +94,11 @@ export class MasActionDropdown implements OnInit, AfterContentInit {
     );
   }) as Observable<any>;
 
-  // todo: declare function
-  onChange(event: any) {
-    this.change.emit(event);
-  }
-  private _onSelect(option: MasActionDropdownOption): void {
-    this.onChange(option);
+  _onChange(event: Event, option: MasActionDropdownOption) {
+    this.onChange.emit({originalEvent: event, option});
   }
   _onToggle() {
+    this.focusIndex = -1;
     this._panelOpen ? this.close() : this.open();
   }
   private close() {
@@ -100,4 +114,46 @@ export class MasActionDropdown implements OnInit, AfterContentInit {
       this.close();
     }
   }
+  handleButtonKeydown(event: KeyboardEvent) {}
+  handleOptionKeydown(event: KeyboardEvent) {
+    switch (event.key) {
+      case 'ArrowUp':
+        // focus next
+        event.preventDefault();
+        if (this.options.get(this.focusIndex)) {
+          this.options.get(this.focusIndex)!.isFocus = false;
+          this.focusIndex = (this.focusIndex - 1 + this.options.length) % this.options.length;
+          this.options.get(this.focusIndex)!.isFocus = true;
+        }
+        break;
+      case 'ArrowDown':
+        //focus previous
+        event.preventDefault();
+        if (this.options.get(this.focusIndex)) {
+          this.options.get(this.focusIndex)!.isFocus = false;
+          this.focusIndex = (this.focusIndex + 1) % this.options.length;
+          this.options.get(this.focusIndex)!.isFocus = true;
+        }
+        break;
+      case ' ':
+        // choose that action
+        event.preventDefault();
+        if (this.options.get(this.focusIndex) !== undefined) {
+          this._onChange(event, this.options.get(this.focusIndex)!);
+          this.options.get(this.focusIndex)!.isFocus = false;
+          this._onToggle();
+        } else {
+          this._onToggle();
+          this.focusIndex = 0;
+          this.options.get(this.focusIndex)!.isFocus = true;
+        }
+        break;
+      default:
+        break;
+    }
+  }
+}
+export class MasActionDropdownChangeEvent {
+  originalEvent: Event;
+  option?: MasActionDropdownOption 
 }

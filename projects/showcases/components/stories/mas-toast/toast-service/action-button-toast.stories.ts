@@ -10,10 +10,13 @@ const meta: Meta<ActionButtonToastServiceExample> = {
       imports: [ MasToastModule],
     }),
   ],
-  render: (args: ActionButtonToastServiceExample) => ({
-    props: {
-      ...args,
-    },
+  render: ({...args}) => ({
+    template: `
+      <div style="height: 300px">
+        <action-button-toast-sevice-example></action-button-toast-sevice-example>
+      </div>
+    `,
+    props: args
   }),
 };
 

@@ -1,4 +1,4 @@
-import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/blocks';
 import { MasNavigationItem } from 'projects/components/src/lib/navigation-item/navigation-item.component';
 import * as NavigationItemStories from './mas-navigation-item.stories';
 
@@ -8,10 +8,10 @@ import * as NavigationItemStories from './mas-navigation-item.stories';
 
 {/* Table of Contents */}
 
-- [Overview](#overview)
-- [Props](#props)
-- [Usage](#usage)
-- [Variants](#variants)
+* [Overview](#overview)
+* [Props](#props)
+* [Usage](#usage)
+* [Variants](#variants)
 
 ## Overview
 
@@ -19,10 +19,7 @@ the `Navigation item` allow the user to navigate from one page to another. These
 
 The `navigation item` can display a single level or a sub-level with submenu with a submenu displayed below.
 
-
-<Canvas>
-  <Story of={NavigationItemStories.Default} />
-</Canvas>
+<Canvas of={NavigationItemStories.Default}/>
 
 ## Props
 
@@ -39,38 +36,32 @@ The component comes in different variants.
 ### Type
 
 The navigation item has different types corresponding to the navigation level and whether the item has sublevels.
-<Canvas>
-  <Story of={NavigationItemStories.Single} />
-  <Story of={NavigationItemStories.Submenu} />
+
+<Canvas of={NavigationItemStories.Type}>
 </Canvas>
 
 ### Collapsed
-The Collapsed property allows you to reduce the width of the item to the leading icon only, to retract the navigation drawer on the left.
-<Canvas>
- <Story of={NavigationItemStories.Collapsed} />
 
-  <Story of={NavigationItemStories.CollapsedWithBadge} />
-</Canvas>
+The Collapsed property allows you to reduce the width of the item to the leading icon only, to retract the navigation drawer on the left.
+
+<Canvas of={NavigationItemStories.Collapsed}/>
 
 ### Selected
+
 As a navigation element, this component is selectable and displays an active state when clicked.
 
-<Canvas>
- <Story of={NavigationItemStories.Selected} />
-</Canvas>
+<Canvas of={NavigationItemStories.Selected} />
 
 ### Show Badge
-A badge can be displayed next to the navigation item when the content needs to show notifications.
-<Canvas>
- <Story of={NavigationItemStories.withoutBadge} />
- <Story of={NavigationItemStories.withBadge} />
 
-</Canvas>
+A badge can be displayed next to the navigation item when the content needs to show notifications.
+
+<Canvas of={NavigationItemStories.withBadge}/>
 
 ## Guidelines
 
-- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/598b13-navigation-item/b/357f1d)
+* Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/598b13-navigation-item/b/357f1d)
 
 ## Feedback & contact
 
-- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
+* Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

@@ -9,10 +9,12 @@
   justify-content: space-between;
   color: var(--Text-Reverse, #0C0C0D);
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .mas-nav-item-icon {
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 

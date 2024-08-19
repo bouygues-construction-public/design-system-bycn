@@ -14,9 +14,8 @@ const meta: Meta<CheckboxExample> = {
     }),
   ],
   
-  render: (args: CheckboxExample) => ({
+  render: () => ({
     props: {
-      ...args,
     },
   }),
 };

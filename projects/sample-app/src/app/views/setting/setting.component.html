@@ -38,8 +38,9 @@
         </div>
         <div class="email-frequency-control_container">
           <span class="label mas-typo_body-3">Email frequency</span>
-          <mas-input-dropdown placeholder="Choose email frequency" type="text" size="S" [multi]="false">
+          <mas-input-dropdown placeholder="Choose email frequency" type="text" size="S" [multi]="true" [(ngModel)]="emailFrequency" (onChange)="onChange($event)">
             <mas-dropdown-option value="once-a-week">Once a week</mas-dropdown-option>
+            <mas-dropdown-option value="twice-a-week">Twice a week</mas-dropdown-option>
           </mas-input-dropdown>
         </div>
         <div class="in-app-noti-control_container">

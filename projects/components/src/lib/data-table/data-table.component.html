@@ -1,0 +1,113 @@
+<table #table role="table">
+  <thead class="mas-data-table_thead mas-typo_body-3--bold">
+    <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>
+    <ng-container *ngIf="!headerTemplate && columns">
+      <tr>
+        <ng-container *ngIf="isMultipleSelectionMode()">
+          <th class="mas-data-table_thead--select-all">
+            <mas-checkbox
+              [checked]="this.selectAll !== null ? this.selectAll : false"
+              (onChange)="onSelectAllClick()"
+            ></mas-checkbox>
+          </th>
+        </ng-container>
+        <ng-container *ngIf="isSingleSelectionMode()">
+          <th class="mas-data-table_thead--select-all"></th>
+        </ng-container>
+        <ng-container *ngFor="let column of columns">
+          <th [style.width]="column.width || '280px'">
+            <i class="mas-data-table_thead--leading-icon mas-icon {{column?.leadingIcon}}"></i>
+            <span class="mas-data-table_thead--text">
+              {{ column.header }}
+            </span>
+            <i class="mas-data-table_thead--trailing-icon {{column?.trailingIcon}}"></i>
+            <mas-icon-button
+              (click)="onSort(column?.sortable, column.field, $event)"
+              [disabled]="column?.sortable === undefined ? true : !column.sortable"
+              class="mas-data-table_thead--sort"
+              variant="tertiary"
+              size="small"
+              iconAlone="mas-arrows-down-up-outlined mas-arrows--outlined"
+            ></mas-icon-button>
+            <mas-icon-button
+              class="mas-data-table_thead--filter"
+              variant="tertiary"
+              size="small"
+              iconAlone="mas-funnel-outlined mas-office-and-editing--outlined"
+            ></mas-icon-button>
+          </th>
+        </ng-container>
+      </tr>
+    </ng-container>
+  </thead>
+  <ng-container *ngIf="!noData; else noDataTemplate">
+    <tbody class="mas-data-table_tbody mas-typo_body-3">
+      <ng-container *ngFor="let row of value; let i = index">
+        <tr>
+          <ng-container *ngIf="isMultipleSelectionMode()">
+            <td class="mas-data-table_tbody--checkbox">
+              <mas-checkbox [checked]="this.isRowSelected(row, i)" (onChange)="onRowClick(row, i)"></mas-checkbox>
+            </td>
+          </ng-container>
+          <ng-container *ngIf="isSingleSelectionMode()">
+            <td class="mas-data-table_tbody--radio-button">
+              <mas-radio-button [checked]="this.isRowSelected(row, i)" (change)="onRowClick(row, i)"></mas-radio-button>
+            </td>
+          </ng-container>
+          <ng-container *ngIf="!bodyTemplate">
+            <ng-container *ngFor="let column of columns; let j = index">
+              <td
+                (click)="onRowClick(row, i, $event)"
+                (keydown.enter)="onRowClick(row, i, $event)"
+                [style.width]="column.width || '280px'"
+              >
+                <ng-container *ngIf="column.cellType === 'text'">
+                  <i class="mas-data-table_tbody--leading-icon {{ value[i][column.field]?.leadingIcon }}"></i>
+                  <span class="mas-data-table-tbody--text">
+                    {{ value[i][column.field].text || value[i][column.field] }}
+                  </span>
+                  <span class="mas-date-table_tbody--second-text">
+                    {{ value[i][column.field]?.secondText }}
+                  </span>
+                  <i class="mas-data-table_tbody--trailing-icon {{ value[i][column.field]?.trailingIcon }}"></i>
+                </ng-container>
+                <ng-container *ngIf="column.cellType === 'action'">
+                  <mas-icon-button
+                    [iconAlone]="value[i][column.field].icon"
+                    (click)="value[i][column.field].action()"
+                    size="small"
+                    variant="tertiary"
+                  ></mas-icon-button>
+                </ng-container>
+                <ng-container *ngIf="column.cellType === 'checkbox'">
+                  <mas-checkbox [checked]="value[i][column.field].selected" size="S"></mas-checkbox>
+                </ng-container>
+                <ng-container *ngIf="column.cellType === 'personal'">
+                  <!-- todo: add personal cell -->
+                </ng-container>
+                <ng-container *ngIf="column.cellType === 'tag'">
+                  <mas-tag
+                    [label]="value[i][column.field].label"
+                    [leadingIcon]="value[i][column.field]?.icon"
+                    size="small"
+                  ></mas-tag>
+                </ng-container>
+              </td>
+            </ng-container>
+          </ng-container>
+          <ng-template
+            [ngTemplateOutlet]="bodyTemplate"
+            [ngTemplateOutletContext]="{ $implicit: row, idx: i }"
+          ></ng-template>
+        </tr>
+      </ng-container>
+    </tbody>
+  </ng-container>
+
+  <ng-template #noDataTemplate>
+    <ng-content></ng-content>
+  </ng-template>
+  <tfoot class="mas-data-table_tfoot">
+    <ng-template [ngTemplateOutlet]="footerTemplate"></ng-template>
+  </tfoot>
+</table>

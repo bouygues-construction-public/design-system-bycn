@@ -1,11 +1,11 @@
-import { Component, ContentChild, ElementRef, EventEmitter, Input, OnInit, Optional, Output, TemplateRef, ViewChild } from '@angular/core';
+import { Component, EventEmitter, Input, Optional, Output } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'mas-breadcrumb-item',
   template: `
-    <a (click)="navigate($event)" [href]="this.domSanitizer.bypassSecurityTrustUrl(this._href)" style="user-select: none;">
+    <a (click)="navigate($event)" (keydown.space)="navigate($event)" [href]="this.domSanitizer.bypassSecurityTrustUrl(this._href)" style="user-select: none;">
       {{content}}
     </a>
   `,
@@ -13,8 +13,14 @@ import { Router } from '@angular/router';
     class: 'mas-breadcrumb-item',
   },
 })
-export class MasBreadcrumbItem implements OnInit {
+export class MasBreadcrumbItem {
+  /**
+   * Text for item.
+   */
   @Input() content: String;
+  /**
+   * External link to navigate when item is clicked.
+   */
   @Input() set href(value: string) {
     this._href = value;
   }
@@ -37,6 +43,9 @@ export class MasBreadcrumbItem implements OnInit {
    */
   @Input() routeExtras: any;
 
+  /**
+   * Fired when an item is selected.
+   */
   @Output() navigation = new EventEmitter<Promise<boolean>>();
 
   protected _href: string;
@@ -48,6 +57,4 @@ export class MasBreadcrumbItem implements OnInit {
       this.navigation.emit(status);
     }
   }
-  ngOnInit() {}
-  
 }
