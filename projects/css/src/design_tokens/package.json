@@ -1,6 +1,6 @@
 {
   "name": "@masoni/css-design-tokens",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Bouygues Design System - Masoni specific CSS styles for design tokens",
   "keywords": [
     "design-system",

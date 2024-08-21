@@ -1,0 +1,70 @@
+import { Meta, Title, Subtitle, Description, Primary, Controls, Stories, Story, Canvas, Toc } from '@storybook/blocks';
+
+import { MasDataTable } from 'projects/components/src/lib/data-table/data-table.component';
+import * as DataTableStories from './data-table.stories';
+import * as DataTableExampleStories from './data-table-example/data-table-example.stories';
+
+<Meta of={DataTableStories} />
+
+<Title />
+
+{/* Table of Contents */}
+
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
+
+## Overview
+
+<Primary />
+
+## Props
+
+<Controls />
+
+## Usage
+
+## Variants
+
+### Overview
+
+<Canvas of={DataTableStories.Basic} >
+</Canvas>
+
+### Singgle Selection
+
+<Canvas of={DataTableStories.SingleSelection}>
+</Canvas>
+
+### Multi-Selection
+
+<Canvas of={DataTableStories.MultiSelection}>
+</Canvas>
+
+### Template
+
+<Canvas of={DataTableStories.HeaderTemplate}>
+</Canvas>
+
+<Canvas of={DataTableStories.BodyTemplate}>
+</Canvas>
+
+<Canvas of={DataTableStories.FooterTemplate}>
+</Canvas>
+
+<Canvas of={DataTableStories.NoDataTemplate}>
+</Canvas>
+
+### Cell Types
+
+<Canvas of={DataTableExampleStories.CellTypes}>
+</Canvas>
+
+## Guidelines
+
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0/p/06fffa-data-tables/b/964f27)
+
+## Feedback & contact
+
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
