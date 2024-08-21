@@ -14,11 +14,29 @@ import { Component, Input } from '@angular/core';
   `,
 })
 export class MasButton {
+  /**
+   * The variant of the button including 'primary' | 'secondary' | 'tertiary' | 'accent'.
+   */
   @Input() variant: 'primary' | 'secondary' | 'tertiary' | 'accent' = 'primary';
+  /**
+   * The size of the button. Available options: 'small', 'medium'. Default: 'medium'.
+   */
   @Input() size: 'small' | 'medium' = 'medium';
+  /**
+   * Whether the button should be disabled. Default: false.
+   */
   @Input() disabled: boolean = false;
+  /**
+   * The name of the icon to display on the left side of the button. 
+   */
   @Input() iconLeft: string | null = null;
+  /**
+   * The name of the icon to display on the right side of the button.
+   */
   @Input() iconRight: string | null = null;
+  /**
+   * The name of the icon to display as the sole content of the button.
+   */
   @Input() iconAlone: string | null = null;
 
   get classes(): { [key: string]: boolean } {

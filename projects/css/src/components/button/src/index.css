@@ -22,11 +22,10 @@ mas-button {
   white-space: nowrap;
   height: 44px;
   border: none;
+  cursor: pointer;
   gap: 8px;
 }
-a.mas-btn {
-  cursor: pointer;
-}
+
 /* Primary button */
 .mas-btn_variant--primary {
   background-color: var(--action-primary-default, #007AB7);  
