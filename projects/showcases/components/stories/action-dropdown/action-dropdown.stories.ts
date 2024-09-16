@@ -25,10 +25,10 @@ const meta: Meta<MasActionDropdown> = {
     template: `
       <div style="height: 180px;">
         <mas-action-dropdown [disabled]="disabled" [labelText]="labelText" [size]="size">
-          <mas-dropdown-option value="option1">Close job</mas-dropdown-option>
-          <mas-dropdown-option value="option2">Add in favorite</mas-dropdown-option>
-          <mas-dropdown-option value="option3">Convert</mas-dropdown-option>
-          <mas-dropdown-option value="option4">Clone</mas-dropdown-option>
+          <mas-action-dropdown-option value="option1">Close job</mas-action-dropdown-option>
+          <mas-action-dropdown-option value="option2">Add in favorite</mas-action-dropdown-option>
+          <mas-action-dropdown-option value="option3">Convert</mas-action-dropdown-option>
+          <mas-action-dropdown-option value="option4">Clone</mas-action-dropdown-option>
         </mas-action-dropdown>
       </div>
       <br>
@@ -64,9 +64,9 @@ export const LeadingIcon: Story = {
     template: `
       <div style="height: 150px;">
         <mas-action-dropdown [disabled]="disabled" [size]="size" labelText="Button" leadingIcon="mas-info-outlined mas-security-and-warnings--outlined mas-icon">
-          <mas-dropdown-option value="option1" icon="mas-browsers-outlined mas-system-and-device--outlined" type="icon">Option 1</mas-dropdown-option>
-          <mas-dropdown-option value="option2" icon="mas-eye-outlined mas-design--outlined" type="icon">Option 2</mas-dropdown-option>
-          <mas-dropdown-option value="option3" icon="mas-chat-circle-text-outlined mas-communication--outlined" type="icon">Option 3</mas-dropdown-option>
+          <mas-action-dropdown-option value="option1" icon="mas-browsers-outlined mas-system-and-device--outlined" type="icon">Option 1</mas-action-dropdown-option>
+          <mas-action-dropdown-option value="option2" icon="mas-eye-outlined mas-design--outlined" type="icon">Option 2</mas-action-dropdown-option>
+          <mas-action-dropdown-option value="option3" icon="mas-chat-circle-text-outlined mas-communication--outlined" type="icon">Option 3</mas-action-dropdown-option>
         </mas-action-dropdown>
       </div>
       <br>
@@ -79,17 +79,17 @@ export const Size: Story = {
     template: `
       <div style="height: 150px; width: 100%">
         <mas-action-dropdown size="S" labelText="Button small size" >
-          <mas-dropdown-option value="option1">Option 1</mas-dropdown-option>
-          <mas-dropdown-option value="option2">Option 2</mas-dropdown-option>
-          <mas-dropdown-option value="option3">Option 3</mas-dropdown-option>
+          <mas-action-dropdown-option value="option1">Option 1</mas-action-dropdown-option>
+          <mas-action-dropdown-option value="option2">Option 2</mas-action-dropdown-option>
+          <mas-action-dropdown-option value="option3">Option 3</mas-action-dropdown-option>
         </mas-action-dropdown>
       </div>
       <br/>
       <div style="height: 180px; width: 100%">
         <mas-action-dropdown size="M" labelText="Button medium size">
-          <mas-dropdown-option value="option1">Option 1</mas-dropdown-option>
-          <mas-dropdown-option value="option2">Option 2</mas-dropdown-option>
-          <mas-dropdown-option value="option3">Option 3</mas-dropdown-option>
+          <mas-action-dropdown-option value="option1">Option 1</mas-action-dropdown-option>
+          <mas-action-dropdown-option value="option2">Option 2</mas-action-dropdown-option>
+          <mas-action-dropdown-option value="option3">Option 3</mas-action-dropdown-option>
         </mas-action-dropdown>
       </div>
     `,
@@ -99,9 +99,9 @@ export const Disabled: Story = {
   render: () => ({
     template: `
       <mas-action-dropdown [size]="M" labelText="Button" [disabled]="true">
-        <mas-dropdown-option value="option_1">Option 1</mas-dropdown-option>
-        <mas-dropdown-option value="option_2">Option 2</mas-dropdown-option>
-        <mas-dropdown-option value="option_3">Option 3</mas-dropdown-option>
+        <mas-action-dropdown-option value="option_1">Option 1</mas-action-dropdown-option>
+        <mas-action-dropdown-option value="option_2">Option 2</mas-action-dropdown-option>
+        <mas-action-dropdown-option value="option_3">Option 3</mas-action-dropdown-option>
       </mas-action-dropdown>
     `,
   }),
