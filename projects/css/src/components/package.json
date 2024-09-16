@@ -1,39 +1,39 @@
 {
-    "name": "@masoni/css-components",
-    "version": "0.0.1",
-    "description": "Bouygues Design System - Masoni specific CSS styles for components",
-    "keywords": [
-        "design-system",
-        "css",
-        "libraries",
-        "masoni"
-    ],
-    "main": "dist/index.css",
-    "files": [
-        "dist",
-        "src"
-    ],
-    "homepage": "https://github.com/bouygues-construction/design-system-bycn/tree/main/projects/css/src/design-tokens",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/bouygues-construction/design-system-bycn.git"
-    },
-    "scripts": {
-        "build": "npm run build:css",
-        "build:css": "postcss ./index.css -o dist/index.css --use postcss-import"
-    },
-    "publishConfig": {
-        "access": "public"
-    },
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/bouygues-construction/design-system-bycn/issues"
-    },
-    "devDependencies": {
-        "@masoni/css-design-tokens": "file:../design_tokens",
-        "postcss": "^8.4.23",
-        "postcss-cli": "^10.1.0",
-        "postcss-import": "^15.1.0",
-        "postcss-loader": "^7.3.0"
-    }
+  "name": "@masoni/css-components",
+  "version": "0.0.1",
+  "description": "Bouygues Design System - Masoni specific CSS styles for components",
+  "keywords": [
+    "design-system",
+    "css",
+    "libraries",
+    "masoni"
+  ],
+  "main": "dist/index.css",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "homepage": "https://github.com/bouygues-construction-public/design-system-bycn/tree/main/projects/css/src/design-tokens",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bouygues-construction-public/design-system-bycn.git"
+  },
+  "scripts": {
+    "build": "npm run build:css",
+    "build:css": "postcss ./index.css -o dist/index.css --use postcss-import"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bouygues-construction-public/design-system-bycn/issues"
+  },
+  "devDependencies": {
+    "@masoni/css-design-tokens": "file:../design_tokens",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-loader": "^7.3.0"
+  }
 }

@@ -11,7 +11,7 @@
 <p align="center">Masoni Design System libraries for Angular applications</p>
 
 <p align="center">
-  <a href="https://bouygues-construction.github.io/design-system-bycn">Showcases</a>
+  <a href="https://bouygues-construction-public.github.io/design-system-bycn">Showcases</a>
 </p>
 
 ## Introduction
@@ -28,23 +28,23 @@ Masoni Design System libraries for Angular web applications
 
 This package provides you with a complete CSS with a huge set of utility classes as it is generated with Tailwind CSS. Then it will be up to you to optimize for production by purging the CSS according to the classes used in your HTML:
 
-|                                                                                                                               |                                                                                            |          |
-| ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | -------- |
-| [README](https://github.com/bouygues-construction/design-system-bycn/tree/dangkhoa/project-initialize/projects/css/README.md) | [Storybook](https://bouygues-construction.github.io/design-system-bycn/main/showcases-css) | [npm](#) |
+|                                                                                                                  |                                                                                                   |          |
+| ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | -------- |
+| [README](https://github.com/bouygues-construction-public/design-system-bycn/tree/develop/projects/css/README.md) | [Storybook](https://bouygues-construction-public.github.io/design-system-bycn/main/showcases-css) | [npm](#) |
 
 These following packages allow the consumption of elements with a higher level of granularity.
 
 > ` @masoni/css-design-tokens`
 
-|                                                                                                                                                 |                                                                                                                                |          |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | -------- |
-| [README](https://github.com/bouygues-construction/design-system-bycn/tree/dangkhoa/project-initialize/projects/css/src/design_tokens/README.md) | [Storybook](https://bouygues-construction.github.io/design-system-bycn/main/showcases-css/?path=/docs/guidelines-colors--docs) | [npm](#) |
+|                                                                                                                                    |                                                                                                                                       |          |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| [README](https://github.com/bouygues-construction-public/design-system-bycn/tree/develop/projects/css/src/design_tokens/README.md) | [Storybook](https://bouygues-construction-public.github.io/design-system-bycn/main/showcases-css/?path=/docs/guidelines-colors--docs) | [npm](#) |
 
 > `@masoni/css-components`
 
-|                                                                                                                                              |                                                                                                                                       |          |
-| -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| [README](https://github.com/bouygues-construction/design-system-bycn/tree/dangkhoa/project-initialize/projects/css/src/components/README.md) | [Storybook](https://bouygues-construction.github.io/design-system-bycn/main/showcases-css/?path=/story/components-checkbox--overview) | [npm](#) |
+|                                                                                                                                 |                                                                                                                                              |          |
+| ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| [README](https://github.com/bouygues-construction-public/design-system-bycn/tree/develop/projects/css/src/components/README.md) | [Storybook](https://bouygues-construction-public.github.io/design-system-bycn/main/showcases-css/?path=/story/components-checkbox--overview) | [npm](#) |
 
 ### Icons
 
@@ -52,9 +52,9 @@ These following packages allow the consumption of elements with a higher level o
 
 This package provides you with a library of SVG icons that you can include in your project:
 
-|                                                                                                                  |                |          |
-| ---------------------------------------------------------------------------------------------------------------- | -------------- | -------- |
-| [README](https://github.com/bouygues-construction/design-system-bycn/blob/DTB-75/icons/projects/icons/README.md) | [Storybook](#) | [npm](#) |
+|                                                                                                                         |                |          |
+| ----------------------------------------------------------------------------------------------------------------------- | -------------- | -------- |
+| [README](https://github.com/bouygues-construction-public/design-system-bycn/blob/DTB-75/icons/projects/icons/README.md) | [Storybook](#) | [npm](#) |
 
 ### Components
 
@@ -62,10 +62,10 @@ This package provides you with a library of Masoni Angular Components:
 
 > `@masoni/components`
 
-|                                                                                                                                      |                                                                                                    |          |
-| ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- | -------- |
-| [README](https://github.com/bouygues-construction/design-system-bycn/tree/dangkhoa/project-initialize/projects/components/README.md) | [Storybook](https://bouygues-construction.github.io/design-system-bycn/main/showcases-components/) | [npm](#) |
+|                                                                                                                         |                                                                                                           |          |
+| ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | -------- |
+| [README](https://github.com/bouygues-construction-public/design-system-bycn/tree/develop/projects/components/README.md) | [Storybook](https://bouygues-construction-public.github.io/design-system-bycn/main/showcases-components/) | [npm](#) |
 
 ## License
 
-    Copyright 2023 BYCN.
+    Copyright 2024 BYCN.

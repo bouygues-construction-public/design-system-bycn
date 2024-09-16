@@ -41,15 +41,15 @@ For example:
 <p style="color: var(--mas-primitive-color_red500)">Hello World!</p>
 ```
 
-You can see the different CSS Custom Properties [here](https://github.com/bouygues-construction/design-system-bycn/tree/dangkhoa/project-initialize/projects/css/src/design_tokens).
+You can see the different CSS Custom Properties [here](https://github.com/bouygues-construction-public/design-system-bycn/tree/develop/projects/css/src/design_tokens).
 
 ## I have a issue, what should I do?
 
-Please file the issue [here](https://github.com/bouygues-construction/design-system-bycn/issues/new).
+Please file the issue [here](https://github.com/bouygues-construction-public/design-system-bycn/issues/new).
 
 ## Contributing
 
-See [the contribuiting docs](https://github.com/bouygues-construction/design-system-bycn/blob/dangkhoa/project-initialize/CONTRIBUTING.md)
+See [the contribuiting docs](https://github.com/bouygues-construction-public/design-system-bycn/blob/develop/CONTRIBUTING.md)
 
 ## License
 

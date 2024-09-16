@@ -30,7 +30,7 @@ design-system-bycn/
 
 ```sh
 # Clone the `design-system-bycn`
-git clone https://github.com/bouygues-construction/design-system-bycn
+git clone https://github.com/bouygues-construction-public/design-system-bycn
 cd design-system-bycn
 
 # Install dependencies

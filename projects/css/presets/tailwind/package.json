@@ -10,13 +10,13 @@
     "tailwind",
     "masoni"
   ],
-  "homepage": "https://github.com/bouygues-construction/design-system-bycn",
+  "homepage": "https://github.com/bouygues-construction-public/design-system-bycn",
   "bugs": {
-    "url": "https://github.com/bouygues-construction/design-system-bycn/issues"
+    "url": "https://github.com/bouygues-construction-public/design-system-bycn/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bouygues-construction/design-system-bycn.git"
+    "url": "git+https://github.com/bouygues-construction-public/design-system-bycn.git"
   },
   "license": "ISC",
   "main": "index.js",
