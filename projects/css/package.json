@@ -12,10 +12,10 @@
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/bouygues-construction/design-system-bycn",
+  "homepage": "https://github.com/bouygues-construction-public/design-system-bycn",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bouygues-construction/design-system-bycn.git"
+    "url": "git+https://github.com/bouygues-construction-public/design-system-bycn.git"
   },
   "publishConfig": {
     "access": "public"
@@ -28,7 +28,7 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bouygues-construction/design-system-bycn/issues"
+    "url": "https://github.com/bouygues-construction-public/design-system-bycn/issues"
   },
   "devDependencies": {
     "@masoni/css-design-tokens": "file:src/design_tokens",

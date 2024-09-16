@@ -13,10 +13,10 @@
     "dist",
     "src"
   ],
-  "homepage": "https://github.com/bouygues-construction/design-system-bycn/tree/main/projects/css/src/design-tokens",
+  "homepage": "https://github.com/bouygues-construction-public/design-system-bycn/tree/main/projects/css/src/design-tokens",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bouygues-construction/design-system-bycn.git"
+    "url": "git+https://github.com/bouygues-construction-public/design-system-bycn.git"
   },
   "scripts": {
     "build": "npm run build:css",
@@ -27,7 +27,7 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bouygues-construction/design-system-bycn/issues"
+    "url": "https://github.com/bouygues-construction-public/design-system-bycn/issues"
   },
   "devDependencies": {
     "postcss": "^8.4.23",

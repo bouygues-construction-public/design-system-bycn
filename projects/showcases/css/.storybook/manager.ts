@@ -8,7 +8,7 @@ addons.setConfig({
     theme: {
       ...themes.normal,
       brandTitle: '@mas/css',
-      brandUrl: 'https://github.com/bouygues-construction/design-system-bycn',
+      brandUrl: 'https://github.com/bouygues-construction-public/design-system-bycn',
       brandImage: masCssLogo,
   
       colorPrimary: '#C74D10',

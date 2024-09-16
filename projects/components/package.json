@@ -6,7 +6,7 @@
     "@angular/common": "^15.2.0",
     "@angular/core": "^15.2.0"
   },
-  "homepage": "https://github.com/bouygues-construction/design-system-bycn",
+  "homepage": "https://github.com/bouygues-construction-public/design-system-bycn",
   "keywords": [
     "design-system",
     "ui-kit",

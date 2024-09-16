@@ -64,11 +64,11 @@ For more details about CSS utility classes from this package, [see Tailwind CSS 
 
 ## I have a issue, what should I do?
 
-Please file the issue [here](https://github.com/bouygues-construction/design-system-bycn/issues/new).
+Please file the issue [here](https://github.com/bouygues-construction-public/design-system-bycn/issues/new).
 
 ## Contributing
 
-See [the contribuiting docs](https://github.com/bouygues-construction/design-system-bycn/blob/dangkhoa/project-initialize/CONTRIBUTING.md)
+See [the contribuiting docs](https://github.com/bouygues-construction-public/design-system-bycn/blob/develop/CONTRIBUTING.md)
 
 ## License
 
