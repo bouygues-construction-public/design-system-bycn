@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "health-and-wellness--outlined";
+    src: url("../../fonts/outlined/health-and-wellness/health-and-wellness.ttf?9b0d75ff8aa885045540255fd77d23be") format("truetype"),
+url("../../fonts/outlined/health-and-wellness/health-and-wellness.woff?9b0d75ff8aa885045540255fd77d23be") format("woff"),
+url("../../fonts/outlined/health-and-wellness/health-and-wellness.woff2?9b0d75ff8aa885045540255fd77d23be") format("woff2");
+}
+
+i[class^="mas-health-and-wellness--outlined"]:before, i[class*=" mas-health-and-wellness--outlined"]:before {
+    font-family: health-and-wellness--outlined !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-bandaids-outlined:before {
+    content: "\e70c";
+}
+.mas-barbell-outlined:before {
+    content: "\e70d";
+}
+.mas-bed-outlined:before {
+    content: "\e70e";
+}
+.mas-brain-outlined:before {
+    content: "\e70f";
+}
+.mas-dna-outlined:before {
+    content: "\e710";
+}
+.mas-face-mask-outlined:before {
+    content: "\e711";
+}
+.mas-first-aid-kit-outlined:before {
+    content: "\e712";
+}
+.mas-first-aid-outlined:before {
+    content: "\e713";
+}
+.mas-flask-outlined:before {
+    content: "\e714";
+}
+.mas-hand-heart-outlined:before {
+    content: "\e715";
+}
+.mas-hand-soap-outlined:before {
+    content: "\e716";
+}
+.mas-heartbeat-outlined:before {
+    content: "\e717";
+}
+.mas-lifebuoy-outlined:before {
+    content: "\e718";
+}
+.mas-pill-outlined:before {
+    content: "\e719";
+}
+.mas-prescription-outlined:before {
+    content: "\e71a";
+}
+.mas-pulse-outlined:before {
+    content: "\e71b";
+}
+.mas-stethoscope-outlined:before {
+    content: "\e71c";
+}
+.mas-syringe-outlined:before {
+    content: "\e71d";
+}
+.mas-test-tube-outlined:before {
+    content: "\e71e";
+}
+.mas-toilet-outlined:before {
+    content: "\e71f";
+}
+.mas-toilet-paper-outlined:before {
+    content: "\e720";
+}
+.mas-tooth-outlined:before {
+    content: "\e721";
+}
+.mas-virus-outlined:before {
+    content: "\e722";
+}

@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "development";
+    src: url(".//development.ttf?cb23792a618cf748a67aee40026f09bd") format("truetype"),
+url(".//development.woff?cb23792a618cf748a67aee40026f09bd") format("woff"),
+url(".//development.woff2?cb23792a618cf748a67aee40026f09bd") format("woff2");
+}
+
+i[class^="mas-"]:before, i[class*=" mas-"]:before {
+    font-family: development !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.mas-brackets-angle-outlined:before {
+    content: "\e6b1";
+}
+.mas-brackets-curly-outlined:before {
+    content: "\e6b2";
+}
+.mas-brackets-round-outlined:before {
+    content: "\e6b3";
+}
+.mas-brackets-square-outlined:before {
+    content: "\e6b4";
+}
+.mas-bug-beetle-outlined:before {
+    content: "\e6b5";
+}
+.mas-bug-droid-outlined:before {
+    content: "\e6b6";
+}
+.mas-bug-outlined:before {
+    content: "\e6b7";
+}
+.mas-code-block-outlined:before {
+    content: "\e6b8";
+}
+.mas-code-outlined:before {
+    content: "\e6b9";
+}
+.mas-code-simple-outlined:before {
+    content: "\e6ba";
+}
+.mas-cpu-outlined:before {
+    content: "\e6bb";
+}
+.mas-database-outlined:before {
+    content: "\e6bc";
+}
+.mas-git-branch-outlined:before {
+    content: "\e6bd";
+}
+.mas-git-commit-outlined:before {
+    content: "\e6be";
+}
+.mas-git-diff-outlined:before {
+    content: "\e6bf";
+}
+.mas-git-fork-outlined:before {
+    content: "\e6c0";
+}
+.mas-git-merge-outlined:before {
+    content: "\e6c1";
+}
+.mas-git-pull-request-outlined:before {
+    content: "\e6c2";
+}
+.mas-magnet-outlined:before {
+    content: "\e6c3";
+}
+.mas-magnet-straight-outlined:before {
+    content: "\e6c4";
+}
+.mas-robot-outlined:before {
+    content: "\e6c5";
+}
+.mas-terminal-outlined:before {
+    content: "\e6c6";
+}
+.mas-terminal-window-outlined:before {
+    content: "\e6c7";
+}
+.mas-tree-structure-outlined:before {
+    content: "\e6c8";
+}
+.mas-webhooks-logo-outlined:before {
+    content: "\e6c9";
+}
