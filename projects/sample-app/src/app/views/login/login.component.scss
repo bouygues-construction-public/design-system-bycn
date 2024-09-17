@@ -4,6 +4,8 @@
   .image-container {
     flex: 33%;
     overflow: hidden;
+    background: url('/assets/img/hero.jpg') no-repeat;
+    background-size: cover;
     img {
       aspect-ratio: 1/2;
       object-fit: cover;
@@ -25,10 +27,7 @@
       gap: 48px;
       flex: 1 0 0;
       form {
-        width: 100%;
-        .email-input {
-          width: 100%;
-        }
+        inline-size: 100%;
       }
       .submit-button {
         width: 100%;
