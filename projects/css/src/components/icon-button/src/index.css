@@ -20,6 +20,7 @@
   white-space: nowrap;
   height: 44px;
   border: none;
+  cursor: pointer;
 }
 a.mas-icon-button {
   cursor: pointer;

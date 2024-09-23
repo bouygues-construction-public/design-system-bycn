@@ -6,6 +6,7 @@ import { ActionButton, ToastService } from 'projects/components/src/lib/toast/to
   template: `
   <button  style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: 120px;  padding: 8px 16px 8px 16px;
   cursor: pointer;  margin:10px" 
+  class="mas-typo_body-3"
    (click)="showCustomToast()">
    Show Toast
    
@@ -34,12 +35,14 @@ export class DefaultToastServiceExample {
   template: `
   <button  style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: 300px;  padding: 8px 16px 8px 16px;
   cursor: pointer;  margin:10px" 
+  class="mas-typo_body-3"
    (click)="showCustomToast()">
    Show Toast With Action Button 
    </button> 
    <br/>
    <button  style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: 300px;  padding: 8px 16px 8px 16px;
    cursor: pointer;  margin:10px" 
+   class="mas-typo_body-3"
     (click)="showCustomToast2()">
     Show Toast Without Action Button 
     </button>
@@ -69,12 +72,14 @@ export class ActionButtonToastServiceExample {
   template: `
   <button  style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: 300px;  padding: 8px 16px 8px 16px;
   cursor: pointer;  margin:10px" 
+  class="mas-typo_body-3"
    (click)="showCustomToast()">
    Show Toast Without Close Button 
    </button> 
    <br/>
    <button  style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: 300px;  padding: 8px 16px 8px 16px;
    cursor: pointer;  margin:10px" 
+   class="mas-typo_body-3"
     (click)="showCustomToast2()">
     Show Toast Without Close Button 
     </button>

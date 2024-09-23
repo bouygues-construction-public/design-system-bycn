@@ -1,15 +1,15 @@
 @import '@masoni/css-design-tokens/dist/index.css';
 .mas-navigation-drawer {
+  position: fixed;
   .mas-navigation-drawer_container {
     display: flex;
     align-items: center;
     flex-direction: column;
     border-right: 1px solid var(--mas-semantic-color_border-secondary);
-    height: 100%;
+    height: inherit;
     width: fit-content;
     position: fixed;
     z-index: 1;
-    top: 0;
     left: 0;
     overflow-x: hidden;
     background-color: var(--mas-semantic-color_surface-primary);
@@ -24,6 +24,7 @@
     }
     .mas-navigation-drawer-section {
       .section-heading {
+        color: var(--mas-semantic-color_text-secondary);
         display: flex;
         padding: 6px 8px 6px 8px;
         align-items: center;
@@ -37,7 +38,7 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      position: fixed;
+      position: absolute;
       bottom: 0;
       .mas-navigation-drawer_footer-component {
         display: flex;
@@ -71,6 +72,18 @@
   .mas-navigation-drawer_footer {
     .mas-navigation-drawer_footer-component {
       display: none;
+    }
+  }
+}
+@media screen and (max-height: 400px) {
+  .mas-navigation-drawer .mas-navigation-drawer_container{
+    .mas-navigation-drawer_footer {
+      .mas-navigation-drawer_footer-component{
+        display: none;
+      }
+      .logo-BYCN {
+        display: none;
+      }
     }
   }
 }

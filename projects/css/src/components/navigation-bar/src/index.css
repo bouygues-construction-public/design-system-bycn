@@ -2,13 +2,15 @@
 
 .mas-navigation-bar {
   display: flex;
-  position: relative;
+  position: fixed;
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
   align-items: center;
   height: 64px;
   padding: 12px;
+  border-bottom: 1px solid var(--mas-semantic-color_border-secondary);
+  background-color: var(--mas-semantic-color_backround-secondary);
   .start-area {
     display: flex;
     justify-content: flex-start;

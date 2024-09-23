@@ -22,7 +22,10 @@ import {
   MasNavigationBarModule,
   MasDividerModule,
   MasTabModule,
+  MasActionDropdownModule,
   MasCheckboxModule,
+  MasNavigationDrawerModule,
+  MasNavigationItemModule
 } from '@masoni/components/dist';
 import { LoginComponent } from './views/login/login.component';
 import { DefaultLayoutComponent } from './containers/default-layout.component';
@@ -53,7 +56,11 @@ import { FormsModule } from '@angular/forms';
     MasDividerModule,
     MasTabModule,
     MasCheckboxModule,
+    MasTabModule,
+    MasActionDropdownModule,
     FormsModule,
+    MasNavigationDrawerModule,
+    MasNavigationItemModule
   ],
   bootstrap: [AppComponent],
 })

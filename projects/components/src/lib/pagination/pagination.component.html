@@ -19,12 +19,12 @@
   
   <div *ngIf="itemsPerPage" class="containerItemsPerPage">
     <mas-action-dropdown #dropdown tabindex="0" (keydown)="handleKeydown($event, 'OpenDropdown')" class="dd custom-dropdown" [size]="size === 'medium' ? 'M' : 'S'" labelText="items per page">
-      <mas-dropdown-option *ngFor="let option of pageSizeOptions; let i = index" 
+      <mas-action-dropdown-option *ngFor="let option of pageSizeOptions; let i = index" 
                            [tabindex]="i === selectedIndex ? 0 : -1" 
                            (click)="onPageSizeChange(option)" 
                            (keydown)="handleKeydown($event, 'Option', option, i)">
         {{ option }} per page
-      </mas-dropdown-option>
+      </mas-action-dropdown-option>
     </mas-action-dropdown>
     <p class="item-counter" [ngClass]="{'item-counter-medium': size === 'medium', 'item-counter-small': size === 'small'}">
       on {{ totalItems }} items

@@ -29,24 +29,28 @@ export class DefaultAlertServiceExample {
   template: `
     <button style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: 100px;  padding: 8px 16px 8px 16px;
         cursor: pointer;  margin:10px" 
+        class="mas-typo_body-3"
         (click)="showInfoAlert()"> 
        Info 
    </button>
    <br/>
     <button style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: 100px;  padding: 8px 16px 8px 16px;
         cursor: pointer;  margin:10px" 
+        class="mas-typo_body-3"
         (click)="showSuccessAlert()"> 
        Success 
    </button>
    <br/>
     <button style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: 100px;  padding: 8px 16px 8px 16px;
         cursor: pointer;  margin:10px" 
+        class="mas-typo_body-3"
         (click)="showErrorlert()"> 
        Error 
    </button>
    <br/>
     <button style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: 100px;  padding: 8px 16px 8px 16px;
         cursor: pointer;  margin:10px" 
+        class="mas-typo_body-3"
         (click)="showWarningAlert()"> 
        Warning 
    </button>
@@ -78,6 +82,7 @@ export class AllAlertServiceExample {
   template: `
    <button style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: 100px;  padding: 8px 16px 8px 16px;
         cursor: pointer;  margin:10px" 
+        class="mas-typo_body-3"
         (click)="showInfoAlert()"> 
        Info 
    </button>
@@ -98,7 +103,7 @@ export class InfoAlertServiceExample {
   selector: 'success-alert-sevice-example',
   template: `
     <button style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: auto;  padding: 8px 16px 8px 16px;
-        cursor: pointer;  margin:10px" (click)="showSuccessAlert()"> show success alert </button> <br/>
+        cursor: pointer;  margin:10px" (click)="showSuccessAlert()" class="mas-typo_body-3"> show success alert </button> <br/>
     <mas-alert> </mas-alert>
   `,
 })
@@ -114,7 +119,7 @@ export class SuccessAlertServiceExample {
   selector: 'error-alert-sevice-example',
   template: `
     <button style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: auto;  padding: 8px 16px 8px 16px;
-        cursor: pointer;  margin:10px" (click)="showErrorlert()"> show error alert </button> <br/>
+        cursor: pointer;  margin:10px" (click)="showErrorlert()" class="mas-typo_body-3"> show error alert </button> <br/>
     <mas-alert> </mas-alert>
   `,
 })
@@ -130,7 +135,7 @@ export class ErrorAlertServiceExample {
   selector: 'warning-alert-sevice-example',
   template: `
     <button style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: auto;  padding: 8px 16px 8px 16px;
-        cursor: pointer;  margin:10px" (click)="showWarningAlert()"> show warning alert </button> <br/>
+        cursor: pointer;  margin:10px" (click)="showWarningAlert()" class="mas-typo_body-3"> show warning alert </button> <br/>
     <mas-alert> </mas-alert>
   `,
 })
@@ -148,12 +153,14 @@ export class WarningAlertServiceExample {
   template: `
    <button style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: 200px;  padding: 8px 16px 8px 16px;
         cursor: pointer;  margin:10px" 
+        class="mas-typo_body-3"
         (click)="show1()"> 
         with close button
    </button>
    <br/>
     <button style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: 200px;  padding: 8px 16px 8px 16px;
         cursor: pointer;  margin:10px" 
+        class="mas-typo_body-3"
         (click)="show2()"> 
         without close button
    </button>
@@ -177,12 +184,14 @@ export class AlertWithClosebtn {
   template: `
    <button style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: 200px;  padding: 8px 16px 8px 16px;
         cursor: pointer;  margin:10px" 
+        class="mas-typo_body-3"
         (click)="show1()"> 
         with description
    </button>
    <br/>
     <button style="color: #0C0C0D; borderRadius: 8px;   border: 1px solid #D7D7DB; width: 200px;  padding: 8px 16px 8px 16px;
         cursor: pointer;  margin:10px" 
+        class="mas-typo_body-3"
         (click)="show2()"> 
         without description
    </button>

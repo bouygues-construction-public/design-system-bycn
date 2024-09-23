@@ -1,4 +1,4 @@
-import { AfterContentInit, Component, ContentChildren, Input, OnInit, QueryList } from '@angular/core';
+import { AfterContentInit, Component, ContentChildren, EventEmitter, Input, OnInit, Output, QueryList } from '@angular/core';
 import { MasTab } from './tab.component';
 import { MasTabHeader } from './tab-header.component';
 
@@ -12,7 +12,7 @@ import { MasTabHeader } from './tab-header.component';
       <ng-container *ngFor="let tab of tabs">
         <mas-tab-header
           #tabHeader
-          (click)="selectTab(tab)"
+          (click)="selectTab(tab, $event)"
           [selected]="tab.selected"
           [header]="tab.header"
           [number]="tab.number"
@@ -39,6 +39,7 @@ export class MasTabView implements OnInit, AfterContentInit {
   @Input() skeleton: boolean = true;
   @Input() orientation: 'horizontal' | 'vertical' = 'horizontal';
   @Input() size: 'M' | 'L' = 'M';
+  @Output() onChange: EventEmitter<any> = new EventEmitter(); 
   constructor() {}
   ngAfterContentInit(): void {
     this.tabs.changes.subscribe(() => {
@@ -58,13 +59,15 @@ export class MasTabView implements OnInit, AfterContentInit {
       }
     });
   }
-  selectTab(tab: MasTab) {
+  selectTab(tab: MasTab, event: Event) {
     if (tab.disabled) {
       return;
     }
     this.currentSelectedTab = tab;
     this.tabs.forEach((tab) => (tab.selected = false));
     tab.selected = true;
+    const index: number = this.tabs.toArray().findIndex(t => t === tab)
+    this.onChange.emit({index, originalEvent: event});
     tab.onSelect();
   }
   ngOnInit() {}
