@@ -1,4 +1,4 @@
 @import "tailwindcss/base" layer(tailwind-base);
-@import '@masoni/css-design-tokens/src';
+@import '@masoni/css-design-tokens/dist';
 @import './components';
 @import './utilities';

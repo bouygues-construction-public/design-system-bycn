@@ -13,3 +13,5 @@
 @import './spacing.css';
 /* Typography */
 @import './typography.css';
+
+@import './_variables.css';
