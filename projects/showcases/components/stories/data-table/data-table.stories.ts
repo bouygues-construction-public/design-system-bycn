@@ -477,7 +477,7 @@ export const NoDataTemplate: Story = {
     props: { ...args },
     template: `
     <div style="height: 300px">
-      <mas-data-table [noDataTemplate]="noDataTemplate" [value]="value" [columns]="columns" [totalRecords]="value.length">No Data</mas-data-table>
+      <mas-data-table [noDataTemplate]="noDataTemplate" [value]="value" [columns]="columns" [totalRecords]="value.length"><span class="mas-typo_body-3">No Data</span></mas-data-table>
     </div>
     `,
   }),

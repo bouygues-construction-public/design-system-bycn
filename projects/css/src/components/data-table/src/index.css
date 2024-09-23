@@ -19,6 +19,7 @@
         background-color: var(--mas-semantic-color_surface-secondary);
         border-bottom: 1px solid var(--mas-semantic-color_border-primary);
         mas-data-table_thead--leading-icon {
+          font-size: 16px;
           display: flex;
         }
         .mas-data-table_thead--text {
@@ -27,6 +28,7 @@
           align-items: first baseline;
         }
         mas-data-table_thead--trailing-icon {
+          font-size: 16px;
           display: flex;
         }
         mas-data-table_thead--sort {
@@ -60,11 +62,13 @@
         flex-shrink: 0;
         border-bottom: 1px solid var(--mas-semantic-color_border-primary);
         .mas-data-table_tbody--leading-icon {
+          font-size: 16px;
           display: flex;
         }
         .mas-data-table-tbody--text {
         }
         .mas-data-table_tbody--trailing-icon {
+          font-size: 16px;
           display: flex;
         }
       }
