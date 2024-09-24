@@ -30,6 +30,10 @@ export class MasNavigationItem {
    * Whether the navigation Item is selected.
    */
   @Input() selected : boolean = false;
+  /**
+   * For extenal link, use this attribute instead of routerLink
+   */
+  @Input() url: string;
 
   /**
    * Whether the navigation menu is collapsed.
@@ -70,4 +74,10 @@ export class MasNavigationItem {
     }
   }
 
+  onClick() {
+    console.log("navigate:", this.url)
+    if(this.url !== undefined) {
+      window.location.href = this.url;
+    }
+  }
 }
