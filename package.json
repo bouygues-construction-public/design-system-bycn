@@ -11,8 +11,11 @@
     "deploy-storybook:develop": "npx -p @storybook/storybook-deployer storybook-to-ghpages --branch gh-pages --out docs/develop",
     "start:css-storybook": "ng run showcases-css:storybook",
     "start:components-storybook": "ng run showcases-components:storybook",
-    "build-storybook": "ng run showcases-components:build-storybook && ng run showcases-css:build-storybook && ng run showcases-icons:build-storybook",
+    "start:icons-storybook": "ng run showcases-icons:storybook",
+    "build-storybook": "ng run showcases-css:build-storybook && ng run showcases-components:build-storybook && npm run build:icons-storybook",
     "build:css": "npm run build -w projects/css",
+    "build:icons": "npm run build -w projects/icons",
+    "build:icons-storybook": "ng run showcases-icons:build-storybook",
     "watch": "ng build --watch --configuration development",
     "format": "prettier --write \"**/*.{js,ts,d.ts}\"",
     "format:check": "prettier --check \"**/*.{js,ts,d.ts}\"",
@@ -44,8 +47,9 @@
     "@angular-eslint/schematics": "15.2.1",
     "@angular-eslint/template-parser": "15.2.1",
     "@angular/cli": "~15.2.5",
-    "@angular/compiler-cli": "^15.2.0", 
+    "@angular/compiler-cli": "^15.2.0",
     "@storybook/addon-actions": "^7.0.26",
+    "@storybook/addon-designs": "^7.0.1",
     "@storybook/addon-docs": "^7.0.18",
     "@storybook/addon-essentials": "^7.0.12",
     "@storybook/addon-interactions": "^7.0.12",
@@ -61,6 +65,7 @@
     "@types/jasmine": "~4.3.0",
     "@typescript-eslint/eslint-plugin": "5.48.2",
     "@typescript-eslint/parser": "5.48.2",
+    "chromatic": "^6.21.0",
     "css-loader": "^6.8.1",
     "eslint": "^8.33.0",
     "eslint-plugin-storybook": "^0.6.12",
@@ -81,7 +86,8 @@
       "projects/css/presets/tailwind/*",
       "projects/css/src/design_tokens",
       "projects/css/src/components",
-      "projects/components"
+      "projects/components",
+      "projects/icons"
     ]
   },
   "storybook-deployer": {

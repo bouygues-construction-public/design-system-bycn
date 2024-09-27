@@ -131,7 +131,7 @@
           "options": {
             "configDir": "projects/showcases/icons/.storybook",
             "compodoc": false,
-            "outputDir": "dist/storybook/icons/showcases"
+            "outputDir": "dist/showcase-icons"
           }
         }
       }
