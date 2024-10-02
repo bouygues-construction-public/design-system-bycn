@@ -1,0 +1,16 @@
+{
+    "source": ["tokens/breakpoints/*.json"],
+    "platforms": {
+      "css": {
+        "transformGroup": "css",
+        "buildPath": "src/",
+        "files": [
+          {
+            "destination": "_breakpoints.css",
+            "format": "css/variables"
+          }
+        ]
+      }
+    }
+  }
+  

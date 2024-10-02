@@ -1,0 +1,16 @@
+{
+    "source": ["tokens/shadow/*.json"],
+    "platforms": {
+      "css": {
+        "transformGroup": "css",
+        "buildPath": "src/",
+        "files": [
+          {
+            "destination": "_shadow.css",
+            "format": "css/variables"
+          }
+        ]
+      }
+    }
+  }
+  

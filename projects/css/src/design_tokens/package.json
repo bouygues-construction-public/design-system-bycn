@@ -21,8 +21,16 @@
   "scripts": {
     "build": "npm run build:style-dictionary && npm run build:css",
     "build:css": "postcss src/index.css -o dist/index.css --use postcss-import",
-    "build:style-dictionary": "npm run style-dictionary build",
-    "style-dictionary": "style-dictionary"
+    "build:breakpoints": "style-dictionary build --config ./tokens/breakpoints/config.json",
+    "build:color": "style-dictionary build --config ./tokens/color/config.json",
+    "build:layout": "style-dictionary build --config ./tokens/layout/config.json",
+    "build:primitive-color": "style-dictionary build --config ./tokens/primitive-color/config.json",
+    "build:radius": "style-dictionary build --config ./tokens/radius/config.json",
+    "build:shadow": "style-dictionary build --config ./tokens/shadow/config.json",
+    "build:spacing": "style-dictionary build --config ./tokens/spacing/config.json",
+    "build:typography": "style-dictionary build --config ./tokens/typography/config.json",
+    "build:themes": "style-dictionary build --config ./tokens/themes/config.json",
+    "style-dictionary": "npm run style-dictionary"
   },
   "publishConfig": {
     "access": "public"

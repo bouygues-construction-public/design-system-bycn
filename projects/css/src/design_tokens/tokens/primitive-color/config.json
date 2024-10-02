@@ -1,0 +1,16 @@
+{
+    "source": ["tokens/primitive-color/*.json"],
+    "platforms": {
+      "css": {
+        "transformGroup": "css",
+        "buildPath": "src/",
+        "files": [
+          {
+            "destination": "_primitive-color.css",
+            "format": "css/variables"
+          }
+        ]
+      }
+    }
+  }
+  

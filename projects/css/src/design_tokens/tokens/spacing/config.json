@@ -1,0 +1,16 @@
+{
+    "source": ["tokens/spacing/*.json"],
+    "platforms": {
+      "css": {
+        "transformGroup": "css",
+        "buildPath": "src/",
+        "files": [
+          {
+            "destination": "_spacing.css",
+            "format": "css/variables"
+          }
+        ]
+      }
+    }
+  }
+  

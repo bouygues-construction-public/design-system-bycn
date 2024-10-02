@@ -1,0 +1,16 @@
+{
+    "source": ["tokens/radius/*.json"],
+    "platforms": {
+      "css": {
+        "transformGroup": "css",
+        "buildPath": "src/",
+        "files": [
+          {
+            "destination": "_radius.css",
+            "format": "css/variables"
+          }
+        ]
+      }
+    }
+  }
+  

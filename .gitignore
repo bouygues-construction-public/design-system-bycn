@@ -44,6 +44,3 @@ Thumbs.db
 **/node_modules
 /docs/main/showcases-css/favicon.svg
 /build-storybook.log
-
-#style-dictionary generated file
-_variables.css 

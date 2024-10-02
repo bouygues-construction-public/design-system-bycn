@@ -1,0 +1,16 @@
+{
+    "source": ["tokens/color/*.json"],
+    "platforms": {
+      "css": {
+        "transformGroup": "css",
+        "buildPath": "src/",
+        "files": [
+          {
+            "destination": "_color.css",
+            "format": "css/variables"
+          }
+        ]
+      }
+    }
+  }
+  
