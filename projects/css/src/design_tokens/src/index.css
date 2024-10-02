@@ -1,17 +1,15 @@
-@import './primitive-colors.css';
-@import './themes/default.css';
+@import './_primitive-colors.css';
+@import './_themes.css';
 
 /* Breakpoints */
-@import './breakpoints.css';
+@import './_breakpoints.css';
 /* Layout */
-@import './layout.css';
+@import './_layout.css';
 /* Shadows */
-@import './shadow.css';
+@import './_shadow.css';
 /* Radius */
-@import './radius.css';
+@import './_radius.css';
 /* Spacings */
-@import './spacing.css';
+@import './_spacing.css';
 /* Typography */
-@import './typography.css';
-
-@import './_variables.css';
+@import './_typography.css';
