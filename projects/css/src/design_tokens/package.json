@@ -20,7 +20,7 @@
   },
   "scripts": {
     "build": "npm run build:style-dictionary && npm run build:css",
-    "build:css": "postcss src/index.css -o dist/index.css --use postcss-import",
+    "build:css": "postcss src/index.css -o dist/index.css",
     "build:breakpoints": "style-dictionary build --config ./tokens/breakpoints/config.json",
     "build:color": "style-dictionary build --config ./tokens/color/config.json",
     "build:layout": "style-dictionary build --config ./tokens/layout/config.json",
@@ -29,8 +29,11 @@
     "build:shadow": "style-dictionary build --config ./tokens/shadow/config.json",
     "build:spacing": "style-dictionary build --config ./tokens/spacing/config.json",
     "build:typography": "style-dictionary build --config ./tokens/typography/config.json",
+    "build:border-width": "style-dictionary build --config ./tokens/border-width/config.json",
+    "build:opacity": "style-dictionary build --config ./tokens/opacity/config.json",
+    "build:sizing": "style-dictionary build --config ./tokens/sizing/config.json",
     "build:themes": "style-dictionary build --config ./tokens/themes/config.json",
-    "build:style-dictionary": "npm run build:breakpoints && npm run build:color && npm run build:layout && npm run build:radius && npm run build:shadow && npm run build:spacing && npm run build:typography && npm run build:themes",
+    "build:style-dictionary": "npm run build:breakpoints && npm run build:color && npm run build:layout && npm run build:radius && npm run build:shadow && npm run build:spacing && npm run build:typography && npm run build:border-width && npm run build:opacity && npm run build:sizing && npm run build:themes",
     "style-dictionary": "npm run style-dictionary"
   },
   "publishConfig": {
@@ -41,10 +44,16 @@
     "url": "https://github.com/bouygues-construction/design-system-bycn/issues"
   },
   "devDependencies": {
+    "@masoni/css-tailwind-preset": "file:../../presets/tailwind",
+    "autoprefixer": "^10.4.20",
     "postcss": "^8.4.23",
     "postcss-cli": "^10.1.0",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
+    "postcss-discard-comments": "^7.0.3",
+    "postcss-discard-duplicates": "^7.0.1",
     "postcss-import": "^15.1.0",
     "postcss-loader": "^7.3.0",
+    "postcss-prettify": "^0.3.4",
     "style-dictionary": "^4.1.2"
   }
 }

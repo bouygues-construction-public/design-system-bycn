@@ -1,4 +1,4 @@
-@import './_primitive-colors.css';
+@import './primitive-colors.css';
 @import './_themes.css';
 
 /* Breakpoints */
@@ -13,3 +13,9 @@
 @import './_spacing.css';
 /* Typography */
 @import './_typography.css';
+/* Opacity */
+@import './_opacity.css';
+/* Sizing */
+@import './_sizing.css';
+/* Border Width */
+@import './_border-width.css';
