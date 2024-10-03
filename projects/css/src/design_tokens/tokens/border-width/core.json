@@ -1,0 +1,20 @@
+{
+  "mas": {
+    "core": {
+      "border-width": {
+        "0": {
+          "value": "0",
+          "type": "borderWidth"
+        },
+        "100": {
+          "value": "1",
+          "type": "borderWidth"
+        },
+        "200": {
+          "value": "2",
+          "type": "borderWidth"
+        }
+      }
+    }
+  }
+}

@@ -1,12 +1,12 @@
 {
-    "source": ["tokens/*/*.json"],
+    "source": ["tokens/sizing/*.json"],
     "platforms": {
       "css": {
         "transformGroup": "css",
         "buildPath": "src/",
         "files": [
           {
-            "destination": "_themes.css",
+            "destination": "_sizing.css",
             "format": "css/variables"
           }
         ]

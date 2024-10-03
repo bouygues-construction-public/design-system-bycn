@@ -1,12 +1,12 @@
 {
-    "source": ["tokens/*/*.json"],
+    "source": ["tokens/border-width/*.json"],
     "platforms": {
       "css": {
         "transformGroup": "css",
         "buildPath": "src/",
         "files": [
           {
-            "destination": "_themes.css",
+            "destination": "_border-width.css",
             "format": "css/variables"
           }
         ]

@@ -1,1 +1,52 @@
-{}
+{
+  "mas": {
+    "core": {
+      "border-radius": {
+        "0": {
+          "value": "0",
+          "type": "borderRadius"
+        },
+        "100": {
+          "value": "4",
+          "type": "borderRadius"
+        },
+        "200": {
+          "value": "8",
+          "type": "borderRadius"
+        },
+        "350": {
+          "value": "12",
+          "type": "borderRadius"
+        },
+        "400": {
+          "value": "16",
+          "type": "borderRadius"
+        },
+        "450": {
+          "value": "20",
+          "type": "borderRadius"
+        },
+        "500": {
+          "value": "24",
+          "type": "borderRadius"
+        },
+        "550": {
+          "value": "28",
+          "type": "borderRadius"
+        },
+        "600": {
+          "value": "32",
+          "type": "borderRadius"
+        },
+        "050": {
+          "value": "2",
+          "type": "borderRadius"
+        },
+        "full": {
+          "value": "999",
+          "type": "borderRadius"
+        }
+      }
+    }
+  }
+}

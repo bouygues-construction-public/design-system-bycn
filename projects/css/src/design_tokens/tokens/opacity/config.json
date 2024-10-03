@@ -1,12 +1,12 @@
 {
-    "source": ["tokens/*/*.json"],
+    "source": ["tokens/opacity/*.json"],
     "platforms": {
       "css": {
         "transformGroup": "css",
         "buildPath": "src/",
         "files": [
           {
-            "destination": "_themes.css",
+            "destination": "_opacity.css",
             "format": "css/variables"
           }
         ]

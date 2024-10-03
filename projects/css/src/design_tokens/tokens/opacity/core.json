@@ -1,0 +1,32 @@
+{
+  "mas": {
+    "core": {
+      "opacity": {
+        "0": {
+          "value": "0%",
+          "type": "opacity"
+        },
+        "100": {
+          "value": "5%",
+          "type": "opacity"
+        },
+        "200": {
+          "value": "8%",
+          "type": "opacity"
+        },
+        "300": {
+          "value": "25%",
+          "type": "opacity"
+        },
+        "400": {
+          "value": "38%",
+          "type": "opacity"
+        },
+        "500": {
+          "value": "50%",
+          "type": "opacity"
+        }
+      }
+    }
+  }
+}

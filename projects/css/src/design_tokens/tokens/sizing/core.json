@@ -1,74 +1,74 @@
 {
   "mas": {
     "core": {
-      "spacing": {
-        "0": {
-          "value": "0",
-          "type": "spacing"
-        },
-        "10": {
-          "value": "1",
-          "type": "spacing"
-        },
+      "sizing": {
         "25": {
-          "value": "2",
-          "type": "spacing"
+          "value": "1",
+          "type": "sizing"
         },
         "50": {
-          "value": "4",
-          "type": "spacing"
+          "value": "2",
+          "type": "sizing"
         },
         "75": {
-          "value": "6",
-          "type": "spacing"
+          "value": "4",
+          "type": "sizing"
         },
         "100": {
           "value": "8",
-          "type": "spacing"
+          "type": "sizing"
         },
         "150": {
           "value": "12",
-          "type": "spacing"
+          "type": "sizing"
         },
         "200": {
           "value": "16",
-          "type": "spacing"
+          "type": "sizing"
         },
         "250": {
           "value": "20",
-          "type": "spacing"
+          "type": "sizing"
         },
         "300": {
           "value": "24",
-          "type": "spacing"
+          "type": "sizing"
+        },
+        "350": {
+          "value": "28",
+          "type": "sizing"
         },
         "400": {
           "value": "32",
-          "type": "spacing"
+          "type": "sizing"
         },
         "450": {
           "value": "40",
-          "type": "spacing"
+          "type": "sizing"
         },
         "500": {
           "value": "48",
-          "type": "spacing"
+          "type": "sizing"
         },
         "600": {
           "value": "64",
-          "type": "spacing"
+          "type": "sizing"
+        },
+        "650": {
+          "value": "72",
+          "type": "sizing"
         },
         "700": {
           "value": "80",
-          "type": "spacing"
+          "type": "sizing"
         },
         "800": {
           "value": "96",
-          "type": "spacing"
+          "type": "sizing"
         },
         "900": {
           "value": "128",
-          "type": "spacing"
+          "type": "sizing"
         }
       }
     }
