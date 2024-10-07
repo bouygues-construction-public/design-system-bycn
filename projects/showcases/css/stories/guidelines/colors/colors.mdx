@@ -1,5 +1,6 @@
 import { Meta, ColorPalette, ColorItem, Source } from '@storybook/blocks';
 import tailwind from '@masoni/css-tailwind-preset';
+import color from './color';
 
 <Meta title="Guidelines / Colors" />
 
@@ -14,11 +15,13 @@ For more detail, see our [Colors' guideline](https://zeroheight.com/9b39bb2a0/p/
 If you don't know CSS Custom Properties, you can see basic usage documentation [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#Basic_usage). All our CSS Custom Properties for colors are listed at "Swatches" column just below:
 
 <ColorPalette>
-  {Object.keys(tailwind.theme.colors).map((key) => {
-      if (typeof tailwind.theme.colors[key] === 'string') {
-        return <ColorItem title={key} colors={[tailwind.theme.colors[key]]} />;
-      }
-    })}
+  {Object.keys(color).map((key) => {
+    if (typeof color[key].value === 'string') {
+      return <ColorItem title={`${key}`} colors={[color[key].value]} />;
+    } else {
+      return Object.keys(color[key]).map((variation) => <ColorItem title={`${key}-${variation}`} colors={[color[key][variation].value]} />);
+    }
+  })}
 </ColorPalette>
 
 ## Using [Tailwind CSS](https://tailwindcss.com) utility classes

@@ -4,71 +4,71 @@
       "sizing": {
         "25": {
           "value": "1",
-          "type": "sizing"
+          "type": "dimension"
         },
         "50": {
           "value": "2",
-          "type": "sizing"
+          "type": "dimension"
         },
         "75": {
           "value": "4",
-          "type": "sizing"
+          "type": "dimension"
         },
         "100": {
           "value": "8",
-          "type": "sizing"
+          "type": "dimension"
         },
         "150": {
           "value": "12",
-          "type": "sizing"
+          "type": "dimension"
         },
         "200": {
           "value": "16",
-          "type": "sizing"
+          "type": "dimension"
         },
         "250": {
           "value": "20",
-          "type": "sizing"
+          "type": "dimension"
         },
         "300": {
           "value": "24",
-          "type": "sizing"
+          "type": "dimension"
         },
         "350": {
           "value": "28",
-          "type": "sizing"
+          "type": "dimension"
         },
         "400": {
           "value": "32",
-          "type": "sizing"
+          "type": "dimension"
         },
         "450": {
           "value": "40",
-          "type": "sizing"
+          "type": "dimension"
         },
         "500": {
           "value": "48",
-          "type": "sizing"
+          "type": "dimension"
         },
         "600": {
           "value": "64",
-          "type": "sizing"
+          "type": "dimension"
         },
         "650": {
           "value": "72",
-          "type": "sizing"
+          "type": "dimension"
         },
         "700": {
           "value": "80",
-          "type": "sizing"
+          "type": "dimension"
         },
         "800": {
           "value": "96",
-          "type": "sizing"
+          "type": "dimension"
         },
         "900": {
           "value": "128",
-          "type": "sizing"
+          "type": "dimension"
         }
       }
     }

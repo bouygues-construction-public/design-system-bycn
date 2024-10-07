@@ -4,15 +4,15 @@
       "border-width": {
         "0": {
           "value": "0",
-          "type": "borderWidth"
+          "type": "dimension"
         },
         "100": {
           "value": "1",
-          "type": "borderWidth"
+          "type": "dimension"
         },
         "200": {
           "value": "2",
-          "type": "borderWidth"
+          "type": "dimension"
         }
       }
     }

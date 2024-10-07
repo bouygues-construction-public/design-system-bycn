@@ -4,47 +4,47 @@
       "border-radius": {
         "0": {
           "value": "0",
-          "type": "borderRadius"
+          "type": "dimension"
         },
         "100": {
           "value": "4",
-          "type": "borderRadius"
+          "type": "dimension"
         },
         "200": {
           "value": "8",
-          "type": "borderRadius"
+          "type": "dimension"
         },
         "350": {
           "value": "12",
-          "type": "borderRadius"
+          "type": "dimension"
         },
         "400": {
           "value": "16",
-          "type": "borderRadius"
+          "type": "dimension"
         },
         "450": {
           "value": "20",
-          "type": "borderRadius"
+          "type": "dimension"
         },
         "500": {
           "value": "24",
-          "type": "borderRadius"
+          "type": "dimension"
         },
         "550": {
           "value": "28",
-          "type": "borderRadius"
+          "type": "dimension"
         },
         "600": {
           "value": "32",
-          "type": "borderRadius"
+          "type": "dimension"
         },
         "050": {
           "value": "2",
-          "type": "borderRadius"
+          "type": "dimension"
         },
         "full": {
           "value": "999",
-          "type": "borderRadius"
+          "type": "dimension"
         }
       }
     }

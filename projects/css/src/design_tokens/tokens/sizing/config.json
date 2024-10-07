@@ -9,7 +9,8 @@
             "destination": "_sizing.css",
             "format": "css/variables"
           }
-        ]
+        ],
+        "transforms": "size/px"
       }
     }
   }

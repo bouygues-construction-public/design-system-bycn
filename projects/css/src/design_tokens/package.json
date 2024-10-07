@@ -11,7 +11,8 @@
   "main": "dist/index.css",
   "files": [
     "dist",
-    "src"
+    "src",
+    "tokens"
   ],
   "homepage": "https://github.com/bouygues-construction/design-system-bycn/tree/main/projects/css/src/design-tokens",
   "repository": {

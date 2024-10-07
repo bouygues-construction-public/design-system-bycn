@@ -1,5 +1,27 @@
-import { Meta, Source, Canvas } from '@storybook/blocks';
+import { Meta, Source } from '@storybook/blocks';
 import tailwind from '@masoni/css-tailwind-preset';
+import radius from './_radius';
+
+<style>
+  {`
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .item {
+    display: flex;
+    padding: var(--mas-core-spacing-400);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--mas-core-sizing-500);
+    background-color: var(--mas-core-color-grey-400);
+  }
+  .text {
+  }
+`}
+</style>
 
 <Meta title="Guidelines / Radius" />
 
@@ -35,46 +57,16 @@ You can use shadows with Tailwind CSS utility classes about [Border Radius](http
 
 So, here is an example with associated code:
 
-<Canvas>
-  <div class="mas-flex mas-flex-wrap mas-w-full mas-justify-between">
-    <div class="mas-flex mas-rounded-0.5 mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
-      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-0.5</span>
-    </div>
-
-    <div class="mas-flex mas-rounded-1 mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
-      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-1</span>
-    </div>
-
-    <div class="mas-flex mas-rounded-2 mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
-      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-2</span>
-    </div>
-
-    <div class="mas-flex mas-rounded-3 mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
-      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-3</span>
-    </div>
-
-    <div class="mas-flex mas-rounded-4 mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
-      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-4</span>
-    </div>
-
-    <div class="mas-flex mas-rounded-5 mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
-      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-5</span>
-    </div>
-
-    <div class="mas-flex mas-rounded-6 mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
-      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-6</span>
-    </div>
-
-    <div class="mas-flex mas-rounded-7 mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
-      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-7</span>
-    </div>
-
-    <div class="mas-flex mas-rounded-8 mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
-      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-8</span>
-    </div>
-
-    <div class="mas-flex mas-rounded-full mas-bg-surface-tiertiary mas-shadow-400 mas-p-400 mas-mb-500 mas-items-center mas-content-center">
-      <span class="mas-text-center mas-font-semibold mas-text-content-primary">mas-rounded-full</span>
-    </div>
-  </div>
-</Canvas>
+<div class="container">
+  {
+    Object.keys(radius).map(key => {
+      if(radius[key].value) {
+        return (
+            <div class='item mas-shadow-400' style={{borderRadius: radius[key].value + 'px'}}>
+              <span class="text">mas-rounded-{key}</span>
+            </div>
+        )   
+      }
+    })
+  }
+</div>
