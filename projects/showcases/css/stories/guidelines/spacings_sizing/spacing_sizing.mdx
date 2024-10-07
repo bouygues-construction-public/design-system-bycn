@@ -1,6 +1,7 @@
 import { Meta, Source } from '@storybook/blocks';
 import tailwind from '@masoni/css-tailwind-preset';
 import spacing from './_spacing';
+import sizing from './_sizing';
 
 <style>
   {`
@@ -14,7 +15,7 @@ import spacing from './_spacing';
     `}
 </style>
 
-<Meta title="Guidelines / Spacings" />
+<Meta title="Guidelines / Spacings & Sizing" />
 
 # Spacings
 
@@ -41,6 +42,35 @@ So, here is an example with associated code:
             <td>{spacing[key].value}px</td>
             <td class="table-cell">
               <div class="item" style={{ width: spacing[key].value + 'px' }}></div>
+            </td>
+          </tr>
+        );
+      }
+    })}
+  </tbody>
+</table>
+
+# Sizing
+
+<Source language="json" code={JSON.stringify(sizing, null, 2)} />
+
+So, here is an example with associated code:
+
+<table>
+  <thead>
+    <th>Token</th>
+    <th>Value</th>
+    <th>Pixels</th>
+  </thead>
+  <tbody>
+    {Object.keys(sizing).map((key) => {
+      if (sizing[key].value) {
+        return (
+          <tr>
+            <td>{`--mas-core-sizing-${key}`}</td>
+            <td>{sizing[key].value}px</td>
+            <td class="table-cell">
+              <div class="item" style={{ width: sizing[key].value + 'px' }}></div>
             </td>
           </tr>
         );

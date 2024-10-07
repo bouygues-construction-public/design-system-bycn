@@ -17,9 +17,9 @@ If you don't know CSS Custom Properties, you can see basic usage documentation [
 <ColorPalette>
   {Object.keys(color).map((key) => {
     if (typeof color[key].value === 'string') {
-      return <ColorItem title={`${key}`} colors={[color[key].value]} />;
+      return <ColorItem title={`mas-core-color-${key}`} colors={[color[key].value]} />;
     } else {
-      return Object.keys(color[key]).map((variation) => <ColorItem title={`${key}-${variation}`} colors={[color[key][variation].value]} />);
+      return Object.keys(color[key]).map((variation) => <ColorItem title={`mas-core-color-${key}-${variation}`} colors={[color[key][variation].value]} />);
     }
   })}
 </ColorPalette>

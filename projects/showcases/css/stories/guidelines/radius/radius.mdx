@@ -36,24 +36,24 @@ For more details, see our [Radius' guideline](https://zeroheight.com/9b39bb2a0/p
 If you don't know CSS Custom Properties, you can see basic usage documentation [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#Basic_usage). All our CSS Custom Properties for colors are listed at "Swatches" column just below:
 
 ```
-var(--mas-radius_0);
-var(--mas-radius_05);
-var(--mas-radius_1);
-var(--mas-radius_2);
-var(--mas-radius_3);
-var(--mas-radius_4);
-var(--mas-radius_5);
-var(--mas-radius_6);
-var(--mas-radius_7);
-var(--mas-radius_8);
-var(--mas-radius_full);
+var(--mas-core-border-radius-0);
+var(--mas-core-border-radius-050);
+var(--mas-core-border-radius-100);
+var(--mas-core-border-radius-200);
+var(--mas-core-border-radius-300);
+var(--mas-core-border-radius-400);
+var(--mas-core-border-radius-500);
+var(--mas-core-border-radius-600);
+var(--mas-core-border-radius-700);
+var(--mas-core-border-radius-800);
+var(--mas-core-border-radius-full);
 ```
 
 ## Using [Tailwind CSS](https://tailwindcss.com) utility classes
 
 You can use shadows with Tailwind CSS utility classes about [Border Radius](https://tailwindcss.com/docs/border-radius). Here is the list of radius extented by BYCN IT:
 
-<Source language="json" code={JSON.stringify(tailwind.theme.extend.borderRadius, null, 2)} />
+<Source language="json" code={JSON.stringify(radius, null, 2)} />
 
 So, here is an example with associated code:
 
@@ -63,7 +63,7 @@ So, here is an example with associated code:
       if(radius[key].value) {
         return (
             <div class='item mas-shadow-400' style={{borderRadius: radius[key].value + 'px'}}>
-              <span class="text">mas-rounded-{key}</span>
+              <span class="text">mas-core-border-radius-{key}</span>
             </div>
         )   
       }

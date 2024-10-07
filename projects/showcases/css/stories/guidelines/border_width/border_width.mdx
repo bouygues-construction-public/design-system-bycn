@@ -1,0 +1,61 @@
+import { Meta, Source } from '@storybook/blocks';
+import tailwind from '@masoni/css-tailwind-preset';
+import borderWidth from './_border_width';
+
+<style>
+  {`
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .item {
+    display: flex;
+    padding: var(--mas-core-spacing-400);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--mas-core-sizing-500);
+    // background-color: var(--mas-core-color-grey-400);
+    border: solid var(--mas-core-color-grey-400);
+  }
+  .text {
+  }
+`}
+</style>
+
+<Meta title="Guidelines / Border Width" />
+
+# Border Width
+
+## Using [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+
+If you don't know CSS Custom Properties, you can see basic usage documentation [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#Basic_usage). All our CSS Custom Properties for border width are listed just below:
+
+```
+var(--mas-core-border-width-0);
+var(--mas-core-border-width-100);
+var(--mas-core-border-width-200);
+```
+
+## Using [Tailwind CSS](https://tailwindcss.com) utility classes
+
+You can use shadows with Tailwind CSS utility classes about [Border Radius](https://tailwindcss.com/docs/border-radius). Here is the list of radius extented by BYCN IT:
+
+<Source language="json" code={JSON.stringify(borderWidth, null, 2)} />
+
+So, here is an example with associated code:
+
+<div class="container">
+  {
+    Object.keys(borderWidth).map(key => {
+      if(borderWidth[key].value) {
+        return (
+            <div class='item mas-shadow-400' style={{borderWidth: borderWidth[key].value + 'px'}}>
+              <span class="text">mas-core-border-width-{key}</span>
+            </div>
+        )   
+      }
+    })
+  }
+</div>
