@@ -1,16 +1,19 @@
 {
-    "source": ["tokens/*/*.json"],
-    "platforms": {
-      "css": {
-        "transformGroup": "css",
-        "buildPath": "src/",
-        "files": [
-          {
-            "destination": "_themes.css",
-            "format": "css/variables"
+  "source": ["tokens/*/*.json"],
+  "platforms": {
+    "css": {
+      "transformGroup": "css",
+      "buildPath": "src/",
+      "files": [
+        {
+          "destination": "_themes.css",
+          "format": "css/variables",
+          "options": {
+            "outputReferences": true
           }
-        ]
-      }
+        }
+      ],
+      "transforms": "size/px"
     }
   }
-  
+}
