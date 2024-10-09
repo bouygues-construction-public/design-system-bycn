@@ -106,7 +106,6 @@ Default.args = {
   disabled: false,
   iconLeft: null,
   iconRight: null,
-  iconAlone: null,
 };
 
 export const ButtonType = {
