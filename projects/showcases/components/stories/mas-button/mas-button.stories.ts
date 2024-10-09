@@ -25,7 +25,6 @@ const argTypes = {
         'primary',
         'secondary',
         'tertiary',
-        'accent',
       ],
     },
     size: {
@@ -55,12 +54,12 @@ const argTypes = {
       control:'select',
       options: ['', ...icons],
     },
-    iconAlone: {
+    shape: {
       type: { name: 'string', required: false },
-      description: 'The name of the icon to display as the sole content of the button.',
-      defaultValue: false,
-      control:'select',
-      options: ['', ...icons],
+      description: 'The shape of the button, \'square\' is set by default.',
+      defaultValue: 'square',
+      control:'radio',
+      options: ['rounded', 'square'],
     },
   };
  
@@ -90,7 +89,7 @@ export default {
               [disabled]="disabled"
               [iconLeft]="iconLeft"
               [iconRight]="iconRight"
-              [iconAlone]="iconAlone">
+              [shape]="shape">
               Button
             </mas-button>
     `
@@ -114,7 +113,6 @@ export const ButtonType = {
       <div style="display: flex; justify-content: space-between">
         <mas-button variant="primary">Primary</mas-button>
         <mas-button variant="secondary">Secondary</mas-button>
-        <mas-button variant="accent">Accent</mas-button>
         <mas-button variant="tertiary">Tertiary</mas-button>
       </div>
     `
@@ -127,6 +125,7 @@ export const ButtonSize = {
       <div style="display: flex; gap: 20px; align-items: center">
         <mas-button variant="primary" size="small">Small</mas-button>
         <mas-button variant="primary" size="medium">Medium</mas-button>
+        <mas-button variant="primary" size="large">Large</mas-button>
       </div>
     `
   })
@@ -136,12 +135,22 @@ export const ButtonIcon = {
   render: () => ({
     template: `
       <div style="display: flex; justify-content: space-between">
-        <mas-button variant="primary"  iconAlone="mas-check-outlined mas-system-and-device--outlined"></mas-button>
         <mas-button variant="primary" iconLeft="mas-check-outlined mas-system-and-device--outlined">Left button</mas-button>
         <mas-button variant="primary" iconRight="mas-check-outlined mas-system-and-device--outlined">Right button</mas-button>
         <mas-button variant="primary" iconRight="mas-check-outlined mas-system-and-device--outlined" iconLeft="mas-check-outlined mas-system-and-device--outlined">Icon button</mas-button>      
       </div>
       `
+  })
+}
+
+export const ButtonShape = {
+  render: () => ({
+    template: `
+      <div style="display: flex; gap: 20px; align-items: center">
+        <mas-button variant="secondary" shape="rounded">Rounded</mas-button>
+        <mas-button variant="secondary" shape="square">Square</mas-button>
+      </div>
+    `
   })
 }
 

@@ -2,7 +2,7 @@
 mas-button {
   width: fit-content;
 }
-.mas-btn {
+.mas-button {
   display: flex;
   box-sizing: border-box;
   padding: var(--mas-web-component-button-spacing-medium-padding-top)
@@ -11,8 +11,6 @@ mas-button {
     var(--mas-web-component-button-spacing-medium-padding-left);
   border-radius: var(--mas-web-component-button-border-radius);
   font: var(--mas-web-component-button-typography-medium);
-  gap: var(--mas-web-component-button-spacing-medium-gap);
-  color: var(--mas-web-component-button-color-primary-content-label);
   justify-content: center;
   align-items: center;
   font-feature-settings: 'calt' off;
@@ -26,115 +24,118 @@ mas-button {
 }
 
 /* Primary button */
-.mas-btn_variant--primary {
+.mas-button_variant--primary {
   background-color: var(--mas-web-component-button-color-primary-container-default);
+  color: var(--mas-web-component-button-color-primary-content-label);
 }
 
-.mas-btn_variant--primary:not(:disabled):hover {
+.mas-button_variant--primary:not(:disabled):hover {
   background-color: var(--mas-web-component-button-color-primary-container-hover);
 }
 
-.mas-btn_variant--primary:not(:disabled):active {
+.mas-button_variant--primary:not(:disabled):active {
   background-color: var(--mas-web-component-button-color-primary-container-active);
 }
 
-.mas-btn_variant--primary:disabled {
+.mas-button_variant--primary:disabled {
   opacity: 0.5;
-  background-color: #005885;
 }
 
 /* Secondary button */
-.mas-btn_variant--secondary {
+.mas-button_variant--secondary {
   color: var(--mas-web-component-button-color-secondary-content-default);
   border: var(--mas-web-component-button-border-width-default) solid #d7d7db;
   background-color: var(--mas-web-component-button-color-secondary-container-default);
 }
 
-.mas-btn_variant--secondary:not(:disabled):hover {
+.mas-button_variant--secondary:not(:disabled):hover {
   border: var(--mas-web-component-button-border-width-default) solid #d7d7db;
   background-color: var(--mas-web-component-button-color-secondary-container-hover);
 }
 
-.mas-btn_variant--secondary:not(:disabled):active {
+.mas-button_variant--secondary:not(:disabled):active {
   border: var(--mas-web-component-button-border-width-default) solid #d7d7db;
   background-color: var(--mas-web-component-button-color-secondary-container-active);
 }
 
-.mas-btn_variant--secondary:disabled {
+.mas-button_variant--secondary:disabled {
   border: var(--mas-web-component-button-border-width-default) solid #d7d7db;
   opacity: 0.5;
   background: #fff;
 }
 
 /* Tertiary button */
-.mas-btn_variant--tertiary {
-  color: #0c0c0d;
+.mas-button_variant--tertiary {
+  color: var(--mas-web-component-button-color-tertiray-content-label);
   background-color: transparent;
 }
 
-.mas-btn_variant--tertiary:not(:disabled):hover {
+.mas-button_variant--tertiary:not(:disabled):hover {
   background-color: var(--mas-web-component-button-color-tertiray-container-hover);
 }
 
-.mas-btn_variant--tertiary:not(:disabled):active {
+.mas-button_variant--tertiary:not(:disabled):active {
   background-color: var(--mas-web-component-button-color-tertiray-container-active);
 }
 
-.mas-btn_variant--tertiary:disabled {
+.mas-button_variant--tertiary:disabled {
   opacity: 0.5;
-}
-
-/* Accent button */
-.mas-btn_variant--accent {
-  background-color: #c74d10;
-}
-
-.mas-btn_variant--accent:not(:disabled):hover {
-  background-color: #a6400d;
-}
-
-.mas-btn_variant--accent:not(:disabled):active {
-  background-color: #84330a;
-}
-
-.mas-btn_variant--accent:disabled {
-  opacity: 0.5;
-  background-color: #c74d10;
 }
 
 /* Sizes */
-.mas-btn_size--small {
+.mas-button_size--small {
   font: var(--mas-web-component-button-typography-small);
   padding: var(--mas-web-component-button-spacing-small-padding-top)
     var(--mas-web-component-button-spacing-small-padding-right)
     var(--mas-web-component-button-spacing-small-padding-bottom)
     var(--mas-web-component-button-spacing-small-padding-left);
+  gap: var(--mas-web-component-button-spacing-small-gap);
   height: 36px;
 }
 
-.mas-btn_size--medium {
+.mas-button_size--medium {
   font: var(--mas-web-component-button-typography-medium);
   padding: var(--mas-web-component-button-spacing-medium-padding-top)
     var(--mas-web-component-button-spacing-medium-padding-right)
     var(--mas-web-component-button-spacing-medium-padding-bottom)
     var(--mas-web-component-button-spacing-medium-padding-left);
+  gap: var(--mas-web-component-button-spacing-medium-gap);
 }
 
-.mas-btn--icon-left i[class^='mas-'],
-.mas-btn_size--medium.mas-btn--icon-left i[class^='mas-'] {
+.mas-button_size--large {
+  font: var(--mas-web-component-button-typography-large);
+  padding: var(--mas-web-component-button-spacing-large-padding-top)
+    var(--mas-web-component-button-spacing-large-padding-right)
+    var(--mas-web-component-button-spacing-large-padding-bottom)
+    var(--mas-web-component-button-spacing-large-padding-left);
+  gap: var(--mas-web-component-button-spacing-large-gap);
+}
+
+/* Shapes */
+.mas-button_shape--rounded {
+  border-radius: var(--mas-web-component-button-border-radius-rounded);
+}
+
+.mas-button_shape--square {
+  border-radius: var(--mas-web-component-button-border-radius-square);
+}
+
+/* Button Icon */
+.mas-button--icon-left i[class^='mas-'],
+.mas-button_size--medium.mas-button--icon-left i[class^='mas-'] {
   font-size: var(--mas-web-component-button-color-sizing-medium-start-icon);
 }
 
-.mas-btn_size--small.mas-btn--icon-left i[class^='mas-'] {
+.mas-button_size--small.mas-button--icon-left i[class^='mas-'] {
   font-size: var(--mas-web-component-button-color-sizing-small-start-icon);
 }
 
-.mas-btn_size--small.mas-btn--icon-right i[class^='mas-'] {
+.mas-button_size--small.mas-button--icon-right i[class^='mas-'] {
   font-size: var(--mas-web-component-button-color-sizing-small-end-icon);
 }
 
-.mas-btn--icon-right i[class^='mas-'],
-.mas-btn_size--medium.mas-btn--icon-right i[class^='mas-'] {
+.mas-button--icon-right i[class^='mas-'],
+.mas-button_size--medium.mas-button--icon-right i[class^='mas-'] {
   font-size: var(--mas-web-component-button-color-sizing-medium-end-icon);
 }
 

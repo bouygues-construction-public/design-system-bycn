@@ -14,13 +14,13 @@ import { Component, Input } from '@angular/core';
 })
 export class MasButton {
   /**
-   * The variant of the button including 'primary' | 'secondary' | 'tertiary' | 'accent'.
+   * The variant of the button including 'primary' | 'secondary' | 'tertiary'.
    */
-  @Input() variant: 'primary' | 'secondary' | 'tertiary' | 'accent' = 'primary';
+  @Input() variant: 'primary' | 'secondary' | 'tertiary'  = 'primary';
   /**
-   * The size of the button. Available options: 'small', 'medium'. Default: 'medium'.
+   * The size of the button. Available options: 'small', 'medium', 'large'. Default: 'medium'.
    */
-  @Input() size: 'small' | 'medium' = 'medium';
+  @Input() size: 'small' | 'medium' | 'large' = 'medium';
   /**
    * Whether the button should be disabled. Default: false.
    */
@@ -33,14 +33,19 @@ export class MasButton {
    * The name of the icon to display on the right side of the button.
    */
   @Input() iconRight: string | null = null;
+  /**
+   * Button shape, Default: 'square'
+   */
+  @Input() shape: 'square' | 'rounded' = 'square'
 
   get classes(): { [key: string]: boolean } {
     return {
-      'mas-btn': true,
-      [`mas-btn_variant--${this.variant}`]: true,
-      [`mas-btn_size--${this.size}`]: true,
-      'mas-btn--icon-left': !this.isEmpty(this.iconLeft),
-      'mas-btn--icon-right': !this.isEmpty(this.iconRight),
+      'mas-button': true,
+      [`mas-button_variant--${this.variant}`]: true,
+      [`mas-button_size--${this.size}`]: true,
+      'mas-button--icon-left': !this.isEmpty(this.iconLeft),
+      'mas-button--icon-right': !this.isEmpty(this.iconRight),
+      [`mas-button_shape--${this.shape}`]: true
     };
   }
 

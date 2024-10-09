@@ -26,11 +26,11 @@ export class MasButtonDirective implements OnChanges{
    */
   @Input() iconRight: string | null = null;
   /**
-   * The name of the icon to display as the sole content of the button.
+   * Button shape, Default: 'square'
    */
-  @Input() iconAlone: string | null = null;
+  @Input() shape: 'square' | 'rounded' = 'square'
 
-  @HostBinding('class.mas-btn') vtmnBtnClass = true;
+  @HostBinding('class.mas-button') masoniButtonClass = true;
   @HostBinding('attr.disabled') get isDisabled() {
     return this.disabled ? 'true' : null;
   }
@@ -45,20 +45,19 @@ export class MasButtonDirective implements OnChanges{
 
   private applyLinkStyles() {
     const classes: { [key: string]: boolean } = {
-      'mas-btn': true,
-      [`mas-btn_variant--${this.variant}`]: true,
-      [`mas-btn_size--${this.size}`]: true,
-      'mas-btn--icon-left' : !this.isEmpty(this.iconLeft),
-      'mas-btn--icon-right': !this.isEmpty(this.iconRight),
-      'mas-btn--icon-alone': !this.isEmpty(this.iconAlone)
+      'mas-button': true,
+      [`mas-button_variant--${this.variant}`]: true,
+      [`mas-button_size--${this.size}`]: true,
+      [`mas-button_shape--${this.shape}`]: true,
+      'mas-button--icon-left' : !this.isEmpty(this.iconLeft),
+      'mas-button--icon-right': !this.isEmpty(this.iconRight),
     }; 
     
     this.renderer.removeClass(this.elementRef.nativeElement, 'mas-link_size--medium');
     this.renderer.removeClass(this.elementRef.nativeElement, 'mas-link_size--small'); 
-    this.renderer.removeClass(this.elementRef.nativeElement, 'mas-btn_variant--primary'); 
-    this.renderer.removeClass(this.elementRef.nativeElement, 'mas-btn_variant--secondary'); 
-    this.renderer.removeClass(this.elementRef.nativeElement, 'mas-btn_variant--tertiary'); 
-    this.renderer.removeClass(this.elementRef.nativeElement, 'mas-btn_variant--accent'); 
+    this.renderer.removeClass(this.elementRef.nativeElement, 'mas-button_variant--primary'); 
+    this.renderer.removeClass(this.elementRef.nativeElement, 'mas-button_variant--secondary'); 
+    this.renderer.removeClass(this.elementRef.nativeElement, 'mas-button_variant--tertiary'); 
 
     for (const className in classes) {
       if (classes[className]) {
