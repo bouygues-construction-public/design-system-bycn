@@ -36,37 +36,44 @@ For more details, see our [Radius' guideline](https://zeroheight.com/9b39bb2a0/p
 If you don't know CSS Custom Properties, you can see basic usage documentation [here](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#Basic_usage). All our CSS Custom Properties for colors are listed at "Swatches" column just below:
 
 ```
-var(--mas-core-border-radius-0);
-var(--mas-core-border-radius-050);
-var(--mas-core-border-radius-100);
-var(--mas-core-border-radius-200);
-var(--mas-core-border-radius-300);
-var(--mas-core-border-radius-400);
-var(--mas-core-border-radius-500);
-var(--mas-core-border-radius-600);
-var(--mas-core-border-radius-700);
-var(--mas-core-border-radius-800);
-var(--mas-core-border-radius-full);
+var(--mas-semantic-border-radius-2xs);
+var(--mas-semantic-border-radius-xs);
+var(--mas-semantic-border-radius-s);
+var(--mas-semantic-border-radius-m);
+var(--mas-semantic-border-radius-l);
+var(--mas-semantic-border-radius-xl);
+var(--mas-semantic-border-radius-2xl);
+var(--mas-semantic-border-radius-3xl);
+var(--mas-semantic-border-radius-4xl);
+var(--mas-semantic-border-radius-5xl);
+var(--mas-semantic-border-radius-full);
 ```
 
 ## Using [Tailwind CSS](https://tailwindcss.com) utility classes
 
 You can use shadows with Tailwind CSS utility classes about [Border Radius](https://tailwindcss.com/docs/border-radius). Here is the list of radius extented by BYCN IT:
 
-<Source language="json" code={JSON.stringify(radius, null, 2)} />
+<Source
+  language="json"
+  code={JSON.stringify(
+    Array.from(radius).map(([key, value]) => {
+      return { token: key, value: value + 'px' };
+    }),
+    null,
+    2
+  )}
+/>
 
 So, here is an example with associated code:
 
 <div class="container">
-  {
-    Object.keys(radius).map(key => {
-      if(radius[key].value) {
-        return (
-            <div class='item mas-shadow-400' style={{borderRadius: radius[key].value + 'px'}}>
-              <span class="text">mas-core-border-radius-{key}</span>
-            </div>
-        )   
-      }
-    })
-  }
+  {Array.from(radius).map(([key, value]) => {
+    if (value) {
+      return (
+        <div class="item mas-shadow-400" style={{ borderRadius: value + 'px' }}>
+          <span class="text">{key}</span>
+        </div>
+      );
+    }
+  })}
 </div>

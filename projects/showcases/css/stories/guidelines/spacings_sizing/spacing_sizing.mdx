@@ -23,7 +23,7 @@ import sizing from './_sizing';
 
 For more detail, see our [Spacing's guideline](https://zeroheight.com/9b39bb2a0/p/01e423-spacings/b/505645)
 
-<Source language="json" code={JSON.stringify(spacing, null, 2)} />
+<Source language="json" code={JSON.stringify(Array.from(spacing).map(([key, value]) => {return {token: key, value: value + 'px'}}), null, 2)} />
 
 So, here is an example with associated code:
 
@@ -34,14 +34,14 @@ So, here is an example with associated code:
     <th>Pixels</th>
   </thead>
   <tbody>
-    {Object.keys(spacing).map((key) => {
-      if (spacing[key].value) {
+    {Array.from(spacing).map(([key, value]) => {
+      if (value) {
         return (
           <tr>
-            <td>{`--mas-core-spacing-${key}`}</td>
-            <td>{spacing[key].value}px</td>
+            <td>{key}</td>
+            <td>{value}px</td>
             <td class="table-cell">
-              <div class="item" style={{ width: spacing[key].value + 'px' }}></div>
+              <div class="item" style={{ width: value + 'px' }}></div>
             </td>
           </tr>
         );
@@ -52,7 +52,7 @@ So, here is an example with associated code:
 
 # Sizing
 
-<Source language="json" code={JSON.stringify(sizing, null, 2)} />
+<Source language="json" code={JSON.stringify(Array.from(sizing).map(([key, value]) => {return {token: key, value: value + 'px'}}), null, 2)} />
 
 So, here is an example with associated code:
 
@@ -63,14 +63,14 @@ So, here is an example with associated code:
     <th>Pixels</th>
   </thead>
   <tbody>
-    {Object.keys(sizing).map((key) => {
-      if (sizing[key].value) {
+    {Array.from(sizing).map(([key, value]) => {
+      if (value) {
         return (
           <tr>
-            <td>{`--mas-core-sizing-${key}`}</td>
-            <td>{sizing[key].value}px</td>
+            <td>{key}</td>
+            <td>{value}px</td>
             <td class="table-cell">
-              <div class="item" style={{ width: sizing[key].value + 'px' }}></div>
+              <div class="item" style={{ width: value + 'px' }}></div>
             </td>
           </tr>
         );
