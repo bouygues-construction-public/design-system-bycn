@@ -1,4 +1,4 @@
-import { Meta, Story, Preview, Props, Description, Canvas } from '@storybook/blocks'; 
+import { Meta, Story, Preview, Props, Description } from '@storybook/blocks';
 
 <Meta title="Components / Indicators / Tags" />
 
@@ -10,20 +10,17 @@ The `tag` element is used to categorize, label and organize adjacent items using
 
 ## Default
 
-<Canvas>
-  <span class="mas-tag mas-tag-color-orange">
-    <span class="mas-tag-label">Default</span>
-  </span>
-</Canvas>
+<span class="mas-tag mas-tag_color--orange">
+<span class="mas-tag_label">Default</span>
+</span>
 
 CSS styles :
 
 ```css
-
 .mas-tag {
   /* styles here */
 }
-.mas-tag-label {
+.mas-tag_label {
   /* styles here */
 }
 ```
@@ -32,100 +29,93 @@ CSS styles :
 
 The `tag` component comes in different variants such as `orange`,`amber`, `green`, `teal`, `blue`, `purple`, `red`, `roc`
 
-<Canvas>
-  <span class="mas-tag mas-tag-color-orange">
-    <span class="mas-tag-label">orange</span>
-  </span>
+<span class="mas-tag mas-tag_color--orange">
+<span class="mas-tag_label">orange</span>
+</span>
 
-  <span class="mas-tag mas-tag-color-amber">
-    <span class="mas-tag-label">amber</span>
-  </span>
+<span class="mas-tag mas-tag_color--amber">
+<span class="mas-tag_label">amber</span>
+</span>
 
-  <span class="mas-tag mas-tag-color-green">
-    <span class="mas-tag-label">green</span>
-  </span>
+<span class="mas-tag mas-tag_color--green">
+<span class="mas-tag_label">green</span>
+</span>
 
-  <span class="mas-tag mas-tag-color-teal">
-    <span class="mas-tag-label">teal</span>
-  </span>
+<span class="mas-tag mas-tag_color--teal">
+<span class="mas-tag_label">teal</span>
+</span>
 
-  <span class="mas-tag mas-tag-color-blue">
-    <span class="mas-tag-label">blue</span>
-  </span>
+<span class="mas-tag mas-tag_color--blue">
+<span class="mas-tag_label">blue</span>
+</span>
 
-  <span class="mas-tag mas-tag-color-purple">
-    <span class="mas-tag-label">purple</span>
-  </span>
+<span class="mas-tag mas-tag_color--purple">
+<span class="mas-tag_label">purple</span>
+</span>
 
-  <span class="mas-tag mas-tag-color-red">
-    <span class="mas-tag-label">red</span>
-  </span>
+<span class="mas-tag mas-tag_color--red">
+<span class="mas-tag_label">red</span>
+</span>
 
-  <span class="mas-tag mas-tag-color-roc">
-    <span class="mas-tag-label">roc</span>
-  </span>
-</Canvas>
+<span class="mas-tag mas-tag_color--roc">
+<span class="mas-tag_label">roc</span>
+</span>
 
 CSS styles for variant used by the `tag` component:
 
 ```css
 /* Variant styles */
-.mas-tag-color-orange {
+.mas-tag_color--orange {
   /* orange variant styles here */
-}  
-.mas-tag-color-amber {
+}
+.mas-tag_color--amber {
   /* amber variant styles here */
-} 
-.mas-tag-color-green {
+}
+.mas-tag_color--green {
   /* green variant styles here */
 }
-.mas-tag-color-blue {
+.mas-tag_color--blue {
   /* blue variant styles here */
-} 
-.mas-tag-color-purple {
+}
+.mas-tag_color--purple {
   /* purple variant styles here */
-} 
-.mas-tag-color-red {
+}
+.mas-tag_color--red {
   /* red variant styles here */
-} 
-.mas-tag-color-roc {
+}
+.mas-tag_color--roc {
   /* roc variant styles here */
-} 
+}
 ```
 
 ## Size
 
-<Canvas>
-  <span class="mas-tag mas-tag-color-orange mas-tag-small">
-    <span class="mas-tag-label">small</span>
-  </span>
+<span class="mas-tag mas-tag_color--orange mas-tag_size--small">
+<span class="mas-tag_label">small</span>
+</span>
 
-  <span class="mas-tag mas-tag-color-orange mas-tag-medium">
-    <span class="mas-tag-label">medium</span>
-  </span>
-</Canvas>
+<span class="mas-tag mas-tag_color--orange mas-tag_size--medium">
+<span class="mas-tag_label">medium</span>
+</span>
 
 CSS styles for size used by the `tag` component:
 
 ```css
 /* Size styles */
-.mas-tag-small {
+.mas-tag_size--small {
   /* Small size styles here */
 }
-.mas-tag-medium {
+.mas-tag_size--medium {
   /* Medium size styles here */
 }
 ```
 
 ## Icons
 
-<Canvas>
-  <span class="mas-tag mas-tag-color-orange mas-tag-medium">
-    <i class="mas-check-outlined mas-icon mas-icon-left mas-system-and-device--outlined" />
-
-    <span class="mas-tag-label">Text</span>
-  </span>
-</Canvas>
+<span class="mas-tag mas-tag_color--orange mas-tag_size--medium">
+<i class="mas-check-outlined mas-icon mas-icon-left mas-system-and-device--outlined" />
+<span class="mas-tag_label">Text</span>
+</span>
 
 CSS styles for icons used by the `tag` component:
 

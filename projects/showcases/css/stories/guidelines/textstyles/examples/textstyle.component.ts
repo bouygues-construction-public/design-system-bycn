@@ -4,7 +4,7 @@ import { Component, Input } from '@angular/core';
   selector: 'app-textstyle',
   template: `
     <div class="block" *ngFor="let line of text">
-      <p class="{{ line.class }}">{{ line.data }}</p>
+      <p class="{{ line.class }}" style="font: var({{line.token}})">{{ line.data }}</p>
     </div>
   `,
 })

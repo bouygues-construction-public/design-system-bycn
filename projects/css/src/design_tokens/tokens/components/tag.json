@@ -1,0 +1,74 @@
+{
+  "mas": {
+    "web": {
+      "component": {
+        "tag": {
+          "spacing": {
+            "padding": {
+              "left": {
+                "value": "{mas.semantic.spacing.s}",
+                "type": "spacing"
+              },
+              "right": {
+                "value": "{mas.semantic.spacing.s}",
+                "type": "spacing"
+              },
+              "top": {
+                "value": "{mas.semantic.spacing.2xs}",
+                "type": "spacing"
+              },
+              "bottom": {
+                "value": "{mas.semantic.spacing.2xs}",
+                "type": "spacing"
+              }
+            }
+          },
+          "color": {
+            "container": {
+              "value": "{mas.semantic.color.container.emphasys}",
+              "type": "color"
+            },
+            "label": {
+              "value": "{mas.semantic.color.text.main}",
+              "type": "color"
+            }
+          },
+          "border-radius": {
+            "container": {
+              "top-left": {
+                "value": "{mas.semantic.border-radius.2xs}",
+                "type": "borderRadius"
+              },
+              "top-right": {
+                "value": "{mas.semantic.border-radius.2xs}",
+                "type": "borderRadius"
+              },
+              "bottom-right": {
+                "value": "{mas.semantic.border-radius.2xs}",
+                "type": "borderRadius"
+              },
+              "bottom-left": {
+                "value": "{mas.semantic.border-radius.2xs}",
+                "type": "borderRadius"
+              }
+            }
+          },
+          "typography": {
+            "small": {
+              "label": {
+                "value": "{mas.semantic.typography.all-screen.caption-regular}",
+                "type": "typography"
+              }
+            },
+            "medium": {
+              "label": {
+                "value": "{mas.semantic.typography.all-screen.body3}",
+                "type": "typography"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

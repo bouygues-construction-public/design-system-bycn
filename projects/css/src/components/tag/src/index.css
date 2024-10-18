@@ -4,15 +4,10 @@
   display: inline-flex;
   align-items: center;  
   margin-right: 4px;
-  padding: 4px 12px;
-  border-radius: 8px;
   font-feature-settings: 'calt' off;
-  font-family: var(--mas-typo_font-family--inter);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 20px; 
-
+  padding: var(--mas-web-component-tag-spacing-padding-top) var(--mas-web-component-tag-spacing-padding-right) var(--mas-web-component-tag-spacing-padding-bottom) var(--mas-web-component-tag-spacing-padding-left);
+  border-radius: var(--mas-web-component-tag-border-radius-top-left) var(--mas-web-component-tag-border-radius-top-right) var(--mas-web-component-tag-border-radius-bottom-right) var(--mas-web-component-tag-border-radius-bottom-left);
+  font: var(--mas-web-component-tag-typography-medium-label);
 }
 
 .mas-tag i{
@@ -22,12 +17,10 @@
   margin-right: 8px;
 }
 
-.mas-tag-small .mas-tag-label{
-  font-weight: 600;
-  line-height: 16px;
-  font-size: 12px;
+.mas-tag_size--small .mas-tag_label{
+  font: var(--mas-web-component-tag-typography-small-label);
 }
-.mas-tag-medium .mas-tag-label{
+.mas-tag_size--medium .mas-tag_label{
   font-size: 14px;
 }
 
@@ -35,36 +28,41 @@
   margin-right: 4px;
 }
 
-.mas-tag-color-orange{
+.mas-tag_color--default {
+  background: var(--mas-web-component-tag-color-container);
+  color: var(--mas-web-component-tag-color-label);
+}
+
+.mas-tag_color--orange{
   background: var(--decorative-surface-orange, #FBDED0);
   color: var(--decorative-text-orange, #A6400D);
 }
-.mas-tag-color-amber{
+.mas-tag_color--amber{
   background: var(--decorative-surface-amber, #FCEECF);
   color: var(--decorative-text-amber, #7A4700);
 }
-.mas-tag-color-green{
+.mas-tag_color--green{
   background: var(--decorative-surface-green, #E8F4CD);
   color: var(--decorative-text-green, #465F11);
 }
-.mas-tag-color-teal{
+.mas-tag_color--teal{
   background: var(--decorative-surface-teal, #CBF6F5);
   color: var(--decorative-text-teal, #006B6A);
 }
-.mas-tag-color-blue{
+.mas-tag_color--blue{
   background: var(--decorative-surface-blue, #C8E9F9);
   color: var(--decorative-text-blue, #069);
 }
-.mas-tag-color-purple{
+.mas-tag_color--purple{
   background: var(--decorative-surface-purple, #F2E7F3);
   color: var(--decorative-text-purple, #904997);
 
 }
-.mas-tag-color-red{
+.mas-tag_color--red{
   background: var(--decorative-surface-red, #FCD9DF);
   color: var(--decorative-text-red, #AA1830);
 }
-.mas-tag-color-roc{
+.mas-tag_color--roc{
   background: var(--decorative-surface-roc, #F9F9FA);
   color: var(--decorative-text-roc, #38383D);
 
