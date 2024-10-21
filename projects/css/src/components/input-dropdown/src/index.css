@@ -242,11 +242,11 @@ body {
       0.12
     );
 }
-.mas-checkbox-box--active {
+/* .mas-checkbox-box--active {
   background-color: var(--mas-semantic-color_action-primary--default);
   color: brown;
   border-color: var(--mas-semantic-color_action-primary--default) !important;
-}
+} */
 /* ! image */
 .mas-dropdown-option-image {
   width: 24px;

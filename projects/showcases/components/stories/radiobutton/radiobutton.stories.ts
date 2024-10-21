@@ -38,9 +38,9 @@ const meta: Meta<MasRadioButton> = {
     checked: { control: 'boolean', description: 'Whether the radio button is checked.' },
     size: {
       description: 'Radio has two size: Small and Large. Small size is set by default.',
-      options: ['S', 'L'],
+      options: ['small', 'large'],
       control: { type: 'radio' },
-      defaultValue: 'S',
+      defaultValue: 'small',
     },
   },
 };
@@ -54,7 +54,7 @@ export const Basic: Story = {
     labelText: 'checked radio',
     disabled: false,
     checked: false,
-    size: 'S',
+    size: 'small',
   },
 };
 export const Overview: Story = {
@@ -62,13 +62,13 @@ export const Overview: Story = {
     template: `
     <form [formGroup]="formGroup">
       <mas-radio-group formControlName="radioGroup">
-          <mas-radio-button labelText="Stade de France " value="1" [disabled]="false" size="S"></mas-radio-button>
-          <mas-radio-button labelText="Grande Arche de la Défense" value="2" [disabled]="false" size="S"></mas-radio-button>
-          <mas-radio-button labelText="National Library of France" value="3" [disabled]="true" size="S" ></mas-radio-button>
+          <mas-radio-button labelText="Stade de France " value="1" [disabled]="false" size="small"></mas-radio-button>
+          <mas-radio-button labelText="Grande Arche de la Défense" value="2" [disabled]="false" size="small"></mas-radio-button>
+          <mas-radio-button labelText="National Library of France" value="3" [disabled]="true" size="small" ></mas-radio-button>
         <br>
-          <mas-radio-button labelText="Louvre Museum" value="4" [disabled]="true" size="L"></mas-radio-button>
-          <mas-radio-button labelText="Hassan II Mosque" value="5" [disabled]="false" size="L"></mas-radio-button>
-          <mas-radio-button labelText="Vélodrome stadium" value="6" [disabled]="false" size="L"></mas-radio-button>
+          <mas-radio-button labelText="Louvre Museum" value="4" [disabled]="true" size="large"></mas-radio-button>
+          <mas-radio-button labelText="Hassan II Mosque" value="5" [disabled]="false" size="large"></mas-radio-button>
+          <mas-radio-button labelText="Vélodrome stadium" value="6" [disabled]="false" size="large"></mas-radio-button>
         </mas-radio-group>
     </form>
     `,
@@ -78,9 +78,9 @@ export const Size: Story = {
   render: () => ({
     template: `
       <mas-radio-group formControlName="radioGroup">
-        <mas-radio-button labelText="Small size" value="1" [disabled]="false" size="S"></mas-radio-button>
+        <mas-radio-button labelText="Small size" value="1" [disabled]="false" size="small"></mas-radio-button>
         <br>
-        <mas-radio-button labelText="Large size" value="3" [disabled]="false" size="L"></mas-radio-button>
+        <mas-radio-button labelText="Large size" value="3" [disabled]="false" size="large"></mas-radio-button>
       </mas-radio-group>
     `,
   }),

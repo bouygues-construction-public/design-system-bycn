@@ -30,7 +30,7 @@
 
 .mas-tag_color--default {
   background: var(--mas-web-component-tag-color-container);
-  color: var(--mas-web-component-tag-color-label);
+  color: var(--mas-web-component-tag-color-emphasys);
 }
 
 .mas-tag_color--orange{

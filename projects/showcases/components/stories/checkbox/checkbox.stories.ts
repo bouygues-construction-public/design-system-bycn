@@ -38,7 +38,7 @@ export const Indeterminate: Story = {
     identifier: '1',
     disabled: false,
     indeterminate: true,
-    size: 'S',
+    size: 'small',
     checked: true,
   },
   argTypes: {
@@ -59,9 +59,9 @@ export const Indeterminate: Story = {
     },
     size: {
       description:
-        "The checkbox has two sizes available: 'S' 'M'. The 'S' is used by default in the majority of cases.",
+        "The checkbox has two sizes available: 'small' 'large'. The 'small' is used by default in the majority of cases.",
       control: 'radio',
-      options: ['S', 'L'],
+      options: ['small', 'large'],
     },
   },
 };
@@ -71,16 +71,16 @@ export const Determinate: Story = {
     identifier: '1',
     disabled: false,
     indeterminate: false,
-    size: 'S',
+    size: 'small',
     checked: true,
   },
 };
 export const Size: Story = {
   render: () => ({
     template: `
-      <mas-checkbox labelText="Small size" size="S"></mas-checkbox>
+      <mas-checkbox labelText="Small size" size="small"></mas-checkbox>
       <br>
-      <mas-checkbox labelText="Large size" size="L"></mas-checkbox>
+      <mas-checkbox labelText="Large size" size="large"></mas-checkbox>
       `,
   }),
 };
@@ -95,7 +95,7 @@ export const Overview: Story = {
       <br/>
       <mas-checkbox labelText="Wood and timber" [disabled]="true"></mas-checkbox>
       <br>
-      <mas-checkbox labelText="I accept the term and conditions of BYCN" size="L"></mas-checkbox>
+      <mas-checkbox labelText="I accept the term and conditions of BYCN" size="large"></mas-checkbox>
       `,
   }),
   args: {
@@ -103,13 +103,13 @@ export const Overview: Story = {
     identifier: '1',
     checked: false,
     disabled: false,
-    size: 'S',
+    size: 'small',
   },
   argTypes: {
     size: {
       description: '',
       control: 'radio',
-      options: ['S', 'L'],
+      options: ['small', 'large'],
     },
   },
 };

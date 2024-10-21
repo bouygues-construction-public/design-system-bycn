@@ -25,12 +25,14 @@
           },
           "color": {
             "container": {
-              "value": "{mas.semantic.color.container.emphasys}",
-              "type": "color"
-            },
-            "label": {
-              "value": "{mas.semantic.color.text.main}",
-              "type": "color"
+              "default": {
+                "value": "{mas.semantic.color.container.emphasys}",
+                "type": "color"
+              },
+              "emphasys": {
+                "value": "{mas.semantic.color.content.main}",
+                "type": "color"
+              }
             }
           },
           "border-radius": {

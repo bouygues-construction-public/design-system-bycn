@@ -21,11 +21,7 @@
               },
               "content": {
                 "label": {
-                  "value": "{mas.semantic.color.text.inverse}",
-                  "type": "color"
-                },
-                "icon": {
-                  "value": "{mas.semantic.color.icon.inverse}",
+                  "value": "{mas.semantic.color.content.inverse}",
                   "type": "color"
                 }
               }
@@ -47,11 +43,11 @@
               },
               "content": {
                 "label": {
-                  "value": "{mas.semantic.color.text.main}",
+                  "value": "{mas.semantic.color.content.main}",
                   "type": "color"
                 },
                 "icon": {
-                  "value": "{mas.semantic.color.icon.main}",
+                  "value": "{mas.semantic.color.content.main}",
                   "type": "color"
                 }
               },
@@ -73,11 +69,11 @@
               },
               "content": {
                 "label": {
-                  "value": "{mas.semantic.color.text.brand}",
+                  "value": "{mas.semantic.color.content.brand}",
                   "type": "color"
                 },
                 "icon": {
-                  "value": "{mas.semantic.color.icon.brand}",
+                  "value": "{mas.semantic.color.content.brand}",
                   "type": "color"
                 }
               }

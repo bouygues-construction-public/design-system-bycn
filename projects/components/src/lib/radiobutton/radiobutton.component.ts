@@ -39,7 +39,7 @@ export class MasRadioButton {
   }
   protected _disabled: boolean = false;
   @Input() value: any = null;
-  @Input() size: 'S' | 'L' = 'S';
+  @Input() size: 'small' | 'large' = 'small';
   @Input() formControlName: string | undefined;
   @Output() onChange: EventEmitter<RadioButtonClickEvent> = new EventEmitter<RadioButtonClickEvent>();
   @Output() onFocus: EventEmitter<Event> = new EventEmitter<Event>();

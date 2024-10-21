@@ -12,26 +12,25 @@
   margin-top: 5.5px;
 }
 .mas-radio-button--large > .mas-radio-button_touch-target {
-  width: 24px;
-  height: 24px;
+  width: var(--mas-web-component-radio-button-sizing-large-container-width);
+  height: var(--mas-web-component-radio-button-sizing-large-container-height);
 }
 .mas-radio-button--large > .mas-radio-button_label {
-  font-size: var(--mas-typo_body-2-font-size);
-  line-height: var(--mas-typo_body-2-font-size);
+  font: var(--mas-web-component-radio-button-typography-large-label);
 }
 .mas-radio-button--large > .mas-radio-button-container {
-  border-width: 2px;
-  width: 24px;
-  height: 24px;
-  margin-inline-start: 12px;
+  border-width: var(--mas-web-component-radio-button-border-width-large-container);
+  width: var(--mas-web-component-radio-button-sizing-large-container-width);
+  height: var(--mas-web-component-radio-button-sizing-large-container-height);
+  /* margin-inline-start: var(--mas-web-component-radio-button-spacing-large-gap); */
   margin-block-start: 0px;
 }
 .mas-radio-button_touch-target {
   position: absolute;
   z-index: 1;
-  width: 16px;
-  height: 16px;
-  border-radius: var(--mas-radius_full);
+  width: var(--mas-web-component-radio-button-sizing-small-container-width);
+  height: var(--mas-web-component-radio-button-sizing-small-container-height);
+  border-radius: var(--mas-semantic-border-radius-full);
 }
 
 .hidden-accessible[type='radio'] {
@@ -39,73 +38,50 @@
   opacity: 0;
 }
 .mas-radio-button_label {
-  font-size: var(--mas-typo_body-3-font-size);
-  line-height: var(--mas-typo_body-3-line-height);
+  font: var(--mas-web-component-radio-button-typography-small-label);
   position: relative;
   display: inline-flex;
   align-items: center;
-  font-family: var(--mas-typo_font-family--inter);
-  font-weight: var(--mas-typo_body-font-weight);
   cursor: pointer;
   user-select: none;
-  color: var(--mas-semantic-color_text-primary);
-  margin-inline-start: 8px;
+  color: var(--mas-web-component-radio-button-color-label-default);
+  margin-inline-start: var(--mas-web-component-radio-button-spacing-small-gap);
 }
 
 .mas-radio-button-container {
   box-sizing: border-box;
   display: flex;
-  border-width: 1px;
+  border-width: var(--mas-web-component-radio-button-border-width-small-container);
   border-style: solid;
   margin-block-start: 0px;
   justify-content: center;
   align-items: center;
-  width: 16px;
-  height: 16px;
-  border-radius: var(--mas-radius_full);
-  border-color: var(--mas-semantic-color_action-tiertiary--default);
+  width: var(--mas-web-component-radio-button-sizing-small-container-width);
+  height: var(--mas-web-component-radio-button-sizing-small-container-height);
+  border-radius: var(--mas-semantic-border-radius-full);
+  border-color: var(--mas-web-component-radio-button-color-border-uncheck-default);
   transition: var(--mas-transition_focus-visible);
 }
 
 .hidden-accessible:not(:checked, :disabled) + .mas-radio-button_touch-target:hover {
   box-shadow: 0 0 0 4px
-    hsla(
-      var(--mas-primitive-color_grey400--h),
-      var(--mas-primitive-color_grey400--s),
-      var(--mas-primitive-color_grey400--l),
-      0.12
-    );
+    var(--mas-web-component-radio-button-color-halo-uncheck-hover);
 }
 .hidden-accessible:checked:not(:disabled) + .mas-radio-button_touch-target:hover {
   box-shadow: 0 0 0 4px
-    hsla(
-      var(--mas-primitive-color_blue600--h),
-      var(--mas-primitive-color_blue600--s),
-      var(--mas-primitive-color_blue600--l),
-      0.12
-    );
+    var(--mas-web-component-radio-button-color-halo-check-hover);
 }
 .hidden-accessible:not(:checked, :disabled) + .mas-radio-button_touch-target:active {
   box-shadow: 0 0 0 4px
-    hsla(
-      var(--mas-primitive-color_grey400--h),
-      var(--mas-primitive-color_grey400--s),
-      var(--mas-primitive-color_grey400--l),
-      0.24
-    );
+    var(--mas-web-component-radio-button-color-halo-uncheck-active);
 }
 .hidden-accessible:checked:not(:disabled) + .mas-radio-button_touch-target:active {
   box-shadow: 0 0 0 4px
-    hsla(
-      var(--mas-primitive-color_blue600--h),
-      var(--mas-primitive-color_blue600--s),
-      var(--mas-primitive-color_blue600--l),
-      0.24
-    );
+    var(--mas-web-component-radio-button-color-halor-check-active);
 }
 .mas-radio-button--active {
-  background-color: var(--mas-semantic-color_action-primary--default);
-  border-color: var(--mas-semantic-color_action-primary--default) !important;
+  background-color: var(--mas-web-component-radio-button-color-container-check);
+  border-color: var(--mas-web-component-radio-button-color-container-check) !important;
 }
 .mas-radio-button--disabled {
   opacity: 0.4;

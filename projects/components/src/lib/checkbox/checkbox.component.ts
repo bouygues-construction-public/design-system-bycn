@@ -39,7 +39,7 @@ export class MasCheckbox implements ControlValueAccessor {
   @Input() labelText: string = '';
   @Input() identifier: string = '';
 
-  @Input() size: 'S' | 'L' = 'S';
+  @Input() size: 'small' | 'large' = 'small';
 
   @Input()
   get checked(): boolean {
