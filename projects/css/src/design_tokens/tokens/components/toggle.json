@@ -1,0 +1,168 @@
+{
+  "mas": {
+    "web": {
+      "component": {
+        "toggle": {
+          "spacing": {
+            "padding": {
+              "top": {
+                "value": "{mas.semantic.spacing.5xs}",
+                "type": "spacing"
+              },
+              "bottom": {
+                "value": "{mas.semantic.spacing.5xs}",
+                "type": "spacing"
+              },
+              "right": {
+                "value": "{mas.semantic.spacing.5xs}",
+                "type": "spacing"
+              },
+              "left": {
+                "value": "{mas.semantic.spacing.5xs}",
+                "type": "spacing"
+              }
+            }
+          },
+          "border-radius": {
+            "top-left": {
+              "value": "{mas.semantic.border-radius.full}",
+              "type": "borderRadius"
+            },
+            "top-right": {
+              "value": "{mas.semantic.border-radius.full}",
+              "type": "borderRadius"
+            },
+            "bottom-right": {
+              "value": "{mas.semantic.border-radius.full}",
+              "type": "borderRadius"
+            },
+            "bottom-left": {
+              "value": "{mas.semantic.border-radius.full}",
+              "type": "borderRadius"
+            }
+          },
+          "color": {
+            "container": {
+              "selected": {
+                "value": "{mas.semantic.color.container.brand}",
+                "type": "color"
+              },
+              "unselected": {
+                "value": "{mas.semantic.color.container.emphasys}",
+                "type": "color"
+              }
+            },
+            "handle": {
+              "unselected": {
+                "default": {
+                  "value": "{mas.semantic.color.container.main}",
+                  "type": "color"
+                }
+              },
+              "selected": {
+                "default": {
+                  "value": "{mas.semantic.color.container.main}",
+                  "type": "color"
+                }
+              }
+            },
+            "halo": {
+              "unselected": {
+                "hover": {
+                  "value": "{mas.semantic.color.alpha.main.s}",
+                  "type": "color"
+                },
+                "active": {
+                  "value": "{mas.semantic.color.alpha.main.m}",
+                  "type": "color"
+                }
+              },
+              "selected": {
+                "hover": {
+                  "value": "{mas.semantic.color.alpha.brand.s}",
+                  "type": "color"
+                },
+                "active": {
+                  "value": "{mas.semantic.color.alpha.brand.m}",
+                  "type": "color"
+                }
+              }
+            }
+          },
+          "sizing": {
+            "large": {
+              "container": {
+                "height": {
+                  "value": "{mas.semantic.sizing.2xl}",
+                  "type": "sizing"
+                },
+                "width": {
+                  "value": "{mas.semantic.sizing.6xl}",
+                  "type": "sizing"
+                }
+              },
+              "halo": {
+                "height": {
+                  "value": "{mas.semantic.sizing.4xl}",
+                  "type": "sizing"
+                },
+                "width": {
+                  "value": "{mas.semantic.sizing.4xl}",
+                  "type": "sizing"
+                }
+              },
+              "handle": {
+                "height": {
+                  "value": "{mas.semantic.sizing.xl}",
+                  "type": "sizing"
+                },
+                "width": {
+                  "value": "{mas.semantic.sizing.xl}",
+                  "type": "sizing"
+                }
+              }
+            },
+            "small": {
+              "container": {
+                "height": {
+                  "value": "{mas.semantic.sizing.l}",
+                  "type": "sizing"
+                },
+                "width": {
+                  "value": "{mas.semantic.sizing.4xl}",
+                  "type": "sizing"
+                }
+              },
+              "halo": {
+                "height": {
+                  "value": "{mas.semantic.sizing.2xl}",
+                  "type": "sizing"
+                },
+                "width": {
+                  "value": "{mas.semantic.sizing.2xl}",
+                  "type": "sizing"
+                }
+              },
+              "handle": {
+                "height": {
+                  "value": "{mas.semantic.sizing.m}",
+                  "type": "sizing"
+                },
+                "width": {
+                  "value": "{mas.semantic.sizing.m}",
+                  "type": "sizing"
+                }
+              }
+            }
+          },
+          "opacity": {
+            "disabled": {
+              "value": "{mas.semantic.opacity.m}",
+              "type": "opacity"
+            }
+          }
+        }
+      }
+    }
+  }
+}

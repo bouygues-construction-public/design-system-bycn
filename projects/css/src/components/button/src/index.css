@@ -40,7 +40,7 @@ mas-button {
 }
 
 .mas-button_variant--primary:disabled {
-  opacity: 0.5;
+  opacity: var(--mas-web-component-button-opacity-disabled);
 }
 
 /* Secondary button */
@@ -62,7 +62,7 @@ mas-button {
 
 .mas-button_variant--secondary:disabled {
   border: var(--mas-web-component-button-border-width-default) solid #d7d7db;
-  opacity: 0.5;
+  opacity: var(--mas-web-component-button-opacity-disabled);
   background: #fff;
 }
 
@@ -83,7 +83,7 @@ mas-button {
 }
 
 .mas-button_variant--tertiary:disabled {
-  opacity: 0.5;
+  opacity: var(--mas-web-component-button-opacity-disabled);
 }
 
 /* Sizes */

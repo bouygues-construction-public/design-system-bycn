@@ -43,7 +43,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: 'Buttons serve as navigational elements and can be used independently or inline with text. They offer a lightweight option for navigation.',
+        component: 'The tooltip is most often displayed when hovering over an icon to indicate its function.',
       },
     },
   },

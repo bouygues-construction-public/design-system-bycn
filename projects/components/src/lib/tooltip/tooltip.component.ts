@@ -140,11 +140,11 @@ export class MasTooltip implements OnInit {
     }
   }
   calculateTooltipPosition() {
-    this.container = document.querySelector('.mas-tooltip-container') as HTMLElement;
+    this.container = document.querySelector('.mas-tooltip_container') as HTMLElement;
    
     this.finalPosition = false
     this.placement = this.placementToCheck
-    this.arrowRect = (document.querySelector('.arrow') as HTMLElement).getBoundingClientRect();
+    this.arrowRect = (document.querySelector('.mas-tooltip_arrow') as HTMLElement).getBoundingClientRect();
     if (this.placementToCheck === "top-right" || this.placementToCheck === "bottom-right") {
       if (this.arrowRect.left - this.tooltip.clientWidth  < 0) {
         if (this.placementToCheck === "top-right") {this.positions = this.positionsTLComp}

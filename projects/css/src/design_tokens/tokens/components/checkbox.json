@@ -232,6 +232,12 @@
                 "type": "typography"
               }
             }
+          },
+          "opacity": {
+            "disabled": {
+              "value": "{mas.web.component.button.opacity.disabled}",
+              "type": "opacity"
+            }
           }
         }
       }

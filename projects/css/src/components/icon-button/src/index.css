@@ -6,7 +6,6 @@
   padding: 10px 20px;
   justify-content: center;
   align-items: center;
-  border-radius: var(--mas-radius_full);
   color: var(--text-reverse, #fff);
   font-feature-settings: 'calt' off;
   /* Body/Semibold/Body 3 */
@@ -18,7 +17,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  height: 44px;
   border: none;
   cursor: pointer;
 }
@@ -27,99 +25,119 @@ a.mas-icon-button {
 }
 /* Primary button */
 .mas-icon-button_variant--primary {
-  background-color: var(--action-primary-default, #007ab7);
+  color: var(--mas-web-component-icon-button-color-primary-content-icon);
+  background-color: var(--mas-web-component-icon-button-color-primary-container-default);
 }
 
 .mas-icon-button_variant--primary:not(:disabled):hover {
-  background-color: var(--action-primary-hovered, #069);
+  background: linear-gradient(var(--mas-web-component-icon-button-color-primary-container-hover), var(--mas-web-component-icon-button-color-primary-container-hover)), linear-gradient(var(--mas-web-component-icon-button-color-primary-container-default), var(--mas-web-component-icon-button-color-primary-container-default));
+  background-blend-mode: multiply;
 }
 
 .mas-icon-button_variant--primary:not(:disabled):active {
-  background-color: var(--action-primary-pressed, #005885);
+  background: linear-gradient(var(--mas-web-component-icon-button-color-primary-container-active), var(--mas-web-component-icon-button-color-primary-container-active)), linear-gradient(var(--mas-web-component-icon-button-color-primary-container-default), var(--mas-web-component-icon-button-color-primary-container-default));
+  background-blend-mode: multiply;
 }
 
 .mas-icon-button_variant--primary:disabled {
-  opacity: 0.5;
-  background-color: var(--action-primary-default, #005885);
+  opacity: var(--mas-web-component-icon-button-opacity-disabled);
+  background-color: var(--mas-web-component-icon-button-color-primary-container-default);
 }
 
 /* Secondary button */
 .mas-icon-button_variant--secondary {
-  color: var(--text-primary, #0c0c0d);
-  border: 1px solid var(--border-primary, #d7d7db);
-  background: var(--action-reverse-default, #fff);
+  color: var(--mas-web-component-icon-button-color-secondary-content-icon);
+  border: var(--mas-web-component-icon-button-border-width-default) solid var(--mas-web-component-icon-button-color-secondary-border-default);
+  background-color: var(--mas-web-component-icon-button-color-secondary-container-default);
 }
 
 .mas-icon-button_variant--secondary:not(:disabled):hover {
-  border: 1px solid var(--border-primary, #d7d7db);
-  background: var(--action-reverse-hovered, #f9f9fa);
+  background: linear-gradient(var(--mas-web-component-icon-button-color-secondary-container-hover), var(--mas-web-component-icon-button-color-secondary-container-hover)), linear-gradient(var(--mas-web-component-icon-button-color-secondary-container-default), var(--mas-web-component-icon-button-color-secondary-container-default));
 }
 
 .mas-icon-button_variant--secondary:not(:disabled):active {
-  border: 1px solid var(--border-primary, #d7d7db);
-  background: var(--action-reverse-pressed, #ededf0);
+  background: linear-gradient(var(--mas-web-component-icon-button-color-secondary-container-active), var(--mas-web-component-icon-button-color-secondary-container-active)), linear-gradient(var(--mas-web-component-icon-button-color-secondary-container-default), var(--mas-web-component-icon-button-color-secondary-container-default));
 }
 
 .mas-icon-button_variant--secondary:disabled {
-  border: 1px solid var(--border-primary, #d7d7db);
-  opacity: 0.5;
-  background: var(--action-reverse-default, #fff);
+  opacity: var(--mas-web-component-icon-button-opacity-disabled);
+  background-color: var(--mas-web-component-icon-button-color-secondary-container-default);
 }
 
 /* Tertiary button */
 .mas-icon-button_variant--tertiary {
-  color: var(--text-primary, #0c0c0d);
+  color: var(--mas-web-component-icon-button-color-tertiary-content-icon);
   background-color: transparent;
 }
 
 .mas-icon-button_variant--tertiary:not(:disabled):hover {
-  background: var(--alpha-grey-hovered, rgba(144, 144, 162, 0.08));
+  background: var(--mas-web-component-icon-button-color-tertiary-container-hover);
 }
 
 .mas-icon-button_variant--tertiary:not(:disabled):active {
-  background-color: var(--alpha-grey-pressed, rgba(144, 144, 162, 0.16));
+  background: var(--mas-web-component-icon-button-color-tertiary-container-active);
 }
 
 .mas-icon-button_variant--tertiary:disabled {
-  opacity: 0.5;
+  opacity: var(--mas-web-component-icon-button-opacity-disabled);
 }
 
-/* Accent button */
-.mas-icon-button_variant--accent {
-  background-color: var(--action-brand-default, #c74d10);
+/* Neutral button */
+.mas-icon-button_variant--neutral {
+  color: var(--mas-web-component-icon-button-color-neutral-content-icon);
+  background-color: transparent;
 }
 
-.mas-icon-button_variant--accent:not(:disabled):hover {
-  background-color: var(--action-brand-hovered, #a6400d);
+.mas-icon-button_variant--neutral:not(:disabled):hover {
+  background: var(--mas-web-component-icon-button-color-neutral-container-hover);
 }
 
-.mas-icon-button_variant--accent:not(:disabled):active {
-  background-color: var(--action-brand-pressed, #84330a);
+.mas-icon-button_variant--neutral:not(:disabled):active {
+  background: var(--mas-web-component-icon-button-color-neutral-container-active);
 }
 
-.mas-icon-button_variant--accent:disabled {
-  opacity: 0.5;
-  background-color: var(--action-brand-default, #c74d10);
+.mas-icon-button_variant--neutral:disabled {
+  opacity: var(--mas-web-component-icon-button-opacity-disabled);
 }
 
 /* Sizes */
 .mas-icon-button_size--small {
-  font-size: 14px;
+  font-size: 13px;
+  --mas-icon_size:13px;
   font-weight: 600;
-  line-height: 20px;
-  padding: 8px 16px;
-  height: 36px;
+  line-height: var(--mas-web-component-icon-button-sizing-small-start-icon);
+  padding: var(--mas-web-component-icon-button-spacing-small-padding-top) var(--mas-web-component-icon-button-spacing-small-padding-right) var(--mas-web-component-icon-button-spacing-small-padding-bottom) var(--mas-web-component-icon-button-spacing-small-padding-left);
+  height: 32px;
+  width: 32px;
 }
-
 .mas-icon-button_size--medium {
-  font-size: 16px;
+  font-size: 16.25px;
+  --mas-icon_size:16.25px;
   font-weight: 600;
-  line-height: 24px;
-  padding: 10px 20px;
+  line-height: var(--mas-web-component-icon-button-sizing-medium-start-icon);
+  padding: var(--mas-web-component-icon-button-spacing-medium-padding-top) var(--mas-web-component-icon-button-spacing-medium-padding-right) var(--mas-web-component-icon-button-spacing-medium-padding-bottom) var(--mas-web-component-icon-button-spacing-medium-padding-left);
+  height: 44px;
+  width: 44px;
+}
+.mas-icon-button_size--large {
+  --mas-icon_size:19.5px;
+  font-size: 19.5px;
+  font-weight: 600;
+  line-height: var(--mas-web-component-icon-button-sizing-large-start-icon);
+  padding: var(--mas-web-component-icon-button-spacing-large-padding-top) var(--mas-web-component-icon-button-spacing-large-padding-right) var(--mas-web-component-icon-button-spacing-large-padding-bottom) var(--mas-web-component-icon-button-spacing-large-padding-left);
+  height: 56px;
+  width: 56px;
+}
+/* Shapes */
+.mas-icon-button_shape--rounded {
+  border-radius: var(--mas-web-component-icon-button-border-radius-rounded);
 }
 
+.mas-icon-button_shape--square {
+  border-radius: var(--mas-web-component-icon-button-border-radius-square);
+}
 /* Button icons  */
-.mas-icon-button--icon-alone {
+/* .mas-icon-button--icon-alone {
   inline-size: 32px;
   block-size: 32px;
   padding: 8px;
@@ -147,7 +165,7 @@ a.mas-icon-button {
 
 .mas-icon-button_size--medium.mas-icon-button--icon-alone i[class^='mas-'] {
   font-size: 16px;
-}
+} */
 
 .mas-icon {
   background-size: cover;

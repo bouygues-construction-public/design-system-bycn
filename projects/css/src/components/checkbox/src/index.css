@@ -111,6 +111,6 @@
   border-color: var(--mas-web-component-checkbox-color-border-check-default) !important;
 }
 .mas-checkbox--disabled {
-  opacity: 0.4;
+  opacity: var(--mas-web-component-checkbox-opacity-disabled);
   cursor: not-allowed;
 }

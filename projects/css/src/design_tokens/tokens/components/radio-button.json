@@ -186,6 +186,12 @@
                 "type": "spacing"
               }
             }
+          },
+          "opacity": {
+            "disabled": {
+              "value": "{mas.semantic.opacity.m}",
+              "type": "opacity"
+            }
           }
         }
       }

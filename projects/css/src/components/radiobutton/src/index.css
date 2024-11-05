@@ -84,7 +84,7 @@
   border-color: var(--mas-web-component-radio-button-color-container-check) !important;
 }
 .mas-radio-button--disabled {
-  opacity: 0.4;
+  opacity: var(--mas-web-component-radio-button-opacity-disabled);
   cursor: not-allowed;
 }
 .mas-radio-group {

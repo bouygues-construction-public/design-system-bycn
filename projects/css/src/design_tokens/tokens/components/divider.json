@@ -1,0 +1,38 @@
+{
+  "mas": {
+    "component": {
+      "web": {
+        "divider": {
+          "color": {
+            "content": {
+              "default": {
+                "value": "{mas.semantic.color.content.emphasys}",
+                "type": "color"
+              }
+            }
+          },
+          "horizontal": {
+            "height": {
+              "value": "{mas.semantic.sizing.3xs}",
+              "type": "sizing"
+            },
+            "width": {
+              "value": "{mas.semantic.sizing.11xl}",
+              "type": "sizing"
+            }
+          },
+          "vertical": {
+            "height": {
+              "value": "{mas.semantic.sizing.11xl}",
+              "type": "sizing"
+            },
+            "width": {
+              "value": "{mas.semantic.sizing.3xs}",
+              "type": "sizing"
+            }
+          }
+        }
+      }
+    }
+  }
+}

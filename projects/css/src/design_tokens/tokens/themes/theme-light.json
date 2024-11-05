@@ -69,31 +69,31 @@
         "alpha": {
           "contrasted": {
             "s": {
-              "value": "rgba(0,0,0,0.1)",
+              "value": "rgba(16, 32, 49, 0.08)",
               "type": "color"
             },
             "m": {
-              "value": "rgba(0,0,0,0.2)",
+              "value": "rgba(16, 32, 49, 0.12)",
               "type": "color"
             }
           },
           "main": {
             "s": {
-              "value": "rgba(242,243,245,0.30)",
+              "value": "rgba(133, 141, 150, 0.08)",
               "type": "color"
             },
             "m": {
-              "value": "rgba(242,243,245,0.4)",
+              "value": "rgba(133, 141, 150, 0.12)",
               "type": "color"
             }
           },
           "brand": {
             "s": {
-              "value": "rgba(232,83,19,0.05)",
+              "value": "rgba(231, 81, 19, 0.08)",
               "type": "color"
             },
             "m": {
-              "value": "rgba(232,83,19,0.1)",
+              "value": "rgba(231, 81, 19, 0.12)",
               "type": "color"
             }
           }
@@ -672,6 +672,12 @@
         "11xl": {
           "value": "{mas.core.sizing.900}",
           "type": "sizing"
+        }
+      },
+      "opacity": {
+        "m": {
+          "value": "{mas.core.opacity.500}",
+          "type": "opacity"
         }
       }
     }

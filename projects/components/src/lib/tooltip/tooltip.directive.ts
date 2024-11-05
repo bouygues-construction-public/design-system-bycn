@@ -118,8 +118,8 @@ export class MasTooltipDirective implements OnInit {
   focusOnTarget() {
     this.originalPlacement = this.placement
     this.placementToCheck = this.originalPlacement;
-    this.renderer.addClass(this.el.nativeElement, 'mas-tooltip-container');
-    this.renderer.addClass(this.el.nativeElement, 'mas-tooltip-container');
+    this.renderer.addClass(this.el.nativeElement, 'mas-tooltip_container');
+    this.renderer.addClass(this.el.nativeElement, 'mas-tooltip_container');
     this.mouseOnTarget = true;
     if(!this.isVisible){
      
@@ -148,21 +148,21 @@ export class MasTooltipDirective implements OnInit {
     this.renderer.appendChild(this.el.nativeElement, tooltip);
 
     const paddingBar = this.renderer.createElement('div');
-    this.renderer.addClass(paddingBar, 'padding-bar');
+    this.renderer.addClass(paddingBar, 'mas-tooltip_padding-bar');
     this.renderer.appendChild(tooltip, paddingBar);
 
     const arrow = this.renderer.createElement('div');
-    this.renderer.addClass(arrow, 'arrow');
+    this.renderer.addClass(arrow, 'mas-tooltip_arrow');
     this.renderer.appendChild(tooltip, arrow);
 
     const innerDiv = this.renderer.createElement('div');
-    this.renderer.addClass(innerDiv, 'mas-tooltip-inner');
+    this.renderer.addClass(innerDiv, 'mas-tooltip_inner');
     this.renderer.appendChild(tooltip, innerDiv);
 
 
     if (this.content) {
       const contentDiv = this.renderer.createElement('div');
-      this.renderer.addClass(contentDiv, 'mas-tooltip-content');
+      this.renderer.addClass(contentDiv, 'mas-tooltip_content');
       this.renderer.appendChild(contentDiv, this.renderer.createText(this.content));
       this.renderer.appendChild(innerDiv, contentDiv);
     }

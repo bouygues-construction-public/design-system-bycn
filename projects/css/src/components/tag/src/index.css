@@ -21,7 +21,7 @@
   font: var(--mas-web-component-tag-typography-small-label);
 }
 .mas-tag_size--medium .mas-tag_label{
-  font-size: 14px;
+  font: var(--mas-web-component-tag-typography-medium-label);
 }
 
 .leading-icon {
@@ -65,5 +65,4 @@
 .mas-tag_color--roc{
   background: var(--decorative-surface-roc, #F9F9FA);
   color: var(--decorative-text-roc, #38383D);
-
 }

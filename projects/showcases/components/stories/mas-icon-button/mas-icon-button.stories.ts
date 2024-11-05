@@ -24,15 +24,15 @@ const argTypes = {
         'primary',
         'secondary',
         'tertiary',
-        'accent',
+        'neutral',
       ],
     },
     size: {
       type: { name: 'string', required: false },
-      description: 'The size of the button. Available options: \'small\', \'medium\'. Default: \'medium\'', 
+      description: 'The size of the button. Available options: \'small\', \'medium\', \'large\'. Default: \'medium\'', 
       defaultValue: 'medium',
       control: 'radio', 
-      options: ['small', 'medium'],
+      options: ['small', 'medium', 'large'],
     },
     disabled: {
       type: { name: 'boolean', required: false },
@@ -46,6 +46,13 @@ const argTypes = {
       defaultValue: false,
       control:'select',
       options: ['', ...icons],
+    },
+    shape: {
+      type: { name: 'string', required: false },
+      description: 'The shape of the icon button, \'square\' is set by default.',
+      defaultValue: 'square',
+      control:'radio',
+      options: ['rounded', 'square'],
     },
   };
  
@@ -73,6 +80,7 @@ export default {
               [variant]="variant"
               [size]="size"
               [disabled]="disabled"
+              [shape]="shape"
               [iconAlone]="iconAlone">
               Button
             </mas-icon-button>
@@ -86,6 +94,7 @@ export const Default: StoryObj<MasIconButton> = {}
 Default.args = {
   variant: 'primary',
   size: 'medium',
+  shape: 'square',
   disabled: false,
   iconAlone: "mas-eject-outlined mas-media--outlined",
 };
@@ -96,7 +105,7 @@ export const IconButtonType = {
       <div style="display: flex; justify-content: space-between">
         <mas-icon-button variant="primary" iconAlone="mas-hand-palm-outlined mas-people--outlined">Primary</mas-icon-button>
         <mas-icon-button variant="secondary" iconAlone="mas-hand-pointing-outlined mas-people--outlined">Secondary</mas-icon-button>
-        <mas-icon-button variant="accent" iconAlone="mas-hands-praying-outlined mas-people--outlined">Accent</mas-icon-button>
+        <mas-icon-button variant="neutral" iconAlone="mas-hands-praying-outlined mas-people--outlined">Tertiary</mas-icon-button>
         <mas-icon-button variant="tertiary" iconAlone="mas-hand-waving-outlined mas-people--outlined">Tertiary</mas-icon-button>
       </div>
     `
@@ -107,10 +116,22 @@ export const IconButtonSize = {
   render: () => ({
     template: `
       <div style="display: flex; gap: 20px; align-items: center">
+        <mas-icon-button variant="primary" size="large" iconAlone="mas-fingerprint-outlined mas-security-and-warnings--outlined">Medium</mas-icon-button>
         <mas-icon-button variant="primary" size="medium" iconAlone="mas-fingerprint-outlined mas-security-and-warnings--outlined">Medium</mas-icon-button>
         <mas-icon-button variant="primary" size="small" iconAlone="mas-fingerprint-outlined mas-security-and-warnings--outlined">Small</mas-icon-button>
       </div>
 
+    `
+  })
+}
+
+export const IconButtonShape = {
+  render: () => ({
+    template: `
+      <div style="display: flex; gap: 20px; align-items: center">
+        <mas-icon-button variant="primary" size="medium" shape="rounded" iconAlone="mas-fingerprint-outlined mas-security-and-warnings--outlined">Medium</mas-icon-button>
+        <mas-icon-button variant="primary" size="medium" shape="square" iconAlone="mas-fingerprint-outlined mas-security-and-warnings--outlined">Medium</mas-icon-button>
+      </div>
     `
   })
 }

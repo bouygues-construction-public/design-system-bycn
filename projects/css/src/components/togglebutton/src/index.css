@@ -21,132 +21,101 @@
 .mas-toggle-button_switch {
   position: relative;
   display: inline-block;
-  inline-size: 32px;
-  block-size: 16px;
+  inline-size: var(--mas-web-component-toggle-sizing-small-container-width);
+  block-size: var(--mas-web-component-toggle-sizing-small-container-height);
 }
 
 .mas-toggle-button_switch span {
   position: absolute;
   inset-block-start: 0px;
   inset-inline-start: 0px;
-  inline-size: 100%;
-  block-size: 100%;
-  background-color: var(--mas-semantic-color_action-tiertiary--default);
+  inline-size: var(--mas-web-component-toggle-sizing-small-container-width);
+  block-size: var(--mas-web-component-toggle-sizing-small-container-height);
+  background-color: var(--mas-web-component-toggle-color-container-unselected);
   transition: background-color 0.1s ease-out, var(--vtmn-transition_focus-visible);
-  border-radius: 100px;
+  border-radius: var(--mas-web-component-toggle-border-radius-top-left) var(--mas-web-component-toggle-border-radius-top-right) var(--mas-web-component-toggle-border-radius-bottom-right) var(--mas-web-component-toggle-border-radius-bottom-left);
   pointer-events: none;
 }
 
 .mas-toggle-button_switch span::before {
   position: absolute;
   content: '';
-  block-size: 12px;
-  inline-size: 12px;
+  block-size: var(--mas-web-component-toggle-sizing-small-handle-height);
+  inline-size: var(--mas-web-component-toggle-sizing-small-handle-width);
   inset-inline-start: 2px;
   inset-block-start: 2px;
-  background-color: var(--mas-semantic-color_action-reverse--default);
+  background-color: var(--mas-web-component-toggle-color-handle-unselected-default);
   transition: var(--vtmn-transition_focus-visible), transform 0.1s ease-out, background-color 0.1s ease-out;
-  border-radius: 100%;
+  border-radius: var(--mas-web-component-toggle-border-radius-top-left) var(--mas-web-component-toggle-border-radius-top-right) var(--mas-web-component-toggle-border-radius-bottom-right) var(--mas-web-component-toggle-border-radius-bottom-left);
 }
 
 .mas-toggle-button_switch .hidden-accessible[type='checkbox']:checked + span {
-  background-color: var(--mas-semantic-color_action-primary--default);
+  background-color: var(--mas-web-component-toggle-color-container-selected);
 }
 
 .mas-toggle-button_switch .hidden-accessible[type='checkbox']:checked + span::before {
   transform: translateX(16px);
+  background-color: var(--mas-web-component-toggle-color-handle-selected-default);
 }
 
 .mas-toggle-button_switch .hidden-accessible:not(:disabled):hover + span::before {
   box-shadow: 0 0 0 6px
-    hsla(
-      var(--mas-primitive-color_grey400--h),
-      var(--mas-primitive-color_grey400--s),
-      var(--mas-primitive-color_grey400--l),
-      0.12
-    );
+    var(--mas-web-component-toggle-color-halo-unselected-hover);
 }
 
 .mas-toggle-button_switch .hidden-accessible:not(:disabled):active + span::before {
   box-shadow: 0 0 0 6px
-    hsla(
-      var(--mas-primitive-color_grey400--h),
-      var(--mas-primitive-color_grey400--s),
-      var(--mas-primitive-color_grey400--l),
-      0.24
-    );
+    var(--mas-web-component-toggle-color-halo-unselected-active);
 }
 
 .mas-toggle-button_switch .hidden-accessible:not(:disabled):hover:checked + span::before {
   box-shadow: 0 0 0 6px
-    hsla(
-      var(--mas-primitive-color_blue600--h),
-      var(--mas-primitive-color_blue600--s),
-      var(--mas-primitive-color_blue600--l),
-      0.12
-    );
+    var(--mas-web-component-toggle-color-halo-selected-hover);
 }
 
 .mas-toggle-button_switch .hidden-accessible:not(:disabled):active:checked + span::before {
   box-shadow: 0 0 0 6px
-    hsla(
-      var(--mas-primitive-color_blue600--h),
-      var(--mas-primitive-color_blue600--s),
-      var(--mas-primitive-color_blue600--l),
-      0.24
-    );
+    var(--mas-web-component-toggle-color-halo-selected-active);
+}
+/* disabled */
+.mas-toggle-button_switch .hidden-accessible:disabled + span {
+  opacity: var(--mas-web-component-toggle-oopacity-disabled);
+  cursor: not-allowed;
 }
 /* size */
 .mas-toggle-button--large > .mas-toggle-button_switch {
-  inline-size: 48px;
-  block-size: 24px;
+  inline-size: var(--mas-web-component-toggle-sizing-large-container-width);
+  block-size: var(--mas-web-component-toggle-sizing-large-container-height);
 }
 .mas-toggle-button--large > .mas-toggle-button_switch span {
-  border-radius: 150px;
+  inline-size: var(--mas-web-component-toggle-sizing-large-container-width);
+  block-size: var(--mas-web-component-toggle-sizing-large-container-height);
+  border-radius: var(--mas-web-component-toggle-border-radius-top-left) var(--mas-web-component-toggle-border-radius-top-right) var(--mas-web-component-toggle-border-radius-bottom-right) var(--mas-web-component-toggle-border-radius-bottom-left);
 }
 .mas-toggle-button--large > .mas-toggle-button_switch span::before {
-  block-size: 20px;
-  inline-size: 20px;
+  inline-size: var(--mas-web-component-toggle-sizing-large-handle-width);
+  block-size: var(--mas-web-component-toggle-sizing-large-handle-height);
 }
 .mas-toggle-button--large > .mas-toggle-button_switch .hidden-accessible[type='checkbox']:checked + span::before {
   transform: translateX(24px);
+  background-color: var(--mas-web-component-toggle-color-handle-selected-default);
 }
 .mas-toggle-button--large > .mas-toggle-button_switch .hidden-accessible:not(:disabled):hover + span::before {
   box-shadow: 0 0 0 6px
-    hsla(
-      var(--mas-primitive-color_grey400--h),
-      var(--mas-primitive-color_grey400--s),
-      var(--mas-primitive-color_grey400--l),
-      0.12
-    );
+    var(--mas-web-component-toggle-color-halo-unselected-hover);
 }
 
 .mas-toggle-button--large > .mas-toggle-button_switch .hidden-accessible:not(:disabled):active + span::before {
   box-shadow: 0 0 0 6px
-    hsla(
-      var(--mas-primitive-color_grey400--h),
-      var(--mas-primitive-color_grey400--s),
-      var(--mas-primitive-color_grey400--l),
-      0.24
-    );
+    var(--mas-web-component-toggle-color-halo-unselected-active);
 }
 
 .mas-toggle-button--large > .mas-toggle-button_switch .hidden-accessible:not(:disabled):hover:checked + span::before {
   box-shadow: 0 0 0 6px
-    hsla(
-      var(--mas-primitive-color_blue600--h),
-      var(--mas-primitive-color_blue600--s),
-      var(--mas-primitive-color_blue600--l),
-      0.12
-    );
+    var(--mas-web-component-toggle-color-halo-selected-hover);
 }
 
 .mas-toggle-button--large > .mas-toggle-button_switch .hidden-accessible:not(:disabled):active:checked + span::before {
   box-shadow: 0 0 0 6px
-    hsla(
-      var(--mas-primitive-color_blue600--h),
-      var(--mas-primitive-color_blue600--s),
-      var(--mas-primitive-color_blue600--l),
-      0.24
-    );
+    var(--mas-web-component-toggle-color-halo-selected-active);
 }
