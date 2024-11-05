@@ -8,7 +8,7 @@ import { Meta, Story, Preview, Props, Description } from '@storybook/blocks';
     display: flex; 
     flex-direction: column;
     align-items: center; 
-    font-family: var(--mas-typo_font-family);
+    font-family: var(--mas-core-font-family-barlow) !important;
   }
   .container {
     display: flex;
@@ -25,9 +25,11 @@ import { Meta, Story, Preview, Props, Description } from '@storybook/blocks';
     flex: 1;
   }
   .header {
+    font-family: var(--mas-core-font-family-barlow) !important;
     font-weight: var(--mas-typo_headline-font-weight);
   }
   .content {
+    font-family: var(--mas-core-font-family-barlow) !important;
     font-weight: var(--mas-typo_caption-font-weight);
   }
 `}
