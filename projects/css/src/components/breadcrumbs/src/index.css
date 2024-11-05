@@ -41,7 +41,7 @@
   line-height: 20px;
   margin-inline: 8px;
 }
-.mas-breadcrumb_overflow-icon::before {
-  line-height: 20px;
-  height: 20px;
+.mas-breadcrumb_overflow-icon {
+  display: flex;
+  align-items: center;
 }

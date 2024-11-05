@@ -79,7 +79,7 @@
 }
 /* disabled */
 .mas-toggle-button_switch .hidden-accessible:disabled + span {
-  opacity: var(--mas-web-component-toggle-oopacity-disabled);
+  opacity: var(--mas-web-component-toggle-opacity-disabled);
   cursor: not-allowed;
 }
 /* size */
