@@ -2,10 +2,10 @@
 .mas-divider {
   .horizontal {
     width: inherit;
-    border-bottom: 1px solid var(--mas-semantic-color_border-primary);
+    border-bottom: var(--mas-web-component-divider-border-width-line) solid var(--mas-web-component-divider-color-border);
   }
   .vertical {
-    border-left: 1px solid var(--mas-semantic-color_border-primary);
+    border-left: var(--mas-web-component-divider-border-width-line) solid var(--mas-web-component-divider-color-border);
     height: 100%;
   }
 }

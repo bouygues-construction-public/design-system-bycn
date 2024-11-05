@@ -1,0 +1,47 @@
+import { Meta, Story, Preview, Props, Description } from '@storybook/blocks'; 
+
+<Meta title="Components / Navigations / Breadcrumbs" />
+
+# Breadcrumbs
+
+Breadcrumb is a type of contextual navigation that helps the user know where they are within the site and navigate within the site. It's a secondary navigation element.
+
+<nav class="mas-breadcrumbs_nav">
+<div class="mas-breadcrumb-item"><a>Accueil</a></div>
+<div class="mas-breadcrumb-item"><a>Gestion des utilisateurs</a></div>
+<div class="mas-breadcrumb-item"><a>EUDE Valerie</a></div>
+</nav>
+
+CSS styles for `Breadcrumbs` component:
+
+```css
+.mas-breadcrumbs_nav {
+  /* styles here */
+}
+.mas-breadcrumb-item {
+  /* styles here */
+}
+.mas-breadcrumb_overflow  {
+  /* styles here */
+}
+
+```
+
+## Collapse
+
+{/* normal example */}
+<nav class="mas-breadcrumbs_nav">
+<div class="mas-breadcrumb-item"><a>Acces and delegation</a></div>
+<div class="mas-breadcrumb-item"><a>Manage users</a></div>
+<div class="mas-breadcrumb-item"><a>User sheet</a></div>
+<div class="mas-breadcrumb-item"><a>User #1</a></div>
+<div class="mas-breadcrumb-item"><a>Edit user</a></div>
+</nav>
+
+{/* collapse example */}
+
+<nav class="mas-breadcrumbs_nav">
+<div class="mas-breadcrumb-item"><a>Acces and delegation</a></div>
+<div class="mas-breadcrumb_overflow"><i class="mas-dots-three-outlined mas-system-and-device--outlined"></i></div>
+<div class="mas-breadcrumb-item"><a>Edit user</a></div>
+</nav>

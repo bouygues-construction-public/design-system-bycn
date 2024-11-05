@@ -19,9 +19,11 @@
 
 .mas-tag_size--small .mas-tag_label{
   font: var(--mas-web-component-tag-typography-small-label);
+  --mas-icon_size: var(--mas-web-component-tag-sizing-small-icon-width);
 }
 .mas-tag_size--medium .mas-tag_label{
   font: var(--mas-web-component-tag-typography-medium-label);
+  --mas-icon_size: var(--mas-web-component-tag-sizing-medium-icon-width);
 }
 
 .leading-icon {
@@ -30,7 +32,7 @@
 
 .mas-tag_color--default {
   background: var(--mas-web-component-tag-color-container);
-  color: var(--mas-web-component-tag-color-emphasys);
+  color: var(--mas-web-component-tag-color-content);
 }
 
 .mas-tag_color--orange{

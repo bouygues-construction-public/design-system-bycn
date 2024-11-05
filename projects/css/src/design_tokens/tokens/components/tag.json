@@ -6,33 +6,35 @@
           "spacing": {
             "padding": {
               "left": {
-                "value": "{mas.semantic.spacing.s}",
+                "value": "{mas.semantic.spacing.2xs}",
                 "type": "spacing"
               },
               "right": {
-                "value": "{mas.semantic.spacing.s}",
+                "value": "{mas.semantic.spacing.2xs}",
                 "type": "spacing"
               },
               "top": {
-                "value": "{mas.semantic.spacing.2xs}",
+                "value": "{mas.semantic.spacing.3xs}",
                 "type": "spacing"
               },
               "bottom": {
-                "value": "{mas.semantic.spacing.2xs}",
+                "value": "{mas.semantic.spacing.3xs}",
                 "type": "spacing"
               }
+            },
+            "gap": {
+              "value": "{mas.semantic.spacing.3xs}",
+              "type": "spacing"
             }
           },
           "color": {
             "container": {
-              "default": {
-                "value": "{mas.semantic.color.container.emphasys}",
-                "type": "color"
-              },
-              "emphasys": {
-                "value": "{mas.semantic.color.content.main}",
-                "type": "color"
-              }
+              "value": "{mas.semantic.color.container.emphasys}",
+              "type": "color"
+            },
+            "content": {
+              "value": "{mas.semantic.color.content.main}",
+              "type": "color"
             }
           },
           "border-radius": {
@@ -66,6 +68,32 @@
               "label": {
                 "value": "{mas.semantic.typography.all-screen.body3}",
                 "type": "typography"
+              }
+            }
+          },
+          "sizing": {
+            "small": {
+              "icon": {
+                "height": {
+                  "value": "{mas.semantic.sizing.l}",
+                  "type": "sizing"
+                },
+                "width": {
+                  "value": "{mas.semantic.sizing.l}",
+                  "type": "sizing"
+                }
+              }
+            },
+            "medium": {
+              "icon": {
+                "height": {
+                  "value": "{mas.semantic.sizing.l}",
+                  "type": "sizing"
+                },
+                "width": {
+                  "value": "{mas.semantic.sizing.l}",
+                  "type": "sizing"
+                }
               }
             }
           }
