@@ -175,11 +175,11 @@
                   "type": "spacing"
                 },
                 "top": {
-                  "value": "{mas.semantic.spacing.s}",
+                  "value": "{mas.semantic.spacing.xs}",
                   "type": "spacing"
                 },
                 "bottom": {
-                  "value": "{mas.semantic.spacing.s}",
+                  "value": "{mas.semantic.spacing.xs}",
                   "type": "spacing"
                 }
               }

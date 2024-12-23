@@ -1,0 +1,170 @@
+{
+  "mas": {
+    "web": {
+      "component": {
+        "avatar": {
+          "sizing": {
+            "large": {
+              "icon": {
+                "height": {
+                  "value": "{mas.semantic.sizing.2xl}",
+                  "type": "sizing"
+                },
+                "width": {
+                  "value": "{mas.semantic.sizing.2xl}",
+                  "type": "sizing"
+                }
+              }
+            },
+            "medium": {
+              "icon": {
+                "height": {
+                  "value": "{mas.semantic.sizing.xl}",
+                  "type": "sizing"
+                },
+                "width": {
+                  "value": "{mas.semantic.sizing.xl}",
+                  "type": "sizing"
+                }
+              }
+            },
+            "small": {
+              "icon": {
+                "height": {
+                  "value": "{mas.semantic.sizing.l}",
+                  "type": "sizing"
+                },
+                "width": {
+                  "value": "{mas.semantic.sizing.l}",
+                  "type": "sizing"
+                }
+              }
+            },
+            "x-small": {
+              "icon": {
+                "height": {
+                  "value": "{mas.semantic.sizing.l}",
+                  "type": "sizing"
+                },
+                "width": {
+                  "value": "{mas.semantic.sizing.l}",
+                  "type": "sizing"
+                }
+              }
+            }
+          },
+          "spacing": {
+            "large": {
+              "padding": {
+                "top": {
+                  "value": "{mas.semantic.spacing.s}",
+                  "type": "spacing"
+                },
+                "bottom": {
+                  "value": "{mas.semantic.spacing.s}",
+                  "type": "spacing"
+                },
+                "right": {
+                  "value": "{mas.semantic.spacing.s}",
+                  "type": "spacing"
+                },
+                "left": {
+                  "value": "{mas.semantic.spacing.s}",
+                  "type": "spacing"
+                }
+              }
+            },
+            "medium": {
+              "padding": {
+                "top": {
+                  "value": "{mas.semantic.spacing.xs}",
+                  "type": "spacing"
+                },
+                "bottom": {
+                  "value": "{mas.semantic.spacing.xs}",
+                  "type": "spacing"
+                },
+                "right": {
+                  "value": "{mas.semantic.spacing.xs}",
+                  "type": "spacing"
+                },
+                "left": {
+                  "value": "{mas.semantic.spacing.xs}",
+                  "type": "spacing"
+                }
+              }
+            },
+            "small": {
+              "padding": {
+                "top": {
+                  "value": "{mas.semantic.spacing.2xs}",
+                  "type": "spacing"
+                },
+                "bottom": {
+                  "value": "{mas.semantic.spacing.2xs}",
+                  "type": "spacing"
+                },
+                "right": {
+                  "value": "{mas.semantic.spacing.2xs}",
+                  "type": "spacing"
+                },
+                "left": {
+                  "value": "{mas.semantic.spacing.2xs}",
+                  "type": "spacing"
+                }
+              }
+            },
+            "x-small": {
+              "padding": {
+                "top": {
+                  "value": "{mas.semantic.spacing.3xs}",
+                  "type": "spacing"
+                },
+                "bottom": {
+                  "value": "{mas.semantic.spacing.3xs}",
+                  "type": "spacing"
+                },
+                "right": {
+                  "value": "{mas.semantic.spacing.3xs}",
+                  "type": "spacing"
+                },
+                "left": {
+                  "value": "{mas.semantic.spacing.3xs}",
+                  "type": "spacing"
+                }
+              }
+            }
+          },
+          "color": {
+            "container": {
+              "value": "{mas.semantic.color.container.brand}",
+              "type": "color"
+            },
+            "content": {
+              "value": "{mas.semantic.color.content.inverse}",
+              "type": "color"
+            }
+          },
+          "border-radius": {
+            "top-left": {
+              "value": "{mas.semantic.border-radius.full}",
+              "type": "borderRadius"
+            },
+            "top-right": {
+              "value": "{mas.semantic.border-radius.full}",
+              "type": "borderRadius"
+            },
+            "bottom-right": {
+              "value": "{mas.semantic.border-radius.full}",
+              "type": "borderRadius"
+            },
+            "bottom-left": {
+              "value": "{mas.semantic.border-radius.full}",
+              "type": "borderRadius"
+            }
+          }
+        }
+      }
+    }
+  }
+}

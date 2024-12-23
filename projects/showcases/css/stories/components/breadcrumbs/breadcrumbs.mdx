@@ -1,4 +1,4 @@
-import { Meta, Story, Preview, Props, Description } from '@storybook/blocks'; 
+import { Meta, Story, Preview, Props, Description } from '@storybook/blocks';
 
 <Meta title="Components / Navigations / Breadcrumbs" />
 
@@ -6,10 +6,16 @@ import { Meta, Story, Preview, Props, Description } from '@storybook/blocks';
 
 Breadcrumb is a type of contextual navigation that helps the user know where they are within the site and navigate within the site. It's a secondary navigation element.
 
-<nav class="mas-breadcrumbs_nav">
-<div class="mas-breadcrumb-item"><a>Accueil</a></div>
-<div class="mas-breadcrumb-item"><a>Gestion des utilisateurs</a></div>
-<div class="mas-breadcrumb-item"><a>EUDE Valerie</a></div>
+<nav class="mas-breadcrumbs_nav sb-unstyled">
+  <div class="mas-breadcrumb-item">
+    <a>Accueil</a>
+  </div>
+  <div class="mas-breadcrumb-item">
+    <a>Gestion des utilisateurs</a>
+  </div>
+  <div class="mas-breadcrumb-item">
+    <a>EUDE Valerie</a>
+  </div>
 </nav>
 
 CSS styles for `Breadcrumbs` component:
@@ -21,27 +27,43 @@ CSS styles for `Breadcrumbs` component:
 .mas-breadcrumb-item {
   /* styles here */
 }
-.mas-breadcrumb_overflow  {
+.mas-breadcrumb_overflow {
   /* styles here */
 }
-
 ```
 
 ## Collapse
 
 {/* normal example */}
-<nav class="mas-breadcrumbs_nav">
-<div class="mas-breadcrumb-item"><a>Acces and delegation</a></div>
-<div class="mas-breadcrumb-item"><a>Manage users</a></div>
-<div class="mas-breadcrumb-item"><a>User sheet</a></div>
-<div class="mas-breadcrumb-item"><a>User #1</a></div>
-<div class="mas-breadcrumb-item"><a>Edit user</a></div>
+
+<nav class="mas-breadcrumbs_nav sb-unstyled">
+  <div class="mas-breadcrumb-item">
+    <a>Acces and delegation</a>
+  </div>
+  <div class="mas-breadcrumb-item">
+    <a>Manage users</a>
+  </div>
+  <div class="mas-breadcrumb-item">
+    <a>User sheet</a>
+  </div>
+  <div class="mas-breadcrumb-item">
+    <a>User #1</a>
+  </div>
+  <div class="mas-breadcrumb-item">
+    <a>Edit user</a>
+  </div>
 </nav>
 
 {/* collapse example */}
 
-<nav class="mas-breadcrumbs_nav">
-<div class="mas-breadcrumb-item"><a>Acces and delegation</a></div>
-<div class="mas-breadcrumb_overflow"><i class="mas-dots-three-outlined mas-system-and-device--outlined mas-breadcrumb_overflow-icon"></i></div>
-<div class="mas-breadcrumb-item"><a>Edit user</a></div>
+<nav class="mas-breadcrumbs_nav sb-unstyled">
+  <div class="mas-breadcrumb-item">
+    <a class="sb-unstyled">Acces and delegation</a>
+  </div>
+  <div class="mas-breadcrumb_overflow">
+    <i class="mas-dots-three-outlined mas-system-and-device--outlined mas-breadcrumb_overflow-icon"></i>
+  </div>
+  <div class="mas-breadcrumb-item">
+    <a class="sb-unstyled">Edit user</a>
+  </div>
 </nav>

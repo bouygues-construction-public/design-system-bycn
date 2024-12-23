@@ -97,6 +97,24 @@
               "type": "color"
             }
           }
+        },
+        "status": {
+          "error": {
+            "value": "{mas.core.color.red.600}",
+            "type": "color"
+          },
+          "info": {
+            "value": "{mas.core.color.blue.500}",
+            "type": "color"
+          },
+          "warning": {
+            "value": "{mas.core.color.orange.500}",
+            "type": "color"
+          },
+          "success": {
+            "value": "{mas.core.color.green.500}",
+            "type": "color"
+          }
         }
       },
       "spacing": {
@@ -176,7 +194,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.650}",
-              "lineHeight": "{mas.core.line height.100}",
+              "lineHeight": "{mas.core.line-height.100}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -187,7 +205,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.600}",
-              "lineHeight": "{mas.core.line height.100}",
+              "lineHeight": "{mas.core.line-height.100}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -198,7 +216,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.500}",
-              "lineHeight": "{mas.core.line height.100}",
+              "lineHeight": "{mas.core.line-height.100}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -209,7 +227,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.450}",
-              "lineHeight": "{mas.core.line height.125}",
+              "lineHeight": "{mas.core.line-height.130}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -220,7 +238,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.400}",
-              "lineHeight": "{mas.core.line height.125}",
+              "lineHeight": "{mas.core.line-height.133}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -231,7 +249,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.300}",
-              "lineHeight": "{mas.core.line height.125}",
+              "lineHeight": "{mas.core.line-height.140}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -244,7 +262,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.700}",
-              "lineHeight": "{mas.core.line height.100}",
+              "lineHeight": "{mas.core.line-height.100}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -255,7 +273,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.650}",
-              "lineHeight": "{mas.core.line height.100}",
+              "lineHeight": "{mas.core.line-height.100}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -266,7 +284,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.600}",
-              "lineHeight": "{mas.core.line height.100}",
+              "lineHeight": "{mas.core.line-height.100}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -277,7 +295,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.500}",
-              "lineHeight": "{mas.core.line height.125}",
+              "lineHeight": "{mas.core.line-height.125}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -288,7 +306,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.450}",
-              "lineHeight": "{mas.core.line height.125}",
+              "lineHeight": "{mas.core.line-height.130}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -299,7 +317,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.400}",
-              "lineHeight": "{mas.core.line height.125}",
+              "lineHeight": "{mas.core.line-height.133}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -312,7 +330,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.850}",
-              "lineHeight": "{mas.core.line height.100}",
+              "lineHeight": "{mas.core.line-height.100}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -323,7 +341,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.750}",
-              "lineHeight": "{mas.core.line height.100}",
+              "lineHeight": "{mas.core.line-height.100}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -334,7 +352,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.650}",
-              "lineHeight": "{mas.core.line height.100}",
+              "lineHeight": "{mas.core.line-height.100}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -345,7 +363,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.600}",
-              "lineHeight": "{mas.core.line height.125}",
+              "lineHeight": "{mas.core.line-height.120}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -356,7 +374,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.500}",
-              "lineHeight": "{mas.core.line height.125}",
+              "lineHeight": "{mas.core.line-height.125}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -367,7 +385,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.400}",
-              "lineHeight": "{mas.core.line height.125}",
+              "lineHeight": "{mas.core.line-height.133}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -380,7 +398,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.300}",
-              "lineHeight": "{mas.core.line height.125}",
+              "lineHeight": "{mas.core.line-height.140}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -391,7 +409,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.250}",
-              "lineHeight": "{mas.core.line height.125}",
+              "lineHeight": "{mas.core.line-height.133}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -402,7 +420,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.200}",
-              "lineHeight": "{mas.core.line height.125}",
+              "lineHeight": "{mas.core.line-height.150}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -413,7 +431,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.400}",
               "fontSize": "{mas.core.font-size.250}",
-              "lineHeight": "{mas.core.line height.150}",
+              "lineHeight": "{mas.core.line-height.133}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -424,7 +442,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.400}",
               "fontSize": "{mas.core.font-size.200}",
-              "lineHeight": "{mas.core.line height.150}",
+              "lineHeight": "{mas.core.line-height.150}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -435,7 +453,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.400}",
               "fontSize": "{mas.core.font-size.150}",
-              "lineHeight": "{mas.core.line height.150}",
+              "lineHeight": "{mas.core.line-height.140}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -446,7 +464,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.400}",
               "fontSize": "{mas.core.font-size.100}",
-              "lineHeight": "{mas.core.line height.150}",
+              "lineHeight": "{mas.core.line-height.133}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -457,7 +475,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.250}",
-              "lineHeight": "{mas.core.line height.150}",
+              "lineHeight": "{mas.core.line-height.133}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -468,7 +486,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.200}",
-              "lineHeight": "{mas.core.line height.150}",
+              "lineHeight": "{mas.core.line-height.150}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -479,7 +497,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.150}",
-              "lineHeight": "{mas.core.line height.150}",
+              "lineHeight": "{mas.core.line-height.140}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -490,7 +508,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.600}",
               "fontSize": "{mas.core.font-size.100}",
-              "lineHeight": "{mas.core.line height.150}",
+              "lineHeight": "{mas.core.line-height.133}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -501,7 +519,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.500}",
               "fontSize": "{mas.core.font-size.100}",
-              "lineHeight": "{mas.core.line height.150}",
+              "lineHeight": "{mas.core.line-height.133}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -512,7 +530,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.400}",
               "fontSize": "{mas.core.font-size.100}",
-              "lineHeight": "{mas.core.line height.150}",
+              "lineHeight": "{mas.core.line-height.133}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textDecoration": "{mas.core.text-decoration.none}"
             },
@@ -523,7 +541,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.500}",
               "fontSize": "{mas.core.font-size.025}",
-              "lineHeight": "{mas.core.line height.150}",
+              "lineHeight": "{mas.core.line-height.120}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textCase": "{mas.core.text-case.uppercase}",
               "textDecoration": "{mas.core.text-decoration.none}"
@@ -535,7 +553,7 @@
               "fontFamily": "{mas.core.font-family.barlow}",
               "fontWeight": "{mas.core.font-weight.500}",
               "fontSize": "{mas.core.font-size.025}",
-              "lineHeight": "{mas.core.line height.150}",
+              "lineHeight": "{mas.core.line-height.120}",
               "letterSpacing": "{mas.core.letter-spacing.100}",
               "textCase": "{mas.core.text-case.none}",
               "textDecoration": "{mas.core.text-decoration.none}"
@@ -678,6 +696,16 @@
         "m": {
           "value": "{mas.core.opacity.500}",
           "type": "opacity"
+        }
+      },
+      "box-shadow": {
+        "m": {
+          "value": "{mas.core.box-shadow.300}",
+          "type": "boxShadow"
+        },
+        "l": {
+          "value": "{mas.core.box-shadow.400}",
+          "type": "boxShadow"
         }
       }
     }

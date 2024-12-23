@@ -43,13 +43,13 @@ const meta: Meta<MasAvatar> = {
     `,
   }),
   argTypes: {
-    UrlImg: {
+    urlImg: {
       type: { name: 'string', required: false },
       description: 'The image of the Avatar',
       defaultValue: Img,
       control: 'text',
     },
-    Initial: {
+    initial: {
       type: { name: 'string', required: false },
       description: 'The lettre intial of the Avatar',
       defaultValue: 'A',
@@ -59,20 +59,20 @@ const meta: Meta<MasAvatar> = {
     type: {
       type: { name: 'string', required: false },
       description: 'The variant of the avatar',
-      defaultValue: 'Icon',
+      defaultValue: 'icon',
       control: 'select',
-      options: ['Image', 'Icon', 'Initial'],
+      options: ['image', 'icon', 'initial'],
     },
     size: {
       type: { name: 'string', required: false },
       description: 'The size of the avatar',
-      defaultValue: 'M',
+      defaultValue: 'medium',
       control: 'radio',
-      options: ['XS', 'S', 'M', 'L'],
+      options: ['x-small', 'small', 'medium', 'large'],
     },
     icon: {
       type: { name: 'string', required: false },
-      description: 'The name of the icon .',
+      description: 'The name of the icon.',
       defaultValue: 'mas-user-outlined mas-people--outlined mas-icon',
       control: 'select',
       options: ['', ...icons],
@@ -87,11 +87,11 @@ type Story = StoryObj<MasAvatar>;
 
 export const Default: Story = {
   args: {
-    type: 'Icon',
-    size: 'M',
+    type: 'icon',
+    size: 'medium',
     icon: 'mas-user-outlined mas-people--outlined mas-icon',
-    UrlImg: Img,
-    Initial: 'A',
+    urlImg: Img,
+    initial: 'A',
   },
 };
 

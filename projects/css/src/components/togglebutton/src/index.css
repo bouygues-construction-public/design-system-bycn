@@ -44,7 +44,7 @@
   inline-size: var(--mas-web-component-toggle-sizing-small-handle-width);
   inset-inline-start: 2px;
   inset-block-start: 2px;
-  background-color: var(--mas-web-component-toggle-color-handle-unselected-default);
+  background-color: var(--mas-web-component-toggle-color-handle-unselected);
   transition: var(--vtmn-transition_focus-visible), transform 0.1s ease-out, background-color 0.1s ease-out;
   border-radius: var(--mas-web-component-toggle-border-radius-top-left) var(--mas-web-component-toggle-border-radius-top-right) var(--mas-web-component-toggle-border-radius-bottom-right) var(--mas-web-component-toggle-border-radius-bottom-left);
 }
@@ -55,7 +55,7 @@
 
 .mas-toggle-button_switch .hidden-accessible[type='checkbox']:checked + span::before {
   transform: translateX(16px);
-  background-color: var(--mas-web-component-toggle-color-handle-selected-default);
+  background-color: var(--mas-web-component-toggle-color-handle-selected);
 }
 
 .mas-toggle-button_switch .hidden-accessible:not(:disabled):hover + span::before {
@@ -98,7 +98,7 @@
 }
 .mas-toggle-button--large > .mas-toggle-button_switch .hidden-accessible[type='checkbox']:checked + span::before {
   transform: translateX(24px);
-  background-color: var(--mas-web-component-toggle-color-handle-selected-default);
+  background-color: var(--mas-web-component-toggle-color-handle-selected);
 }
 .mas-toggle-button--large > .mas-toggle-button_switch .hidden-accessible:not(:disabled):hover + span::before {
   box-shadow: 0 0 0 6px

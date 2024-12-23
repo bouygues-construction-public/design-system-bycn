@@ -93,19 +93,19 @@
           },
           "sizing": {
             "large": {
-              "start-icon": {
+              "icon": {
                 "value": "{mas.semantic.sizing.2xl}",
                 "type": "sizing"
               }
             },
             "medium": {
-              "start-icon": {
+              "icon": {
                 "value": "{mas.semantic.sizing.xl}",
                 "type": "sizing"
               }
             },
             "small": {
-              "start-icon": {
+              "icon": {
                 "value": "{mas.semantic.sizing.l}",
                 "type": "sizing"
               }
@@ -115,19 +115,19 @@
             "large": {
               "padding": {
                 "left": {
-                  "value": "{mas.core.spacing.200}",
+                  "value": "{mas.semantic.spacing.xl}",
                   "type": "spacing"
                 },
                 "right": {
-                  "value": "{mas.core.spacing.200}",
+                  "value": "{mas.semantic.spacing.xl}",
                   "type": "spacing"
                 },
                 "top": {
-                  "value": "{mas.core.spacing.200}",
+                  "value": "{mas.semantic.spacing.xl}",
                   "type": "spacing"
                 },
                 "bottom": {
-                  "value": "{mas.core.spacing.200}",
+                  "value": "{mas.semantic.spacing.xl}",
                   "type": "spacing"
                 }
               }
@@ -135,19 +135,19 @@
             "medium": {
               "padding": {
                 "left": {
-                  "value": "{mas.core.spacing.150}",
+                  "value": "{mas.semantic.spacing.m}",
                   "type": "spacing"
                 },
                 "right": {
-                  "value": "{mas.core.spacing.150}",
+                  "value": "{mas.semantic.spacing.m}",
                   "type": "spacing"
                 },
                 "top": {
-                  "value": "{mas.core.spacing.150}",
+                  "value": "{mas.semantic.spacing.m}",
                   "type": "spacing"
                 },
                 "bottom": {
-                  "value": "{mas.core.spacing.150}",
+                  "value": "{mas.semantic.spacing.m}",
                   "type": "spacing"
                 }
               }
@@ -155,19 +155,19 @@
             "small": {
               "padding": {
                 "left": {
-                  "value": "{mas.core.spacing.100}",
+                  "value": "{mas.semantic.spacing.s}",
                   "type": "spacing"
                 },
                 "right": {
-                  "value": "{mas.core.spacing.100}",
+                  "value": "{mas.semantic.spacing.s}",
                   "type": "spacing"
                 },
                 "top": {
-                  "value": "{mas.core.spacing.100}",
+                  "value": "{mas.semantic.spacing.s}",
                   "type": "spacing"
                 },
                 "bottom": {
-                  "value": "{mas.core.spacing.100}",
+                  "value": "{mas.semantic.spacing.s}",
                   "type": "spacing"
                 }
               }

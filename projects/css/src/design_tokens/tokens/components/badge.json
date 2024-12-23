@@ -1,0 +1,88 @@
+{
+  "mas": {
+    "web": {
+      "component": {
+        "badge": {
+          "color": {
+            "container": {
+              "value": "{mas.semantic.color.status.error}",
+              "type": "color"
+            },
+            "content": {
+              "value": "{mas.semantic.color.content.inverse}",
+              "type": "color"
+            }
+          },
+          "border-radius": {
+            "container": {
+              "top-left": {
+                "value": "{mas.semantic.border-radius.full}",
+                "type": "borderRadius"
+              },
+              "top-right": {
+                "value": "{mas.semantic.border-radius.full}",
+                "type": "borderRadius"
+              },
+              "bottom-right": {
+                "value": "{mas.semantic.border-radius.full}",
+                "type": "borderRadius"
+              },
+              "bottom-left": {
+                "value": "{mas.semantic.border-radius.full}",
+                "type": "borderRadius"
+              }
+            }
+          },
+          "typography": {
+            "default": {
+              "label": {
+                "value": "{mas.semantic.typography.all-screen.caption-semi-bold}",
+                "type": "typography"
+              }
+            }
+          },
+          "sizing": {
+            "small": {
+              "height": {
+                "value": "{mas.semantic.sizing.s}",
+                "type": "sizing"
+              },
+              "width": {
+                "value": "{mas.semantic.sizing.s}",
+                "type": "sizing"
+              }
+            },
+            "large": {
+              "height": {
+                "value": "{mas.semantic.sizing.l}",
+                "type": "sizing"
+              }
+            }
+          },
+          "spacing": {
+            "padding": {
+              "large": {
+                "left": {
+                  "value": "{mas.semantic.spacing.xs}",
+                  "type": "spacing"
+                },
+                "right": {
+                  "value": "{mas.semantic.spacing.xs}",
+                  "type": "spacing"
+                },
+                "top": {
+                  "value": "{mas.semantic.spacing.5xs}",
+                  "type": "spacing"
+                },
+                "bottom": {
+                  "value": "{mas.semantic.spacing.5xs}",
+                  "type": "spacing"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

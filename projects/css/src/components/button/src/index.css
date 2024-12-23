@@ -9,7 +9,6 @@ mas-button {
     var(--mas-web-component-button-spacing-medium-padding-right)
     var(--mas-web-component-button-spacing-medium-padding-bottom)
     var(--mas-web-component-button-spacing-medium-padding-left);
-  border-radius: var(--mas-web-component-button-border-radius);
   font: var(--mas-web-component-button-typography-medium);
   justify-content: center;
   align-items: center;

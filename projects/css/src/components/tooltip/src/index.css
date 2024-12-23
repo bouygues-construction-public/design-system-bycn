@@ -7,12 +7,18 @@
   width: max-content;
   max-width: 200px;
   opacity: 0;
-  background: var(--mas-web-component-tooltip-color-container-default);
-  padding: var(--mas-web-component-tooltip-spacing-padding-container-top) var(--mas-web-component-tooltip-spacing-padding-container-right) var(--mas-web-component-tooltip-spacing-padding-container-bottom) var(--mas-web-component-tooltip-spacing-padding-container-left);
+  background: var(--mas-web-component-tooltip-color-container);
+  padding: var(--mas-web-component-tooltip-spacing-padding-container-top)
+    var(--mas-web-component-tooltip-spacing-padding-container-right)
+    var(--mas-web-component-tooltip-spacing-padding-container-bottom)
+    var(--mas-web-component-tooltip-spacing-padding-container-left);
   gap: 8px;
   box-shadow: 0px 3px 3px 0px rgba(115, 115, 115, 0.25);
-  border-radius: var(--mas-web-component-tag-border-radius-container-top-left) var(--mas-web-component-tag-border-radius-container-top-right) var(--mas-web-component-tag-border-radius-container-bottom-right) var(--mas-web-component-tag-border-radius-container-bottom-left);
-  color: var(--mas-web-component-tooltip-color-label-default);
+  border-radius: var(--mas-web-component-tooltip-border-radius-container-top-left)
+    var(--mas-web-component-tooltip-border-radius-container-top-right)
+    var(--mas-web-component-tooltip-border-radius-container-bottom-right)
+    var(--mas-web-component-tooltip-border-radius-container-bottom-left);
+  color: var(--mas-web-component-tooltip-color-content);
   font-feature-settings: 'calt' off;
   font: var(--mas-web-component-tooltip-typography-label);
   .mas-tooltip_arrow {
@@ -70,7 +76,7 @@
       transform: translateY(-50%);
       right: -4px;
       border-width: 4px 0 4px 4px;
-      border-left-color: var(--mas-web-component-tooltip-color-container-default);
+      border-left-color: var(--mas-web-component-tooltip-color-container);
       color: transparent;
     }
   }
@@ -88,7 +94,7 @@
     .mas-tooltip_arrow {
       left: -4px;
       border-width: 4px 4px 4px 0;
-      border-right-color: var(--mas-web-component-tooltip-color-container-default);;
+      border-right-color: var(--mas-web-component-tooltip-color-container);
       color: transparent;
       top: 50%;
       transform: translateY(-50%);
@@ -102,7 +108,7 @@
     .mas-tooltip_arrow {
       bottom: -4px;
       border-width: 4px 4px 0;
-      border-top-color: var(--mas-web-component-tooltip-color-container-default);;
+      border-top-color: var(--mas-web-component-tooltip-color-container);
       color: transparent;
       left: 50%;
       transform: translate(-50%, 0px);
@@ -117,7 +123,7 @@
     .mas-tooltip_arrow {
       bottom: -4px;
       border-width: 4px 4px 0;
-      border-top-color: var(--mas-web-component-tooltip-color-container-default);;
+      border-top-color: var(--mas-web-component-tooltip-color-container);
       color: transparent;
       left: 15px;
     }
@@ -130,7 +136,7 @@
     .mas-tooltip_arrow {
       bottom: -4px;
       border-width: 4px 4px 0;
-      border-top-color: var(--mas-web-component-tooltip-color-container-default);;
+      border-top-color: var(--mas-web-component-tooltip-color-container);
       color: transparent;
       right: 15px;
     }
@@ -145,7 +151,7 @@
       left: 50%;
       transform: translateX(-50%);
       border-width: 0 4px 4px;
-      border-bottom-color: var(--mas-web-component-tooltip-color-container-default);;
+      border-bottom-color: var(--mas-web-component-tooltip-color-container);
       color: transparent;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }
@@ -159,7 +165,7 @@
       top: -4px;
       left: 15px;
       border-width: 0 4px 4px;
-      border-bottom-color: var(--mas-web-component-tooltip-color-container-default);;
+      border-bottom-color: var(--mas-web-component-tooltip-color-container);
       color: transparent;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }
@@ -173,7 +179,7 @@
       top: -4px;
       right: 15px;
       border-width: 0 4px 4px;
-      border-bottom-color: var(--mas-web-component-tooltip-color-container-default);;
+      border-bottom-color: var(--mas-web-component-tooltip-color-container);
       color: transparent;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }

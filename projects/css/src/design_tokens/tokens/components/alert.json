@@ -1,0 +1,156 @@
+{
+  "mas": {
+    "web": {
+      "component": {
+        "alert": {
+          "spacing": {
+            "padding": {
+              "icon-area": {
+                "left": {
+                  "value": "{mas.semantic.spacing.m}",
+                  "type": "spacing"
+                },
+                "right": {
+                  "value": "{mas.semantic.spacing.m}",
+                  "type": "spacing"
+                }
+              },
+              "container-area": {
+                "left": {
+                  "value": "{mas.semantic.spacing.m}",
+                  "type": "spacing"
+                },
+                "right": {
+                  "value": "{mas.semantic.spacing.m}",
+                  "type": "spacing"
+                },
+                "top": {
+                  "value": "{mas.semantic.spacing.s}",
+                  "type": "spacing"
+                },
+                "bottom": {
+                  "value": "{mas.semantic.spacing.s}",
+                  "type": "spacing"
+                }
+              },
+              "content-area": {
+                "left": {
+                  "value": "{mas.semantic.spacing.5xs}",
+                  "type": "spacing"
+                },
+                "right": {
+                  "value": "{mas.semantic.spacing.5xs}",
+                  "type": "spacing"
+                },
+                "top": {
+                  "value": "{mas.semantic.spacing.5xs}",
+                  "type": "spacing"
+                },
+                "bottom": {
+                  "value": "{mas.semantic.spacing.s}",
+                  "type": "spacing"
+                }
+              },
+              "title-area": {
+                "left": {
+                  "value": "{mas.semantic.spacing.5xs}",
+                  "type": "spacing"
+                },
+                "right": {
+                  "value": "{mas.semantic.spacing.5xs}",
+                  "type": "spacing"
+                },
+                "top": {
+                  "value": "{mas.semantic.spacing.s}",
+                  "type": "spacing"
+                },
+                "bottom": {
+                  "value": "{mas.semantic.spacing.s}",
+                  "type": "spacing"
+                }
+              }
+            },
+            "gap": {
+              "container-area": {
+                "default": {
+                  "value": "{mas.semantic.spacing.3xs}",
+                  "type": "spacing"
+                }
+              },
+              "title-area": {
+                "default": {
+                  "value": "{mas.semantic.spacing.s}",
+                  "type": "spacing"
+                }
+              }
+            }
+          },
+          "color": {
+            "container-area": {
+              "value": "{mas.semantic.color.container.contrasted}",
+              "type": "color"
+            },
+            "content": {
+              "value": "{mas.semantic.color.content.inverse}",
+              "type": "color"
+            },
+            "icon-area": {
+              "warning": {
+                "value": "{mas.semantic.color.status.warning}",
+                "type": "color"
+              },
+              "error": {
+                "value": "{mas.semantic.color.status.error}",
+                "type": "color"
+              },
+              "success": {
+                "value": "{mas.semantic.color.status.success}",
+                "type": "color"
+              },
+              "info": {
+                "value": "{mas.semantic.color.status.info}",
+                "type": "color"
+              }
+            }
+          },
+          "border-radius": {
+            "container": {
+              "top-left": {
+                "value": "{mas.semantic.border-radius.2xs}",
+                "type": "borderRadius"
+              },
+              "top-right": {
+                "value": "{mas.semantic.border-radius.2xs}",
+                "type": "borderRadius"
+              },
+              "bottom-right": {
+                "value": "{mas.semantic.border-radius.2xs}",
+                "type": "borderRadius"
+              },
+              "bottom-left": {
+                "value": "{mas.semantic.border-radius.2xs}",
+                "type": "borderRadius"
+              }
+            }
+          },
+          "typography": {
+            "title": {
+              "value": "{mas.semantic.typography.all-screen.body3-bold}",
+              "type": "typography"
+            },
+            "content": {
+              "value": "{mas.semantic.typography.all-screen.body3}",
+              "type": "typography"
+            }
+          },
+          "shadow": {
+            "default": {
+              "value": "{mas.semantic.box-shadow.m}",
+              "type": "boxShadow"
+            }
+          }
+        }
+      }
+    }
+  }
+}

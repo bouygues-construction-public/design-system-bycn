@@ -30,8 +30,8 @@ const meta: Meta<MasBadge> = {
     size: {
       type: { name: 'string', required: false },
       control: 'radio',
-      options: ['S', 'M', 'L'],
-      description: "The size of the badge with icon. Availabel options: 'S', 'M', 'L'. Default: 'M'",
+      options: ['small', 'medium', 'large'],
+      description: "The size of the badge with icon. Availabel options: 'small', 'medium', 'large'. Default: 'medium'",
     },
     color: {
       type: { name: 'string', required: false },
@@ -47,7 +47,7 @@ type Story = StoryObj<MasBadge>;
 // More on writing stories with args: https://storybook.js.org/docs/angular/writing-stories/args
 export const Overview: Story = {
   args: {
-    size: 'M',
+    size: 'small',
     number: 1,
     type: 'number',
     color: 'primary',

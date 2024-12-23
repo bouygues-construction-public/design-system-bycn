@@ -5,10 +5,8 @@
         "breadcrumbs": {
           "color": {
             "content": {
-              "default": {
-                "value": "{mas.semantic.color.content.emphasys}",
-                "type": "color"
-              }
+              "value": "{mas.semantic.color.content.emphasys}",
+              "type": "color"
             }
           },
           "spacing": {
@@ -29,6 +27,10 @@
                 "value": "{mas.semantic.spacing.5xs}",
                 "type": "spacing"
               }
+            },
+            "gap": {
+              "value": "{mas.semantic.spacing.s}",
+              "type": "spacing"
             }
           },
           "typography": {
@@ -39,7 +41,11 @@
           },
           "sizing": {
             "icon": {
-              "default": {
+              "width": {
+                "value": "{mas.semantic.sizing.l}",
+                "type": "sizing"
+              },
+              "height": {
                 "value": "{mas.semantic.sizing.l}",
                 "type": "sizing"
               }

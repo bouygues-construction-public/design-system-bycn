@@ -1,1 +1,26 @@
-{}
+{
+  "mas": {
+    "core": {
+      "box-shadow": {
+        "300": {
+          "value": {
+            "offsetX": "0px",
+            "offsetY": "3px",
+            "blur": "3px",
+            "color": "#858D96"
+          },
+          "type": "shadow"
+        },
+        "400": {
+          "value": {
+            "offsetX": "0px",
+            "offsetY": "4px",
+            "blur": "4px",
+            "color": "#858D96"
+          },
+          "type": "shadow"
+        }
+      }
+    }
+  }
+}

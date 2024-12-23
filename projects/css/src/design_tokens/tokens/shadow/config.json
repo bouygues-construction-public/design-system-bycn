@@ -1,16 +1,19 @@
 {
-    "source": ["tokens/shadow/*.json"],
-    "platforms": {
-      "css": {
-        "transformGroup": "css",
-        "buildPath": "src/",
-        "files": [
-          {
-            "destination": "_shadow.css",
-            "format": "css/variables"
+  "source": ["tokens/shadow/*.json"],
+  "platforms": {
+    "css": {
+      "transformGroup": "css",
+      "buildPath": "src/",
+      "files": [
+        {
+          "destination": "_shadow.css",
+          "format": "css/variables",
+          "options": {
+            "outputReferences": false
           }
-        ]
-      }
+        }
+      ],
+      "transforms": ["shadow/css/shorthand", "size/px"]
     }
   }
-  
+}

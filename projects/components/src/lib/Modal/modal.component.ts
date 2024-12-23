@@ -1,27 +1,33 @@
-import { Component, Input, Output, EventEmitter, ViewChild, ElementRef, HostListener, Renderer2} from '@angular/core';
+import { Component, Input, Output, EventEmitter, ViewChild, ElementRef, HostListener, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'mas-modal',
   templateUrl: './modal.component.html',
+  host: {
+    class: 'mas-modal',
+    ['class.mas-modal_size--small']: 'size === small',
+    ['class.mas-modal_size--medium']: 'size === medium',
+    ['class.mas-modal_size--large']: 'size === large',
+  },
 })
-export class MasModal{
-  
+export class MasModal {
   @ViewChild('firstFocusable') firstFocusable!: ElementRef;
   @ViewChild('lastFocusable') lastFocusable!: ElementRef;
   @ViewChild('modalContainer') modalContainer!: ElementRef;
   @Input() showModal: boolean = false;
   @Input() title: string = '';
   @Input() content: string = '';
-  @Input() buttonLabelprimary: string = '';
-  @Input() buttonLabelsecondary: string = '';
+  @Input() confirmButtonLabel: string = '';
+  @Input() cancelButtonLabel: string = '';
   @Input() buttonOptions: string = 'Show_Buttons';
-  @Input() size: string = '';
-  @Output() cancel: EventEmitter<void> = new EventEmitter<void>();
-  @Output() confirm: EventEmitter<void> = new EventEmitter<void>();
+  @Input() size: 'small' | 'medium' | 'large' = 'medium';
+  @Input() showConfirmButton: boolean = true;
+  @Input() showCancelButton: boolean = true;
+  @Output() onConfirmClick: EventEmitter<void> = new EventEmitter<void>();
+  @Output() onCancelClick: EventEmitter<void> = new EventEmitter<void>();
   @Output() showModalChange: EventEmitter<boolean> = new EventEmitter<boolean>();
 
-
-  constructor(private renderer: Renderer2) { }
+  constructor(private renderer: Renderer2) {}
 
   ngAfterViewInit() {
     if (this.showModal) {
@@ -38,18 +44,18 @@ export class MasModal{
 
   closeModal(): void {
     this.showModal = false;
-    this.cancel.emit();
+    this.onCancelClick.emit();
     this.showModalChange.emit(this.showModal);
   }
 
   confirmAction(): void {
     this.showModal = false;
-    this.confirm.emit();
+    this.onConfirmClick.emit();
   }
 
   cancelAction(): void {
     this.showModal = false;
-    this.cancel.emit();
+    this.onCancelClick.emit();
   }
 
   handleKeydown(event: KeyboardEvent, action: string): void {
@@ -84,9 +90,8 @@ export class MasModal{
 
   private getFocusableElements(): HTMLElement[] {
     const modal = document.querySelector('.modal');
-    return Array.from(modal?.querySelectorAll('button, input, select, textarea, [tabindex]:not([tabindex="-1"])') || []);
+    return Array.from(
+      modal?.querySelectorAll('button, input, select, textarea, [tabindex]:not([tabindex="-1"])') || []
+    );
   }
-
 }
-
-

@@ -2,16 +2,17 @@
 .mas-breadcrumbs_nav {
   display: flex;
   align-items: center;
-  --mas-icon_size: var(--mas-web-component-breadcrumbs-sizing-icon-default);
+  --mas-icon_size: var(--mas-web-component-breadcrumbs-sizing-icon-width);
 }
 
 .mas-breadcrumb-item {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: var(--mas-web-component-breadcrumbs-color-content-default);
-  font: var(--mas-web-component-beadcrumbs-typography-label);
+  color: var(--mas-web-component-breadcrumbs-color-content);
+  font: var(--mas-web-component-breadcrumbs-typography-label);
   a {
+    font: inherit;
     text-decoration: none;
     color: inherit;
   }
@@ -19,27 +20,27 @@
 
 .mas-breadcrumb-item::after {
   font-family: arrows--outlined;
-  color: var(--mas-web-component-breadcrumbs-color-content-default);
+  color: var(--mas-web-component-breadcrumbs-color-content);
   content: '\e54f';
   font-size: 16px;
-  margin-inline: 8px;
+  margin-inline: var(--mas-web-component-breadcrumbs-spacing-gap);
 }
 .mas-breadcrumb-item:last-child::after {
   content: '';
 }
 .mas-breadcrumb_overflow {
   display: flex;
-  color: var(--mas-web-component-breadcrumbs-color-content-default);
+  color: var(--mas-web-component-breadcrumbs-color-content);
   user-select: none;
-  font: var(--mas-web-component-beadcrumbs-typography-label)
+  font: var(--mas-web-component-breadcrumbs-typography-label)
 }
 .mas-breadcrumb_overflow::after {
   font-family: arrows--outlined;
-  color: var(--mas-web-component-breadcrumbs-color-content-default);
+  color: var(--mas-web-component-breadcrumbs-color-content);
   content: '\e54f';
   font-size: 16px;
   line-height: 20px;
-  margin-inline: 8px;
+  margin-inline: var(--mas-web-component-breadcrumbs-spacing-gap);
 }
 .mas-breadcrumb_overflow-icon {
   display: flex;

@@ -1,0 +1,272 @@
+{
+  "mas": {
+    "web": {
+      "component": {
+        "modal": {
+          "spacing": {
+            "large": {
+              "padding": {
+                "container": {
+                  "left": {
+                    "value": "{mas.semantic.spacing.3xl}",
+                    "type": "spacing"
+                  },
+                  "right": {
+                    "value": "{mas.semantic.spacing.3xl}",
+                    "type": "spacing"
+                  },
+                  "top": {
+                    "value": "{mas.semantic.spacing.3xl}",
+                    "type": "spacing"
+                  },
+                  "bottom": {
+                    "value": "{mas.semantic.spacing.3xl}",
+                    "type": "spacing"
+                  }
+                },
+                "title-area": {
+                  "left": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  },
+                  "right": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  },
+                  "top": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  },
+                  "bottom": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  }
+                },
+                "button-area": {
+                  "left": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  },
+                  "right": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  },
+                  "top": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  },
+                  "bottom": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  }
+                }
+              },
+              "gap": {
+                "container": {
+                  "value": "{mas.semantic.spacing.l}",
+                  "type": "spacing"
+                },
+                "title-area": {
+                  "value": "{mas.semantic.spacing.l}",
+                  "type": "spacing"
+                },
+                "button-area": {
+                  "value": "{mas.semantic.spacing.m}",
+                  "type": "spacing"
+                }
+              }
+            },
+            "medium": {
+              "padding": {
+                "container": {
+                  "left": {
+                    "value": "{mas.semantic.spacing.3xl}",
+                    "type": "spacing"
+                  },
+                  "right": {
+                    "value": "{mas.semantic.spacing.3xl}",
+                    "type": "spacing"
+                  },
+                  "top": {
+                    "value": "{mas.semantic.spacing.3xl}",
+                    "type": "spacing"
+                  },
+                  "bottom": {
+                    "value": "{mas.semantic.spacing.3xl}",
+                    "type": "spacing"
+                  }
+                },
+                "title-area": {
+                  "left": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  },
+                  "right": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  },
+                  "top": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  },
+                  "bottom": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  }
+                },
+                "button-area": {
+                  "left": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  },
+                  "right": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  },
+                  "top": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  },
+                  "bottom": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  }
+                }
+              },
+              "gap": {
+                "container": {
+                  "value": "{mas.semantic.spacing.l}",
+                  "type": "spacing"
+                },
+                "title-area": {
+                  "value": "{mas.semantic.spacing.l}",
+                  "type": "spacing"
+                },
+                "button-area": {
+                  "value": "{mas.semantic.spacing.m}",
+                  "type": "spacing"
+                }
+              }
+            },
+            "small": {
+              "padding": {
+                "container": {
+                  "left": {
+                    "value": "{mas.semantic.spacing.2xl}",
+                    "type": "spacing"
+                  },
+                  "right": {
+                    "value": "{mas.semantic.spacing.2xl}",
+                    "type": "spacing"
+                  },
+                  "top": {
+                    "value": "{mas.semantic.spacing.2xl}",
+                    "type": "spacing"
+                  },
+                  "bottom": {
+                    "value": "{mas.semantic.spacing.2xl}",
+                    "type": "spacing"
+                  }
+                },
+                "title-area": {
+                  "left": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  },
+                  "right": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  },
+                  "top": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  },
+                  "bottom": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  }
+                },
+                "button-area": {
+                  "left": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  },
+                  "right": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  },
+                  "top": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  },
+                  "bottom": {
+                    "value": "{mas.semantic.spacing.5xs}",
+                    "type": "spacing"
+                  }
+                }
+              },
+              "gap": {
+                "container": {
+                  "value": "{mas.semantic.spacing.l}",
+                  "type": "spacing"
+                },
+                "title-area": {
+                  "value": "{mas.semantic.spacing.l}",
+                  "type": "spacing"
+                },
+                "button-area": {
+                  "value": "{mas.semantic.spacing.m}",
+                  "type": "spacing"
+                }
+              }
+            }
+          },
+          "color": {
+            "container": {
+              "value": "{mas.semantic.color.container.main}",
+              "type": "color"
+            },
+            "content": {
+              "value": "{mas.semantic.color.content.main}",
+              "type": "color"
+            }
+          },
+          "border-radius": {
+            "container": {
+              "top-left": {
+                "value": "{mas.semantic.border-radius.m}",
+                "type": "borderRadius"
+              },
+              "top-right": {
+                "value": "{mas.semantic.border-radius.m}",
+                "type": "borderRadius"
+              },
+              "bottom-right": {
+                "value": "{mas.semantic.border-radius.m}",
+                "type": "borderRadius"
+              },
+              "bottom-left": {
+                "value": "{mas.semantic.border-radius.m}",
+                "type": "borderRadius"
+              }
+            }
+          },
+          "typography": {
+            "default": {
+              "heading": {
+                "value": "{mas.semantic.typography.desktop.headline3}",
+                "type": "typography"
+              }
+            }
+          },
+          "shadow": {
+            "default": {
+              "value": "{mas.semantic.box-shadow.l}",
+              "type": "boxShadow"
+            }
+          }
+        }
+      }
+    }
+  }
+}

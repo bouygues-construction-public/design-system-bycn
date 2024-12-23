@@ -105,7 +105,7 @@ a.mas-icon-button {
   font-size: 13px;
   --mas-icon_size:13px;
   font-weight: 600;
-  line-height: var(--mas-web-component-icon-button-sizing-small-start-icon);
+  line-height: var(--mas-web-component-icon-button-sizing-small-icon);
   padding: var(--mas-web-component-icon-button-spacing-small-padding-top) var(--mas-web-component-icon-button-spacing-small-padding-right) var(--mas-web-component-icon-button-spacing-small-padding-bottom) var(--mas-web-component-icon-button-spacing-small-padding-left);
   height: 32px;
   width: 32px;
@@ -114,7 +114,7 @@ a.mas-icon-button {
   font-size: 16.25px;
   --mas-icon_size:16.25px;
   font-weight: 600;
-  line-height: var(--mas-web-component-icon-button-sizing-medium-start-icon);
+  line-height: var(--mas-web-component-icon-button-sizing-medium-icon);
   padding: var(--mas-web-component-icon-button-spacing-medium-padding-top) var(--mas-web-component-icon-button-spacing-medium-padding-right) var(--mas-web-component-icon-button-spacing-medium-padding-bottom) var(--mas-web-component-icon-button-spacing-medium-padding-left);
   height: 44px;
   width: 44px;
@@ -123,7 +123,7 @@ a.mas-icon-button {
   --mas-icon_size:19.5px;
   font-size: 19.5px;
   font-weight: 600;
-  line-height: var(--mas-web-component-icon-button-sizing-large-start-icon);
+  line-height: var(--mas-web-component-icon-button-sizing-large-icon);
   padding: var(--mas-web-component-icon-button-spacing-large-padding-top) var(--mas-web-component-icon-button-spacing-large-padding-right) var(--mas-web-component-icon-button-spacing-large-padding-bottom) var(--mas-web-component-icon-button-spacing-large-padding-left);
   height: 56px;
   width: 56px;
@@ -131,10 +131,6 @@ a.mas-icon-button {
 /* Shapes */
 .mas-icon-button_shape--rounded {
   border-radius: var(--mas-web-component-icon-button-border-radius-rounded);
-}
-
-.mas-icon-button_shape--square {
-  border-radius: var(--mas-web-component-icon-button-border-radius-square);
 }
 /* Button icons  */
 /* .mas-icon-button--icon-alone {

@@ -48,22 +48,18 @@
                 "type": "color"
               },
               "unselected": {
-                "value": "{mas.semantic.color.container.emphasys}",
+                "value": "{mas.semantic.color.content.emphasys}",
                 "type": "color"
               }
             },
             "handle": {
               "unselected": {
-                "default": {
-                  "value": "{mas.semantic.color.container.main}",
-                  "type": "color"
-                }
+                "value": "{mas.semantic.color.container.main}",
+                "type": "color"
               },
               "selected": {
-                "default": {
-                  "value": "{mas.semantic.color.container.main}",
-                  "type": "color"
-                }
+                "value": "{mas.semantic.color.container.main}",
+                "type": "color"
               }
             },
             "halo": {

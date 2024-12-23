@@ -1,0 +1,77 @@
+import { Meta, Story, Preview, Props, Description } from '@storybook/blocks';
+
+<Meta title="Components / Indicators / Badge" />
+
+<style>
+  {`
+    .container {
+      display: flex; 
+      gap: 20px;
+    }
+`}
+</style>
+
+# Badge
+
+A badge is a visual indicator used to display notification or status.
+
+## Usage
+
+- The badge is a visual indicator.
+- It can be used alone or with an icon.
+- It gives additional information to an element.
+
+## Default
+
+<div class="container">
+  <div class="mas-badge mas-badge_size--large ">
+    <i class="mas-badge_icon" />
+    <span class="mas-badge_content mas-badge_type--number sb-unstyled">99+</span>
+  </div>
+</div>
+
+CSS styles for `Badge` component:
+
+```css
+/* Badge styles */
+.mas-badge {
+  /* Badge styles here */
+}
+```
+
+## Size & Number display
+
+<div class="container">
+  <div class="mas-badge mas-badge_size--small"></div>
+  <div class="mas-badge mas-badge_size--large">
+    <i class="mas-badge_icon" />
+    <span class="mas-badge_content mas-badge_type--number sb-unstyled">9</span>
+  </div>
+  <div class="mas-badge mas-badge_size--large">
+    <i class="mas-badge_icon" />
+    <span class="mas-badge_content mas-badge_type--number sb-unstyled">99+</span>
+  </div>
+</div>
+
+```css
+/* Badge size styles */
+.mas-badge_size--small {
+  /* Badge small size styles here */
+}
+.mas-badge_size--large {
+  /* Badge large size styles here */
+}
+```
+
+```css
+/* Badge number styles */
+.mas-badge_type--dot {
+  /* Badge with number less than 0 styles here */
+}
+.mas-badge_type--number {
+  /* Badge with number */
+}
+.mas-badge_type--number-minor {
+  /* Badge with 1 digit number (less than 10) */
+}
+```

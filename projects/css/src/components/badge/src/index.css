@@ -1,70 +1,61 @@
 @import '@masoni/css-design-tokens/dist/index.css';
-mas-badge {
-  display: flex;
-  align-items: center;
-}
 .mas-badge {
-  font-family: var(--mas-typo_font-family--inter);
-  font-size: var(--mas-typo_caption-font-size);
-  font-style: normal;
-  font-weight: var(--mas-typo_caption-font-weight);
-  line-height: var(--mas-typo_caption-line-height);
-  display: inline-flex;
-  block-size: 18px;
-  min-inline-size: 18px;
-  justify-content: center;
-  align-items: center;
-  border-radius: var(--mas-radius_full);
-  background-color: var(--mas-semantic-primary--default);
-  color: var(--mas-semantic-color_text-reverse);
+  display: flex;
+  border-radius: var(--mas-web-component-badge-border-radius-container-top-left)
+    var(--mas-web-component-badge-border-radius-container-top-right)
+    var(--mas-web-component-badge-border-radius-container-bottom-right)
+    var(--mas-web-component-badge-border-radius-container-bottom-left);
+  background-color: var(--mas-web-component-badge-color-container);
+  color: var(--mas-web-component-badge-color-content);
   box-shadow: inset 0 0 0 1px var(--mas-semantic-primary--default);
-  padding-block: 0;
-  padding-inline: 6px;
 }
-.mas-badge:empty {
-  min-inline-size: 8px;
-  block-size: 8px;
-  padding: 0;
+.mas-badge_content {
+  display: inline-flex;
+  font: var(--mas-web-component-badge-typography-default-label);
 }
-.mas-badge-type--number-minor {
+.mas-badge_type--number-minor {
   padding-inline: 0;
 }
 /* ! Size */
-.mas-badge--small {
-  display: inline-block;
-  block-size: 16px;
-  font-size: 16px !important;
+.mas-badge_size--small {
+  width: var(--mas-web-component-badge-sizing-small-width);
+  block-size: var(--mas-web-component-badge-sizing-small-height);
+  font-size: var(--mas-web-component-badge-sizing-small-width) !important;
 }
 
-.mas-badge--medium {
-  display: inline-block;
-  block-size: 24px;
-  font-size: 24px !important;
+.mas-badge_size--medium {
+  height: var(--mas-web-component-badge-sizing-medium-height);
+  width: fit-content;
+  font-size: var(--mas-web-component-badge-sizing-medium-height) !important;
+  padding-block: var(--mas-web-component-badge-spacing-padding-large-top);
+  padding-inline: var(--mas-web-component-badge-spacing-padding-large-left);
 }
 
-.mas-badge--large {
-  display: inline-block;
-  block-size: 32px;
-  font-size: 32px !important;
+.mas-badge_size--large {
+  width: fit-content;
+  height: var(--mas-web-component-badge-sizing-large-height);
+  font-size: var(--mas-web-component-badge-sizing-large-height) !important;
+  padding-block: var(--mas-web-component-badge-spacing-padding-large-top);
+  padding-inline: var(--mas-web-component-badge-spacing-padding-large-left);
 }
 
 /* ! Color */
-.mas-badge-color--success {
+.mas-badge_color--success {
   background-color: var(--mas-semantic-success--default);
   box-shadow: none;
 }
-.mas-badge-color--warning {
+.mas-badge_color--warning {
   background-color: var(--mas-semantic-warning--default);
   box-shadow: none;
 }
-.mas-badge-color--alert {
+.mas-badge_color--alert {
   background-color: var(--mas-semantic-alert--default);
   box-shadow: none;
 }
-.mas-badge-color--primary {
+.mas-badge_color--primary {
   background-color: var(--mas-semantic-primary--default);
 }
-.mas-badge-color--brand {
+.mas-badge_color--brand {
   background-color: var(--mas-semantic-brand--default);
   box-shadow: none;
 }
@@ -74,28 +65,28 @@ mas-badge {
   display: inline-block;
   position: relative;
 
-  & .mas-badge--small + .mas-badge-type--dot {
+  &.mas-badge_size--small.mas-badge_type--dot {
     position: absolute;
     top: 0;
     left: 8px;
   }
-  & .mas-badge--medium + .mas-badge-type--dot {
+  &.mas-badge_size--medium.mas-badge_type--dot {
     position: absolute;
     top: 2px;
     left: 16px;
   }
-  & .mas-badge--large + .mas-badge-type--dot {
+  &.mas-badge_size--large.mas-badge_type--dot {
     position: absolute;
     top: 3px;
     left: 21px;
   }
 
-  & .mas-badge--medium +  .mas-badge-type--number {
+  &.mas-badge_size--medium.mas-badge_type--number {
     position: absolute;
     top: -6px;
     left: 12px;
   }
-  & .mas-badge--large +  .mas-badge-type--number {
+  &.mas-badge_size--large.mas-badge_type--number {
     position: absolute;
     top: -2px;
     left: 16px;

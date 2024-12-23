@@ -1,71 +1,64 @@
-import { Meta, StoryObj, moduleMetadata } from "@storybook/angular";
-import { MasModal} from "projects/components/src/lib/Modal";  
-import { MasButton,MasButtonDirective, MasIconButton } from "projects/components/src/public-api";
+import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
+import { MasModal } from 'projects/components/src/lib/Modal';
+import { MasButton, MasButtonDirective, MasIconButton } from 'projects/components/src/public-api';
 const argTypes = {
   showModal: {
     type: { name: 'boolean', required: false },
     description: ' Show modal',
     defaultValue: false,
-    control:'boolean', 
+    control: 'boolean',
   },
   title: {
     type: { name: 'string', required: false },
-    description: 'The title of the modal', 
+    description: 'The title of the modal',
   },
   content: {
     type: { name: 'string', required: true },
-    description: 'The body of the modal', 
+    description: 'The body of the modal',
   },
   buttonLabelprimary: {
     type: { name: 'string', required: false },
-    description: 'the action button inside the modal to close the modal', 
+    description: 'the action button inside the modal to close the modal',
   },
   buttonLabelsecondary: {
     type: { name: 'string', required: false },
-    description: 'the action button inside the modal to confirm the modal', 
+    description: 'the action button inside the modal to confirm the modal',
   },
   size: {
     type: { name: 'string', required: false },
-    description: 'The size of the Modal', 
+    description: 'The size of the Modal',
     defaultValue: 'M',
-    control: 'radio', 
-    options: ['small','medium','large'],
+    control: 'radio',
+    options: ['small', 'medium', 'large'],
   },
   buttonOptions: {
     type: { name: 'string', required: true },
     description: 'Select which buttons to display',
     defaultValue: 'Show_Buttons',
     control: 'select',
-    options: [
-      'Show_Buttons',
-      'Show_Primary_Button',
-      'Show_Secondary_Button',
-      'No_Buttons',
-    ],
+    options: ['Show_Buttons', 'Show_Primary_Button', 'Show_Secondary_Button', 'No_Buttons'],
   },
+};
 
-
-  };
-
-  export default {
-    title: 'Components / Overlays / Modal',
-    component: MasModal,
-    decorators: [
-      moduleMetadata({
-        declarations: [MasModal, MasButton,MasButtonDirective, MasIconButton],
-      }),
-    ], 
-    argTypes:argTypes,
-    parameters: {
-      docs: {
-        description: {
-          component: '',
-        },
+export default {
+  title: 'Components / Overlays / Modal',
+  component: MasModal,
+  decorators: [
+    moduleMetadata({
+      declarations: [MasModal, MasButton, MasButtonDirective, MasIconButton],
+    }),
+  ],
+  argTypes: argTypes,
+  parameters: {
+    docs: {
+      description: {
+        component: '',
       },
     },
-    render: ({...args}) => ({
-      props: args,
-      template: `
+  },
+  render: ({ ...args }) => ({
+    props: args,
+    template: `
       <div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
        <mas-button variant="secondary" (click)="showModal = !showModal">Open Modal</mas-button>
         <mas-modal 
@@ -82,23 +75,23 @@ const argTypes = {
         
       </div>
     `,
-    })
-  } as Meta;
+  }),
+} as Meta;
 
-  export const Default: StoryObj<Partial<MasModal>> = {}
-  Default.args = {
-    showModal:false,
-    size: 'small',
-    title: 'It’s the title',
-    content: 'The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be an equal amount of space at the top and bottom of the viewport',
-    buttonLabelprimary: 'Confirm',
-    buttonLabelsecondary: 'Cancel',
-    buttonOptions: 'Show_Buttons',
+export const Default: StoryObj<Partial<MasModal>> = {};
+Default.args = {
+  showModal: false,
+  size: 'small',
+  title: 'It’s the title',
+  content:
+    'The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be an equal amount of space at the top and bottom of the viewport',
+  buttonLabelprimary: 'Confirm',
+  buttonLabelsecondary: 'Cancel',
+  buttonOptions: 'Show_Buttons',
+};
 
-  };
-
-  export const Modal_Small = () => ({
-    template: `
+export const Modal_Small = () => ({
+  template: `
       <div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
         <mas-button variant="secondary" (click)="showModal = !showModal">Open Modal</mas-button>
         <mas-modal 
@@ -114,7 +107,7 @@ const argTypes = {
         </mas-modal>
       </div>
     `,
-  });
+});
 
 export const Modal_Medium = () => ({
   template: `
@@ -158,9 +151,6 @@ export const Modal_Large = () => ({
 
   `,
 });
-
-
-
 
 export const Modal_WithoutButtonsSmall = () => ({
   template: `
@@ -253,7 +243,6 @@ export const WithoutButtonPrimary_S = () => ({
   `,
 });
 
-
 export const WithoutButtonPrimary_M = () => ({
   template: `
  
@@ -278,7 +267,6 @@ export const WithoutButtonPrimary_M = () => ({
   `,
 });
 
-
 export const WithoutButtonPrimary_L = () => ({
   template: `
  
@@ -299,8 +287,6 @@ export const WithoutButtonPrimary_L = () => ({
 
   `,
 });
-
-
 
 export const Modal_WithoutButtonSecondary_S = () => ({
   template: `
@@ -323,7 +309,6 @@ export const Modal_WithoutButtonSecondary_S = () => ({
   `,
 });
 
-
 export const Modal_WithoutButtonSecondary_M = () => ({
   template: `
  
@@ -345,7 +330,6 @@ export const Modal_WithoutButtonSecondary_M = () => ({
   `,
 });
 
-
 export const Modal_WithoutButtonSecondary_L = () => ({
   template: `
     <div style="padding: 200px 400px; min-width: 800px; min-height: 600px; overflow: auto;">
@@ -364,18 +348,3 @@ export const Modal_WithoutButtonSecondary_L = () => ({
     </div>
   `,
 });
-
-
-
-
-
-
-
-
-
- 
-   
- 
-
-  
- 

@@ -1,9 +1,9 @@
-import { Meta, Story, Preview, Props, Description } from '@storybook/blocks'; 
+import { Meta, Story, Preview, Props, Description } from '@storybook/blocks';
 
 <Meta title="Components / Structure / Divider" />
 
 <style>
-{`
+  {`
   .wrapper {
     display: flex; 
     flex-direction: column;
@@ -35,12 +35,13 @@ import { Meta, Story, Preview, Props, Description } from '@storybook/blocks';
 `}
 </style>
 
-
 # Divider
 
 Divider is a thin line (horizontal or vertical) that divide content.
 
-<div class="mas-divider"><div class="horizontal"></div></div>
+<div class="mas-divider">
+  <div class="horizontal"></div>
+</div>
 
 CSS styles for `Divider` component:
 
@@ -52,24 +53,28 @@ CSS styles for `Divider` component:
 
 ## Orientation
 
-<div class="wrapper">
-<h2 class="header">Bouygues Construction Expert in building</h2>
-<div class="container">
-<div class="paragragh">
-<h3 class="content">+10000</h3>
-<span>projects delivered in 10 years</span>
-</div>
-<div class="mas-divider"><div class="vertical"></div></div>
-<div class="paragragh">
-<h3 class="content">+9</h3>
-<span>country supported by the supply</span>
-</div>
-<div class="mas-divider"><div class="vertical"></div></div>
-<div class="paragragh">
-<h3 class="content">+3000</h3>
-<span>Construction experts</span>
-</div>
-</div>
+<div class="wrapper sb-unstyled">
+  <h2 class="header">Bouygues Construction Expert in building</h2>
+  <div class="container">
+    <div class="paragragh">
+      <h3 class="content">+10000</h3>
+      <span>projects delivered in 10 years</span>
+    </div>
+    <div class="mas-divider">
+      <div class="vertical"></div>
+    </div>
+    <div class="paragragh">
+      <h3 class="content">+9</h3>
+      <span>country supported by the supply</span>
+    </div>
+    <div class="mas-divider">
+      <div class="vertical"></div>
+    </div>
+    <div class="paragragh">
+      <h3 class="content">+3000</h3>
+      <span>Construction experts</span>
+    </div>
+  </div>
 </div>
 
 CSS styles :

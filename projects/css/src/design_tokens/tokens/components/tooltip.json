@@ -22,43 +22,17 @@
                   "value": "{mas.semantic.spacing.2xs}",
                   "type": "spacing"
                 }
-              },
-              "arrow-area": {
-                "horizontal": {
-                  "left": {
-                    "value": "{mas.semantic.spacing.s}",
-                    "type": "spacing"
-                  },
-                  "right": {
-                    "value": "{mas.semantic.spacing.s}",
-                    "type": "spacing"
-                  }
-                },
-                "vertical": {
-                  "top": {
-                    "value": "{mas.semantic.spacing.s}",
-                    "type": "spacing"
-                  },
-                  "bottom": {
-                    "value": "{mas.semantic.spacing.s}",
-                    "type": "spacing"
-                  }
-                }
               }
             }
           },
           "color": {
             "container": {
-              "default": {
-                "value": "{mas.semantic.color.container.contrasted}",
-                "type": "color"
-              }
+              "value": "{mas.semantic.color.container.contrasted}",
+              "type": "color"
             },
-            "label": {
-              "default": {
-                "value": "{mas.semantic.color.content.inverse}",
-                "type": "color"
-              }
+            "content": {
+              "value": "{mas.semantic.color.content.inverse}",
+              "type": "color"
             }
           },
           "typography": {
@@ -66,9 +40,7 @@
               "value": "{mas.semantic.typography.all-screen.caption-regular}",
               "type": "typography"
             }
-          }
-        },
-        "tag": {
+          },
           "border-radius": {
             "container": {
               "top-left": {
@@ -86,6 +58,30 @@
               "bottom-left": {
                 "value": "{mas.semantic.border-radius.2xs}",
                 "type": "borderRadius"
+              }
+            }
+          },
+          "sizing": {
+            "arrow": {
+              "horizontal": {
+                "width": {
+                  "value": "{mas.semantic.sizing.s}",
+                  "type": "sizing"
+                },
+                "height": {
+                  "value": "{mas.semantic.sizing.xs}",
+                  "type": "sizing"
+                }
+              },
+              "vertical": {
+                "width": {
+                  "value": "{mas.semantic.sizing.xs}",
+                  "type": "sizing"
+                },
+                "height": {
+                  "value": "{mas.semantic.sizing.s}",
+                  "type": "sizing"
+                }
               }
             }
           }
