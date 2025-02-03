@@ -699,6 +699,14 @@
         }
       },
       "box-shadow": {
+        "xs": {
+          "value": "{mas.core.box-shadow.100}",
+          "type": "boxShadow"
+        },
+        "s": {
+          "value": "{mas.core.box-shadow.200}",
+          "type": "boxShadow"
+        },
         "m": {
           "value": "{mas.core.box-shadow.300}",
           "type": "boxShadow"

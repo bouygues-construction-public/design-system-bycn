@@ -235,7 +235,7 @@
           },
           "opacity": {
             "disabled": {
-              "value": "{mas.web.component.tabs.opacity.disabled}",
+              "value": "{mas.semantic.opacity.m}",
               "type": "opacity"
             }
           }

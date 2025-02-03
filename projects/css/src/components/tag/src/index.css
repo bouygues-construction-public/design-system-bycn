@@ -6,15 +6,15 @@
   margin-right: 4px;
   font-feature-settings: 'calt' off;
   padding: var(--mas-web-component-tag-spacing-padding-top) var(--mas-web-component-tag-spacing-padding-right) var(--mas-web-component-tag-spacing-padding-bottom) var(--mas-web-component-tag-spacing-padding-left);
-  border-radius: var(--mas-web-component-tag-border-radius-top-left) var(--mas-web-component-tag-border-radius-top-right) var(--mas-web-component-tag-border-radius-bottom-right) var(--mas-web-component-tag-border-radius-bottom-left);
+  border-radius: var(--mas-web-component-tag-border-radius-container-top-left) var(--mas-web-component-tag-border-radius-container-top-right) var(--mas-web-component-tag-border-radius-container-bottom-right) var(--mas-web-component-tag-border-radius-container-bottom-left);
   font: var(--mas-web-component-tag-typography-medium-label);
+  gap: var(--mas-web-component-tag-spacing-gap);
 }
 
 .mas-tag i{
   font-size: 16px;
   display: flex;
   align-items: center;
-  margin-right: 8px;
 }
 
 .mas-tag_size--small .mas-tag_label{
@@ -24,10 +24,6 @@
 .mas-tag_size--medium .mas-tag_label{
   font: var(--mas-web-component-tag-typography-medium-label);
   --mas-icon_size: var(--mas-web-component-tag-sizing-medium-icon-width);
-}
-
-.leading-icon {
-  margin-right: 4px;
 }
 
 .mas-tag_color--default {

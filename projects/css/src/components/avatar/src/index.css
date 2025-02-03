@@ -10,16 +10,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  & .mas-avatar_initial {
-    text-align: center;
-    font-family: var(--mas-core-font-family-barlow);
-    font-weight: 600;
-    letter-spacing: 0em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   & .mas-avatar_img {
     height: 100%;
     width: 100%;
@@ -38,13 +28,7 @@
       var(--mas-web-component-avatar-spacing-x-small-padding-left);
     width: var(--mas-web-component-avatar-sizing-x-small-icon-width);
     height: var(--mas-web-component-avatar-sizing-x-small-icon-height);
-    font-size: var(--mas-web-component-avatar-sizing-x-small-icon-width);
-  }
-  & .mas-avatar_initial {
-    font-size: 10px;
-    width: 12px;
-    height: 12px;
-    line-height: 12px;
+    --mas-icon_size: var(--mas-web-component-avatar-sizing-x-small-icon-width);
   }
 }
 
@@ -59,13 +43,7 @@
       var(--mas-web-component-avatar-spacing-small-padding-left);
     width: var(--mas-web-component-avatar-sizing-small-icon-width);
     height: var(--mas-web-component-avatar-sizing-small-icon-height);
-    font-size: var(--mas-web-component-avatar-sizing-small-icon-width);
-  }
-  & .mas-avatar_initial {
-    font-size: 14px;
-    line-height: 20px;
-    width: 16px;
-    height: 16px;
+    --mas-icon_size: var(--mas-web-component-avatar-sizing-small-icon-width);
   }
 }
 
@@ -79,13 +57,7 @@
       var(--mas-web-component-avatar-spacing-medium-padding-left);
     width: var(--mas-web-component-avatar-sizing-medium-icon-width);
     height: var(--mas-web-component-avatar-sizing-medium-icon-height);
-    font-size: var(--mas-web-component-avatar-sizing-medium-icon-width);
-  }
-  & .mas-avatar_initial {
-    font-size: 16px;
-    line-height: 24px;
-    width: 24px;
-    height: 24px;
+    --mas-icon_size: var(--mas-web-component-avatar-sizing-medium-icon-width);
   }
 }
 
@@ -99,16 +71,6 @@
       var(--mas-web-component-avatar-spacing-large-padding-left);
     width: var(--mas-web-component-avatar-sizing-large-icon-width);
     height: var(--mas-web-component-avatar-sizing-large-icon-height);
-    font-size: var(--mas-web-component-avatar-sizing-large-icon-width);
+    --mas-icon_size: var(--mas-web-component-avatar-sizing-large-icon-width);
   }
-  & .mas-avatar_initial {
-    font-size: 18px;
-    line-height: 24px;
-    width: 32px;
-    height: 32px;
-  }
-}
-
-.mas-avatar_stroke {
-  border: 1px solid #ededf0;
 }

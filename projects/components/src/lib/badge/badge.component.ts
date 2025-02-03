@@ -2,7 +2,6 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'mas-badge',
   template: `
-    <i *ngIf="icon !== ''" class="{{ icon }} mas-badge_icon"></i>
     <ng-container *ngIf="type !== 'dot'">
       <span
         [ngClass]="{
@@ -22,7 +21,6 @@ import { Component, Input, OnInit } from '@angular/core';
   host: {
     class: 'mas-badge',
     '[class.mas-badge_type--dot]': "type === 'dot'",
-    '[class.mas-badge--with-icon]': 'icon !== ""',
     '[class.mas-badge_size--small]': 'size === "small"',
     '[class.mas-badge_size--medium]': 'size === "medium"',
     '[class.mas-badge_size--large]': 'size === "large"',
@@ -31,7 +29,6 @@ import { Component, Input, OnInit } from '@angular/core';
 export class MasBadge {
   @Input() number: number = 0;
   @Input() type: 'number' | 'dot' = 'dot';
-  @Input() icon: string = '';
   @Input() size: 'small' | 'medium' | 'large' = 'medium';
   @Input() color: 'success' | 'warning' | 'alert' | 'primary' | 'brand' = 'primary';
 

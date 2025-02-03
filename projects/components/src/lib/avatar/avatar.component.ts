@@ -6,14 +6,11 @@ import { Component, Input } from '@angular/core';
     class: 'mas-avatar',
   },
   template: `
-    <div class="mas-avatar_container mas-avatar_size--{{ size }} mas-avatar_stroke">
-      <ng-container *ngIf="type === 'Image'">
-        <img class="mas-avatar_img" src="{{ UrlImg }}" alt="Avatar" />
+    <div class="mas-avatar_container mas-avatar_size--{{ size }}">
+      <ng-container *ngIf="type === 'image'">
+        <img class="mas-avatar_img" src="{{ urlImg }}" alt="Avatar" />
       </ng-container>
-      <i class="mas-avatar_icon" class="{{ icon }}" *ngIf="type === 'Icon'"></i>
-      <ng-container *ngIf="type === 'Initial'"
-        ><p class="mas-avatar_initial">{{ Initial.toUpperCase() }}</p></ng-container
-      >
+      <i class="mas-avatar_icon" class="{{ icon }}" *ngIf="type === 'icon'"></i>
     </div>
   `,
 })
@@ -33,7 +30,7 @@ export class MasAvatar {
   /**
    * The variant of the mas-avatar.
    */
-  @Input() type: 'image' | 'icon' | 'initial';
+  @Input() type: 'image' | 'icon';
   /**
    * The name of the icon.
    */
