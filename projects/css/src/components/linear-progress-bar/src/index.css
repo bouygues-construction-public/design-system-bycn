@@ -1,0 +1,92 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+.mas-linear-progress-bar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mas-web-component-linear-progress-bar-spacing-medium-default-gap-container);
+  .mas-linear-progress-bar_label {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--mas-web-component-linear-progress-bar-spacing-medium-default-gap-title-area);
+    color: var(--mas-web-component-linear-progress-bar-color-label);
+  }
+  .mas-linear-progress-bar_wrapper {
+    width: 100%;
+    background-color: var(--mas-web-component-linear-progress-bar-color-track-area-container);
+    border-radius: var(--mas-web-component-linear-progress-bar-border-radius-track-top-left)
+      var(--mas-web-component-linear-progress-bar-border-radius-track-top-right)
+      var(--mas-web-component-linear-progress-bar-border-radius-track-bottom-right)
+      var(--mas-web-component-linear-progress-bar-border-radius-track-bottom-left);
+    margin-top: 8px;
+    .mas-linear-progress-bar_inner {
+      height: 100%;
+      width: 0;
+      border-radius: inherit;
+    }
+  }
+  .mas-linear-progress-bar_helper {
+    color: var(--mas-web-component-linear-progress-bar-color-helper);
+    margin-top: 8px;
+  }  
+}
+/* Type */
+.mas-linear-progress-bar_type--inline {
+  flex-direction: row;
+  .mas-linear-progress-bar_label {
+    margin-right: 8px;
+  }
+}
+/* Size */
+.mas-linear-progress-bar_size--small {
+  & > .mas-linear-progress-bar_wrapper {
+    height: var(--mas-web-component-linear-progress-bar-sizing-small-track-height);
+  }
+  .mas-linear-progress-bar_label {
+    font: var(--mas-web-component-linear-progress-bar-typography-small-label);
+    .mas-icon {
+      --mas-icon_size: var(--mas-web-component-linear-progress-bar-sizing-small-icon-width);
+    }
+  }
+  .mas-linear-progress-bar_helper {
+    font: var(--mas-web-component-linear-progress-bar-typography-small-helper);
+  }
+}
+.mas-linear-progress-bar_size--medium {
+  & > .mas-linear-progress-bar_wrapper {
+    height: var(--mas-web-component-linear-progress-bar-sizing-medium-track-height);
+  }
+  .mas-linear-progress-bar_label {
+    font: var(--mas-web-component-linear-progress-bar-typography-medium-label);
+    .mas-icon {
+      --mas-icon_size: var(--mas-web-component-linear-progress-bar-sizing-medium-icon-width);
+    }
+  }
+  .mas-linear-progress-bar_helper {
+    font: var(--mas-web-component-linear-progress-bar-typography-medium-helper);
+  }
+}
+/* State */
+.mas-linear-progress-bar_state--default {
+  .mas-linear-progress-bar_inner {
+    background-color: var(--mas-web-component-linear-progress-bar-color-track-area-active);
+  }
+  .mas-icon {
+    color: var(--mas-web-component-linear-progress-bar-color-icon-area-active);
+  }
+}
+.mas-linear-progress-bar_state--success {
+  .mas-linear-progress-bar_inner {
+    background-color: var(--mas-web-component-linear-progress-bar-color-track-area-success);
+  }
+  .mas-icon {
+    color: var(--mas-web-component-linear-progress-bar-color-icon-area-success);
+  }
+}
+.mas-linear-progress-bar_state--error {
+  .mas-linear-progress-bar_inner {
+    background-color: var(--mas-web-component-linear-progress-bar-color-track-area-error);
+  }
+  .mas-icon {
+    color: var(--mas-web-component-linear-progress-bar-color-icon-area-error);
+  }
+}

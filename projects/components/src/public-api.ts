@@ -17,6 +17,7 @@ export * from './lib/logotype';
 export * from './lib/badge';
 export * from './lib/tag';
 export * from './lib/circular-progress-bar';
+export * from './lib/linear-progress-bar';
 export * from './lib/input-dropdown';
 export * from './lib/action-dropdown';
 export * from './lib/popover';

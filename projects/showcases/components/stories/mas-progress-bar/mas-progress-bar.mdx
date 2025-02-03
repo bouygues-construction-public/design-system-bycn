@@ -1,5 +1,5 @@
-import { Meta , Canvas, Controls, Story,Preview, of} from '@storybook/blocks';
-import { MasProgressBar } from 'projects/components/src/lib/progress-bar/progress-bar.component';
+import { Meta, Canvas, Controls, Story, Preview, of } from '@storybook/blocks';
+import { MasProgressBar } from 'projects/components/src/lib/linear-progress-bar/linear-progress-bar.component';
 import * as ProgressBarStories from './mas-progress-bar.stories';
 
 <Meta of={ProgressBarStories} />
@@ -8,16 +8,16 @@ import * as ProgressBarStories from './mas-progress-bar.stories';
 
 {/* Table of Contents */}
 
-* [Overview](#overview)
-* [Props](#props)
-* [Usage](#usage)
-* [Variants](#variants)
+- [Overview](#overview)
+- [Props](#props)
+- [Usage](#usage)
+- [Variants](#variants)
 
 ## Overview
 
 A `MasProgressBar` serves as an indicator that signifies the acknowledgment of the user's request and signifies that the application is actively advancing towards fulfilling the requested task. These visual elements are designed to keep users informed about the current state of ongoing processes, provide estimates for the duration of a task, and indicate when a request is in the process of execution
 
-<Canvas of={ProgressBarStories.Default}/>
+<Canvas of={ProgressBarStories.Default} />
 
 ## Props
 
@@ -33,24 +33,24 @@ To use the `MasProgressBar`, you can pass the desired inputs to the component.
 
 `Type` properties Display `progress bar` with an `helper`, or in an `inline` layout.
 
-<Canvas of={ProgressBarStories.ShowcaseType}/>
+<Canvas of={ProgressBarStories.ShowcaseType} />
 
 ### States
 
 The `state` property allows to provide a user feedback regarding the `success` / `fail` of the process.
 
-<Canvas of={ProgressBarStories.ShowcaseStates}/>
+<Canvas of={ProgressBarStories.ShowcaseStates} />
 
 ### Sizes
 
 The component comes in different sizes : `small`, `medium`
 
-<Canvas of={ProgressBarStories.ShowcaseSizes}/>
+<Canvas of={ProgressBarStories.ShowcaseSizes} />
 
 ## Guidelines
 
-* Best practices are available [here](https://zeroheight.com/9b39bb2a0)
+- Best practices are available [here](https://zeroheight.com/9b39bb2a0)
 
 ## Feedback & contact
 
-* Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)
+- Help us improve this pattern by providing feedback, asking questions, and leaving any other comments [here](https://github.com/bouygues-construction/design-system-bycn/issues/new)

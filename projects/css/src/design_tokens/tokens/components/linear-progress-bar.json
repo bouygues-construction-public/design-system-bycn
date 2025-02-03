@@ -1,0 +1,626 @@
+{
+  "mas": {
+    "web": {
+      "component": {
+        "linear-progress-bar": {
+          "color": {
+            "track-area": {
+              "container": {
+                "value": "{mas.semantic.color.container.emphasys}",
+                "type": "color"
+              },
+              "active": {
+                "value": "{mas.semantic.color.container.brand}",
+                "type": "color"
+              },
+              "success": {
+                "value": "{mas.semantic.color.status.success}",
+                "type": "color"
+              },
+              "error": {
+                "value": "{mas.semantic.color.status.error}",
+                "type": "color"
+              }
+            },
+            "icon-area": {
+              "active": {
+                "value": "{mas.semantic.color.content.main}",
+                "type": "color"
+              },
+              "success": {
+                "value": "{mas.semantic.color.status.success}",
+                "type": "color"
+              },
+              "error": {
+                "value": "{mas.semantic.color.status.error}",
+                "type": "color"
+              }
+            },
+            "label": {
+              "value": "{mas.semantic.color.content.main}",
+              "type": "color"
+            },
+            "helper": {
+              "value": "{mas.semantic.color.content.emphasys}",
+              "type": "color"
+            }
+          },
+          "border-radius": {
+            "track": {
+              "top-left": {
+                "value": "{mas.semantic.border-radius.m}",
+                "type": "borderRadius"
+              },
+              "top-right": {
+                "value": "{mas.semantic.border-radius.m}",
+                "type": "borderRadius"
+              },
+              "bottom-right": {
+                "value": "{mas.semantic.border-radius.m}",
+                "type": "borderRadius"
+              },
+              "bottom-left": {
+                "value": "{mas.semantic.border-radius.m}",
+                "type": "borderRadius"
+              }
+            }
+          },
+          "typography": {
+            "small": {
+              "label": {
+                "value": "{mas.semantic.typography.all-screen.body3-bold}",
+                "type": "typography"
+              },
+              "helper": {
+                "value": "{mas.semantic.typography.all-screen.caption-regular}",
+                "type": "typography"
+              }
+            },
+            "medium": {
+              "label": {
+                "value": "{mas.semantic.typography.all-screen.body2-bold}",
+                "type": "typography"
+              },
+              "helper": {
+                "value": "{mas.semantic.typography.all-screen.caption-regular}",
+                "type": "typography"
+              }
+            }
+          },
+          "spacing": {
+            "medium": {
+              "default": {
+                "padding": {
+                  "container": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "label-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "icon-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "helper-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "title-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "track-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  }
+                },
+                "gap": {
+                  "container": {
+                    "value": "{mas.semantic.spacing.2xs}",
+                    "type": "spacing"
+                  },
+                  "title-area": {
+                    "value": "{mas.semantic.spacing.s}",
+                    "type": "spacing"
+                  }
+                }
+              },
+              "inline": {
+                "padding": {
+                  "container": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "label-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "icon-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "helper-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "title-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "track-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  }
+                },
+                "gap": {
+                  "container": {
+                    "value": "{mas.semantic.spacing.2xs}",
+                    "type": "spacing"
+                  },
+                  "title-area": {
+                    "value": "{mas.semantic.spacing.s}",
+                    "type": "spacing"
+                  }
+                }
+              }
+            },
+            "small": {
+              "default": {
+                "padding": {
+                  "container": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "label-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "icon-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "helper-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "title-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "track-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  }
+                },
+                "gap": {
+                  "container": {
+                    "value": "{mas.semantic.spacing.2xs}",
+                    "type": "spacing"
+                  },
+                  "title-area": {
+                    "value": "{mas.semantic.spacing.s}",
+                    "type": "spacing"
+                  }
+                }
+              },
+              "inline": {
+                "padding": {
+                  "container": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "label-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "icon-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "helper-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "title-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  },
+                  "track-area": {
+                    "left": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "right": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "top": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    },
+                    "bottom": {
+                      "value": "{mas.semantic.spacing.5xs}",
+                      "type": "spacing"
+                    }
+                  }
+                },
+                "gap": {
+                  "container": {
+                    "value": "{mas.semantic.spacing.2xs}",
+                    "type": "spacing"
+                  },
+                  "title-area": {
+                    "value": "{mas.semantic.spacing.s}",
+                    "type": "spacing"
+                  }
+                }
+              }
+            }
+          },
+          "sizing": {
+            "small": {
+              "icon": {
+                "height": {
+                  "value": "{mas.semantic.sizing.l}",
+                  "type": "sizing"
+                },
+                "width": {
+                  "value": "{mas.semantic.sizing.l}",
+                  "type": "sizing"
+                }
+              },
+              "track": {
+                "height": {
+                  "value": "{mas.semantic.sizing.s}",
+                  "type": "sizing"
+                }
+              }
+            },
+            "medium": {
+              "icon": {
+                "height": {
+                  "value": "{mas.semantic.sizing.xl}",
+                  "type": "sizing"
+                },
+                "width": {
+                  "value": "{mas.semantic.sizing.xl}",
+                  "type": "sizing"
+                }
+              },
+              "track": {
+                "height": {
+                  "value": "{mas.semantic.sizing.m}",
+                  "type": "sizing"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
