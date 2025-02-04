@@ -12,15 +12,30 @@ import { Component, Input } from '@angular/core';
   },
   selector: 'mas-linear-progress-bar',
   template: `
-    <div class="mas-linear-progress-bar_label">
-      <span class="label">{{ label }}</span>
-      <i *ngIf="state === 'success'" class="mas-icon mas-check-circle-filled mas-system-and-device--filled"></i>
-      <i *ngIf="state === 'error'" class="mas-icon mas-prohibit-inset-filled mas-security-and-warnings--filled"></i>
-    </div>
-    <div *ngIf="state === 'active' || type !== 'inline'" class="mas-linear-progress-bar_wrapper">
-      <div class="mas-linear-progress-bar_inner" [style.width.%]="value"></div>
-    </div>
-    <span class="mas-linear-progress-bar_helper" *ngIf="helper && type !== 'inline'">{{ helper }}</span>
+    <ng-container *ngIf="type === 'default'; else inlineBlock">
+      <div class="mas-linear-progress-bar_label">
+        <span class="label">{{ label }}</span>
+        <i *ngIf="state === 'active'" class="mas-icon mas-arrows-counter-clockwise-filled mas-arrows--filled"></i>
+        <i *ngIf="state === 'success'" class="mas-icon mas-check-circle-filled mas-system-and-device--filled"></i>
+        <i *ngIf="state === 'error'" class="mas-icon mas-math-and-finance--filled mas-x-circle-filled"></i>
+      </div>
+      <div *ngIf="state === 'active'" class="mas-linear-progress-bar_wrapper">
+        <div class="mas-linear-progress-bar_inner" [style.width.%]="value"></div>
+      </div>
+      <span class="mas-linear-progress-bar_helper" *ngIf="helper && type === 'default'">{{ helper }}</span>
+    </ng-container>
+    <ng-template #inlineBlock>
+      <div class="mas-linear-progress-bar_label">
+        <span class="label">{{ label }}</span>
+        <div *ngIf="state === 'active'" class="mas-linear-progress-bar_wrapper">
+          <div class="mas-linear-progress-bar_inner" [style.width.%]="value"></div>
+        </div>
+        <i *ngIf="state === 'active'" class="mas-icon mas-arrows-counter-clockwise-filled mas-arrows--filled"></i>
+        <i *ngIf="state === 'success'" class="mas-icon mas-check-circle-filled mas-system-and-device--filled"></i>
+        <i *ngIf="state === 'error'" class="mas-icon mas-math-and-finance--filled mas-x-circle-filled"></i>
+      </div>
+      <span class="mas-linear-progress-bar_helper" *ngIf="helper && type === 'default'">{{ helper }}</span>
+    </ng-template>
   `,
 })
 export class MasLinearProgressBar {
