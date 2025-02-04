@@ -1,4 +1,4 @@
-import { Meta, Story, Preview, Props, Description, Canvas } from '@storybook/blocks'; 
+import { Meta, Story, Preview, Props, Description, Canvas } from '@storybook/blocks';
 
 <Meta title="Components / Actions / Link" />
 
@@ -11,9 +11,10 @@ For more details, see our [Link guideline](https://zeroheight.com/9b39bb2a0/p/96
 
 ## Default
 
-<Canvas>
-  <a href="#" class="mas-link mas-link_size--medium"> Link </a>
-</Canvas>
+<a href="/#/visited" class="mas-link mas-link mas-link_size--medium sb-unstyled">
+  <span class="mas-link_label">Link</span>
+  <i class="mas-link_icon mas-arrow-square-out-filled mas-arrows--filled" />
+</a>
 
 CSS styles for `Link` component:
 
@@ -21,18 +22,29 @@ CSS styles for `Link` component:
 /* Link styles */
 .mas-link {
   /* styles here */
-} 
+}
 ```
 
 ## Size
 
 The component comes in different sizes : `small`, `medium`, `large`
 
-<Canvas>
-  <a href="#" class="mas-link mas-link_size--small"> small </a>
-  <a href="#" class="mas-link mas-link_size--medium"> medium </a>
-  <a href="#" class="mas-link mas-link_size--large"> large </a>
-</Canvas>
+<a href="#" class="mas-link mas-link mas-link_size--x-small sb-unstyled">
+  <span class="mas-link_label">x-small</span>
+  <i class="mas-link_icon mas-arrow-square-out-filled mas-arrows--filled" />
+</a>
+<a href="#" class="mas-link mas-link mas-link_size--small sb-unstyled">
+  <span class="mas-link_label">small</span>
+  <i class="mas-link_icon mas-arrow-square-out-filled mas-arrows--filled" />
+</a>
+<a href="#" class="mas-link mas-link mas-link_size--medium sb-unstyled">
+  <span class="mas-link_label">medium</span>
+  <i class="mas-link_icon mas-arrow-square-out-filled mas-arrows--filled" />
+</a>
+<a href="#" class="mas-link mas-link mas-link_size--large sb-unstyled mas-link--disabled">
+  <span class="mas-link_label">large</span>
+  <i class="mas-link_icon mas-arrow-square-out-filled mas-arrows--filled" />
+</a>
 
 CSS styles for size used by the `Link` component:
 
@@ -47,5 +59,4 @@ CSS styles for size used by the `Link` component:
 .mas-link_size--large {
   /* large size styles here */
 }
-
 ```

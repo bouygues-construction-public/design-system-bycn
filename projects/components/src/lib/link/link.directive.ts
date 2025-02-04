@@ -5,10 +5,26 @@ import { Directive, ElementRef, Input, Renderer2, OnChanges, SimpleChanges } fro
   selector: '[masLink]',
 })
 export class MasLinkDirective  implements OnChanges {
+  /**
+   * The size of the link. Available options: 'small', 'medium', 'large'. Default: 'medium'.
+   */
   @Input() size: 'small' | 'medium' | 'large' = 'medium';
-  @Input() standalone: boolean = false;
-  @Input() iconAlong: boolean = false;
+  /**
+   * Label for link.
+   */
+  @Input() label: string = '';
+  /**
+   * Link's icon.
+   */
+  @Input() icon: string = '';
+  /**
+   * The URL the link should navigate to. Default: '#'.
+   */
   @Input() href: string = '#';
+  /**
+   * Whether the link is disabled
+   */
+  @Input() disabled: boolean = false;
 
   constructor(private elementRef: ElementRef, private renderer: Renderer2) {
   //  this.applyLinkStyles();
@@ -24,13 +40,14 @@ export class MasLinkDirective  implements OnChanges {
     const classes: { [key: string]: boolean } = {
       'mas-link': true,
       [`mas-link_size--${this.size}`]: true,
-      'mas-link--standalone': this.standalone,
-      'mas-link--icon-along': this.iconAlong,
+      'mas-link--disabled': this.disabled,
     }; 
     
     this.renderer.removeClass(this.elementRef.nativeElement, 'mas-link_size--medium');
+    this.renderer.removeClass(this.elementRef.nativeElement, 'mas-link_size--x-small');
     this.renderer.removeClass(this.elementRef.nativeElement, 'mas-link_size--small');
     this.renderer.removeClass(this.elementRef.nativeElement, 'mas-link_size--large');
+    this.renderer.removeClass(this.elementRef.nativeElement, 'mas-link--disabled');
     for (const className in classes) {
       if (classes[className]) {
         this.renderer.addClass(this.elementRef.nativeElement, className);

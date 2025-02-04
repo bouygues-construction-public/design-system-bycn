@@ -1,0 +1,48 @@
+{
+  "mas": {
+    "web": {
+      "component": {
+        "link": {
+          "sizing": {
+            "icon": {
+              "height": {
+                "value": "{mas.semantic.sizing.l}",
+                "type": "sizing"
+              },
+              "width": {
+                "value": "{mas.semantic.sizing.l}",
+                "type": "sizing"
+              }
+            }
+          },
+          "spacing": {
+            "gap": {
+              "value": "{mas.semantic.spacing.xs}",
+              "type": "spacing"
+            }
+          },
+          "color": {
+            "content": {
+              "default": {
+                "value": "{mas.semantic.color.content.brand}",
+                "type": "color"
+              },
+              "hover": {
+                "value": "{mas.semantic.color.content.brand}",
+                "type": "color"
+              },
+              "active": {
+                "value": "{mas.semantic.color.content.main}",
+                "type": "color"
+              },
+              "visited": {
+                "value": "#8A3FFC",
+                "type": "color"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
