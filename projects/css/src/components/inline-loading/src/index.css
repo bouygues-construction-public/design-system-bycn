@@ -1,0 +1,67 @@
+@import '@masoni/css-design-tokens/dist/index.css';
+
+.mas-inline-loading {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  gap: var(--mas-web-component-inline-loading-spacing-gap);
+  font: var(--mas-web-component-inline-loading-typography-label);
+  .mas-inline-loading_loader {
+    .mas-inline-loading_icon {
+      --mas-icon_size: var(--mas-web-component-inline-loading-sizing-leading-icon-width);
+    }
+  }
+  .mas-inline-loading_label {
+    color: var(--mas-web-component-inline-loading-color-label);
+  }
+}
+
+/* State */
+.mas-inline-loading_state--active {
+  .mas-inline-loading_loader {
+    width: var(--mas-web-component-inline-loading-sizing-leading-icon-width);
+    height: var(--mas-web-component-inline-loading-sizing-leading-icon-height);
+    border-radius: 50%;
+    background: conic-gradient(from 180deg at 50% 50%, #b8420f 0deg, #ffffff 360deg);
+    animation: spin 0.8s linear infinite;
+  }
+  .mas-inline-loading_loader::after {
+    display: block;
+    content: '';
+    position: relative;
+    left: 2px;
+    top: 2px;
+    inline-size: 12px;
+    block-size: 12px;
+    background: white;
+    border-radius: 50%;
+  }
+}
+.mas-inline-loading_state--success {
+  .mas-inline-loading_icon {
+    color: var(--mas-web-component-inline-loading-color-leading-icon-success);
+  }
+}
+.mas-inline-loading_state--error {
+  .mas-inline-loading_icon {
+    color: var(--mas-web-component-inline-loading-color-leading-icon-error);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    animation: spin 0.5s linear infinite;
+  }
+
+  50% {
+    transform: rotate(230deg);
+    animation: spin 1.5s linear infinite;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    animation: spin 0.5s linear infinite;
+  }
+}

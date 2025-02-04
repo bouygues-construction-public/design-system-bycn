@@ -1,21 +1,15 @@
-import { Meta, StoryObj, moduleMetadata } from "@storybook/angular";
-import { CircularProgressBar } from "projects/components/src/lib/circular-progress-bar";
-
-const states = [
-  'loading', 'success', 'error'
-]
-
+import { Meta, StoryObj, moduleMetadata } from '@storybook/angular';
+import { MasInlineLoading } from 'projects/components/src/lib/inline-loading';
 
 const argTypes = {
-
   state: {
     type: { name: 'string', required: true },
-    description: 'The state of the circular progress bar. Available options: \'loading\', \'success\', \'error\'.',
+    description: "The state of the circular progress bar. Available options: 'active', 'success', 'error'.",
     defaultValue: 'loading',
     control: 'radio',
-    options: ['loading', 'success', 'error'],
+    options: ['active', 'success', 'error'],
   },
-  loadingText: {
+  activeText: {
     type: { name: 'string', required: false },
     description: 'The text description for the loading state.',
     defaultValue: '',
@@ -33,27 +27,26 @@ const argTypes = {
     defaultValue: '',
     control: 'text',
   },
-
 };
 
 export default {
-  title: 'Components / Indicators / Circular Progress Bar',
-  component: CircularProgressBar,
+  title: 'Components / Indicators / Inline Loading',
+  component: MasInlineLoading,
   decorators: [
     moduleMetadata({
-      declarations: [CircularProgressBar],
+      declarations: [MasInlineLoading],
     }),
   ],
-  render: ({...args}) => ({
+  render: ({ ...args }) => ({
     template: `
-            <circular-progress-bar
+            <mas-inline-loading
               [state]="state"
               [loadingText]="loadingText"
               [successText]="successText"
               [errorText]="errorText">
-            </circular-progress-bar>
+            </mas-inline-loading>
     `,
-    props: args
+    props: args,
   }),
   argTypes: argTypes,
   parameters: {
@@ -67,59 +60,51 @@ export default {
 
 /** Basic : A Circular Progress Bar with default settings */
 
-export const Default: StoryObj<CircularProgressBar> = {}
+export const Default: StoryObj<MasInlineLoading> = {};
 Default.args = {
-  state: 'loading',
-  loadingText: '',
+  state: 'active',
+  activeText: '',
   successText: '',
   errorText: '',
 };
 
 export const States = () => ({
   template: `
-  <circular-progress-bar
+  <mas-inline-loading
     [state]="'loading'">
-  </circular-progress-bar>
+  </mas-inline-loading>
 
-  <circular-progress-bar
+  <mas-inline-loading
     [state]="'success'">
-  </circular-progress-bar>
+  </mas-inline-loading>
 
-  <circular-progress-bar
+  <mas-inline-loading
     [state]="'error'">
-  </circular-progress-bar>
-  `
+  </mas-inline-loading>
+  `,
 });
 
 export const WithLabel = () => ({
   template: `
-  <circular-progress-bar
+  <mas-inline-loading
     [state]="'loading'"
     [loadingText]="'Label'"
     [successText]="'Label'"
     [errorText]="'Label'">
-  </circular-progress-bar>
+  </mas-inline-loading>
 
-  <circular-progress-bar
+  <mas-inline-loading
     [state]="'success'"
     [loadingText]="'Label'"
     [successText]="'Label'"
     [errorText]="'Label'">
-  </circular-progress-bar>
+  </mas-inline-loading>
 
-  <circular-progress-bar
+  <mas-inline-loading
     [state]="'error'"
     [loadingText]="'Label'"
     [successText]="'Label'"
     [errorText]="'Label'">
-</circular-progress-bar>
-  `
+</mas-inline-loading>
+  `,
 });
-
-
-
-
-
-
-
-

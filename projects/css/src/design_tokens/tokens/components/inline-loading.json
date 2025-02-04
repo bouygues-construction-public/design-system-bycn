@@ -1,0 +1,50 @@
+{
+  "mas": {
+    "web": {
+      "component": {
+        "inline-loading": {
+          "spacing": {
+            "gap": {
+              "value": "{mas.semantic.spacing.s}",
+              "type": "spacing"
+            }
+          },
+          "sizing": {
+            "leading-icon": {
+              "height": {
+                "value": "{mas.semantic.sizing.l}",
+                "type": "sizing"
+              },
+              "width": {
+                "value": "{mas.semantic.sizing.l}",
+                "type": "sizing"
+              }
+            }
+          },
+          "typography": {
+            "label": {
+              "value": "{mas.semantic.typography.all-screen.body3-bold}",
+              "type": "typography"
+            }
+          },
+          "color": {
+            "label": {
+              "value": "{mas.semantic.color.content.main}",
+              "type": "color"
+            },
+            "leading-icon": {
+              "success": {
+                "value": "{mas.semantic.color.status.success}",
+                "type": "color"
+              },
+              "error": {
+                "value": "{mas.semantic.color.status.error}",
+                "type": "color"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

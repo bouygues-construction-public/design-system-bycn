@@ -1,7 +1,7 @@
 {
-    "name": "@masoni/css-circular-progress-bar",
+    "name": "@masoni/css-inline-loading",
     "version": "0.0.1",
-    "description": "Bouygues Design System - Masoni specific CSS styles for Circular Progress Bar",
+    "description": "Bouygues Design System - Masoni specific CSS styles for Inline Loading",
     "keywords": [
         "design-system",
         "css",
@@ -13,7 +13,7 @@
         "dist",
         "src"
     ],
-    "homepage": "https://github.com/bouygues-construction/design-system-bycn/tree/main/projects/css/src/components/src/circular-progress-bar",
+    "homepage": "https://github.com/bouygues-construction/design-system-bycn/tree/main/projects/css/src/components/src/inline-loading",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/bouygues-construction/design-system-bycn.git"

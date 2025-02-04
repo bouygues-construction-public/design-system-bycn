@@ -1,0 +1,10 @@
+<div class="mas-inline-loading_loader">
+  <i *ngIf="state=='active'" class="mas-inline-loading_icon"></i>
+  <i *ngIf="state=='success'" class="mas-inline-loading_icon mas-check-circle-filled mas-system-and-device--filled"></i>
+  <i *ngIf="state=='error'" class="mas-inline-loading_icon mas-math-and-finance--filled mas-x-circle-filled"></i>
+</div>
+<div class="mas-inline-loading_label">
+  <span *ngIf="activeText!='' && state=='active'">{{activeText}}</span>
+  <span *ngIf="successText!='' && state=='success'">{{successText}}</span>
+  <span *ngIf="errorText!='' && state=='error'">{{errorText}}</span>
+</div>
