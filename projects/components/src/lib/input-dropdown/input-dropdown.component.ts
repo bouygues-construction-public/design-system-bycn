@@ -62,7 +62,7 @@ export class MasInputDropdown implements ControlValueAccessor, AfterContentInit 
    * Whether the component is invalid.
    */
   @Input() invalid: boolean = false;
-    /**
+  /**
    * The size of the input-dropdown. Availabel options: 'S', 'M'. Default: 'S'.
    */
   @Input() size: 'M' | 'S' = 'S';

@@ -13,6 +13,8 @@ import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR } from '@angular/f
   host: {
     class: 'mas-search-bar',
     '[class.mas-search-bar--disabled]': 'disabled',
+    '[class.mas-search-bar_size--small]': 'size === "small"',
+    '[class.mas-search-bar_size--medium]': 'size === "medium"'
   },
 })
 export class MasSearchBar implements ControlValueAccessor, AfterViewInit {
@@ -22,8 +24,21 @@ export class MasSearchBar implements ControlValueAccessor, AfterViewInit {
   protected onChangeHandler = (_: any) => {};
   protected onTouchedHandler = () => {};
   @ViewChild('searchinput') inputViewChild: ElementRef | undefined;
-  @Input() disabled: boolean;
+  /**
+   * Whether the search bar should be disabled. Default: false.
+   */
+  @Input() disabled: boolean = false;
+  /**
+   * Placeholder to be shown if no value has been entered.
+   */
   @Input() placeholder: string = '';
+  /**
+   * The size of the search bar. Availabel options: 'small', 'medium'. Default: 'medium'.
+   */
+  @Input() size: 'medium' | 'small' = 'medium'
+  /**
+   * Query value for the search bar.
+   */
   @Input()
   get query(): string {
     return this._query;
@@ -31,8 +46,13 @@ export class MasSearchBar implements ControlValueAccessor, AfterViewInit {
   set query(value: string) {
     this._query = value;
   }
+  /**
+   * Emits the clear query event promise on clear is clicked.
+   */
   @Output() clearClick: EventEmitter<Event> = new EventEmitter();
-  @Output() closeClick: EventEmitter<Event> = new EventEmitter();
+  /**
+   * Emits the search query promise on user's typing input. 
+   */
   @Output() search: EventEmitter<any> = new EventEmitter();
   get empty(): boolean {
     return this.query === '' ? true : false;
@@ -60,11 +80,8 @@ export class MasSearchBar implements ControlValueAccessor, AfterViewInit {
   onClearClick(event: any) {
     this.input.setValue('');
     this.inputViewChild?.nativeElement.focus();
+    this.onFocus(true);
     this.clearClick.emit(event);
-  }
-  onCloseClick(event: any) {
-    this.onFocus(false);
-    this.closeClick.emit(event);
   }
   onSearch(query: string) {
     if (query !== '') {
