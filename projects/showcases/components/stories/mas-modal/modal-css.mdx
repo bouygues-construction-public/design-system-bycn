@@ -1,0 +1,179 @@
+import { Meta, Story, Preview, Props, Description } from '@storybook/blocks';
+
+<Meta title="Components / Overlays / Modal / CSS" />
+
+<style>
+  {`
+    .container {
+      overflow: auto;
+      padding: 100px 50px;
+      width: 95%;
+      min-height: fit-content;
+    }
+    .mas-modal_container {
+      position: relative;
+    }
+`}
+</style>
+
+# Modal
+
+A modal is a simulated window that appears above the main content and requires user interaction.
+
+## Usage
+
+- **Modal Usage**
+  - Use modals when the information you want to provide deserves detail or multiple sentences.
+  - Use modals to ask a user to confirm that they want to perform an action.
+  - Use modals in case of blocking actions that necessarily require user action.
+
+## Default
+
+<div class="container sb-unstyled">
+  <div class="mas-modal mas-modal_size--small">
+    <div class="mas-modal_container">
+      <div class="modalThree">
+        <div class="mas-modal_header">
+          <span class="mas-modal_header-title">It’s the title</span>
+          <button class="mas-icon-button mas-icon-button_shape--rounded mas-icon-button_variant--neutral  mas-icon-button_size--small">
+            <i class="mas-x-outlined mas-math-and-finance--outlined mas-icon"></i>
+          </button>
+        </div>
+        <div class="mas-modal_content-scroll">
+          <div class="mas-modal_content">
+            <p class="mas-modal_content-text">
+              The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the
+              height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be
+              an equal amount of space at the top and bottom of the viewport
+            </p>
+            <div class="custom-ng-content"></div>
+          </div>
+        </div>
+        <div class="mas-modal_footer">
+          <button class="mas-button mas-button_size--small mas-button_variant--primary mas-modal_footer-confirm-btn">
+            Confirm
+          </button>
+          <button class="mas-button mas-button_size--small mas-button_variant--secondary mas-modal_footer-cancel-btn">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+CSS styles for `Modal` component:
+
+```css
+/* Modal styles */
+.mas-modal {
+  /* Modal styles here */
+}
+```
+
+## Screen Sizes
+
+### Small Size
+
+<div class="container sb-unstyled">
+  <div class="mas-modal mas-modal_size--small">
+    <div class="mas-modal_container">
+      <div class="modalThree">
+        <div class="mas-modal_header">
+          <span class="mas-modal_header-title">It’s the title</span>
+          <button class="mas-icon-button mas-icon-button_shape--rounded mas-icon-button_variant--neutral  mas-icon-button_size--small">
+            <i class="mas-x-outlined mas-math-and-finance--outlined mas-icon"></i>
+          </button>
+        </div>
+        <div class="mas-modal_content-scroll">
+          <div class="mas-modal_content">
+            <p class="mas-modal_content-text">
+              The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the
+              height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be
+              an equal amount of space at the top and bottom of the viewport
+            </p>
+            <div class="custom-ng-content"></div>
+          </div>
+        </div>
+        <div class="mas-modal_footer">
+          <button class="mas-button mas-button_size--small mas-button_variant--primary mas-modal_footer-confirm-btn">
+            Confirm
+          </button>
+          <button class="mas-button mas-button_size--small mas-button_variant--secondary mas-modal_footer-cancel-btn">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+### Medium Size
+
+<div class="container sb-unstyled">
+  <div class="mas-modal mas-modal_size--medium">
+    <div class="mas-modal_container">
+      <div class="modalThree">
+        <div class="mas-modal_header">
+          <span class="mas-modal_header-title">It’s the title</span>
+          <button class="mas-icon-button mas-icon-button_shape--rounded mas-icon-button_variant--neutral  mas-icon-button_size--small">
+            <i class="mas-x-outlined mas-math-and-finance--outlined mas-icon"></i>
+          </button>
+        </div>
+        <div class="mas-modal_content-scroll">
+          <div class="mas-modal_content">
+            <p class="mas-modal_content-text">
+              The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the
+              height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be
+              an equal amount of space at the top and bottom of the viewport
+            </p>
+            <div class="custom-ng-content"></div>
+          </div>
+        </div>
+        <div class="mas-modal_footer">
+          <button class="mas-button mas-button_size--small mas-button_variant--primary mas-modal_footer-confirm-btn mas-button_shape--rounded">
+            Confirm
+          </button>
+          <button class="mas-button mas-button_size--small mas-button_variant--secondary mas-modal_footer-cancel-btn mas-button_shape--rounded">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+### Large Size
+
+<div class="container sb-unstyled">
+  <div class="mas-modal mas-modal_size--large">
+    <div class="mas-modal_container">
+      <div class="modalThree">
+        <div class="mas-modal_header">
+          <span class="mas-modal_header-title">It’s the title</span>
+          <button class="mas-icon-button mas-icon-button_shape--rounded mas-icon-button_variant--neutral  mas-icon-button_size--small">
+            <i class="mas-x-outlined mas-math-and-finance--outlined mas-icon"></i>
+          </button>
+        </div>
+        <div class="mas-modal_content-scroll">
+          <div class="mas-modal_content">
+            <p class="mas-modal_content-text">
+              The modal height will grow according to the amount of content in it. Once the modal reaches 90% of the
+              height of the viewport, the body will begin to scroll (See scrolling behavior here beside). There will be
+              an equal amount of space at the top and bottom of the viewport
+            </p>
+            <div class="custom-ng-content"></div>
+          </div>
+        </div>
+        <div class="mas-modal_footer">
+          <button class="mas-button mas-button_size--small mas-button_variant--primary mas-modal_footer-confirm-btn mas-button_shape--rounded">
+            Confirm
+          </button>
+          <button class="mas-button mas-button_size--small mas-button_variant--secondary mas-modal_footer-cancel-btn mas-button_shape--rounded">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

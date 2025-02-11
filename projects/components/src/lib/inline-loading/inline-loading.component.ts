@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'inline-loading',
+  selector: 'mas-inline-loading',
   templateUrl: './inline-loading.component.html',
   host: {
     class: 'mas-inline-loading',

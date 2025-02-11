@@ -46,7 +46,12 @@ export default {
               [errorText]="errorText">
             </mas-inline-loading>
     `,
-    props: args,
+    props: {
+      state: 'active',
+      activeText: 'loading...',
+      successText: 'success!',
+      errorText: 'something went wrong.'
+    },
   }),
   argTypes: argTypes,
   parameters: {

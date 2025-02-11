@@ -6,7 +6,6 @@ import { MasIconButtonModule } from "../icon-button";
 
 @NgModule({
   imports: [CommonModule, MasButtonModule, MasIconButtonModule],
-
   exports: [MasModal],
   declarations: [MasModal],
 })

@@ -1,0 +1,102 @@
+import { Meta, Story, Preview, Props, Description, Canvas } from '@storybook/blocks';
+
+<Meta title="Components / Actions / Button / CSS" />
+
+# Button
+
+## Introduction
+
+The `Button` element is an interactive user-activated element.
+
+Once activated, it then performs an action on the interface, such as submitting a form, changing the state of an element on the interface, or opening a dialog box.
+
+For more details, see our [Button guideline](https://zeroheight.com/9b39bb2a0/p/520f9f-button/b/75c0d1)
+
+## Basic
+
+<button class="mas-button mas-button_size--medium mas-button_variant--primary">button</button>
+<br/>
+<button class="mas-button mas-button_size--medium mas-button_variant--primary" disabled>button</button>
+
+## Variant
+
+<button class="mas-button mas-button_size--medium mas-button_variant--primary">button</button>
+<br/>
+<button class="mas-button mas-button_size--medium mas-button_variant--secondary">button</button>
+<br/>
+<button class="mas-button mas-button_size--medium mas-button_variant--tertiary">button</button>
+
+CSS styles for variant used by the `Button` component:
+
+```css
+/* Variant styles */
+.mas-button_variant--primary {
+  /* primary variant styles here */
+}
+.mas-button_variant--secondary {
+  /* secondary variant styles here */
+}
+.mas-button_variant--tertiary {
+  /* tertiary variant styles here */
+}
+```
+
+## Size
+
+<button class="mas-button mas-button_size--small mas-button_variant--primary">button</button>
+<br/>
+<button class="mas-button mas-button_size--medium mas-button_variant--primary">button</button>
+
+CSS styles for size used by the `Button` component:
+
+```css
+/* Size styles */
+.mas-button_size--small {
+  /* Small size styles here */
+}
+.mas-button_size--medium {
+  /* Medium size styles here */
+}
+.mas-button_size--large {
+  /* Large size styles here */
+}
+```
+
+## Shape
+
+<button class="mas-button mas-button_shape--rounded mas-button_variant--secondary">Rounded</button>
+<br/>
+<button class="mas-button mas-button_shape--square mas-button_variant--secondary">Square</button>
+
+CSS styles for shape used by the `Button` component:
+
+```css
+/* Shape styles */
+.mas-button_shape--rounded {
+  /* Rounded size styles here */
+}
+.mas-button_shape--square {
+  /* Square size styles here */
+}
+```
+
+## Icons
+
+<button class="mas-button mas-button_size--medium mas-button_variant--primary"><i class="mas-icon mas-icon-left mas-check-outlined mas-system-and-device--outlined"/>left icon</button>
+<br/>
+<button class="mas-button mas-button_size--medium mas-button_variant--primary">Right icon<i class="mas-icon mas-icon-right mas-check-outlined mas-system-and-device--outlined"/></button>
+<br/>
+<button class="mas-button mas-button_size--medium mas-button_variant--primary"><i class="mas-icon mas-icon-left mas-check-outlined mas-system-and-device--outlined"/>Button<i class="mas-icon mas-icon-right mas-check-outlined mas-system-and-device--outlined"/></button>
+
+CSS styles for size used by the `Button` component:
+
+```css
+/* Icon styles */
+.mas-button--icon-left {
+  /* Left icon styles here */
+}
+
+.mas-button--icon-right {
+  /* Right icon styles here */
+}
+```

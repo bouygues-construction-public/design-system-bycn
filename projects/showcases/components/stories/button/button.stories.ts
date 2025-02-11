@@ -32,7 +32,7 @@ const argTypes = {
       description: 'The size of the button. Available options: \'small\', \'medium\'. Default: \'medium\'', 
       defaultValue: 'medium',
       control: 'radio', 
-      options: ['small', 'medium'],
+      options: ['small', 'medium', 'large'],
     },
     disabled: {
       type: { name: 'boolean', required: false },

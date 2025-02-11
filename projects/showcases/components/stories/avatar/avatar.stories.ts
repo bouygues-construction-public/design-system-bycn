@@ -26,7 +26,7 @@ const meta: Meta<MasAvatar> = {
     docs: {
       description: {
         component:
-          'The `Avatar` component represents an avatar with different variants (Avatar, Icon, Initial) and sizes (XS, S, M, L).',
+          'The `Avatar` component represents an avatar with different variants (Avatar, Icon, initial) and sizes (x-small, small, medium, large).',
       },
     },
   },
@@ -37,8 +37,8 @@ const meta: Meta<MasAvatar> = {
               [type]="type"
               [size]="size"
               [icon]="icon"
-              [UrlImg]="UrlImg"
-              [Initial]="Initial"
+              [urlImg]="urlImg"
+              [initial]="initial"
             ></mas-avatar>
     `,
   }),
@@ -99,10 +99,10 @@ export const ImageSize: Story = {
   render: () => ({
     template: `
       <div style="display: flex; gap: 20px;align-items: end">
-        <mas-avatar type="Image" size="XS" UrlImg="https://img.freepik.com/photos-gratuite/vue-face-du-travailleur-lunettes-protection-casque_23-2148773446.jpg?w=740&t=st=1715947346~exp=1715947946~hmac=41e1d88d8811c420c08071b57590219e3d638eb053bc2c16c4e90d071152d39a"></mas-avatar>
-        <mas-avatar type="Image" size="S" UrlImg="https://img.freepik.com/photos-gratuite/vue-face-du-travailleur-lunettes-protection-casque_23-2148773446.jpg?w=740&t=st=1715947346~exp=1715947946~hmac=41e1d88d8811c420c08071b57590219e3d638eb053bc2c16c4e90d071152d39a"></mas-avatar>
-        <mas-avatar type="Image" size="M" UrlImg="https://img.freepik.com/photos-gratuite/vue-face-du-travailleur-lunettes-protection-casque_23-2148773446.jpg?w=740&t=st=1715947346~exp=1715947946~hmac=41e1d88d8811c420c08071b57590219e3d638eb053bc2c16c4e90d071152d39a"></mas-avatar>
-        <mas-avatar type="Image" size="L" UrlImg="https://img.freepik.com/photos-gratuite/vue-face-du-travailleur-lunettes-protection-casque_23-2148773446.jpg?w=740&t=st=1715947346~exp=1715947946~hmac=41e1d88d8811c420c08071b57590219e3d638eb053bc2c16c4e90d071152d39a"></mas-avatar>
+        <mas-avatar type="image" size="x-small" urlImg="https://img.freepik.com/photos-gratuite/vue-face-du-travailleur-lunettes-protection-casque_23-2148773446.jpg?w=740&t=st=1715947346~exp=1715947946~hmac=41e1d88d8811c420c08071b57590219e3d638eb053bc2c16c4e90d071152d39a"></mas-avatar>
+        <mas-avatar type="image" size="small" urlImg="https://img.freepik.com/photos-gratuite/vue-face-du-travailleur-lunettes-protection-casque_23-2148773446.jpg?w=740&t=st=1715947346~exp=1715947946~hmac=41e1d88d8811c420c08071b57590219e3d638eb053bc2c16c4e90d071152d39a"></mas-avatar>
+        <mas-avatar type="image" size="medium" urlImg="https://img.freepik.com/photos-gratuite/vue-face-du-travailleur-lunettes-protection-casque_23-2148773446.jpg?w=740&t=st=1715947346~exp=1715947946~hmac=41e1d88d8811c420c08071b57590219e3d638eb053bc2c16c4e90d071152d39a"></mas-avatar>
+        <mas-avatar type="image" size="large" urlImg="https://img.freepik.com/photos-gratuite/vue-face-du-travailleur-lunettes-protection-casque_23-2148773446.jpg?w=740&t=st=1715947346~exp=1715947946~hmac=41e1d88d8811c420c08071b57590219e3d638eb053bc2c16c4e90d071152d39a"></mas-avatar>
       </div>
     `,
   }),
@@ -112,25 +112,12 @@ export const IconSize: Story = {
   render: () => ({
     template: `
       <div style="display: flex; gap: 20px;align-items: end">
-        <mas-avatar type="Icon" size="XS" icon="mas-user-outlined mas-people--outlined mas-icon"></mas-avatar>
-        <mas-avatar type="Icon" size="S" icon="mas-user-outlined mas-people--outlined mas-icon"></mas-avatar>
-        <mas-avatar type="Icon" size="M" icon="mas-user-outlined mas-people--outlined mas-icon"></mas-avatar>
-        <mas-avatar type="Icon" size="L" icon="mas-user-outlined mas-people--outlined mas-icon"></mas-avatar>
+        <mas-avatar type="icon" size="x-small" icon="mas-user-outlined mas-people--outlined mas-icon"></mas-avatar>
+        <mas-avatar type="icon" size="small" icon="mas-user-outlined mas-people--outlined mas-icon"></mas-avatar>
+        <mas-avatar type="icon" size="medium" icon="mas-user-outlined mas-people--outlined mas-icon"></mas-avatar>
+        <mas-avatar type="icon" size="large" icon="mas-user-outlined mas-people--outlined mas-icon"></mas-avatar>
       </div>
 
-    `,
-  }),
-};
-
-export const Type: Story = {
-  render: () => ({
-    template: `
-      <div style="display: flex; gap: 20px; align-items: end">
-        <mas-avatar type="Initial" size="XS" Initial="A"></mas-avatar>
-        <mas-avatar type="Initial" size="S" Initial="A"></mas-avatar>
-        <mas-avatar type="Initial" size="M" Initial="A"></mas-avatar>
-        <mas-avatar type="Initial" size="L" Initial="A"></mas-avatar>
-      </div>
     `,
   }),
 };

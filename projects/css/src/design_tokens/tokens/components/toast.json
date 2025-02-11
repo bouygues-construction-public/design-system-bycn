@@ -1,0 +1,84 @@
+{
+  "mas": {
+    "web": {
+      "component": {
+        "toast": {
+          "color": {
+            "container": {
+              "value": "{mas.semantic.color.container.contrasted}",
+              "type": "color"
+            },
+            "content": {
+              "value": "{mas.semantic.color.content.inverse}",
+              "type": "color"
+            }
+          },
+          "border-radius": {
+            "container": {
+              "top-left": {
+                "value": "{mas.semantic.border-radius.s}",
+                "type": "borderRadius"
+              },
+              "top-right": {
+                "value": "{mas.semantic.border-radius.s}",
+                "type": "borderRadius"
+              },
+              "bottom-right": {
+                "value": "{mas.semantic.border-radius.s}",
+                "type": "borderRadius"
+              },
+              "bottom-left": {
+                "value": "{mas.semantic.border-radius.s}",
+                "type": "borderRadius"
+              }
+            }
+          },
+          "typography": {
+            "default": {
+              "label": {
+                "value": "{mas.semantic.typography.all-screen.body3}",
+                "type": "typography"
+              }
+            }
+          },
+          "shadow": {
+            "default": {
+              "value": "{mas.semantic.box-shadow.m}",
+              "type": "boxShadow"
+            }
+          },
+          "spacing": {
+            "actions": {
+              "gap": {
+                "value": "{mas.semantic.spacing.l}",
+                "type": "spacing"
+              }
+            },
+            "padding": {
+              "left": {
+                "value": "{mas.semantic.spacing.l}",
+                "type": "spacing"
+              },
+              "right": {
+                "value": "{mas.semantic.spacing.l}",
+                "type": "spacing"
+              },
+              "top": {
+                "value": "{mas.semantic.spacing.l}",
+                "type": "spacing"
+              },
+              "bottom": {
+                "value": "{mas.semantic.spacing.l}",
+                "type": "spacing"
+              }
+            },
+            "gap": {
+              "value": "{mas.semantic.spacing.l}",
+              "type": "spacing"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -11,10 +11,10 @@ const argTypes = {
   },
   size: {
     type: { name: 'string', required: false },
-    description: 'Size of the progress bar: "small" or "large".',
-    defaultValue: 'large',
+    description: 'Size of the progress bar: "small" or "medium".',
+    defaultValue: 'medium',
     control: 'radio',
-    options: ['small', 'large'],
+    options: ['small', 'medium'],
   },
   state: {
     type: { name: 'string', required: false },

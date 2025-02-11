@@ -1,6 +1,6 @@
 @import '@masoni/css-design-tokens/dist/index.css';
 
-.mas-link {
+.mas-link a {
   display: flex;
   align-items: center;
   gap: var(--mas-web-component-link-spacing-gap);

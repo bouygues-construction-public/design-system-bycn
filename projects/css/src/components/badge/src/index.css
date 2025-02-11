@@ -53,7 +53,7 @@
   box-shadow: none;
 }
 .mas-badge_color--primary {
-  background-color: var(--mas-semantic-primary--default);
+  background-color: var(--mas-web-component-badge-color-container);
 }
 .mas-badge_color--brand {
   background-color: var(--mas-semantic-brand--default);

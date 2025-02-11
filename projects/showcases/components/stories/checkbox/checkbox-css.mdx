@@ -1,0 +1,137 @@
+import { Meta, Story, Preview, Props, Description } from '@storybook/blocks';
+
+<Meta title="Components / Selection controls / Checkbox / CSS" />
+
+# Checkbox
+
+## Introduction
+
+Checkboxes are used to let a user select one or more options of a limited number of choices.
+
+## Default
+
+<div class="mas-checkbox">
+<input class="hidden-accessible" type="checkbox" checked/>
+<div class="mas-checkbox_touch-target"></div>
+<div class="mas-checkbox-box mas-checkbox-box--active">
+<svg width="12" height="10" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 5L3 7L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+</div>
+<label class="mas-checkbox_label">Checkbox</label>
+</div>
+
+CSS styles :
+
+```css
+.mas-checkbox {
+  /* styles here */
+}
+.mas-checkbox_label {
+  /* styles here */
+}
+```
+
+<div class="mas-checkbox">
+  <input class="hidden-accessible" type="checkbox" />
+  <div class="mas-checkbox_touch-target"></div>
+  <div class="mas-checkbox-box mas-checkbox-box--active">
+    <svg width="12" height="10" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 5L3 7L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </div>
+  <label class="mas-checkbox_label">Sand</label>
+</div>
+
+<br />
+
+<div class="mas-checkbox">
+  <input class="hidden-accessible" type="checkbox" />
+  <div class="mas-checkbox_touch-target"></div>
+  <div class="mas-checkbox-box"></div>
+  <label class="mas-checkbox_label">Bricks</label>
+</div>
+
+<br />
+
+<div class="mas-checkbox">
+  <input class="hidden-accessible" type="checkbox" disabled />
+  <div class="mas-checkbox_touch-target"></div>
+  <div class="mas-checkbox-box"></div>
+  <label class="mas-checkbox_label">Stone and Rock</label>
+</div>
+
+## Indeterminate
+
+<div class="mas-checkbox">
+  <input class="hidden-accessible" type="checkbox" checked/>
+  <div class="mas-checkbox_touch-target"></div>
+  <div class="mas-checkbox-box mas-checkbox-box--active">
+    <svg width="10" height="4" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1H9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </div>
+  <label class="mas-checkbox_label">Interminate</label>
+</div>
+
+## Size
+
+<div class="mas-checkbox">
+  <input class="hidden-accessible" type="checkbox" checked/>
+  <div class="mas-checkbox_touch-target"></div>
+  <div class="mas-checkbox-box mas-checkbox-box--active">
+    <svg width="10" height="4" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1H9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </div>
+  <label class="mas-checkbox_label">Small size - Interminate</label>
+</div>
+
+<br />
+
+<div class="mas-checkbox mas-checkbox--large">
+  <input class="hidden-accessible" type="checkbox" checked/>
+  <div class="mas-checkbox_touch-target"></div>
+  <div class="mas-checkbox-box mas-checkbox-box--active">
+    <svg width="14" height="4" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 1H13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </div>
+  <label class="mas-checkbox_label">Large size - Interminate</label>
+</div>
+
+<br />
+
+<div class="mas-checkbox">
+  <input class="hidden-accessible" type="checkbox" checked/>
+  <div class="mas-checkbox_touch-target"></div>
+  <div class="mas-checkbox-box mas-checkbox-box--active">
+    <svg width="12" height="10" viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 5L3 7L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </div>
+  <label class="mas-checkbox_label">Small size - Checkbox</label>
+</div>
+
+<br />
+
+<div class="mas-checkbox mas-checkbox--large">
+  <input class="hidden-accessible" type="checkbox" checked/>
+  <div class="mas-checkbox_touch-target"></div>
+  <div class="mas-checkbox-box mas-checkbox-box--active">
+    <svg width="16" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1 7L4 10L13 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </div>
+  <label class="mas-checkbox_label">Large size - Checkbox</label>
+</div>
+
+CSS styles for size used by the `checkbox` component:
+
+```css
+/* Size styles */
+.mas-checkbox_size--small {
+  /* Small size styles here */
+}
+.mas-checkbox_size--large {
+  /* Large size styles here */
+}
+```

@@ -6,7 +6,8 @@
         #firstFocusable
         tabindex="-1"
         size="small"
-        variant="tertiary"
+        shape="rounded"
+        variant="neutral"
         iconAlone="mas-x-outlined mas-math-and-finance--outlined mas-icon"
         (click)="closeModal()"
         (keydown)="handleKeydown($event, 'cancel')"
@@ -31,7 +32,7 @@
           size="small"
           #lastFocusable
           aria-label="confirm"
-          >{{ buttonLabelprimary }}</mas-button
+          >{{ confirmButtonLabel }}</mas-button
         >
       </ng-container>
       <ng-container *ngIf="showCancelButton">
@@ -43,7 +44,7 @@
           variant="secondary"
           size="small"
           aria-label="cancel"
-          >{{ buttonLabelsecondary }}</mas-button
+          >{{ cancelButtonLabel }}</mas-button
         >
       </ng-container>
     </div>

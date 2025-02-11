@@ -1,0 +1,103 @@
+import { Meta, Story, Preview, Props, Description } from '@storybook/blocks';
+
+<Meta title="Components / Indicators / Avatar / CSS" />
+
+<style>
+  {`
+    .container {
+      display: flex;
+      gap: 20px;
+      align-items: end;
+    }
+`}
+</style>
+
+# Avatar
+
+The `Avatar` component represents an avatar with different variants (Avatar, Icon) and sizes (XS, S, M, L).
+
+## Usage
+
+To incorporate the Avatar component into your application, simply provide the necessary inputs to the component. The Avatar component offers a range of customizable properties such as type, size, background color, border color, border weight, and border radius, allowing you to tailor the appearance of the avatar to suit your application's requirements.
+
+## Default
+
+{/* ! default avatar */}
+
+CSS styles for `Avatar` component:
+
+```css
+/* Avatar styles */
+.mas-avatar {
+  /* Avatar styles here */
+}
+.mas-avatar_container {
+  /* Avatar elements container styles here */
+}
+```
+
+## Types & Sizes
+
+The component comes in different Type `image`,`icon` and different Size `x-small`,`small`,`medium`,`large` :
+
+`Image`
+
+<div class="container">
+  <div class="mas-avatar_container mas-avatar_size--x-small ">
+    <img
+      class="mas-avatar_img"
+      src="https://img.freepik.com/photos-gratuite/vue-face-du-travailleur-lunettes-protection-casque_23-2148773446.jpg?w=740&t=st=1715947346~exp=1715947946~hmac=41e1d88d8811c420c08071b57590219e3d638eb053bc2c16c4e90d071152d39a"
+      alt="Avatar"
+    />
+  </div>
+  <div class="mas-avatar_container mas-avatar_size--small ">
+    <img
+      class="mas-avatar_img"
+      src="https://img.freepik.com/photos-gratuite/vue-face-du-travailleur-lunettes-protection-casque_23-2148773446.jpg?w=740&t=st=1715947346~exp=1715947946~hmac=41e1d88d8811c420c08071b57590219e3d638eb053bc2c16c4e90d071152d39a"
+      alt="Avatar"
+    />
+  </div>
+  <div class="mas-avatar_container mas-avatar_size--medium ">
+    <img
+      class="mas-avatar_img"
+      src="https://img.freepik.com/photos-gratuite/vue-face-du-travailleur-lunettes-protection-casque_23-2148773446.jpg?w=740&t=st=1715947346~exp=1715947946~hmac=41e1d88d8811c420c08071b57590219e3d638eb053bc2c16c4e90d071152d39a"
+      alt="Avatar"
+    />
+  </div>
+  <div class="mas-avatar_container mas-avatar_size--large ">
+    <img
+      class="mas-avatar_img"
+      src="https://img.freepik.com/photos-gratuite/vue-face-du-travailleur-lunettes-protection-casque_23-2148773446.jpg?w=740&t=st=1715947346~exp=1715947946~hmac=41e1d88d8811c420c08071b57590219e3d638eb053bc2c16c4e90d071152d39a"
+      alt="Avatar"
+    />
+  </div>
+</div>
+
+```css
+.mas-avatar_img {
+  /* Avatar image styles here */
+}
+```
+
+`Icon`
+
+<div class="container">
+  <div class="mas-avatar_container mas-avatar_size--x-small ">
+    <i class="mas-avatar_icon mas-user-outlined mas-people--outlined mas-icon"></i>
+  </div>
+  <div class="mas-avatar_container mas-avatar_size--small ">
+    <i class="mas-avatar_icon mas-user-outlined mas-people--outlined mas-icon"></i>
+  </div>
+  <div class="mas-avatar_container mas-avatar_size--medium ">
+    <i class="mas-avatar_icon mas-user-outlined mas-people--outlined mas-icon"></i>
+  </div>
+  <div class="mas-avatar_container mas-avatar_size--large ">
+    <i class="mas-avatar_icon mas-user-outlined mas-people--outlined mas-icon"></i>
+  </div>
+</div>
+
+```css
+.mas-avatar_icon {
+  /* Avatar icon styles here */
+}
+```

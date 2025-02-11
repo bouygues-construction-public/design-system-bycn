@@ -1,0 +1,71 @@
+import { Meta, Story, Preview, Props, Description } from '@storybook/blocks';
+
+<Meta title="Components / Selection controls / Toggle Button / CSS" />
+
+# Toggle Button
+
+## Introduction
+
+Toggle button is a control component that allows you to switch a binary property between two states.
+
+## Default
+
+<div class="mas-toggle-button">
+<div class="mas-toggle-button_switch">
+<input type="checkbox" class="hidden-accessible" checked/>
+<span aria-hidden=""></span>
+</div>
+</div>
+
+CSS styles :
+
+```css
+.mas-toggle-button {
+  /* styles here */
+}
+.mas-toggle-button_switch {
+  /* styles here */
+}
+```
+
+<div class="mas-toggle-button">
+<div class="mas-toggle-button_switch">
+<input type="checkbox" class="hidden-accessible"/>
+<span aria-hidden=""></span>
+</div>
+</div>
+<br/>
+<div class="mas-toggle-button">
+<div class="mas-toggle-button_switch">
+<input type="checkbox" class="hidden-accessible" disabled checked/>
+<span aria-hidden=""></span>
+</div>
+</div>
+
+## Size
+
+<div class="mas-toggle-button">
+<div class="mas-toggle-button_switch">
+<input type="checkbox" class="hidden-accessible"/>
+<span aria-hidden=""></span>
+</div>
+</div>
+<br/>
+<div class="mas-toggle-button mas-toggle-button--large">
+<div class="mas-toggle-button_switch">
+<input type="checkbox" class="hidden-accessible"/>
+<span aria-hidden=""></span>
+</div>
+</div>
+
+CSS styles for size used by the `toggle-button` component:
+
+```css
+/* Size styles */
+.mas-toggle-button_size--small {
+  /* Small size styles here */
+}
+.mas-toggle-button_size--large {
+  /* Large size styles here */
+}
+```

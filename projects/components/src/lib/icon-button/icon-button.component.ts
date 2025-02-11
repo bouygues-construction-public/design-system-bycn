@@ -12,7 +12,7 @@ export class MasIconButton {
   /**
    * Whether the button should be disabled. Default: false.
    */
-  @Input() variant: 'primary' | 'secondary' | 'tertiary' = 'primary';
+  @Input() variant: 'primary' | 'secondary' | 'tertiary' | 'neutral' = 'primary';
   /**
    * The size of the button. Available options: 'small', 'medium', 'large'. Default: 'medium'.
    */

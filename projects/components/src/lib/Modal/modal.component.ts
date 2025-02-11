@@ -5,9 +5,9 @@ import { Component, Input, Output, EventEmitter, ViewChild, ElementRef, HostList
   templateUrl: './modal.component.html',
   host: {
     class: 'mas-modal',
-    ['class.mas-modal_size--small']: 'size === small',
-    ['class.mas-modal_size--medium']: 'size === medium',
-    ['class.mas-modal_size--large']: 'size === large',
+    '[class.mas-modal_size--small]': 'size === "small"',
+    '[class.mas-modal_size--medium]': 'size === "medium"',
+    '[class.mas-modal_size--large]': 'size === "large"',
   },
 })
 export class MasModal {

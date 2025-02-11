@@ -26,17 +26,11 @@ const meta: Meta<MasBadge> = {
       options: ['dot', 'number'],
       description: '',
     },
-    icon: { type: { name: 'string', required: false }, description: '' },
     size: {
       type: { name: 'string', required: false },
       control: 'radio',
-      options: ['small', 'medium', 'large'],
+      options: ['small', 'large'],
       description: "The size of the badge with icon. Availabel options: 'small', 'medium', 'large'. Default: 'medium'",
-    },
-    color: {
-      type: { name: 'string', required: false },
-      control: 'select',
-      options: ['success', 'warning', 'alert', 'primary', 'brand'],
     },
   },
 };
@@ -47,47 +41,33 @@ type Story = StoryObj<MasBadge>;
 // More on writing stories with args: https://storybook.js.org/docs/angular/writing-stories/args
 export const Overview: Story = {
   args: {
-    size: 'small',
+    size: 'large',
     number: 1,
     type: 'number',
     color: 'primary',
-    icon: 'mas-envelope-simple-outlined mas-communication--outlined',
   },
 };
 
-export const Color: Story = {
-  render: () => ({
-    template: `
-      <div style="display: flex; gap: 20px">
-        <mas-badge color="primary" icon="mas-design--outlined mas-circle-outlined"></mas-badge>
-        <mas-badge color="warning" icon="mas-design--outlined mas-circle-outlined"></mas-badge>
-        <mas-badge color="success" icon="mas-design--outlined mas-circle-outlined"></mas-badge>
-        <mas-badge color="alert" icon="mas-design--outlined mas-circle-outlined"></mas-badge>
-        <mas-badge color="brand" icon="mas-design--outlined mas-circle-outlined"></mas-badge> 
-      </div>
- 
-      `,
-  }),
-};
+// export const Color: Story = {
+//   render: () => ({
+//     template: `
+//       <div style="display: flex; gap: 20px">
+//         <mas-badge color="primary"></mas-badge>
+//         <mas-badge color="warning"></mas-badge>
+//         <mas-badge color="success"></mas-badge>
+//         <mas-badge color="alert"></mas-badge>
+//         <mas-badge color="brand"></mas-badge> 
+//       </div>
+//       `,
+//   }),
+// };
 export const Number: Story = {
   render: () => ({
     template: `
       <div style="display: flex; gap: 20px">
-        <mas-badge color="primary" [number]="0" type="number"></mas-badge>
-        <mas-badge color="primary" [number]="9" type="number"></mas-badge>
-        <mas-badge color="primary" [number]="100" type="number"></mas-badge>
-      </div>
-
-      `,
-  }),
-};
-export const WithIcon: Story = {
-  render: () => ({
-    template: `
-      <div style="display: flex; gap: 20px">
-        <mas-badge color="primary" [number]="0" type="number" icon="mas-user-outlined mas-people--outlined"></mas-badge>
-        <mas-badge color="primary" [number]="9" type="number" icon="mas-bookmark-simple-outlined mas-education--outlined"></mas-badge>
-        <mas-badge color="primary" [number]="100" type="number" icon="mas-chat-circle-dots-outlined mas-communication--outlined"></mas-badge>
+        <mas-badge color="primary" size="large" [number]="0" type="number"></mas-badge>
+        <mas-badge color="primary" size="large" [number]="9" type="number"></mas-badge>
+        <mas-badge color="primary" size="large" [number]="100" type="number"></mas-badge>
       </div>
       `,
   }),

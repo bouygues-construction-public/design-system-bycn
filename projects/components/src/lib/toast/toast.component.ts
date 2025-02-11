@@ -3,25 +3,28 @@ import { ToastService } from './toast.service';
 
 @Component({
   selector: 'mas-toast',
-  templateUrl: './toast.component.html'
+  host: {
+    class: 'mas-toast',
+  },
+  templateUrl: './toast.component.html',
 })
 export class MasToast {
-  constructor(private toastService: ToastService) { }
+  constructor(private toastService: ToastService) {}
 
   toastShow: boolean = false;
-  timeoutId1: any
-  timeoutId2: any
-  show  = false ;
+  timeoutId1: any;
+  timeoutId2: any;
+  show = false;
   description: string | null = 'Description for the toast ';
   closeBtn: boolean | null = true;
   actionBtn: boolean | null = false;
-  buttonLabel: string | null = 'Button 1'
-  actionButtonClickCallback: Function
+  buttonLabel: string | null = 'Button 1';
+  actionButtonClickCallback: Function;
 
   @Output() actionButton = new EventEmitter<void>();
 
-  action(){
-    this.actionButtonClickCallback()
+  action() {
+    this.actionButtonClickCallback();
   }
 
   ngOnInit() {
@@ -33,28 +36,25 @@ export class MasToast {
       this.toastShow = false;
 
       if (toastBody) {
-
         this.description = toastBody.description;
-        this.actionBtn = toastBody.actionButton
-        if(this.actionBtn){
-          this.actionButtonClickCallback = toastBody.actionButton.action.bind(this)
-          this.buttonLabel =  toastBody.actionButton.label
+        this.actionBtn = toastBody.actionButton;
+        if (this.actionBtn) {
+          this.actionButtonClickCallback = toastBody.actionButton.action.bind(this);
+          this.buttonLabel = toastBody.actionButton.label;
         }
-        this.closeBtn = toastBody.closeBtn!==undefined?toastBody.closeBtn : true
+        this.closeBtn = toastBody.closeBtn !== undefined ? toastBody.closeBtn : true;
         setTimeout(() => {
-          this.show = true
+          this.show = true;
           this.toastShow = true;
           if (this.timeoutId1 || this.timeoutId2) {
             clearTimeout(this.timeoutId1);
             clearTimeout(this.timeoutId2);
           }
           this.timeoutId1 = setTimeout(() => {
-            this.closeToast()
+            this.closeToast();
           }, 10000);
-
         }, 5);
       }
-
     });
   }
   closeToast() {

@@ -1,8 +1,8 @@
-import { Meta, Story, Preview, Props, Description, Canvas } from '@storybook/blocks'; 
+import { Meta, Story, Preview, Props, Description } from '@storybook/blocks';
 
 <Meta title="Components / Selection controls / Chip" />
 
-# Chip
+# Chip (on Developing)
 
 `Chips` can display data or be used for short action
 
@@ -14,11 +14,9 @@ For more details, see our [Chip guideline](https://zeroheight.com/9b39bb2a0/p/77
 
 ## Default
 
-<Canvas>
-  <div class="chip">
-    <div class="chip-label">Default</div>
-  </div>
-</Canvas>
+<div class="mas-chip sb-unstyled">
+  <div class="mas-chip_label">Default</div>
+</div>
 
 CSS styles for `Chip` component:
 
@@ -34,15 +32,12 @@ CSS styles for `Chip` component:
 
 ## Filter Chip
 
-<Canvas>
-  <div class="filter-chip selected">
-    <div class="left-content">
-      <i class="mas-icon mas-checked" />
-    </div>
-
-    <div class="chip-label">Filter Chip</div>
+<div class="mas-chip mas-chip--selected sb-unstyled">
+  <div class="mas-chip_left-content">
+    <i class="mas-icon mas-checked" />
   </div>
-</Canvas>
+  <div class="mas-chip_label">Filter Chip</div>
+</div>
 
 CSS styles :
 
@@ -58,15 +53,12 @@ CSS styles :
 
 ## Chip with Image
 
-<Canvas>
-  <div class="chip has-left-img">
-    <div class="left-content">
-      <img class="chip-image" src="/assets/img/chip-img.png" />
-    </div>
-
-    <div class="chip-label">Input chip</div>
+<div class="mas-chip mas-chip_has-left-img sb-unstyled">
+  <div class="mas-chip_left-content">
+    <img class="mas-chip_image" src="/assets/img/chip-img.png" />
   </div>
-</Canvas>
+  <div class="mas-chip_label">Input chip</div>
+</div>
 
 CSS styles :
 
@@ -82,21 +74,15 @@ CSS styles :
 
 ## Chip with icons
 
-<Canvas>
-  <div class="chip has-left-icon">
-    <div class="left-content">
-      <i class="mas-check-outlined mas-icon mas-system-and-device--outlined" />
-    </div>
-
-    <div class="chip-label">
-      Input chip
-    </div>
-
-    <div class="right-content">
-      <i class="mas-icon mas-math-and-finance--outlined mas-x-outlined right" />
-    </div>
+<div class="mas-chip mas-chip--has-left-icon sb-unstyled">
+  <div class="mas-chip_left-content">
+    <i class="mas-check-outlined mas-icon mas-system-and-device--outlined" />
   </div>
-</Canvas>
+  <div class="mas-chip_label">Input chip</div>
+  <div class="mas-chip_right-content">
+    <i class="mas-icon mas-math-and-finance--outlined mas-x-outlined right" />
+  </div>
+</div>
 
 CSS styles :
 

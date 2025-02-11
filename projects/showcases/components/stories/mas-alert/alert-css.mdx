@@ -1,0 +1,164 @@
+import { Meta, Story, Preview, Props, Description } from '@storybook/blocks';
+
+<Meta title="Components / Overlays / Alert / CSS" />
+
+<style>
+  {`
+    .demo-mas-alert {
+        position: static;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+`}
+</style>
+
+# Alert
+
+The `Alert` are used to communicate important information to the user and attract their attention. It is contextual to the message.
+
+## Usage
+
+The `MasAlerts` are displayed by calling the showAlert method provided by the `AlertService`.
+The \`MasAlerts appears at the top right of the interface above the navigation bar and in front of the main content. It disappears after 10 seconds or when the user clicks on the closed button.
+
+## Default
+
+{/* default alert */}
+
+<div class="mas-alert mas-alert--show demo-mas-alert">
+  <div class="mas-alert_icon mas-alert_type--info">
+    <i class="mas-info-filled mas-security-and-warnings--filled" />
+  </div>
+  <div class="mas-alert_content">
+    <div class="mas-alert_title">
+      <span class="mas-alert_title-label">Default</span>
+    </div>
+  </div>
+</div>
+
+CSS styles for `Alert` component:
+
+```css
+/* Alert styles */
+.mas-alert {
+  /* Alert styles here */
+}
+.mas-alert_title-label {
+  /* Alert label styles here */
+}
+```
+
+## Alert Types
+
+The `MasAlerts` component has 4 different types : `info`, `success`, `warning`, `error`.
+These 4 types have their own semantic colors linked to their context of use and their meaning
+
+{/* list of types */}
+
+<div class="container">
+  <div class="mas-alert mas-alert--show demo-mas-alert">
+    <div class="mas-alert_icon mas-alert_type--info">
+      <i class="mas-info-filled mas-security-and-warnings--filled" />
+    </div>
+    <div class="mas-alert_content">
+      <div class="mas-alert_title">
+        <span class="mas-alert_title-label">Default</span>
+      </div>
+    </div>
+  </div>
+  <div class="mas-alert mas-alert--show demo-mas-alert">
+    <div class="mas-alert_icon mas-alert_type--error">
+      <i class="mas-x-circle-filled mas-math-and-finance--filled" />
+    </div>
+    <div class="mas-alert_content">
+      <div class="mas-alert_title">
+        <span class="mas-alert_title-label">Error</span>
+      </div>
+    </div>
+  </div>
+  <div class="mas-alert mas-alert--show demo-mas-alert">
+    <div class="mas-alert_icon mas-alert_type--success">
+      <i class="mas-check-circle-filled mas-system-and-device--filled" />
+    </div>
+    <div class="mas-alert_content">
+      <div class="mas-alert_title">
+        <span class="mas-alert_title-label">Success</span>
+      </div>
+    </div>
+  </div>
+  <div class="mas-alert mas-alert--show demo-mas-alert">
+    <div class="mas-alert_icon mas-alert_type--warning">
+      <i class="mas-warning-circle-filled mas-security-and-warnings--filled" />
+    </div>
+    <div class="mas-alert_content">
+      <div class="mas-alert_title">
+        <span class="mas-alert_title-label">Warning</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+```css
+.mas-alert_type--info {
+  /* Alert type info styles here */
+}
+.mas-alert_type--error {
+  /* Alert type error styles here */
+}
+.mas-alert_type--success {
+  /* Alert type success styles here */
+}
+.mas-alert_type--warning {
+  /* Alert type warning styles here */
+}
+```
+
+## Alert Description
+
+Description is used to have more information about the alert. This is not a mandatory element.
+
+<div class="mas-alert mas-alert--show demo-mas-alert">
+  <div class="mas-alert_icon mas-alert_type--info">
+    <i class="mas-info-filled mas-security-and-warnings--filled" />
+  </div>
+  <div class="mas-alert_content">
+    <div class="mas-alert_title">
+      <span class="mas-alert_title-label">Alert</span>
+      <div class="mas-alert_close">
+        <i class="mas-x-outlined mas-math-and-finance--outlined" />
+      </div>
+    </div>
+    <div class="mas-alert_description">
+      <span class="mas-alert_description-label">Alert discription</span>
+    </div>
+  </div>
+</div>
+<br />
+
+```css
+.mas-alert_title-description {
+  /* Alert description styles here */
+}
+```
+
+## With Close Button
+
+Close button is used to dismiss the alert component at the user's request. This is not a mandatory element.
+Indeed, alert will be dissmiss after 10 seconds whithout user action.
+
+<div class="mas-alert mas-alert--show demo-mas-alert">
+  <div class="mas-alert_icon mas-alert_type--warning">
+    <i class="mas-warning-circle-filled mas-security-and-warnings--filled" />
+  </div>
+  <div class="mas-alert_content">
+    <div class="mas-alert_title">
+      <span class="mas-alert_title-label">Alert</span>
+      <div class="mas-alert_close">
+        <i class="mas-x-outlined mas-math-and-finance--outlined" />
+      </div>
+    </div>
+  </div>
+</div>

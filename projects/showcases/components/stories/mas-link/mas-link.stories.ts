@@ -10,22 +10,26 @@ const argTypes = {
   },
   size: {
     type: { name: 'string', required: false },
-    description: "The size of the link. Available options: 'small', 'medium', 'large'. Default: 'medium'",
+    description: "The size of the link. Available options: `x-small`, `small`, `medium`, `large`. Default: 'medium'",
     defaultValue: 'medium',
     control: 'radio',
-    options: ['small', 'medium', 'large'],
+    options: ['x-small', 'small', 'medium', 'large'],
   },
-  standalone: {
-    type: { name: 'boolean', required: false },
-    description: 'Whether the link should have a standalone appearance. Default: false',
+  label: {
+    type: { name: 'string', required: false },
+    description: 'The label of the link',
+  },
+  icon: {
+    type: { name: 'string', required: false },
+    description: 'Icon should be displayed alongside the link text. Default: false',
     defaultValue: false,
     control: 'boolean',
   },
-  iconAlong: {
+  disabled: {
     type: { name: 'boolean', required: false },
-    description: 'Whether an icon should be displayed alongside the link text. Default: false',
+    description: 'Whether the link should be disabled. Default: false',
     defaultValue: false,
-    control: 'boolean',
+    control:'boolean', 
   },
 };
 
@@ -47,8 +51,7 @@ export default {
     },
   },
   render: ({...args}) => ({
-    template: `<mas-link [size]="size" [standalone]="standalone" [iconAlong]="iconAlong" [href]="href">
-                Link
+    template: `<mas-link [size]="size" [label]="label" [icon]="icon" [href]="href" [disabled]="disabled">
             </mas-link>`,
     props: args
   }),
@@ -56,12 +59,17 @@ export default {
 
 /** Basic : A link with default settings */
 export const Overview: StoryObj<MasLink> = {};
-Overview.args = {};
+Overview.args = {
+  size: 'medium',
+  label: 'Link',
+  icon: 'mas-arrow-square-out-filled mas-arrows--filled',
+  href: '#/link',
+  disabled: false,
+};
 
 export const LinkIcon = () => ({
   template: `
-    <mas-link  iconAlong="true"  href="#">
-      Link
+    <mas-link label="Link" href="#" icon="mas-arrow-square-out-filled mas-arrows--filled">
     </mas-link>
   `,
 });
@@ -70,14 +78,13 @@ export const LinkSize = {
   render: () => ({
     template: `
       <div style="display: flex; gap: 20px">
-        <mas-link size="small"  href="#">
-          Small Link
+        <mas-link label="X-Small Link" size="x-small" href="#" icon="mas-arrow-square-out-filled mas-arrows--filled">
         </mas-link>
-        <mas-link size="medium"  href="#">
-          Medium Link
+        <mas-link label="Small Link" size="small" href="#" icon="mas-arrow-square-out-filled mas-arrows--filled">
         </mas-link>
-        <mas-link size="large"  href="#">
-          Large Link
+        <mas-link label="Medium Link" size="medium" href="#" icon="mas-arrow-square-out-filled mas-arrows--filled">
+        </mas-link>
+        <mas-link label="Large Link" size="large" href="#" icon="mas-arrow-square-out-filled mas-arrows--filled">
         </mas-link>
       </div>
     `
@@ -87,8 +94,7 @@ export const LinkSize = {
 /** Directive : A link with default settings */
 export const Directive: StoryObj<MasLinkDirective> = {
   render: () => ({
-    template: `<a masLink [size]="size" [standalone]="standalone" [iconAlong]="iconAlong" 
-                    href="https://www.example.com">Link</a>`,
+    template: `<a masLink [size]="size" [label]="label" [icon]="icon" [href]="href" [disabled]="disabled"></a>`,
   }),
 };
 Directive.args = {};

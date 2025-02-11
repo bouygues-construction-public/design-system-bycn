@@ -1,0 +1,68 @@
+import { Meta, Story, Preview, Props, Description } from '@storybook/blocks';
+
+<Meta title="Components / Selection controls / Radio Button / CSS" />
+
+# Radio Button
+
+## Introduction
+
+Radio buttons are intended for selecting one option among mutually exclusive choices, rather than multiple options.
+
+## Default
+
+<div class="mas-radio-button">
+<input class="hidden-accessible" type="radio" checked/>
+<div class="mas-radio-button_touch-target"></div>
+<div class="mas-radio-button-container mas-radio-button--active">
+<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><circle id="radio" cx="4" cy="4" r="3" fill="white" /></svg>
+</div>
+<label class="mas-radio-button_label">Stade de France</label>
+</div>
+
+CSS styles :
+
+```css
+.mas-radio-button {
+  /* styles here */
+}
+.mas-radio-button_label {
+  /* styles here */
+}
+```
+<div class="mas-radio-button"><input class="hidden-accessible" type="radio" checked/><div class="mas-radio-button_touch-target"></div><div class="mas-radio-button-container mas-radio-button--active"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><circle id="radio" cx="4" cy="4" r="3" fill="white" /></svg></div><label class="mas-radio-button_label">Stade de France</label></div>
+<br/>
+<div class="mas-radio-button"><input class="hidden-accessible" type="radio"/><div class="mas-radio-button_touch-target"></div><div class="mas-radio-button-container"></div><label class="mas-radio-button_label">Grande Arche de la Défense</label></div>
+<br/>
+<div class="mas-radio-button"><input class="hidden-accessible" type="radio"/><div class="mas-radio-button_touch-target"></div><div class="mas-radio-button-container"></div><label class="mas-radio-button_label">National Library of France</label></div>
+
+## Size
+
+<div class="mas-radio-button">
+<input class="hidden-accessible" type="radio" checked/>
+<div class="mas-radio-button_touch-target"></div>
+<div class="mas-radio-button-container mas-radio-button--active">
+<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><circle id="radio" cx="4" cy="4" r="3" fill="white" /></svg>
+</div>
+<label class="mas-radio-button_label">Small size</label>
+</div>
+<br/>
+<div class="mas-radio-button mas-radio-button--large">
+<input class="hidden-accessible" type="radio"/>
+<div class="mas-radio-button_touch-target"></div>
+<div class="mas-radio-button-container mas-radio-button--active">
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><circle id="radio" cx="6" cy="6" r="4" fill="white" /></svg>
+</div>
+<label class="mas-radio-button_label">Large size</label>
+</div>
+
+CSS styles for size used by the `radio-button` component:
+
+```css
+/* Size styles */
+.mas-radio-button_size--small {
+  /* Small size styles here */
+}
+.mas-radio-button_size--large {
+  /* Large size styles here */
+}
+```

@@ -1,0 +1,89 @@
+import { Meta, Story, Preview, Props, Description } from '@storybook/blocks';
+
+<Meta title="Components / Structure / Divider / CSS" />
+
+<style>
+  {`
+  .wrapper {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    font-family: var(--mas-core-font-family-barlow) !important;
+  }
+  .container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    flex: 1; 
+    margin-top: 16px;
+  }
+  .paragragh {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 8px; 
+    flex: 1;
+  }
+  .header {
+    font-family: var(--mas-core-font-family-barlow) !important;
+    font-weight: var(--mas-typo_headline-font-weight);
+  }
+  .content {
+    font-family: var(--mas-core-font-family-barlow) !important;
+    font-weight: var(--mas-typo_caption-font-weight);
+  }
+`}
+</style>
+
+# Divider
+
+Divider is a thin line (horizontal or vertical) that divide content.
+
+<div class="mas-divider">
+  <div class="horizontal"></div>
+</div>
+
+CSS styles for `Divider` component:
+
+```css
+.mas-divider {
+  /* styles here */
+}
+```
+
+## Orientation
+
+<div class="wrapper sb-unstyled">
+  <h2 class="header">Bouygues Construction Expert in building</h2>
+  <div class="container">
+    <div class="paragragh">
+      <h3 class="content">+10000</h3>
+      <span>projects delivered in 10 years</span>
+    </div>
+    <div class="mas-divider">
+      <div class="vertical"></div>
+    </div>
+    <div class="paragragh">
+      <h3 class="content">+9</h3>
+      <span>country supported by the supply</span>
+    </div>
+    <div class="mas-divider">
+      <div class="vertical"></div>
+    </div>
+    <div class="paragragh">
+      <h3 class="content">+3000</h3>
+      <span>Construction experts</span>
+    </div>
+  </div>
+</div>
+
+CSS styles :
+
+```css
+.horizontal {
+  /* styles here */
+}
+.vertical {
+  /* styles here */
+}
+```

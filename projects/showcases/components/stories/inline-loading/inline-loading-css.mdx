@@ -1,0 +1,80 @@
+import { Meta, Story, Preview, Props, Description, Canvas } from '@storybook/blocks';
+
+<Meta title="Components / Indicators / Inline Loading / CSS" />
+
+# Inline Loading
+
+## Overview
+
+A `MasInlineLoading` is employed to indicate ongoing actions and reassure users that their requests are in progress. While they don't offer specific insights into backend processes, they provide users with the assurance that their actions are being processed.
+
+Particularly beneficial for actions involving data creation, updates, or deletions, especially when dealing with substantial datasets. They can be seamlessly integrated into various elements such as tables, triggered by primary or secondary button clicks, or even within modals
+
+## Default
+
+<div class="mas-inline-loading mas-inline-loading_state--active">
+  <div class="mas-inline-loading_loader">
+    <i class="mas-inline-loading_icon"></i>
+  </div>
+  <div class="mas-inline-loading_label">
+    <span>Active</span>
+  </div>
+</div>
+
+CSS styles :
+
+```css
+.mas-inline-loading {
+  /* Inline loading styled here */
+}
+.mas-inline-loading_loader {
+  /* Inline loading's loader styled here */
+}
+.mas-inline-loading_label {
+  /* Inline loading's label styled here */
+}
+```
+
+## Variant
+
+### States
+
+The `state` property allows to provide a user feedback regarding the `success` / `fail` of the process.
+
+<div class="mas-inline-loading mas-inline-loading_state--active">
+  <div class="mas-inline-loading_loader">
+    <i class="mas-inline-loading_icon"></i>
+  </div>
+  <div class="mas-inline-loading_label">
+    <span>Active</span>
+  </div>
+</div>
+<div class="mas-inline-loading mas-inline-loading_state--success">
+  <div class="mas-inline-loading_loader">
+    <i class="mas-inline-loading_icon mas-check-circle-filled mas-system-and-device--filled"></i>
+  </div>
+  <div class="mas-inline-loading_label">
+    <span>Success</span>
+  </div>
+</div>
+<div class="mas-inline-loading mas-inline-loading_state--error">
+  <div class="mas-inline-loading_loader">
+    <i class="mas-inline-loading_icon mas-x-circle-filled mas-math-and-finance--filled "></i>
+  </div>
+  <div class="mas-inline-loading_label">
+    <span>Error</span>
+  </div>
+</div>
+
+```css
+/* States styles */
+.mas-inline-loading_state--active {
+  /* Loading's active state */
+}
+.mas-inline-loading_state--success {
+  /* Loading's success state */
+}
+.mas-inline-loading_state--error {
+  /* Loading's error state */
+}
+```

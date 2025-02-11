@@ -1,0 +1,142 @@
+{
+  "mas": {
+    "web": {
+      "component": {
+        "tabs": {
+          "color": {
+            "container": {
+              "unselected": {
+                "hover": {
+                  "value": "{mas.semantic.color.alpha.main.s}",
+                  "type": "color"
+                },
+                "active": {
+                  "value": "{mas.semantic.color.alpha.main.m}",
+                  "type": "color"
+                }
+              },
+              "selected": {
+                "hover": {
+                  "value": "{mas.semantic.color.alpha.brand.s}",
+                  "type": "color"
+                },
+                "active": {
+                  "value": "{mas.semantic.color.alpha.brand.m}",
+                  "type": "color"
+                }
+              }
+            },
+            "content": {
+              "unselected": {
+                "value": "{mas.semantic.color.content.emphasys}",
+                "type": "color"
+              },
+              "selected": {
+                "value": "{mas.semantic.color.content.brand}",
+                "type": "color"
+              }
+            },
+            "border": {
+              "selected": {
+                "value": "{mas.semantic.color.border.brand}",
+                "type": "color"
+              }
+            }
+          },
+          "sizing": {
+            "large": {
+              "icon": {
+                "width": {
+                  "value": "{mas.semantic.sizing.l}",
+                  "type": "sizing"
+                },
+                "height": {
+                  "value": "{mas.semantic.sizing.l}",
+                  "type": "sizing"
+                }
+              }
+            },
+            "medium": {
+              "icon": {
+                "width": {
+                  "value": "{mas.semantic.sizing.l}",
+                  "type": "sizing"
+                },
+                "height": {
+                  "value": "{mas.semantic.sizing.l}",
+                  "type": "sizing"
+                }
+              }
+            }
+          },
+          "spacing": {
+            "large": {
+              "gap": {
+                "value": "{mas.semantic.spacing.s}",
+                "type": "spacing"
+              },
+              "padding": {
+                "left": {
+                  "value": "{mas.semantic.spacing.l}",
+                  "type": "spacing"
+                },
+                "right": {
+                  "value": "{mas.semantic.spacing.l}",
+                  "type": "spacing"
+                },
+                "top": {
+                  "value": "{mas.semantic.spacing.l}",
+                  "type": "spacing"
+                },
+                "bottom": {
+                  "value": "{mas.semantic.spacing.l}",
+                  "type": "spacing"
+                }
+              }
+            },
+            "medium": {
+              "gap": {
+                "value": "{mas.semantic.spacing.s}",
+                "type": "spacing"
+              },
+              "padding": {
+                "left": {
+                  "value": "{mas.semantic.spacing.m}",
+                  "type": "spacing"
+                },
+                "right": {
+                  "value": "{mas.semantic.spacing.m}",
+                  "type": "spacing"
+                },
+                "top": {
+                  "value": "{mas.semantic.spacing.m}",
+                  "type": "spacing"
+                },
+                "bottom": {
+                  "value": "{mas.semantic.spacing.m}",
+                  "type": "spacing"
+                }
+              }
+            }
+          },
+          "typography": {
+            "large": {
+              "value": "{mas.semantic.typography.all-screen.body2}",
+              "type": "typography"
+            },
+            "medium": {
+              "value": "{mas.semantic.typography.all-screen.body3}",
+              "type": "typography"
+            }
+          },
+          "opacity": {
+            "disabled": {
+              "value": "{mas.semantic.opacity.m}",
+              "type": "opacity"
+            }
+          }
+        }
+      }
+    }
+  }
+}

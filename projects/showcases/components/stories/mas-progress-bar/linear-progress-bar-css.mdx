@@ -1,0 +1,154 @@
+import { Meta, Story, Preview, Props, Description, Canvas } from '@storybook/blocks';
+
+<Meta title="Components / Indicators / Linear Progress bar / CSS" />
+
+# Progress bar
+
+## Overview
+
+A `MasLinearProgressBar` serves as an indicator that signifies the acknowledgment of the user's request and signifies that the application is actively advancing towards fulfilling the requested task. These visual elements are designed to keep users informed about the current state of ongoing processes, provide estimates for the duration of a task, and indicate when a request is in the process of execution.
+
+## Default
+
+<div class="mas-linear-progress-bar mas-linear-progress-bar_size--medium mas-linear-progress-bar_state--active">
+  <div class="mas-linear-progress-bar_label">
+    <span class="label">Progress</span>
+  </div>
+  <div class="mas-linear-progress-bar_wrapper">
+    <div class="mas-linear-progress-bar_inner" style={{width: '50%'}} />
+  </div>
+  <div class="mas-linear-progress-bar_helper">helper text... </div>
+</div>
+
+CSS styles :
+
+```css
+.mas-linear-progress-bar {
+  /* Progress bar styles here */
+}
+.mas-linear-progress-bar_label {
+  /* Label styles here */
+}
+.mas-linear-progress-bar_wrapper {
+  /* Tracker styles here */
+}
+.mas-linear-progress-bar_inner {
+  /* Tracker progress styles here */
+}
+.mas-linear-progress-bar_helper {
+  /* Helper styles here */
+}
+```
+
+## Variant
+
+### Type
+<div class="mas-linear-progress-bar mas-linear-progress-bar_type--inline mas-linear-progress-bar_size--medium mas-linear-progress-bar_state--active">
+  <div class="mas-linear-progress-bar_label">
+    <span class="label">Inline</span>
+    <div class="mas-linear-progress-bar_wrapper">
+      <div class="mas-linear-progress-bar_inner" style={{width: '50%'}} />
+    </div>
+    <i class="mas-icon mas-arrows-counter-clockwise-filled mas-arrows--filled"/>
+  </div>
+  <div class="mas-linear-progress-bar_helper">helper text... </div>
+</div>
+<br/>
+<div class="mas-linear-progress-bar mas-linear-progress-bar_size--medium mas-linear-progress-bar_state--active">
+  <div class="mas-linear-progress-bar_label">
+    <span class="label">Default</span>
+    <i class="mas-icon mas-arrows-counter-clockwise-filled mas-arrows--filled"/>
+  </div>
+  <div class="mas-linear-progress-bar_wrapper">
+    <div class="mas-linear-progress-bar_inner" style={{width: '50%'}} />
+  </div>
+  <div class="mas-linear-progress-bar_helper">helper text... </div>
+</div>
+
+CSS styles for Type used by the `tag` component:
+
+```css
+/* Inline styles */
+.mas-linear-progress-bar_type--inline {
+}
+```
+
+### States
+
+The `state` property allows to provide a user feedback regarding the `success` / `fail` of the process.
+
+<div class="mas-linear-progress-bar mas-linear-progress-bar_state--active mas-linear-progress-bar_size--medium">
+  <div class="mas-linear-progress-bar_label">
+    <span class="label">Active</span>
+    <i class="mas-icon mas-arrows-counter-clockwise-filled mas-arrows--filled"/>
+  </div>
+  <div class="mas-linear-progress-bar_wrapper">
+    <div class="mas-linear-progress-bar_inner" style={{width: '50%'}} />
+  </div>
+  <div class="mas-linear-progress-bar_helper">helper text... </div>
+</div>
+<br/>
+<div class="mas-linear-progress-bar mas-linear-progress-bar_state--success mas-linear-progress-bar_size--medium">
+  <div class="mas-linear-progress-bar_label">
+    <span class="label">Success</span>
+    <i class="mas-icon mas-check-circle-filled mas-system-and-device--filled"/>
+  </div>
+  <div class="mas-linear-progress-bar_wrapper">
+    <div class="mas-linear-progress-bar_inner" style={{width: '100%'}} />
+  </div>
+  <div class="mas-linear-progress-bar_helper">helper text... </div>
+</div>
+<br/>
+<div class="mas-linear-progress-bar mas-linear-progress-bar_state--error mas-linear-progress-bar_size--medium">
+  <div class="mas-linear-progress-bar_label">
+    <span class="label">Error</span>
+    <i class="mas-icon mas-math-and-finance--filled mas-x-circle-filled"/>
+  </div>
+  <div class="mas-linear-progress-bar_wrapper">
+    <div class="mas-linear-progress-bar_inner" style={{width: '100%'}} />
+  </div>
+  <div class="mas-linear-progress-bar_helper">helper text... </div>
+</div>
+```css
+/* States styles */
+.mas-linear-progress-bar_state--success {
+}
+.mas-linear-progress-bar_state--error {
+}
+```
+
+## Size
+
+<div class="mas-linear-progress-bar mas-linear-progress-bar_state--active mas-linear-progress-bar_size--small">
+  <div class="mas-linear-progress-bar_label">
+    <span class="label">Small</span>
+    <i class="mas-icon mas-arrows-counter-clockwise-filled mas-arrows--filled"/>
+  </div>
+  <div class="mas-linear-progress-bar_wrapper">
+    <div class="mas-linear-progress-bar_inner" style={{width: '50%'}} />
+  </div>
+  <div class="mas-linear-progress-bar_helper">helper text... </div>
+</div>
+<br/>
+<div class="mas-linear-progress-bar mas-linear-progress-bar_state--active mas-linear-progress-bar_size--medium">
+  <div class="mas-linear-progress-bar_label">
+    <span class="label">Medium</span>
+    <i class="mas-icon mas-arrows-counter-clockwise-filled mas-arrows--filled"/>
+  </div>
+  <div class="mas-linear-progress-bar_wrapper">
+    <div class="mas-linear-progress-bar_inner" style={{width: '50%'}} />
+  </div>
+  <div class="mas-linear-progress-bar_helper">helper text... </div>
+</div>
+
+CSS styles for size used by the `progress-bar` component:
+
+```css
+/* Size styles */
+.mas-linear-progress-bar_size--small {
+  /* Small size styles here */
+}
+.mas-linear-progress-bar_size--medium {
+  /* Medium size styles here */
+}
+```

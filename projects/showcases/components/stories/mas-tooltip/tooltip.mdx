@@ -1,0 +1,104 @@
+import { Meta, Story, Preview, Props, Description } from '@storybook/blocks';
+
+<Meta title="Components / Overlays / Tooltip / CSS" />
+
+<style>
+{`
+  .tooltip--active {
+    opacity: 1;
+  }
+  .tooltip {
+    color: #0C0C0D; 
+    border-radius: 8px;  
+    border: 1px solid #D7D7DB;  
+    width: fit-content;
+    padding: 8px 16px 8px 16px;
+    cursor: pointer; 
+    margin: 10px;
+  }
+  .tooltip-placement_container {
+    margin: 70px 250px;
+    width: 50%;
+  }
+  .tooltip-placement {
+    display: flex;
+    justify-content: space-between;
+  }
+`}
+</style>
+
+# Tooltip
+
+## Introduction
+
+The tooltip is most often displayed when hovering over an icon to indicate its function.
+
+## Default
+
+<div class="mas-tooltip_container">
+<div><span>Hover me!</span></div>
+<div class="mas-tooltip right tooltip--active">
+<div class="mas-tooltip_padding-bar"></div>
+<div class="mas-tooltip_arrow"></div>
+<div class="mas-tooltip_inner">
+<label class="mas-tooltip_content">tooltip</label>
+</div>
+</div>
+</div>
+
+CSS styles :
+
+```css
+.mas-tooltip {
+  /* styles here */
+}
+.mas-tooltip_container {
+  /* styles here */
+}
+.mas-tooltip_content {
+  /* styles here */
+}
+```
+
+## Placement
+
+The `tooltip` component comes in different options to be placed such as `top`,`right`, `bottom`, `left`, `bottom-left`, `bottom-right`, `top-left`, `top-right`
+
+<div class="tooltip-placement_container">
+<div class="tooltip-placement">
+<div class="mas-tooltip_container tooltip"><div><label>top-left</label></div><div class="mas-tooltip top-left tooltip--active"><div class="mas-tooltip_padding-bar"></div><div class="mas-tooltip_arrow"></div><div class="mas-tooltip_inner"><label class="mas-tooltip_content">tooltip top-left</label></div></div></div>
+<div class="mas-tooltip_container tooltip"><div><label>top</label></div><div class="mas-tooltip top tooltip--active"><div class="mas-tooltip_padding-bar"></div><div class="mas-tooltip_arrow"></div><div class="mas-tooltip_inner"><label class="mas-tooltip_content">tooltip top</label></div></div></div>
+<div class="mas-tooltip_container tooltip"><div><label>top-right</label></div><div class="mas-tooltip top-right tooltip--active"><div class="mas-tooltip_padding-bar"></div><div class="mas-tooltip_arrow"></div><div class="mas-tooltip_inner"><label class="mas-tooltip_content">tooltip top-right</label></div></div></div>
+</div>
+<div class="tooltip-placement">
+<div class="mas-tooltip_container tooltip"><div><label>left</label></div><div class="mas-tooltip left tooltip--active"><div class="mas-tooltip_padding-bar"></div><div class="mas-tooltip_arrow"></div><div class="mas-tooltip_inner"><label class="mas-tooltip_content">tooltip left</label></div></div></div>
+<div class="mas-tooltip_container tooltip"><div><label>right</label></div><div class="mas-tooltip right tooltip--active"><div class="mas-tooltip_padding-bar"></div><div class="mas-tooltip_arrow"></div><div class="mas-tooltip_inner"><label class="mas-tooltip_content">tooltip right</label></div></div></div>
+</div>
+<div class="tooltip-placement">
+<div class="mas-tooltip_container tooltip"><div><label>bottom-left</label></div><div class="mas-tooltip bottom-left tooltip--active"><div class="mas-tooltip_padding-bar"></div><div class="mas-tooltip_arrow"></div><div class="mas-tooltip_inner"><label class="mas-tooltip_content">tooltip bottom-left</label></div></div></div>
+<div class="mas-tooltip_container tooltip"><div><label>bottom</label></div><div class="mas-tooltip bottom tooltip--active"><div class="mas-tooltip_padding-bar"></div><div class="mas-tooltip_arrow"></div><div class="mas-tooltip_inner"><label class="mas-tooltip_content">tooltip bottom</label></div></div></div>
+<div class="mas-tooltip_container tooltip"><div><label>bottom-right</label></div><div class="mas-tooltip bottom-right tooltip--active"><div class="mas-tooltip_padding-bar"></div><div class="mas-tooltip_arrow"></div><div class="mas-tooltip_inner"><label class="mas-tooltip_content">tooltip bottom-right</label></div></div></div>
+</div>
+</div>
+
+CSS styles for positions used by the `tooltip` component:
+
+```css
+/* Variant styles */
+.mas-tooltip.top-left {
+}
+.mas-tooltip.top {
+}
+.mas-tooltip.top-right{
+}
+.mas-tooltip.left {
+}
+.mas-tooltip.right{
+}
+.mas-tooltip.bottom-left {
+}
+.mas-tooltip.bottom {
+}
+.mas-tooltip.bottom-right{
+}
+```

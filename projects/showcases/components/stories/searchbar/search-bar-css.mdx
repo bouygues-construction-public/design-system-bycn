@@ -1,0 +1,85 @@
+import { Meta, Story, Preview, Props, Description, Canvas } from '@storybook/blocks';
+
+<Meta title="Components / Navigations / Search Bar / CSS" />
+
+# Search Bar
+
+## Overview
+
+Searchbar allow people to set up queries, words or sentences to get information.
+
+## Default
+
+<div class="mas-search-bar mas-search-bar_size--medium">
+  <div class="mas-search-bar_container">
+    <i class="mas-search-bar_leading-icon mas-magnifying-glass-outlined mas-system-and-device--outlined mas-icon"></i>
+    <input class="mas-search-bar_input" />
+    <i class="mas-search-bar_clear mas-x-outlined mas-math-and-finance--outlined mas-icon"></i>
+  </div>
+</div>
+
+CSS styles :
+
+```css
+.mas-search-bar {
+  /* Search bar syled here */
+}
+.mas-search-bar_container {
+  /* Search bar's container syled here */
+}
+.mas-search-bar_leading-icon {
+  /* Search bar's leading syled here */
+}
+.mas-search-bar_input {
+  /* Search bar's input syled here */
+}
+.mas-search-bar_clear {
+  /* Search bar's clear icon syled here */
+}
+```
+
+## Overview
+
+<div class="mas-search-bar mas-search-bar_size--small">
+  <div class="mas-search-bar_container">
+    <i class="mas-search-bar_leading-icon mas-magnifying-glass-outlined mas-system-and-device--outlined mas-icon"></i>
+    <input class="mas-search-bar_input" placeholder="Enter your search..." />
+    <i class="mas-search-bar_clear mas-x-outlined mas-math-and-finance--outlined mas-icon"></i>
+  </div>
+</div>
+<br />
+<div class="mas-search-bar mas-search-bar_size--small">
+  <div class="mas-search-bar_container">
+    <i class="mas-search-bar_leading-icon mas-magnifying-glass-outlined mas-system-and-device--outlined mas-icon"></i>
+    <input class="mas-search-bar_input" value="What's Design System?" />
+    <i class="mas-search-bar_clear mas-x-outlined mas-math-and-finance--outlined mas-icon"></i>
+  </div>
+</div>
+
+## Size
+
+<div class="mas-search-bar mas-search-bar_size--small">
+  <div class="mas-search-bar_container">
+    <i class="mas-search-bar_leading-icon mas-magnifying-glass-outlined mas-system-and-device--outlined mas-icon"></i>
+    <input class="mas-search-bar_input" value="Small size" />
+    <i class="mas-search-bar_clear mas-x-outlined mas-math-and-finance--outlined mas-icon"></i>
+  </div>
+</div>
+<br />
+<div class="mas-search-bar mas-search-bar_size--medium">
+  <div class="mas-search-bar_container">
+    <i class="mas-search-bar_leading-icon mas-magnifying-glass-outlined mas-system-and-device--outlined mas-icon"></i>
+    <input class="mas-search-bar_input" value="Medium size" />
+    <i class="mas-search-bar_clear mas-x-outlined mas-math-and-finance--outlined mas-icon"></i>
+  </div>
+</div>
+
+```css
+/* Sub-elemnents styled here */
+.mas-search-bar_size--small {
+  /* Search bar small size styled here */
+}
+.mas-search-bar_size--medium {
+  /* Search bar medium size styled here */
+}
+```
